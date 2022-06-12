@@ -1,0 +1,16 @@
+<map id="bio::phred42" name="bio::phred42">
+<area shape="rect" id="node1" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)." alt="" coords="1137,132,1240,159"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1writable__quality__alphabet.html" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="897,31,1088,57"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="618,31,697,57"/>
+<area shape="rect" id="node4" href="$interfacebio_1_1semialphabet.html" title="The basis for bio::alphabet, but requires only rank interface (not char)." alt="" coords="393,31,503,57"/>
+<area shape="rect" id="node5" title=" " alt="" coords="17,5,166,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,56,177,83"/>
+<area shape="rect" id="node7" href="$interfacebio_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="923,81,1062,108"/>
+<area shape="rect" id="node8" title=" " alt="" coords="603,81,712,108"/>
+<area shape="rect" id="node9" href="$interfacebio_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="929,132,1056,159"/>
+<area shape="rect" id="node10" title=" " alt="" coords="945,183,1041,209"/>
+<area shape="rect" id="node11" href="$classbio_1_1quality__base.html" title=" " alt="" coords="921,234,1065,275"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="11,231,171,287"/>
+<area shape="rect" id="node14" href="$classbio_1_1alphabet__base.html" title=" " alt="" coords="368,268,528,324"/>
+<area shape="rect" id="node13" href="$classbio_1_1quality__base.html" title="A CRTP&#45;base that refines bio::alphabet_base and is used by the quality alphabets." alt="" coords="577,271,737,313"/>
+</map>

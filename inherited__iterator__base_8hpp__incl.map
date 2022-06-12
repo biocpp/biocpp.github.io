@@ -1,0 +1,13 @@
+<map id="bio/ranges/detail/inherited_iterator_base.hpp" name="bio/ranges/detail/inherited_iterator_base.hpp">
+<area shape="rect" id="node1" title="Provides the bio::detail::inherited_iterator_base template." alt="" coords="207,5,401,47"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cassert.html" title=" " alt="" coords="5,102,75,129"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="221,191,313,218"/>
+<area shape="rect" id="node4" href="$empty__type_8hpp.html" title="Provides bio::detail::empty_type." alt="" coords="99,95,266,136"/>
+<area shape="rect" id="node9" href="$iterator_8hpp.html" title="Provides various transformation traits for use on iterators." alt="" coords="341,95,496,136"/>
+<area shape="rect" id="node10" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/iterator.html" title=" " alt="" coords="567,191,638,218"/>
+<area shape="rect" id="node5" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="331,273,499,300"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="272,348,355,375"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="379,348,451,375"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="475,348,546,375"/>
+<area shape="rect" id="node11" href="$pre_8hpp.html" title="Provides various transformation trait base templates and shortcuts." alt="" coords="337,184,492,225"/>
+</map>

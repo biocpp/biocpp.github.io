@@ -1,0 +1,4 @@
+<map id="Type List" name="Type List">
+<area shape="rect" id="node1" title="Provides bio::type_list and metaprogramming utilities for working on type lists." alt="" coords="108,5,187,31"/>
+<area shape="rect" id="node2" href="$group__core.html" title="Provides core functionality used by multiple modules." alt="" coords="5,5,60,31"/>
+</map>

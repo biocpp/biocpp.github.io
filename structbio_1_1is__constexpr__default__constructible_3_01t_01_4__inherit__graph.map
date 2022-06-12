@@ -1,0 +1,5 @@
+<map id="bio::is_constexpr_default_constructible&lt; t &gt;" name="bio::is_constexpr_default_constructible&lt; t &gt;">
+<area shape="rect" id="node1" title="Whether a type std::is_default_constructible in constexpr&#45;context (unary_type_trait specialisation)." alt="" coords="47,200,232,241"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="5,109,273,151"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="58,5,221,32"/>
+</map>

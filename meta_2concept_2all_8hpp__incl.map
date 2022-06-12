@@ -1,0 +1,23 @@
+<map id="bio/meta/concept/all.hpp" name="bio/meta/concept/all.hpp">
+<area shape="rect" id="node1" title="Meta&#45;include for custom concepts." alt="" coords="119,5,301,32"/>
+<area shape="rect" id="node2" href="$cereal_8hpp.html" title="Adaptions of concepts from the Cereal library." alt="" coords="179,713,385,739"/>
+<area shape="rect" id="node8" href="$core__language_8hpp.html" title="Provides concepts for core language types and relations that don&#39;t have concepts in C++20 (yet)." alt="" coords="5,512,172,553"/>
+<area shape="rect" id="node10" href="$tuple_8hpp.html" title="Provides bio::tuple_like." alt="" coords="399,80,599,107"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="657,795,749,821"/>
+<area shape="rect" id="node4" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="198,795,366,821"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="139,869,222,896"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="246,869,318,896"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="343,869,413,896"/>
+<area shape="rect" id="node9" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="249,616,329,643"/>
+<area shape="rect" id="node11" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="755,251,809,278"/>
+<area shape="rect" id="node12" href="$template__inspection_8hpp.html" title="Provides bio::type_list and auxiliary type traits." alt="" coords="417,512,603,553"/>
+<area shape="rect" id="node15" href="$pod__tuple_8hpp.html" title="Provides bio::pod_tuple." alt="" coords="474,162,650,189"/>
+<area shape="rect" id="node18" href="$type__list_8hpp.html" title="Provides bio::type_list." alt="" coords="455,423,595,464"/>
+<area shape="rect" id="node21" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="749,155,903,196"/>
+<area shape="rect" id="node13" href="$transformation__trait__or_8hpp.html" title="Provides bio::detail::transformation_trait_or." alt="" coords="459,601,617,657"/>
+<area shape="rect" id="node14" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::transformation_trait and bio::unary_type_trait." alt="" coords="461,705,615,747"/>
+<area shape="rect" id="node16" title=" " alt="" coords="475,251,567,278"/>
+<area shape="rect" id="node17" href="$type__list_2traits_8hpp.html" title="Provides traits for bio::type_list." alt="" coords="591,244,731,285"/>
+<area shape="rect" id="node19" href="$type__pack_2traits_8hpp.html" title="Provides various traits for template packs." alt="" coords="577,333,728,375"/>
+<area shape="rect" id="node20" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/utility.html" title=" " alt="" coords="619,430,679,457"/>
+</map>

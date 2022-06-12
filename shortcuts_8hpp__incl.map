@@ -1,0 +1,8 @@
+<map id="bio/ranges/shortcuts.hpp" name="bio/ranges/shortcuts.hpp">
+<area shape="rect" id="node1" title="Provides various shortcuts for common std::ranges functions." alt="" coords="127,5,310,32"/>
+<area shape="rect" id="node2" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="64,80,232,107"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ranges.html" title=" " alt="" coords="256,80,323,107"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="112,155,184,181"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="209,155,279,181"/>
+</map>

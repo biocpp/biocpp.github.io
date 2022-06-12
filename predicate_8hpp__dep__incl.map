@@ -1,0 +1,7 @@
+<map id="bio/meta/char_operations/predicate.hpp" name="bio/meta/char_operations/predicate.hpp">
+<area shape="rect" id="node1" title="Provides character predicates for tokenisation." alt="" coords="141,5,329,47"/>
+<area shape="rect" id="node2" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="5,102,232,129"/>
+<area shape="rect" id="node5" href="$meta_2char__operations_2all_8hpp.html" title="Provides Char predicates for tokenization." alt="" coords="257,95,445,136"/>
+<area shape="rect" id="node3" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="23,184,214,211"/>
+<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="43,259,194,285"/>
+</map>

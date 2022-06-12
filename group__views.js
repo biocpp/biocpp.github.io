@@ -1,0 +1,38 @@
+var group__views =
+[
+    [ "deep", "classbio_1_1views_1_1deep.html", [
+      [ "deep", "classbio_1_1views_1_1deep.html#ae9693d1ff1b2c9588559d3e20898f82e", null ],
+      [ "deep", "classbio_1_1views_1_1deep.html#ac34f450dbf1179be02a59abfeb93dbb3", null ],
+      [ "deep", "classbio_1_1views_1_1deep.html#a4721093b839d6fee1cc1b42b0c254fe7", null ],
+      [ "~deep", "classbio_1_1views_1_1deep.html#ab2eaed9954837b5bfe8c4c8931cc1b84", null ],
+      [ "operator=", "classbio_1_1views_1_1deep.html#a59c4cf4ee17854e45f9308df5aadef82", null ],
+      [ "operator=", "classbio_1_1views_1_1deep.html#a4e4caa2e10d9da6327c08154fd8bfea2", null ],
+      [ "deep", "classbio_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d", null ]
+    ] ],
+    [ "to", "group__views.html#ga308d962276f85f33f1419807d52095f9", null ],
+    [ "as_const", "group__views.html#gabbef5b165e0b3ac15946f261226fa756", null ],
+    [ "char_to", "group__views.html#ga8b359a1d964491820412fde3b3193744", null ],
+    [ "complement", "group__views.html#ga531cd11552ed966a1d8a63611d0b280b", null ],
+    [ "convert", "group__views.html#ga9ba12d582b47bc937b5ed044978c894f", null ],
+    [ "get", "group__views.html#ga6c266f65b04e9e1a6c0e1aac88ab6049", null ],
+    [ "interleave", "group__views.html#gab897ca0bf3457d97fbb8d567be97ce9f", null ],
+    [ "move", "group__views.html#ga0933bd5433f42cd5245eecce74dcac0a", null ],
+    [ "pairwise_combine", "group__views.html#gaa3bdc5736826aa089322e6d817bac39c", null ],
+    [ "persist", "group__views.html#ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f", null ],
+    [ "rank_to", "group__views.html#ga0b8d2103e9130823f84ea77a2c3203b5", null ],
+    [ "repeat", "group__views.html#gab683b7e429b11760d7f3f412c85bb4c2", null ],
+    [ "repeat_n", "group__views.html#ga38a8df44d0496c7cb2506e3c22f06c29", null ],
+    [ "single_pass_input", "group__views.html#ga4c14a69faf3858dd9c78164b368c305e", null ],
+    [ "slice", "group__views.html#ga28138686bf770239271f2c08e97ad1f9", null ],
+    [ "take_exactly", "group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a", null ],
+    [ "take_exactly_or_throw", "group__views.html#gac3107ccfc70b898636e1941ca8c33fa8", null ],
+    [ "to_char", "group__views.html#gadc45135b56d37d83f3ef52c19ed3ee13", null ],
+    [ "to_lower", "group__views.html#gabf3c9024ffacf16205a0203285b87247", null ],
+    [ "to_rank", "group__views.html#gacceb12ca443828da40b5933d8f2892b9", null ],
+    [ "to_upper", "group__views.html#gaaaf24d6d81ff6fbdd0d8d35666166c8d", null ],
+    [ "translate", "group__views.html#gafac84d343d9715544a0b42ac2587b356", null ],
+    [ "translate_join", "group__views.html#ga13d0ae409ddb4cae46442238acd6f9ac", null ],
+    [ "translate_single", "group__views.html#ga17567d2d3be70545cf430a7a6c6de8fb", null ],
+    [ "trim_quality", "group__views.html#gab2e512ec0d0fe1967dfd7aee03c74eae", null ],
+    [ "type_reduce", "group__views.html#ga7f6dc6355aaa4d6fc8857d27a0a962c1", null ]
+];

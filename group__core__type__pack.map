@@ -1,0 +1,4 @@
+<map id="Type Pack" name="Type Pack">
+<area shape="rect" id="node1" title="Provides metaprogramming utilities for working on template parameter packs." alt="" coords="108,5,195,31"/>
+<area shape="rect" id="node2" href="$group__core.html" title="Provides core functionality used by multiple modules." alt="" coords="5,5,60,31"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Views" name="Views">
+<area shape="rect" id="node1" title="Views are &quot;lazy range combinators&quot; that offer modified views onto other ranges." alt="" coords="116,5,177,31"/>
+<area shape="rect" id="node2" href="$group__range.html" title="The range module provides general purpose containers, decorators and views." alt="" coords="5,5,68,31"/>
+</map>

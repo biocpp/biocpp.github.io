@@ -1,0 +1,6 @@
+<map id="cereal_archive" name="cereal_archive">
+<area shape="rect" id="node1" title="All archives of the Cereal library satisfy this." alt="" coords="212,5,329,32"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1cereal__input__archive.html" title="All input archives of the Cereal library satisfy this." alt="" coords="5,80,163,107"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1cereal__output__archive.html" title="All output archives of the Cereal library satisfy this." alt="" coords="187,80,354,107"/>
+<area shape="rect" id="node4" href="$interfacebio_1_1cereal__text__archive.html" title="All text archives of the Cereal library satisfy this." alt="" coords="378,80,529,107"/>
+</map>

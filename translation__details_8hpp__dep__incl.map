@@ -1,0 +1,9 @@
+<map id="bio/alphabet/aminoacid/translation_details.hpp" name="bio/alphabet/aminoacid/translation_details.hpp">
+<area shape="rect" id="node1" title="Provides translation details for nucleotide to aminoacid translation." alt="" coords="68,5,243,47"/>
+<area shape="rect" id="node2" href="$alphabet_2aminoacid_2all_8hpp.html" title="Meta&#45;header for the aminoacid submodule; includes all headers from alphabet/aminoacid/." alt="" coords="5,184,180,225"/>
+<area shape="rect" id="node4" href="$translation_8hpp.html" title="Provides functions for translating a triplet of nucleotides into an amino acid." alt="" coords="131,95,305,136"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="17,281,168,307"/>
+<area shape="rect" id="node5" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="204,191,427,218"/>
+<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="208,281,388,307"/>
+<area shape="rect" id="node7" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="413,273,607,315"/>
+</map>

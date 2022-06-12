@@ -1,0 +1,8 @@
+<map id="Meta" name="Meta">
+<area shape="rect" id="node1" href="$group__char__operations.html" title="Provides various operations on character types." alt="" coords="108,5,312,31"/>
+<area shape="rect" id="node2" href="$group__core__type__pack.html" title="Provides metaprogramming utilities for working on template parameter packs." alt="" coords="167,55,253,80"/>
+<area shape="rect" id="node3" href="$group__concept.html" title="Additional concepts that are not specific to a BioC++ module." alt="" coords="173,104,247,129"/>
+<area shape="rect" id="node4" href="$group__core__type__list.html" title="Provides bio::type_list and metaprogramming utilities for working on type lists." alt="" coords="171,153,249,179"/>
+<area shape="rect" id="node5" href="$group__type__traits.html" title="Provides various type traits and their shortcuts." alt="" coords="165,203,255,228"/>
+<area shape="rect" id="node6" title="Provides core functionality used by multiple modules." alt="" coords="5,104,60,129"/>
+</map>

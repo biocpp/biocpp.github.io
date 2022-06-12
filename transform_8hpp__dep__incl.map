@@ -1,0 +1,37 @@
+<map id="bio/meta/char_operations/transform.hpp" name="bio/meta/char_operations/transform.hpp">
+<area shape="rect" id="node1" title="Provides utilities for modifying characters." alt="" coords="1479,5,1667,47"/>
+<area shape="rect" id="node2" href="$aa10li_8hpp.html" title="Provides bio::aa10li, container aliases and string literals." alt="" coords="1983,184,2158,225"/>
+<area shape="rect" id="node5" href="$aa10murphy_8hpp.html" title="Provides bio::aa10murphy, container aliases and string literals." alt="" coords="2182,184,2357,225"/>
+<area shape="rect" id="node6" href="$aa20_8hpp.html" title="Provides bio::aa20, container aliases and string literals." alt="" coords="1785,184,1959,225"/>
+<area shape="rect" id="node7" href="$aa27_8hpp.html" title="Provides bio::aa27, container aliases and string literals." alt="" coords="1586,184,1761,225"/>
+<area shape="rect" id="node15" href="$aminoacid__base_8hpp.html" title="Provides bio::aminoacid_base." alt="" coords="1687,95,1862,136"/>
+<area shape="rect" id="node16" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="5,102,232,129"/>
+<area shape="rect" id="node18" href="$dna15_8hpp.html" title="Provides bio::dna15, container aliases and string literals." alt="" coords="1061,184,1235,225"/>
+<area shape="rect" id="node23" href="$dna3bs_8hpp.html" title="Provides bio::dna3bs, container aliases and string literals." alt="" coords="110,184,285,225"/>
+<area shape="rect" id="node24" href="$dna5_8hpp.html" title="Provides bio::dna5, container aliases and string literals." alt="" coords="309,184,483,225"/>
+<area shape="rect" id="node26" href="$nucleotide__base_8hpp.html" title="Provides bio::nucleotide_base." alt="" coords="685,95,859,136"/>
+<area shape="rect" id="node30" href="$dot__bracket3_8hpp.html" title="Provides the dot bracket format for RNA structure." alt="" coords="1613,273,1779,315"/>
+<area shape="rect" id="node31" href="$dssp9_8hpp.html" title="Provides the dssp format for protein structure." alt="" coords="1345,184,1511,225"/>
+<area shape="rect" id="node32" href="$wuss_8hpp.html" title="Provides the WUSS format for RNA structure." alt="" coords="1184,273,1349,315"/>
+<area shape="rect" id="node33" href="$meta_2char__operations_2all_8hpp.html" title="Provides Char predicates for tokenization." alt="" coords="1989,95,2177,136"/>
+<area shape="rect" id="node34" href="$to__lower_8hpp.html" title="Provides bio::views::to_lower." alt="" coords="2201,95,2351,136"/>
+<area shape="rect" id="node35" href="$to__upper_8hpp.html" title="Provides bio::views::to_upper." alt="" coords="2375,95,2524,136"/>
+<area shape="rect" id="node3" href="$alphabet_2aminoacid_2all_8hpp.html" title="Meta&#45;header for the aminoacid submodule; includes all headers from alphabet/aminoacid/." alt="" coords="2027,452,2202,493"/>
+<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="703,549,854,575"/>
+<area shape="rect" id="node8" href="$translation_8hpp.html" title="Provides functions for translating a triplet of nucleotides into an amino acid." alt="" coords="1854,363,2029,404"/>
+<area shape="rect" id="node9" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="1781,459,2003,486"/>
+<area shape="rect" id="node12" href="$translation__details_8hpp.html" title="Provides translation details for nucleotide to aminoacid translation." alt="" coords="1803,273,1978,315"/>
+<area shape="rect" id="node13" href="$structured__aa_8hpp.html" title="Provides the composite of aminoacid with structure alphabets." alt="" coords="1424,273,1589,315"/>
+<area shape="rect" id="node10" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="1695,549,1875,575"/>
+<area shape="rect" id="node11" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="1900,541,2095,583"/>
+<area shape="rect" id="node14" href="$alphabet_2structure_2all_8hpp.html" title="Meta&#45;header for the structure module. It includes all headers from alphabet/structure/." alt="" coords="1304,363,1469,404"/>
+<area shape="rect" id="node17" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="167,459,358,486"/>
+<area shape="rect" id="node19" href="$alphabet_2nucleotide_2all_8hpp.html" title="Meta&#45;header for the nucleotide submodule; includes all headers from alphabet/nucleotide/." alt="" coords="503,363,678,404"/>
+<area shape="rect" id="node20" href="$rna15_8hpp.html" title="Provides bio::rna15, container aliases and string literals." alt="" coords="883,273,1058,315"/>
+<area shape="rect" id="node21" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="703,363,855,404"/>
+<area shape="rect" id="node22" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="703,452,855,493"/>
+<area shape="rect" id="node25" href="$rna5_8hpp.html" title="Provides bio::rna5, container aliases and string literals." alt="" coords="383,273,558,315"/>
+<area shape="rect" id="node27" href="$dna4_8hpp.html" title="Provides bio::dna4, container aliases and string literals." alt="" coords="559,184,734,225"/>
+<area shape="rect" id="node28" href="$rna4_8hpp.html" title="Provides bio::rna4, container aliases and string literals." alt="" coords="685,273,859,315"/>
+<area shape="rect" id="node29" href="$sam__dna16_8hpp.html" title="Provides bio::sam_dna16." alt="" coords="810,184,985,225"/>
+</map>

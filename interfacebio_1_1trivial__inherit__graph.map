@@ -1,0 +1,7 @@
+<map id="trivial" name="trivial">
+<area shape="rect" id="node1" title="A type that satisfies bio::trivially_copyable and bio::trivially_destructible." alt="" coords="130,155,190,181"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="20,5,129,32"/>
+<area shape="rect" id="node4" href="$interfacebio_1_1trivially__destructible.html" title="A type that satisfies std::is_trivially_destructible_v&lt;t&gt;." alt="" coords="169,80,325,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="183,5,310,32"/>
+</map>

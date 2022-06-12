@@ -1,0 +1,7 @@
+<map id="bio/alphabet/aminoacid/translation_genetic_code.hpp" name="bio/alphabet/aminoacid/translation_genetic_code.hpp">
+<area shape="rect" id="node1" title="Genetic codes used for translating a triplet of nucleotides into an amino acid." alt="" coords="39,5,257,47"/>
+<area shape="rect" id="node2" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="64,95,232,121"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="5,169,88,196"/>
+<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="112,169,184,196"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="209,169,279,196"/>
+</map>

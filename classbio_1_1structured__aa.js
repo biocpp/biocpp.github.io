@@ -1,0 +1,26 @@
+var classbio_1_1structured__aa =
+[
+    [ "char_type", "classbio_1_1structured__aa.html#a15eceb509a50732a83307358d80f0876", null ],
+    [ "rank_type", "classbio_1_1structured__aa.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "sequence_alphabet_type", "classbio_1_1structured__aa.html#a135c59911373e99d765a3b9523928939", null ],
+    [ "structure_alphabet_type", "classbio_1_1structured__aa.html#a3626269ff75b614388561c47ee9f9d23", null ],
+    [ "structured_aa", "classbio_1_1structured__aa.html#afeb25ab54752f950552c47030a4fbe11", null ],
+    [ "structured_aa", "classbio_1_1structured__aa.html#a330a78932c4aed7c81bb44b03d5ba662", null ],
+    [ "structured_aa", "classbio_1_1structured__aa.html#a290f8cb55854c9345b4090235717ada1", null ],
+    [ "~structured_aa", "classbio_1_1structured__aa.html#ada66dd0f17aecc60853a92329dd847ed", null ],
+    [ "structured_aa", "classbio_1_1structured__aa.html#aef841f34cef2f0303cd1c3ba03391078", null ],
+    [ "structured_aa", "classbio_1_1structured__aa.html#a52373b692e51e2418a5214eadf85c860", null ],
+    [ "assign_char", "classbio_1_1structured__aa.html#a822d399ab808842870a4a4feb5490849", null ],
+    [ "assign_char", "classbio_1_1structured__aa.html#a3bcb9378b96d4a7fad068fff42229874", null ],
+    [ "assign_rank", "classbio_1_1structured__aa.html#acdd042ae2f04d986f65a7b60edd6e83e", null ],
+    [ "operator type", "classbio_1_1structured__aa.html#ac09202f0f79dfb23ca37cd097e505727", null ],
+    [ "operator=", "classbio_1_1structured__aa.html#a4f34f1902595bbdc35447136f956c551", null ],
+    [ "operator=", "classbio_1_1structured__aa.html#a564fb49bf956583c66c94b88f1bc75b4", null ],
+    [ "operator=", "classbio_1_1structured__aa.html#ab4dcba3b3cbadbce7129227bc4dbc7a8", null ],
+    [ "operator=", "classbio_1_1structured__aa.html#a56030ce98bcb8ceca06289cbf4c1175e", null ],
+    [ "operator=", "classbio_1_1structured__aa.html#a86940f07bafcb60ef435de6d39fffdce", null ],
+    [ "operator=", "classbio_1_1structured__aa.html#a84cdc5826d26e917138f6b0cb51352c0", null ],
+    [ "to_char", "classbio_1_1structured__aa.html#ab23eec948858818809932c421b60f0d3", null ],
+    [ "to_rank", "classbio_1_1structured__aa.html#a443c2f7716e384ea2acec1d2bced7c8b", null ],
+    [ "structured_aa", "classbio_1_1structured__aa.html#acfc33075aff7777aa3189e4e4ceb60bd", null ]
+];

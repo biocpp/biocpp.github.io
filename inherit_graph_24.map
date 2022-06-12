@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="60,5,179,32"/>
+<area shape="rect" id="node2" href="$structbio_1_1is__constexpr__default__constructible.html" title="Whether a type std::is_default_constructible in constexpr&#45;context." alt="" coords="284,23,469,65"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="5,107,233,178"/>
+<area shape="rect" id="node4" href="$structstd_1_1tuple__size_3_01tuple__t_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="281,109,472,136"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="38,203,201,259"/>
+<area shape="rect" id="node6" href="$structstd_1_1tuple__size_3_01t_3_01types_8_8_8_01_4_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="309,175,445,217"/>
+<area shape="rect" id="node7" href="$interfacebio_1_1unary__type__trait.html" title="Concept for a unary traits type." alt="" coords="55,56,184,83"/>
+</map>

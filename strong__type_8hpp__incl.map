@@ -1,0 +1,15 @@
+<map id="bio/meta/detail/strong_type.hpp" name="bio/meta/detail/strong_type.hpp">
+<area shape="rect" id="node1" title="Provides basic data structure for strong types." alt="" coords="159,5,326,47"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="5,102,85,129"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="334,191,426,218"/>
+<area shape="rect" id="node4" href="$add__enum__bitwise__operators_8hpp.html" title="Provides bio::add_enum_bitwise_operators." alt="" coords="14,184,221,225"/>
+<area shape="rect" id="node10" href="$debug__stream__type_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="160,95,325,136"/>
+<area shape="rect" id="node12" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="400,95,555,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="71,273,163,300"/>
+<area shape="rect" id="node6" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="323,273,491,300"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="264,348,347,375"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="371,348,443,375"/>
+<area shape="rect" id="node9" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="467,348,538,375"/>
+<area shape="rect" id="node11" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/iosfwd.html" title=" " alt="" coords="245,191,309,218"/>
+<area shape="rect" id="node13" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="450,191,505,218"/>
+</map>

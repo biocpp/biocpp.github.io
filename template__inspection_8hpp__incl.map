@@ -1,0 +1,11 @@
+<map id="bio/meta/type_traits/template_inspection.hpp" name="bio/meta/type_traits/template_inspection.hpp">
+<area shape="rect" id="node1" title="Provides bio::type_list and auxiliary type traits." alt="" coords="86,5,273,47"/>
+<area shape="rect" id="node2" href="$transformation__trait__or_8hpp.html" title="Provides bio::detail::transformation_trait_or." alt="" coords="30,95,187,151"/>
+<area shape="rect" id="node9" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="211,109,291,136"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="5,288,97,315"/>
+<area shape="rect" id="node4" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::transformation_trait and bio::unary_type_trait." alt="" coords="89,199,243,240"/>
+<area shape="rect" id="node5" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="122,288,290,315"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="63,363,146,389"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="170,363,242,389"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="267,363,337,389"/>
+</map>

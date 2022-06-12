@@ -1,0 +1,12 @@
+<map id="bio/meta/detail/debug_stream_type.hpp" name="bio/meta/detail/debug_stream_type.hpp">
+<area shape="rect" id="node1" title="Provides bio::debug_stream and related types." alt="" coords="405,5,570,47"/>
+<area shape="rect" id="node2" href="$debug__stream_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="280,184,485,211"/>
+<area shape="rect" id="node4" href="$meta_2detail_2all_8hpp.html" title="Meta&#45;header for implementation details in the core module." alt="" coords="551,184,720,211"/>
+<area shape="rect" id="node6" href="$debug__stream__alphabet_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="595,95,762,136"/>
+<area shape="rect" id="node7" href="$debug__stream__optional_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="786,95,952,136"/>
+<area shape="rect" id="node8" href="$debug__stream__range_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="26,95,192,136"/>
+<area shape="rect" id="node9" href="$debug__stream__tuple_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="216,95,381,136"/>
+<area shape="rect" id="node10" href="$debug__stream__variant_8hpp.html" title="Provides bio::debug_stream and related types." alt="" coords="405,95,570,136"/>
+<area shape="rect" id="node3" href="$load_8hpp_source.html" title=" " alt="" coords="304,259,460,315"/>
+<area shape="rect" id="node5" href="$meta_2all_8hpp.html" title="Meta&#45;header for the core module ." alt="" coords="572,273,700,300"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="bio/alphabet/composite/alphabet_tuple_base.hpp" name="bio/alphabet/composite/alphabet_tuple_base.hpp">
+<area shape="rect" id="node1" title="Provides bio::alphabet_tuple_base." alt="" coords="344,5,533,47"/>
+<area shape="rect" id="node2" href="$cigar_8hpp.html" title="Provides the bio::cigar alphabet." alt="" coords="5,95,144,136"/>
+<area shape="rect" id="node3" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="43,273,218,315"/>
+<area shape="rect" id="node5" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="219,102,445,129"/>
+<area shape="rect" id="node7" href="$qualified_8hpp.html" title="Provides quality alphabet composites." alt="" coords="469,95,621,136"/>
+<area shape="rect" id="node12" href="$structured__aa_8hpp.html" title="Provides the composite of aminoacid with structure alphabets." alt="" coords="645,95,811,136"/>
+<area shape="rect" id="node14" href="$structured__rna_8hpp.html" title="Provides the composite of nucleotide with structure alphabets." alt="" coords="835,95,1000,136"/>
+<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="359,363,510,389"/>
+<area shape="rect" id="node6" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="242,281,433,307"/>
+<area shape="rect" id="node8" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="369,184,521,225"/>
+<area shape="rect" id="node9" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="457,273,609,315"/>
+<area shape="rect" id="node10" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="596,184,759,225"/>
+<area shape="rect" id="node11" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="634,281,814,307"/>
+<area shape="rect" id="node13" href="$alphabet_2structure_2all_8hpp.html" title="Meta&#45;header for the structure module. It includes all headers from alphabet/structure/." alt="" coords="783,184,948,225"/>
+</map>

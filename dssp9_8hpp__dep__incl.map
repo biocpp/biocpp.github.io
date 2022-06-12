@@ -1,0 +1,6 @@
+<map id="bio/alphabet/structure/dssp9.hpp" name="bio/alphabet/structure/dssp9.hpp">
+<area shape="rect" id="node1" title="Provides the dssp format for protein structure." alt="" coords="5,5,171,47"/>
+<area shape="rect" id="node2" href="$alphabet_2structure_2all_8hpp.html" title="Meta&#45;header for the structure module. It includes all headers from alphabet/structure/." alt="" coords="5,184,171,225"/>
+<area shape="rect" id="node4" href="$structured__aa_8hpp.html" title="Provides the composite of aminoacid with structure alphabets." alt="" coords="65,95,231,136"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="13,273,163,300"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="bio::mask" name="bio::mask">
+<area shape="rect" id="node1" title="Implementation of a masked alphabet to be used for tuple composites." alt="" coords="777,132,864,159"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1writable__semialphabet.html" title="A refinement of bio::semialphabet that adds assignability." alt="" coords="557,31,728,57"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1semialphabet.html" title="The basis for bio::alphabet, but requires only rank interface (not char)." alt="" coords="251,31,362,57"/>
+<area shape="rect" id="node4" title=" " alt="" coords="17,5,166,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,56,177,83"/>
+<area shape="rect" id="node6" href="$interfacebio_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="573,81,712,108"/>
+<area shape="rect" id="node7" title=" " alt="" coords="252,81,361,108"/>
+<area shape="rect" id="node8" href="$interfacebio_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="579,132,706,159"/>
+<area shape="rect" id="node9" title=" " alt="" coords="595,183,691,209"/>
+<area shape="rect" id="node10" href="$classbio_1_1alphabet__base.html" title=" " alt="" coords="570,234,715,275"/>
+<area shape="rect" id="node11" href="$classbio_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="227,227,387,283"/>
+</map>
