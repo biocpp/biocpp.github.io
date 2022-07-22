@@ -1,15 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classbio_1_1alphabet_1_1phred63.html#a6be9d72ef1862cdf13c8a5d0e88addfa":[3,0,7,2,17],
-"classbio_1_1alphabet_1_1phred63.html#a7bd65327426eac1ff281e1ed94c62ba8":[3,0,7,2,16],
-"classbio_1_1alphabet_1_1phred63.html#a9720a476e8d05797c0a04a1f0a991639":[3,0,7,2,11],
-"classbio_1_1alphabet_1_1phred63.html#ab5935196701018b9bfe597cdbd2a6f9a":[3,0,7,2,3],
-"classbio_1_1alphabet_1_1phred63.html#ab668a919684f6a9c409410dae54ad9f0":[3,0,7,2,4],
-"classbio_1_1alphabet_1_1phred63.html#ac313a9d7e16b04366437346875a197d3":[3,0,7,2,12],
-"classbio_1_1alphabet_1_1phred63.html#ac4e598dc4ba74fdccd74efd6cc7cc021":[3,0,7,2,5],
-"classbio_1_1alphabet_1_1phred63.html#acd1778eb5d1d64c7d9d749c7f0debadf":[3,0,7,2,13],
-"classbio_1_1alphabet_1_1phred63.html#aed0663fd67713fd46e01f93a9965bb16":[3,0,7,2,10],
-"classbio_1_1alphabet_1_1phred63.html#af29512eb6045520758ef39fa4234e099":[3,0,7,2,15],
 "classbio_1_1alphabet_1_1phred63.html#af7d2c83e4074745f391d3600fc6d503b":[3,0,7,2,14],
 "classbio_1_1alphabet_1_1phred68legacy.html":[3,0,7,3],
 "classbio_1_1alphabet_1_1phred68legacy.html#a0cdd1e62d31d563757963f1eaae7a99e":[3,0,7,3,17],
@@ -249,5 +239,15 @@ var NAVTREEINDEX2 =
 "classbio_1_1ranges_1_1concatenated__sequences.html#a73f399787dab851ea6411ea05a6cf087":[3,2,0,2,24],
 "classbio_1_1ranges_1_1concatenated__sequences.html#a774fddde8d5db3bbc7975463d85a42a9":[3,2,0,2,65],
 "classbio_1_1ranges_1_1concatenated__sequences.html#a79867e2d296a9e0512acc3341c886a68":[3,2,0,2,58],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a79f580e171fc2e6a069519f6df705022":[3,2,0,2,47]
+"classbio_1_1ranges_1_1concatenated__sequences.html#a79f580e171fc2e6a069519f6df705022":[3,2,0,2,47],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a7bcc4492613cbe9b799f49763a41e8a7":[3,2,0,2,56],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a7d24f956f652e3a9e9b19ca3a88906b1":[3,2,0,2,64],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a7d8f7ede2fc4804a2e8e5f45a707248c":[3,2,0,2,57],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a7ff6558bbf2e8e3be105df2f8befa53d":[3,2,0,2,6],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a805aa9beca299259b7ef66b6953f21a5":[3,2,0,2,68],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a80bfec6e20aa7300ebc09ff1170d4f2e":[3,2,0,2,61],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a8cd6bcb6374a0519931ffa1eacaac0fe":[3,2,0,2,70],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a8eccca4dd57fd135fb28d7cb4c536660":[3,2,0,2,55],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a92c6386b3ddaaac34cd0617c14a11440":[3,2,0,2,37],
+"classbio_1_1ranges_1_1concatenated__sequences.html#a92ffe9d52927fb05a212e6e2d9ceb1b1":[3,2,0,2,66]
 };

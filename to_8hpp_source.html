@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('to_8hpp_source.html',''); initResizabl
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> impl(std::ranges::range <span class="keyword">auto</span> &amp;&amp; rng, container_t &amp; container)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::ranges::copy(rng, std::back_inserter(container));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(rng, std::back_inserter(container));</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">auto</span> impl(std::ranges::range <span class="keyword">auto</span> &amp;&amp; rng,</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('to_8hpp_source.html',''); initResizabl
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">auto</span> adapter   = to_fn&lt;typename container_t::value_type&gt;{};</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">auto</span> inner_rng = rng | <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(adapter);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::ranges::copy(inner_rng, std::back_inserter(container));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(inner_rng, std::back_inserter(container));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
@@ -196,6 +196,7 @@ $(document).ready(function(){initNavTree('to_8hpp_source.html',''); initResizabl
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
 <div class="ttc" id="aalgorithm_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/algorithm.html">algorithm</a></div></div>
+<div class="ttc" id="acopy_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
 <div class="ttc" id="adecay_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/decay.html">std::decay_t</a></div></div>
 <div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:628</div></div>
 <div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
@@ -213,7 +214,7 @@ $(document).ready(function(){initNavTree('to_8hpp_source.html',''); initResizabl
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><b>to.hpp</b></li>
-    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:18:26 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

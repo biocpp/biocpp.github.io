@@ -1108,7 +1108,7 @@ template&lt;auto index&gt; </div>
 </table>
 <p>See the <a class="el" href="group__views.html">views submodule documentation </a> for detailed descriptions of the view properties.</p>
 <h3>Example</h3>
-<p>This is a slightly more verbose version of calling <code>std::ranges::move</code> on the range.</p>
+<p>This is a slightly more verbose version of calling <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/move.html">std::ranges::move</a></code> on the range.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/string.html">string</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="move_8hpp.html">bio/ranges/views/move.hpp</a>&gt;</span></div>
@@ -1121,15 +1121,16 @@ template&lt;auto index&gt; </div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> vec_out0{};</div>
 <div class="line">    vec_out0.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(3);</div>
-<div class="line">    std::ranges::copy(vec_in,                       <span class="comment">// copies strings from in to out</span></div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(vec_in,                       <span class="comment">// copies strings from in to out</span></div>
 <div class="line">                      vec_out0.begin());</div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::string&gt;</a> vec_out1{};</div>
 <div class="line">    vec_out1.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(3);</div>
-<div class="line">    std::ranges::copy(vec_in | <a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::views::move</a>, <span class="comment">// moves strings from in to out</span></div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(vec_in | <a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::views::move</a>, <span class="comment">// moves strings from in to out</span></div>
 <div class="line">                      vec_out1.begin());</div>
 <div class="line">}</div>
 <div class="ttc" id="aalgorithm_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/algorithm.html">algorithm</a></div></div>
+<div class="ttc" id="acopy_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
 <div class="ttc" id="agroup__views_html_gacc149746c0b9a2f5021709858f37de1b"><div class="ttname"><a href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::ranges::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:70</div></div>
 <div class="ttc" id="amove_8hpp_html"><div class="ttname"><a href="move_8hpp.html">move.hpp</a></div><div class="ttdoc">Provides bio::views::move.</div></div>
 <div class="ttc" id="aresize_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector/resize.html">std::vector::resize</a></div><div class="ttdeci">T resize(T... args)</div></div>
@@ -2920,9 +2921,10 @@ template&lt;typename alphabet_type &gt; </div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// combinability</span></div>
 <div class="line">    <span class="keyword">auto</span> v3 = <a class="code" href="group__views.html#ga9a36f187d6a6383964e17162e60f54ca">bio::views::trim_quality</a>(vec, 20u) | <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::views::to_char</a>;</div>
-<div class="line">    assert(std::ranges::equal(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>{<span class="stringliteral">&quot;AGGA&quot;</span>}, v3 | bio::views::to&lt;std::string&gt;()));</div>
+<div class="line">    assert(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/equal.html">std::ranges::equal</a>(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a>{<span class="stringliteral">&quot;AGGA&quot;</span>}, v3 | bio::views::to&lt;std::string&gt;()));</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1qualified_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1qualified.html">bio::alphabet::qualified</a></div><div class="ttdoc">Joins an arbitrary alphabet with a quality alphabet.</div><div class="ttdef"><b>Definition:</b> qualified.hpp:61</div></div>
+<div class="ttc" id="aequal_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/ranges/equal.html">std::ranges::equal</a></div><div class="ttdeci">T equal(T... args)</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -3041,7 +3043,7 @@ template&lt;typename alphabet_type &gt; </div>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:18:46 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

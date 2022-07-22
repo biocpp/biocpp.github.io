@@ -81,17 +81,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"",
-"classbio_1_1alphabet_1_1alphabet__proxy.html#a88afb45bfb56cdb09eb036b86ba0761f",
-"classbio_1_1alphabet_1_1phred63.html#a6be9d72ef1862cdf13c8a5d0e88addfa",
-"classbio_1_1ranges_1_1concatenated__sequences.html#a7bcc4492613cbe9b799f49763a41e8a7",
-"classbio_1_1ranges_1_1small__vector.html#af7127a362aa61e23249b1839b5155af7",
-"cpp/experimental/type_trait_variable_templates.html",
-"cpp/locale/isgraph.html",
-"cpp/string/byte/memset.html",
-"cpp/utility/rel_ops/operator_cmp.html",
-"group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d",
-"repeat__n_8hpp_source.html"
+"aa10li_8hpp.html",
+"classbio_1_1alphabet_1_1alphabet__tuple__base.html",
+"classbio_1_1alphabet_1_1phred63.html#af7d2c83e4074745f391d3600fc6d503b",
+"classbio_1_1ranges_1_1concatenated__sequences.html#a9570fa4466c9cd3fa8b083f30c745c34",
+"classbio_1_1ranges_1_1views_1_1deep.html#af183a8825fb7e2180f47ba5f1ee70d44",
+"cpp/chrono/c/difftime.html",
+"cpp/io/c/fflush.html",
+"cpp/numeric/math/div.html",
+"cpp/string/wide/wcsrchr.html",
+"functions_func_m.html",
+"group__views.html#gaeb4f69a870beb4fcf4c1021088c17447",
+"structbio_1_1meta_1_1type__list.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

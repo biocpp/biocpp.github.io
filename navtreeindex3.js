@@ -1,15 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classbio_1_1ranges_1_1concatenated__sequences.html#a7bcc4492613cbe9b799f49763a41e8a7":[3,2,0,2,56],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a7d24f956f652e3a9e9b19ca3a88906b1":[3,2,0,2,64],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a7d8f7ede2fc4804a2e8e5f45a707248c":[3,2,0,2,57],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a7ff6558bbf2e8e3be105df2f8befa53d":[3,2,0,2,6],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a805aa9beca299259b7ef66b6953f21a5":[3,2,0,2,68],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a80bfec6e20aa7300ebc09ff1170d4f2e":[3,2,0,2,61],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a8cd6bcb6374a0519931ffa1eacaac0fe":[3,2,0,2,70],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a8eccca4dd57fd135fb28d7cb4c536660":[3,2,0,2,55],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a92c6386b3ddaaac34cd0617c14a11440":[3,2,0,2,37],
-"classbio_1_1ranges_1_1concatenated__sequences.html#a92ffe9d52927fb05a212e6e2d9ceb1b1":[3,2,0,2,66],
 "classbio_1_1ranges_1_1concatenated__sequences.html#a9570fa4466c9cd3fa8b083f30c745c34":[3,2,0,2,0],
 "classbio_1_1ranges_1_1concatenated__sequences.html#a99379ad28d44f3a4c12d78556fa94e57":[3,2,0,2,1],
 "classbio_1_1ranges_1_1concatenated__sequences.html#a9bdf497f3e7d20a18b27f662a8b2335c":[3,2,0,2,44],
@@ -249,5 +239,15 @@ var NAVTREEINDEX3 =
 "classbio_1_1ranges_1_1small__vector.html#ae90fb163cb3849462d583c5a09f6223a":[3,2,0,6,22],
 "classbio_1_1ranges_1_1small__vector.html#ae9945a134571395b97d4c3f76a2055b8":[3,2,0,6,26],
 "classbio_1_1ranges_1_1small__vector.html#aea109d87d04dad68e9eb24f0f6806176":[3,2,0,6,44],
-"classbio_1_1ranges_1_1small__vector.html#aef050b128e47b5c1962aeb8178cfe658":[3,2,0,6,59]
+"classbio_1_1ranges_1_1small__vector.html#aef050b128e47b5c1962aeb8178cfe658":[3,2,0,6,59],
+"classbio_1_1ranges_1_1small__vector.html#af7127a362aa61e23249b1839b5155af7":[3,2,0,6,3],
+"classbio_1_1ranges_1_1small__vector.html#af91cd33ccd55c6a07eee055931289324":[3,2,0,6,7],
+"classbio_1_1ranges_1_1small__vector.html#aff051f43193b8bf373aaf57cea8cfa18":[3,2,0,6,64],
+"classbio_1_1ranges_1_1small__vector.html#aff5fef6de4c2e58bb838b6977f4e9c00":[3,2,0,6,39],
+"classbio_1_1ranges_1_1views_1_1deep.html":[3,2,1,0],
+"classbio_1_1ranges_1_1views_1_1deep.html#a0993db61563e66e278e3c15ea78a94e6":[3,2,1,0,5],
+"classbio_1_1ranges_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d":[3,2,1,0,6],
+"classbio_1_1ranges_1_1views_1_1deep.html#a4f1d17026ef43c105a6c19e02817a597":[3,2,1,0,4],
+"classbio_1_1ranges_1_1views_1_1deep.html#a605fccee2a8d10598ef0b03012bc52e0":[3,2,1,0,1],
+"classbio_1_1ranges_1_1views_1_1deep.html#a87618602257526f4a1e0fb50685e5ea1":[3,2,1,0,0]
 };

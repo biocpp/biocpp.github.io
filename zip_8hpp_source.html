@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          [](<span class="keyword">auto</span>... sizes)</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;              <span class="keyword">using</span> common_size_t = <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/make_unsigned.html">std::make_unsigned_t</a>&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/common_type.html">std::common_type_t</a>&lt;decltype(sizes)...&gt;&gt;;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;              <span class="keywordflow">return</span> std::ranges::min({<span class="keyword">static_cast&lt;</span>common_size_t<span class="keyword">&gt;</span>(sizes)...});</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;              <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/min.html">std::ranges::min</a>({<span class="keyword">static_cast&lt;</span>common_size_t<span class="keyword">&gt;</span>(sizes)...});</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;          },</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;          zip::tuple_transform(<a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>, views_));</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;          [](<span class="keyword">auto</span>... sizes)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;          {</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;              <span class="keyword">using</span> common_size_t = <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/make_unsigned.html">std::make_unsigned_t</a>&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/common_type.html">std::common_type_t</a>&lt;decltype(sizes)...&gt;&gt;;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;              <span class="keywordflow">return</span> std::ranges::min({<span class="keyword">static_cast&lt;</span>common_size_t<span class="keyword">&gt;</span>(sizes)...});</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;              <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/min.html">std::ranges::min</a>({<span class="keyword">static_cast&lt;</span>common_size_t<span class="keyword">&gt;</span>(sizes)...});</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;          },</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          zip::tuple_transform(<a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>, views_));</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
@@ -424,7 +424,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    {</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordflow">return</span> [&amp;]&lt;<span class="keywordtype">size_t</span>... N&gt;(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/integer_sequence.html">std::integer_sequence</a>&lt;size_t, N...&gt;)</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">return</span> std::ranges::min(</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/min.html">std::ranges::min</a>(</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;              {<span class="keyword">static_cast&lt;</span>difference_type<span class="keyword">&gt;</span>(std::get&lt;N&gt;(x.current_) - std::get&lt;N&gt;(y.current_))...},</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;              [](difference_type a, difference_type b) { <span class="keywordflow">return</span> zip::abs(b) &lt; zip::abs(a); });</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        }</div>
@@ -499,7 +499,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keyword">using</span> return_t = <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/common_type.html">std::common_type_t&lt;std::ranges::range_difference_t&lt;zip::maybe_const&lt;OtherConst, Views&gt;</a>&gt;...&gt;;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">return</span> [&amp;]&lt;<span class="keywordtype">size_t</span>... N&gt;(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/integer_sequence.html">std::integer_sequence</a>&lt;size_t, N...&gt;)</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        {</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">return</span> std::ranges::min({<span class="keyword">static_cast&lt;</span>return_t<span class="keyword">&gt;</span>(std::get&lt;N&gt;(x.current_) - std::get&lt;N&gt;(y.end_))...},</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/min.html">std::ranges::min</a>({<span class="keyword">static_cast&lt;</span>return_t<span class="keyword">&gt;</span>(std::get&lt;N&gt;(x.current_) - std::get&lt;N&gt;(y.end_))...},</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                                    [](return_t a, return_t b) { <span class="keywordflow">return</span> zip::abs(b) &lt; zip::abs(a); });</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        }</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        (<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/integer_sequence.html">std::index_sequence_for</a>&lt;Views...&gt;{});</div>
@@ -550,6 +550,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html',''); initResizab
 <div class="ttc" id="aiter_t_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/iterator/iter_t.html">std::iter_difference_t</a></div></div>
 <div class="ttc" id="aiterator_tags_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/iterator/iterator_tags.html">std::random_access_iterator_tag</a></div></div>
 <div class="ttc" id="amake_unsigned_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/make_unsigned.html">std::make_unsigned_t</a></div></div>
+<div class="ttc" id="amin_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/ranges/min.html">std::ranges::min</a></div><div class="ttdeci">T min(T... args)</div></div>
 <div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
 <div class="ttc" id="anamespacebio_1_1ranges_1_1views_html_a270adbe5daef90484e7b66a4c2cd4c30"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html#a270adbe5daef90484e7b66a4c2cd4c30">bio::ranges::views::zip</a></div><div class="ttdeci">constexpr auto zip</div><div class="ttdoc">A view adaptor that produces a tuple-like value of all passed views.</div><div class="ttdef"><b>Definition:</b> zip.hpp:448</div></div>
 <div class="ttc" id="aranges_2views_2detail_8hpp_html"><div class="ttname"><a href="ranges_2views_2detail_8hpp.html">detail.hpp</a></div></div>
@@ -564,7 +565,7 @@ $(document).ready(function(){initNavTree('zip_8hpp_source.html',''); initResizab
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="zip_8hpp.html">zip.hpp</a></li>
-    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:18:26 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

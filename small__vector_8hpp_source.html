@@ -158,14 +158,14 @@ $(document).ready(function(){initNavTree('small__vector_8hpp_source.html',''); i
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      sz{capacity2}</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        static_assert(capacity2 &lt;= capacity_, <span class="stringliteral">&quot;You can only initialize from array that has smaller or equal capacity.&quot;</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::ranges::copy(array, data_.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>());</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(array, data_.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>());</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> capacity2&gt;</div>
 <div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1small__vector.html#a9065b89db6541a250515d1304d23628c">  116</a></span>&#160;    <span class="keyword">explicit</span> constexpr <a class="code" href="classbio_1_1ranges_1_1small__vector.html#a9065b89db6541a250515d1304d23628c">small_vector</a>(<a class="code" href="classbio_1_1ranges_1_1small__vector.html#a1e9f4dbc0711a7b7561c30d8b5eec98f">value_type</a> <span class="keyword">const</span> (&amp;array)[capacity2]) noexcept(is_noexcept) : sz{capacity2}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        static_assert(capacity2 &lt;= capacity_, <span class="stringliteral">&quot;You can only initialize from array that has smaller or equal capacity.&quot;</span>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        std::ranges::copy(array, data_.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(array, data_.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array/begin.html">begin</a>());</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... other_value_type&gt;</div>
@@ -344,7 +344,7 @@ $(document).ready(function(){initNavTree('small__vector_8hpp_source.html',''); i
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <span class="keywordflow">for</span> (<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">size_type</a> i = sz + length - 1; i &gt; pos_as_num + length - 1; --i)</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            data_[i] = data_[i - length];</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160; </div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        std::ranges::copy(begin_it, end_it, &amp;data_[pos_as_num]);</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a>(begin_it, end_it, &amp;data_[pos_as_num]);</div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        sz += length;</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classbio_1_1ranges_1_1small__vector.html#ae9945a134571395b97d4c3f76a2055b8">begin</a>() + pos_as_num;</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    }</div>
@@ -423,7 +423,7 @@ $(document).ready(function(){initNavTree('small__vector_8hpp_source.html',''); i
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> cap2&gt;</div>
 <div class="line"><a name="l00818"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1small__vector.html#a1c5bac3111ce2cf916dcb5503ebf3fbe">  818</a></span>&#160;    <span class="keyword">friend</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="classbio_1_1ranges_1_1small__vector.html#a1c5bac3111ce2cf916dcb5503ebf3fbe">operator==</a>(<a class="code" href="classbio_1_1ranges_1_1small__vector.html">small_vector</a> <span class="keyword">const</span> &amp; lhs, <a class="code" href="classbio_1_1ranges_1_1small__vector.html">small_vector&lt;value_type, cap2&gt;</a> <span class="keyword">const</span> &amp; rhs) noexcept</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    {</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordflow">return</span> std::ranges::equal(lhs, rhs);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/equal.html">std::ranges::equal</a>(lhs, rhs);</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    }</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160; </div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> cap2&gt;</div>
@@ -545,7 +545,9 @@ $(document).ready(function(){initNavTree('small__vector_8hpp_source.html',''); i
 <div class="ttc" id="aclassbio_1_1ranges_1_1small__vector_html_aff051f43193b8bf373aaf57cea8cfa18"><div class="ttname"><a href="classbio_1_1ranges_1_1small__vector.html#aff051f43193b8bf373aaf57cea8cfa18">bio::ranges::small_vector::operator&gt;=</a></div><div class="ttdeci">constexpr friend bool operator&gt;=(small_vector const &amp;lhs, small_vector&lt; value_type, cap2 &gt; const &amp;rhs) noexcept</div><div class="ttdoc">Performs element-wise comparison.</div><div class="ttdef"><b>Definition:</b> small_vector.hpp:863</div></div>
 <div class="ttc" id="aclassbio_1_1ranges_1_1small__vector_html_aff5fef6de4c2e58bb838b6977f4e9c00"><div class="ttname"><a href="classbio_1_1ranges_1_1small__vector.html#aff5fef6de4c2e58bb838b6977f4e9c00">bio::ranges::small_vector::front</a></div><div class="ttdeci">constexpr reference front() noexcept</div><div class="ttdoc">Return the first element. Calling front on an empty container is undefined.</div><div class="ttdef"><b>Definition:</b> small_vector.hpp:405</div></div>
 <div class="ttc" id="aconditional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a></div></div>
+<div class="ttc" id="acopy_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/ranges/copy.html">std::ranges::copy</a></div><div class="ttdeci">T copy(T... args)</div></div>
 <div class="ttc" id="adata_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/array/data.html">std::array::data</a></div><div class="ttdeci">T data(T... args)</div></div>
+<div class="ttc" id="aequal_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/algorithm/ranges/equal.html">std::ranges::equal</a></div><div class="ttdeci">T equal(T... args)</div></div>
 <div class="ttc" id="agroup__views_html_ga3eaec85592e0be019cd5c6d691fed9ff"><div class="ttname"><a href="group__views.html#ga3eaec85592e0be019cd5c6d691fed9ff">bio::ranges::views::repeat_n</a></div><div class="ttdeci">constexpr auto repeat_n</div><div class="ttdoc">A view factory that repeats a given value n times.</div><div class="ttdef"><b>Definition:</b> repeat_n.hpp:97</div></div>
 <div class="ttc" id="ainitializer_list_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></div></div>
 <div class="ttc" id="aint__types_8hpp_html"><div class="ttname"><a href="int__types_8hpp.html">int_types.hpp</a></div><div class="ttdoc">Provides metaprogramming utilities for integer types.</div></div>
@@ -566,7 +568,7 @@ $(document).ready(function(){initNavTree('small__vector_8hpp_source.html',''); i
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_863a7aeecaebce89c36d5cb86386d0df.html">container</a></li><li class="navelem"><a class="el" href="small__vector_8hpp.html">small_vector.hpp</a></li>
-    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:18:26 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
