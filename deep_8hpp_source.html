@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -112,11 +112,11 @@ $(document).ready(function(){initNavTree('deep_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ranges_2views_2detail_8hpp.html">bio/ranges/views/detail.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1views.html">bio::views</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> underlying_adaptor_t&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html">  102</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbio_1_1views_1_1deep.html">deep</a> : <span class="keyword">public</span> detail::adaptor_base&lt;deep&lt;underlying_adaptor_t&gt;, underlying_adaptor_t&gt;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html">  102</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> : <span class="keyword">public</span> detail::adaptor_base&lt;deep&lt;underlying_adaptor_t&gt;, underlying_adaptor_t&gt;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">using</span> base_type = detail::adaptor_base&lt;deep&lt;underlying_adaptor_t&gt;, underlying_adaptor_t&gt;;</div>
@@ -124,12 +124,12 @@ $(document).ready(function(){initNavTree('deep_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">friend</span> base_type;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#ae9693d1ff1b2c9588559d3e20898f82e">  115</a></span>&#160;    constexpr <a class="code" href="classbio_1_1views_1_1deep.html#ae9693d1ff1b2c9588559d3e20898f82e">deep</a>()                         noexcept = default; </div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#ac34f450dbf1179be02a59abfeb93dbb3">  116</a></span>&#160;    constexpr <a class="code" href="classbio_1_1views_1_1deep.html">deep</a>(<a class="code" href="classbio_1_1views_1_1deep.html">deep</a> const &amp;)             noexcept = default; </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#a4721093b839d6fee1cc1b42b0c254fe7">  117</a></span>&#160;    constexpr <a class="code" href="classbio_1_1views_1_1deep.html">deep</a>(<a class="code" href="classbio_1_1views_1_1deep.html">deep</a> &amp;&amp;)                  noexcept = default; </div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#a4e4caa2e10d9da6327c08154fd8bfea2">  118</a></span>&#160;    constexpr <a class="code" href="classbio_1_1views_1_1deep.html">deep</a> &amp; operator=(<a class="code" href="classbio_1_1views_1_1deep.html">deep</a> const &amp;) noexcept = default; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#a59c4cf4ee17854e45f9308df5aadef82">  119</a></span>&#160;    constexpr <a class="code" href="classbio_1_1views_1_1deep.html">deep</a> &amp; operator=(<a class="code" href="classbio_1_1views_1_1deep.html">deep</a> &amp;&amp;)      noexcept = default; </div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#ab2eaed9954837b5bfe8c4c8931cc1b84">  120</a></span>&#160;    ~<a class="code" href="classbio_1_1views_1_1deep.html">deep</a>()                                  noexcept = default; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#a87618602257526f4a1e0fb50685e5ea1">  115</a></span>&#160;    constexpr <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html#a87618602257526f4a1e0fb50685e5ea1">deep</a>() noexcept                         = default; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#a605fccee2a8d10598ef0b03012bc52e0">  116</a></span>&#160;    constexpr <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a>(<a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> const &amp;) noexcept             = default; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#af183a8825fb7e2180f47ba5f1ee70d44">  117</a></span>&#160;    constexpr <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a>(<a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> &amp;&amp;) noexcept                  = default; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#a0993db61563e66e278e3c15ea78a94e6">  118</a></span>&#160;    constexpr <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> &amp; operator=(<a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> const &amp;) noexcept = default; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#a4f1d17026ef43c105a6c19e02817a597">  119</a></span>&#160;    constexpr <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> &amp; operator=(<a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a> &amp;&amp;) noexcept      = default; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#af9e349f593eba49cf35118c63882c833">  120</a></span>&#160;    ~<a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a>() noexcept                                  = default; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    using base_type::base_type;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
@@ -146,65 +146,61 @@ $(document).ready(function(){initNavTree('deep_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        requires std::ranges::input_range&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    constexpr <span class="keyword">auto</span> operator()(urng_t &amp;&amp; urange) <span class="keyword">const</span> &amp;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> std::forward&lt;urng_t&gt;(urange) | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([me = *<span class="keyword">this</span>] (<span class="keyword">auto</span> &amp;&amp; e)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">return</span> std::forward&lt;decltype(e)&gt;(e) | me;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        });</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::input_range urng_t&gt;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        requires std::ranges::input_range&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    constexpr <span class="keyword">auto</span> operator()(urng_t &amp;&amp; urange) &amp;&amp;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">return</span> std::forward&lt;urng_t&gt;(urange) | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([me = <a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">std::move</a>(*<span class="keyword">this</span>)] (<span class="keyword">auto</span> &amp;&amp; e)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">return</span> std::forward&lt;decltype(e)&gt;(e) | me;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        });</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> first_arg_t, <span class="keyword">typename</span> ...stored_arg_types&gt;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        requires (!std::ranges::input_range&lt;first_arg_t&gt;)</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    constexpr <span class="keyword">auto</span> operator()(first_arg_t &amp;&amp; first, stored_arg_types &amp;&amp; ...args)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="comment">// The adaptor currently wrapped is a proto-adaptor and this function has the arguments to &quot;complete&quot; it.</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// We extract the adaptor that is stored and invoke it with the given arguments.</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">// This returns an adaptor closure object.</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">auto</span> adaptor_closure = std::get&lt;0&gt;(this-&gt;arguments)(std::forward&lt;first_arg_t&gt;(first),</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                                            std::forward&lt;stored_arg_types&gt;(args)...);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="comment">// Now we wrap this closure object back into a views::deep to get the deep behaviour.</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classbio_1_1views_1_1deep.html#ae9693d1ff1b2c9588559d3e20898f82e">deep</a>&lt;decltype(adaptor_closure)&gt;{<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">std::move</a>(adaptor_closure)};</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    constexpr <span class="keyword">auto</span> operator()()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">// Proto-adaptors require arguments by definition, but some support defaulting those (e.g. views::translate).</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="comment">// This extracts the proto adaptor and invokes it without args which yields a different object, the closure</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="comment">// with defaulted arguments.</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keyword">auto</span> adaptor_closure = std::get&lt;0&gt;(this-&gt;arguments)();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">// Now we wrap this closure object back into a views::deep to get the deep behaviour.</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classbio_1_1views_1_1deep.html#ae9693d1ff1b2c9588559d3e20898f82e">deep</a>&lt;decltype(adaptor_closure)&gt;{<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">std::move</a>(adaptor_closure)};</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::input_range urng_t, <span class="keyword">typename</span> ...stored_arg_types&gt;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        requires (<span class="keyword">sizeof</span>...(stored_arg_types) &gt; 0)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    constexpr auto operator()(urng_t &amp;&amp; urange, stored_arg_types &amp;&amp; ...args)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keyword">auto</span> adaptor_closure = std::get&lt;0&gt;(this-&gt;arguments)(std::forward&lt;stored_arg_types&gt;(args)...);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">return</span> std::forward&lt;urng_t&gt;(urange) | <a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">std::move</a>(adaptor_closure);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;};</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> underlying_adaptor_t&gt;</div>
-<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classbio_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d">  241</a></span>&#160;<a class="code" href="classbio_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d">deep</a>(underlying_adaptor_t &amp;&amp; inner) -&gt; <a class="code" href="classbio_1_1views_1_1deep.html">deep&lt;underlying_adaptor_t&gt;</a>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;} <span class="comment">// namespace bio::views</span></div>
-<div class="ttc" id="aclassbio_1_1views_1_1deep_html"><div class="ttname"><a href="classbio_1_1views_1_1deep.html">bio::views::deep</a></div><div class="ttdoc">A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view.</div><div class="ttdef"><b>Definition:</b> deep.hpp:103</div></div>
-<div class="ttc" id="aclassbio_1_1views_1_1deep_html_a0a998aece495364bcaf8b36d50e6ee2d"><div class="ttname"><a href="classbio_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d">bio::views::deep::deep</a></div><div class="ttdeci">deep(underlying_adaptor_t &amp;&amp;inner) -&gt; deep&lt; underlying_adaptor_t &gt;</div><div class="ttdoc">Template argument deduction helper that preserves lvalue references and turns rvalue references into ...</div></div>
-<div class="ttc" id="aclassbio_1_1views_1_1deep_html_ae9693d1ff1b2c9588559d3e20898f82e"><div class="ttname"><a href="classbio_1_1views_1_1deep.html#ae9693d1ff1b2c9588559d3e20898f82e">bio::views::deep::deep</a></div><div class="ttdeci">constexpr deep() noexcept=default</div><div class="ttdoc">Defaulted.</div></div>
-<div class="ttc" id="agroup__core__type__list_html_ga707547c2877cfbd1a807d5a92acfd3b3"><div class="ttname"><a href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">bio::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a bio::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:496</div></div>
-<div class="ttc" id="agroup__views_html_ga0933bd5433f42cd5245eecce74dcac0a"><div class="ttname"><a href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">bio::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:68</div></div>
-<div class="ttc" id="anamespacebio_1_1views_html"><div class="ttname"><a href="namespacebio_1_1views.html">bio::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> std::forward&lt;urng_t&gt;(urange) |</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;               <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([me = *<span class="keyword">this</span>](<span class="keyword">auto</span> &amp;&amp; e) { <span class="keywordflow">return</span> std::forward&lt;decltype(e)&gt;(e) | me; });</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::input_range urng_t&gt;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        requires std::ranges::input_range&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    constexpr <span class="keyword">auto</span> operator()(urng_t &amp;&amp; urange) &amp;&amp;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> std::forward&lt;urng_t&gt;(urange) |</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;               <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([me = <a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">std::move</a>(*<span class="keyword">this</span>)](<span class="keyword">auto</span> &amp;&amp; e) { <span class="keywordflow">return</span> std::forward&lt;decltype(e)&gt;(e) | me; });</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> first_arg_t, <span class="keyword">typename</span>... stored_arg_types&gt;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        requires(!std::ranges::input_range&lt;first_arg_t&gt;)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    constexpr <span class="keyword">auto</span> operator()(first_arg_t &amp;&amp; first, stored_arg_types &amp;&amp;... args)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="comment">// The adaptor currently wrapped is a proto-adaptor and this function has the arguments to &quot;complete&quot; it.</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// We extract the adaptor that is stored and invoke it with the given arguments.</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="comment">// This returns an adaptor closure object.</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keyword">auto</span> adaptor_closure =</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;          std::get&lt;0&gt;(this-&gt;arguments)(std::forward&lt;first_arg_t&gt;(first), std::forward&lt;stored_arg_types&gt;(args)...);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// Now we wrap this closure object back into a views::deep to get the deep behaviour.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html#a87618602257526f4a1e0fb50685e5ea1">deep</a>&lt;decltype(adaptor_closure)&gt;{<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">std::move</a>(adaptor_closure)};</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    constexpr <span class="keyword">auto</span> operator()()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="comment">// Proto-adaptors require arguments by definition, but some support defaulting those (e.g. views::translate).</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="comment">// This extracts the proto adaptor and invokes it without args which yields a different object, the closure</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="comment">// with defaulted arguments.</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keyword">auto</span> adaptor_closure = std::get&lt;0&gt;(this-&gt;arguments)();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">// Now we wrap this closure object back into a views::deep to get the deep behaviour.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html#a87618602257526f4a1e0fb50685e5ea1">deep</a>&lt;decltype(adaptor_closure)&gt;{<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">std::move</a>(adaptor_closure)};</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::input_range urng_t, <span class="keyword">typename</span>... stored_arg_types&gt;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        requires(<span class="keyword">sizeof</span>...(stored_arg_types) &gt; 0)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    constexpr auto operator()(urng_t &amp;&amp; urange, stored_arg_types &amp;&amp;... args)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keyword">auto</span> adaptor_closure = std::get&lt;0&gt;(this-&gt;arguments)(std::forward&lt;stored_arg_types&gt;(args)...);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> std::forward&lt;urng_t&gt;(urange) | <a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">std::move</a>(adaptor_closure);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;};</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> underlying_adaptor_t&gt;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classbio_1_1ranges_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d">  237</a></span>&#160;<a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d">deep</a>(underlying_adaptor_t &amp;&amp; inner) -&gt; <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep&lt;underlying_adaptor_t&gt;</a>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1views_1_1deep_html"><div class="ttname"><a href="classbio_1_1ranges_1_1views_1_1deep.html">bio::ranges::views::deep</a></div><div class="ttdoc">A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view.</div><div class="ttdef"><b>Definition:</b> deep.hpp:103</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1views_1_1deep_html_a0a998aece495364bcaf8b36d50e6ee2d"><div class="ttname"><a href="classbio_1_1ranges_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d">bio::ranges::views::deep::deep</a></div><div class="ttdeci">deep(underlying_adaptor_t &amp;&amp;inner) -&gt; deep&lt; underlying_adaptor_t &gt;</div><div class="ttdoc">Template argument deduction helper that preserves lvalue references and turns rvalue references into ...</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1views_1_1deep_html_a87618602257526f4a1e0fb50685e5ea1"><div class="ttname"><a href="classbio_1_1ranges_1_1views_1_1deep.html#a87618602257526f4a1e0fb50685e5ea1">bio::ranges::views::deep::deep</a></div><div class="ttdeci">constexpr deep() noexcept=default</div><div class="ttdoc">Defaulted.</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
+<div class="ttc" id="agroup__views_html_gacc149746c0b9a2f5021709858f37de1b"><div class="ttname"><a href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::ranges::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:70</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
 <div class="ttc" id="aranges_2views_2detail_8hpp_html"><div class="ttname"><a href="ranges_2views_2detail_8hpp.html">detail.hpp</a></div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -216,7 +212,7 @@ $(document).ready(function(){initNavTree('deep_8hpp_source.html',''); initResiza
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="deep_8hpp.html">deep.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

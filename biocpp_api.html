@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -114,7 +114,7 @@ API stability</h1>
 <p>In general, you can expect all entities within the <code>bio</code> namespace to be usable throughout the entire release cycle of BioC++, i.e. if you write an application that includes <code>biocpp-core-3.1.1</code>, you should be able to re-compile it against <code>biocpp-core-3.4.5</code> without errors.</p>
 <p>Exceptions to the previous rule:</p><ol type="1">
 <li><b>Do not depend upon internal details.</b> If something is in a namespace or filename/path that includes the word <code>detail</code> or if it is private to a class type, you are not allowed to depend upon it any way. More generally, if it is not part of the <em>user documentation</em>, it is not part of the API.</li>
-<li><b>Do not depend on entities marked as "experimental" or "NOAPI"</b>. Major changes to the library like new modules are often marked as experimental within the first minor release they appear in. This means we do not guarantee stability until the next minor release happens and the experimental flag is removed. Very few entities in namespace <code>bio</code> are permanently marked as "NOAPI" which designates them as subject to unannounced change. This is usually the case for auxiliary data structures that would be part of <code>bio::detail</code> were they not needed to generate correct API documentation for entities in <code>bio</code>.</li>
+<li><b>Do not depend on entities marked as "experimental" or "NOAPI"</b>. Major changes to the library like new modules are often marked as experimental within the first minor release they appear in. This means we do not guarantee stability until the next minor release happens and the experimental flag is removed. Very few entities in namespace <code>bio</code> are permanently marked as "NOAPI" which designates them as subject to unannounced change. This is usually the case for auxiliary data structures that would be part of <code>bio::alphabet::detail</code> were they not needed to generate correct API documentation for entities in <code>bio</code>.</li>
 <li><b>Do not depend on the <em>signatures</em> of BioC++ APIs.</b> In particular you may not take the address of APIs in BioC++ and you may not use metaprogramming tricks to depend on those signatures. We reserve the right to:<ul>
 <li>Add new names to namespace <code>bio</code> and any sub-namespaces</li>
 <li>Add new member functions to types in namespace <code>bio</code></li>
@@ -126,7 +126,7 @@ API stability</h1>
 <li><b>Do not forward declare BioC++ APIs.</b> This is actually a sub-point of the previous one, but can be surprising. Any refactoring that changes template parameters, default parameters, or namespaces will be a breaking change in the face of forward-declarations.</li>
 <li><b>Avoid unnecessary dependency on Argument-Dependent Lookup (ADL) when calling BioC++ APIs.</b> Some APIs are designed to work via ADL (e.g. <code>operator&lt;&lt;</code> for iostreams, unqualified <code>swap</code> in generic code, etc.) For most APIs, however, ADL is not part of the design. Calling functions from namespace <code>bio</code> via ADL, unless that is explicitly intended as part of the design, should be avoided.</li>
 <li><b>Include What You Use.</b> We may make changes to the internal include-graph for BioC++ headers - if you use an API, please include the relevant header file directly.</li>
-<li><b>Do not make unqualified calls in the global namespace.</b> A call like <code>f(a);</code> for a function <code>f</code> in the global namespace can become ambiguous if/when we add <code>bio::f</code> (especially if <code>a</code> is a BioC++ type). We generally do not recommend you use the global namespace for anything. If you must, please qualify any call that accepts a type provided by BioC++.</li>
+<li><b>Do not make unqualified calls in the global namespace.</b> A call like <code>f(a);</code> for a function <code>f</code> in the global namespace can become ambiguous if/when we add <code>bio::alphabet::f</code> (especially if <code>a</code> is a BioC++ type). We generally do not recommend you use the global namespace for anything. If you must, please qualify any call that accepts a type provided by BioC++.</li>
 </ol>
 <p>In the very rare case that we feel a breaking change to the API is unavoidable, we promise to provide the following update path:</p><ul>
 <li>A new minor version is introduced that supports the new API.</li>
@@ -176,7 +176,7 @@ Dependencies</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

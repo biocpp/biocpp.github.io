@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variant_5fsize_5fv_5832',['variant_size_v',['https://en.cppreference.com/w/cpp/utility/variant/variant_size.html',0,'std']]]
+  ['zip_4320',['zip',['../namespacebio_1_1ranges_1_1views.html#a270adbe5daef90484e7b66a4c2cd4c30',1,'bio::ranges::views']]]
 ];

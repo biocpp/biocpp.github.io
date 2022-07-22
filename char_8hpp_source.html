@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -112,59 +112,54 @@ $(document).ready(function(){initNavTree('char_8hpp_source.html',''); initResiza
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="int__types_8hpp.html">bio/meta/detail/int_types.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacebio.html">   32</a></span>&#160;<span class="keyword">namespace </span>bio::detail</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacebio.html">   32</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> type&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;constexpr <span class="keywordtype">bool</span> is_char_adaptation_v = std::same_as&lt;type, char&gt;     ||</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                      std::same_as&lt;type, char16_t&gt; ||</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                      std::same_as&lt;type, char32_t&gt; ||</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                      std::same_as&lt;type, wchar_t&gt;;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace bio::detail</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacebio_1_1custom.html">   44</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1custom.html">bio::custom</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> <span class="keywordtype">char</span>_type&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    requires detail::is_char_adaptation_v&lt;char_type&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html">   55</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbio_1_1custom_1_1alphabet.html">alphabet</a>&lt;char_type&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a66a3899b7c0cad0a139b85618c7237b1">   58</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__alphabet.html#gabd77e4c1f2d28c1af7a223605bbb7c82">alphabet_size</a> =</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">detail::min_viable_uint_t&lt;detail::size_in_values_v&lt;char_type&gt;</a>&gt;{detail::size_in_values_v&lt;char_type&gt;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a79ec103099996c8ccf521a11e6cc2ad2">   65</a></span>&#160;    <span class="keyword">static</span> constexpr char_type <a class="code" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a79ec103099996c8ccf521a11e6cc2ad2">to_char</a>(char_type <span class="keyword">const</span> chr) noexcept</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> chr;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;bio::meta::non<span class="keywordtype">int</span>_<span class="keywordtype">char</span>acter <span class="keywordtype">char</span>_type&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">   38</a></span>&#160;consteval <span class="keyword">auto</span> <a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1size.html">size</a>, char_type <span class="keyword">const</span>) noexcept</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> meta::detail::min_viable_uint_v&lt;meta::detail::size_in_values_v&lt;char_type&gt;&gt;;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;bio::meta::non<span class="keywordtype">int</span>_<span class="keywordtype">char</span>acter <span class="keywordtype">char</span>_type&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group__adaptation.html#ga758ada11412f0ab8a959ad9f3aa8de73">   50</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html">to_rank</a> BIOCPP_DOXYGEN_ONLY(tag), char_type <span class="keyword">const</span> chr) noexcept</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">meta::detail::min_viable_uint_t&lt;alphabet::size&lt;char_type&gt;</a> - 1<span class="keyword">&gt;</span>&gt;(chr);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">template</span> &lt;bio::meta::non<span class="keywordtype">int</span>_<span class="keywordtype">char</span>acter <span class="keywordtype">char</span>_type&gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group__adaptation.html#ga2cddfb8dd3fcca10df98755b1b1c986a">   63</a></span>&#160;constexpr char_type &amp; <a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1assign__rank__to.html">assign_rank_to</a>                                     BIOCPP_DOXYGEN_ONLY(tag),</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                 decltype(<a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html">to_rank</a>{}, char_type{})) <span class="keyword">const</span> rank,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                 char_type &amp;                                        chr) noexcept</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> chr = rank;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#ae3377fb2892785984e2f9deadeb5ce3e">   74</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#ae3377fb2892785984e2f9deadeb5ce3e">to_rank</a>(char_type <span class="keyword">const</span> chr) noexcept</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">detail::min_viable_uint_t</a>&lt;<a class="code" href="group__alphabet.html#gabd77e4c1f2d28c1af7a223605bbb7c82">alphabet_size</a> - 1<span class="keyword">&gt;</span>&gt;(chr);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a2eaa3de210e0541ea698f1742bfb33c9">   84</a></span>&#160;    <span class="keyword">static</span> constexpr char_type &amp; <a class="code" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a2eaa3de210e0541ea698f1742bfb33c9">assign_char_to</a>(char_type <span class="keyword">const</span> chr2, char_type &amp; chr) noexcept</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> chr = chr2;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a83fa05a798ba56507cce53d56267e5b4">   94</a></span>&#160;    <span class="keyword">static</span> constexpr char_type &amp; <a class="code" href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a83fa05a798ba56507cce53d56267e5b4">assign_rank_to</a>(decltype(<a class="code" href="group__alphabet.html#ga9189b35f800d7e5abad51e021ea811a0">alphabet::to_rank</a>(char_type{})) <span class="keyword">const</span> rank,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                char_type &amp; chr) noexcept</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> chr = rank;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace bio::custom</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span> &lt;bio::meta::non<span class="keywordtype">int</span>_<span class="keywordtype">char</span>acter <span class="keywordtype">char</span>_type&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group__adaptation.html#gaff10c2f00effe0eefb0b5c22a3d6deb4">   77</a></span>&#160;constexpr char_type <a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1to__char.html">to_char</a> BIOCPP_DOXYGEN_ONLY(tag), char_type <span class="keyword">const</span> chr) noexcept</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> chr;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;bio::meta::non<span class="keywordtype">int</span>_<span class="keywordtype">char</span>acter <span class="keywordtype">char</span>_type&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group__adaptation.html#ga86bca4d8f0f2e56031c6b71ca79752b0">   90</a></span>&#160;constexpr char_type &amp; <a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1assign__char__to.html">assign_char_to</a>  BIOCPP_DOXYGEN_ONLY(tag),</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                 char_type <span class="keyword">const</span> chr2,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                 char_type &amp;     chr) noexcept</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> chr = chr2;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace bio::alphabet::cpo</span></div>
 <div class="ttc" id="aalphabet_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
 <div class="ttc" id="aconditional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a></div></div>
-<div class="ttc" id="agroup__alphabet_html_ga9189b35f800d7e5abad51e021ea811a0"><div class="ttname"><a href="group__alphabet.html#ga9189b35f800d7e5abad51e021ea811a0">bio::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:144</div></div>
-<div class="ttc" id="agroup__alphabet_html_gabd77e4c1f2d28c1af7a223605bbb7c82"><div class="ttname"><a href="group__alphabet.html#gabd77e4c1f2d28c1af7a223605bbb7c82">bio::alphabet_size</a></div><div class="ttdeci">constexpr auto alphabet_size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:708</div></div>
+<div class="ttc" id="agroup__adaptation_html_ga90e36e0f53be2c688535b847e3d626e1"><div class="ttname"><a href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">bio::alphabet::cpo::tag_invoke</a></div><div class="ttdeci">consteval auto tag_invoke(size, char_type const) noexcept</div><div class="ttdoc">The number of values the char type can take (e.g. 256 for char).</div><div class="ttdef"><b>Definition:</b> char.hpp:38</div></div>
 <div class="ttc" id="aint__types_8hpp_html"><div class="ttname"><a href="int__types_8hpp.html">int_types.hpp</a></div><div class="ttdoc">Provides metaprogramming utilities for integer types.</div></div>
-<div class="ttc" id="anamespacebio_1_1custom_html"><div class="ttname"><a href="namespacebio_1_1custom.html">bio::custom</a></div><div class="ttdoc">A namespace for third party and standard library specialisations of BioC++ customisation points.</div><div class="ttdef"><b>Definition:</b> char.hpp:45</div></div>
-<div class="ttc" id="astructbio_1_1custom_1_1alphabet_3_01char__type_01_4_html_a2eaa3de210e0541ea698f1742bfb33c9"><div class="ttname"><a href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a2eaa3de210e0541ea698f1742bfb33c9">bio::custom::alphabet&lt; char_type &gt;::assign_char_to</a></div><div class="ttdeci">static constexpr char_type &amp; assign_char_to(char_type const chr2, char_type &amp;chr) noexcept</div><div class="ttdoc">Assign a char to the char type (same as calling =).</div><div class="ttdef"><b>Definition:</b> char.hpp:84</div></div>
-<div class="ttc" id="astructbio_1_1custom_1_1alphabet_3_01char__type_01_4_html_a79ec103099996c8ccf521a11e6cc2ad2"><div class="ttname"><a href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a79ec103099996c8ccf521a11e6cc2ad2">bio::custom::alphabet&lt; char_type &gt;::to_char</a></div><div class="ttdeci">static constexpr char_type to_char(char_type const chr) noexcept</div><div class="ttdoc">Converting char to char is no-op (it will just return the value you pass in).</div><div class="ttdef"><b>Definition:</b> char.hpp:65</div></div>
-<div class="ttc" id="astructbio_1_1custom_1_1alphabet_3_01char__type_01_4_html_a83fa05a798ba56507cce53d56267e5b4"><div class="ttname"><a href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#a83fa05a798ba56507cce53d56267e5b4">bio::custom::alphabet&lt; char_type &gt;::assign_rank_to</a></div><div class="ttdeci">static constexpr char_type &amp; assign_rank_to(decltype(alphabet::to_rank(char_type{})) const rank, char_type &amp;chr) noexcept</div><div class="ttdoc">Assigning a rank to a char is the same as assigning it a numeric value.</div><div class="ttdef"><b>Definition:</b> char.hpp:94</div></div>
-<div class="ttc" id="astructbio_1_1custom_1_1alphabet_3_01char__type_01_4_html_ae3377fb2892785984e2f9deadeb5ce3e"><div class="ttname"><a href="structbio_1_1custom_1_1alphabet_3_01char__type_01_4.html#ae3377fb2892785984e2f9deadeb5ce3e">bio::custom::alphabet&lt; char_type &gt;::to_rank</a></div><div class="ttdeci">static constexpr auto to_rank(char_type const chr) noexcept</div><div class="ttdoc">Convert char to rank by casting to an unsigned integral type of same size.</div><div class="ttdef"><b>Definition:</b> char.hpp:74</div></div>
-<div class="ttc" id="astructbio_1_1custom_1_1alphabet_html"><div class="ttname"><a href="structbio_1_1custom_1_1alphabet.html">bio::custom::alphabet</a></div><div class="ttdoc">A type that can be specialised to provide customisation point implementations so that third party typ...</div><div class="ttdef"><b>Definition:</b> concept.hpp:49</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1cpo_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></div><div class="ttdoc">A namespace for third party and standard library specialisations of BioC++ customisation points.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1assign__char__to_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1assign__char__to.html">bio::alphabet::cpo::assign_char_to</a></div><div class="ttdoc">Customisation tag for bio::alphabet::assign_char_to.</div><div class="ttdef"><b>Definition:</b> concept.hpp:283</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1assign__rank__to_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1assign__rank__to.html">bio::alphabet::cpo::assign_rank_to</a></div><div class="ttdoc">Customisation tag for bio::alphabet::assign_rank_to.#.</div><div class="ttdef"><b>Definition:</b> concept.hpp:121</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1size_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1size.html">bio::alphabet::cpo::size</a></div><div class="ttdoc">CPO tag definition for bio::alphabet::size.</div><div class="ttdef"><b>Definition:</b> concept.hpp:570</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1to__char_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1to__char.html">bio::alphabet::cpo::to_char</a></div><div class="ttdoc">Customisation tag for bio::alphabet::to_char.</div><div class="ttdef"><b>Definition:</b> concept.hpp:201</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1to__rank_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html">bio::alphabet::cpo::to_rank</a></div><div class="ttdoc">Customisation tag for bio::alphabet::to_rank.</div><div class="ttdef"><b>Definition:</b> concept.hpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -174,7 +169,7 @@ $(document).ready(function(){initNavTree('char_8hpp_source.html',''); initResiza
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_afc8cbaf4e497a6ce725e04990a5cbfb.html">adaptation</a></li><li class="navelem"><a class="el" href="char_8hpp.html">char.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classbio_1_1bitcompressed__vector.html
 <a href="#nested-classes">Classes</a> &#124;
 <a href="classbio_1_1bitcompressed__vector-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bio::bitcompressed_vector&lt; alphabet_type &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__range.html">Range</a> &raquo; <a class="el" href="group__container.html">Container</a></div></div>  </div>
+<div class="title">bio::bitcompressed_vector&lt; alphabet_type &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__range.html">Ranges</a> &raquo; <a class="el" href="group__container.html">Container</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -128,7 +128,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="separator:a7fbce5b446665ed3468cef3ba594c05b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9726a45c5a216b20db7950b1115334f"><td class="memItemLeft" align="right" valign="top"><a id="aa9726a45c5a216b20db7950b1115334f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1bitcompressed__vector.html#aa9726a45c5a216b20db7950b1115334f">const_reference</a> = alphabet_type</td></tr>
-<tr class="memdesc:aa9726a45c5a216b20db7950b1115334f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equals the alphabet_type / <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>. <br /></td></tr>
+<tr class="memdesc:aa9726a45c5a216b20db7950b1115334f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equals the alphabet_type / value_type. <br /></td></tr>
 <tr class="separator:aa9726a45c5a216b20db7950b1115334f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cc5c931e4e2eb5dbe0980684d1e8ba9"><td class="memItemLeft" align="right" valign="top"><a id="a7cc5c931e4e2eb5dbe0980684d1e8ba9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1bitcompressed__vector.html#a7cc5c931e4e2eb5dbe0980684d1e8ba9">iterator</a> = detail::random_access_iterator&lt; <a class="el" href="classbio_1_1bitcompressed__vector.html">bitcompressed_vector</a> &gt;</td></tr>
@@ -376,7 +376,7 @@ class bio::bitcompressed_vector&lt; alphabet_type &gt;</h3>
 <div class="line">    <a class="code" href="classbio_1_1bitcompressed__vector.html">bio::bitcompressed_vector&lt;bio::dna4&gt;</a> v1{<span class="stringliteral">&quot;ACGT&quot;</span>_dna4}; <span class="comment">// data occupies 1 byte in memory</span></div>
 <div class="line">}</div>
 <div class="ttc" id="abitcompressed__vector_8hpp_html"><div class="ttname"><a href="bitcompressed__vector_8hpp.html">bitcompressed_vector.hpp</a></div><div class="ttdoc">Provides bio::bitcompressed_vector.</div></div>
-<div class="ttc" id="aclassbio_1_1bitcompressed__vector_html"><div class="ttname"><a href="classbio_1_1bitcompressed__vector.html">bio::bitcompressed_vector</a></div><div class="ttdoc">A space-optimised version of std::vector that compresses multiple letters into a single byte.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:67</div></div>
+<div class="ttc" id="aclassbio_1_1bitcompressed__vector_html"><div class="ttname"><a href="classbio_1_1bitcompressed__vector.html">bio::bitcompressed_vector</a></div><div class="ttdoc">A space-optimised version of std::vector that compresses multiple letters into a single byte.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:66</div></div>
 <div class="ttc" id="adna4_8hpp_html"><div class="ttname"><a href="dna4_8hpp.html">dna4.hpp</a></div><div class="ttdoc">Provides bio::dna4, container aliases and string literals.</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a></div></div>
 </div><!-- fragment --><h3>Thread safety</h3>
@@ -414,7 +414,7 @@ template&lt;std::ranges::input_range other_range_t&gt; </div>
 <p>Construct from a different range. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">other_range_t</td><td>The type of range to construct from; must satisfy std::ranges::input_range and std::common_reference_with&lt;std::ranges::range_value_t&lt;other_range_t&gt;, <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>&gt;. </td></tr>
+    <tr><td class="paramname">other_range_t</td><td>The type of range to construct from; must satisfy std::ranges::input_range and std::common_reference_with&lt;std::ranges::range_value_t&lt;other_range_t&gt;, value_type&gt;. </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,7 +476,7 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
   </dd>
 </dl>
 <h3>Complexity</h3>
-<p>In <img class="formulaInl" alt="$O(count)$" src="form_8.png" width="68" height="19"/>.</p>
+<p>In <img class="formulaInl" alt="$O(count)$" src="form_3.png" width="68" height="19"/>.</p>
 <h3>Exceptions</h3>
 <p>Strong exception guarantee (no data is modified in case an exception is thrown). </p>
 
@@ -523,7 +523,7 @@ template&lt;std::forward_iterator begin_iterator_type, typename end_iterator_typ
 <p>Construct from pair of iterators. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">begin_iterator_type</td><td>Must model std::forward_iterator and std::common_reference_with&lt;std::iter_value_t&lt;begin_iterator_type&gt;, <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>&gt;. </td></tr>
+    <tr><td class="paramname">begin_iterator_type</td><td>Must model std::forward_iterator and std::common_reference_with&lt;std::iter_value_t&lt;begin_iterator_type&gt;, value_type&gt;. </td></tr>
     <tr><td class="paramname">end_iterator_type</td><td>Must model std::sentinel_for. </td></tr>
   </table>
   </dd>
@@ -571,7 +571,7 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
 <p>Construct from <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ilist</td><td>A <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code> of <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ilist</td><td>A <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code> of value_type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -624,7 +624,7 @@ template&lt;std::forward_iterator begin_iterator_type, typename end_iterator_typ
 <p>Assign from pair of iterators. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">begin_iterator_type</td><td>Must satisfy std::forward_iterator and std::common_reference_with&lt;std::iter_value_t&lt;begin_iterator_type&gt;, <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>&gt;. </td></tr>
+    <tr><td class="paramname">begin_iterator_type</td><td>Must satisfy std::forward_iterator and std::common_reference_with&lt;std::iter_value_t&lt;begin_iterator_type&gt;, value_type&gt;. </td></tr>
     <tr><td class="paramname">end_iterator_type</td><td>Must satisfy std::sentinel_for. </td></tr>
   </table>
   </dd>
@@ -674,7 +674,7 @@ template&lt;std::ranges::input_range other_range_t&gt; </div>
 <p>Assign from a different range. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">other_range_t</td><td>The type of range to be inserted; must satisfy std::ranges::input_range and std::common_reference_with&lt;std::ranges::range_value_t&lt;other_range_t&gt;, <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>&gt;. </td></tr>
+    <tr><td class="paramname">other_range_t</td><td>The type of range to be inserted; must satisfy std::ranges::input_range and std::common_reference_with&lt;std::ranges::range_value_t&lt;other_range_t&gt;, value_type&gt;. </td></tr>
   </table>
   </dd>
 </dl>
@@ -736,7 +736,7 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
   </dd>
 </dl>
 <h3>Complexity</h3>
-<p>In <img class="formulaInl" alt="$O(count)$" src="form_8.png" width="68" height="19"/>.</p>
+<p>In <img class="formulaInl" alt="$O(count)$" src="form_3.png" width="68" height="19"/>.</p>
 <h3>Exceptions</h3>
 <p>Strong exception guarantee (no data is modified in case an exception is thrown). </p>
 
@@ -771,7 +771,7 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
 <p>Assign from <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ilist</td><td>A <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code> of <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ilist</td><td>A <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code> of value_type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1148,7 +1148,6 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
 </div><div class="memdoc">
 
 <p>Removes all elements from the container. </p>
-<dl class="section return"><dt>Returns</dt><dd>The number of elements in the container.</dd></dl>
 <h3>Complexity</h3>
 <p>Constant.</p>
 <h3>Exceptions</h3>
@@ -1474,7 +1473,7 @@ template&lt;std::forward_iterator begin_iterator_type, typename end_iterator_typ
 <p>Inserts elements from range <code>[begin_it, end_it)</code> before position in the container. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">begin_iterator_type</td><td>Must satisfy std::forward_iterator and std::common_reference_with&lt;std::iter_value_t&lt;begin_iterator_type&gt;, <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>&gt;. </td></tr>
+    <tr><td class="paramname">begin_iterator_type</td><td>Must satisfy std::forward_iterator and std::common_reference_with&lt;std::iter_value_t&lt;begin_iterator_type&gt;, value_type&gt;. </td></tr>
     <tr><td class="paramname">end_iterator_type</td><td>Must satisfy std::sentinel_for. </td></tr>
   </table>
   </dd>
@@ -1726,7 +1725,7 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
 <p>Assign from <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ilist</td><td>A <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code> of <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ilist</td><td>A <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/initializer_list.html">std::initializer_list</a></code> of value_type.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2333,7 +2332,7 @@ template&lt;writable_semialphabet alphabet_type&gt; </div>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="classbio_1_1bitcompressed__vector.html">bitcompressed_vector</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Mon Jul 4 2022 15:22:32 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -9,21 +9,21 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23)">
 <title>Concept</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-23 137,-23 137,4 -4,4"/>
-<!-- Node1 -->
+<!-- Node2 -->
 <g id="node1" class="node">
-<title>Node1</title>
-<g id="a_node1"><a xlink:title="Additional concepts that are not specific to a BioC++ module.">
-<polygon fill="#bfbfbf" stroke="black" points="133,-19 77,-19 77,0 133,0 133,-19"/>
-<text text-anchor="middle" x="105" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Concept</text>
+<title>Node2</title>
+<g id="a_node1"><a xlink:href="group__meta.html" target="_top" xlink:title="Provides metaprogramming utilities, concepts and some helper classes.">
+<polygon fill="white" stroke="black" points="41,-19 0,-19 0,0 41,0 41,-19"/>
+<text text-anchor="middle" x="20.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Meta</text>
 </a>
 </g>
 </g>
-<!-- Node2 -->
+<!-- Node1 -->
 <g id="node2" class="node">
-<title>Node2</title>
-<g id="a_node2"><a xlink:href="group__core.html" target="_top" xlink:title="Provides core functionality used by multiple modules.">
-<polygon fill="white" stroke="black" points="41,-19 0,-19 0,0 41,0 41,-19"/>
-<text text-anchor="middle" x="20.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Meta</text>
+<title>Node1</title>
+<g id="a_node2"><a xlink:title="Additional concepts that are not specific to a BioC++ module.">
+<polygon fill="#bfbfbf" stroke="black" points="133,-19 77,-19 77,0 133,0 133,-19"/>
+<text text-anchor="middle" x="105" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Concept</text>
 </a>
 </g>
 </g>

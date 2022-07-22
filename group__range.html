@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BioC++: Range</title>
+<title>BioC++: Ranges</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -97,20 +97,23 @@ $(document).ready(function(){initNavTree('group__range.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Range</div>  </div>
+<div class="title">Ranges</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The range module provides general purpose containers, decorators and views.  
+<p>The ranges module provides general purpose containers, decorators and views.  
 <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Range:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for Ranges:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__range.svg" width="207" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__range.svg" width="215" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
@@ -124,21 +127,41 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1const__iterable__range.html">const_iterable_range</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies requirements of an input range type for which the <code>const</code> version of that type satisfies the same strength input range concept as the non-const version.  <a href="interfacebio_1_1const__iterable__range.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1const__iterable__range.html">const_iterable_range</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies requirements of an input range type for which the <code>const</code> version of that type satisfies the same strength input range concept as the non-const version.  <a href="interfacebio_1_1ranges_1_1const__iterable__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1pseudo__random__access__iterator.html">pseudo_random_access_iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept checks if an iterator type models pseudo random access.  <a href="interfacebio_1_1pseudo__random__access__iterator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1pseudo__random__access__iterator.html">pseudo_random_access_iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept checks if an iterator type models pseudo random access.  <a href="interfacebio_1_1ranges_1_1pseudo__random__access__iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1pseudo__random__access__range.html">pseudo_random_access_range</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept checks if a type models a pseudo random access range.  <a href="interfacebio_1_1pseudo__random__access__range.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1pseudo__random__access__range.html">pseudo_random_access_range</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept checks if a type models a pseudo random access range.  <a href="interfacebio_1_1ranges_1_1pseudo__random__access__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1sequence.html">sequence</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generic concept for a sequence.  <a href="interfacebio_1_1sequence.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1range__compatible.html">range_compatible</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two types are "compatible" if their <a class="el" href="group__range.html#ga6328137c2baad5fa78067433d4a21546" title="Returns the number of times you can call std::ranges::value_type_t recursively on t (type trait).">bio::ranges::range_dimension_v</a> and their <a class="el" href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d" title="Shortcut for bio::ranges::range_innermost_value (transformation_trait shortcut).">bio::ranges::range_innermost_value_t</a> are the same.  <a href="interfacebio_1_1ranges_1_1range__compatible.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html">bio::ranges::range_innermost_value&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively determines the <code>value_type</code> on containers and/or iterators.  <a href="structbio_1_1ranges_1_1range__innermost__value.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1sequence.html">sequence</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generic concept for a sequence.  <a href="interfacebio_1_1ranges_1_1sequence.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d">bio::ranges::range_innermost_value_t</a> = typename <a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html">range_innermost_value</a>&lt; t &gt;::type</td></tr>
+<tr class="memdesc:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::ranges::range_innermost_value</a> (transformation_trait shortcut).  <a href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d">More...</a><br /></td></tr>
+<tr class="separator:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga6328137c2baad5fa78067433d4a21546"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga6328137c2baad5fa78067433d4a21546"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__range.html#ga6328137c2baad5fa78067433d4a21546">bio::ranges::range_dimension_v</a> = 1</td></tr>
+<tr class="memdesc:ga6328137c2baad5fa78067433d4a21546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of times you can call <code>std::ranges::value_type_t</code> recursively on t (type trait).  <a href="group__range.html#ga6328137c2baad5fa78067433d4a21546">More...</a><br /></td></tr>
+<tr class="separator:ga6328137c2baad5fa78067433d4a21546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The range module provides general purpose containers, decorators and views. </p>
+<p>The ranges module provides general purpose containers, decorators and views. </p>
 <h3>Introduction</h3>
 <p><em>Ranges</em> are an abstraction of "a collection of items", or "something iterable". The most basic definition requires only the existence of <code>begin()</code> and <code>end()</code> on the range.</p>
 <p>There are different ways to classify ranges, one way is through the capabilities of its default iterators. This is resembled by the range concepts defined in this module. Another way to classify ranges is by their storage behaviour, i.e. whether they own the data that is accessible through them. See below for more details.</p>
@@ -152,12 +175,66 @@ Classes</h2></td></tr>
 <h3>Storage behaviour</h3>
 <p><b>Containers</b> are the ranges most well known, they own their elements. BioC++ makes use of standard STL containers like <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code>, but also implements some custom containers. See the <a class="el" href="group__container.html">container submodule </a> for more details.</p>
 <p><b>Views</b> are ranges that are usually defined on another range and transform the underlying range via some algorithm or operation, however, some views are stand-alone, i.e. they are just an algorithm that produces elements. Views do not own any data beyond their algorithm and possible parameters to it and they can always be copied in constant time. The algorithm is required to be lazy-evaluated so it is feasible to combine multiple views. See the <a class="el" href="group__views.html">views submodule </a> for more details.</p>
-<p>The storage behaviour is orthogonal to the range concepts defined by the iterators mentioned above, i.e. you can have a container that satisfies std::ranges::random_access_range (e.g. <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> does, but <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a></code> does not) and you can have views or decorators that do so or don't. For some combinations of iterator capabilities and storage behaviour there are extra concept definitions, e.g. <a class="el" href="interfacebio_1_1random__access__container.html" title="A more refined container concept than bio::sequence_container.">bio::random_access_container</a>.</p>
+<p>The storage behaviour is orthogonal to the range concepts defined by the iterators mentioned above, i.e. you can have a container that satisfies std::ranges::random_access_range (e.g. <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> does, but <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a></code> does not) and you can have views or decorators that do so or don't. For some combinations of iterator capabilities and storage behaviour there are extra concept definitions, e.g. bio::ranges::detail::random_access_container.</p>
 <dl class="section attention"><dt>Attention</dt><dd></dd></dl>
 <p>There are ranges in BioC++ that fit neither of these storage categories, e.g. all the files are <a class="el" href="">input ranges </a> (if they are input files) and <a class="el" href="">output ranges </a> (if they are output files), but they are neither containers, decorators nor views.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="range_8hpp.html" title="Provides various transformation traits used by the range module.">range.hpp</a> </dd>
+<dl class="section see"><dt>See also</dt><dd>range.hpp </dd>
 <dd>
 <a href="https://ericniebler.github.io/range-v3/index.html">https://ericniebler.github.io/range-v3/index.html</a> </dd></dl>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga7f6b48fe07fecaad1c6c747d2cc7383d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f6b48fe07fecaad1c6c747d2cc7383d">&#9670;&nbsp;</a></span>range_innermost_value_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d">bio::ranges::range_innermost_value_t</a> = typedef typename <a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html">range_innermost_value</a>&lt;t&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shortcut for <a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::ranges::range_innermost_value</a> (transformation_trait shortcut). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::ranges::range_innermost_value</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga6328137c2baad5fa78067433d4a21546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6328137c2baad5fa78067433d4a21546">&#9670;&nbsp;</a></span>range_dimension_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr size_t bio::ranges::range_dimension_v = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of times you can call <code>std::ranges::value_type_t</code> recursively on t (type trait). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">t</td><td>The type to be queried; must resolve <code>std::ranges::value_type_t</code> at least once.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Attention, this type trait implicitly removes cv-qualifiers and reference from the types it recurses on and returns. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -166,7 +243,7 @@ Classes</h2></td></tr>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -1,7 +1,7 @@
 var classbio_1_1dna15 =
 [
     [ "char_type", "classbio_1_1dna15.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1dna15.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1dna15.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "dna15", "classbio_1_1dna15.html#ac8e801a78871f00fca2d0d3ba9d72607", null ],
     [ "dna15", "classbio_1_1dna15.html#a3da3295d7ed7df0cccad6f4df66d702c", null ],
     [ "dna15", "classbio_1_1dna15.html#ab2013722f3f3e4b9f38a78b5c30eafd5", null ],

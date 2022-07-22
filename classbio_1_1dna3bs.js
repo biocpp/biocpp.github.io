@@ -1,7 +1,7 @@
 var classbio_1_1dna3bs =
 [
     [ "char_type", "classbio_1_1dna3bs.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1dna3bs.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1dna3bs.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "dna3bs", "classbio_1_1dna3bs.html#a7101da2e42e6aaf20dc7f48aab74dcb4", null ],
     [ "dna3bs", "classbio_1_1dna3bs.html#a983742ed357c4b373d1480088046152d", null ],
     [ "dna3bs", "classbio_1_1dna3bs.html#a5fac09054d48557c2224f669173e4820", null ],

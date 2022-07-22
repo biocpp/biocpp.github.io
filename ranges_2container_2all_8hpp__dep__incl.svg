@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the range module .">
+<g id="a_node2"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the ranges module .">
 <polygon fill="white" stroke="black" points="6,-0.5 6,-19.5 110,-19.5 110,-0.5 6,-0.5"/>
 <text text-anchor="middle" x="58" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
 </a>

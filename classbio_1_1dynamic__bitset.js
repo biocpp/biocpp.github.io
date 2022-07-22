@@ -5,7 +5,7 @@ var classbio_1_1dynamic__bitset =
     [ "difference_type", "classbio_1_1dynamic__bitset.html#a24b2a8cf0d99d44d6d654ca0d2b6d72b", null ],
     [ "iterator", "classbio_1_1dynamic__bitset.html#a96939d4f597311aae24999862dbda7e2", null ],
     [ "reference", "classbio_1_1dynamic__bitset.html#a2be6f3db86c6d0ad1dca5e04135f2344", null ],
-    [ "size_type", "classbio_1_1dynamic__bitset.html#a94446951049c5ba2f577bc4bc9f78b32", null ],
+    [ "size_type", "classbio_1_1dynamic__bitset.html#a31cba17fbef18e97458f1e5719256e41", null ],
     [ "value_type", "classbio_1_1dynamic__bitset.html#a592567f47c452fc8d6a0a10d8173e3e1", null ],
     [ "dynamic_bitset", "classbio_1_1dynamic__bitset.html#a9b3e7d12b0499e9ee0167f8fd847b974", null ],
     [ "dynamic_bitset", "classbio_1_1dynamic__bitset.html#a642ddbb81c5fb74db5763ef430b99494", null ],

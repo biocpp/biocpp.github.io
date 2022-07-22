@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('group__container.html',''); initResiza
   <div class="summary">
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">Container<div class="ingroups"><a class="el" href="group__range.html">Range</a></div></div>  </div>
+<div class="title">Container<div class="ingroups"><a class="el" href="group__range.html">Ranges</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -109,43 +109,32 @@ $(document).ready(function(){initNavTree('group__container.html',''); initResiza
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__container.svg" width="207" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__container.svg" width="215" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1aligned__allocator.html">bio::aligned_allocator&lt; value_t, alignment_v &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates uninitialized storage whose memory-alignment is specified by <em>alignment</em>.  <a href="classbio_1_1aligned__allocator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1aligned__allocator.html">bio::ranges::aligned_allocator&lt; value_t, alignment_v &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates uninitialized storage whose memory-alignment is specified by <em>alignment</em>.  <a href="classbio_1_1ranges_1_1aligned__allocator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1bitcompressed__vector.html">bio::bitcompressed_vector&lt; alphabet_type &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A space-optimised version of <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> that compresses multiple letters into a single byte.  <a href="classbio_1_1bitcompressed__vector.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html">bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A space-optimised version of <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> that compresses multiple letters into a single byte.  <a href="classbio_1_1ranges_1_1bitcompressed__vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1concatenated__sequences.html">bio::concatenated_sequences&lt; inner_type, data_delimiters_type &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container that stores sequences concatenated internally.  <a href="classbio_1_1concatenated__sequences.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1concatenated__sequences.html">bio::ranges::concatenated_sequences&lt; underlying_container_type, data_delimiters_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container that stores sequences concatenated internally.  <a href="classbio_1_1ranges_1_1concatenated__sequences.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1container.html">container</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (most general) container concept as defined by the standard library.  <a href="interfacebio_1_1container.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr bitset implementation with dynamic size at compile time.  <a href="classbio_1_1ranges_1_1dynamic__bitset.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1dynamic__bitset.html">bio::dynamic_bitset&lt; bit_capacity &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr bitset implementation with dynamic size at compile time.  <a href="classbio_1_1dynamic__bitset.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01bio_1_1ranges_1_1dynamic__bitset_3_01cap_01_4_01_4.html">std::hash&lt; bio::ranges::dynamic_bitset&lt; cap &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a <code><a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html" title="A constexpr bitset implementation with dynamic size at compile time.">bio::ranges::dynamic_bitset</a></code>.  <a href="structstd_1_1hash_3_01bio_1_1ranges_1_1dynamic__bitset_3_01cap_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01bio_1_1dynamic__bitset_3_01cap_01_4_01_4.html">std::hash&lt; bio::dynamic_bitset&lt; cap &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a <code><a class="el" href="classbio_1_1dynamic__bitset.html" title="A constexpr bitset implementation with dynamic size at compile time.">bio::dynamic_bitset</a></code>.  <a href="structstd_1_1hash_3_01bio_1_1dynamic__bitset_3_01cap_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1small__string.html">bio::ranges::small_string&lt; capacity_ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a small string that can be used for compile time computations.  <a href="classbio_1_1ranges_1_1small__string.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1random__access__container.html">random_access_container</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A more refined container concept than <a class="el" href="interfacebio_1_1sequence__container.html" title="A more refined container concept than bio::container.">bio::sequence_container</a>.  <a href="interfacebio_1_1random__access__container.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1reservible__container.html">reservible_container</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A more refined container concept than <a class="el" href="interfacebio_1_1random__access__container.html" title="A more refined container concept than bio::sequence_container.">bio::random_access_container</a>.  <a href="interfacebio_1_1reservible__container.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1sequence__container.html">sequence_container</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A more refined container concept than <a class="el" href="interfacebio_1_1container.html" title="The (most general) container concept as defined by the standard library.">bio::container</a>.  <a href="interfacebio_1_1sequence__container.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1small__string.html">bio::small_string&lt; capacity_ &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements a small string that can be used for compile time computations.  <a href="classbio_1_1small__string.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1small__vector.html">bio::small_vector&lt; value_type_, capacity_ &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr vector implementation with dynamic size at compile time.  <a href="classbio_1_1small__vector.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1small__vector.html">bio::ranges::small_vector&lt; value_type_, capacity_ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr vector implementation with dynamic size at compile time.  <a href="classbio_1_1ranges_1_1small__vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -161,7 +150,7 @@ range/container/all.hpp </dd></dl>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

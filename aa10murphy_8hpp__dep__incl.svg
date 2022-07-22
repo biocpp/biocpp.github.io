@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides bio::aa10murphy, container aliases and string literals.">
+<g id="a_node1"><a xlink:title="Provides bio::alphabet::aa10murphy, container aliases and string literals.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-123.5 0,-153.5 131,-153.5 131,-123.5 0,-123.5"/>
 <text text-anchor="start" x="8" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/aminoacid</text>
 <text text-anchor="middle" x="65.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/aa10murphy.hpp</text>

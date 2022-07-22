@@ -34,8 +34,6 @@ var classbio_1_1concatenated__sequences =
     [ "concat_capacity", "classbio_1_1concatenated__sequences.html#a086ac010d2595397ddd08e3f2e185d92", null ],
     [ "concat_reserve", "classbio_1_1concatenated__sequences.html#a4671553950a4e5b96ca4323501ea3d95", null ],
     [ "concat_size", "classbio_1_1concatenated__sequences.html#aa7f4166df7793c0999873191ba7580e5", null ],
-    [ "data", "classbio_1_1concatenated__sequences.html#af19d0deacb3cf5c02254341d6969b1aa", null ],
-    [ "data", "classbio_1_1concatenated__sequences.html#a9452776bd32fde92ddd1eb16434fd50f", null ],
     [ "empty", "classbio_1_1concatenated__sequences.html#afea7feb6e9c576931687677dd2381138", null ],
     [ "end", "classbio_1_1concatenated__sequences.html#adfe6f1c2fffb4d503c19bf07f33ea7a3", null ],
     [ "end", "classbio_1_1concatenated__sequences.html#a1738c2874f565415be247372534206e7", null ],

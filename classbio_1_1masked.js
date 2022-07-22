@@ -1,7 +1,7 @@
 var classbio_1_1masked =
 [
     [ "char_type", "classbio_1_1masked.html#a60431b61105377cc7664ea970b186b4d", null ],
-    [ "rank_type", "classbio_1_1masked.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1masked.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "sequence_alphabet_type", "classbio_1_1masked.html#ab3fcb0cae26d7e7623dd1f649c0b974e", null ],
     [ "masked", "classbio_1_1masked.html#a9ae3bff451b880598242ff0a24812ee3", null ],
     [ "masked", "classbio_1_1masked.html#ad3ecb330bca214e9cd8dea2765ee9928", null ],

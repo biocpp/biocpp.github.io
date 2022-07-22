@@ -1,6 +1,6 @@
 var alphabet_2quality_2concept_8hpp =
 [
-    [ "alphabet_phred_t", "alphabet_2quality_2concept_8hpp.html#gaec6fd89f46ef56795d66568184bdba0a", null ],
-    [ "assign_phred_to", "alphabet_2quality_2concept_8hpp.html#gab0eb4bc93da56673fb1e3e1f8994c0b3", null ],
-    [ "to_phred", "alphabet_2quality_2concept_8hpp.html#ga0a0a566ce2f93ff9cb4f556b0a3a2445", null ]
+    [ "alphabet_phred_t", "alphabet_2quality_2concept_8hpp.html#ga76cffac7b2bdd4ae12fa0075e6563118", null ],
+    [ "assign_phred_to", "alphabet_2quality_2concept_8hpp.html#ga8ea6aae1e3eb068822e6d7dd5f73f78d", null ],
+    [ "to_phred", "alphabet_2quality_2concept_8hpp.html#gac7faff4dee7175ef96d5f94479453df2", null ]
 ];

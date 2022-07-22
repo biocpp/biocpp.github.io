@@ -1,7 +1,7 @@
 var classbio_1_1cigar__op =
 [
     [ "char_type", "classbio_1_1cigar__op.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1cigar__op.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1cigar__op.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "cigar_op", "classbio_1_1cigar__op.html#afcbeed792dcdbde22fd550fd7e54518e", null ],
     [ "cigar_op", "classbio_1_1cigar__op.html#a42debf60f5e147ccf6576579bfe4f95a", null ],
     [ "cigar_op", "classbio_1_1cigar__op.html#a45df6e0c8878744f9e1645854d866275", null ],

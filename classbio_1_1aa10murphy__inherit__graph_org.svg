@@ -138,7 +138,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="interfacebio_1_1trivially__copyable.html" target="_top" xlink:title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;.">
+<g id="a_node9"><a xlink:href="interfacebio_1_1meta_1_1trivially__copyable.html" target="_top" xlink:title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;.">
 <polygon fill="white" stroke="black" points="740.5,-166.5 740.5,-185.5 844.5,-185.5 844.5,-166.5 740.5,-166.5"/>
 <text text-anchor="middle" x="792.5" y="-173.5" font-family="Helvetica,sans-Serif" font-size="10.00">trivially_copyable</text>
 </a>
@@ -168,7 +168,7 @@
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="interfacebio_1_1standard__layout.html" target="_top" xlink:title="Resolves to std::is_standard_layout_v&lt;t&gt;.">
+<g id="a_node11"><a xlink:href="interfacebio_1_1meta_1_1standard__layout.html" target="_top" xlink:title="Resolves to std::is_standard_layout_v&lt;t&gt;.">
 <polygon fill="white" stroke="black" points="745,-128.5 745,-147.5 840,-147.5 840,-128.5 745,-128.5"/>
 <text text-anchor="middle" x="792.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">standard_layout</text>
 </a>

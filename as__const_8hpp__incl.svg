@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 334;
+var viewWidth = 369;
 var viewHeight = 631;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,288 +54,309 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>bio/ranges/views/as_const.hpp</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-627 329.5,-627 329.5,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-627 364.5,-627 364.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Provides bio::views::as_const.">
-<polygon fill="#bfbfbf" stroke="black" points="98.5,-592.5 98.5,-622.5 211.5,-622.5 211.5,-592.5 98.5,-592.5"/>
-<text text-anchor="start" x="106.5" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/as</text>
-<text text-anchor="middle" x="155" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00">_const.hpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="79,-592.5 79,-622.5 192,-622.5 192,-592.5 79,-592.5"/>
+<text text-anchor="start" x="87" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/as</text>
+<text text-anchor="middle" x="135.5" y="-599.5" font-family="Helvetica,sans-Serif" font-size="10.00">_const.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="function_8hpp.html" target="_top" xlink:title="Provides various type traits for use on functions.">
-<polygon fill="white" stroke="black" points="47,-525.5 47,-555.5 163,-555.5 163,-525.5 47,-525.5"/>
-<text text-anchor="start" x="55" y="-543.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
-<text text-anchor="middle" x="105" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">/function.hpp</text>
+<g id="a_node2"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/ranges.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="9.5,-531 9.5,-550 59.5,-550 59.5,-531 9.5,-531"/>
+<text text-anchor="middle" x="34.5" y="-538" font-family="Helvetica,sans-Serif" font-size="10.00">ranges</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M144.15,-592.4C137.66,-583.96 129.28,-573.07 121.94,-563.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="124.7,-561.37 115.83,-555.58 119.15,-565.64 124.7,-561.37"/>
-</g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/ranges.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="181,-531 181,-550 231,-550 231,-531 181,-531"/>
-<text text-anchor="middle" x="206" y="-538" font-family="Helvetica,sans-Serif" font-size="10.00">ranges</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node17 -->
-<g id="edge20" class="edge">
-<title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M166.07,-592.4C173.94,-582.36 184.55,-568.84 192.85,-558.25"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="195.76,-560.22 199.18,-550.19 190.25,-555.9 195.76,-560.22"/>
+<path fill="none" stroke="midnightblue" d="M113.58,-592.4C96.65,-581.5 73.31,-566.48 56.38,-555.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="58.02,-552.48 47.72,-550.01 54.23,-558.36 58.02,-552.48"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/functional.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="21.5,-464 21.5,-483 86.5,-483 86.5,-464 21.5,-464"/>
-<text text-anchor="middle" x="54" y="-471" font-family="Helvetica,sans-Serif" font-size="10.00">functional</text>
+<g id="a_node3"><a xlink:href="type__traits_2function_8hpp.html" target="_top" xlink:title="Provides various type traits for use on functions.">
+<polygon fill="white" stroke="black" points="77.5,-525.5 77.5,-555.5 193.5,-555.5 193.5,-525.5 77.5,-525.5"/>
+<text text-anchor="start" x="85.5" y="-543.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
+<text text-anchor="middle" x="135.5" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">/function.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node3 -->
+<!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
-<title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M93.93,-525.4C86.06,-515.36 75.45,-501.84 67.15,-491.25"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="69.75,-488.9 60.82,-483.19 64.24,-493.22 69.75,-488.9"/>
+<title>Node1&#45;&gt;Node3</title>
+<path fill="none" stroke="midnightblue" d="M135.5,-592.4C135.5,-584.64 135.5,-574.81 135.5,-565.86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="139,-565.58 135.5,-555.58 132,-565.58 139,-565.58"/>
+</g>
+<!-- Node18 -->
+<g id="node18" class="node">
+<title>Node18</title>
+<g id="a_node18"><a xlink:href="ranges_2biocpp_8hpp.html" target="_top" xlink:title="Module header with module&#45;wide definitions.">
+<polygon fill="white" stroke="black" points="236.5,-397 236.5,-416 360.5,-416 360.5,-397 236.5,-397"/>
+<text text-anchor="middle" x="298.5" y="-404" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/biocpp.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node18 -->
+<g id="edge21" class="edge">
+<title>Node1&#45;&gt;Node18</title>
+<path fill="none" stroke="midnightblue" d="M158.21,-592.34C172,-583.06 189.4,-570.08 202.5,-556 241.41,-514.18 274.47,-454.71 289.63,-425.33"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="292.82,-426.78 294.23,-416.27 286.58,-423.61 292.82,-426.78"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="type__list_2traits_8hpp.html" target="_top" xlink:title="Provides traits for bio::type_list.">
-<polygon fill="white" stroke="black" points="104.5,-458.5 104.5,-488.5 209.5,-488.5 209.5,-458.5 104.5,-458.5"/>
-<text text-anchor="start" x="112.5" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_list</text>
-<text text-anchor="middle" x="157" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">/traits.hpp</text>
+<g id="a_node4"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/functional.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="0,-464 0,-483 65,-483 65,-464 0,-464"/>
+<text text-anchor="middle" x="32.5" y="-471" font-family="Helvetica,sans-Serif" font-size="10.00">functional</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node4 -->
+<!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
-<title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M116.28,-525.4C123.03,-516.96 131.75,-506.07 139.38,-496.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="142.22,-498.57 145.74,-488.58 136.76,-494.2 142.22,-498.57"/>
+<title>Node3&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M113.15,-525.4C95.88,-514.5 72.08,-499.48 54.82,-488.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="56.31,-485.38 45.98,-483.01 52.57,-491.3 56.31,-485.38"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/type_traits.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="24.5,-56.5 24.5,-75.5 93.5,-75.5 93.5,-56.5 24.5,-56.5"/>
-<text text-anchor="middle" x="59" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">type_traits</text>
+<g id="a_node5"><a xlink:href="traits_8hpp.html" target="_top" xlink:title="Provides traits for meta::type_list.">
+<polygon fill="white" stroke="black" points="83,-458.5 83,-488.5 188,-488.5 188,-458.5 83,-458.5"/>
+<text text-anchor="start" x="91" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_list</text>
+<text text-anchor="middle" x="135.5" y="-465.5" font-family="Helvetica,sans-Serif" font-size="10.00">/traits.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node5 -->
+<!-- Node3&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M116.16,-458.48C69.64,-439.61 0,-401.22 0,-340.5 0,-340.5 0,-340.5 0,-199 0,-154.26 28.6,-107.84 45.97,-83.76"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="48.83,-85.78 52,-75.67 43.22,-81.6 48.83,-85.78"/>
+<title>Node3&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M135.5,-525.4C135.5,-517.64 135.5,-507.81 135.5,-498.86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="139,-498.58 135.5,-488.58 132,-498.58 139,-498.58"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="type__list_8hpp.html" target="_top" xlink:title="Provides bio::type_list.">
-<polygon fill="white" stroke="black" points="104.5,-324.5 104.5,-354.5 209.5,-354.5 209.5,-324.5 104.5,-324.5"/>
-<text text-anchor="start" x="112.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_list</text>
-<text text-anchor="middle" x="157" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">/type_list.hpp</text>
+<g id="a_node6"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/type_traits.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="42,-56.5 42,-75.5 111,-75.5 111,-56.5 42,-56.5"/>
+<text text-anchor="middle" x="76.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">type_traits</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node6 -->
+<!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
-<title>Node4&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M157,-458.37C157,-436.04 157,-392.31 157,-364.85"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="160.5,-364.52 157,-354.52 153.5,-364.52 160.5,-364.52"/>
-</g>
-<!-- Node15 -->
-<g id="node15" class="node">
-<title>Node15</title>
-<g id="a_node15"><a xlink:href="type__pack_2traits_8hpp.html" target="_top" xlink:title="Provides various traits for template packs.">
-<polygon fill="white" stroke="black" points="191.5,-391.5 191.5,-421.5 304.5,-421.5 304.5,-391.5 191.5,-391.5"/>
-<text text-anchor="start" x="199.5" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_pack</text>
-<text text-anchor="middle" x="248" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">/traits.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node15 -->
-<g id="edge16" class="edge">
-<title>Node4&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M176.75,-458.4C189.39,-449.37 205.98,-437.51 219.97,-427.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="222.19,-430.24 228.29,-421.58 218.12,-424.54 222.19,-430.24"/>
+<title>Node5&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M99.41,-458.41C82.03,-450.07 62.07,-437.97 48.5,-422 23.41,-392.46 17.5,-379.25 17.5,-340.5 17.5,-340.5 17.5,-340.5 17.5,-199 17.5,-154.26 46.1,-107.84 63.47,-83.76"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="66.33,-85.78 69.5,-75.67 60.72,-81.6 66.33,-85.78"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="template__inspection_8hpp.html" target="_top" xlink:title="Provides bio::type_list and auxiliary type traits.">
-<polygon fill="white" stroke="black" points="84,-257.5 84,-287.5 224,-287.5 224,-257.5 84,-257.5"/>
-<text text-anchor="start" x="92" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
-<text text-anchor="middle" x="154" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/template_inspection.hpp</text>
+<g id="a_node7"><a xlink:href="traits__detail_8hpp.html" target="_top" xlink:title="Provides various traits for template packs.">
+<polygon fill="white" stroke="black" points="57,-391.5 57,-421.5 162,-421.5 162,-391.5 57,-391.5"/>
+<text text-anchor="start" x="65" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_list</text>
+<text text-anchor="middle" x="109.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">/traits_detail.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node7 -->
+<!-- Node5&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
-<title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M156.35,-324.4C155.99,-316.64 155.54,-306.81 155.12,-297.86"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="158.61,-297.4 154.65,-287.58 151.61,-297.73 158.61,-297.4"/>
-</g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="transformation__trait__or_8hpp.html" target="_top" xlink:title="Provides bio::detail::transformation_trait_or.">
-<polygon fill="white" stroke="black" points="28,-179.5 28,-220.5 146,-220.5 146,-179.5 28,-179.5"/>
-<text text-anchor="start" x="36" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
-<text text-anchor="start" x="36" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/transformation_trait</text>
-<text text-anchor="middle" x="87" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">_or.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge7" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M140.44,-257.23C132.46,-248.83 122.1,-237.93 112.63,-227.97"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="115.04,-225.43 105.62,-220.59 109.97,-230.25 115.04,-225.43"/>
-</g>
-<!-- Node14 -->
-<g id="node14" class="node">
-<title>Node14</title>
-<g id="a_node14"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/concepts.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="164,-190.5 164,-209.5 224,-209.5 224,-190.5 164,-190.5"/>
-<text text-anchor="middle" x="194" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">concepts</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node14 -->
-<g id="edge15" class="edge">
-<title>Node7&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M162.09,-257.23C168.37,-246.17 177.11,-230.77 183.86,-218.88"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="187.06,-220.32 188.95,-209.89 180.98,-216.86 187.06,-220.32"/>
-</g>
-<!-- Node8&#45;&gt;Node5 -->
-<g id="edge8" class="edge">
-<title>Node8&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M82.81,-179.24C77.44,-153.92 68.19,-110.35 62.95,-85.6"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="66.34,-84.74 60.84,-75.69 59.49,-86.19 66.34,-84.74"/>
+<title>Node5&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M129.86,-458.4C126.66,-450.39 122.56,-440.16 118.89,-430.98"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="122.09,-429.56 115.13,-421.58 115.59,-432.16 122.09,-429.56"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="meta_2type__traits_2concept_8hpp.html" target="_top" xlink:title="Provides the concepts bio::transformation_trait and bio::unary_type_trait.">
-<polygon fill="white" stroke="black" points="87,-112.5 87,-142.5 203,-142.5 203,-112.5 87,-112.5"/>
-<text text-anchor="start" x="95" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
-<text text-anchor="middle" x="145" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">/concept.hpp</text>
+<g id="a_node9"><a xlink:href="type__list_8hpp.html" target="_top" xlink:title="Provides bio::meta::type_list.">
+<polygon fill="white" stroke="black" points="147,-324.5 147,-354.5 252,-354.5 252,-324.5 147,-324.5"/>
+<text text-anchor="start" x="155" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_list</text>
+<text text-anchor="middle" x="199.5" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">/type_list.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node9 -->
-<g id="edge9" class="edge">
-<title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M103.16,-179.36C110.44,-170.5 119.09,-160 126.62,-150.84"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="129.51,-152.84 133.16,-142.89 124.1,-148.39 129.51,-152.84"/>
+<!-- Node5&#45;&gt;Node9 -->
+<g id="edge20" class="edge">
+<title>Node5&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M147.4,-458.2C155.06,-448.46 164.8,-435.02 171.5,-422 180.99,-403.56 188.41,-381.19 193.22,-364.55"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="196.7,-365.12 196,-354.55 189.95,-363.25 196.7,-365.12"/>
 </g>
-<!-- Node9&#45;&gt;Node5 -->
-<g id="edge10" class="edge">
-<title>Node9&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M124.62,-112.4C111.09,-103.04 93.39,-90.79 79.78,-81.38"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="81.73,-78.47 71.51,-75.66 77.75,-84.23 81.73,-78.47"/>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge7" class="edge">
+<title>Node7&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M97.93,-391.28C90.55,-381.58 81.32,-368.14 75.5,-355 60.41,-320.89 55.5,-310.8 55.5,-273.5 55.5,-273.5 55.5,-273.5 55.5,-199 55.5,-157.97 65.52,-110.64 71.72,-85.29"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="75.12,-86.13 74.17,-75.57 68.33,-84.41 75.12,-86.13"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/utility.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="84,-330 84,-349 129,-349 129,-330 84,-330"/>
+<text text-anchor="middle" x="106.5" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">utility</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge8" class="edge">
+<title>Node7&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M108.85,-391.4C108.41,-381.96 107.84,-369.45 107.36,-359.19"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="110.86,-359.02 106.9,-349.19 103.87,-359.35 110.86,-359.02"/>
+</g>
+<!-- Node7&#45;&gt;Node9 -->
+<g id="edge9" class="edge">
+<title>Node7&#45;&gt;Node9</title>
+<path fill="none" stroke="midnightblue" d="M129.03,-391.4C141.53,-382.37 157.94,-370.51 171.78,-360.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="173.95,-363.27 180.01,-354.58 169.85,-357.59 173.95,-363.27"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="platform_8hpp.html" target="_top" xlink:title="Provides platform and dependency checks.">
-<polygon fill="white" stroke="black" points="112,-56.5 112,-75.5 238,-75.5 238,-56.5 112,-56.5"/>
-<text text-anchor="middle" x="175" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/platform.hpp</text>
+<g id="a_node10"><a xlink:href="template__inspection_8hpp.html" target="_top" xlink:title="Provides various traits to inspect templates.">
+<polygon fill="white" stroke="black" points="129.5,-257.5 129.5,-287.5 269.5,-287.5 269.5,-257.5 129.5,-257.5"/>
+<text text-anchor="start" x="137.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
+<text text-anchor="middle" x="199.5" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/template_inspection.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M152.11,-112.4C156.29,-104.11 161.61,-93.55 166.07,-84.71"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="169.26,-86.16 170.63,-75.66 163.01,-83.01 169.26,-86.16"/>
+<path fill="none" stroke="midnightblue" d="M199.5,-324.4C199.5,-316.64 199.5,-306.81 199.5,-297.86"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="203,-297.58 199.5,-287.58 196,-297.58 203,-297.58"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/cinttypes.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="68,-0.5 68,-19.5 130,-19.5 130,-0.5 68,-0.5"/>
-<text text-anchor="middle" x="99" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">cinttypes</text>
+<g id="a_node11"><a xlink:href="transformation__trait__or_8hpp.html" target="_top" xlink:title="Provides bio::meta::transformation_trait_or.">
+<polygon fill="white" stroke="black" points="83.5,-179.5 83.5,-220.5 201.5,-220.5 201.5,-179.5 83.5,-179.5"/>
+<text text-anchor="start" x="91.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
+<text text-anchor="start" x="91.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/transformation_trait</text>
+<text text-anchor="middle" x="142.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">_or.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
-<g id="edge12" class="edge">
+<g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M162.79,-56.32C151.22,-48.11 133.62,-35.6 119.84,-25.81"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="121.61,-22.77 111.43,-19.83 117.56,-28.48 121.61,-22.77"/>
+<path fill="none" stroke="midnightblue" d="M187.97,-257.23C181.31,-249 172.71,-238.36 164.78,-228.56"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="167.35,-226.16 158.34,-220.59 161.9,-230.57 167.35,-226.16"/>
+</g>
+<!-- Node17 -->
+<g id="node17" class="node">
+<title>Node17</title>
+<g id="a_node17"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/concepts.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="219.5,-190.5 219.5,-209.5 279.5,-209.5 279.5,-190.5 219.5,-190.5"/>
+<text text-anchor="middle" x="249.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">concepts</text>
+</a>
+</g>
+</g>
+<!-- Node10&#45;&gt;Node17 -->
+<g id="edge19" class="edge">
+<title>Node10&#45;&gt;Node17</title>
+<path fill="none" stroke="midnightblue" d="M209.62,-257.23C217.62,-245.95 228.83,-230.15 237.32,-218.17"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="240.26,-220.07 243.19,-209.89 234.55,-216.03 240.26,-220.07"/>
+</g>
+<!-- Node11&#45;&gt;Node6 -->
+<g id="edge12" class="edge">
+<title>Node11&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M131.71,-179.43C125.89,-168.73 118.66,-155.21 112.5,-143 102.56,-123.3 91.81,-100.37 84.67,-84.9"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="87.71,-83.13 80.36,-75.5 81.35,-86.05 87.71,-83.13"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/ciso646.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="148,-0.5 148,-19.5 202,-19.5 202,-0.5 148,-0.5"/>
-<text text-anchor="middle" x="175" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ciso646</text>
+<g id="a_node12"><a xlink:href="meta_2type__traits_2concept_8hpp.html" target="_top" xlink:title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait.">
+<polygon fill="white" stroke="black" points="121.5,-112.5 121.5,-142.5 237.5,-142.5 237.5,-112.5 121.5,-112.5"/>
+<text text-anchor="start" x="129.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
+<text text-anchor="middle" x="179.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">/concept.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node12 -->
+<!-- Node11&#45;&gt;Node12 -->
 <g id="edge13" class="edge">
-<title>Node10&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M175,-56.08C175,-49.01 175,-38.86 175,-29.99"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="178.5,-29.75 175,-19.75 171.5,-29.75 178.5,-29.75"/>
+<title>Node11&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M152.81,-179.36C157.27,-170.86 162.52,-160.85 167.19,-151.96"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="170.4,-153.37 171.95,-142.89 164.2,-150.12 170.4,-153.37"/>
+</g>
+<!-- Node12&#45;&gt;Node6 -->
+<g id="edge14" class="edge">
+<title>Node12&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M155.09,-112.4C138.58,-102.86 116.88,-90.32 100.46,-80.84"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="101.9,-77.63 91.49,-75.66 98.4,-83.69 101.9,-77.63"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/cstddef.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="220.5,-0.5 220.5,-19.5 273.5,-19.5 273.5,-0.5 220.5,-0.5"/>
-<text text-anchor="middle" x="247" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">cstddef</text>
+<g id="a_node13"><a xlink:href="platform_8hpp.html" target="_top" xlink:title="Provides platform and dependency checks.">
+<polygon fill="white" stroke="black" points="133.5,-56.5 133.5,-75.5 259.5,-75.5 259.5,-56.5 133.5,-56.5"/>
+<text text-anchor="middle" x="196.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/platform.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node13 -->
-<g id="edge14" class="edge">
-<title>Node10&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M186.57,-56.32C197.42,-48.18 213.88,-35.84 226.88,-26.09"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="229.32,-28.63 235.22,-19.83 225.12,-23.03 229.32,-28.63"/>
+<!-- Node12&#45;&gt;Node13 -->
+<g id="edge15" class="edge">
+<title>Node12&#45;&gt;Node13</title>
+<path fill="none" stroke="midnightblue" d="M183.53,-112.4C185.85,-104.29 188.78,-94.01 191.28,-85.28"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="194.64,-86.23 194.03,-75.66 187.91,-84.31 194.64,-86.23"/>
 </g>
-<!-- Node15&#45;&gt;Node5 -->
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/cinttypes.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="89.5,-0.5 89.5,-19.5 151.5,-19.5 151.5,-0.5 89.5,-0.5"/>
+<text text-anchor="middle" x="120.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">cinttypes</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge16" class="edge">
+<title>Node13&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M184.29,-56.32C172.72,-48.11 155.12,-35.6 141.34,-25.81"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="143.11,-22.77 132.93,-19.83 139.06,-28.48 143.11,-22.77"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/ciso646.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="169.5,-0.5 169.5,-19.5 223.5,-19.5 223.5,-0.5 169.5,-0.5"/>
+<text text-anchor="middle" x="196.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ciso646</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node15 -->
 <g id="edge17" class="edge">
-<title>Node15&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M248.72,-391.25C249.87,-367.04 252,-316.37 252,-273.5 252,-273.5 252,-273.5 252,-199 252,-156.44 244.19,-139.84 212,-112 203.59,-104.73 145.5,-88.87 103.39,-78.06"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="104.15,-74.64 93.6,-75.56 102.42,-81.42 104.15,-74.64"/>
-</g>
-<!-- Node15&#45;&gt;Node6 -->
-<g id="edge19" class="edge">
-<title>Node15&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M228.25,-391.4C215.61,-382.37 199.02,-370.51 185.03,-360.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="186.88,-357.54 176.71,-354.58 182.81,-363.24 186.88,-357.54"/>
+<title>Node13&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M196.5,-56.08C196.5,-49.01 196.5,-38.86 196.5,-29.99"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="200,-29.75 196.5,-19.75 193,-29.75 200,-29.75"/>
 </g>
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<g id="a_node16"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/utility.html" xlink:title=" ">
-<polygon fill="white" stroke="black" points="280.5,-330 280.5,-349 325.5,-349 325.5,-330 280.5,-330"/>
-<text text-anchor="middle" x="303" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">utility</text>
+<g id="a_node16"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/header/cstddef.html" xlink:title=" ">
+<polygon fill="white" stroke="black" points="242,-0.5 242,-19.5 295,-19.5 295,-0.5 242,-0.5"/>
+<text text-anchor="middle" x="268.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">cstddef</text>
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node16 -->
+<!-- Node13&#45;&gt;Node16 -->
 <g id="edge18" class="edge">
-<title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M259.93,-391.4C268.51,-381.26 280.1,-367.57 289.09,-356.94"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="291.86,-359.09 295.64,-349.19 286.51,-354.57 291.86,-359.09"/>
+<title>Node13&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M208.07,-56.32C218.92,-48.18 235.38,-35.84 248.38,-26.09"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="250.82,-28.63 256.72,-19.83 246.62,-23.03 250.82,-28.63"/>
+</g>
+<!-- Node18&#45;&gt;Node13 -->
+<g id="edge22" class="edge">
+<title>Node18&#45;&gt;Node13</title>
+<path fill="none" stroke="midnightblue" d="M299.5,-396.87C301.84,-375.81 307.5,-320.13 307.5,-273.5 307.5,-273.5 307.5,-273.5 307.5,-199 307.5,-145.36 253.14,-102.15 220.5,-81.04"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="222.27,-78.02 211.93,-75.68 218.56,-83.95 222.27,-78.02"/>
 </g>
 </g>
 </svg>

@@ -1,8 +1,8 @@
 var classbio_1_1alphabet__tuple__base =
 [
     [ "char_type", "classbio_1_1alphabet__tuple__base.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1alphabet__tuple__base.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
-    [ "alphabet_tuple_base", "classbio_1_1alphabet__tuple__base.html#ab410865daed3bc1b16f8ea50f88c55ee", null ],
+    [ "rank_type", "classbio_1_1alphabet__tuple__base.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
+    [ "alphabet_tuple_base", "classbio_1_1alphabet__tuple__base.html#af82e14023cc26995c65f9d18e6571b14", null ],
     [ "alphabet_tuple_base", "classbio_1_1alphabet__tuple__base.html#a5d5a671c34394f25fa0bc3548970aa93", null ],
     [ "alphabet_tuple_base", "classbio_1_1alphabet__tuple__base.html#a927926c4bc934a76796b5691623fb5ff", null ],
     [ "assign_char", "classbio_1_1alphabet__tuple__base.html#a822d399ab808842870a4a4feb5490849", null ],

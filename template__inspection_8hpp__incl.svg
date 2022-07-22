@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides bio::type_list and auxiliary type traits.">
+<g id="a_node1"><a xlink:title="Provides various traits to inspect templates.">
 <polygon fill="#bfbfbf" stroke="black" points="60.5,-257.5 60.5,-287.5 200.5,-287.5 200.5,-257.5 60.5,-257.5"/>
 <text text-anchor="start" x="68.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
 <text text-anchor="middle" x="130.5" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/template_inspection.hpp</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="transformation__trait__or_8hpp.html" target="_top" xlink:title="Provides bio::detail::transformation_trait_or.">
+<g id="a_node2"><a xlink:href="transformation__trait__or_8hpp.html" target="_top" xlink:title="Provides bio::meta::transformation_trait_or.">
 <polygon fill="white" stroke="black" points="18.5,-179.5 18.5,-220.5 136.5,-220.5 136.5,-179.5 18.5,-179.5"/>
 <text text-anchor="start" x="26.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
 <text text-anchor="start" x="26.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/transformation_trait</text>
@@ -69,7 +69,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="meta_2type__traits_2concept_8hpp.html" target="_top" xlink:title="Provides the concepts bio::transformation_trait and bio::unary_type_trait.">
+<g id="a_node4"><a xlink:href="meta_2type__traits_2concept_8hpp.html" target="_top" xlink:title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait.">
 <polygon fill="white" stroke="black" points="62.5,-112.5 62.5,-142.5 178.5,-142.5 178.5,-112.5 62.5,-112.5"/>
 <text text-anchor="start" x="70.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/meta/type_traits</text>
 <text text-anchor="middle" x="120.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">/concept.hpp</text>

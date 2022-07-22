@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides bio::phred42 quality scores.">
+<g id="a_node1"><a xlink:title="Provides bio::alphabet::phred42 quality scores.">
 <polygon fill="#bfbfbf" stroke="black" points="170,-257.5 170,-287.5 284,-287.5 284,-257.5 170,-257.5"/>
 <text text-anchor="start" x="178" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
 <text text-anchor="middle" x="227" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/quality_base.hpp</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="phred42_8hpp.html" target="_top" xlink:title="Provides bio::phred42 quality scores.">
+<g id="a_node2"><a xlink:href="phred42_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred42 quality scores.">
 <polygon fill="white" stroke="black" points="85,-190.5 85,-220.5 199,-220.5 199,-190.5 85,-190.5"/>
 <text text-anchor="start" x="93" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
 <text text-anchor="middle" x="142" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred42.hpp</text>
@@ -38,7 +38,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="phred63_8hpp.html" target="_top" xlink:title="Provides bio::phred63 quality scores.">
+<g id="a_node6"><a xlink:href="phred63_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred63 quality scores.">
 <polygon fill="white" stroke="black" points="170,-123.5 170,-153.5 284,-153.5 284,-123.5 170,-123.5"/>
 <text text-anchor="start" x="178" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
 <text text-anchor="middle" x="227" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred63.hpp</text>
@@ -54,7 +54,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="phred68legacy_8hpp.html" target="_top" xlink:title="Provides bio::phred68legacy quality scores.">
+<g id="a_node7"><a xlink:href="phred68legacy_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred68legacy quality scores.">
 <polygon fill="white" stroke="black" points="255,-190.5 255,-220.5 369,-220.5 369,-190.5 255,-190.5"/>
 <text text-anchor="start" x="263" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
 <text text-anchor="middle" x="312" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred68legacy.hpp</text>

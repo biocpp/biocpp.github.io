@@ -1,7 +1,7 @@
 var classbio_1_1alphabet__base =
 [
     [ "char_type", "classbio_1_1alphabet__base.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1alphabet__base.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1alphabet__base.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "alphabet_base", "classbio_1_1alphabet__base.html#a65fa96489a19ead35ac26cd8a9f4bdf0", null ],
     [ "alphabet_base", "classbio_1_1alphabet__base.html#ad847f28a28500c94d15b64c455817b25", null ],
     [ "alphabet_base", "classbio_1_1alphabet__base.html#a8ca805025ed5026d63a5a9143542c630", null ],

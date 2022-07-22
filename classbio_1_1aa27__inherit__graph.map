@@ -7,9 +7,9 @@
 <area shape="rect" id="node8" href="$interfacebio_1_1writable__semialphabet.html" title="A refinement of bio::semialphabet that adds assignability." alt="" coords="623,64,793,91"/>
 <area shape="rect" id="node5" title=" " alt="" coords="17,13,166,40"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,64,177,91"/>
-<area shape="rect" id="node9" href="$interfacebio_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="941,107,1079,133"/>
+<area shape="rect" id="node9" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="941,107,1079,133"/>
 <area shape="rect" id="node10" title=" " alt="" coords="653,115,763,141"/>
-<area shape="rect" id="node11" href="$interfacebio_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="947,157,1073,184"/>
+<area shape="rect" id="node11" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="947,157,1073,184"/>
 <area shape="rect" id="node12" title=" " alt="" coords="962,208,1058,235"/>
 <area shape="rect" id="node13" href="$classbio_1_1aminoacid__base.html" title=" " alt="" coords="932,259,1088,301"/>
 <area shape="rect" id="node14" href="$classbio_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="11,211,171,267"/>

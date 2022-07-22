@@ -38,7 +38,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="cigar_8hpp.html" target="_top" xlink:title="Provides the bio::cigar alphabet.">
+<g id="a_node3"><a xlink:href="cigar_8hpp.html" target="_top" xlink:title="Provides the bio::alphabet::cigar alphabet.">
 <polygon fill="white" stroke="black" points="122,-0.5 122,-30.5 226,-30.5 226,-0.5 122,-0.5"/>
 <text text-anchor="start" x="130" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/cigar</text>
 <text text-anchor="middle" x="174" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">/cigar.hpp</text>

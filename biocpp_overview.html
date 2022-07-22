@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -122,17 +122,18 @@ Module descriptions</h1>
 Module details</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Library   </th><th class="markdownTableHeadNone">Module(s)   </th><th class="markdownTableHeadNone">Namespaces   </th><th class="markdownTableHeadNone">Code-Owner   </th><th class="markdownTableHeadNone">Cite    </th></tr>
+<th class="markdownTableHeadNone">Library   </th><th class="markdownTableHeadNone">Module(s)   </th><th class="markdownTableHeadNone">Include   </th><th class="markdownTableHeadNone">Namespaces   </th><th class="markdownTableHeadNone">Code-Owner   </th><th class="markdownTableHeadNone">Cite    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://github.com/biocpp/biocpp-core">Core</a>   </td><td class="markdownTableBodyNone">Alphabet   </td><td class="markdownTableBodyNone"><code>bio::a{lphabet}</code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"><a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>    </td></tr>
+<td class="markdownTableBodyNone"><a href="https://github.com/biocpp/biocpp-core">Core</a>   </td><td class="markdownTableBodyNone">Alphabet   </td><td class="markdownTableBodyNone">&lt;bio/alphabet/*&gt;   </td><td class="markdownTableBodyNone"><code><a class="el" href="namespacebio_1_1alphabet.html" title="The alphabet module&#39;s namespace.">bio::alphabet</a></code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"><a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Ranges   </td><td class="markdownTableBodyNone"><code>bio::r{anges}</code>, <code>bio::{r::}views</code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"><a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>    </td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Ranges   </td><td class="markdownTableBodyNone">&lt;bio/ranges/*&gt;   </td><td class="markdownTableBodyNone"><code><a class="el" href="namespacebio_1_1ranges.html" title="The Ranges module&#39;s namespace.">bio::ranges</a></code>, <code>bio::{ranges::}views</code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"><a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Meta   </td><td class="markdownTableBodyNone"><code>bio::m{eta}</code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"><a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>    </td></tr>
+<td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Meta   </td><td class="markdownTableBodyNone">&lt;bio/meta/*&gt;   </td><td class="markdownTableBodyNone"><code><a class="el" href="namespacebio_1_1meta.html" title="The Meta module&#39;s namespace.">bio::meta</a></code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"><a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://github.com/biocpp/biocpp-io">I/O</a>   </td><td class="markdownTableBodyNone">I/O   </td><td class="markdownTableBodyNone"><code>bio::io</code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"></td></tr>
+<td class="markdownTableBodyNone"><a href="https://github.com/biocpp/biocpp-io">I/O</a>   </td><td class="markdownTableBodyNone">I/O   </td><td class="markdownTableBodyNone">&lt;bio/io/*&gt;   </td><td class="markdownTableBodyNone"><code>bio::io</code>   </td><td class="markdownTableBodyNone"><code>@h-2</code>   </td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<p>The primary namespace for BioC++ is <code>bio::</code>, and each Module is found in a sub-namespace (usually identical to the module name). Namespaces may have short forms, e.g. <code>bio::ranges::</code> is identical to <code>bio::r::</code>. Some namespaces are aliased into the primary namespace, so <code>bio::ranges::views</code> is identical to <code>bio::r::views</code> and <code><a class="el" href="namespacebio_1_1views.html" title="The BioC++ namespace for views.">bio::views</a></code>. Only top-level namespaces are displayed here.</p>
+<p>The primary namespace for BioC++ is <code>bio::</code>, and each Module is found in a sub-namespace (usually identical to the module name). Some namespaces are aliased into the primary namespace, so <code><a class="el" href="namespacebio_1_1ranges_1_1views.html" title="The BioC++ namespace for views.">bio::ranges::views</a></code> is identical to <code>bio::views</code>. Only top-level namespaces are displayed here.</p>
+<p>Some modules provide literals in an <code>inline namespace</code> within their main namespace. This allows doing e.g. <code>using namespace <a class="el" href="namespacebio_1_1alphabet_1_1literals.html" title="An inline namespace for alphabet literals. It exists to safely allow using namespace.">bio::alphabet::literals</a>;</code> to get easy access to the alphabet literals without importing the rest of the module into your namespace.</p>
 <p>If no citable publication is listed for a Module, please cite <a href="https://link.springer.com/book/10.1007/978-3-030-90990-1">10.1007/978-3-030-90990-1</a>, which is a book by the main author of BioC++. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -143,7 +144,7 @@ Module details</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

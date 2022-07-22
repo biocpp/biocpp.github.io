@@ -1,7 +1,7 @@
 var classbio_1_1structured__aa =
 [
     [ "char_type", "classbio_1_1structured__aa.html#a15eceb509a50732a83307358d80f0876", null ],
-    [ "rank_type", "classbio_1_1structured__aa.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1structured__aa.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "sequence_alphabet_type", "classbio_1_1structured__aa.html#a135c59911373e99d765a3b9523928939", null ],
     [ "structure_alphabet_type", "classbio_1_1structured__aa.html#a3626269ff75b614388561c47ee9f9d23", null ],
     [ "structured_aa", "classbio_1_1structured__aa.html#afeb25ab54752f950552c47030a4fbe11", null ],

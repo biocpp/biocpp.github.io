@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gapped_4506',['gapped',['../group__gap.html#gac94d46e4d788b59d556962cf86633a4d',1,'bio']]]
+  ['gapped_4348',['gapped',['../group__gap.html#ga06f46cdec2162495aaffd82d581dc99e',1,'bio::alphabet']]]
 ];

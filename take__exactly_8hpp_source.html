@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -115,21 +115,21 @@ $(document).ready(function(){initNavTree('take__exactly_8hpp_source.html',''); i
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//  views::take_exactly (adaptor instance definition)</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1views.html">bio::views</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a">   78</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> constexpr <a class="code" href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a">take_exactly</a> = detail::take_fn&lt;true, false&gt;{};</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__views.html#ga8efd1287811681bb9f29d4e81eddba98">   78</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga8efd1287811681bb9f29d4e81eddba98">take_exactly</a> = detail::take_fn&lt;true, false&gt;{};</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//  views::take_exactly_or_throw (adaptor instance definition)</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8">   92</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> constexpr <a class="code" href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8">take_exactly_or_throw</a> = detail::take_fn&lt;true, true&gt;{};</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group__views.html#ga8deef4f62cd72719276067efcdb0ade6">   92</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga8deef4f62cd72719276067efcdb0ade6">take_exactly_or_throw</a> = detail::take_fn&lt;true, true&gt;{};</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace bio::views</span></div>
-<div class="ttc" id="agroup__views_html_ga5e99d3187123f9d9815a8ecd3cc1349a"><div class="ttname"><a href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a">bio::views::take_exactly</a></div><div class="ttdeci">constexpr auto take_exactly</div><div class="ttdoc">A view adaptor that returns the first size elements from the underlying range (or less if the underly...</div><div class="ttdef"><b>Definition:</b> take_exactly.hpp:78</div></div>
-<div class="ttc" id="agroup__views_html_gac3107ccfc70b898636e1941ca8c33fa8"><div class="ttname"><a href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8">bio::views::take_exactly_or_throw</a></div><div class="ttdeci">constexpr auto take_exactly_or_throw</div><div class="ttdoc">A view adaptor that returns the first size elements from the underlying range and also exposes size i...</div><div class="ttdef"><b>Definition:</b> take_exactly.hpp:92</div></div>
-<div class="ttc" id="anamespacebio_1_1views_html"><div class="ttname"><a href="namespacebio_1_1views.html">bio::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
+<div class="ttc" id="agroup__views_html_ga8deef4f62cd72719276067efcdb0ade6"><div class="ttname"><a href="group__views.html#ga8deef4f62cd72719276067efcdb0ade6">bio::ranges::views::take_exactly_or_throw</a></div><div class="ttdeci">constexpr auto take_exactly_or_throw</div><div class="ttdoc">A view adaptor that returns the first size elements from the underlying range and also exposes size i...</div><div class="ttdef"><b>Definition:</b> take_exactly.hpp:92</div></div>
+<div class="ttc" id="agroup__views_html_ga8efd1287811681bb9f29d4e81eddba98"><div class="ttname"><a href="group__views.html#ga8efd1287811681bb9f29d4e81eddba98">bio::ranges::views::take_exactly</a></div><div class="ttdeci">constexpr auto take_exactly</div><div class="ttdoc">A view adaptor that returns the first size elements from the underlying range (or less if the underly...</div><div class="ttdef"><b>Definition:</b> take_exactly.hpp:78</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
 <div class="ttc" id="atake_8hpp_html"><div class="ttname"><a href="take_8hpp.html">take.hpp</a></div><div class="ttdoc">Provides bio::views::take.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('take__exactly_8hpp_source.html',''); i
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="take__exactly_8hpp.html">take_exactly.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

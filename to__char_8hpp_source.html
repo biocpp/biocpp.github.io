@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -113,25 +113,26 @@ $(document).ready(function(){initNavTree('to__char_8hpp_source.html',''); initRe
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="deep_8hpp.html">bio/ranges/views/deep.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1views.html">bio::views</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__views.html#gadc45135b56d37d83f3ef52c19ed3ee13">   66</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="group__views.html#gadc45135b56d37d83f3ef52c19ed3ee13">to_char</a> = <a class="code" href="classbio_1_1views_1_1deep.html">deep</a>{<a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keyword">auto</span> <span class="keyword">const</span> in) noexcept</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    static_assert(<a class="code" href="interfacebio_1_1alphabet.html">alphabet</a>&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;decltype(in)&gt;&gt;, <span class="stringliteral">&quot;The value type of bio::views::to_char must model the bio::alphabet.&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(in);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;})};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__views.html#gac9a639c64c7c53a11fea2f7fa19e0e31">   66</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="group__views.html#gac9a639c64c7c53a11fea2f7fa19e0e31">to_char</a> = <a class="code" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a>{<a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  [](<span class="keyword">auto</span> <span class="keyword">const</span> in) noexcept</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      static_assert(alphabet::alphabet&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;decltype(in)&gt;&gt;,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="stringliteral">&quot;The value type of bio::views::to_char must model the bio::alphabet::alphabet.&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">alphabet::to_char</a>(in);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  })};</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace bio::views</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
 <div class="ttc" id="aalphabet_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="aclassbio_1_1views_1_1deep_html"><div class="ttname"><a href="classbio_1_1views_1_1deep.html">bio::views::deep</a></div><div class="ttdoc">A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view.</div><div class="ttdef"><b>Definition:</b> deep.hpp:103</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1views_1_1deep_html"><div class="ttname"><a href="classbio_1_1ranges_1_1views_1_1deep.html">bio::ranges::views::deep</a></div><div class="ttdoc">A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view.</div><div class="ttdef"><b>Definition:</b> deep.hpp:103</div></div>
 <div class="ttc" id="adeep_8hpp_html"><div class="ttname"><a href="deep_8hpp.html">deep.hpp</a></div><div class="ttdoc">Provides bio::views::deep.</div></div>
-<div class="ttc" id="agroup__alphabet_html_gab295f04aea840000aafc640b5e6528c8"><div class="ttname"><a href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:322</div></div>
-<div class="ttc" id="agroup__core__type__list_html_ga707547c2877cfbd1a807d5a92acfd3b3"><div class="ttname"><a href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">bio::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a bio::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:496</div></div>
-<div class="ttc" id="agroup__views_html_gadc45135b56d37d83f3ef52c19ed3ee13"><div class="ttname"><a href="group__views.html#gadc45135b56d37d83f3ef52c19ed3ee13">bio::views::to_char</a></div><div class="ttdeci">auto const to_char</div><div class="ttdoc">A view that calls bio::to_char() on each element in the input range.</div><div class="ttdef"><b>Definition:</b> to_char.hpp:66</div></div>
-<div class="ttc" id="ainterfacebio_1_1alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet.html">alphabet</a></div><div class="ttdoc">The generic alphabet concept that covers most data types used in ranges.</div></div>
-<div class="ttc" id="anamespacebio_1_1views_html"><div class="ttname"><a href="namespacebio_1_1views.html">bio::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
+<div class="ttc" id="agroup__views_html_gac9a639c64c7c53a11fea2f7fa19e0e31"><div class="ttname"><a href="group__views.html#gac9a639c64c7c53a11fea2f7fa19e0e31">bio::ranges::views::to_char</a></div><div class="ttdeci">auto const to_char</div><div class="ttdoc">A view that calls bio::alphabet::to_char() on each element in the input range.</div><div class="ttdef"><b>Definition:</b> to_char.hpp:66</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 <div class="ttc" id="aremove_cvref_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -143,7 +144,7 @@ $(document).ready(function(){initNavTree('to__char_8hpp_source.html',''); initRe
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="to__char_8hpp.html">to_char.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

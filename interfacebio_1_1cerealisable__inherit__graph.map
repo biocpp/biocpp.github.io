@@ -1,9 +1,9 @@
 <map id="cerealisable" name="cerealisable">
-<area shape="rect" id="node1" title="Specifies the requirements for types that are serialisable via Cereal." alt="" coords="5,116,107,143"/>
-<area shape="rect" id="node2" href="$classbio_1_1small__vector.html" title=" " alt="" coords="623,112,781,153"/>
-<area shape="rect" id="node4" href="$classbio_1_1bitcompressed__vector.html" title="A space&#45;optimised version of std::vector that compresses multiple letters into a single byte." alt="" coords="193,44,386,85"/>
-<area shape="rect" id="node5" href="$classbio_1_1concatenated__sequences.html" title="Container that stores sequences concatenated internally." alt="" coords="156,109,423,150"/>
-<area shape="rect" id="node6" href="$classbio_1_1dynamic__bitset.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="214,174,365,216"/>
-<area shape="rect" id="node7" href="$classbio_1_1small__vector.html" title="A constexpr vector implementation with dynamic size at compile time." alt="" coords="194,240,385,281"/>
-<area shape="rect" id="node3" href="$classbio_1_1small__string.html" title="Implements a small string that can be used for compile time computations." alt="" coords="831,112,972,153"/>
+<area shape="rect" id="node1" title="Specifies the requirements for types that are serialisable via Cereal." alt="" coords="5,119,107,146"/>
+<area shape="rect" id="node2" href="$classbio_1_1ranges_1_1small__vector.html" title=" " alt="" coords="555,118,772,160"/>
+<area shape="rect" id="node4" href="$classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space&#45;optimised version of std::vector that compresses multiple letters into a single byte." alt="" coords="156,38,355,80"/>
+<area shape="rect" id="node5" href="$classbio_1_1ranges_1_1concatenated__sequences.html" title="Container that stores sequences concatenated internally." alt="" coords="160,104,351,160"/>
+<area shape="rect" id="node6" href="$classbio_1_1ranges_1_1dynamic__bitset.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="168,185,343,226"/>
+<area shape="rect" id="node7" href="$classbio_1_1ranges_1_1small__vector.html" title="A constexpr vector implementation with dynamic size at compile time." alt="" coords="177,251,334,307"/>
+<area shape="rect" id="node3" href="$classbio_1_1ranges_1_1small__string.html" title="Implements a small string that can be used for compile time computations." alt="" coords="821,118,980,160"/>
 </map>

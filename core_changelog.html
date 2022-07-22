@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -100,28 +100,41 @@ $(document).ready(function(){initNavTree('core_changelog.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md78">0.1.0</a><ul><li class="level2"><a href="#autotoc_md79">Features</a></li>
-<li class="level2"><a href="#autotoc_md80">API stability</a></li>
+<ul><li class="level1"><a href="#autotoc_md74">0.5.0</a><ul><li class="level2"><a href="#autotoc_md75">Features</a></li>
+<li class="level2"><a href="#autotoc_md76">Some notable changes for users coming from SeqAn3</a></li>
+<li class="level2"><a href="#autotoc_md77">API stability</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="textblock"><p><a class="anchor" id="md__home_hannes_devel_bio_core_CHANGELOG"></a></p>
 <p>This changelog contains a top-level entry for each release with sections on new features, API changes and notable bug-fixes (not all bug-fixes will be listed).</p>
-<h1><a class="anchor" id="autotoc_md78"></a>
-0.1.0</h1>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h1><a class="anchor" id="autotoc_md74"></a>
+0.5.0</h1>
+<h2><a class="anchor" id="autotoc_md75"></a>
 Features</h2>
 <ul>
-<li>This release is a fork of BioC++-3.0.2.</li>
+<li>This release is a fork of SeqAn-3.0.2.</li>
 <li>The feature set is stripped to contain the important "core" aspects: Alphabets and Ranges, as well as metaprogramming support utilities.</li>
 <li>It has no dependencies.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md76"></a>
+Some notable changes for users coming from SeqAn3</h2>
+<ul>
+<li>🧹 Huge code cleanup and countless bug-fixes.</li>
+<li>✂ Removal of all dependencies… and… most of the code :)</li>
+<li>📦 Separate namespaces for each module.</li>
+<li>🏷 Much simpler customisation points by using <code><a class="el" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1" title="The number of values the char type can take (e.g. 256 for char).">tag_invoke()</a></code>.</li>
+<li>🖨 Replaced the <code>debug_stream</code> with {fmt}.</li>
+<li>🛸 More Modern C++ goodness: use of the spaceship operator, <code>consteval</code>, …</li>
+<li>📉 Compile-time down.</li>
+<li>📈 Performance up (for a few things).</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md77"></a>
 API stability</h2>
 <ul>
 <li>This release is not yet API-stable.</li>
-<li>This release is not backwards compatible with any BioC++ version. </li>
+<li>This release is not backwards compatible with any BioC++ or SeqAn version. </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -132,7 +145,7 @@ API stability</h2>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

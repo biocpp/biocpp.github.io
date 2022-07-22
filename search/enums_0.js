@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['genetic_5fcode_4543',['genetic_code',['../namespacebio.html#a0e520cab6afe3b86c0d3481e1cd01d6f',1,'bio']]]
+  ['genetic_5fcode_4385',['genetic_code',['../namespacebio_1_1alphabet.html#aa0d4217bd42a17a19c079ede29a22172',1,'bio::alphabet']]]
 ];

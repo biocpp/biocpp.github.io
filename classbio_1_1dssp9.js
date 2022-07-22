@@ -1,7 +1,7 @@
 var classbio_1_1dssp9 =
 [
     [ "char_type", "classbio_1_1dssp9.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1dssp9.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1dssp9.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "dssp9", "classbio_1_1dssp9.html#a1c4bcbf67f8ca32c712798f0b7ceadfb", null ],
     [ "dssp9", "classbio_1_1dssp9.html#a6e1c0b5a6027bdf1ec811d83d3925f16", null ],
     [ "dssp9", "classbio_1_1dssp9.html#a7ea10b47b50fa6fd78c359b276dc88f2", null ],
@@ -12,6 +12,6 @@ var classbio_1_1dssp9 =
     [ "operator=", "classbio_1_1dssp9.html#aabbd9a53011bf605b08ab3216baded23", null ],
     [ "to_char", "classbio_1_1dssp9.html#a6616ba2cb25069f5192589ad53651a88", null ],
     [ "to_rank", "classbio_1_1dssp9.html#a443c2f7716e384ea2acec1d2bced7c8b", null ],
-    [ "operator\"\"_dssp9", "classbio_1_1dssp9.html#ac98230878be47eaea757acba0d7eec11", null ],
-    [ "operator\"\"_dssp9", "classbio_1_1dssp9.html#aafd5e5d0ef6a734ee9681ac6925a546e", null ]
+    [ "operator\"\"_dssp9", "classbio_1_1dssp9.html#a694f76d15d9091ed1f4ebf075bc029f7", null ],
+    [ "operator\"\"_dssp9", "classbio_1_1dssp9.html#ac98230878be47eaea757acba0d7eec11", null ]
 ];

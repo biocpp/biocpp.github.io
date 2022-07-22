@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('customisation__point_8hpp_source.html'
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="platform_8hpp.html">bio/meta/platform.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>bio::detail</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>bio::meta::detail</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// ============================================================================</span></div>
@@ -120,32 +120,35 @@ $(document).ready(function(){initNavTree('customisation__point_8hpp_source.html'
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> I&gt;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">struct </span>priority_tag</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Doxygen fail</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;: priority_tag&lt;I-1&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// Doxygen fail</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  : priority_tag&lt;I - 1&gt;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">struct </span>priority_tag&lt;0&gt;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// bio::detail</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace bio::meta::detail</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// BIOCPP_CPO_IMPL</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="customisation__point_8hpp.html#a668156df5e10f10c5fa9a4473bc606af">   46</a></span>&#160;<span class="preprocessor">#define BIOCPP_CPO_IMPL(PRIO, TERM)                                                                                  \</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">                                                                          \</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">template &lt;typename t, typename ...arg_ts&gt;                                                                            \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">static constexpr decltype(auto) impl(bio::detail::priority_tag&lt;PRIO&gt;,                                             \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">                                     [[maybe_unused]] t &amp;&amp; v,                                                        \</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                                     [[maybe_unused]] arg_ts &amp;&amp; ... args)                                            \</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    noexcept(noexcept(TERM))                                                                                         \</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    requires requires (bio::detail::priority_tag&lt;PRIO&gt; const &amp;</span><span class="comment">/*&lt;- need for doxygen*/</span><span class="preprocessor">, t &amp;&amp; v, arg_ts &amp;&amp; ... args)\</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    { { TERM }; }                                                                                                    \</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">{                                                                                                                    \</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    return TERM;                                                                                                     \</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="customisation__point_8hpp.html#a668156df5e10f10c5fa9a4473bc606af">   47</a></span>&#160;<span class="comment"></span><span class="preprocessor">#define BIOCPP_CPO_IMPL(PRIO, TERM)                                                                                  \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">                                                                          \</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">template &lt;typename t, typename ...arg_ts&gt;                                                                            \</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">static constexpr decltype(auto) impl(meta::detail::priority_tag&lt;PRIO&gt;,                                               \</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">                                     [[maybe_unused]] t &amp;&amp; v,                                                        \</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">                                     [[maybe_unused]] arg_ts &amp;&amp; ... args)                                            \</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    noexcept(noexcept(TERM))                                                                                         \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    requires (requires (meta::detail::priority_tag&lt;PRIO&gt; const &amp;</span><span class="comment">/*&lt;- need for doxygen*/</span><span class="preprocessor">, t &amp;&amp; v, arg_ts &amp;&amp; ... args) \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    { { TERM }; })                                                                                                   \</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">{                                                                                                                    \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    return TERM;                                                                                                     \</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// clang-format on</span></div>
 <div class="ttc" id="aplatform_8hpp_html"><div class="ttname"><a href="platform_8hpp.html">platform.hpp</a></div><div class="ttdoc">Provides platform and dependency checks.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -156,7 +159,7 @@ $(document).ready(function(){initNavTree('customisation__point_8hpp_source.html'
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_9195b182a8db98b0a6ba2a764d2c92e3.html">detail</a></li><li class="navelem"><a class="el" href="customisation__point_8hpp.html">customisation_point.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Tue Jul 5 2022 17:09:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

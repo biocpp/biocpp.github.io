@@ -1,5 +1,5 @@
 <map id="bio/alphabet/aminoacid/aa10li.hpp" name="bio/alphabet/aminoacid/aa10li.hpp">
-<area shape="rect" id="node1" title="Provides bio::aa10li, container aliases and string literals." alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::aa10li, container aliases and string literals." alt="" coords="5,5,180,47"/>
 <area shape="rect" id="node2" href="$alphabet_2aminoacid_2all_8hpp.html" title="Meta&#45;header for the aminoacid submodule; includes all headers from alphabet/aminoacid/." alt="" coords="5,95,180,136"/>
 <area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="17,184,168,211"/>
 </map>

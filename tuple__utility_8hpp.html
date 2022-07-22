@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,20 +107,22 @@ $(document).ready(function(){initNavTree('tuple__utility_8hpp.html',''); initRes
 <div class="textblock"><code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/utility.html">utility</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="tuple_8hpp_source.html">bio/meta/concept/tuple.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="pod__tuple_8hpp_source.html">bio/meta/pod_tuple.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="type__list_2traits_8hpp_source.html">bio/meta/type_list/traits.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="traits_8hpp_source.html">bio/meta/type_list/traits.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for tuple_utility.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="tuple__utility_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="tuple__utility_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="tuple__utility_8hpp__dep__incl.svg" width="199" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="tuple__utility_8hpp__dep__incl.svg" width="199" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="tuple__utility_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -130,28 +132,31 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1meta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1meta.html">bio::meta</a></td></tr>
+<tr class="memdesc:namespacebio_1_1meta"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Meta module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Tuple utility functions</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Helper functions for tuple like objects. </p>
 </div></td></tr>
-<tr class="memitem:gacc8ebc11e40faa666f106befdb51b552"><td class="memTemplParams" colspan="2">template&lt;tuple_like tuple_t&gt; </td></tr>
-<tr class="memitem:gacc8ebc11e40faa666f106befdb51b552"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core.html#gacc8ebc11e40faa666f106befdb51b552">bio::tuple_pop_front</a> (tuple_t &amp;&amp;t)</td></tr>
-<tr class="memdesc:gacc8ebc11e40faa666f106befdb51b552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first element of a tuple.  <a href="group__core.html#gacc8ebc11e40faa666f106befdb51b552">More...</a><br /></td></tr>
-<tr class="separator:gacc8ebc11e40faa666f106befdb51b552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32c28834437a311612763f56679758fa"><td class="memTemplParams" colspan="2">template&lt;typename pivot_t , tuple_like tuple_t&gt; </td></tr>
-<tr class="memitem:ga32c28834437a311612763f56679758fa"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core.html#ga32c28834437a311612763f56679758fa">bio::tuple_split</a> (tuple_t &amp;&amp;t)</td></tr>
-<tr class="memdesc:ga32c28834437a311612763f56679758fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a tuple like data structure at the first position of the given type.  <a href="group__core.html#ga32c28834437a311612763f56679758fa">More...</a><br /></td></tr>
-<tr class="separator:ga32c28834437a311612763f56679758fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f9222341f049fcbf5dd0c148610c5e7"><td class="memTemplParams" colspan="2">template&lt;size_t pivot_c, template&lt; typename ... &gt; typename tuple_t, typename ... ts&gt; </td></tr>
-<tr class="memitem:ga6f9222341f049fcbf5dd0c148610c5e7"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core.html#ga6f9222341f049fcbf5dd0c148610c5e7">bio::tuple_split</a> (tuple_t&lt; ts... &gt; &amp;&amp;t)</td></tr>
-<tr class="memdesc:ga6f9222341f049fcbf5dd0c148610c5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a tuple like data structure at the given position.  <a href="group__core.html#ga6f9222341f049fcbf5dd0c148610c5e7">More...</a><br /></td></tr>
-<tr class="separator:ga6f9222341f049fcbf5dd0c148610c5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc675596dfadd86e87a3fb44781a976f"><td class="memTemplParams" colspan="2">template&lt;size_t pivot_c, template&lt; typename ... &gt; typename tuple_t, typename ... ts&gt; </td></tr>
-<tr class="memitem:gacc675596dfadd86e87a3fb44781a976f"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__core.html#gacc675596dfadd86e87a3fb44781a976f">bio::tuple_split</a> (tuple_t&lt; ts... &gt; const &amp;t)</td></tr>
-<tr class="memdesc:gacc675596dfadd86e87a3fb44781a976f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a tuple like data structure at the given position.  <a href="group__core.html#gacc675596dfadd86e87a3fb44781a976f">More...</a><br /></td></tr>
-<tr class="separator:gacc675596dfadd86e87a3fb44781a976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad867e41f39123fe91238cc0740c4e92b"><td class="memTemplParams" colspan="2">template&lt;tuple_like tuple_t&gt; </td></tr>
+<tr class="memitem:gad867e41f39123fe91238cc0740c4e92b"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__meta.html#gad867e41f39123fe91238cc0740c4e92b">bio::meta::tuple_pop_front</a> (tuple_t &amp;&amp;t)</td></tr>
+<tr class="memdesc:gad867e41f39123fe91238cc0740c4e92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the first element of a tuple.  <a href="group__meta.html#gad867e41f39123fe91238cc0740c4e92b">More...</a><br /></td></tr>
+<tr class="separator:gad867e41f39123fe91238cc0740c4e92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ccf2aa446ef36d6eec380be75d1b324"><td class="memTemplParams" colspan="2">template&lt;typename pivot_t , tuple_like tuple_t&gt; </td></tr>
+<tr class="memitem:ga9ccf2aa446ef36d6eec380be75d1b324"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__meta.html#ga9ccf2aa446ef36d6eec380be75d1b324">bio::meta::tuple_split</a> (tuple_t &amp;&amp;t)</td></tr>
+<tr class="memdesc:ga9ccf2aa446ef36d6eec380be75d1b324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a tuple like data structure at the first position of the given type.  <a href="group__meta.html#ga9ccf2aa446ef36d6eec380be75d1b324">More...</a><br /></td></tr>
+<tr class="separator:ga9ccf2aa446ef36d6eec380be75d1b324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc389b9f9adeba09a49ca68714e9e3a3"><td class="memTemplParams" colspan="2">template&lt;size_t pivot_c, template&lt; typename... &gt; typename tuple_t, typename... ts&gt; </td></tr>
+<tr class="memitem:gafc389b9f9adeba09a49ca68714e9e3a3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__meta.html#gafc389b9f9adeba09a49ca68714e9e3a3">bio::meta::tuple_split</a> (tuple_t&lt; ts... &gt; &amp;&amp;t)</td></tr>
+<tr class="memdesc:gafc389b9f9adeba09a49ca68714e9e3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a tuple like data structure at the given position.  <a href="group__meta.html#gafc389b9f9adeba09a49ca68714e9e3a3">More...</a><br /></td></tr>
+<tr class="separator:gafc389b9f9adeba09a49ca68714e9e3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac90652e94480fe7019f6ca7dc3032346"><td class="memTemplParams" colspan="2">template&lt;size_t pivot_c, template&lt; typename... &gt; typename tuple_t, typename... ts&gt; </td></tr>
+<tr class="memitem:gac90652e94480fe7019f6ca7dc3032346"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__meta.html#gac90652e94480fe7019f6ca7dc3032346">bio::meta::tuple_split</a> (tuple_t&lt; ts... &gt; const &amp;t)</td></tr>
+<tr class="memdesc:gac90652e94480fe7019f6ca7dc3032346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a tuple like data structure at the given position.  <a href="group__meta.html#gac90652e94480fe7019f6ca7dc3032346">More...</a><br /></td></tr>
+<tr class="separator:gac90652e94480fe7019f6ca7dc3032346"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides utility functions for tuple like interfaces. </p>
@@ -165,7 +170,7 @@ Functions</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="tuple__utility_8hpp.html">tuple_utility.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

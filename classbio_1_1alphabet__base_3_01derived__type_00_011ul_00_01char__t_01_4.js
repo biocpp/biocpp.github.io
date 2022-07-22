@@ -1,7 +1,7 @@
 var classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4 =
 [
     [ "char_type", "classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a8fe713db43ed157f52c54b8c94672a2a", null ],
-    [ "rank_type", "classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#ae265f5b1abef3879e069519ba45edcc7", null ],
+    [ "rank_type", "classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#ada60b0ea2a19d83f5da9c202cdd41cef", null ],
     [ "alphabet_base", "classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a2773dc3bad3531a3b38fbe994342e88c", null ],
     [ "alphabet_base", "classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a617c2708abed520cb13601c8b3c4de39", null ],
     [ "alphabet_base", "classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a52d798369b160b56491083d6100cfcea", null ],

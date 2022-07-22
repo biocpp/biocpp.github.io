@@ -2,7 +2,7 @@ var classbio_1_1quality__base =
 [
     [ "char_type", "classbio_1_1quality__base.html#a9934c83725128fc1cde969618f2b4f66", null ],
     [ "phred_type", "classbio_1_1quality__base.html#a8c2ef2e961edf50ab4ca7fdd28e8a15c", null ],
-    [ "rank_type", "classbio_1_1quality__base.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1quality__base.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "quality_base", "classbio_1_1quality__base.html#a82725e854d0ce5ce69526e707c5af065", null ],
     [ "assign_char", "classbio_1_1quality__base.html#a822d399ab808842870a4a4feb5490849", null ],
     [ "assign_phred", "classbio_1_1quality__base.html#aa7c9294d499fe2c7ec35c1206283ac9c", null ],

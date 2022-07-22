@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -113,7 +113,8 @@ $(document).ready(function(){initNavTree('version_8hpp.html',''); initResizable(
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="version_8hpp__incl.svg" width="310" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="version_8hpp__incl.svg" width="310" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="version_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -126,15 +127,16 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5f8295917b64837809d97d65fea7aeee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8hpp.html#a5f8295917b64837809d97d65fea7aeee">BIOCPP_VERSION</a></td></tr>
-<tr class="memdesc:a5f8295917b64837809d97d65fea7aeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full version as MACRO (number).  <a href="version_8hpp.html#a5f8295917b64837809d97d65fea7aeee">More...</a><br /></td></tr>
+<tr class="memitem:a5f8295917b64837809d97d65fea7aeee"><td class="memItemLeft" align="right" valign="top"><a id="a5f8295917b64837809d97d65fea7aeee"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8hpp.html#a5f8295917b64837809d97d65fea7aeee">BIOCPP_VERSION</a>&#160;&#160;&#160;(<a class="el" href="version_8hpp.html#af8f1a71606116add1cbbedca8c177b5f">BIOCPP_VERSION_MAJOR</a> * 10000 + <a class="el" href="version_8hpp.html#aabab584895375afd6c9fcb341ed68d51">BIOCPP_VERSION_MINOR</a> * 100 + <a class="el" href="version_8hpp.html#a54cb17f1a1403a040bac9575667a808d">BIOCPP_VERSION_PATCH</a>)</td></tr>
+<tr class="memdesc:a5f8295917b64837809d97d65fea7aeee"><td class="mdescLeft">&#160;</td><td class="mdescRight">The full version as MACRO (number). <br /></td></tr>
 <tr class="separator:a5f8295917b64837809d97d65fea7aeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f1a71606116add1cbbedca8c177b5f"><td class="memItemLeft" align="right" valign="top"><a id="af8f1a71606116add1cbbedca8c177b5f"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8hpp.html#af8f1a71606116add1cbbedca8c177b5f">BIOCPP_VERSION_MAJOR</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:af8f1a71606116add1cbbedca8c177b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The major version as MACRO. <br /></td></tr>
 <tr class="separator:af8f1a71606116add1cbbedca8c177b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabab584895375afd6c9fcb341ed68d51"><td class="memItemLeft" align="right" valign="top"><a id="aabab584895375afd6c9fcb341ed68d51"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8hpp.html#aabab584895375afd6c9fcb341ed68d51">BIOCPP_VERSION_MINOR</a>&#160;&#160;&#160;1</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="version_8hpp.html#aabab584895375afd6c9fcb341ed68d51">BIOCPP_VERSION_MINOR</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:aabab584895375afd6c9fcb341ed68d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minor version as MACRO. <br /></td></tr>
 <tr class="separator:aabab584895375afd6c9fcb341ed68d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54cb17f1a1403a040bac9575667a808d"><td class="memItemLeft" align="right" valign="top"><a id="a54cb17f1a1403a040bac9575667a808d"></a>
@@ -163,30 +165,7 @@ constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides BioC++ version macros and global variables. </p>
 <dl class="section author"><dt>Author</dt><dd>Hannes Hauswedell &lt;hannes.hauswedell AT decode.is&gt; </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5f8295917b64837809d97d65fea7aeee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f8295917b64837809d97d65fea7aeee">&#9670;&nbsp;</a></span>BIOCPP_VERSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BIOCPP_VERSION</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">                     (<a class="code" href="version_8hpp.html#af8f1a71606116add1cbbedca8c177b5f">BIOCPP_VERSION_MAJOR</a> * 10000 \</div>
-<div class="line">                     + <a class="code" href="version_8hpp.html#aabab584895375afd6c9fcb341ed68d51">BIOCPP_VERSION_MINOR</a> * 100 \</div>
-<div class="line">                     + <a class="code" href="version_8hpp.html#a54cb17f1a1403a040bac9575667a808d">BIOCPP_VERSION_PATCH</a>)</div>
-<div class="ttc" id="aversion_8hpp_html_a54cb17f1a1403a040bac9575667a808d"><div class="ttname"><a href="version_8hpp.html#a54cb17f1a1403a040bac9575667a808d">BIOCPP_VERSION_PATCH</a></div><div class="ttdeci">#define BIOCPP_VERSION_PATCH</div><div class="ttdoc">The patch version as MACRO.</div><div class="ttdef"><b>Definition:</b> version.hpp:25</div></div>
-<div class="ttc" id="aversion_8hpp_html_aabab584895375afd6c9fcb341ed68d51"><div class="ttname"><a href="version_8hpp.html#aabab584895375afd6c9fcb341ed68d51">BIOCPP_VERSION_MINOR</a></div><div class="ttdeci">#define BIOCPP_VERSION_MINOR</div><div class="ttdoc">The minor version as MACRO.</div><div class="ttdef"><b>Definition:</b> version.hpp:23</div></div>
-<div class="ttc" id="aversion_8hpp_html_af8f1a71606116add1cbbedca8c177b5f"><div class="ttname"><a href="version_8hpp.html#af8f1a71606116add1cbbedca8c177b5f">BIOCPP_VERSION_MAJOR</a></div><div class="ttdeci">#define BIOCPP_VERSION_MAJOR</div><div class="ttdoc">The major version as MACRO.</div><div class="ttdef"><b>Definition:</b> version.hpp:21</div></div>
-</div><!-- fragment -->
-<p>The full version as MACRO (number). </p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
 <!-- start footer part -->
@@ -195,7 +174,7 @@ constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="e
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="version_8hpp.html">version.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

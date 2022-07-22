@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides bio::gap.">
+<g id="a_node1"><a xlink:title="Provides bio::alphabet::gap.">
 <polygon fill="#bfbfbf" stroke="black" points="0,-168.5 0,-187.5 140,-187.5 140,-168.5 0,-168.5"/>
 <text text-anchor="middle" x="70" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/gap/gap.hpp</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="gapped_8hpp.html" target="_top" xlink:title="Provides bio::gapped.">
+<g id="a_node4"><a xlink:href="gapped_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::gapped.">
 <polygon fill="white" stroke="black" points="45,-112.5 45,-131.5 203,-131.5 203,-112.5 45,-112.5"/>
 <text text-anchor="middle" x="124" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/gap/gapped.hpp</text>
 </a>

@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('alphabet_2structure_2concept_8hpp.html
 </div><!--header-->
 <div class="contents">
 
-<p>Provides <a class="el" href="interfacebio_1_1rna__structure__alphabet.html" title="A concept that indicates whether an alphabet represents RNA structure.">bio::rna_structure_alphabet</a>.  
+<p>Provides <a class="el" href="interfacebio_1_1alphabet_1_1rna__structure__alphabet.html" title="A concept that indicates whether an alphabet represents RNA structure.">bio::alphabet::rna_structure_alphabet</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/optional.html">optional</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="alphabet_2concept_8hpp_source.html">bio/alphabet/concept.hpp</a>&gt;</code><br />
@@ -114,7 +114,8 @@ $(document).ready(function(){initNavTree('alphabet_2structure_2concept_8hpp.html
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="alphabet_2structure_2concept_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="alphabet_2structure_2concept_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
@@ -131,29 +132,32 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1alphabet"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html">bio::alphabet</a></td></tr>
+<tr class="memdesc:namespacebio_1_1alphabet"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alphabet module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Function objects (Structure)</div></td></tr>
-<tr class="memitem:gaa20b8c7c25e8951c93713a9eee3a1bfb"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#gaa20b8c7c25e8951c93713a9eee3a1bfb">bio::is_pair_close</a> = detail::adl_only::is_pair_close_fn{}</td></tr>
-<tr class="memdesc:gaa20b8c7c25e8951c93713a9eee3a1bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the given character represents a leftward interaction in an RNA structure.  <a href="group__structure.html#gaa20b8c7c25e8951c93713a9eee3a1bfb">More...</a><br /></td></tr>
-<tr class="separator:gaa20b8c7c25e8951c93713a9eee3a1bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4085c1e2b3d3edca045dd481b336cc9"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#gac4085c1e2b3d3edca045dd481b336cc9">bio::is_pair_open</a> = detail::adl_only::is_pair_open_fn{}</td></tr>
-<tr class="memdesc:gac4085c1e2b3d3edca045dd481b336cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the given character represents a rightward interaction in an RNA structure.  <a href="group__structure.html#gac4085c1e2b3d3edca045dd481b336cc9">More...</a><br /></td></tr>
-<tr class="separator:gac4085c1e2b3d3edca045dd481b336cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9cbeecadfb9c36267430e6d0a11b2f4"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#gac9cbeecadfb9c36267430e6d0a11b2f4">bio::is_unpaired</a> = detail::adl_only::is_unpaired_fn{}</td></tr>
-<tr class="memdesc:gac9cbeecadfb9c36267430e6d0a11b2f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the given character represents an unpaired nucleotide in an RNA structure.  <a href="group__structure.html#gac9cbeecadfb9c36267430e6d0a11b2f4">More...</a><br /></td></tr>
-<tr class="separator:gac9cbeecadfb9c36267430e6d0a11b2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga09f3938483b4d530798d40580d85e640"><td class="memTemplParams" colspan="2">template&lt;typename alph_t &gt; </td></tr>
-<tr class="memitem:ga09f3938483b4d530798d40580d85e640"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__structure.html#ga09f3938483b4d530798d40580d85e640">bio::max_pseudoknot_depth</a> = detail::adl_only::max_pseudoknot_depth_obj&lt;alph_t&gt;()</td></tr>
-<tr class="memdesc:ga09f3938483b4d530798d40580d85e640"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type trait that holds the ability of the structure alphabet to represent pseudoknots, i.e. crossing interactions, up to a certain depth.  <a href="group__structure.html#ga09f3938483b4d530798d40580d85e640">More...</a><br /></td></tr>
-<tr class="separator:ga09f3938483b4d530798d40580d85e640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3db7ac49c43b666a9dc890d05f35138"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#gae3db7ac49c43b666a9dc890d05f35138">bio::pseudoknot_id</a> = detail::adl_only::pseudoknot_id_fn{}</td></tr>
-<tr class="memdesc:gae3db7ac49c43b666a9dc890d05f35138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an id for the level of a pseudoknotted interaction (also known as 'page number').  <a href="group__structure.html#gae3db7ac49c43b666a9dc890d05f35138">More...</a><br /></td></tr>
-<tr class="separator:gae3db7ac49c43b666a9dc890d05f35138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66b2f61c53ac5c97bf2650862ca074c6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#ga66b2f61c53ac5c97bf2650862ca074c6">bio::alphabet::is_pair_close</a> = detail::adl_only::is_pair_close_fn{}</td></tr>
+<tr class="memdesc:ga66b2f61c53ac5c97bf2650862ca074c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the given character represents a leftward interaction in an RNA structure.  <a href="group__structure.html#ga66b2f61c53ac5c97bf2650862ca074c6">More...</a><br /></td></tr>
+<tr class="separator:ga66b2f61c53ac5c97bf2650862ca074c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49b83b171c7c30115dbeeae9b3a202f8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#ga49b83b171c7c30115dbeeae9b3a202f8">bio::alphabet::is_pair_open</a> = detail::adl_only::is_pair_open_fn{}</td></tr>
+<tr class="memdesc:ga49b83b171c7c30115dbeeae9b3a202f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the given character represents a rightward interaction in an RNA structure.  <a href="group__structure.html#ga49b83b171c7c30115dbeeae9b3a202f8">More...</a><br /></td></tr>
+<tr class="separator:ga49b83b171c7c30115dbeeae9b3a202f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga206fd2bc601dd1fd33415c408e0f4bdb"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#ga206fd2bc601dd1fd33415c408e0f4bdb">bio::alphabet::is_unpaired</a> = detail::adl_only::is_unpaired_fn{}</td></tr>
+<tr class="memdesc:ga206fd2bc601dd1fd33415c408e0f4bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the given character represents an unpaired nucleotide in an RNA structure.  <a href="group__structure.html#ga206fd2bc601dd1fd33415c408e0f4bdb">More...</a><br /></td></tr>
+<tr class="separator:ga206fd2bc601dd1fd33415c408e0f4bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dcda30a678b5f4a804daeef9931a4dd"><td class="memTemplParams" colspan="2">template&lt;typename alph_t &gt; </td></tr>
+<tr class="memitem:ga2dcda30a678b5f4a804daeef9931a4dd"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__structure.html#ga2dcda30a678b5f4a804daeef9931a4dd">bio::alphabet::max_pseudoknot_depth</a> = detail::adl_only::max_pseudoknot_depth_obj&lt;alph_t&gt;()</td></tr>
+<tr class="memdesc:ga2dcda30a678b5f4a804daeef9931a4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type trait that holds the ability of the structure alphabet to represent pseudoknots, i.e. crossing interactions, up to a certain depth.  <a href="group__structure.html#ga2dcda30a678b5f4a804daeef9931a4dd">More...</a><br /></td></tr>
+<tr class="separator:ga2dcda30a678b5f4a804daeef9931a4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa59cc5f998ced356943bcc21aa6e9ddc"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__structure.html#gaa59cc5f998ced356943bcc21aa6e9ddc">bio::alphabet::pseudoknot_id</a> = detail::adl_only::pseudoknot_id_fn{}</td></tr>
+<tr class="memdesc:gaa59cc5f998ced356943bcc21aa6e9ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an id for the level of a pseudoknotted interaction (also known as 'page number').  <a href="group__structure.html#gaa59cc5f998ced356943bcc21aa6e9ddc">More...</a><br /></td></tr>
+<tr class="separator:gaa59cc5f998ced356943bcc21aa6e9ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides <a class="el" href="interfacebio_1_1rna__structure__alphabet.html" title="A concept that indicates whether an alphabet represents RNA structure.">bio::rna_structure_alphabet</a>. </p>
+<div class="textblock"><p>Provides <a class="el" href="interfacebio_1_1alphabet_1_1rna__structure__alphabet.html" title="A concept that indicates whether an alphabet represents RNA structure.">bio::alphabet::rna_structure_alphabet</a>. </p>
 <dl class="section author"><dt>Author</dt><dd>Joerg Winkler &lt;j.winkler AT fu-berlin.de&gt; </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -164,7 +168,7 @@ Variables</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_9cdca4c819950be4f7d4fd5394481f1e.html">structure</a></li><li class="navelem"><a class="el" href="alphabet_2structure_2concept_8hpp.html">concept.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Tue Jul 5 2022 17:09:15 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -2,7 +2,7 @@ var classbio_1_1phred42 =
 [
     [ "char_type", "classbio_1_1phred42.html#a9934c83725128fc1cde969618f2b4f66", null ],
     [ "phred_type", "classbio_1_1phred42.html#a8c2ef2e961edf50ab4ca7fdd28e8a15c", null ],
-    [ "rank_type", "classbio_1_1phred42.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1phred42.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "phred42", "classbio_1_1phred42.html#af735d7c5811f4f42384a92127c7cd9ea", null ],
     [ "phred42", "classbio_1_1phred42.html#aba32c02658b83cac3be37d123e9e007e", null ],
     [ "phred42", "classbio_1_1phred42.html#acd490d03feffe8a87119f751e9b9fa40", null ],

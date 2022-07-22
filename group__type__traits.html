@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('group__type__traits.html',''); initRes
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Type Traits<div class="ingroups"><a class="el" href="group__core.html">Meta</a></div></div>  </div>
+<div class="title">Type Traits<div class="ingroups"><a class="el" href="group__meta.html">Meta</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -112,52 +112,53 @@ $(document).ready(function(){initNavTree('group__type__traits.html',''); initRes
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__type__traits.svg" width="204" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__type__traits.svg" width="204" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1const__reference.html">bio::const_reference&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the <code><a class="el" href="structbio_1_1const__reference.html" title="Exposes the const_reference of another type.">const_reference</a></code> of another type.  <a href="structbio_1_1const__reference.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1deferred__type.html">bio::meta::deferred_type&lt; t, dependent_ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type identity; further arguments are ignored, but can make this type dependent if they are.  <a href="structbio_1_1meta_1_1deferred__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1difference__type.html">bio::difference_type&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the <code><a class="el" href="structbio_1_1difference__type.html" title="Exposes the difference_type of another type.">difference_type</a></code> of another type.  <a href="structbio_1_1difference__type.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html">bio::meta::function_traits&lt; std::function&lt; return_t(args_t...)&gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A traits class to provide a uniform interface to the properties of a function type.  <a href="structbio_1_1meta_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html">bio::function_traits&lt; std::function&lt; return_t(args_t...)&gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A traits class to provide a uniform interface to the properties of a function type.  <a href="structbio_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">bio::meta::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context.  <a href="structbio_1_1meta_1_1is__constexpr__default__constructible.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1is__constexpr__default__constructible.html">bio::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context.  <a href="structbio_1_1is__constexpr__default__constructible.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1is__constexpr__default__constructible_3_01t_01_4.html">bio::meta::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> specialisation).  <a href="structbio_1_1meta_1_1is__constexpr__default__constructible_3_01t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1is__constexpr__default__constructible_3_01t_01_4.html">bio::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> specialisation).  <a href="structbio_1_1is__constexpr__default__constructible_3_01t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1is__type__specialisation__of.html">bio::meta::is_type_specialisation_of&lt; source_t, target_template &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a source_type is a specialisation of another template.  <a href="structbio_1_1meta_1_1is__type__specialisation__of.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1range__compatible.html">range_compatible</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two types are "compatible" if their <a class="el" href="group__type__traits.html#ga8ebbe38c7cc1281f2a439f9f98b17454" title="Returns the number of times you can call bio::value_type_t recursively on t (type trait).">bio::range_dimension_v</a> and their <a class="el" href="group__type__traits.html#ga5414df3a6267d855f8e43d57ce30ac2e" title="Shortcut for bio::range_innermost_value (transformation_trait shortcut).">bio::range_innermost_value_t</a> are the same.  <a href="interfacebio_1_1range__compatible.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1is__value__specialisation__of_3_01source__t_00_01target__template_01_4.html">bio::meta::is_value_specialisation_of&lt; source_t, target_template &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a source_type is a specialisation of another template.  <a href="structbio_1_1meta_1_1is__value__specialisation__of_3_01source__t_00_01target__template_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1range__innermost__value.html">bio::range_innermost_value&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively determines the <code><a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a></code> on containers and/or iterators.  <a href="structbio_1_1range__innermost__value.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1overloaded.html">bio::meta::overloaded&lt; invocable_ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type that can conveniently inherit multiple invocables and acts as a union over them.  <a href="structbio_1_1meta_1_1overloaded.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1reference.html">bio::reference&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the <code>reference</code> of another type.  <a href="structbio_1_1reference.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1remove__rvalue__reference.html">bio::meta::remove_rvalue_reference&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved.  <a href="structbio_1_1meta_1_1remove__rvalue__reference.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1remove__rvalue__reference.html">bio::remove_rvalue_reference&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved.  <a href="structbio_1_1remove__rvalue__reference.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1template__specialisation__of.html">template_specialisation_of</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides concept <code><a class="el" href="interfacebio_1_1meta_1_1template__specialisation__of.html" title="Provides concept bio::meta::template_specialisation_of&lt;mytype, [...]&gt; for checking the type specialis...">bio::meta::template_specialisation_of</a>&lt;mytype, [...]&gt;</code> for checking the type specialisation of some type with a given template, for example a specialized <code><a class="el" href="structbio_1_1meta_1_1type__list.html" title="Type that contains multiple types.">type_list</a>&lt;float&gt;</code> with the <code><a class="el" href="structbio_1_1meta_1_1type__list.html" title="Type that contains multiple types.">type_list</a></code> template.  <a href="interfacebio_1_1meta_1_1template__specialisation__of.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1rvalue__reference.html">bio::rvalue_reference&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the <code><a class="el" href="structbio_1_1rvalue__reference.html" title="Exposes the rvalue_reference of another type.">rvalue_reference</a></code> of another type.  <a href="structbio_1_1rvalue__reference.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html">bio::meta::transfer_template_args_onto&lt; source_template&lt; source_arg_types... &gt;, target_template &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a type template's <b>type</b> arguments and specialises another template with them.  <a href="structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1size__type.html">bio::size_type&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the <code><a class="el" href="structbio_1_1size__type.html" title="Exposes the size_type of another type.">size_type</a></code> of another type.  <a href="structbio_1_1size__type.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html">bio::meta::transfer_template_vargs_onto&lt; source_template&lt; source_varg_types... &gt;, target_template &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a type template's <b>non-type</b> arguments and specialises another template with them.  <a href="structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1transformation__trait.html">transformation_trait</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept for a transformation trait.  <a href="interfacebio_1_1transformation__trait.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html">transformation_trait</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept for a transformation trait.  <a href="interfacebio_1_1meta_1_1transformation__trait.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1unary__type__trait.html">unary_type_trait</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept for a unary traits type.  <a href="interfacebio_1_1unary__type__trait.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1unary__type__trait.html">unary_type_trait</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concept for a unary traits type.  <a href="interfacebio_1_1meta_1_1unary__type__trait.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1value__type.html">bio::value_type&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the <code><a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">value_type</a></code> of another type.  <a href="structbio_1_1value__type.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1valid__template__spec__or.html">bio::meta::valid_template_spec_or&lt; fallback_t, templ_t, spec_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes <code>templ_t&lt;spec_t...&gt;</code> if that is valid, otherwise <code>fallback_t</code>.  <a href="structbio_1_1meta_1_1valid__template__spec__or.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -172,53 +173,61 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga35e53f22583d774a1414e84cda9bb7b3"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga35e53f22583d774a1414e84cda9bb7b3"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga35e53f22583d774a1414e84cda9bb7b3">bio::const_reference_t</a> = typename detail::const_reference_t&lt; t &gt;</td></tr>
-<tr class="memdesc:ga35e53f22583d774a1414e84cda9bb7b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1const__reference.html" title="Exposes the const_reference of another type.">bio::const_reference</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga35e53f22583d774a1414e84cda9bb7b3">More...</a><br /></td></tr>
-<tr class="separator:ga35e53f22583d774a1414e84cda9bb7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ce9cbe5f2b90ed8ef642aa04f917435"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga0ce9cbe5f2b90ed8ef642aa04f917435"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga0ce9cbe5f2b90ed8ef642aa04f917435">bio::difference_type_t</a> = typename detail::difference_type_t&lt; t &gt;</td></tr>
-<tr class="memdesc:ga0ce9cbe5f2b90ed8ef642aa04f917435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1difference__type.html" title="Exposes the difference_type of another type.">bio::difference_type</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga0ce9cbe5f2b90ed8ef642aa04f917435">More...</a><br /></td></tr>
-<tr class="separator:ga0ce9cbe5f2b90ed8ef642aa04f917435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5414df3a6267d855f8e43d57ce30ac2e"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga5414df3a6267d855f8e43d57ce30ac2e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga5414df3a6267d855f8e43d57ce30ac2e">bio::range_innermost_value_t</a> = typename <a class="el" href="structbio_1_1range__innermost__value.html">range_innermost_value</a>&lt; t &gt;::type</td></tr>
-<tr class="memdesc:ga5414df3a6267d855f8e43d57ce30ac2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::range_innermost_value</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga5414df3a6267d855f8e43d57ce30ac2e">More...</a><br /></td></tr>
-<tr class="separator:ga5414df3a6267d855f8e43d57ce30ac2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3482ea678fa2cd8a765927064ed9738"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:gac3482ea678fa2cd8a765927064ed9738"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gac3482ea678fa2cd8a765927064ed9738">bio::reference_t</a> = typename detail::reference_t&lt; t &gt;</td></tr>
-<tr class="memdesc:gac3482ea678fa2cd8a765927064ed9738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1reference.html" title="Exposes the reference of another type.">bio::reference</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#gac3482ea678fa2cd8a765927064ed9738">More...</a><br /></td></tr>
-<tr class="separator:gac3482ea678fa2cd8a765927064ed9738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab8e5eb46ed6e09e2ea4719789f8c5467">bio::remove_cvref_t</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cv.html">std::remove_cv_t</a>&lt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference_t</a>&lt; t &gt; &gt;</td></tr>
-<tr class="memdesc:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>const</code>, <code>volatile</code> and references removed (type trait).  <a href="group__type__traits.html#gab8e5eb46ed6e09e2ea4719789f8c5467">More...</a><br /></td></tr>
-<tr class="separator:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga383091370276ddc1b050b69bee6a7b03"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga383091370276ddc1b050b69bee6a7b03"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">bio::remove_rvalue_reference_t</a> = typename <a class="el" href="structbio_1_1remove__rvalue__reference.html">remove_rvalue_reference</a>&lt; t &gt;::type</td></tr>
-<tr class="memdesc:ga383091370276ddc1b050b69bee6a7b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">More...</a><br /></td></tr>
-<tr class="separator:ga383091370276ddc1b050b69bee6a7b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfc9635bac6c5ce02b783b3ac8329ddb"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:gabfc9635bac6c5ce02b783b3ac8329ddb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gabfc9635bac6c5ce02b783b3ac8329ddb">bio::rvalue_reference_t</a> = typename detail::rvalue_reference_t&lt; t &gt;</td></tr>
-<tr class="memdesc:gabfc9635bac6c5ce02b783b3ac8329ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1rvalue__reference.html" title="Exposes the rvalue_reference of another type.">bio::rvalue_reference</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#gabfc9635bac6c5ce02b783b3ac8329ddb">More...</a><br /></td></tr>
-<tr class="separator:gabfc9635bac6c5ce02b783b3ac8329ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27d2d5d8f96f200ccbb1b5414943fb3b"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga27d2d5d8f96f200ccbb1b5414943fb3b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga27d2d5d8f96f200ccbb1b5414943fb3b">bio::size_type_t</a> = typename detail::size_type_t&lt; t &gt;</td></tr>
-<tr class="memdesc:ga27d2d5d8f96f200ccbb1b5414943fb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1size__type.html" title="Exposes the size_type of another type.">bio::size_type</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga27d2d5d8f96f200ccbb1b5414943fb3b">More...</a><br /></td></tr>
-<tr class="separator:ga27d2d5d8f96f200ccbb1b5414943fb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e8cde375522d7d61cf86837e0b0dacd"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga5e8cde375522d7d61cf86837e0b0dacd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga5e8cde375522d7d61cf86837e0b0dacd">bio::value_type_t</a> = typename detail::value_type_t&lt; t &gt;</td></tr>
-<tr class="memdesc:ga5e8cde375522d7d61cf86837e0b0dacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">bio::value_type</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga5e8cde375522d7d61cf86837e0b0dacd">More...</a><br /></td></tr>
-<tr class="separator:ga5e8cde375522d7d61cf86837e0b0dacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab403bf8d0e05052d7e46bf8b617b8c47"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:gab403bf8d0e05052d7e46bf8b617b8c47"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab403bf8d0e05052d7e46bf8b617b8c47">default_initialisable_wrap_t</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a>&lt; std::is_nothrow_default_constructible_v&lt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt; t &gt; &gt; &amp;&amp;<a class="el" href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">is_constexpr_default_constructible_v</a>&lt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt; t &gt; &gt;, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt; t &gt;, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>&lt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt; t &gt; &gt;&gt;</td></tr>
+<tr class="memdesc:gab403bf8d0e05052d7e46bf8b617b8c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return t as t if it is noexcept- and constexpr-default-constructible; else wrap it in <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>.  <a href="group__type__traits.html#gab403bf8d0e05052d7e46bf8b617b8c47">More...</a><br /></td></tr>
+<tr class="separator:gab403bf8d0e05052d7e46bf8b617b8c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90bec324285fadb8b41143652e2893f4"><td class="memTemplParams" colspan="2">template&lt;typename t , typename... dependent_ts&gt; </td></tr>
+<tr class="memitem:ga90bec324285fadb8b41143652e2893f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">bio::meta::deferred_type_t</a> = typename <a class="el" href="structbio_1_1meta_1_1deferred__type.html">deferred_type</a>&lt; t, dependent_ts... &gt;::type</td></tr>
+<tr class="memdesc:ga90bec324285fadb8b41143652e2893f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type identity; further arguments are ignored, but can make this type dependent if they are (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">More...</a><br /></td></tr>
+<tr class="separator:ga90bec324285fadb8b41143652e2893f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f9e56cdae87e43f5e69ab747256fa31"><td class="memItemLeft" align="right" valign="top"><a id="ga7f9e56cdae87e43f5e69ab747256fa31"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga7f9e56cdae87e43f5e69ab747256fa31">bio::meta::ignore_t</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt; decltype(std::ignore)&gt;</td></tr>
+<tr class="memdesc:ga7f9e56cdae87e43f5e69ab747256fa31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of std::ignore with <code>const</code>, <code>volatile</code> and references removed (type trait). <br /></td></tr>
+<tr class="separator:ga7f9e56cdae87e43f5e69ab747256fa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0faf63d047d9a79898eb572fb8affc36"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga0faf63d047d9a79898eb572fb8affc36"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">bio::meta::remove_rvalue_reference_t</a> = typename <a class="el" href="structbio_1_1meta_1_1remove__rvalue__reference.html">remove_rvalue_reference</a>&lt; t &gt;::type</td></tr>
+<tr class="memdesc:ga0faf63d047d9a79898eb572fb8affc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">More...</a><br /></td></tr>
+<tr class="separator:ga0faf63d047d9a79898eb572fb8affc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga706f4dc6833f13cd93df980e4521e07d"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga706f4dc6833f13cd93df980e4521e07d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga706f4dc6833f13cd93df980e4521e07d">bio::meta::strip_type_identity_t</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a>&lt; <a class="el" href="template__inspection_8hpp.html#a142bb9214fc9738f7aa5cab953809564">is_type_specialisation_of_v</a>&lt; t, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a> &gt;, <a class="el" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">transformation_trait_or_t</a>&lt; t, void &gt;, t &gt;</td></tr>
+<tr class="memdesc:ga706f4dc6833f13cd93df980e4521e07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A transformation trait shortcut that returns the type inside a <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a> or the type itself.  <a href="group__type__traits.html#ga706f4dc6833f13cd93df980e4521e07d">More...</a><br /></td></tr>
+<tr class="separator:ga706f4dc6833f13cd93df980e4521e07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a37e954776f5a3e5ed523b1e13c1f05"><td class="memTemplParams" colspan="2">template&lt;typename source_type , template&lt; typename... &gt; typename target_template&gt; </td></tr>
+<tr class="memitem:ga5a37e954776f5a3e5ed523b1e13c1f05"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga5a37e954776f5a3e5ed523b1e13c1f05">bio::meta::transfer_template_args_onto_t</a> = typename transfer_template_args_onto&lt; source_type, target_template &gt;::type</td></tr>
+<tr class="memdesc:ga5a37e954776f5a3e5ed523b1e13c1f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for bio::meta::transfer_template_args_onto (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga5a37e954776f5a3e5ed523b1e13c1f05">More...</a><br /></td></tr>
+<tr class="separator:ga5a37e954776f5a3e5ed523b1e13c1f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2f268999217599f9739347db7fe3d51"><td class="memTemplParams" colspan="2">template&lt;typename source_type , template&lt; auto... &gt; typename target_template&gt; </td></tr>
+<tr class="memitem:gad2f268999217599f9739347db7fe3d51"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gad2f268999217599f9739347db7fe3d51">bio::meta::transfer_template_vargs_onto_t</a> = typename transfer_template_vargs_onto&lt; source_type, target_template &gt;::type</td></tr>
+<tr class="memdesc:gad2f268999217599f9739347db7fe3d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for bio::meta::transfer_template_vargs_onto (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#gad2f268999217599f9739347db7fe3d51">More...</a><br /></td></tr>
+<tr class="separator:gad2f268999217599f9739347db7fe3d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d82a6ea4bb0a8ade89da77cde12294d"><td class="memTemplParams" colspan="2">template&lt;typename type_t , typename default_t &gt; </td></tr>
+<tr class="memitem:ga4d82a6ea4bb0a8ade89da77cde12294d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">bio::meta::transformation_trait_or</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a>&lt; <a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html">transformation_trait</a>&lt; type_t &gt;, type_t, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>&lt; default_t &gt; &gt;</td></tr>
+<tr class="memdesc:ga4d82a6ea4bb0a8ade89da77cde12294d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This gives a fallback type if <em>type_t::type</em> is not defined.  <a href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">More...</a><br /></td></tr>
+<tr class="separator:ga4d82a6ea4bb0a8ade89da77cde12294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c432c9dd8abdd425beb4468e316d0f"><td class="memTemplParams" colspan="2">template&lt;typename type_t , typename default_t &gt; </td></tr>
+<tr class="memitem:gac1c432c9dd8abdd425beb4468e316d0f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a> = typename <a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">transformation_trait_or</a>&lt; type_t, default_t &gt;::type</td></tr>
+<tr class="memdesc:gac1c432c9dd8abdd425beb4468e316d0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper type of <a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d" title="This gives a fallback type if type_t::type is not defined.">bio::meta::transformation_trait_or</a> (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">More...</a><br /></td></tr>
+<tr class="separator:gac1c432c9dd8abdd425beb4468e316d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga349be4c1a84707c81b9f3707a6c98e38"><td class="memTemplParams" colspan="2">template&lt;typename fallback_t , template&lt; typename... &gt; typename templ_t, typename... spec_t&gt; </td></tr>
+<tr class="memitem:ga349be4c1a84707c81b9f3707a6c98e38"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga349be4c1a84707c81b9f3707a6c98e38">bio::meta::valid_template_spec_or_t</a> = typename <a class="el" href="structbio_1_1meta_1_1valid__template__spec__or.html">valid_template_spec_or</a>&lt; fallback_t, templ_t, spec_t... &gt;::type</td></tr>
+<tr class="memdesc:ga349be4c1a84707c81b9f3707a6c98e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for <a class="el" href="structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t.">bio::meta::valid_template_spec_or</a> (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga349be4c1a84707c81b9f3707a6c98e38">More...</a><br /></td></tr>
+<tr class="separator:ga349be4c1a84707c81b9f3707a6c98e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga49bc6efb0b62be81546f939b2efd7272"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga49bc6efb0b62be81546f939b2efd7272"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">bio::meta::decays_to_ignore_v</a> = std::is_same_v&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt;, <a class="el" href="group__type__traits.html#ga7f9e56cdae87e43f5e69ab747256fa31">ignore_t</a>&gt;</td></tr>
+<tr class="memdesc:ga49bc6efb0b62be81546f939b2efd7272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the input type with <code>const</code>, <code>volatile</code> and references removed is std::ignore's type. (type trait).  <a href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">More...</a><br /></td></tr>
+<tr class="separator:ga49bc6efb0b62be81546f939b2efd7272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a8065cf948f22f51e36077dd025c9ec"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename... &gt; typename query_t, typename... args_t&gt; </td></tr>
+<tr class="memitem:ga9a8065cf948f22f51e36077dd025c9ec"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga9a8065cf948f22f51e36077dd025c9ec">is_class_template_declarable_with_v</a></td></tr>
+<tr class="memdesc:ga9a8065cf948f22f51e36077dd025c9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper variable template for bio::meta::is_class_template_declarable_with.  <a href="group__type__traits.html#ga9a8065cf948f22f51e36077dd025c9ec">More...</a><br /></td></tr>
+<tr class="separator:ga9a8065cf948f22f51e36077dd025c9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga50e7f1238007a00a628e2b7b72b8aaa2"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga50e7f1238007a00a628e2b7b72b8aaa2"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">is_constexpr_default_constructible_v</a> = <a class="el" href="structbio_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible</a>&lt;t&gt;::value</td></tr>
-<tr class="memdesc:ga50e7f1238007a00a628e2b7b72b8aaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> shortcut).  <a href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">More...</a><br /></td></tr>
+<tr class="memitem:ga50e7f1238007a00a628e2b7b72b8aaa2"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">is_constexpr_default_constructible_v</a> = <a class="el" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible</a>&lt;t&gt;::value</td></tr>
+<tr class="memdesc:ga50e7f1238007a00a628e2b7b72b8aaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> shortcut).  <a href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">More...</a><br /></td></tr>
 <tr class="separator:ga50e7f1238007a00a628e2b7b72b8aaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ebbe38c7cc1281f2a439f9f98b17454"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga8ebbe38c7cc1281f2a439f9f98b17454"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga8ebbe38c7cc1281f2a439f9f98b17454">bio::range_dimension_v</a> = 1</td></tr>
-<tr class="memdesc:ga8ebbe38c7cc1281f2a439f9f98b17454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of times you can call <code><a class="el" href="group__type__traits.html#ga5e8cde375522d7d61cf86837e0b0dacd" title="Shortcut for bio::value_type (transformation_trait shortcut).">bio::value_type_t</a></code> recursively on t (type trait).  <a href="group__type__traits.html#ga8ebbe38c7cc1281f2a439f9f98b17454">More...</a><br /></td></tr>
-<tr class="separator:ga8ebbe38c7cc1281f2a439f9f98b17454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Provides various type traits and their shortcuts. </p>
@@ -245,118 +254,31 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga35e53f22583d774a1414e84cda9bb7b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga35e53f22583d774a1414e84cda9bb7b3">&#9670;&nbsp;</a></span>const_reference_t</h2>
+<a id="gab403bf8d0e05052d7e46bf8b617b8c47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab403bf8d0e05052d7e46bf8b617b8c47">&#9670;&nbsp;</a></span>default_initialisable_wrap_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename t &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#ga35e53f22583d774a1414e84cda9bb7b3">bio::const_reference_t</a> = typedef typename detail::const_reference_t&lt;t&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shortcut for <a class="el" href="structbio_1_1const__reference.html" title="Exposes the const_reference of another type.">bio::const_reference</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type you wish to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1const__reference.html" title="Exposes the const_reference of another type.">bio::const_reference</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>If <code>t</code> models std::ranges::range use std::ranges::range_reference_t&lt;t const&gt; instead or if <code>t</code> models std::input_iterator use std::iter_reference_t&lt;t const&gt; instead. </dd></dl>
-
-</div>
-</div>
-<a id="ga0ce9cbe5f2b90ed8ef642aa04f917435"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ce9cbe5f2b90ed8ef642aa04f917435">&#9670;&nbsp;</a></span>difference_type_t</h2>
-
-<div class="memitem">
-<div class="memproto">
 <div class="memtemplate">
 template&lt;typename t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#ga0ce9cbe5f2b90ed8ef642aa04f917435">bio::difference_type_t</a> = typedef typename detail::difference_type_t&lt;t&gt;</td>
+          <td class="memname">using <a class="el" href="group__type__traits.html#gab403bf8d0e05052d7e46bf8b617b8c47">default_initialisable_wrap_t</a> =  <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a>&lt;std::is_nothrow_default_constructible_v&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt; &gt; &amp;&amp; <a class="el" href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">is_constexpr_default_constructible_v</a>&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt; &gt;, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt;, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt; &gt;&gt;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Shortcut for <a class="el" href="structbio_1_1difference__type.html" title="Exposes the difference_type of another type.">bio::difference_type</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type you wish to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1difference__type.html" title="Exposes the difference_type of another type.">bio::difference_type</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>If <code>t</code> models std::ranges::range use std::ranges::range_difference_t instead or if <code>t</code> models std::input_iterator use <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/iter_t.html">std::iter_difference_t</a> instead. </dd></dl>
-
-</div>
-</div>
-<a id="ga5414df3a6267d855f8e43d57ce30ac2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5414df3a6267d855f8e43d57ce30ac2e">&#9670;&nbsp;</a></span>range_innermost_value_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename t &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#ga5414df3a6267d855f8e43d57ce30ac2e">bio::range_innermost_value_t</a> = typedef typename <a class="el" href="structbio_1_1range__innermost__value.html">range_innermost_value</a>&lt;t&gt;::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shortcut for <a class="el" href="structbio_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::range_innermost_value</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::range_innermost_value</a> </dd></dl>
-
-</div>
-</div>
-<a id="gac3482ea678fa2cd8a765927064ed9738"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac3482ea678fa2cd8a765927064ed9738">&#9670;&nbsp;</a></span>reference_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename t &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#gac3482ea678fa2cd8a765927064ed9738">bio::reference_t</a> = typedef typename detail::reference_t&lt;t&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shortcut for <a class="el" href="structbio_1_1reference.html" title="Exposes the reference of another type.">bio::reference</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type you wish to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1reference.html" title="Exposes the reference of another type.">bio::reference</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated:</a></b></dt><dd>If <code>t</code> models std::ranges::range use std::ranges::range_reference_t instead or if <code>t</code> models std::input_iterator use <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/iter_t.html">std::iter_reference_t</a> instead. </dd></dl>
-
-</div>
-</div>
-<a id="gab8e5eb46ed6e09e2ea4719789f8c5467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8e5eb46ed6e09e2ea4719789f8c5467">&#9670;&nbsp;</a></span>remove_cvref_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename t &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#gab8e5eb46ed6e09e2ea4719789f8c5467">bio::remove_cvref_t</a> = typedef <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cv.html">std::remove_cv_t</a>&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference_t</a>&lt;t&gt; &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the input type with <code>const</code>, <code>volatile</code> and references removed (type trait). </p>
+<p>Return t as t if it is noexcept- and constexpr-default-constructible; else wrap it in <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">t</td><td>The type to operate on. </td></tr>
@@ -366,8 +288,34 @@ template&lt;typename t &gt; </div>
 
 </div>
 </div>
-<a id="ga383091370276ddc1b050b69bee6a7b03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga383091370276ddc1b050b69bee6a7b03">&#9670;&nbsp;</a></span>remove_rvalue_reference_t</h2>
+<a id="ga90bec324285fadb8b41143652e2893f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90bec324285fadb8b41143652e2893f4">&#9670;&nbsp;</a></span>deferred_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t , typename... dependent_ts&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">bio::meta::deferred_type_t</a> = typedef typename <a class="el" href="structbio_1_1meta_1_1deferred__type.html">deferred_type</a>&lt;t, dependent_ts...&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the type identity; further arguments are ignored, but can make this type dependent if they are (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">t</td><td>The type to operate on. </td></tr>
+    <tr><td class="paramname">dependent_ts</td><td>Any provided types are ignored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1meta_1_1deferred__type.html" title="Return the type identity; further arguments are ignored, but can make this type dependent if they are...">bio::meta::deferred_type</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga0faf63d047d9a79898eb572fb8affc36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0faf63d047d9a79898eb572fb8affc36">&#9670;&nbsp;</a></span>remove_rvalue_reference_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,24 +323,24 @@ template&lt;typename t &gt; </div>
 template&lt;typename t &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">bio::remove_rvalue_reference_t</a> = typedef typename <a class="el" href="structbio_1_1remove__rvalue__reference.html">remove_rvalue_reference</a>&lt;t&gt;::type</td>
+          <td class="memname">using <a class="el" href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">bio::meta::remove_rvalue_reference_t</a> = typedef typename <a class="el" href="structbio_1_1meta_1_1remove__rvalue__reference.html">remove_rvalue_reference</a>&lt;t&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<p>Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">t</td><td>The type to operate on. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1remove__rvalue__reference.html" title="Return the input type with &amp;&amp; removed, but lvalue references preserved.">bio::remove_rvalue_reference</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1meta_1_1remove__rvalue__reference.html" title="Return the input type with &amp;&amp; removed, but lvalue references preserved.">bio::meta::remove_rvalue_reference</a> </dd></dl>
 
 </div>
 </div>
-<a id="gabfc9635bac6c5ce02b783b3ac8329ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabfc9635bac6c5ce02b783b3ac8329ddb">&#9670;&nbsp;</a></span>rvalue_reference_t</h2>
+<a id="ga706f4dc6833f13cd93df980e4521e07d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga706f4dc6833f13cd93df980e4521e07d">&#9670;&nbsp;</a></span>strip_type_identity_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,76 +348,221 @@ template&lt;typename t &gt; </div>
 template&lt;typename t &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#gabfc9635bac6c5ce02b783b3ac8329ddb">bio::rvalue_reference_t</a> = typedef typename detail::rvalue_reference_t&lt;t&gt;</td>
+          <td class="memname">using <a class="el" href="group__type__traits.html#ga706f4dc6833f13cd93df980e4521e07d">bio::meta::strip_type_identity_t</a> = typedef <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a>&lt;<a class="el" href="template__inspection_8hpp.html#a142bb9214fc9738f7aa5cab953809564">is_type_specialisation_of_v</a>&lt;t, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>&gt;, <a class="el" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">transformation_trait_or_t</a>&lt;t, void&gt;, t&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Shortcut for <a class="el" href="structbio_1_1rvalue__reference.html" title="Exposes the rvalue_reference of another type.">bio::rvalue_reference</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<p>A transformation trait shortcut that returns the type inside a <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a> or the type itself. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type you wish to query. </td></tr>
+    <tr><td class="paramname">t</td><td>The type to operate on. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1rvalue__reference.html" title="Exposes the rvalue_reference of another type.">bio::rvalue_reference</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>If <code>t</code> models std::ranges::range use std::ranges::range_rvalue_reference_t instead or if <code>t</code> models std::input_iterator use <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/iter_t.html">std::iter_rvalue_reference_t</a> instead. </dd></dl>
 
 </div>
 </div>
-<a id="ga27d2d5d8f96f200ccbb1b5414943fb3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga27d2d5d8f96f200ccbb1b5414943fb3b">&#9670;&nbsp;</a></span>size_type_t</h2>
+<a id="ga5a37e954776f5a3e5ed523b1e13c1f05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a37e954776f5a3e5ed523b1e13c1f05">&#9670;&nbsp;</a></span>transfer_template_args_onto_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename t &gt; </div>
+template&lt;typename source_type , template&lt; typename... &gt; typename target_template&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#ga27d2d5d8f96f200ccbb1b5414943fb3b">bio::size_type_t</a> = typedef typename detail::size_type_t&lt;t&gt;</td>
+          <td class="memname">using <a class="el" href="group__type__traits.html#ga5a37e954776f5a3e5ed523b1e13c1f05">bio::meta::transfer_template_args_onto_t</a> = typedef typename transfer_template_args_onto&lt;source_type, target_template&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Shortcut for <a class="el" href="structbio_1_1size__type.html" title="Exposes the size_type of another type.">bio::size_type</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type you wish to query. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1size__type.html" title="Exposes the size_type of another type.">bio::size_type</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>If <code>t</code> models std::ranges::range use std::ranges::size_type_t instead. If <code>t</code> models std::input_iterator there is no alternative. Unlike std::ranges::range_size_t, the Standard has no std::iter_size_t. </dd></dl>
+<p>Shortcut for bio::meta::transfer_template_args_onto (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<dl class="section see"><dt>See also</dt><dd>bio::meta::transfer_template_args_onto </dd></dl>
 
 </div>
 </div>
-<a id="ga5e8cde375522d7d61cf86837e0b0dacd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e8cde375522d7d61cf86837e0b0dacd">&#9670;&nbsp;</a></span>value_type_t</h2>
+<a id="gad2f268999217599f9739347db7fe3d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2f268999217599f9739347db7fe3d51">&#9670;&nbsp;</a></span>transfer_template_vargs_onto_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename t &gt; </div>
+template&lt;typename source_type , template&lt; auto... &gt; typename target_template&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__type__traits.html#ga5e8cde375522d7d61cf86837e0b0dacd">bio::value_type_t</a> = typedef typename detail::value_type_t&lt;t&gt;</td>
+          <td class="memname">using <a class="el" href="group__type__traits.html#gad2f268999217599f9739347db7fe3d51">bio::meta::transfer_template_vargs_onto_t</a> = typedef typename transfer_template_vargs_onto&lt;source_type, target_template&gt;::type</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Shortcut for <a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">bio::value_type</a> (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<p>Shortcut for bio::meta::transfer_template_vargs_onto (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<dl class="section see"><dt>See also</dt><dd>bio::meta::transfer_template_vargs_onto </dd></dl>
+
+</div>
+</div>
+<a id="ga4d82a6ea4bb0a8ade89da77cde12294d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d82a6ea4bb0a8ade89da77cde12294d">&#9670;&nbsp;</a></span>transformation_trait_or</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename type_t , typename default_t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">bio::meta::transformation_trait_or</a> = typedef <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a>&lt;<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html">transformation_trait</a>&lt;type_t&gt;, type_t, <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a>&lt;default_t&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This gives a fallback type if <em>type_t::type</em> is not defined. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type you wish to query. </td></tr>
+    <tr><td class="paramname">type_t</td><td>The type to use if <em>type_t::type</em> is defined. </td></tr>
+    <tr><td class="paramname">default_t</td><td>The type to use otherwise. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1value__type.html" title="Exposes the value_type of another type.">bio::value_type</a> </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>If <code>t</code> models std::ranges::range use std::ranges::range_value_t instead or if <code>t</code> models std::input_iterator use <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/iter_t.html">std::iter_value_t</a> instead. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f" title="Helper type of bio::meta::transformation_trait_or (transformation_trait shortcut).">bio::meta::transformation_trait_or_t</a></dd></dl>
+<p>Gives <em>type_t</em> back if <em>T::type</em> is a member type, otherwise <em>struct{using type = default_t}</em>.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="transformation__trait__or_8hpp.html">bio/meta/type_traits/transformation_trait_or.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><span class="keyword">struct </span>A;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><span class="keyword">struct </span>A&lt;int&gt;</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">using</span> type = int;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A&lt;unsigned&gt;::type is not defined, thus falling back to `void`</span></div>
+<div class="line">static_assert(std::is_same_v&lt;<span class="keywordtype">void</span>, <a class="code" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a>&lt;A&lt;unsigned&gt;, <span class="keywordtype">void</span>&gt;&gt;);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// A&lt;int&gt;::type is defined, use A&lt;int&gt;::type</span></div>
+<div class="line">static_assert(std::is_same_v&lt;<span class="keywordtype">int</span>, <a class="code" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a>&lt;A&lt;int&gt;, <span class="keywordtype">void</span>&gt;&gt;);</div>
+<div class="ttc" id="agroup__type__traits_html_gac1c432c9dd8abdd425beb4468e316d0f"><div class="ttname"><a href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a></div><div class="ttdeci">typename transformation_trait_or&lt; type_t, default_t &gt;::type transformation_trait_or_t</div><div class="ttdoc">Helper type of bio::meta::transformation_trait_or (transformation_trait shortcut).</div><div class="ttdef"><b>Definition:</b> transformation_trait_or.hpp:54</div></div>
+<div class="ttc" id="atransformation__trait__or_8hpp_html"><div class="ttname"><a href="transformation__trait__or_8hpp.html">transformation_trait_or.hpp</a></div><div class="ttdoc">Provides bio::meta::transformation_trait_or.</div></div>
+</div><!-- fragment --><dl class="section attention"><dt>Attention</dt><dd>This might get removed if one of our used libraries offers the same functionality.</dd></dl>
+<h3>Helper types</h3>
+<p><a class="el" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f" title="Helper type of bio::meta::transformation_trait_or (transformation_trait shortcut).">bio::meta::transformation_trait_or_t</a> as a shorthand for typename bio::meta::transformation_trait_or::type </p>
+
+</div>
+</div>
+<a id="gac1c432c9dd8abdd425beb4468e316d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1c432c9dd8abdd425beb4468e316d0f">&#9670;&nbsp;</a></span>transformation_trait_or_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename type_t , typename default_t &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a> = typedef typename <a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">transformation_trait_or</a>&lt;type_t, default_t&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper type of <a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d" title="This gives a fallback type if type_t::type is not defined.">bio::meta::transformation_trait_or</a> (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d" title="This gives a fallback type if type_t::type is not defined.">bio::meta::transformation_trait_or</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga349be4c1a84707c81b9f3707a6c98e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga349be4c1a84707c81b9f3707a6c98e38">&#9670;&nbsp;</a></span>valid_template_spec_or_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename fallback_t , template&lt; typename... &gt; typename templ_t, typename... spec_t&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="group__type__traits.html#ga349be4c1a84707c81b9f3707a6c98e38">bio::meta::valid_template_spec_or_t</a> = typedef typename <a class="el" href="structbio_1_1meta_1_1valid__template__spec__or.html">valid_template_spec_or</a>&lt;fallback_t, templ_t, spec_t...&gt;::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper for <a class="el" href="structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t.">bio::meta::valid_template_spec_or</a> (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t.">bio::meta::valid_template_spec_or</a> </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">fallback_t</td><td>The fallback type. </td></tr>
+    <tr><td class="paramname">templ_t</td><td>The type template that should be specialised. </td></tr>
+    <tr><td class="paramname">spec_t</td><td>The specialisation for the type template. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ga49bc6efb0b62be81546f939b2efd7272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49bc6efb0b62be81546f939b2efd7272">&#9670;&nbsp;</a></span>decays_to_ignore_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename t &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool bio::meta::decays_to_ignore_v = std::is_same_v&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt;, <a class="el" href="group__type__traits.html#ga7f9e56cdae87e43f5e69ab747256fa31">ignore_t</a>&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return whether the input type with <code>const</code>, <code>volatile</code> and references removed is std::ignore's type. (type trait). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">t</td><td>The type to operate on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9a8065cf948f22f51e36077dd025c9ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9a8065cf948f22f51e36077dd025c9ec">&#9670;&nbsp;</a></span>is_class_template_declarable_with_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename... &gt; typename query_t, typename... args_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool is_class_template_declarable_with_v</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">  is_class_template_declarable_with&lt;query_t, args_t...&gt;::value</div>
+</div><!-- fragment -->
+<p>Helper variable template for bio::meta::is_class_template_declarable_with. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">query_t</td><td>The type of the template class to test. </td></tr>
+    <tr><td class="paramname">args_t</td><td>The template parameter pack to instantiate the template class with. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga50e7f1238007a00a628e2b7b72b8aaa2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga50e7f1238007a00a628e2b7b72b8aaa2">&#9670;&nbsp;</a></span>is_constexpr_default_constructible_v</h2>
 
@@ -484,7 +577,7 @@ template&lt;typename t &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool is_constexpr_default_constructible_v = <a class="el" href="structbio_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible</a>&lt;t&gt;::value</td>
+          <td class="memname">constexpr bool is_constexpr_default_constructible_v = <a class="el" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible</a>&lt;t&gt;::value</td>
         </tr>
       </table>
   </td>
@@ -494,46 +587,13 @@ template&lt;typename t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> shortcut). </p>
+<p>Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> shortcut). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">t</td><td>The type to operate on. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga8ebbe38c7cc1281f2a439f9f98b17454"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8ebbe38c7cc1281f2a439f9f98b17454">&#9670;&nbsp;</a></span>range_dimension_v</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename t &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr size_t bio::range_dimension_v = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the number of times you can call <code><a class="el" href="group__type__traits.html#ga5e8cde375522d7d61cf86837e0b0dacd" title="Shortcut for bio::value_type (transformation_trait shortcut).">bio::value_type_t</a></code> recursively on t (type trait). </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">t</td><td>The type to be queried; must resolve <code><a class="el" href="group__type__traits.html#ga5e8cde375522d7d61cf86837e0b0dacd" title="Shortcut for bio::value_type (transformation_trait shortcut).">bio::value_type_t</a></code> at least once.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Attention, this type trait implicitly removes cv-qualifiers and reference from the types it recurses on and returns. </p>
 
 </div>
 </div>
@@ -545,7 +605,7 @@ template&lt;typename t &gt; </div>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

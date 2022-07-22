@@ -115,65 +115,64 @@ $(document).ready(function(){initNavTree('add__enum__bitwise__operators_8hpp_sou
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__core.html#ga453e8653a28959c11a7d91ede78f3e9c">   36</a></span>&#160;constexpr <span class="keywordtype">bool</span> <a class="code" href="group__core.html#ga453e8653a28959c11a7d91ede78f3e9c">add_enum_bitwise_operators</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;constexpr t operator&amp; (t lhs, t rhs) noexcept</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(lhs) &amp; <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(rhs));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;constexpr t operator| (t lhs, t rhs) noexcept</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(lhs) | <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(rhs));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;constexpr t operator^ (t lhs, t rhs) noexcept</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(lhs) ^ <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(rhs));</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;constexpr t operator~ (t lhs) noexcept</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(~static_cast&lt;std::underlying_type_t&lt;t&gt;&gt;(lhs));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;constexpr t &amp; operator&amp;= (t &amp; lhs, t rhs) noexcept</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    lhs = lhs &amp; rhs;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> lhs;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;constexpr t &amp; operator|= (t &amp; lhs, t rhs) noexcept</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    lhs = lhs | rhs;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> lhs;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;constexpr t &amp; operator^= (t &amp; lhs, t rhs) noexcept</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    requires std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    lhs = lhs ^ rhs;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> lhs;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;} <span class="comment">// namespace bio</span></div>
-<div class="ttc" id="agroup__core_html_ga453e8653a28959c11a7d91ede78f3e9c"><div class="ttname"><a href="group__core.html#ga453e8653a28959c11a7d91ede78f3e9c">bio::add_enum_bitwise_operators</a></div><div class="ttdeci">constexpr bool add_enum_bitwise_operators</div><div class="ttdoc">Set to true for a scoped enum to have binary operators overloaded.</div><div class="ttdef"><b>Definition:</b> add_enum_bitwise_operators.hpp:36</div></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;constexpr <span class="keywordtype">bool</span> add_enum_bitwise_operators = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;constexpr t <a class="code" href="namespacebio.html#ab1c2d2f81cdcfd18f4d47ee90f657d40">operator&amp;</a>(t lhs, t rhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(lhs) &amp; <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(rhs));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;constexpr t <a class="code" href="namespacebio.html#a0346b76d1b1b88a6c8fdd14ef3dc1c4e">operator|</a>(t lhs, t rhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(lhs) | <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(rhs));</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;constexpr t <a class="code" href="namespacebio.html#a9f90c06bde0cf9380cac04120d9d8a6c">operator^</a>(t lhs, t rhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(lhs) ^ <span class="keyword">static_cast&lt;</span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t&lt;t&gt;</a><span class="keyword">&gt;</span>(rhs));</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;constexpr t <a class="code" href="namespacebio.html#a869f4337e3f4af79a3c9ae507e9685d7">operator~</a>(t lhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>t<span class="keyword">&gt;</span>(~static_cast&lt;std::underlying_type_t&lt;t&gt;&gt;(lhs));</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;constexpr t &amp; <a class="code" href="namespacebio.html#ac5d408e5dfa24bdda754fc56f98338ea">operator&amp;=</a>(t &amp; lhs, t rhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    lhs = lhs &amp; rhs;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> lhs;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;constexpr t &amp; <a class="code" href="namespacebio.html#ae4e5e356dd097443c6f3d493b56161a0">operator|=</a>(t &amp; lhs, t rhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    lhs = lhs | rhs;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordflow">return</span> lhs;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;constexpr t &amp; <a class="code" href="namespacebio.html#aee472ea4bf825ac10e4ecf91ea0efe84">operator^=</a>(t &amp; lhs, t rhs) noexcept requires(std::is_enum_v&lt;t&gt; &amp;&amp; add_enum_bitwise_operators&lt;t&gt;)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    lhs = lhs ^ rhs;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> lhs;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;} <span class="comment">// namespace bio</span></div>
 <div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_html_a0346b76d1b1b88a6c8fdd14ef3dc1c4e"><div class="ttname"><a href="namespacebio.html#a0346b76d1b1b88a6c8fdd14ef3dc1c4e">bio::operator|</a></div><div class="ttdeci">constexpr translation_frames operator|(translation_frames lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:111</div></div>
+<div class="ttc" id="anamespacebio_html_a869f4337e3f4af79a3c9ae507e9685d7"><div class="ttname"><a href="namespacebio.html#a869f4337e3f4af79a3c9ae507e9685d7">bio::operator~</a></div><div class="ttdeci">constexpr translation_frames operator~(translation_frames lhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:123</div></div>
+<div class="ttc" id="anamespacebio_html_a9f90c06bde0cf9380cac04120d9d8a6c"><div class="ttname"><a href="namespacebio.html#a9f90c06bde0cf9380cac04120d9d8a6c">bio::operator^</a></div><div class="ttdeci">constexpr translation_frames operator^(translation_frames lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:117</div></div>
+<div class="ttc" id="anamespacebio_html_ab1c2d2f81cdcfd18f4d47ee90f657d40"><div class="ttname"><a href="namespacebio.html#ab1c2d2f81cdcfd18f4d47ee90f657d40">bio::operator&amp;</a></div><div class="ttdeci">constexpr translation_frames operator&amp;(translation_frames lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:105</div></div>
+<div class="ttc" id="anamespacebio_html_ac5d408e5dfa24bdda754fc56f98338ea"><div class="ttname"><a href="namespacebio.html#ac5d408e5dfa24bdda754fc56f98338ea">bio::operator&amp;=</a></div><div class="ttdeci">constexpr translation_frames &amp; operator&amp;=(translation_frames &amp;lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:129</div></div>
+<div class="ttc" id="anamespacebio_html_ae4e5e356dd097443c6f3d493b56161a0"><div class="ttname"><a href="namespacebio.html#ae4e5e356dd097443c6f3d493b56161a0">bio::operator|=</a></div><div class="ttdeci">constexpr translation_frames &amp; operator|=(translation_frames &amp;lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:135</div></div>
+<div class="ttc" id="anamespacebio_html_aee472ea4bf825ac10e4ecf91ea0efe84"><div class="ttname"><a href="namespacebio.html#aee472ea4bf825ac10e4ecf91ea0efe84">bio::operator^=</a></div><div class="ttdeci">constexpr translation_frames &amp; operator^=(translation_frames &amp;lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:141</div></div>
 <div class="ttc" id="aplatform_8hpp_html"><div class="ttname"><a href="platform_8hpp.html">platform.hpp</a></div><div class="ttdoc">Provides platform and dependency checks.</div></div>
 <div class="ttc" id="atype_traits_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a></div></div>
 <div class="ttc" id="aunderlying_type_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/underlying_type.html">std::underlying_type_t</a></div></div>
@@ -186,7 +185,7 @@ $(document).ready(function(){initNavTree('add__enum__bitwise__operators_8hpp_sou
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="add__enum__bitwise__operators_8hpp.html">add_enum_bitwise_operators.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Mon Jul 4 2022 17:20:00 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

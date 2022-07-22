@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides bio::single_pass_input_view.">
+<g id="a_node1"><a xlink:title="Provides bio::alphabet::single_pass_input_view.">
 <polygon fill="#bfbfbf" stroke="black" points="2,-56.5 2,-86.5 133,-86.5 133,-56.5 2,-56.5"/>
 <text text-anchor="start" x="10" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/single</text>
 <text text-anchor="middle" x="67.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">_pass_input.hpp</text>

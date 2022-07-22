@@ -31,7 +31,6 @@ var NAVTREE =
       [ "BioC++ ↔ SeqAn3", "biocpp_seqan3.html", null ],
       [ "Code of Conduct", "biocpp_code_of_conduct.html", null ],
       [ "API/ABI stability", "biocpp_api.html", null ],
-      [ "Contributing", "biocpp_contributing.html", null ],
       [ "Customisation", "biocpp_customisation.html", null ]
     ] ],
     [ "Core library", "usergroup1.html", [
@@ -83,17 +82,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "",
-"classbio_1_1alphabet__proxy.html#aa94494b24d7fe4951a00c00c14151a30",
-"classbio_1_1dna15.html#a6fa10611ebccb4a633f4a2ca0504bd14",
-"classbio_1_1phred42.html#a6616ba2cb25069f5192589ad53651a88",
-"classbio_1_1small__vector.html#a3ae66308b4140b7f623649bacb280e38",
-"cpp/algorithm/unique.html",
-"cpp/io/c/fputc.html",
-"cpp/numeric/math/round.html",
-"cpp/types/is_copy_assignable.html",
-"group__alphabet.html#ga05da42eb0b9a48f4d1a554c7d3a9044d",
-"group__views.html#gacceb12ca443828da40b5933d8f2892b9",
-"single__pass__input_8hpp.html#ga4c14a69faf3858dd9c78164b368c305e"
+"classbio_1_1alphabet_1_1alphabet__proxy.html#a88afb45bfb56cdb09eb036b86ba0761f",
+"classbio_1_1alphabet_1_1phred63.html#a6be9d72ef1862cdf13c8a5d0e88addfa",
+"classbio_1_1ranges_1_1concatenated__sequences.html#a7bcc4492613cbe9b799f49763a41e8a7",
+"classbio_1_1ranges_1_1small__vector.html#af7127a362aa61e23249b1839b5155af7",
+"cpp/experimental/type_trait_variable_templates.html",
+"cpp/locale/isgraph.html",
+"cpp/string/byte/memset.html",
+"cpp/utility/rel_ops/operator_cmp.html",
+"group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d",
+"repeat__n_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

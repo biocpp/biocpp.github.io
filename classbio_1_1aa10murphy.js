@@ -1,7 +1,7 @@
 var classbio_1_1aa10murphy =
 [
     [ "char_type", "classbio_1_1aa10murphy.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1aa10murphy.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1aa10murphy.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "aa10murphy", "classbio_1_1aa10murphy.html#aee2ddd4e0684dd03cf828b4259dbf722", null ],
     [ "aa10murphy", "classbio_1_1aa10murphy.html#af825704c806a285d33171938812f795a", null ],
     [ "aa10murphy", "classbio_1_1aa10murphy.html#a342df03232e229834299e5b57fd3258d", null ],
@@ -13,6 +13,6 @@ var classbio_1_1aa10murphy =
     [ "to_char", "classbio_1_1aa10murphy.html#a6616ba2cb25069f5192589ad53651a88", null ],
     [ "to_rank", "classbio_1_1aa10murphy.html#a443c2f7716e384ea2acec1d2bced7c8b", null ],
     [ "aa10murphy_vector", "classbio_1_1aa10murphy.html#a3991b6e68fa143088f09fa1817e28b3c", null ],
-    [ "operator\"\"_aa10murphy", "classbio_1_1aa10murphy.html#a638c80d52cef1f4144920580296ffa46", null ],
-    [ "operator\"\"_aa10murphy", "classbio_1_1aa10murphy.html#af2ca906efb8d207a70062ce66fbd4580", null ]
+    [ "operator\"\"_aa10murphy", "classbio_1_1aa10murphy.html#a651bab274c8cf1e59261e562005e88a3", null ],
+    [ "operator\"\"_aa10murphy", "classbio_1_1aa10murphy.html#a638c80d52cef1f4144920580296ffa46", null ]
 ];

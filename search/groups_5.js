@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nucleotide_4602',['Nucleotide',['../group__nucleotide.html',1,'']]]
+  ['quality_4432',['Quality',['../group__quality.html',1,'']]]
 ];

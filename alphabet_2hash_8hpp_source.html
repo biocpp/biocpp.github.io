@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -114,20 +114,17 @@ $(document).ready(function(){initNavTree('alphabet_2hash_8hpp_source.html',''); 
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>std</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> alphabet_t&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    requires <a class="code" href="interfacebio_1_1semialphabet.html">bio::semialphabet&lt;alphabet_t&gt;</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    requires <a class="code" href="interfacebio_1_1alphabet_1_1semialphabet.html">bio::alphabet::semialphabet&lt;alphabet_t&gt;</a></div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01alphabet__t_01_4.html">   28</a></span>&#160;<span class="keyword">struct </span><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/hash.html">hash</a>&lt;alphabet_t&gt;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01alphabet__t_01_4.html#a71cc78e9e1652f0a8b92a70726775b57">   36</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="structstd_1_1hash_3_01alphabet__t_01_4.html#a71cc78e9e1652f0a8b92a70726775b57">operator()</a>(alphabet_t <span class="keyword">const</span> character) <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group__alphabet.html#ga9189b35f800d7e5abad51e021ea811a0">bio::to_rank</a>(character);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace std</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01alphabet__t_01_4.html#a71cc78e9e1652f0a8b92a70726775b57">   36</a></span>&#160;    <span class="keywordtype">size_t</span> <a class="code" href="structstd_1_1hash_3_01alphabet__t_01_4.html#a71cc78e9e1652f0a8b92a70726775b57">operator()</a>(alphabet_t <span class="keyword">const</span> character) <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span> <a class="code" href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a>(character); }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace std</span></div>
 <div class="ttc" id="aalphabet_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga9189b35f800d7e5abad51e021ea811a0"><div class="ttname"><a href="group__alphabet.html#ga9189b35f800d7e5abad51e021ea811a0">bio::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:144</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga2a48a5c1883184e362f09e32ac33241e"><div class="ttname"><a href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
 <div class="ttc" id="ahash_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/utility/hash.html">std::hash</a></div></div>
-<div class="ttc" id="ainterfacebio_1_1semialphabet_html"><div class="ttname"><a href="interfacebio_1_1semialphabet.html">semialphabet</a></div><div class="ttdoc">The basis for bio::alphabet, but requires only rank interface (not char).</div></div>
+<div class="ttc" id="ainterfacebio_1_1alphabet_1_1semialphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1semialphabet.html">semialphabet</a></div><div class="ttdoc">The basis for bio::alphabet::alphabet, but requires only rank interface (not char).</div></div>
 <div class="ttc" id="astructstd_1_1hash_3_01alphabet__t_01_4_html_a71cc78e9e1652f0a8b92a70726775b57"><div class="ttname"><a href="structstd_1_1hash_3_01alphabet__t_01_4.html#a71cc78e9e1652f0a8b92a70726775b57">std::hash&lt; alphabet_t &gt;::operator()</a></div><div class="ttdeci">size_t operator()(alphabet_t const character) const noexcept</div><div class="ttdoc">Compute the hash for a character.</div><div class="ttdef"><b>Definition:</b> hash.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -138,7 +135,7 @@ $(document).ready(function(){initNavTree('alphabet_2hash_8hpp_source.html',''); 
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="alphabet_2hash_8hpp.html">hash.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

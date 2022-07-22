@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -99,71 +99,70 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
 
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>range_value_t_is_compatible_with_value_type
-: <a class="el" href="classbio_1_1concatenated__sequences.html#af31f9b8229a98dd33005945c2eb4c36a">bio::concatenated_sequences&lt; inner_type, data_delimiters_type &gt;</a>
+: <a class="el" href="classbio_1_1ranges_1_1concatenated__sequences.html#a32fc00b34c17a179059b4f87d636ab50">bio::ranges::concatenated_sequences&lt; underlying_container_type, data_delimiters_type &gt;</a>
 </li>
 <li>rank_to_char
-: <a class="el" href="classbio_1_1aa10li.html#a02f6462f1b721c4200afcce12856aa30">bio::aa10li</a>
-, <a class="el" href="classbio_1_1aa10murphy.html#ac6b7907a13fcf1b34f43b676b23c2d7f">bio::aa10murphy</a>
-, <a class="el" href="classbio_1_1aa20.html#a719c12fcf369f3400585b5cd069bf67c">bio::aa20</a>
-, <a class="el" href="classbio_1_1aa27.html#a2c6cea692d7665afe12e48151d19986d">bio::aa27</a>
-, <a class="el" href="classbio_1_1masked.html#aa4fd0bf4fa8367ad65635932608f34a1">bio::masked&lt; sequence_alphabet_t &gt;</a>
-, <a class="el" href="classbio_1_1quality__base.html#a51148fcd09b090e8b767ba7436b7571a">bio::quality_base&lt; derived_type, size &gt;</a>
+: <a class="el" href="classbio_1_1alphabet_1_1aa10li.html#ab184e9d57feaa6ff8fbfe7b283ffece0">bio::alphabet::aa10li</a>
+, <a class="el" href="classbio_1_1alphabet_1_1aa10murphy.html#aaf87aeeee213b1ee086d3c148d015ca1">bio::alphabet::aa10murphy</a>
+, <a class="el" href="classbio_1_1alphabet_1_1aa20.html#aeaf4c35f6831ccac7746e365f6c7ad03">bio::alphabet::aa20</a>
+, <a class="el" href="classbio_1_1alphabet_1_1aa27.html#a22d46e82e7e194b7f01320a141df5d54">bio::alphabet::aa27</a>
+, <a class="el" href="classbio_1_1alphabet_1_1masked.html#a9ab7b9756e868a8cd142a8e2175b0c79">bio::alphabet::masked&lt; sequence_alphabet_t &gt;</a>
+, <a class="el" href="classbio_1_1alphabet_1_1quality__base.html#a75dab2e250829a3381225bd1a7e69acd">bio::alphabet::quality_base&lt; derived_type, size &gt;</a>
 </li>
 <li>rank_to_phred
-: <a class="el" href="classbio_1_1quality__base.html#a7c5771660bea628777efaf3f3cad630c">bio::quality_base&lt; derived_type, size &gt;</a>
+: <a class="el" href="classbio_1_1alphabet_1_1quality__base.html#a7c5fa7214a71d52fd71fec7abe04a9a8">bio::alphabet::quality_base&lt; derived_type, size &gt;</a>
 </li>
 <li>rank_type
-: <a class="el" href="classbio_1_1alphabet__base.html#a040aa76e8e3fc0e5735c4b135f302c13">bio::alphabet_base&lt; derived_type, size, char_t &gt;</a>
-, <a class="el" href="classbio_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#ae265f5b1abef3879e069519ba45edcc7">bio::alphabet_base&lt; derived_type, 1ul, char_t &gt;</a>
-, <a class="el" href="classbio_1_1wuss.html#a040aa76e8e3fc0e5735c4b135f302c13">bio::wuss&lt; SIZE &gt;</a>
+: <a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html#a2230f50835c163aa8ad30b16090ad6d0">bio::alphabet::alphabet_base&lt; derived_type, size, char_t &gt;</a>
+, <a class="el" href="classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#afff9f4e9b2ff1fa4d607265d244d37e0">bio::alphabet::alphabet_base&lt; derived_type, 1ul, char_t &gt;</a>
 </li>
 <li>raw_data()
-: <a class="el" href="classbio_1_1bitcompressed__vector.html#a0a977b266705b8dc4629315c85ceed30">bio::bitcompressed_vector&lt; alphabet_type &gt;</a>
-, <a class="el" href="classbio_1_1concatenated__sequences.html#a7f8c5deb54b9c1a474098713652a478f">bio::concatenated_sequences&lt; inner_type, data_delimiters_type &gt;</a>
-, <a class="el" href="classbio_1_1dynamic__bitset.html#a2624780cb98420bb6853d96f7d28a617">bio::dynamic_bitset&lt; bit_capacity &gt;</a>
+: <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html#aaca11fa3d7cf14c27c8c4f254b333fc8">bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1concatenated__sequences.html#aded3473f6ec744d59c163dc5c3d7246f">bio::ranges::concatenated_sequences&lt; underlying_container_type, data_delimiters_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html#a31a55d469f3e707ad5a80f717853e429">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a>
 </li>
 <li>reference
-: <a class="el" href="classbio_1_1bitcompressed__vector.html#a7fbce5b446665ed3468cef3ba594c05b">bio::bitcompressed_vector&lt; alphabet_type &gt;</a>
-, <a class="el" href="classbio_1_1concatenated__sequences.html#adf264744ad694f785d4175ce12f4327c">bio::concatenated_sequences&lt; inner_type, data_delimiters_type &gt;</a>
-, <a class="el" href="classbio_1_1dynamic__bitset.html#a2be6f3db86c6d0ad1dca5e04135f2344">bio::dynamic_bitset&lt; bit_capacity &gt;</a>
-, <a class="el" href="classbio_1_1small__vector.html#a5d7d97428cefb29b5446b08d5cffca23">bio::small_vector&lt; value_type_, capacity_ &gt;</a>
+: <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html#a46e0fa38cfa70698a9789bf55cadf07f">bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1concatenated__sequences.html#ade58ffa47c048d0d75bb0607246e4913">bio::ranges::concatenated_sequences&lt; underlying_container_type, data_delimiters_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html#a40b2a608e0a7f368065184a954f2be84">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1small__vector.html#a1de1695c7bf2797107ab998a5ba19462">bio::ranges::small_vector&lt; value_type_, capacity_ &gt;</a>
 </li>
 <li>reserve()
-: <a class="el" href="classbio_1_1bitcompressed__vector.html#a83e9603eca3cd066eede88603eeaf0f4">bio::bitcompressed_vector&lt; alphabet_type &gt;</a>
-, <a class="el" href="classbio_1_1concatenated__sequences.html#ab4881cc7582eb840d344300fdabc845a">bio::concatenated_sequences&lt; inner_type, data_delimiters_type &gt;</a>
-, <a class="el" href="classbio_1_1dynamic__bitset.html#a899bb500e4797c7ca0c0ab6396d282dc">bio::dynamic_bitset&lt; bit_capacity &gt;</a>
-, <a class="el" href="classbio_1_1small__vector.html#a416b0d63f078e6cccf4e9685acf31c10">bio::small_vector&lt; value_type_, capacity_ &gt;</a>
+: <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html#a3d6918f71b57abe14f8f6bc3ba58a15e">bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1concatenated__sequences.html#a7d24f956f652e3a9e9b19ca3a88906b1">bio::ranges::concatenated_sequences&lt; underlying_container_type, data_delimiters_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html#a6714bf7aa564141bb1dfa4bf1411abf5">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1small__vector.html#a0e5e9da5c9c32bec7ed9a13bf19bf597">bio::ranges::small_vector&lt; value_type_, capacity_ &gt;</a>
 </li>
 <li>reset()
-: <a class="el" href="classbio_1_1dynamic__bitset.html#afcdac735acd50aa04dac4a578290f5f4">bio::dynamic_bitset&lt; bit_capacity &gt;</a>
+: <a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html#a3079301d6dabb9467eef05aeaa2615a2">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a>
 </li>
 <li>resize()
-: <a class="el" href="classbio_1_1bitcompressed__vector.html#abab72f3bf702d164dacfac0b529895cf">bio::bitcompressed_vector&lt; alphabet_type &gt;</a>
-, <a class="el" href="classbio_1_1concatenated__sequences.html#a50227065c0c8b9d501c5895d21958696">bio::concatenated_sequences&lt; inner_type, data_delimiters_type &gt;</a>
-, <a class="el" href="classbio_1_1dynamic__bitset.html#ad35066402295f6cf4c54ac2f0f1f40ef">bio::dynamic_bitset&lt; bit_capacity &gt;</a>
-, <a class="el" href="classbio_1_1small__string.html#a46a4f346ca54f00f451ec9b36843d70d">bio::small_string&lt; capacity_ &gt;</a>
-, <a class="el" href="classbio_1_1small__vector.html#a6791177c9dce7604f477644e92cddf40">bio::small_vector&lt; value_type_, capacity_ &gt;</a>
+: <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html#ae3db14b9b3603a07c472ffafca66e7d8">bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1concatenated__sequences.html#a774fddde8d5db3bbc7975463d85a42a9">bio::ranges::concatenated_sequences&lt; underlying_container_type, data_delimiters_type &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html#a448bfc3a3277f752be4a8a1d7657b830">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1small__string.html#a2dbbf2880dc80d9baa774506621fd58d">bio::ranges::small_string&lt; capacity_ &gt;</a>
+, <a class="el" href="classbio_1_1ranges_1_1small__vector.html#a8485e32828b5d8d41e8bd2e51459ce80">bio::ranges::small_vector&lt; value_type_, capacity_ &gt;</a>
 </li>
 <li>result_type
-: <a class="el" href="structbio_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html#a2af57e542f6db76ec2aff5829616be71">bio::function_traits&lt; std::function&lt; return_t(args_t...)&gt; &gt;</a>
+: <a class="el" href="structbio_1_1meta_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html#a6533ecab1984b0cf196abf41366f8434">bio::meta::function_traits&lt; std::function&lt; return_t(args_t...)&gt; &gt;</a>
 </li>
 <li>rna15()
-: <a class="el" href="classbio_1_1rna15.html#afa19542631abc70ee9fe2a3d78fea20e">bio::rna15</a>
+: <a class="el" href="classbio_1_1alphabet_1_1rna15.html#a2555a0ce3bd9e04a52e31360069acdeb">bio::alphabet::rna15</a>
 </li>
 <li>rna15_vector
-: <a class="el" href="classbio_1_1rna15.html#affa99e85e719f067220d2637abeaaa4b">bio::rna15</a>
+: <a class="el" href="classbio_1_1alphabet_1_1rna15.html#affa99e85e719f067220d2637abeaaa4b">bio::alphabet::rna15</a>
 </li>
 <li>rna4()
-: <a class="el" href="classbio_1_1rna4.html#af23fdfab3e644301695a0def68742b38">bio::rna4</a>
+: <a class="el" href="classbio_1_1alphabet_1_1rna4.html#aead306bc2c10f2b0f39210a42a24fc8b">bio::alphabet::rna4</a>
 </li>
 <li>rna4_vector
-: <a class="el" href="classbio_1_1rna4.html#a60414d1b2635a4527bca5e8db3f60ed3">bio::rna4</a>
+: <a class="el" href="classbio_1_1alphabet_1_1rna4.html#a60414d1b2635a4527bca5e8db3f60ed3">bio::alphabet::rna4</a>
 </li>
 <li>rna5()
-: <a class="el" href="classbio_1_1rna5.html#a1810bab0d573f77d6c33edcba3efaac8">bio::rna5</a>
+: <a class="el" href="classbio_1_1alphabet_1_1rna5.html#abf5803a4852bc16c673bb714c8cfbfda">bio::alphabet::rna5</a>
 </li>
 <li>rna5_vector
-: <a class="el" href="classbio_1_1rna5.html#a38a10aceacfdc36e0f8b56d0b78399b5">bio::rna5</a>
+: <a class="el" href="classbio_1_1alphabet_1_1rna5.html#a38a10aceacfdc36e0f8b56d0b78399b5">bio::alphabet::rna5</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -174,7 +173,7 @@ $(document).ready(function(){initNavTree('functions_r.html',''); initResizable()
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:29 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

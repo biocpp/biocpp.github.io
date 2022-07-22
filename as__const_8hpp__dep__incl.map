@@ -1,6 +1,6 @@
 <map id="bio/ranges/views/as_const.hpp" name="bio/ranges/views/as_const.hpp">
 <area shape="rect" id="node1" title="Provides bio::views::as_const." alt="" coords="39,5,190,47"/>
-<area shape="rect" id="node2" href="$concatenated__sequences_8hpp.html" title="Provides bio::concatenated_sequences." alt="" coords="5,95,224,136"/>
+<area shape="rect" id="node2" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="5,95,224,136"/>
 <area shape="rect" id="node3" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="37,184,192,225"/>
-<area shape="rect" id="node4" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the range module ." alt="" coords="45,273,184,300"/>
+<area shape="rect" id="node4" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="45,273,184,300"/>
 </map>

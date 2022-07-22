@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="concatenated__sequences_8hpp.html" target="_top" xlink:title="Provides bio::concatenated_sequences.">
+<g id="a_node2"><a xlink:href="concatenated__sequences_8hpp.html" target="_top" xlink:title="Provides bio::ranges::concatenated_sequences.">
 <polygon fill="white" stroke="black" points="0,-123.5 0,-153.5 164,-153.5 164,-123.5 0,-123.5"/>
 <text text-anchor="start" x="8" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
 <text text-anchor="middle" x="82" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/concatenated_sequences.hpp</text>
@@ -54,7 +54,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the range module .">
+<g id="a_node4"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the ranges module .">
 <polygon fill="white" stroke="black" points="30,-0.5 30,-19.5 134,-19.5 134,-0.5 30,-0.5"/>
 <text text-anchor="middle" x="82" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
 </a>

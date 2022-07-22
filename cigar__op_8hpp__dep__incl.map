@@ -1,5 +1,5 @@
 <map id="bio/alphabet/cigar/cigar_op.hpp" name="bio/alphabet/cigar/cigar_op.hpp">
 <area shape="rect" id="node1" title="Introduces the cigar_op alphabet." alt="" coords="87,5,225,47"/>
 <area shape="rect" id="node2" href="$alphabet_2cigar_2all_8hpp.html" title="Meta&#45;header for the cigar submodule; includes all headers from alphabet/cigar/." alt="" coords="5,95,144,136"/>
-<area shape="rect" id="node3" href="$cigar_8hpp.html" title="Provides the bio::cigar alphabet." alt="" coords="168,95,307,136"/>
+<area shape="rect" id="node3" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="168,95,307,136"/>
 </map>

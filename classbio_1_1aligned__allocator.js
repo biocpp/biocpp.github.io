@@ -3,7 +3,7 @@ var classbio_1_1aligned__allocator =
     [ "rebind", "structbio_1_1aligned__allocator_1_1rebind.html", "structbio_1_1aligned__allocator_1_1rebind" ],
     [ "difference_type", "classbio_1_1aligned__allocator.html#a7cb8468c86099bedd4319a9a61ac1999", null ],
     [ "is_always_equal", "classbio_1_1aligned__allocator.html#afd8dc34e8dee3361cc763c0a8a17a645", null ],
-    [ "pointer", "classbio_1_1aligned__allocator.html#ac02eb002c62f4efe96e09408f1dd94d5", null ],
+    [ "pointer", "classbio_1_1aligned__allocator.html#a8ba691200c548a4a251776edc1b204aa", null ],
     [ "size_type", "classbio_1_1aligned__allocator.html#a51e1c624fe5f0dcd2254ebc603d2dc21", null ],
     [ "value_type", "classbio_1_1aligned__allocator.html#adbfa49fe12ac3b71747af792543547c1", null ],
     [ "aligned_allocator", "classbio_1_1aligned__allocator.html#a7c58efb22de0c0aa81da2323520dbfc0", null ],

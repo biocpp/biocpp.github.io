@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -114,94 +114,93 @@ $(document).ready(function(){initNavTree('to_8hpp_source.html',''); initResizabl
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="ranges_2views_2detail_8hpp.html">bio/ranges/views/detail.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>bio::detail</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>bio::ranges::detail</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> container_t&gt;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">struct </span>to_fn</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> impl(std::ranges::range <span class="keyword">auto</span> &amp;&amp; rng, container_t &amp; <a class="code" href="interfacebio_1_1container.html">container</a>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">auto</span> impl(std::ranges::range <span class="keyword">auto</span> &amp;&amp; rng, container_t &amp; container)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::ranges::copy(rng, std::back_inserter(<a class="code" href="interfacebio_1_1container.html">container</a>));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::ranges::copy(rng, std::back_inserter(container));</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">auto</span> impl(std::ranges::range <span class="keyword">auto</span> &amp;&amp; rng, container_t &amp; <a class="code" href="interfacebio_1_1container.html">container</a>) <span class="keyword">const</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        requires std::ranges::range&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/decay.html">std::decay_t</a>&lt;decltype(*rng.begin())&gt;&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">auto</span> impl(std::ranges::range <span class="keyword">auto</span> &amp;&amp; rng,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              container_t &amp; container) <span class="keyword">const</span> requires std::ranges::range&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/decay.html">std::decay_t</a>&lt;decltype(*rng.begin())&gt;&gt;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">auto</span> adapter = to_fn&lt;typename container_t::value_type&gt;{};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">auto</span> inner_rng = rng | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>(adapter);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::ranges::copy(inner_rng, std::back_inserter(<a class="code" href="interfacebio_1_1container.html">container</a>));</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">auto</span> adapter   = to_fn&lt;typename container_t::value_type&gt;{};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">auto</span> inner_rng = rng | <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(adapter);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        std::ranges::copy(inner_rng, std::back_inserter(container));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::range rng_t, <span class="keyword">typename</span> ...args_t&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    constexpr <span class="keyword">auto</span> operator()(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">auto</span> r = container_t(std::forward&lt;args_t&gt;(args)...);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// reserve memory if functionality is available</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> constexpr (std::ranges::sized_range&lt;rng_t&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        &amp;&amp; requires (container_t c) { c.reserve(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>{}); }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    )</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            r.reserve(<a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">std::ranges::size</a>(rng));</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        impl(std::forward&lt;rng_t&gt;(rng), r);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> r;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt; <span class="keyword">class </span>container_t&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">struct </span>to_template_template_fn</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    constexpr <span class="keyword">auto</span> operator()(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">using</span> value_t = <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/decay.html">std::decay_t</a>&lt;decltype(*rng.begin())&gt;;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">auto</span> adapter  = to_fn&lt;container_t&lt;value_t&gt;&gt;{};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> adapter(std::forward&lt;rng_t&gt;(rng), std::forward&lt;args_t&gt;(args)...);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> constexpr (std::ranges::sized_range&lt;rng_t&gt; &amp;&amp; requires(container_t c) { c.reserve(<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a>{}); })</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            r.reserve(<a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>(rng));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        impl(std::forward&lt;rng_t&gt;(rng), r);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> r;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>&gt; <span class="keyword">class </span>container_t&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">struct </span>to_template_template_fn</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    constexpr <span class="keyword">auto</span> operator()(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">using</span> value_t = <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/decay.html">std::decay_t</a>&lt;decltype(*rng.begin())&gt;;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">auto</span> adapter  = to_fn&lt;container_t&lt;value_t&gt;&gt;{};</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> adapter(std::forward&lt;rng_t&gt;(rng), std::forward&lt;args_t&gt;(args)...);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">//namespace bio::ranges::detail</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">//namespace bio::detail</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1views.html">bio::views</a></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> container_t, <span class="keyword">typename</span>... args_t&gt;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group__views.html#ga308d962276f85f33f1419807d52095f9">  111</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga308d962276f85f33f1419807d52095f9">to</a>(args_t &amp;&amp;... args)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_fn&lt;container_t&gt;{}, std::forward&lt;args_t&gt;(args)...};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span>&lt;<span class="keyword">class</span>...&gt; <span class="keyword">typename</span> container_t, <span class="keyword">typename</span>... args_t&gt;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga308d962276f85f33f1419807d52095f9">to</a>(args_t &amp;&amp;... args)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_template_template_fn&lt;container_t&gt;{}, std::forward&lt;args_t&gt;(args)...};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> container_t, std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="namespacebio_1_1views.html#a1eaa1270cca9f52d5459c0f6d10f16fc">  125</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga308d962276f85f33f1419807d52095f9">to</a>(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_fn&lt;container_t&gt;{}, std::forward&lt;args_t&gt;(args)...}(std::forward&lt;rng_t&gt;(rng));</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span>&lt;<span class="keyword">class</span>...&gt; <span class="keyword">typename</span> container_t, std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga308d962276f85f33f1419807d52095f9">to</a>(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;{</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_template_template_fn&lt;container_t&gt;{}, std::forward&lt;args_t&gt;(args)...}(std::forward&lt;rng_t&gt;(rng));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> container_t, <span class="keyword">typename</span>... args_t&gt;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc">  109</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc">to</a>(args_t &amp;&amp;... args)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_fn&lt;container_t&gt;{}, std::forward&lt;args_t&gt;(args)...};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>...&gt; <span class="keyword">typename</span> container_t, <span class="keyword">typename</span>... args_t&gt;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc">to</a>(args_t &amp;&amp;... args)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_template_template_fn&lt;container_t&gt;{}, std::forward&lt;args_t&gt;(args)...};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> container_t, std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="namespacebio_1_1ranges_1_1views.html#a6fd337524dfbaaee6d6e33cfff9c0ec1">  123</a></span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc">to</a>(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_fn&lt;container_t&gt;{},</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                        std::forward&lt;args_t&gt;(args)...}(std::forward&lt;rng_t&gt;(rng));</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">class</span>...&gt; <span class="keyword">typename</span> container_t, std::ranges::range rng_t, <span class="keyword">typename</span>... args_t&gt;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc">to</a>(rng_t &amp;&amp; rng, args_t &amp;&amp;... args)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;{</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> detail::adaptor_from_functor{detail::to_template_template_fn&lt;container_t&gt;{},</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                        std::forward&lt;args_t&gt;(args)...}(std::forward&lt;rng_t&gt;(rng));</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <span class="comment">// namespace bio::views</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
 <div class="ttc" id="aalgorithm_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/algorithm.html">algorithm</a></div></div>
 <div class="ttc" id="adecay_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/decay.html">std::decay_t</a></div></div>
-<div class="ttc" id="agroup__core__type__list_html_ga707547c2877cfbd1a807d5a92acfd3b3"><div class="ttname"><a href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">bio::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a bio::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:496</div></div>
-<div class="ttc" id="agroup__core__type__pack_html_ga35ffe876c3764d626e1d6fe3497a50f9"><div class="ttname"><a href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">bio::pack_traits::size</a></div><div class="ttdeci">constexpr size_t size</div><div class="ttdoc">The size of a type pack.</div><div class="ttdef"><b>Definition:</b> traits.hpp:152</div></div>
-<div class="ttc" id="agroup__views_html_ga308d962276f85f33f1419807d52095f9"><div class="ttname"><a href="group__views.html#ga308d962276f85f33f1419807d52095f9">bio::views::to</a></div><div class="ttdeci">constexpr auto to(args_t &amp;&amp;... args)</div><div class="ttdoc">Converts a range to a container.</div><div class="ttdef"><b>Definition:</b> to.hpp:111</div></div>
-<div class="ttc" id="ainterfacebio_1_1container_html"><div class="ttname"><a href="interfacebio_1_1container.html">container</a></div><div class="ttdoc">The (most general) container concept as defined by the standard library.</div></div>
-<div class="ttc" id="anamespacebio_1_1views_html"><div class="ttname"><a href="namespacebio_1_1views.html">bio::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:628</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
+<div class="ttc" id="agroup__views_html_ga9d0da346d75a9fd249bd2aa9356385bc"><div class="ttname"><a href="group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc">bio::ranges::views::to</a></div><div class="ttdeci">constexpr auto to(args_t &amp;&amp;... args)</div><div class="ttdoc">Converts a range to a container.</div><div class="ttdef"><b>Definition:</b> to.hpp:109</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
 <div class="ttc" id="aranges_2views_2detail_8hpp_html"><div class="ttname"><a href="ranges_2views_2detail_8hpp.html">detail.hpp</a></div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 <div class="ttc" id="asize_t_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
@@ -214,7 +213,7 @@ $(document).ready(function(){initNavTree('to_8hpp_source.html',''); initResizabl
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><b>to.hpp</b></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

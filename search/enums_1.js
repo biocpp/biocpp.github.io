@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['translation_5fframes_4544',['translation_frames',['../namespacebio.html#a689d7dd3a96f1330e750e6ad1ecb8562',1,'bio']]]
+  ['translation_5fframes_4386',['translation_frames',['../group__aminoacid.html#ga6f577a16bf27585908616e19371b2e8a',1,'bio::alphabet']]]
 ];

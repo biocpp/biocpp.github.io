@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -109,37 +109,36 @@ $(document).ready(function(){initNavTree('gapped_8hpp_source.html',''); initResi
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gap_8hpp.html">bio/alphabet/gap/gap.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="alphabet__variant_8hpp.html">bio/alphabet/composite/alphabet_variant.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="alphabet__variant_8hpp.html">bio/alphabet/composite/alphabet_variant.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="gap_8hpp.html">bio/alphabet/gap/gap.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> alphabet_t&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    requires <a class="code" href="interfacebio_1_1writable__alphabet.html">writable_alphabet&lt;alphabet_t&gt;</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group__gap.html#gac94d46e4d788b59d556962cf86633a4d">   43</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbio_1_1alphabet__variant.html">gapped</a> = <a class="code" href="classbio_1_1alphabet__variant.html">alphabet_variant&lt;alphabet_t, gap&gt;</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace bio</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">namespace </span>bio::detail</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// ---------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// is_gapped_alphabet constexpr variable</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// ---------------------------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;constexpr <span class="keywordtype">bool</span> is_gapped_alphabet = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;constexpr <span class="keywordtype">bool</span> is_gapped_alphabet&lt;gapped&lt;t&gt;&gt; = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace bio::detail</span></div>
-<div class="ttc" id="aalphabet__variant_8hpp_html"><div class="ttname"><a href="alphabet__variant_8hpp.html">alphabet_variant.hpp</a></div><div class="ttdoc">Provides bio::alphabet_variant.</div></div>
-<div class="ttc" id="aclassbio_1_1alphabet__variant_html"><div class="ttname"><a href="classbio_1_1alphabet__variant.html">bio::alphabet_variant</a></div><div class="ttdoc">A combined alphabet that can hold values of either of its alternatives.</div><div class="ttdef"><b>Definition:</b> alphabet_variant.hpp:120</div></div>
-<div class="ttc" id="agap_8hpp_html"><div class="ttname"><a href="gap_8hpp.html">gap.hpp</a></div><div class="ttdoc">Provides bio::gap.</div></div>
-<div class="ttc" id="ainterfacebio_1_1writable__alphabet_html"><div class="ttname"><a href="interfacebio_1_1writable__alphabet.html">writable_alphabet</a></div><div class="ttdoc">Refines bio::alphabet and adds assignability.</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> alphabet_t&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    requires <a class="code" href="interfacebio_1_1alphabet_1_1writable__alphabet.html">writable_alphabet&lt;alphabet_t&gt;</a></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group__gap.html#ga06f46cdec2162495aaffd82d581dc99e">   42</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__variant.html">gapped</a> = <a class="code" href="classbio_1_1alphabet_1_1alphabet__variant.html">alphabet_variant&lt;alphabet_t, gap&gt;</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace bio::alphabet</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">namespace </span>bio::alphabet::detail</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// ---------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// is_gapped_alphabet constexpr variable</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// ---------------------------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;constexpr <span class="keywordtype">bool</span> is_gapped_alphabet = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;constexpr <span class="keywordtype">bool</span> is_gapped_alphabet&lt;gapped&lt;t&gt;&gt; = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace bio::alphabet::detail</span></div>
+<div class="ttc" id="aalphabet__variant_8hpp_html"><div class="ttname"><a href="alphabet__variant_8hpp.html">alphabet_variant.hpp</a></div><div class="ttdoc">Provides bio::alphabet::alphabet_variant.</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__variant_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::alphabet_variant</a></div><div class="ttdoc">A combined alphabet that can hold values of either of its alternatives.</div><div class="ttdef"><b>Definition:</b> alphabet_variant.hpp:122</div></div>
+<div class="ttc" id="agap_8hpp_html"><div class="ttname"><a href="gap_8hpp.html">gap.hpp</a></div><div class="ttdoc">Provides bio::alphabet::gap.</div></div>
+<div class="ttc" id="ainterfacebio_1_1alphabet_1_1writable__alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1writable__alphabet.html">writable_alphabet</a></div><div class="ttdoc">Refines bio::alphabet::alphabet and adds assignability.</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -149,7 +148,7 @@ $(document).ready(function(){initNavTree('gapped_8hpp_source.html',''); initResi
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_000e51b6accb2681cd1e3f4fd511be2f.html">gap</a></li><li class="navelem"><a class="el" href="gapped_8hpp.html">gapped.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

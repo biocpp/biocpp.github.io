@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('type__reduce_8hpp_source.html',''); in
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/span.html">span</a>&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>bio::detail</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>bio::ranges::detail</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// ============================================================================</span></div>
@@ -139,83 +139,79 @@ $(document).ready(function(){initNavTree('type__reduce_8hpp_source.html',''); in
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">template</span> &lt;std::ranges::range urng_t&gt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> impl(urng_t &amp;&amp; urange)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        static_assert(std::ranges::viewable_range&lt;urng_t&gt;,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                      <span class="stringliteral">&quot;The views::type_reduce adaptor can only be passed viewable_ranges, i.e. Views or &amp;-to-non-View.&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// string const &amp;</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> constexpr (std::ranges::borrowed_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                           std::ranges::contiguous_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                           std::ranges::sized_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                           std::same_as&lt;std::ranges::range_reference_t&lt;urng_t&gt;, <span class="keywordtype">char</span> <span class="keyword">const</span> &amp;&gt;)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        static_assert(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          std::ranges::viewable_range&lt;urng_t&gt;,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;          <span class="stringliteral">&quot;The views::type_reduce adaptor can only be passed viewable_ranges, i.e. Views or &amp;-to-non-View.&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// string const &amp;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> constexpr (std::ranges::borrowed_range&lt;urng_t&gt; &amp;&amp; std::ranges::contiguous_range&lt;urng_t&gt; &amp;&amp;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                      std::ranges::sized_range&lt;urng_t&gt; &amp;&amp;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                      std::same_as&lt;std::ranges::range_reference_t&lt;urng_t&gt;, <span class="keywordtype">char</span> <span class="keyword">const</span> &amp;&gt;)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string_view.html">std::basic_string_view</a>{std::ranges::data(urange), <a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">std::ranges::size</a>(urange)};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string_view.html">std::basic_string_view</a>{std::ranges::data(urange), <a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>(urange)};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// contiguous</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (std::ranges::borrowed_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                           std::ranges::contiguous_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                           std::ranges::sized_range&lt;urng_t&gt;)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/span.html">std::span</a>{std::ranges::data(urange), <a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">std::ranges::size</a>(urange)};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// random_access</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (std::ranges::borrowed_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                           std::ranges::random_access_range&lt;urng_t&gt; &amp;&amp;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                           std::ranges::sized_range&lt;urng_t&gt;)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">return</span> std::ranges::subrange&lt;std::ranges::iterator_t&lt;urng_t&gt;, std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/ranges/begin.html">std::ranges::begin</a>(urange),</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/ranges/begin.html">std::ranges::begin</a>(urange) + <a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">std::ranges::size</a>(urange),</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">std::ranges::size</a>(urange)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            };</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// views are always passed as-is</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (std::ranges::view&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t&lt;urng_t&gt;</a>&gt;)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">return</span> std::views::all(std::forward&lt;urng_t&gt;(urange));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// pass to std::views::all (will return ref-view)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> std::views::all(std::forward&lt;urng_t&gt;(urange));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace bio::detail</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (std::ranges::borrowed_range&lt;urng_t&gt; &amp;&amp; std::ranges::contiguous_range&lt;urng_t&gt; &amp;&amp;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                           std::ranges::sized_range&lt;urng_t&gt;)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/span.html">std::span</a>{std::ranges::data(urange), <a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>(urange)};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// random_access</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (std::ranges::borrowed_range&lt;urng_t&gt; &amp;&amp; std::ranges::random_access_range&lt;urng_t&gt; &amp;&amp;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                           std::ranges::sized_range&lt;urng_t&gt;)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">return</span> std::ranges::subrange&lt;std::ranges::iterator_t&lt;urng_t&gt;, std::ranges::iterator_t&lt;urng_t&gt;&gt;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;              <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/ranges/begin.html">std::ranges::begin</a>(urange),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;              <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/ranges/begin.html">std::ranges::begin</a>(urange) + <a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>(urange),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;              <a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">std::ranges::size</a>(urange)};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">// views are always passed as-is</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> constexpr (std::ranges::view&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t&lt;urng_t&gt;</a>&gt;)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> std::views::all(std::forward&lt;urng_t&gt;(urange));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// pass to std::views::all (will return ref-view)</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> std::views::all(std::forward&lt;urng_t&gt;(urange));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace bio::ranges::detail</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// ============================================================================</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//  views::type_reduce (adaptor instance definition)</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// ============================================================================</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">//  views::type_reduce (adaptor instance definition)</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// ============================================================================</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1views.html">bio::views</a></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group__views.html#ga7f6dc6355aaa4d6fc8857d27a0a962c1">  161</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga7f6dc6355aaa4d6fc8857d27a0a962c1">type_reduce</a> = detail::type_reduce_fn{};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4">  157</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4">type_reduce</a> = detail::type_reduce_fn{};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;} <span class="comment">// namespace bio::views</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="namespacebio.html#a8a114e1babcb725da8b466f6b6935792">  171</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacebio.html#a8a114e1babcb725da8b466f6b6935792">type_reduce_view</a> = decltype(<a class="code" href="group__views.html#ga7f6dc6355aaa4d6fc8857d27a0a962c1">views::type_reduce</a>(std::declval&lt;t&gt;()));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges.html">bio::ranges</a></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="namespacebio_1_1ranges.html#a168499c23c6c6e5835e5be6e7bafe695">  167</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacebio_1_1ranges.html#a168499c23c6c6e5835e5be6e7bafe695">type_reduce_view</a> = decltype(<a class="code" href="group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4">views::type_reduce</a>(std::declval&lt;t&gt;()));</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;} <span class="comment">// namespace bio::ranges</span></div>
 <div class="ttc" id="abasic_string_view_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string_view.html">std::basic_string_view</a></div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/ranges/begin.html">std::ranges::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aconcepts_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a></div></div>
-<div class="ttc" id="agroup__core__type__pack_html_ga35ffe876c3764d626e1d6fe3497a50f9"><div class="ttname"><a href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">bio::pack_traits::size</a></div><div class="ttdeci">constexpr size_t size</div><div class="ttdoc">The size of a type pack.</div><div class="ttdef"><b>Definition:</b> traits.hpp:152</div></div>
-<div class="ttc" id="agroup__views_html_ga7f6dc6355aaa4d6fc8857d27a0a962c1"><div class="ttname"><a href="group__views.html#ga7f6dc6355aaa4d6fc8857d27a0a962c1">bio::views::type_reduce</a></div><div class="ttdeci">constexpr auto type_reduce</div><div class="ttdoc">A view adaptor that behaves like std::views::all, but type erases certain ranges.</div><div class="ttdef"><b>Definition:</b> type_reduce.hpp:161</div></div>
-<div class="ttc" id="anamespacebio_1_1views_html"><div class="ttname"><a href="namespacebio_1_1views.html">bio::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
-<div class="ttc" id="anamespacebio_html_a8a114e1babcb725da8b466f6b6935792"><div class="ttname"><a href="namespacebio.html#a8a114e1babcb725da8b466f6b6935792">bio::type_reduce_view</a></div><div class="ttdeci">decltype(views::type_reduce(std::declval&lt; t &gt;())) type_reduce_view</div><div class="ttdoc">Deduces the return value of bio::views::type_reduce.</div><div class="ttdef"><b>Definition:</b> type_reduce.hpp:171</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:628</div></div>
+<div class="ttc" id="agroup__views_html_ga25dd3ea6737659b21a05c98c3ed72ef4"><div class="ttname"><a href="group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4">bio::ranges::views::type_reduce</a></div><div class="ttdeci">constexpr auto type_reduce</div><div class="ttdoc">A view adaptor that behaves like std::views::all, but type erases certain ranges.</div><div class="ttdef"><b>Definition:</b> type_reduce.hpp:157</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_html"><div class="ttname"><a href="namespacebio_1_1ranges.html">bio::ranges</a></div><div class="ttdoc">The Ranges module's namespace.</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_html_a168499c23c6c6e5835e5be6e7bafe695"><div class="ttname"><a href="namespacebio_1_1ranges.html#a168499c23c6c6e5835e5be6e7bafe695">bio::ranges::type_reduce_view</a></div><div class="ttdeci">decltype(views::type_reduce(std::declval&lt; t &gt;())) type_reduce_view</div><div class="ttdoc">Deduces the return value of bio::views::type_reduce.</div><div class="ttdef"><b>Definition:</b> type_reduce.hpp:167</div></div>
 <div class="ttc" id="aranges_2concept_8hpp_html"><div class="ttname"><a href="ranges_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Additional non-standard concepts for ranges.</div></div>
 <div class="ttc" id="aranges_2views_2detail_8hpp_html"><div class="ttname"><a href="ranges_2views_2detail_8hpp.html">detail.hpp</a></div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 <div class="ttc" id="aremove_cvref_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a></div></div>
 <div class="ttc" id="aspan_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/span.html">span</a></div></div>
 <div class="ttc" id="astring_view_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/string_view.html">string_view</a></div></div>
-<div class="ttc" id="atemplate__inspection_8hpp_html"><div class="ttname"><a href="template__inspection_8hpp.html">template_inspection.hpp</a></div><div class="ttdoc">Provides bio::type_list and auxiliary type traits.</div></div>
+<div class="ttc" id="atemplate__inspection_8hpp_html"><div class="ttname"><a href="template__inspection_8hpp.html">template_inspection.hpp</a></div><div class="ttdoc">Provides various traits to inspect templates.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -225,7 +221,7 @@ $(document).ready(function(){initNavTree('type__reduce_8hpp_source.html',''); in
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="type__reduce_8hpp.html">type_reduce.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -109,36 +109,36 @@ $(document).ready(function(){initNavTree('translation__genetic__code_8hpp_source
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="platform_8hpp.html">bio/meta/platform.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="alphabet_2biocpp_8hpp.html">bio/alphabet/biocpp.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacebio.html#a0e520cab6afe3b86c0d3481e1cd01d6f">   26</a></span>&#160;<span class="keyword">enum struct</span> <a class="code" href="namespacebio.html#a0e520cab6afe3b86c0d3481e1cd01d6f">genetic_code</a> : uint8_t</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacebio_1_1alphabet.html#aa0d4217bd42a17a19c079ede29a22172">   26</a></span>&#160;<span class="keyword">enum struct</span> <a class="code" href="namespacebio_1_1alphabet.html#aa0d4217bd42a17a19c079ede29a22172">genetic_code</a> : uint8_t</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CANONICAL=1,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//     VERT_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//     YEAST_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//     MOLD_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//     INVERT_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//     CILIATE,</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//     FLATWORM_MITOCHONDRIAL = 9,</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">//     EUPLOTID,</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//     PROKARYOTE,</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">//     ALT_YEAST,</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//     ASCIDIAN_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//     ALT_FLATWORM_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">//     BLEPHARISMA,</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//     CHLOROPHYCEAN_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//     TREMATODE_MITOCHONDRIAL = 21,</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//     SCENEDESMUS_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//     THRAUSTOCHYTRIUM_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//     PTEROBRANCHIA_MITOCHONDRIAL,</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//     GRACILIBACTERIA</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CANONICAL = 1,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//     VERT_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//     YEAST_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//     MOLD_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">//     INVERT_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//     CILIATE,</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//     FLATWORM_MITOCHONDRIAL = 9,</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//     EUPLOTID,</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//     PROKARYOTE,</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//     ALT_YEAST,</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//     ASCIDIAN_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//     ALT_FLATWORM_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//     BLEPHARISMA,</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//     CHLOROPHYCEAN_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//     TREMATODE_MITOCHONDRIAL = 21,</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//     SCENEDESMUS_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//     THRAUSTOCHYTRIUM_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//     PTEROBRANCHIA_MITOCHONDRIAL,</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//     GRACILIBACTERIA</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
-<div class="ttc" id="anamespacebio_html_a0e520cab6afe3b86c0d3481e1cd01d6f"><div class="ttname"><a href="namespacebio.html#a0e520cab6afe3b86c0d3481e1cd01d6f">bio::genetic_code</a></div><div class="ttdeci">genetic_code</div><div class="ttdoc">Genetic codes used for translation of nucleotides into amino acids.</div><div class="ttdef"><b>Definition:</b> translation_genetic_code.hpp:27</div></div>
-<div class="ttc" id="aplatform_8hpp_html"><div class="ttname"><a href="platform_8hpp.html">platform.hpp</a></div><div class="ttdoc">Provides platform and dependency checks.</div></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace bio::alphabet</span></div>
+<div class="ttc" id="aalphabet_2biocpp_8hpp_html"><div class="ttname"><a href="alphabet_2biocpp_8hpp.html">biocpp.hpp</a></div><div class="ttdoc">Module header with module-wide definitions.</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html_aa0d4217bd42a17a19c079ede29a22172"><div class="ttname"><a href="namespacebio_1_1alphabet.html#aa0d4217bd42a17a19c079ede29a22172">bio::alphabet::genetic_code</a></div><div class="ttdeci">genetic_code</div><div class="ttdoc">Genetic codes used for translation of nucleotides into amino acids.</div><div class="ttdef"><b>Definition:</b> translation_genetic_code.hpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('translation__genetic__code_8hpp_source
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_c5c94c5e6394b8bbdcce9ce299c309d0.html">aminoacid</a></li><li class="navelem"><a class="el" href="translation__genetic__code_8hpp.html">translation_genetic_code.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

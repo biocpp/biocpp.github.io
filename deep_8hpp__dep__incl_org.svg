@@ -99,7 +99,7 @@
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="to__lower_8hpp.html" target="_top" xlink:title="Provides bio::views::to_lower.">
+<g id="a_node10"><a xlink:href="ranges_2views_2to__lower_8hpp.html" target="_top" xlink:title="Provides bio::views::to_lower.">
 <polygon fill="white" stroke="black" points="1087,-190.5 1087,-220.5 1199,-220.5 1199,-190.5 1087,-190.5"/>
 <text text-anchor="start" x="1095" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
 <text text-anchor="middle" x="1143" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_lower.hpp</text>
@@ -202,7 +202,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="bitcompressed__vector_8hpp.html" target="_top" xlink:title="Provides bio::bitcompressed_vector.">
+<g id="a_node7"><a xlink:href="bitcompressed__vector_8hpp.html" target="_top" xlink:title="Provides bio::ranges::bitcompressed_vector.">
 <polygon fill="white" stroke="black" points="665,-123.5 665,-153.5 813,-153.5 813,-123.5 665,-123.5"/>
 <text text-anchor="start" x="673" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
 <text text-anchor="middle" x="739" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/bitcompressed_vector.hpp</text>
@@ -234,7 +234,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the range module .">
+<g id="a_node9"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the ranges module .">
 <polygon fill="white" stroke="black" points="687,-0.5 687,-19.5 791,-19.5 791,-0.5 687,-0.5"/>
 <text text-anchor="middle" x="739" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
 </a>

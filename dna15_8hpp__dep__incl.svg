@@ -58,7 +58,7 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Provides bio::dna15, container aliases and string literals.">
+<g id="a_node1"><a xlink:title="Provides bio::alphabet::dna15, container aliases and string literals.">
 <polygon fill="#bfbfbf" stroke="black" points="388,-268.5 388,-298.5 519,-298.5 519,-268.5 388,-268.5"/>
 <text text-anchor="start" x="396" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/nucleotide</text>
 <text text-anchor="middle" x="453.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">/dna15.hpp</text>
@@ -100,7 +100,7 @@ var sectionId = 'dynsection-1';
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="rna15_8hpp.html" target="_top" xlink:title="Provides bio::rna15, container aliases and string literals.">
+<g id="a_node10"><a xlink:href="rna15_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::rna15, container aliases and string literals.">
 <polygon fill="white" stroke="black" points="435,-201.5 435,-231.5 566,-231.5 566,-201.5 435,-201.5"/>
 <text text-anchor="start" x="443" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/nucleotide</text>
 <text text-anchor="middle" x="500.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">/rna15.hpp</text>

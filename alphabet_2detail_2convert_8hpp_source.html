@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -117,28 +117,26 @@ $(document).ready(function(){initNavTree('alphabet_2detail_2convert_8hpp_source.
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// conversion to/from char/rank types</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>bio::detail</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>bio::alphabet::detail</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span> &lt;alphabet out_t, alphabet in_t&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;constexpr <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;out_t, alphabet_size&lt;in_t&gt;</a>&gt; convert_through_char_representation</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;constexpr <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;out_t, size&lt;in_t&gt;</a>&gt; convert_through_char_representation = []() constexpr</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    [] () constexpr</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;out_t, alphabet_size&lt;in_t&gt;</a>&gt; ret{};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// for (decltype(alphabet_size&lt;in_t&gt;) i = 0; ...) causes indefinite compilation :(</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = decltype(alphabet_size&lt;in_t&gt;){0}; i &lt; alphabet_size&lt;in_t&gt;; ++i)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="group__alphabet.html#ga05da42eb0b9a48f4d1a554c7d3a9044d">assign_char_to</a>(<a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">to_char</a>(<a class="code" href="group__alphabet.html#gae34fa2b37a8b40f2f2fa64fed7bbb410">assign_rank_to</a>(i, in_t{})), ret[i]);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }()</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace bio::detail</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;out_t, size&lt;in_t&gt;</a>&gt; ret{};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// for (decltype(alphabet_size&lt;in_t&gt;) i = 0; ...) causes indefinite compilation :(</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = decltype(size&lt;in_t&gt;){0}; i &lt; size&lt;in_t&gt;; ++i)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">assign_char_to</a>(<a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">to_char</a>(<a class="code" href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">assign_rank_to</a>(i, in_t{})), ret[i]);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace bio::alphabet::detail</span></div>
 <div class="ttc" id="aalphabet_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/array.html">array</a></div></div>
-<div class="ttc" id="agroup__alphabet_html_ga05da42eb0b9a48f4d1a554c7d3a9044d"><div class="ttname"><a href="group__alphabet.html#ga05da42eb0b9a48f4d1a554c7d3a9044d">bio::assign_char_to</a></div><div class="ttdeci">constexpr auto assign_char_to</div><div class="ttdoc">Assign a character to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:418</div></div>
-<div class="ttc" id="agroup__alphabet_html_gab295f04aea840000aafc640b5e6528c8"><div class="ttname"><a href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:322</div></div>
-<div class="ttc" id="agroup__alphabet_html_gae34fa2b37a8b40f2f2fa64fed7bbb410"><div class="ttname"><a href="group__alphabet.html#gae34fa2b37a8b40f2f2fa64fed7bbb410">bio::assign_rank_to</a></div><div class="ttdeci">constexpr auto assign_rank_to</div><div class="ttdoc">Assign a rank to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:240</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga0c2eb25dabf59ccf9992b2661083ea5b"><div class="ttname"><a href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">bio::alphabet::assign_char_to</a></div><div class="ttdeci">constexpr auto assign_char_to</div><div class="ttdoc">Assign a char to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:334</div></div>
+<div class="ttc" id="agroup__alphabet_html_gab718eab4e0f0e1b44f78b7600dee5e4d"><div class="ttname"><a href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a></div><div class="ttdeci">constexpr auto assign_rank_to</div><div class="ttdoc">Assign a rank to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:172</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -148,7 +146,7 @@ $(document).ready(function(){initNavTree('alphabet_2detail_2convert_8hpp_source.
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_f377ddb9e571c137aa69ccd22c1bf99e.html">detail</a></li><li class="navelem"><b>convert.hpp</b></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

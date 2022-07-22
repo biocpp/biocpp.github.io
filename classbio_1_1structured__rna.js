@@ -1,7 +1,7 @@
 var classbio_1_1structured__rna =
 [
     [ "char_type", "classbio_1_1structured__rna.html#aef929cd5164f032304bf2d7260f20d7d", null ],
-    [ "rank_type", "classbio_1_1structured__rna.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1structured__rna.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "sequence_alphabet_type", "classbio_1_1structured__rna.html#a8bf13181292b9d6729471106ca60eaf0", null ],
     [ "structure_alphabet_type", "classbio_1_1structured__rna.html#a6cfa869b8287657859728b9c0b58daaa", null ],
     [ "structured_rna", "classbio_1_1structured__rna.html#aa4f85196f909e1f094ee3bfc36bbbe2b", null ],

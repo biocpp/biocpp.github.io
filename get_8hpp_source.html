@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -109,37 +109,37 @@ $(document).ready(function(){initNavTree('get_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="basic_8hpp.html">bio/meta/type_traits/basic.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tuple_8hpp.html">bio/meta/concept/tuple.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="tuple_8hpp.html">bio/meta/concept/tuple.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="basic_8hpp.html">bio/meta/type_traits/basic.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1views.html">bio::views</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;auto index&gt;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__views.html#ga6c266f65b04e9e1a6c0e1aac88ab6049">   66</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="group__views.html#ga6c266f65b04e9e1a6c0e1aac88ab6049">get</a> = <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keyword">auto</span> &amp;&amp; in) -&gt; decltype(<span class="keyword">auto</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__views.html#ga6c266f65b04e9e1a6c0e1aac88ab6049">std::get</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">using</span> <a class="code" href="group__views.html#ga6c266f65b04e9e1a6c0e1aac88ab6049">bio::get</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    static_assert(<a class="code" href="interfacebio_1_1tuple__like.html">tuple_like</a>&lt;decltype(in)&gt;,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                  <span class="stringliteral">&quot;You may only pass ranges to views::get whose reference_t models the tuple_like.&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// we need to explicitly remove &amp;&amp; around temporaries to return values as values (and not as rvalue references)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// we cannot simply cast to std::tuple_element_t (or set that as return value), because some tuples, like</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// our alphabet_tuple_base alphabets do not return that type when get is called on them (they return a proxy)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">using</span> ret_type = <a class="code" href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">remove_rvalue_reference_t&lt;decltype(get&lt;index&gt;</a>(std::forward&lt;decltype(in)&gt;(in)))&gt;;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ret_type<span class="keyword">&gt;</span>(get&lt;index&gt;(std::forward&lt;decltype(in)&gt;(in)));</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;});</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace bio::views</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6">   66</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code" href="group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6">get</a> = <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  [](<span class="keyword">auto</span> &amp;&amp; in) -&gt; decltype(<span class="keyword">auto</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">using</span> <a class="code" href="group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6">std::get</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">using</span> <a class="code" href="group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6">meta::get</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      static_assert(meta::tuple_like&lt;decltype(in)&gt;,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="stringliteral">&quot;You may only pass ranges to views::get whose reference_t models the tuple_like.&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="comment">// we need to explicitly remove &amp;&amp; around temporaries to return values as values (and not as rvalue references)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">// we cannot simply cast to std::tuple_element_t (or set that as return value), because some tuples, like</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="comment">// our alphabet_tuple_base alphabets do not return that type when get is called on them (they return a proxy)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">using</span> ret_type = <a class="code" href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">meta::remove_rvalue_reference_t&lt;decltype(get&lt;index&gt;</a>(std::forward&lt;decltype(in)&gt;(in)))&gt;;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>ret_type<span class="keyword">&gt;</span>(get&lt;index&gt;(std::forward&lt;decltype(in)&gt;(in)));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  });</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;} <span class="comment">// namespace bio::ranges::views</span></div>
 <div class="ttc" id="abasic_8hpp_html"><div class="ttname"><a href="basic_8hpp.html">basic.hpp</a></div><div class="ttdoc">Provides various type traits on generic types.</div></div>
-<div class="ttc" id="agroup__core__type__list_html_ga707547c2877cfbd1a807d5a92acfd3b3"><div class="ttname"><a href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">bio::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a bio::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:496</div></div>
-<div class="ttc" id="agroup__type__traits_html_ga383091370276ddc1b050b69bee6a7b03"><div class="ttname"><a href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">bio::remove_rvalue_reference_t</a></div><div class="ttdeci">typename remove_rvalue_reference&lt; t &gt;::type remove_rvalue_reference_t</div><div class="ttdoc">Return the input type with &amp;&amp; removed, but lvalue references preserved (transformation_trait shortcut...</div><div class="ttdef"><b>Definition:</b> basic.hpp:70</div></div>
-<div class="ttc" id="agroup__views_html_ga6c266f65b04e9e1a6c0e1aac88ab6049"><div class="ttname"><a href="group__views.html#ga6c266f65b04e9e1a6c0e1aac88ab6049">bio::views::get</a></div><div class="ttdeci">auto const get</div><div class="ttdoc">A view calling std::get on each element in a range.</div><div class="ttdef"><b>Definition:</b> get.hpp:66</div></div>
-<div class="ttc" id="ainterfacebio_1_1tuple__like_html"><div class="ttname"><a href="interfacebio_1_1tuple__like.html">tuple_like</a></div><div class="ttdoc">Whether a type behaves like a tuple.</div></div>
-<div class="ttc" id="anamespacebio_1_1views_html"><div class="ttname"><a href="namespacebio_1_1views.html">bio::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
+<div class="ttc" id="agroup__type__traits_html_ga0faf63d047d9a79898eb572fb8affc36"><div class="ttname"><a href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">bio::meta::remove_rvalue_reference_t</a></div><div class="ttdeci">typename remove_rvalue_reference&lt; t &gt;::type remove_rvalue_reference_t</div><div class="ttdoc">Return the input type with &amp;&amp; removed, but lvalue references preserved (transformation_trait shortcut...</div><div class="ttdef"><b>Definition:</b> basic.hpp:63</div></div>
+<div class="ttc" id="agroup__views_html_ga5f51bb0ed14f0c7c39976456d1c651e6"><div class="ttname"><a href="group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6">bio::ranges::views::get</a></div><div class="ttdeci">auto const get</div><div class="ttdoc">A view calling std::get on each element in a range.</div><div class="ttdef"><b>Definition:</b> get.hpp:66</div></div>
+<div class="ttc" id="anamespacebio_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></div><div class="ttdoc">The BioC++ namespace for views.</div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
-<div class="ttc" id="atuple_8hpp_html"><div class="ttname"><a href="tuple_8hpp.html">tuple.hpp</a></div><div class="ttdoc">Provides bio::tuple_like.</div></div>
+<div class="ttc" id="atuple_8hpp_html"><div class="ttname"><a href="tuple_8hpp.html">tuple.hpp</a></div><div class="ttdoc">Provides bio::meta::tuple_like.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('get_8hpp_source.html',''); initResizab
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="get_8hpp.html">get.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

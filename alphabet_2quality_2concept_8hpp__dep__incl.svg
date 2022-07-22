@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1406;
+var viewWidth = 1035;
 var viewHeight = 430;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,435 +54,375 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>bio/alphabet/quality/concept.hpp</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-426 1402,-426 1402,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-426 1031,-426 1031,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Quality alphabet concept.">
-<polygon fill="#bfbfbf" stroke="black" points="944,-391.5 944,-421.5 1058,-421.5 1058,-391.5 944,-391.5"/>
-<text text-anchor="start" x="952" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1001" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">/concept.hpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="585,-391.5 585,-421.5 699,-421.5 699,-391.5 585,-391.5"/>
+<text text-anchor="start" x="593" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="642" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">/concept.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="alphabet__proxy_8hpp.html" target="_top" xlink:title="Provides bio::alphabet_proxy.">
-<polygon fill="white" stroke="black" points="519.5,-324.5 519.5,-354.5 634.5,-354.5 634.5,-324.5 519.5,-324.5"/>
-<text text-anchor="start" x="527.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/detail</text>
-<text text-anchor="middle" x="577" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_proxy.hpp</text>
+<g id="a_node2"><a xlink:href="alphabet__proxy_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::alphabet_proxy.">
+<polygon fill="white" stroke="black" points="444.5,-324.5 444.5,-354.5 559.5,-354.5 559.5,-324.5 444.5,-324.5"/>
+<text text-anchor="start" x="452.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/detail</text>
+<text text-anchor="middle" x="502" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_proxy.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M933.79,-395.2C851.22,-382.54 712.55,-361.28 634.63,-349.33"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="933.4,-398.68 943.82,-396.73 934.46,-391.76 933.4,-398.68"/>
+<path fill="none" stroke="midnightblue" d="M602.43,-387.13C580.19,-376.8 552.85,-364.11 532.32,-354.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="601.08,-390.36 611.62,-391.4 604.03,-384.01 601.08,-390.36"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="qualified_8hpp.html" target="_top" xlink:title="Provides quality alphabet composites.">
-<polygon fill="white" stroke="black" points="859,-190.5 859,-220.5 973,-220.5 973,-190.5 859,-190.5"/>
-<text text-anchor="start" x="867" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="916" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/qualified.hpp</text>
+<polygon fill="white" stroke="black" points="348,-190.5 348,-220.5 462,-220.5 462,-190.5 348,-190.5"/>
+<text text-anchor="start" x="356" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="405" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/qualified.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
-<g id="edge26" class="edge">
+<g id="edge21" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M990.88,-381.8C973.03,-340.01 936.49,-254.47 922.06,-220.68"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="987.74,-383.37 994.89,-391.19 994.18,-380.62 987.74,-383.37"/>
+<path fill="none" stroke="midnightblue" d="M635.6,-381.39C625.19,-343.91 603.86,-274.18 585,-257 575.67,-248.5 511.26,-231.7 462.13,-219.81"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="632.34,-382.74 638.35,-391.47 639.09,-380.9 632.34,-382.74"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="aliases_8hpp.html" target="_top" xlink:title="Provides aliases for qualified.">
-<polygon fill="white" stroke="black" points="944,-123.5 944,-153.5 1058,-153.5 1058,-123.5 944,-123.5"/>
-<text text-anchor="start" x="952" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1001" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/aliases.hpp</text>
+<polygon fill="white" stroke="black" points="573,-123.5 573,-153.5 687,-153.5 687,-123.5 573,-123.5"/>
+<text text-anchor="start" x="581" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="630" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/aliases.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
-<g id="edge24" class="edge">
+<g id="edge19" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M1001,-381.07C1001,-326.57 1001,-196.52 1001,-153.55"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="997.5,-381.2 1001,-391.2 1004.5,-381.2 997.5,-381.2"/>
+<path fill="none" stroke="midnightblue" d="M640.9,-381.07C638.44,-326.57 632.57,-196.52 630.63,-153.55"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="637.41,-381.37 641.35,-391.2 644.4,-381.05 637.41,-381.37"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="alphabet_2quality_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header that includes all headers from alphabet/quality/.">
-<polygon fill="white" stroke="black" points="1029,-56.5 1029,-86.5 1143,-86.5 1143,-56.5 1029,-56.5"/>
-<text text-anchor="start" x="1037" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1086" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
+<polygon fill="white" stroke="black" points="658,-56.5 658,-86.5 772,-86.5 772,-56.5 658,-56.5"/>
+<text text-anchor="start" x="666" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="715" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
-<g id="edge25" class="edge">
+<g id="edge20" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1007.75,-381.49C1010.08,-373.12 1012.68,-363.65 1015,-355 1038.88,-265.87 1044.97,-243.61 1067,-154 1072.79,-130.44 1079.11,-102.94 1082.81,-86.66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1004.31,-380.8 1004.99,-391.37 1011.05,-382.68 1004.31,-380.8"/>
+<path fill="none" stroke="midnightblue" d="M647.28,-381.41C661.55,-316.34 700.55,-138.44 711.87,-86.76"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="643.86,-380.67 645.14,-391.19 650.7,-382.17 643.86,-380.67"/>
 </g>
-<!-- Node20 -->
-<g id="node20" class="node">
-<title>Node20</title>
-<g id="a_node20"><a xlink:href="quality__base_8hpp.html" target="_top" xlink:title="Provides bio::phred42 quality scores.">
-<polygon fill="white" stroke="black" points="1133,-257.5 1133,-287.5 1247,-287.5 1247,-257.5 1133,-257.5"/>
-<text text-anchor="start" x="1141" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1190" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/quality_base.hpp</text>
+<!-- Node17 -->
+<g id="node17" class="node">
+<title>Node17</title>
+<g id="a_node17"><a xlink:href="quality__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred42 quality scores.">
+<polygon fill="white" stroke="black" points="762,-257.5 762,-287.5 876,-287.5 876,-257.5 762,-257.5"/>
+<text text-anchor="start" x="770" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="819" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/quality_base.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node20 -->
-<g id="edge27" class="edge">
-<title>Node1&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1031.5,-385.62C1045.45,-376.42 1062.15,-365.28 1077,-355 1110.41,-331.87 1148.63,-304 1170.97,-287.57"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1029.21,-382.94 1022.77,-391.35 1033.05,-388.79 1029.21,-382.94"/>
+<!-- Node1&#45;&gt;Node17 -->
+<g id="edge22" class="edge">
+<title>Node1&#45;&gt;Node17</title>
+<path fill="none" stroke="midnightblue" d="M669.11,-385.28C705.38,-358.24 768.75,-310.98 800.19,-287.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="666.87,-382.59 660.94,-391.37 671.05,-388.2 666.87,-382.59"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="alphabet__tuple__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet_tuple_base.">
-<polygon fill="white" stroke="black" points="506,-257.5 506,-287.5 648,-287.5 648,-257.5 506,-257.5"/>
-<text text-anchor="start" x="514" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
-<text text-anchor="middle" x="577" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_tuple_base.hpp</text>
+<g id="a_node3"><a xlink:href="alphabet__tuple__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::alphabet_tuple_base.">
+<polygon fill="white" stroke="black" points="174,-257.5 174,-287.5 316,-287.5 316,-257.5 174,-257.5"/>
+<text text-anchor="start" x="182" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
+<text text-anchor="middle" x="245" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_tuple_base.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M577,-314.11C577,-305.15 577,-295.32 577,-287.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="573.5,-314.4 577,-324.4 580.5,-314.4 573.5,-314.4"/>
+<path fill="none" stroke="midnightblue" d="M436.7,-321.98C394.72,-311.37 340.76,-297.72 300.79,-287.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="436,-325.42 446.55,-324.48 437.71,-318.63 436,-325.42"/>
 </g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a xlink:href="bitcompressed__vector_8hpp.html" target="_top" xlink:title="Provides bio::bitcompressed_vector.">
-<polygon fill="white" stroke="black" points="127,-257.5 127,-287.5 275,-287.5 275,-257.5 127,-257.5"/>
-<text text-anchor="start" x="135" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
-<text text-anchor="middle" x="201" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/bitcompressed_vector.hpp</text>
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a xlink:href="bitcompressed__vector_8hpp.html" target="_top" xlink:title="Provides bio::ranges::bitcompressed_vector.">
+<polygon fill="white" stroke="black" points="428,-257.5 428,-287.5 576,-287.5 576,-257.5 428,-257.5"/>
+<text text-anchor="start" x="436" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
+<text text-anchor="middle" x="502" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/bitcompressed_vector.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node17 -->
-<g id="edge21" class="edge">
-<title>Node2&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M509.6,-326.85C443.57,-315.43 343.21,-298.08 275.01,-286.29"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="509.03,-330.3 519.48,-328.56 510.23,-323.4 509.03,-330.3"/>
+<!-- Node2&#45;&gt;Node14 -->
+<g id="edge16" class="edge">
+<title>Node2&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M502,-314.11C502,-305.15 502,-295.32 502,-287.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="498.5,-314.4 502,-324.4 505.5,-314.4 498.5,-314.4"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="cigar_8hpp.html" target="_top" xlink:title="Provides the bio::cigar alphabet.">
-<polygon fill="white" stroke="black" points="322,-190.5 322,-220.5 426,-220.5 426,-190.5 322,-190.5"/>
-<text text-anchor="start" x="330" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/cigar</text>
-<text text-anchor="middle" x="374" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/cigar.hpp</text>
+<g id="a_node4"><a xlink:href="cigar_8hpp.html" target="_top" xlink:title="Provides the bio::alphabet::cigar alphabet.">
+<polygon fill="white" stroke="black" points="0,-190.5 0,-220.5 104,-220.5 104,-190.5 0,-190.5"/>
+<text text-anchor="start" x="8" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/cigar</text>
+<text text-anchor="middle" x="52" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/cigar.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M523.06,-254.23C490.22,-243.71 448.8,-230.45 417.96,-220.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="522.36,-257.68 532.95,-257.4 524.5,-251.01 522.36,-257.68"/>
+<path fill="none" stroke="midnightblue" d="M193.31,-254.09C162.16,-243.6 122.99,-230.41 93.8,-220.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="192.53,-257.52 203.12,-257.4 194.76,-250.89 192.53,-257.52"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="alphabet_2composite_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/.">
-<polygon fill="white" stroke="black" points="641.5,-56.5 641.5,-86.5 772.5,-86.5 772.5,-56.5 641.5,-56.5"/>
-<text text-anchor="start" x="649.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
-<text text-anchor="middle" x="707" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
+<polygon fill="white" stroke="black" points="45.5,-56.5 45.5,-86.5 176.5,-86.5 176.5,-56.5 45.5,-56.5"/>
+<text text-anchor="start" x="53.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
+<text text-anchor="middle" x="111" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node3&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M657.9,-260.78C681.46,-253.48 704.68,-241.29 719,-221 748.08,-179.79 725.9,-115.2 713.67,-86.76"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="656.84,-257.44 648.17,-263.53 658.74,-264.18 656.84,-257.44"/>
+<path fill="none" stroke="midnightblue" d="M193.35,-253.14C177.8,-245.36 161.97,-234.83 151,-221 118.65,-180.21 112.37,-115.4 111.22,-86.83"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="191.89,-256.32 202.43,-257.4 194.86,-249.98 191.89,-256.32"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="masked_8hpp.html" target="_top" xlink:title="Extends a given alphabet with the mask alphabet.">
-<polygon fill="white" stroke="black" points="134,-196 134,-215 304,-215 304,-196 134,-196"/>
-<text text-anchor="middle" x="219" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/mask/masked.hpp</text>
+<polygon fill="white" stroke="black" points="160,-196 160,-215 330,-215 330,-196 160,-196"/>
+<text text-anchor="middle" x="245" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/mask/masked.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node3&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M495.6,-256.72C424.71,-243.85 324.39,-225.63 266.07,-215.05"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="495.38,-260.24 505.84,-258.58 496.63,-253.35 495.38,-260.24"/>
+<path fill="none" stroke="midnightblue" d="M245,-247.25C245,-236.02 245,-223.38 245,-215.19"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="241.5,-247.4 245,-257.4 248.5,-247.4 241.5,-247.4"/>
 </g>
 <!-- Node3&#45;&gt;Node9 -->
 <g id="edge9" class="edge">
 <title>Node3&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M658.19,-255.93C720.09,-244.06 803.78,-228.02 858.79,-217.47"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="657.23,-252.55 648.07,-257.87 658.55,-259.43 657.23,-252.55"/>
-</g>
-<!-- Node14 -->
-<g id="node14" class="node">
-<title>Node14</title>
-<g id="a_node14"><a xlink:href="structured__aa_8hpp.html" target="_top" xlink:title="Provides the composite of aminoacid with structure alphabets.">
-<polygon fill="white" stroke="black" points="444,-190.5 444,-220.5 568,-220.5 568,-190.5 444,-190.5"/>
-<text text-anchor="start" x="452" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/structure</text>
-<text text-anchor="middle" x="506" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/structured_aa.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node14 -->
-<g id="edge16" class="edge">
-<title>Node3&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M554.17,-250.6C543.45,-240.78 530.95,-229.34 521.38,-220.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="551.85,-253.22 561.59,-257.4 556.58,-248.06 551.85,-253.22"/>
-</g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:href="structured__rna_8hpp.html" target="_top" xlink:title="Provides the composite of nucleotide with structure alphabets.">
-<polygon fill="white" stroke="black" points="586,-190.5 586,-220.5 710,-220.5 710,-190.5 586,-190.5"/>
-<text text-anchor="start" x="594" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/structure</text>
-<text text-anchor="middle" x="648" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/structured_rna.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node16 -->
-<g id="edge19" class="edge">
-<title>Node3&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M599.83,-250.6C610.55,-240.78 623.05,-229.34 632.62,-220.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="597.42,-248.06 592.41,-257.4 602.15,-253.22 597.42,-248.06"/>
+<path fill="none" stroke="midnightblue" d="M289.2,-253.54C314.8,-243.14 346.57,-230.24 370.35,-220.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="287.66,-250.39 279.72,-257.4 290.3,-256.87 287.66,-250.39"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="alphabet_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the alphabet module.">
-<polygon fill="white" stroke="black" points="603.5,-0.5 603.5,-19.5 716.5,-19.5 716.5,-0.5 603.5,-0.5"/>
-<text text-anchor="middle" x="660" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/all.hpp</text>
+<polygon fill="white" stroke="black" points="209.5,-0.5 209.5,-19.5 322.5,-19.5 322.5,-0.5 209.5,-0.5"/>
+<text text-anchor="middle" x="266" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M689.55,-48.4C681.65,-38.41 672.78,-27.18 666.84,-19.66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="686.92,-50.72 695.86,-56.4 692.41,-46.38 686.92,-50.72"/>
+<path fill="none" stroke="midnightblue" d="M157.11,-52.8C185.6,-41.86 220.91,-28.31 243.45,-19.66"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="155.81,-49.55 147.73,-56.4 158.32,-56.08 155.81,-49.55"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="alphabet_2mask_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/.">
-<polygon fill="white" stroke="black" points="279.5,-62 279.5,-81 422.5,-81 422.5,-62 279.5,-62"/>
-<text text-anchor="middle" x="351" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/mask/all.hpp</text>
+<polygon fill="white" stroke="black" points="194.5,-62 194.5,-81 337.5,-81 337.5,-62 194.5,-62"/>
+<text text-anchor="middle" x="266" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/mask/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M234.74,-188.76C262.84,-160.66 320.72,-102.78 342.48,-81.02"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="232.26,-186.29 227.66,-195.84 237.21,-191.24 232.26,-186.29"/>
+<path fill="none" stroke="midnightblue" d="M247.98,-185.78C252.6,-156.75 261.3,-102.04 264.64,-81.02"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="244.49,-185.41 246.38,-195.84 251.41,-186.51 244.49,-185.41"/>
 </g>
 <!-- Node8&#45;&gt;Node6 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M405.29,-60.05C465.16,-48.52 560.32,-30.19 615.81,-19.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="404.43,-56.65 395.27,-61.98 405.75,-63.52 404.43,-56.65"/>
+<path fill="none" stroke="midnightblue" d="M266,-51.82C266,-41 266,-27.9 266,-19.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="262.5,-51.98 266,-61.98 269.5,-51.98 262.5,-51.98"/>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M942.59,-184.17C955.59,-174.23 970.9,-162.51 982.59,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="940.26,-181.54 934.44,-190.4 944.51,-187.1 940.26,-181.54"/>
+<path fill="none" stroke="midnightblue" d="M463.57,-187.58C500.11,-177.02 546.6,-163.59 581.15,-153.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="462.18,-184.34 453.54,-190.48 464.12,-191.06 462.18,-184.34"/>
 </g>
 <!-- Node9&#45;&gt;Node11 -->
 <g id="edge13" class="edge">
 <title>Node9&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M915.64,-180.21C916.67,-162.3 920.92,-138.46 935,-123 958.91,-96.73 996.87,-84.11 1028.74,-78.06"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="912.14,-180.12 915.36,-190.22 919.14,-180.32 912.14,-180.12"/>
+<path fill="none" stroke="midnightblue" d="M409.63,-180.4C414.48,-161.85 424.01,-137.07 442,-123 474.84,-97.31 587.97,-83.28 657.87,-76.88"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="406.2,-179.68 407.34,-190.22 413.02,-181.28 406.2,-179.68"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="trim__quality_8hpp.html" target="_top" xlink:title="Provides bio::views::trim_quality.">
-<polygon fill="white" stroke="black" points="766,-123.5 766,-153.5 888,-153.5 888,-123.5 766,-123.5"/>
-<text text-anchor="start" x="774" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/trim</text>
-<text text-anchor="middle" x="827" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_quality.hpp</text>
+<polygon fill="white" stroke="black" points="273,-123.5 273,-153.5 395,-153.5 395,-123.5 273,-123.5"/>
+<text text-anchor="start" x="281" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/trim</text>
+<text text-anchor="middle" x="334" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_quality.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node12 -->
 <g id="edge14" class="edge">
 <title>Node9&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M888.55,-184.45C874.86,-174.45 858.63,-162.6 846.27,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="886.55,-187.32 896.69,-190.4 890.68,-181.67 886.55,-187.32"/>
+<path fill="none" stroke="midnightblue" d="M382.17,-183.6C371.45,-173.78 358.95,-162.34 349.38,-153.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="379.85,-186.22 389.59,-190.4 384.58,-181.06 379.85,-186.22"/>
 </g>
 <!-- Node10&#45;&gt;Node11 -->
 <g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1027.59,-117.17C1040.59,-107.23 1055.9,-95.51 1067.59,-86.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1025.26,-114.54 1019.44,-123.4 1029.51,-120.1 1025.26,-114.54"/>
+<path fill="none" stroke="midnightblue" d="M656.59,-117.17C669.59,-107.23 684.9,-95.51 696.59,-86.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="654.26,-114.54 648.44,-123.4 658.51,-120.1 654.26,-114.54"/>
 </g>
 <!-- Node11&#45;&gt;Node6 -->
 <g id="edge12" class="edge">
 <title>Node11&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M1018.87,-61.12C935.53,-49.48 794.84,-29.83 716.67,-18.92"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1018.6,-64.62 1028.99,-62.54 1019.57,-57.69 1018.6,-64.62"/>
+<path fill="none" stroke="midnightblue" d="M647.75,-61.59C559.3,-49.87 405.44,-29.48 322.63,-18.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="647.3,-65.06 657.68,-62.9 648.22,-58.12 647.3,-65.06"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
 <g id="a_node13"><a xlink:href="ranges_2views_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the views submodule .">
-<polygon fill="white" stroke="black" points="790.5,-62 790.5,-81 925.5,-81 925.5,-62 790.5,-62"/>
-<text text-anchor="middle" x="858" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/all.hpp</text>
+<polygon fill="white" stroke="black" points="355.5,-62 355.5,-81 490.5,-81 490.5,-62 355.5,-62"/>
+<text text-anchor="middle" x="423" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node13 -->
 <g id="edge15" class="edge">
 <title>Node12&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M838.07,-114.29C843.55,-102.8 849.83,-89.63 853.85,-81.19"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="834.87,-112.86 833.73,-123.4 841.19,-115.88 834.87,-112.86"/>
+<path fill="none" stroke="midnightblue" d="M361.65,-117.31C378.36,-105.1 398.8,-90.18 411.35,-81.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="359.32,-114.67 353.31,-123.4 363.45,-120.32 359.32,-114.67"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="alphabet_2structure_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the structure module. It includes all headers from alphabet/structure/.">
-<polygon fill="white" stroke="black" points="551,-123.5 551,-153.5 675,-153.5 675,-123.5 551,-123.5"/>
-<text text-anchor="start" x="559" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/structure</text>
-<text text-anchor="middle" x="613" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
+<g id="a_node15"><a xlink:href="ranges_2container_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the container submodule .">
+<polygon fill="white" stroke="black" points="480,-190.5 480,-220.5 596,-220.5 596,-190.5 480,-190.5"/>
+<text text-anchor="start" x="488" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
+<text text-anchor="middle" x="538" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node14&#45;&gt;Node15 -->
 <g id="edge17" class="edge">
 <title>Node14&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M538.08,-185.02C554.73,-174.9 574.69,-162.77 589.83,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="535.95,-182.21 529.22,-190.4 539.58,-188.2 535.95,-182.21"/>
+<path fill="none" stroke="midnightblue" d="M514.7,-248.58C519.87,-239.24 525.68,-228.75 530.2,-220.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="511.59,-246.95 509.81,-257.4 517.72,-250.34 511.59,-246.95"/>
 </g>
-<!-- Node15&#45;&gt;Node6 -->
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the ranges module .">
+<polygon fill="white" stroke="black" points="451,-129 451,-148 555,-148 555,-129 451,-129"/>
+<text text-anchor="middle" x="503" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node15&#45;&gt;Node16 -->
 <g id="edge18" class="edge">
-<title>Node15&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M616.97,-113.3C620.15,-96.76 625.36,-74.57 633,-56 638.55,-42.52 647.71,-28.31 653.8,-19.55"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="613.5,-112.79 615.16,-123.25 620.39,-114.04 613.5,-112.79"/>
-</g>
-<!-- Node16&#45;&gt;Node15 -->
-<g id="edge20" class="edge">
-<title>Node16&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M635.66,-181.58C630.63,-172.24 624.98,-161.75 620.58,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="632.58,-183.25 640.41,-190.4 638.75,-179.93 632.58,-183.25"/>
+<title>Node15&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M525.5,-181.29C519.32,-169.8 512.22,-156.63 507.68,-148.19"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="522.58,-183.25 530.41,-190.4 528.75,-179.93 522.58,-183.25"/>
 </g>
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<g id="a_node18"><a xlink:href="ranges_2container_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the container submodule .">
-<polygon fill="white" stroke="black" points="0,-190.5 0,-220.5 116,-220.5 116,-190.5 0,-190.5"/>
-<text text-anchor="start" x="8" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
-<text text-anchor="middle" x="58" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
+<g id="a_node18"><a xlink:href="phred42_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred42 quality scores.">
+<polygon fill="white" stroke="black" points="720,-190.5 720,-220.5 834,-220.5 834,-190.5 720,-190.5"/>
+<text text-anchor="start" x="728" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="777" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred42.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node17&#45;&gt;Node18 -->
-<g id="edge22" class="edge">
+<g id="edge23" class="edge">
 <title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M160.59,-253.13C137.87,-242.8 109.94,-230.11 88.97,-220.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="159.42,-256.44 169.97,-257.4 162.32,-250.07 159.42,-256.44"/>
+<path fill="none" stroke="midnightblue" d="M804.38,-248.87C798.3,-239.46 791.43,-228.83 786.1,-220.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="801.52,-250.9 809.89,-257.4 807.4,-247.1 801.52,-250.9"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
-<g id="a_node19"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the range module .">
-<polygon fill="white" stroke="black" points="6,-129 6,-148 110,-148 110,-129 6,-129"/>
-<text text-anchor="middle" x="58" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
+<g id="a_node19"><a xlink:href="phred63_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred63 quality scores.">
+<polygon fill="white" stroke="black" points="781,-123.5 781,-153.5 895,-153.5 895,-123.5 781,-123.5"/>
+<text text-anchor="start" x="789" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="838" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred63.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node19 -->
-<g id="edge23" class="edge">
-<title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M58,-180.25C58,-169.02 58,-156.38 58,-148.19"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="54.5,-180.4 58,-190.4 61.5,-180.4 54.5,-180.4"/>
+<!-- Node17&#45;&gt;Node19 -->
+<g id="edge26" class="edge">
+<title>Node17&#45;&gt;Node19</title>
+<path fill="none" stroke="midnightblue" d="M832.78,-248.08C836.92,-239.81 840.91,-230.26 843,-221 848.24,-197.77 844.45,-169.93 841.22,-153.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="829.58,-246.63 827.96,-257.1 835.76,-249.93 829.58,-246.63"/>
 </g>
-<!-- Node21 -->
-<g id="node21" class="node">
-<title>Node21</title>
-<g id="a_node21"><a xlink:href="phred42_8hpp.html" target="_top" xlink:title="Provides bio::phred42 quality scores.">
-<polygon fill="white" stroke="black" points="1091,-190.5 1091,-220.5 1205,-220.5 1205,-190.5 1091,-190.5"/>
-<text text-anchor="start" x="1099" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1148" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred42.hpp</text>
+<!-- Node20 -->
+<g id="node20" class="node">
+<title>Node20</title>
+<g id="a_node20"><a xlink:href="phred68legacy_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::phred68legacy quality scores.">
+<polygon fill="white" stroke="black" points="913,-123.5 913,-153.5 1027,-153.5 1027,-123.5 913,-123.5"/>
+<text text-anchor="start" x="921" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
+<text text-anchor="middle" x="970" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred68legacy.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node21 -->
+<!-- Node17&#45;&gt;Node20 -->
 <g id="edge28" class="edge">
-<title>Node20&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M1175.38,-248.87C1169.3,-239.46 1162.43,-228.83 1157.1,-220.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1172.52,-250.9 1180.89,-257.4 1178.4,-247.1 1172.52,-250.9"/>
+<title>Node17&#45;&gt;Node20</title>
+<path fill="none" stroke="midnightblue" d="M842.92,-250.59C873.98,-223.44 927.36,-176.78 953.96,-153.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="840.38,-248.16 835.16,-257.37 844.99,-253.43 840.38,-248.16"/>
 </g>
-<!-- Node22 -->
-<g id="node22" class="node">
-<title>Node22</title>
-<g id="a_node22"><a xlink:href="phred63_8hpp.html" target="_top" xlink:title="Provides bio::phred63 quality scores.">
-<polygon fill="white" stroke="black" points="1152,-123.5 1152,-153.5 1266,-153.5 1266,-123.5 1152,-123.5"/>
-<text text-anchor="start" x="1160" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1209" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred63.hpp</text>
-</a>
+<!-- Node18&#45;&gt;Node10 -->
+<g id="edge24" class="edge">
+<title>Node18&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M735.77,-186.27C712.36,-175.92 683.49,-163.15 661.83,-153.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="734.54,-189.55 745.1,-190.4 737.37,-183.15 734.54,-189.55"/>
 </g>
+<!-- Node18&#45;&gt;Node11 -->
+<g id="edge25" class="edge">
+<title>Node18&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M766.02,-181.12C753.13,-153.68 732.18,-109.09 721.59,-86.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="762.95,-182.81 770.36,-190.37 769.28,-179.83 762.95,-182.81"/>
 </g>
-<!-- Node20&#45;&gt;Node22 -->
-<g id="edge31" class="edge">
-<title>Node20&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M1203.78,-248.08C1207.92,-239.81 1211.91,-230.26 1214,-221 1219.24,-197.77 1215.45,-169.93 1212.22,-153.53"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1200.58,-246.63 1198.96,-257.1 1206.76,-249.93 1200.58,-246.63"/>
+<!-- Node19&#45;&gt;Node11 -->
+<g id="edge27" class="edge">
+<title>Node19&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M802.45,-118.71C783.05,-108.46 759.44,-95.98 741.64,-86.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="800.83,-121.82 811.31,-123.4 804.1,-115.63 800.83,-121.82"/>
 </g>
-<!-- Node23 -->
-<g id="node23" class="node">
-<title>Node23</title>
-<g id="a_node23"><a xlink:href="phred68legacy_8hpp.html" target="_top" xlink:title="Provides bio::phred68legacy quality scores.">
-<polygon fill="white" stroke="black" points="1284,-123.5 1284,-153.5 1398,-153.5 1398,-123.5 1284,-123.5"/>
-<text text-anchor="start" x="1292" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/quality</text>
-<text text-anchor="middle" x="1341" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/phred68legacy.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node20&#45;&gt;Node23 -->
-<g id="edge33" class="edge">
-<title>Node20&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M1213.92,-250.59C1244.98,-223.44 1298.36,-176.78 1324.96,-153.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1211.38,-248.16 1206.16,-257.37 1215.99,-253.43 1211.38,-248.16"/>
-</g>
-<!-- Node21&#45;&gt;Node10 -->
+<!-- Node20&#45;&gt;Node11 -->
 <g id="edge29" class="edge">
-<title>Node21&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M1106.77,-186.27C1083.36,-175.92 1054.49,-163.15 1032.83,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1105.54,-189.55 1116.1,-190.4 1108.37,-183.15 1105.54,-189.55"/>
-</g>
-<!-- Node21&#45;&gt;Node11 -->
-<g id="edge30" class="edge">
-<title>Node21&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1137.02,-181.12C1124.13,-153.68 1103.18,-109.09 1092.59,-86.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1133.95,-182.81 1141.36,-190.37 1140.28,-179.83 1133.95,-182.81"/>
-</g>
-<!-- Node22&#45;&gt;Node11 -->
-<g id="edge32" class="edge">
-<title>Node22&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1173.45,-118.71C1154.05,-108.46 1130.44,-95.98 1112.64,-86.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1171.83,-121.82 1182.31,-123.4 1175.1,-115.63 1171.83,-121.82"/>
-</g>
-<!-- Node23&#45;&gt;Node11 -->
-<g id="edge34" class="edge">
-<title>Node23&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1276.21,-120.98C1234.56,-110.37 1181.02,-96.72 1141.36,-86.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1275.43,-124.4 1285.98,-123.48 1277.16,-117.61 1275.43,-124.4"/>
+<title>Node20&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M905.21,-120.98C863.56,-110.37 810.02,-96.72 770.36,-86.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="904.43,-124.4 914.98,-123.48 906.16,-117.61 904.43,-124.4"/>
 </g>
 </g>
 </svg>

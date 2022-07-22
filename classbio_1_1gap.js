@@ -1,7 +1,7 @@
 var classbio_1_1gap =
 [
     [ "char_type", "classbio_1_1gap.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1gap.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1gap.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "gap", "classbio_1_1gap.html#af49877e42b04205803c0ab71656b9c1c", null ],
     [ "gap", "classbio_1_1gap.html#af6f0811f27aa970a43958312d0348c8b", null ],
     [ "gap", "classbio_1_1gap.html#a98aece3e63b203c5245a4fe3d9e83d91", null ],

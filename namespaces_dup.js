@@ -214,7 +214,7 @@ var namespaces_dup =
         [ "yield", "https://en.cppreference.com/w/cpp/thread/yield.html", null ]
       ] ],
       [ "hash< alphabet_t >", "structstd_1_1hash_3_01alphabet__t_01_4.html", "structstd_1_1hash_3_01alphabet__t_01_4" ],
-      [ "hash< bio::dynamic_bitset< cap > >", "structstd_1_1hash_3_01bio_1_1dynamic__bitset_3_01cap_01_4_01_4.html", "structstd_1_1hash_3_01bio_1_1dynamic__bitset_3_01cap_01_4_01_4" ],
+      [ "hash< bio::ranges::dynamic_bitset< cap > >", "structstd_1_1hash_3_01bio_1_1ranges_1_1dynamic__bitset_3_01cap_01_4_01_4.html", "structstd_1_1hash_3_01bio_1_1ranges_1_1dynamic__bitset_3_01cap_01_4_01_4" ],
       [ "hash< urng_t >", "structstd_1_1hash_3_01urng__t_01_4.html", "structstd_1_1hash_3_01urng__t_01_4" ],
       [ "tuple_element< i, t< types... > >", "structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html", "structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4" ],
       [ "tuple_element< i, tuple_t >", "structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html", "structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4" ],

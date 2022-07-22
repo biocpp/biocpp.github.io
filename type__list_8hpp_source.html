@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -111,29 +111,26 @@ $(document).ready(function(){initNavTree('type__list_8hpp_source.html',''); init
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="template__inspection_8hpp.html">bio/meta/type_traits/template_inspection.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1meta.html">bio::meta</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// type_list class</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ...types&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbio_1_1type__list.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbio_1_1type__list.html">type_list</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... types&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1type__list.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbio_1_1meta_1_1type__list.html">type_list</a></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structbio_1_1type__list.html#a9ab0494bd412df739a49d9e511424a20">   32</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structbio_1_1type__list.html">type</a> = <a class="code" href="structbio_1_1type__list.html">type_list</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1type__list.html#a0aca71bbea6fbbf757aa4019a7b86e92">   32</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="structbio_1_1meta_1_1type__list.html">type</a> = <a class="code" href="structbio_1_1meta_1_1type__list.html">type_list</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structbio_1_1type__list.html#ae2a350e7a85a0fd1596b382a7f3923f0">   35</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="structbio_1_1type__list.html#ae2a350e7a85a0fd1596b382a7f3923f0">size</a>() noexcept</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">sizeof</span>...(types);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace bio</span></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
-<div class="ttc" id="astructbio_1_1type__list_html"><div class="ttname"><a href="structbio_1_1type__list.html">bio::type_list</a></div><div class="ttdoc">Type that contains multiple types.</div><div class="ttdef"><b>Definition:</b> type_list.hpp:30</div></div>
-<div class="ttc" id="astructbio_1_1type__list_html_ae2a350e7a85a0fd1596b382a7f3923f0"><div class="ttname"><a href="structbio_1_1type__list.html#ae2a350e7a85a0fd1596b382a7f3923f0">bio::type_list::size</a></div><div class="ttdeci">static constexpr size_t size() noexcept</div><div class="ttdoc">The number of types contained in the type list.</div><div class="ttdef"><b>Definition:</b> type_list.hpp:35</div></div>
-<div class="ttc" id="atemplate__inspection_8hpp_html"><div class="ttname"><a href="template__inspection_8hpp.html">template_inspection.hpp</a></div><div class="ttdoc">Provides bio::type_list and auxiliary type traits.</div></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1type__list.html#a2b1d6716cee5d23a9b7e1f4b91b8ceb4">   35</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">size_t</span> <a class="code" href="structbio_1_1meta_1_1type__list.html#a2b1d6716cee5d23a9b7e1f4b91b8ceb4">size</a>() noexcept { <span class="keywordflow">return</span> <span class="keyword">sizeof</span>...(types); }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace bio::meta</span></div>
+<div class="ttc" id="anamespacebio_1_1meta_html"><div class="ttname"><a href="namespacebio_1_1meta.html">bio::meta</a></div><div class="ttdoc">The Meta module's namespace.</div></div>
+<div class="ttc" id="astructbio_1_1meta_1_1type__list_html"><div class="ttname"><a href="structbio_1_1meta_1_1type__list.html">bio::meta::type_list</a></div><div class="ttdoc">Type that contains multiple types.</div><div class="ttdef"><b>Definition:</b> type_list.hpp:30</div></div>
+<div class="ttc" id="astructbio_1_1meta_1_1type__list_html_a2b1d6716cee5d23a9b7e1f4b91b8ceb4"><div class="ttname"><a href="structbio_1_1meta_1_1type__list.html#a2b1d6716cee5d23a9b7e1f4b91b8ceb4">bio::meta::type_list::size</a></div><div class="ttdeci">static constexpr size_t size() noexcept</div><div class="ttdoc">The number of types contained in the type list.</div><div class="ttdef"><b>Definition:</b> type_list.hpp:35</div></div>
+<div class="ttc" id="atemplate__inspection_8hpp_html"><div class="ttname"><a href="template__inspection_8hpp.html">template_inspection.hpp</a></div><div class="ttdoc">Provides various traits to inspect templates.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -143,7 +140,7 @@ $(document).ready(function(){initNavTree('type__list_8hpp_source.html',''); init
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_7465b06235f1ba32e362a68c63a3ff89.html">type_list</a></li><li class="navelem"><a class="el" href="type__list_8hpp.html">type_list.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

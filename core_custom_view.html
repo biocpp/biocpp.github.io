@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('core_custom_view.html',''); initResiza
 <tr>
 <th>Recommended reading</th><td></td></tr>
 </table>
-<dl class="section note"><dt>Note</dt><dd>Some of the links from this HowTo only resolve in the developer documentation because they refer to entities from the bio::detail namespace. We recommend you open this tutorial from <a href="https://docs.seqan.de/seqan/3-master-dev/">the developer documentation</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Some of the links from this HowTo only resolve in the developer documentation because they refer to entities from the bio::alphabet::detail namespace. We recommend you open this tutorial from <a href="https://docs.seqan.de/seqan/3-master-dev/">the developer documentation</a>.</dd></dl>
 <p>//TODO update this regarding use of {fmt}</p>
 <h1><a class="anchor" id="autotoc_md53"></a>
 Motivation</h1>
@@ -142,29 +142,29 @@ What makes a view?</h1>
 <div class="line"> </div>
 <div class="line"><span class="keyword">auto</span> l = [] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; };</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">auto</span> v = vec | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>(l);</div>
-<div class="ttc" id="agroup__core__type__list_html_ga707547c2877cfbd1a807d5a92acfd3b3"><div class="ttname"><a href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">bio::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a bio::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:496</div></div>
+<div class="line"><span class="keyword">auto</span> v = vec | <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(l);</div>
+<div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
 </div><!-- fragment --><p>This adaptor object (<code>std::views::transform</code>) provides the pipe operator and returns an object of the actual view type (<code>std::ranges::transform_view</code>). The pipe operator allows us to chain multiple adaptors similar to the unix command line. We will discuss the details of these adaptor objects in the following sections.</p>
 <h1><a class="anchor" id="autotoc_md55"></a>
 Custom range adaptor objects</h1>
 <p>Read <a href="https://eel.is/c++draft/range.adaptors">section 24.7 and 24.7.1 of the C++ standard</a>.</p>
 <p>The wording of the standard needs some getting used to, but some important notes for us are:</p><ol type="1">
 <li>You can pipe a viewable range into series of <em>adaptor closure objects</em> and will get back a view (this is also what we did above): <div class="fragment"><div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5};</div>
-<div class="line"><span class="keyword">auto</span> v = vec | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; })</div>
+<div class="line"><span class="keyword">auto</span> v = vec | <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; })</div>
 <div class="line">             | std::views::filter([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i % 2 == 0; });</div>
 <div class="line"><span class="comment">// v is a view, you can iterate over it!</span></div>
 </div><!-- fragment --></li>
 <li>The adaptor objects support function-style usage, too, although it only reduces readability: <div class="fragment"><div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5};</div>
-<div class="line"><span class="keyword">auto</span> v = std::views::filter(<a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>(vec, [] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; }), [] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i % 2 == 0; });</div>
+<div class="line"><span class="keyword">auto</span> v = std::views::filter(<a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(vec, [] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; }), [] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i % 2 == 0; });</div>
 <div class="line"><span class="comment">// v is a view, you can iterate over it!</span></div>
 </div><!-- fragment --></li>
 <li>You can create a new <em>adaptor closure object</em> from an adaptor object that requires parameters by providing those: <div class="fragment"><div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5};</div>
-<div class="line"><span class="keyword">auto</span> a = <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; });</div>
+<div class="line"><span class="keyword">auto</span> a = <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; });</div>
 <div class="line"><span class="comment">// a is an adaptor and can be used as such:</span></div>
 <div class="line"><span class="keyword">auto</span> v = vec | a;</div>
 </div><!-- fragment --></li>
 <li>You can create a new <em>adaptor closure object</em> from existing adaptor closure objects via <code>|</code> but without providing a range: <div class="fragment"><div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5};</div>
-<div class="line"><span class="keyword">auto</span> a = <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; })</div>
+<div class="line"><span class="keyword">auto</span> a = <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i + 1; })</div>
 <div class="line">       | std::views::filter([] (<span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> i % 2 == 0; });</div>
 <div class="line"><span class="comment">// a is an adaptor and can be used as such:</span></div>
 <div class="line"><span class="keyword">auto</span> v = vec | a;</div>
@@ -184,21 +184,22 @@ Custom range adaptor objects</h1>
 </table>
 <p>In many cases where you are planning on creating "a new view", it will be sufficient to use the previously mentioned techniques to just create "a new adaptor object" and not having to specify the actual view type yourself.</p>
 <p>Let's look at some examples!</p>
-<p> <div class="assignemnt"><h4>Exercise 1: Your first custom adaptor object</h4><div class="assignment_content"> In the alphabet module you learned that ranges of alphabets are not implicitly convertible to <code>char</code> so you <b>cannot</b> print a <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="el" href="classbio_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.">bio::dna5</a>&gt;</code> via <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a></code>¹. You also know that you can call <code><a class="el" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8" title="Return the char representation of an alphabet object.">bio::to_char</a></code> on every object that models <code><a class="el" href="interfacebio_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet</a></code> which will convert it to <code>char</code> or a similar type.</p>
+<p> <div class="assignemnt"><h4>Exercise 1: Your first custom adaptor object</h4><div class="assignment_content"> In the alphabet module you learned that ranges of alphabets are not implicitly convertible to <code>char</code> so you <b>cannot</b> print a <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="el" href="classbio_1_1alphabet_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.">bio::alphabet::dna5</a>&gt;</code> via <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a></code>¹. You also know that you can call <code><a class="el" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0" title="Return the char representation of an alphabet object.">bio::alphabet::to_char</a></code> on every object that models <code><a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a></code> which will convert it to <code>char</code> or a similar type.</p>
 <p>We want to do the following:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="ttc" id="aalphabet_2nucleotide_2all_8hpp_html"><div class="ttname"><a href="alphabet_2nucleotide_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the nucleotide submodule; includes all headers from alphabet/nucleotide/.</div></div>
 <div class="ttc" id="aiostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a></div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// your implementation goes here</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;ATTAGATTA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;ATTAGATTA&quot;</span>_dna5};</div>
 <div class="line">    <span class="comment">// std::cout &lt;&lt; vec[0] &lt;&lt; &#39;\n&#39;;                 // won&#39;t work</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> v = vec | my_convert_to_char_view;</div>
@@ -206,48 +207,48 @@ Custom range adaptor objects</h1>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; v[0] &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;                      <span class="comment">// prints &quot;A&quot;</span></div>
 <div class="line">}</div>
 <div class="ttc" id="acout_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a></div></div>
-</div><!-- fragment --><p> Define a <em>range adaptor object</em> using an existing adaptor which applies a concrete transformation (calling <a class="el" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8" title="Return the char representation of an alphabet object.">bio::to_char</a>) on every element.</p>
+</div><!-- fragment --><p> Define a <em>range adaptor object</em> using an existing adaptor which applies a concrete transformation (calling <a class="el" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0" title="Return the char representation of an alphabet object.">bio::alphabet::to_char</a>) on every element.</p>
 <p> <div class="assignment"> <details><summary><b>Hint</b></summary>  You need to need use <code>std::views::transform</code> and you need to set a fixed transformation function. <code>std::views::transform</code> takes an object that models <code>std::regular_invocable</code>, e.g. a lambda function with empty capture <code>[]</code>.  </details> </div> </p>
-<p><small>¹ You <em>can</em> print via <code>bio::debug_stream</code>, but let's ignore that for now. </small>  </div></div></p>
+<p><small>¹ You <em>can</em> print via <code>bio::alphabet::debug_stream</code>, but let's ignore that for now. </small>  </div></div></p>
 <p> <div class="solution"> <details><summary><b>Solution</b></summary> </p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">auto</span> <span class="keyword">const</span> my_convert_to_char_view = <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keyword">auto</span> <span class="keyword">const</span> alph)</div>
+<div class="line"><span class="keyword">auto</span> <span class="keyword">const</span> my_convert_to_char_view = <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([] (<span class="keyword">auto</span> <span class="keyword">const</span> alph)</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(alph);</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(alph);</div>
 <div class="line">});</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;ATTAGATTA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;ATTAGATTA&quot;</span>_dna5};</div>
 <div class="line">    <span class="comment">// std::cout &lt;&lt; vec[0] &lt;&lt; &#39;\n&#39;;                 // won&#39;t work</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> v = vec | my_convert_to_char_view;</div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; v[0] &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;                      <span class="comment">// prints &quot;A&quot;</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__alphabet_html_gab295f04aea840000aafc640b5e6528c8"><div class="ttname"><a href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:322</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
 </div><!-- fragment --><p>You simply define your adaptor type as <code>auto</code> and make it behave like <code>std::views::transform</code>, except that you<br  />
 "hard-code" the lambda function that is applied to each element. Since your adaptor object now takes a range as the only parameter, it is an adaptor closure object.</p>
 <p>The object is marked as <code>constexpr</code> because the adaptor object itself never changes, it only provides <code>operator()</code> and <code>operator|</code> that each return a specialisation of <code>std::ranges::transformation_view</code>.  </details> </div> </p>
 <p> <div class="assignemnt"><h4>Exercise 2: Combining two existing adaptor objects</h4><div class="assignment_content"></p>
-<p>Study the <code><a class="el" href="interfacebio_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides.">bio::nucleotide_alphabet</a></code>. It states that you can call <code><a class="el" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03" title="Return the complement of a nucleotide object.">bio::complement</a></code> on all nucleotides which will give you <code>'A'_dna5</code> for <code>'T'_dna5</code> a.s.o. Think about how you can adapt the previous solution to write a view that transforms ranges of nucleotides into their complement.</p>
+<p>Study the <code><a class="el" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides.">bio::alphabet::nucleotide_alphabet</a></code>. It states that you can call <code><a class="el" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48" title="Return the complement of a nucleotide object.">bio::alphabet::complement</a></code> on all nucleotides which will give you <code>'A'_dna5</code> for <code>'T'_dna5</code> a.s.o. Think about how you can adapt the previous solution to write a view that transforms ranges of nucleotides into their complement.</p>
 <p>BUT, we are also interested in <em>reversing</em> the range which is possible with <code>std::views::reverse</code>:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fmt_8hpp.html">bio/alphabet/fmt.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="ttc" id="afmt_8hpp_html"><div class="ttname"><a href="fmt_8hpp.html">fmt.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// your implementation goes here</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;ACCAGATTA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;ACCAGATTA&quot;</span>_dna5};</div>
 <div class="line">    fmt::print(<span class="stringliteral">&quot;{}\n&quot;</span>, vec);                     <span class="comment">// prints &quot;ACCAGATTA&quot;</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> v = vec | my_reverse_complement;</div>
@@ -259,20 +260,20 @@ Custom range adaptor objects</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fmt_8hpp.html">bio/alphabet/fmt.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">auto</span> my_reverse_complement = std::views::reverse | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>(<a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>);</div>
+<div class="line"><span class="keyword">auto</span> my_reverse_complement = std::views::reverse | <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(<a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;ACCAGATTA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;ACCAGATTA&quot;</span>_dna5};</div>
 <div class="line">    fmt::print(<span class="stringliteral">&quot;{}\n&quot;</span>, vec);                     <span class="comment">// prints &quot;ACCAGATTA&quot;</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> v = vec | my_reverse_complement;</div>
 <div class="line">    fmt::print(<span class="stringliteral">&quot;{}\n&quot;</span>, v);                       <span class="comment">// prints &quot;TAATCTGGT&quot;</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__nucleotide_html_ga4b00de5b7d39cf416e62e14edef83f03"><div class="ttname"><a href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:96</div></div>
-</div><!-- fragment --><p>The adaptor consists of <code>std::views::reverse</code> combined with <code>std::views::transform</code>. This time the lambda just performs the call to <code><a class="el" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03" title="Return the complement of a nucleotide object.">bio::complement</a></code>.  </details> </div> </p>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
+</div><!-- fragment --><p>The adaptor consists of <code>std::views::reverse</code> combined with <code>std::views::transform</code>. This time the lambda just performs the call to <code><a class="el" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48" title="Return the complement of a nucleotide object.">bio::alphabet::complement</a></code>.  </details> </div> </p>
 <h1><a class="anchor" id="autotoc_md56"></a>
 A full custom view implementation</h1>
 <p>Using existing adaptors only works to a certain degree, sometimes you will need to implement a full view. As we have seen above, it is easy to implement a view that presents the complement of a nucleotide range just using existing adaptors. For simplicity, we will still use this as an example and implement a non-generic transform view in the next steps.</p>
@@ -297,7 +298,7 @@ A full custom view implementation</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::forward_range urng_t&gt; <span class="comment">// the underlying range type</span></div>
 <div class="line"><span class="keyword">struct </span>my_iterator : std::ranges::iterator_t&lt;urng_t&gt;</div>
@@ -306,22 +307,22 @@ A full custom view implementation</h1>
 </div><!-- fragment --> <div class="fragment"><div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// verify that your type models the concept</span></div>
-<div class="line">static_assert(std::forward_iterator&lt;my_iterator&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a>&gt;&gt;);</div>
+<div class="line">static_assert(std::forward_iterator&lt;my_iterator&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a>&gt;&gt;);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// instantiate the template over the underlying vector&#39;s iterator and sentinel</span></div>
 <div class="line">    <span class="comment">// (for all standard containers the sentinel type is the same as the iterator type)</span></div>
-<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::dna5&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::alphabet::dna5&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// create an iterator that is constructed with vec.begin() as the underlying iterator</span></div>
 <div class="line">    my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// iterate over vec, but with your custom iterator</span></div>
 <div class="line">    <span class="keywordflow">while</span> (it != vec.end())</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(*it++) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(*it++) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line">}</div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 </div><!-- fragment --><p> In order to re-use functionality of the underlying range's iterator type you can inherit from it (<code>std::ranges::iterator_t</code> returns the iterator type).¹ In the end, you should be able to iterate over the underlying range and print elements like you would with the original iterator, i.e. your iterator shall behave exactly as the original in this regard (no transformation, yet).</p>
@@ -339,7 +340,7 @@ A full custom view implementation</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::forward_range urng_t&gt; <span class="comment">// the underlying range type</span></div>
 <div class="line"><span class="keyword">struct </span>my_iterator : std::ranges::iterator_t&lt;urng_t&gt;</div>
@@ -382,47 +383,47 @@ A full custom view implementation</h1>
 </div><!-- fragment --><div class="fragment"><div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// verify that your type models the concept</span></div>
-<div class="line">static_assert(std::forward_iterator&lt;my_iterator&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a>&gt;&gt;);</div>
+<div class="line">static_assert(std::forward_iterator&lt;my_iterator&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a>&gt;&gt;);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// instantiate the template over the underlying vector&#39;s iterator and sentinel</span></div>
 <div class="line">    <span class="comment">// (for all standard containers the sentinel type is the same as the iterator type)</span></div>
-<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::dna5&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::alphabet::dna5&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// create an iterator that is constructed with vec.begin() as the underlying iterator</span></div>
 <div class="line">    my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// iterate over vec, but with your custom iterator</span></div>
 <div class="line">    <span class="keywordflow">while</span> (it != vec.end())</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(*it++) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(*it++) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p> The program prints "G A T T A C A ".  </details> </div> </p>
 <p> <div class="assignemnt"><h4>Exercise 4: A transforming iterator</h4><div class="assignment_content"></p>
 <p>In the previous assigment you have created a working – but pointless – iterator. It does not do anything differently from the original.</p>
 <p>Your task now is to implement the "complementing" behaviour, i.e.</p><ul>
-<li>your iterator should only work on ranges of <code><a class="el" href="interfacebio_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides.">bio::nucleotide_alphabet</a></code></li>
+<li>your iterator should only work on ranges of <code><a class="el" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides.">bio::alphabet::nucleotide_alphabet</a></code></li>
 <li>when accessing an element through the iterator it should not return the element from the underlying range but instead its complement</li>
 </ul>
 <p>Think about which operator is responsible for returning the element and be careful with the return type of that operator as your transformation might make a change necessary.  </div></div></p>
 <p> <div class="solution"> <details><summary><b>Solution</b></summary> </p>
 <ol type="1">
-<li>The restriction on the alphabet type is done via a <code>static_assert</code>: <div class="fragment"><div class="line">    static_assert(<a class="code" href="interfacebio_1_1nucleotide__alphabet.html">bio::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
+<li>The restriction on the alphabet type is done via a <code>static_assert</code>: <div class="fragment"><div class="line">    static_assert(<a class="code" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">bio::alphabet::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
 <div class="line">                  <span class="stringliteral">&quot;You can only iterate over ranges of nucleotides!&quot;</span>);</div>
-<div class="ttc" id="ainterfacebio_1_1nucleotide__alphabet_html"><div class="ttname"><a href="interfacebio_1_1nucleotide__alphabet.html">nucleotide_alphabet</a></div><div class="ttdoc">A concept that indicates whether an alphabet represents nucleotides.</div></div>
+<div class="ttc" id="ainterfacebio_1_1alphabet_1_1nucleotide__alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">nucleotide_alphabet</a></div><div class="ttdoc">A concept that indicates whether an alphabet represents nucleotides.</div></div>
 </div><!-- fragment -->You could have done this via an additional template constraint, too, but <code>static_assert</code> gives you the opportunity to give a readable message in case of an error.¹</li>
-<li>The operator that needs to call the <code><a class="el" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03" title="Return the complement of a nucleotide object.">bio::complement</a></code> function is <code>operator*</code>: <div class="fragment"><div class="line">    <span class="comment">// The operator* facilitates the access to the element.</span></div>
+<li>The operator that needs to call the <code><a class="el" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48" title="Return the complement of a nucleotide object.">bio::alphabet::complement</a></code> function is <code>operator*</code>: <div class="fragment"><div class="line">    <span class="comment">// The operator* facilitates the access to the element.</span></div>
 <div class="line">    <span class="comment">// This implementation calls the base class&#39;s implementation but passes the return value</span></div>
-<div class="line">    <span class="comment">// through the bio::complement() function before returning it.</span></div>
+<div class="line">    <span class="comment">// through the bio::alphabet::complement() function before returning it.</span></div>
 <div class="line">    reference operator*()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator*());</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator*());</div>
 <div class="line">    }</div>
 </div><!-- fragment --></li>
-<li>As previously noted, care needs to be taken with this function's return type: <div class="fragment"><div class="line">    <span class="comment">// If the value_type is bio::dna5, the reference type of the vector is</span></div>
-<div class="line">    <span class="comment">// bio::dna5 &amp; and operator* returns this so you can change the values</span></div>
+<li>As previously noted, care needs to be taken with this function's return type: <div class="fragment"><div class="line">    <span class="comment">// If the value_type is bio::alphabet::dna5, the reference type of the vector is</span></div>
+<div class="line">    <span class="comment">// bio::alphabet::dna5 &amp; and operator* returns this so you can change the values</span></div>
 <div class="line">    <span class="comment">// in the vector through it&#39;s iterator.</span></div>
 <div class="line">    <span class="comment">// This won&#39;t work anymore, because now we are creating new values on access</span></div>
 <div class="line">    <span class="comment">// so we now need to change this type to reflect that:</span></div>
@@ -434,12 +435,12 @@ A full custom view implementation</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::forward_range urng_t&gt; <span class="comment">// the underlying range type</span></div>
 <div class="line"><span class="keyword">struct </span>my_iterator : std::ranges::iterator_t&lt;urng_t&gt;</div>
 <div class="line">{</div>
-<div class="line">    static_assert(<a class="code" href="interfacebio_1_1nucleotide__alphabet.html">bio::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
+<div class="line">    static_assert(<a class="code" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">bio::alphabet::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
 <div class="line">                  <span class="stringliteral">&quot;You can only iterate over ranges of nucleotides!&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">using</span> base_t = std::ranges::iterator_t&lt;urng_t&gt;;</div>
@@ -447,8 +448,8 @@ A full custom view implementation</h1>
 <div class="line">    <span class="comment">// these member types are just exposed from the base type</span></div>
 <div class="line">    <span class="keyword">using</span> value_type            = <span class="keyword">typename</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/iterator_traits.html">std::iterator_traits&lt;base_t&gt;::value_type</a>;</div>
 <div class="line">    <span class="keyword">using</span> pointer               = <span class="keyword">typename</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/iterator_traits.html">std::iterator_traits&lt;base_t&gt;::pointer</a>;</div>
-<div class="line">    <span class="comment">// If the value_type is bio::dna5, the reference type of the vector is</span></div>
-<div class="line">    <span class="comment">// bio::dna5 &amp; and operator* returns this so you can change the values</span></div>
+<div class="line">    <span class="comment">// If the value_type is bio::alphabet::dna5, the reference type of the vector is</span></div>
+<div class="line">    <span class="comment">// bio::alphabet::dna5 &amp; and operator* returns this so you can change the values</span></div>
 <div class="line">    <span class="comment">// in the vector through it&#39;s iterator.</span></div>
 <div class="line">    <span class="comment">// This won&#39;t work anymore, because now we are creating new values on access</span></div>
 <div class="line">    <span class="comment">// so we now need to change this type to reflect that:</span></div>
@@ -484,31 +485,31 @@ A full custom view implementation</h1>
 <div class="line"><span class="comment"></span> </div>
 <div class="line">    <span class="comment">// The operator* facilitates the access to the element.</span></div>
 <div class="line">    <span class="comment">// This implementation calls the base class&#39;s implementation but passes the return value</span></div>
-<div class="line">    <span class="comment">// through the bio::complement() function before returning it.</span></div>
+<div class="line">    <span class="comment">// through the bio::alphabet::complement() function before returning it.</span></div>
 <div class="line">    reference operator*()<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator*());</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator*());</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// verify that your type models the concept</span></div>
-<div class="line">static_assert(std::forward_iterator&lt;my_iterator&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a>&gt;&gt;);</div>
+<div class="line">static_assert(std::forward_iterator&lt;my_iterator&lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a>&gt;&gt;);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// instantiate the template over the underlying vector&#39;s iterator and sentinel</span></div>
 <div class="line">    <span class="comment">// (for all standard containers the sentinel type is the same as the iterator type)</span></div>
-<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::dna5&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::alphabet::dna5&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// create an iterator that is constructed with vec.begin() as the underlying iterator</span></div>
 <div class="line">    my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// iterate over vec, but with your custom iterator</span></div>
 <div class="line">    <span class="keywordflow">while</span> (it != vec.end())</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(*it++) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(*it++) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>The program prints "C T A A T G T "</p>
 <p> </details> </div> </p>
@@ -518,7 +519,7 @@ A full custom view implementation</h1>
 <p>Which of the mentioned concepts do you think your iterator could be made to implement? Have a look at the respective documentation.</p>
 <p> <div class="assignment"> <details><summary><b>Hint</b></summary>  It could be designed to be a <code>std::random_access_iterator</code> (and thus also <code>std::bidirectional_iterator</code>) when the underlying range is, because jumping on your iterator/view can be done in constant time iff it can be done in constant time on the underlying range (you just jump to the n-th element of the underlying range and perform your transformation one that).</p>
 <p>However, it can never model <code>std::contiguous_iterator</code> because that would imply that the elements are adjacent to each other in memory (the elements of our view are created on demand and are not stored in memory).  </details> </div> </p>
-<p>If you have looked at the <code>std::random_access_iterator</code>, you will have seen that it is quite a bit of work to implement all the operators, many of whom just need to be overloaded to fix the return type. To make this a little bit easier BioC++ provides <code>bio::detail::inherited_iterator_base</code>, it fixes the issue with the return type via CRTP. A solution to the previous exercise looks like this:</p>
+<p>If you have looked at the <code>std::random_access_iterator</code>, you will have seen that it is quite a bit of work to implement all the operators, many of whom just need to be overloaded to fix the return type. To make this a little bit easier BioC++ provides <code>bio::ranges::detail::inherited_iterator_base</code>, it fixes the issue with the return type via CRTP. A solution to the previous exercise looks like this:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a>&gt;</span></div>
@@ -526,20 +527,20 @@ A full custom view implementation</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="inherited__iterator__base_8hpp.html">bio/ranges/detail/inherited_iterator_base.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* The iterator template */</span></div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::forward_range urng_t&gt;            <span class="comment">// CRTP derivation ↓</span></div>
-<div class="line"><span class="keyword">class </span>my_iterator : <span class="keyword">public</span> bio::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
+<div class="line"><span class="keyword">class </span>my_iterator : <span class="keyword">public</span> bio::ranges::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
 <div class="line">                                                                std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    static_assert(<a class="code" href="interfacebio_1_1nucleotide__alphabet.html">bio::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
+<div class="line">    static_assert(<a class="code" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">bio::alphabet::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
 <div class="line">                  <span class="stringliteral">&quot;You can only iterate over ranges of nucleotides!&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// the immediate base type is the CRTP-layer</span></div>
-<div class="line">    <span class="keyword">using</span> base_t = bio::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
-<div class="line">                                                           std::ranges::iterator_t&lt;urng_t&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> base_t = bio::ranges::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
+<div class="line">                                                        std::ranges::iterator_t&lt;urng_t&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="comment">// the member types are never imported automatically, but can be explicitly inherited:</span></div>
@@ -559,21 +560,21 @@ A full custom view implementation</h1>
 <div class="line">    my_iterator &amp; operator=(my_iterator &amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line">    ~my_iterator() = <span class="keywordflow">default</span>;</div>
 <div class="line">    <span class="comment">// and a constructor that takes the base_type:</span></div>
-<div class="line">    my_iterator(base_t it) : base_t{std::<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">move</a>(it)} {}</div>
+<div class="line">    my_iterator(base_t it) : base_t{std::<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">move</a>(it)} {}</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// we don&#39;t need to implement the ++ operators anymore!</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// only overload the operators that you actually wish to change:</span></div>
 <div class="line">    reference operator*() const noexcept</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator*());</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator*());</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Since the reference type changed we might as well need to override the subscript-operator.</span></div>
 <div class="line">    reference operator[](difference_type <span class="keyword">const</span> n) <span class="keyword">const</span> noexcept</div>
 <div class="line">        requires std::random_access_iterator&lt;std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator[](n));</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator[](n));</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// We delete arrow operator because of the temporary. An alternative could be to return the temporary</span></div>
@@ -582,22 +583,23 @@ A full custom view implementation</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The inherited_iterator_base creates the necessary code so we also model RandomAccess now!</span></div>
-<div class="line">static_assert(std::random_access_iterator&lt;my_iterator&lt;std::vector&lt;<a class="code" href="namespacebio.html">bio</a>::dna5&gt;&gt;&gt;);</div>
-<div class="ttc" id="agroup__views_html_ga0933bd5433f42cd5245eecce74dcac0a"><div class="ttname"><a href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">bio::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:68</div></div>
-<div class="ttc" id="ainherited__iterator__base_8hpp_html"><div class="ttname"><a href="inherited__iterator__base_8hpp.html">inherited_iterator_base.hpp</a></div><div class="ttdoc">Provides the bio::detail::inherited_iterator_base template.</div></div>
+<div class="line">static_assert(std::random_access_iterator&lt;my_iterator&lt;std::vector&lt;<a class="code" href="namespacebio.html">bio</a>::<a class="code" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a>::dna5&gt;&gt;&gt;);</div>
+<div class="ttc" id="agroup__views_html_gacc149746c0b9a2f5021709858f37de1b"><div class="ttname"><a href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::ranges::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:70</div></div>
+<div class="ttc" id="ainherited__iterator__base_8hpp_html"><div class="ttname"><a href="inherited__iterator__base_8hpp.html">inherited_iterator_base.hpp</a></div><div class="ttdoc">Provides the bio::ranges::detail::inherited_iterator_base template.</div></div>
+<div class="ttc" id="ainterfacebio_1_1alphabet_1_1alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a></div><div class="ttdoc">The generic alphabet concept that covers most data types used in ranges.</div></div>
 <div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* try the iterator */</span></div>
-<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::dna5&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::alphabet::dna5&gt;&gt;;</div>
 <div class="line"> </div>
-<div class="line">     my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
+<div class="line">    my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// now you can use operator[] on the iterator</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 7; ++i)</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(it[i]) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(it[i]) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 </div><!-- fragment --><div class="fragment"><div class="line">}</div>
 </div><!-- fragment --> <h3>The view class</h3>
 <p>We now implement the view in several steps:</p>
@@ -605,7 +607,7 @@ A full custom view implementation</h1>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::view urng_t&gt;  <span class="comment">// CRTP derivation ↓</span></div>
 <div class="line"><span class="keyword">class </span>my_view : <span class="keyword">public</span> std::ranges::view_interface&lt;my_view&lt;urng_t&gt;&gt;</div>
 <div class="line">{</div>
-</div><!-- fragment --><p> Like the iterator, the view is derived from a CRTP base class that takes care of defining many members for us, e.g. <code>.<a class="el" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9" title="The size of a type pack.">size()</a></code>, <code>.operator[]</code> and a few others.</p>
+</div><!-- fragment --><p> Like the iterator, the view is derived from a CRTP base class that takes care of defining many members for us, e.g. <code>.<a class="el" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d" title="A type trait that holds the size of a (semi-)alphabet.">size()</a></code>, <code>.operator[]</code> and a few others.</p>
 <div class="fragment"><div class="line"><span class="keyword">private</span>:</div>
 <div class="line">    <span class="comment">// this is the underlying range</span></div>
 <div class="line">    urng_t urange;</div>
@@ -649,14 +651,19 @@ A full custom view implementation</h1>
 </div><!-- fragment --><p> The implementation for <code>end()</code> is similar except that for our range the sentinel type (the return type of <code>end()</code>) is the same as of the underlying range, we just pass it through.</p>
 <p>For many more complex views you will have to define the sentinel type yourself or derive it from the underlying type in a similar manner to how we derived the iterator type. Often you can use <code>std::default_sentinel_t</code> as the type for your sentinel and implement the<br  />
 "end-condition" in the iterator's equality comparison operator against that type.</p>
-<div class="fragment"><div class="line">    <span class="comment">// construct from a view</span></div>
-<div class="line">    my_view(urng_t urange_) : urange{std::<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">move</a>(urange_)}</div>
+<div class="fragment"><div class="line">    my_view()                            = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view(my_view <span class="keyword">const</span> &amp;)             = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view(my_view &amp;&amp;)                  = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view &amp; operator=(my_view <span class="keyword">const</span> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view &amp; operator=(my_view &amp;&amp;)      = <span class="keywordflow">default</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// construct from a view</span></div>
+<div class="line">    my_view(urng_t urange_) : urange{std::<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">move</a>(urange_)}</div>
 <div class="line">    {}</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// construct from non-view that can be view-wrapped</span></div>
-<div class="line">    <span class="keyword">template</span> &lt;std::ranges::viewable_range orng_t&gt;</div>
-<div class="line">        requires std::same_as&lt;std::views::all_t&lt;orng_t&gt;, urng_t&gt;</div>
-<div class="line">    my_view(orng_t &amp;&amp; urange_) : urange{std::views::all(std::<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/forward.html">forward</a>&lt;orng_t&gt;(urange_))}</div>
+<div class="line">    <span class="comment">// construct from the underlying type (works together with the deduction guide)</span></div>
+<div class="line">    <span class="keyword">template</span> &lt;std::constructible_from&lt;urng_t&gt; orng_t&gt;</div>
+<div class="line">    my_view(orng_t &amp;&amp; urange_) : urange{std::<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/forward.html">forward</a>&lt;orng_t&gt;(urange_)}</div>
 <div class="line">    {}</div>
 <div class="ttc" id="aforward_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/utility/forward.html">std::forward</a></div><div class="ttdeci">T forward(T... args)</div></div>
 </div><!-- fragment --><p> We have two constructors, one that takes an the underlying type by copy and moves it into the data member (remember that since it is a view, it will not be expensive to copy – if it is copied).</p>
@@ -673,20 +680,20 @@ A full custom view implementation</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="inherited__iterator__base_8hpp.html">bio/ranges/detail/inherited_iterator_base.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* The iterator template */</span></div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::forward_range urng_t&gt;            <span class="comment">// CRTP derivation ↓</span></div>
-<div class="line"><span class="keyword">class </span>my_iterator : <span class="keyword">public</span> bio::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
+<div class="line"><span class="keyword">class </span>my_iterator : <span class="keyword">public</span> bio::ranges::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
 <div class="line">                                                                std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    static_assert(<a class="code" href="interfacebio_1_1nucleotide__alphabet.html">bio::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
+<div class="line">    static_assert(<a class="code" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">bio::alphabet::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
 <div class="line">                  <span class="stringliteral">&quot;You can only iterate over ranges of nucleotides!&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// the immediate base type is the CRTP-layer</span></div>
-<div class="line">    <span class="keyword">using</span> base_t = bio::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
-<div class="line">                                                           std::ranges::iterator_t&lt;urng_t&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> base_t = bio::ranges::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
+<div class="line">                                                        std::ranges::iterator_t&lt;urng_t&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="comment">// the member types are never imported automatically, but can be explicitly inherited:</span></div>
@@ -706,21 +713,21 @@ A full custom view implementation</h1>
 <div class="line">    my_iterator &amp; operator=(my_iterator &amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line">    ~my_iterator() = <span class="keywordflow">default</span>;</div>
 <div class="line">    <span class="comment">// and a constructor that takes the base_type:</span></div>
-<div class="line">    my_iterator(base_t it) : base_t{std::<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">move</a>(it)} {}</div>
+<div class="line">    my_iterator(base_t it) : base_t{std::<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">move</a>(it)} {}</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// we don&#39;t need to implement the ++ operators anymore!</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// only overload the operators that you actually wish to change:</span></div>
 <div class="line">    reference operator*() const noexcept</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator*());</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator*());</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Since the reference type changed we might as well need to override the subscript-operator.</span></div>
 <div class="line">    reference operator[](difference_type <span class="keyword">const</span> n) <span class="keyword">const</span> noexcept</div>
 <div class="line">        requires std::random_access_iterator&lt;std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator[](n));</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator[](n));</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// We delete arrow operator because of the temporary. An alternative could be to return the temporary</span></div>
@@ -729,7 +736,7 @@ A full custom view implementation</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The inherited_iterator_base creates the necessary code so we also model RandomAccess now!</span></div>
-<div class="line">static_assert(std::random_access_iterator&lt;my_iterator&lt;std::vector&lt;<a class="code" href="namespacebio.html">bio</a>::dna5&gt;&gt;&gt;);</div>
+<div class="line">static_assert(std::random_access_iterator&lt;my_iterator&lt;std::vector&lt;<a class="code" href="namespacebio.html">bio</a>::<a class="code" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a>::dna5&gt;&gt;&gt;);</div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">/* The view class template */</span></div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::view urng_t&gt;  <span class="comment">// CRTP derivation ↓</span></div>
 <div class="line"><span class="keyword">class </span>my_view : <span class="keyword">public</span> std::ranges::view_interface&lt;my_view&lt;urng_t&gt;&gt;</div>
@@ -741,14 +748,19 @@ A full custom view implementation</h1>
 <div class="line">    <span class="comment">// Types of the iterators</span></div>
 <div class="line">    <span class="keyword">using</span> iterator = my_iterator&lt;urng_t&gt;;</div>
 <div class="line">    <span class="keyword">using</span> const_iterator = my_iterator&lt;urng_t const&gt;;</div>
-</div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">// construct from a view</span></div>
-<div class="line">    my_view(urng_t urange_) : urange{std::<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">move</a>(urange_)}</div>
+</div><!-- fragment --><div class="fragment"><div class="line">    my_view()                            = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view(my_view <span class="keyword">const</span> &amp;)             = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view(my_view &amp;&amp;)                  = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view &amp; operator=(my_view <span class="keyword">const</span> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view &amp; operator=(my_view &amp;&amp;)      = <span class="keywordflow">default</span>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// construct from a view</span></div>
+<div class="line">    my_view(urng_t urange_) : urange{std::<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">move</a>(urange_)}</div>
 <div class="line">    {}</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// construct from non-view that can be view-wrapped</span></div>
-<div class="line">    <span class="keyword">template</span> &lt;std::ranges::viewable_range orng_t&gt;</div>
-<div class="line">        requires std::same_as&lt;std::views::all_t&lt;orng_t&gt;, urng_t&gt;</div>
-<div class="line">    my_view(orng_t &amp;&amp; urange_) : urange{std::views::all(std::<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/forward.html">forward</a>&lt;orng_t&gt;(urange_))}</div>
+<div class="line">    <span class="comment">// construct from the underlying type (works together with the deduction guide)</span></div>
+<div class="line">    <span class="keyword">template</span> &lt;std::constructible_from&lt;urng_t&gt; orng_t&gt;</div>
+<div class="line">    my_view(orng_t &amp;&amp; urange_) : urange{std::<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/forward.html">forward</a>&lt;orng_t&gt;(urange_)}</div>
 <div class="line">    {}</div>
 </div><!-- fragment --><div class="fragment"><div class="line">    <span class="keyword">auto</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>() noexcept</div>
 <div class="line">    {</div>
@@ -784,16 +796,16 @@ A full custom view implementation</h1>
 <div class="line">my_view(orng_t &amp;&amp;) -&gt; my_view&lt;std::views::all_t&lt;orng_t&gt;&gt;;</div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* try the iterator */</span></div>
-<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::dna5&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::alphabet::dna5&gt;&gt;;</div>
 <div class="line"> </div>
-<div class="line">     my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
+<div class="line">    my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// now you can use operator[] on the iterator</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 7; ++i)</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(it[i]) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(it[i]) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 </div><!-- fragment --><div class="fragment"><div class="line">    <span class="comment">/* try the range */</span></div>
 <div class="line">    my_view v{vec};</div>
 <div class="line">    static_assert(std::ranges::random_access_range&lt;decltype(v)&gt;);</div>
@@ -817,18 +829,19 @@ A full custom view implementation</h1>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">template</span> &lt;std::ranges::input_range urng_t&gt;</div>
-<div class="line">    <span class="keyword">friend</span> <span class="keyword">auto</span> operator|(urng_t &amp;&amp; urange, my_view_fn <span class="keyword">const</span> &amp;)</div>
+<div class="line">    <span class="keyword">friend</span> <span class="keyword">auto</span> <a class="code" href="namespacebio_1_1alphabet.html#aeb4e6ec76811b98d61d0eeddb113b004">operator|</a>(urng_t &amp;&amp; urange, my_view_fn <span class="keyword">const</span> &amp;)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">return</span> my_view{std::forward&lt;urng_t&gt;(urange)};</div>
 <div class="line">    }</div>
 <div class="line">};</div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html_aeb4e6ec76811b98d61d0eeddb113b004"><div class="ttname"><a href="namespacebio_1_1alphabet.html#aeb4e6ec76811b98d61d0eeddb113b004">bio::alphabet::operator|</a></div><div class="ttdeci">constexpr translation_frames operator|(translation_frames lhs, translation_frames rhs) noexcept</div><div class="ttdoc">Binary operators for bio::alphabet::translation_frames.</div><div class="ttdef"><b>Definition:</b> translation.hpp:111</div></div>
 </div><!-- fragment --><p> The first operator is very straight-forward, it simply delegates to the constructor of our view so that <code>views::my(FOO)</code> is identical to <code>my_view{FOO}</code>.</p>
 <p>The second operator is declared as friend, because the left-hand-side of the <code>operator|</code> is generic, it's how the range is handled in snippets like <code>auto v = vec | views::my</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>This adaptor type does not yet provide the ability to combine multiple adaptors into a new adaptor, it only handles ranges as left-hand-side input to <code>operator|</code>.</dd></dl>
 <p>Our example adaptor type definition is rather simple, but for views/adaptors that take more parameters it gets quite complicated quickly. Therefore BioC++ provides some convenience templates for you: </p><div class="fragment"><div class="line"><span class="comment">// in our example, this is all you need:</span></div>
 <div class="line"><span class="comment">//                                      your view type goes here ↓</span></div>
-<div class="line"><span class="keyword">using</span> my_view_fn = bio::detail::adaptor_for_view_without_args&lt;my_view&gt;;</div>
-</div><!-- fragment --><p>See <code>bio::detail::adaptor_base</code>, <code>bio::detail::adaptor_for_view_without_args</code> and <code>bio::detail::adaptor_from_functor</code> for more details.</p>
+<div class="line"><span class="keyword">using</span> my_view_fn = bio::ranges::detail::adaptor_for_view_without_args&lt;my_view&gt;;</div>
+</div><!-- fragment --><p>See <code>bio::ranges::detail::adaptor_base</code>, <code>bio::ranges::detail::adaptor_for_view_without_args</code> and <code>bio::ranges::detail::adaptor_from_functor</code> for more details.</p>
 <h3>Adaptor object definition</h3>
 <p>The adaptor object is simply an instance of the previously defined type:</p>
 <div class="fragment"><div class="line"><span class="comment">/* The adaptor object&#39;s definition */</span></div>
@@ -851,20 +864,20 @@ A full custom view implementation</h1>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2nucleotide_2all_8hpp.html">bio/alphabet/nucleotide/all.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="inherited__iterator__base_8hpp.html">bio/ranges/detail/inherited_iterator_base.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* The iterator template */</span></div>
 <div class="line"><span class="keyword">template</span> &lt;std::ranges::forward_range urng_t&gt;            <span class="comment">// CRTP derivation ↓</span></div>
-<div class="line"><span class="keyword">class </span>my_iterator : <span class="keyword">public</span> bio::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
+<div class="line"><span class="keyword">class </span>my_iterator : <span class="keyword">public</span> bio::ranges::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
 <div class="line">                                                                std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
 <div class="line">{</div>
 <div class="line"><span class="keyword">private</span>:</div>
-<div class="line">    static_assert(<a class="code" href="interfacebio_1_1nucleotide__alphabet.html">bio::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
+<div class="line">    static_assert(<a class="code" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">bio::alphabet::nucleotide_alphabet</a>&lt;std::ranges::range_reference_t&lt;urng_t&gt;&gt;,</div>
 <div class="line">                  <span class="stringliteral">&quot;You can only iterate over ranges of nucleotides!&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// the immediate base type is the CRTP-layer</span></div>
-<div class="line">    <span class="keyword">using</span> base_t = bio::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
-<div class="line">                                                           std::ranges::iterator_t&lt;urng_t&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> base_t = bio::ranges::detail::inherited_iterator_base&lt;my_iterator&lt;urng_t&gt;,</div>
+<div class="line">                                                        std::ranges::iterator_t&lt;urng_t&gt;&gt;;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="comment">// the member types are never imported automatically, but can be explicitly inherited:</span></div>
@@ -884,21 +897,21 @@ A full custom view implementation</h1>
 <div class="line">    my_iterator &amp; operator=(my_iterator &amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line">    ~my_iterator() = <span class="keywordflow">default</span>;</div>
 <div class="line">    <span class="comment">// and a constructor that takes the base_type:</span></div>
-<div class="line">    my_iterator(base_t it) : base_t{std::<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">move</a>(it)} {}</div>
+<div class="line">    my_iterator(base_t it) : base_t{std::<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">move</a>(it)} {}</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// we don&#39;t need to implement the ++ operators anymore!</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// only overload the operators that you actually wish to change:</span></div>
 <div class="line">    reference operator*() const noexcept</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator*());</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator*());</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Since the reference type changed we might as well need to override the subscript-operator.</span></div>
 <div class="line">    reference operator[](difference_type <span class="keyword">const</span> n) <span class="keyword">const</span> noexcept</div>
 <div class="line">        requires std::random_access_iterator&lt;std::ranges::iterator_t&lt;urng_t&gt;&gt;</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(base_t::operator[](n));</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(base_t::operator[](n));</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// We delete arrow operator because of the temporary. An alternative could be to return the temporary</span></div>
@@ -907,7 +920,7 @@ A full custom view implementation</h1>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// The inherited_iterator_base creates the necessary code so we also model RandomAccess now!</span></div>
-<div class="line">static_assert(std::random_access_iterator&lt;my_iterator&lt;std::vector&lt;<a class="code" href="namespacebio.html">bio</a>::dna5&gt;&gt;&gt;);</div>
+<div class="line">static_assert(std::random_access_iterator&lt;my_iterator&lt;std::vector&lt;<a class="code" href="namespacebio.html">bio</a>::<a class="code" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a>::dna5&gt;&gt;&gt;);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">/* The view class template */</span></div>
 <div class="line">template &lt;std::ranges::view urng_t&gt;  <span class="comment">// CRTP derivation ↓</span></div>
@@ -922,14 +935,19 @@ A full custom view implementation</h1>
 <div class="line">    <span class="keyword">using</span> iterator = my_iterator&lt;urng_t&gt;;</div>
 <div class="line">    <span class="keyword">using</span> const_iterator = my_iterator&lt;urng_t const&gt;;</div>
 <div class="line"> </div>
+<div class="line">    my_view()                            = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view(my_view <span class="keyword">const</span> &amp;)             = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view(my_view &amp;&amp;)                  = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view &amp; operator=(my_view <span class="keyword">const</span> &amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line">    my_view &amp; operator=(my_view &amp;&amp;)      = <span class="keywordflow">default</span>;</div>
+<div class="line"> </div>
 <div class="line">    <span class="comment">// construct from a view</span></div>
-<div class="line">    my_view(urng_t urange_) : urange{std::<a class="code" href="group__views.html#ga0933bd5433f42cd5245eecce74dcac0a">move</a>(urange_)}</div>
+<div class="line">    my_view(urng_t urange_) : urange{std::<a class="code" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">move</a>(urange_)}</div>
 <div class="line">    {}</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// construct from non-view that can be view-wrapped</span></div>
-<div class="line">    <span class="keyword">template</span> &lt;std::ranges::viewable_range orng_t&gt;</div>
-<div class="line">        requires std::same_as&lt;std::views::all_t&lt;orng_t&gt;, urng_t&gt;</div>
-<div class="line">    my_view(orng_t &amp;&amp; urange_) : urange{std::views::all(std::<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/forward.html">forward</a>&lt;orng_t&gt;(urange_))}</div>
+<div class="line">    <span class="comment">// construct from the underlying type (works together with the deduction guide)</span></div>
+<div class="line">    <span class="keyword">template</span> &lt;std::constructible_from&lt;urng_t&gt; orng_t&gt;</div>
+<div class="line">    my_view(orng_t &amp;&amp; urange_) : urange{std::<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/forward.html">forward</a>&lt;orng_t&gt;(urange_)}</div>
 <div class="line">    {}</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/iterator/begin.html">begin</a>() noexcept</div>
@@ -977,7 +995,7 @@ A full custom view implementation</h1>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">template</span> &lt;std::ranges::input_range urng_t&gt;</div>
-<div class="line">    <span class="keyword">friend</span> <span class="keyword">auto</span> operator|(urng_t &amp;&amp; urange, my_view_fn <span class="keyword">const</span> &amp;)</div>
+<div class="line">    <span class="keyword">friend</span> <span class="keyword">auto</span> <a class="code" href="namespacebio_1_1alphabet.html#aeb4e6ec76811b98d61d0eeddb113b004">operator|</a>(urng_t &amp;&amp; urange, my_view_fn <span class="keyword">const</span> &amp;)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">return</span> my_view{std::forward&lt;urng_t&gt;(urange)};</div>
 <div class="line">    }</div>
@@ -993,16 +1011,16 @@ A full custom view implementation</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* try the iterator */</span></div>
-<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::dna5&gt;&gt;;</div>
+<div class="line">    <span class="keyword">using</span> my_it_concrete = my_iterator&lt;std::vector&lt;bio::alphabet::dna5&gt;&gt;;</div>
 <div class="line"> </div>
-<div class="line">     my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
+<div class="line">    my_it_concrete it{vec.<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>()};</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// now you can use operator[] on the iterator</span></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; 7; ++i)</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(it[i]) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(it[i]) &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/* try the range */</span></div>
 <div class="line">    my_view v{vec};</div>
@@ -1028,7 +1046,7 @@ A full custom view implementation</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

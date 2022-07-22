@@ -1,7 +1,7 @@
 var classbio_1_1aminoacid__base =
 [
     [ "char_type", "classbio_1_1aminoacid__base.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1aminoacid__base.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1aminoacid__base.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "aminoacid_base", "classbio_1_1aminoacid__base.html#abeca3543a0a198851aa237b56d76f8e9", null ],
     [ "assign_char", "classbio_1_1aminoacid__base.html#a822d399ab808842870a4a4feb5490849", null ],
     [ "assign_rank", "classbio_1_1aminoacid__base.html#acdd042ae2f04d986f65a7b60edd6e83e", null ],

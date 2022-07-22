@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('dynamic__bitset_8hpp.html',''); initRe
 
 <p>A constexpr bitset implementation with dynamic size at compile time.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="bit__manipulation_8hpp_source.html">bio/meta/bit_manipulation.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="cereal_8hpp_source.html">bio/meta/concept/cereal.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/bit.html">bit</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="int__types_8hpp_source.html">bio/meta/detail/int_types.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="interleave_8hpp_source.html">bio/ranges/views/interleave.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="repeat__n_8hpp_source.html">bio/ranges/views/repeat_n.hpp</a>&gt;</code><br />
 <code>#include &lt;bio/ranges/views/to.hpp&gt;</code><br />
@@ -115,24 +115,28 @@ $(document).ready(function(){initNavTree('dynamic__bitset_8hpp.html',''); initRe
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dynamic__bitset_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dynamic__bitset_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div>
 <p><a href="dynamic__bitset_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1dynamic__bitset.html">bio::dynamic_bitset&lt; bit_capacity &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr bitset implementation with dynamic size at compile time.  <a href="classbio_1_1dynamic__bitset.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html">bio::ranges::dynamic_bitset&lt; bit_capacity &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr bitset implementation with dynamic size at compile time.  <a href="classbio_1_1ranges_1_1dynamic__bitset.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01bio_1_1dynamic__bitset_3_01cap_01_4_01_4.html">std::hash&lt; bio::dynamic_bitset&lt; cap &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a <code><a class="el" href="classbio_1_1dynamic__bitset.html" title="A constexpr bitset implementation with dynamic size at compile time.">bio::dynamic_bitset</a></code>.  <a href="structstd_1_1hash_3_01bio_1_1dynamic__bitset_3_01cap_01_4_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01bio_1_1ranges_1_1dynamic__bitset_3_01cap_01_4_01_4.html">std::hash&lt; bio::ranges::dynamic_bitset&lt; cap &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a <code><a class="el" href="classbio_1_1ranges_1_1dynamic__bitset.html" title="A constexpr bitset implementation with dynamic size at compile time.">bio::ranges::dynamic_bitset</a></code>.  <a href="structstd_1_1hash_3_01bio_1_1ranges_1_1dynamic__bitset_3_01cap_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1ranges"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges.html">bio::ranges</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Ranges module's namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -147,7 +151,7 @@ Namespaces</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_863a7aeecaebce89c36d5cb86386d0df.html">container</a></li><li class="navelem"><a class="el" href="dynamic__bitset_8hpp.html">dynamic_bitset.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

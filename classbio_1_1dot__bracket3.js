@@ -1,7 +1,7 @@
 var classbio_1_1dot__bracket3 =
 [
     [ "char_type", "classbio_1_1dot__bracket3.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1dot__bracket3.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1dot__bracket3.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "dot_bracket3", "classbio_1_1dot__bracket3.html#a4fb53ea5f5419c22872badeab954d581", null ],
     [ "dot_bracket3", "classbio_1_1dot__bracket3.html#a03e3efb8920c1e07468fe36ec457d0f0", null ],
     [ "dot_bracket3", "classbio_1_1dot__bracket3.html#a0409d5ad0649d3d0552536b14796cbdc", null ],
@@ -16,6 +16,6 @@ var classbio_1_1dot__bracket3 =
     [ "pseudoknot_id", "classbio_1_1dot__bracket3.html#a61a0e3ea048cb464ae18575a211e99ab", null ],
     [ "to_char", "classbio_1_1dot__bracket3.html#a6616ba2cb25069f5192589ad53651a88", null ],
     [ "to_rank", "classbio_1_1dot__bracket3.html#a443c2f7716e384ea2acec1d2bced7c8b", null ],
-    [ "operator\"\"_db3", "classbio_1_1dot__bracket3.html#a1d8d897673f60641c1f3354333ca5e85", null ],
-    [ "operator\"\"_db3", "classbio_1_1dot__bracket3.html#aec47f491da233d13c58a7b7bd6c683ba", null ]
+    [ "operator\"\"_db3", "classbio_1_1dot__bracket3.html#a233b19a085de871f12d8454935291d59", null ],
+    [ "operator\"\"_db3", "classbio_1_1dot__bracket3.html#a1d8d897673f60641c1f3354333ca5e85", null ]
 ];

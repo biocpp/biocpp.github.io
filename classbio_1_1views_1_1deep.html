@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classbio_1_1views_1_1deep.html',''); i
   <div class="summary">
 <a href="classbio_1_1views_1_1deep-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bio::views::deep&lt; underlying_adaptor_t &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__range.html">Range</a> &raquo; <a class="el" href="group__views.html">Views</a></div></div>  </div>
+<div class="title">bio::views::deep&lt; underlying_adaptor_t &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__range.html">Ranges</a> &raquo; <a class="el" href="group__views.html">Views</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -245,7 +245,7 @@ class bio::views::deep&lt; underlying_adaptor_t &gt;</h3>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>my</div>
 <div class="line">{</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> deep_take = <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>};</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> deep_take = <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>};</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
@@ -254,15 +254,15 @@ class bio::views::deep&lt; underlying_adaptor_t &gt;</h3>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5_vector&gt;</a> foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> t = foo | <a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>(1);                   <span class="comment">// == [ [A,A,A,T,T,T] ]</span></div>
+<div class="line">    <span class="keyword">auto</span> t = foo | <a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>(1);                   <span class="comment">// == [ [A,A,A,T,T,T] ]</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> d = foo | <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>}(1); <span class="comment">// == [ [A], [C] ]</span></div>
+<div class="line">    <span class="keyword">auto</span> d = foo | <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>}(1); <span class="comment">// == [ [A], [C] ]</span></div>
 <div class="line">    <span class="comment">// constructor arguments passed via {} and arguments to underlying view passed via ()</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// In this case especially, an alias improves readability:</span></div>
 <div class="line">    <span class="keyword">auto</span> e = foo | my::deep_take(1);                         <span class="comment">// == [ [A], [C] ]</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core__type__list_html_ga32f132a82cf33c70a3cfccdcba03fe15"><div class="ttname"><a href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">bio::list_traits::take</a></div><div class="ttdeci">typename decltype(detail::split_after&lt; i &gt;(list_t{}))::first_type take</div><div class="ttdoc">Return a bio::type_list of the first n types in the input type list.</div><div class="ttdef"><b>Definition:</b> traits.hpp:393</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gab9a2a91a8c6bc94f6f472ad1be75a785"><div class="ttname"><a href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">bio::meta::list_traits::take</a></div><div class="ttdeci">typename decltype(detail::split_after&lt; i &gt;(list_t{}))::first_type take</div><div class="ttdoc">Return a meta::type_list of the first n types in the input type list.</div><div class="ttdef"><b>Definition:</b> traits.hpp:421</div></div>
 <div class="ttc" id="atake_8hpp_html"><div class="ttname"><a href="take_8hpp.html">take.hpp</a></div><div class="ttdoc">Provides bio::views::take.</div></div>
 </div><!-- fragment --><p>The above example illustrates that <a class="el" href="classbio_1_1views_1_1deep.html" title="A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view.">views::deep</a> has two sets of arguments, the <b>arguments to construct</b> this adaptor, and the arguments passed to the underlying adaptor when <b>calling</b> this adaptor. You can use <code>()</code> for both, but we highly recommend to use <code>{}</code> to not confuse these; or just use an alias.</p>
 <dl class="section attention"><dt>Attention</dt><dd>Note that in the case of parameter handling the arguments to <a class="el" href="classbio_1_1views_1_1deep.html" title="A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view.">views::deep</a> are <b>copied</b> to each invocation of the underlying adaptor if they are temporaries. This is no problem for small objects like the integer above, but might be expensive for larger ones. To avoid this, pass in references to external objects instead of temporaries:</dd></dl>
@@ -274,7 +274,7 @@ class bio::views::deep&lt; underlying_adaptor_t &gt;</h3>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>my</div>
 <div class="line">{</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> deep_take = <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>};</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> deep_take = <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>};</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
@@ -295,7 +295,7 @@ class bio::views::deep&lt; underlying_adaptor_t &gt;</h3>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>my</div>
 <div class="line">{</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> deep_take1 = <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>(1)};</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">auto</span> <span class="keyword">const</span> deep_take1 = <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>(1)};</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
@@ -304,9 +304,9 @@ class bio::views::deep&lt; underlying_adaptor_t &gt;</h3>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna5_vector&gt;</a> foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> t = foo | <a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>(1);                      <span class="comment">// == [ [A,A,A,T,T,T] ]</span></div>
+<div class="line">    <span class="keyword">auto</span> t = foo | <a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>(1);                      <span class="comment">// == [ [A,A,A,T,T,T] ]</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> d = foo | <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__core__type__list.html#ga32f132a82cf33c70a3cfccdcba03fe15">std::views::take</a>(1)}; <span class="comment">// == [ [A], [C] ]</span></div>
+<div class="line">    <span class="keyword">auto</span> d = foo | <a class="code" href="classbio_1_1views_1_1deep.html">bio::views::deep</a>{<a class="code" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>(1)}; <span class="comment">// == [ [A], [C] ]</span></div>
 <div class="line">    <span class="comment">// constructor arguments passed via {} and arguments to underlying view hardcoded inside</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// or with an alias defined previously</span></div>
@@ -325,7 +325,7 @@ class bio::views::deep&lt; underlying_adaptor_t &gt;</h3>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="namespacebio_1_1views.html">views</a></li><li class="navelem"><a class="el" href="classbio_1_1views_1_1deep.html">deep</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:29 for BioC++ by
+    <li class="footer">Generated on Mon Jul 4 2022 15:22:32 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -116,61 +116,51 @@ $(document).ready(function(){initNavTree('alphabet_2nucleotide_2concept_8hpp_sou
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// complement()</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>bio::detail::adl_only</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ...args_t&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">complement</a>(args_t ...) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">struct </span>complement_fn</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="customisation__point_8hpp.html#a668156df5e10f10c5fa9a4473bc606af">BIOCPP_CPO_IMPL</a>(2, <a class="code" href="structbio_1_1custom_1_1alphabet.html">bio::custom::alphabet</a>&lt;decltype(v)&gt;::<a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">complement</a>(v)) <span class="comment">// explicit customisation</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="customisation__point_8hpp.html#a668156df5e10f10c5fa9a4473bc606af">BIOCPP_CPO_IMPL</a>(1, <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">complement</a>(v)                                       ) <span class="comment">// ADL</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="customisation__point_8hpp.html#a668156df5e10f10c5fa9a4473bc606af">BIOCPP_CPO_IMPL</a>(0, v.complement()                                      ) <span class="comment">// member</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;public:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    template &lt;typename nucleotide_t&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        requires requires (nucleotide_t const nucl)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            { impl(priority_tag&lt;2&gt;{}, nucl) };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            requires noexcept(impl(priority_tag&lt;2&gt;{}, nucl));</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="comment">// requires std::common_with&lt;decltype(impl(priority_tag&lt;2&gt;{}, nucl)), nucleotide_t&gt;; // triggers an ICE</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            requires <a class="code" href="interfacebio_1_1alphabet.html">alphabet</a>&lt;decltype(impl(priority_tag&lt;2&gt;{}, nucl))&gt;;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            { impl(priority_tag&lt;2&gt;{}, impl(priority_tag&lt;2&gt;{}, nucl)) }; <span class="comment">// you can take the complement again</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    constexpr <span class="keyword">auto</span> operator()(nucleotide_t <span class="keyword">const</span> nucl) <span class="keyword">const</span> noexcept</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> impl(priority_tag&lt;2&gt;{}, nucl);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace bio::detail::adl_only</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">   96</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">complement</a> = detail::adl_only::complement_fn{};</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">   33</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">complement</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace bio::alphabet::cpo</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">   83</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keyword">auto</span> <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">complement</a> = []&lt;<span class="keyword">typename</span> alph_t&gt;(alph_t <span class="keyword">const</span> a)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  requires(requires {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      {<a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">cpo::complement</a>{}, a)};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="comment">// NOTE we are using the trait here and not the concept, because the concept</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="comment">// also checks explicit convertibility but we don&#39;t want to substitute into</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// explicit constructors/conversion operators to prevent loops</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      requires std::is_convertible_v&lt;alph_t, decltype(<a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">cpo::complement</a>{}, a))&gt;;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      requires noexcept(<a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">cpo::complement</a>{}, a));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  })</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">cpo::complement</a>{}, a);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// nucleotide_alphabet concept</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// ============================================================================</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;concept <a class="code" href="interfacebio_1_1nucleotide__alphabet.html">nucleotide_alphabet</a> = <a class="code" href="interfacebio_1_1alphabet.html">alphabet&lt;t&gt;</a> &amp;&amp; requires (t val)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;concept <a class="code" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">nucleotide_alphabet</a> = <a class="code" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet&lt;t&gt;</a> &amp;&amp; requires(t val)</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;{</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    { <a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(val) };</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {<a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(val)};</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace bio</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace bio::alphabet</span></div>
 <div class="ttc" id="aalphabet_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
 <div class="ttc" id="aconcepts_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a></div></div>
-<div class="ttc" id="acustomisation__point_8hpp_html_a668156df5e10f10c5fa9a4473bc606af"><div class="ttname"><a href="customisation__point_8hpp.html#a668156df5e10f10c5fa9a4473bc606af">BIOCPP_CPO_IMPL</a></div><div class="ttdeci">#define BIOCPP_CPO_IMPL(PRIO, TERM)</div><div class="ttdoc">A macro that helps defining the overload set of a customisation point.</div><div class="ttdef"><b>Definition:</b> customisation_point.hpp:46</div></div>
-<div class="ttc" id="agroup__nucleotide_html_ga4b00de5b7d39cf416e62e14edef83f03"><div class="ttname"><a href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:96</div></div>
-<div class="ttc" id="ainterfacebio_1_1alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet.html">alphabet</a></div><div class="ttdoc">The generic alphabet concept that covers most data types used in ranges.</div></div>
-<div class="ttc" id="ainterfacebio_1_1nucleotide__alphabet_html"><div class="ttname"><a href="interfacebio_1_1nucleotide__alphabet.html">nucleotide_alphabet</a></div><div class="ttdoc">A concept that indicates whether an alphabet represents nucleotides.</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
-<div class="ttc" id="astructbio_1_1custom_1_1alphabet_html"><div class="ttname"><a href="structbio_1_1custom_1_1alphabet.html">bio::custom::alphabet</a></div><div class="ttdoc">A type that can be specialised to provide customisation point implementations so that third party typ...</div><div class="ttdef"><b>Definition:</b> concept.hpp:49</div></div>
+<div class="ttc" id="agroup__adaptation_html_ga90e36e0f53be2c688535b847e3d626e1"><div class="ttname"><a href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">bio::alphabet::cpo::tag_invoke</a></div><div class="ttdeci">consteval auto tag_invoke(size, char_type const) noexcept</div><div class="ttdoc">The number of values the char type can take (e.g. 256 for char).</div><div class="ttdef"><b>Definition:</b> char.hpp:38</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
+<div class="ttc" id="ainterfacebio_1_1alphabet_1_1alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a></div><div class="ttdoc">The generic alphabet concept that covers most data types used in ranges.</div></div>
+<div class="ttc" id="ainterfacebio_1_1alphabet_1_1nucleotide__alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html">nucleotide_alphabet</a></div><div class="ttdoc">A concept that indicates whether an alphabet represents nucleotides.</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1cpo_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></div><div class="ttdoc">A namespace for third party and standard library specialisations of BioC++ customisation points.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1complement_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1complement.html">bio::alphabet::cpo::complement</a></div><div class="ttdoc">Customisation tag for bio::alphabet::complement.</div><div class="ttdef"><b>Definition:</b> concept.hpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -180,7 +170,7 @@ $(document).ready(function(){initNavTree('alphabet_2nucleotide_2concept_8hpp_sou
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_8142f063462841d169d3caf3917af0e7.html">nucleotide</a></li><li class="navelem"><a class="el" href="alphabet_2nucleotide_2concept_8hpp.html">concept.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

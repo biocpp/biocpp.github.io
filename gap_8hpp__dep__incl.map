@@ -1,6 +1,6 @@
 <map id="bio/alphabet/gap/gap.hpp" name="bio/alphabet/gap/gap.hpp">
-<area shape="rect" id="node1" title="Provides bio::gap." alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::gap." alt="" coords="5,5,192,32"/>
 <area shape="rect" id="node2" href="$alphabet_2gap_2all_8hpp.html" title="Meta&#45;header for the gap submodule; includes all headers from alphabet/gap/." alt="" coords="9,155,188,181"/>
-<area shape="rect" id="node4" href="$gapped_8hpp.html" title="Provides bio::gapped." alt="" coords="65,80,276,107"/>
+<area shape="rect" id="node4" href="$gapped_8hpp.html" title="Provides bio::alphabet::gapped." alt="" coords="65,80,276,107"/>
 <area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="23,229,174,256"/>
 </map>

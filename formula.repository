@@ -1,17 +1,12 @@
 \_form#0=11x12:$p$
 \_form#1=126x19:$Q = -10log_{10}(p)$
 \_form#2=187x19:$Q = -10log_{10}(p/(1-p))$
-\_form#3=63x18:$2^{\lceil\log_2(n)\rceil}$
-\_form#4=12x9:$n$
-\_form#5=65x19:$ \lfloor log_2(n) \rfloor $
-\_form#6=65x19:$ \lceil log_2(n) \rceil $
-\_form#7=54x14:$ base^{exp} $
-\_form#8=68x19:$O(count)$
-\_form#9=128x19:$O(count*value)$
-\_form#10=98x19:$ O(begin\_pos) $
-\_form#11=23x12:$n_A$
-\_form#12=23x12:$n_T$
-\_form#13=23x12:$n_G$
-\_form#14=23x12:$n_C$
-\_form#15=7x9:$c$
-\_form#16=186x39:\[ c = \frac{n_G + n_C}{n_A + n_T + n_G + n_C} \]
+\_form#3=68x19:$O(count)$
+\_form#4=128x19:$O(count*value)$
+\_form#5=98x19:$ O(begin\_pos) $
+\_form#6=23x12:$n_A$
+\_form#7=23x12:$n_T$
+\_form#8=23x12:$n_G$
+\_form#9=23x12:$n_C$
+\_form#10=7x9:$c$
+\_form#11=186x39:\[ c = \frac{n_G + n_C}{n_A + n_T + n_G + n_C} \]

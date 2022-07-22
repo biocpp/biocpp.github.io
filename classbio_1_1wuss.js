@@ -1,7 +1,7 @@
 var classbio_1_1wuss =
 [
     [ "char_type", "classbio_1_1wuss.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1wuss.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1wuss.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "wuss", "classbio_1_1wuss.html#a6493ed36075317cb4960131dfc03abcc", null ],
     [ "wuss", "classbio_1_1wuss.html#a0fdd3dddf17efaa0eb2c6e394b74977a", null ],
     [ "wuss", "classbio_1_1wuss.html#ae386a1bb2da760b6e60675cc8a1bc506", null ],
@@ -18,7 +18,7 @@ var classbio_1_1wuss =
     [ "to_char", "classbio_1_1wuss.html#a6616ba2cb25069f5192589ad53651a88", null ],
     [ "to_rank", "classbio_1_1wuss.html#a443c2f7716e384ea2acec1d2bced7c8b", null ],
     [ "to_rank", "classbio_1_1wuss.html#a443c2f7716e384ea2acec1d2bced7c8b", null ],
+    [ "operator\"\"_wuss51", "classbio_1_1wuss.html#a36c81e104b9385fe414710a8085adb6e", null ],
     [ "operator\"\"_wuss51", "classbio_1_1wuss.html#a0fec105f44cd638f4e82a415632bcf90", null ],
-    [ "operator\"\"_wuss51", "classbio_1_1wuss.html#a0b838f614eb1b5a48907f66b2bee96cc", null ],
     [ "wuss51", "classbio_1_1wuss.html#a8ce282885cb60f3c9dceb36320e7ad4f", null ]
 ];

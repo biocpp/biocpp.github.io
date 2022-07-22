@@ -1,11 +1,11 @@
 var classbio_1_1small__vector =
 [
     [ "const_iterator", "classbio_1_1small__vector.html#a60e61d9e072cf2297348d1236059051b", null ],
-    [ "const_reference", "classbio_1_1small__vector.html#afa9ccd5d12c59b7ba690c4b0e171c35c", null ],
+    [ "const_reference", "classbio_1_1small__vector.html#a1dc07e19f49da2cb60ee8132a3a62a01", null ],
     [ "difference_type", "classbio_1_1small__vector.html#ab9b0deec96ffd6a5220fa0f0d94b4d70", null ],
     [ "iterator", "classbio_1_1small__vector.html#a3bf34403e95c10cadfdb3f8c533bc01a", null ],
     [ "reference", "classbio_1_1small__vector.html#a5d7d97428cefb29b5446b08d5cffca23", null ],
-    [ "size_type", "classbio_1_1small__vector.html#ae46a920425232dd97a408707ef6a8676", null ],
+    [ "size_type", "classbio_1_1small__vector.html#a17617f2388057fcde737e0e1253ab161", null ],
     [ "value_type", "classbio_1_1small__vector.html#a9da6b33bf009e04a1a11eaa81adeb8f2", null ],
     [ "small_vector", "classbio_1_1small__vector.html#adb45de09d2b6f9dca05c6a4ad9df30b1", null ],
     [ "small_vector", "classbio_1_1small__vector.html#a8e356b921a984515e70137871d8641fa", null ],

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -184,7 +184,7 @@ Storage behaviour</h2>
 <p><b>Decorators</b> are ranges that are always defined on another range and decorate/annotate the underlying range with additional information. They do not own the underlying range, but can contain member data of their own.</p>
 <p><b>Views</b> are ranges that are usually defined on another range and transform the underlying range via some algorithm or operation. Views do not own any data beyond their algorithm and the time it takes to construct, destruct or copy them should not depend on the number of elements they represent. The algorithm is required to be lazy-evaluated so it is feasible to combine multiple views. More on this below.</p>
 <p>If you are confused about <em>decorators</em> vs <em>views</em>, think of decorators as "underlying range + data" and views as "underlying range + algorithm".</p>
-<p>The storage behaviour is orthogonal to the range concepts defined by the iterators mentioned above, i.e. you can have a container that satisfies std::ranges::random_access_range (e.g. <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> does, but <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a></code> does not) and you can have views or decorators that do so or don't. For some combinations of iterator capabilities and storage behaviour there are extra concept definitions, e.g. <a class="el" href="interfacebio_1_1random__access__container.html" title="A more refined container concept than bio::sequence_container.">bio::random_access_container</a>.</p>
+<p>The storage behaviour is orthogonal to the range concepts defined by the iterators mentioned above, i.e. you can have a container that satisfies std::ranges::random_access_range (e.g. <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> does, but <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a></code> does not) and you can have views or decorators that do so or don't. For some combinations of iterator capabilities and storage behaviour there are extra concept definitions, e.g. bio::ranges::detail::random_access_container.</p>
 <h1><a class="anchor" id="autotoc_md46"></a>
 Views</h1>
 <p>As mentioned above, views are a specific kind of range. They are incredibly useful and you will find them throughout the library.</p>
@@ -208,10 +208,10 @@ Combinability</h2>
 </div><!-- fragment --><p> and not </p><div class="fragment"><div class="line">std::views::reverse v{vec};</div>
 </div><!-- fragment --><p>That's because <code>std::views::reverse</code> is not the view itself, it's an <em>adaptor</em> that takes the underlying range (in our case the vector) and returns a view object over the vector. The exact type of this view is hidden behind the <code>auto</code> statement. This has the advantage, that we don't need to worry about the template arguments of the view type, but more importantly the adaptor has an additional feature: it can be <em>chained</em> with other adaptors!</p>
 <div class="fragment"><div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5, 6};</div>
-<div class="line"><span class="keyword">auto</span> v = vec | std::views::reverse | <a class="code" href="group__core__type__list.html#ga7fe347e44ba8b3d3e82660db9030a873">std::views::drop</a>(2);</div>
+<div class="line"><span class="keyword">auto</span> v = vec | std::views::reverse | <a class="code" href="group__meta__type__list.html#gabcf396c67a79d13bf53fc83257998b25">std::views::drop</a>(2);</div>
 <div class="line"> </div>
 <div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; *v.begin() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="ttc" id="agroup__core__type__list_html_ga7fe347e44ba8b3d3e82660db9030a873"><div class="ttname"><a href="group__core__type__list.html#ga7fe347e44ba8b3d3e82660db9030a873">bio::list_traits::drop</a></div><div class="ttdeci">typename decltype(detail::split_after&lt; i &gt;(list_t{}))::second_type drop</div><div class="ttdoc">Return a bio::type_list of the types in the input type list, except the first n.</div><div class="ttdef"><b>Definition:</b> traits.hpp:413</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gabcf396c67a79d13bf53fc83257998b25"><div class="ttname"><a href="group__meta__type__list.html#gabcf396c67a79d13bf53fc83257998b25">bio::meta::list_traits::drop</a></div><div class="ttdeci">typename decltype(detail::split_after&lt; i &gt;(list_t{}))::second_type drop</div><div class="ttdoc">Return a meta::type_list of the types in the input type list, except the first n.</div><div class="ttdef"><b>Definition:</b> traits.hpp:441</div></div>
 </div><!-- fragment --><p> What will this print?  <div class="assignment"> <details><summary><b>Hint</b></summary>  It will print "4".  </details> </div> </p>
 <p>In the above example the vector is "piped" (similar to the unix command line) into the reverse adaptor and then into the drop adaptor and a combined view object is returned. Note that accessing the 0th element of the view is still lazy, determining which element it maps to happens at the time of access.</p>
 <p> <div class="assignemnt"><h4>Assignment 1: Fun with views I</h4><div class="assignment_content"> Look up the documentation of std::views::transform and std::views::filter. Both take a invocable object as parameter, e.g. a lambda function. std::views::transform applies the lambda on each element in the underlying range and std::views::filter filter "removes" those elements that its lambda function evaluates to false for.</p>
@@ -229,11 +229,11 @@ Combinability</h2>
 <div class="line">{</div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5, 6};</div>
 <div class="line">    <span class="keyword">auto</span> v = vec | std::views::filter([] (<span class="keyword">auto</span> <span class="keyword">const</span> i) { <span class="keywordflow">return</span> i % 2 == 0; })</div>
-<div class="line">                 | <a class="code" href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">std::views::transform</a>([] (<span class="keyword">auto</span> <span class="keyword">const</span> i) { <span class="keywordflow">return</span> i*i; });</div>
+<div class="line">                 | <a class="code" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>([] (<span class="keyword">auto</span> <span class="keyword">const</span> i) { <span class="keywordflow">return</span> i*i; });</div>
 <div class="line"> </div>
 <div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; *v.begin() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>; <span class="comment">// prints 4</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core__type__list_html_ga707547c2877cfbd1a807d5a92acfd3b3"><div class="ttname"><a href="group__core__type__list.html#ga707547c2877cfbd1a807d5a92acfd3b3">bio::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a bio::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:496</div></div>
+<div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
 <div class="ttc" id="aiostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a></div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
@@ -243,7 +243,7 @@ View concepts</h2>
 <p>It depends on the underlying range and also the view itself. With few exceptions, views don't model more/stronger range concepts than their underlying range (other than std::ranges::view) and they try to preserve as much of the underlying range's concepts as possible. For instance the view returned by <code>std::views::reverse</code> models std::ranges::random_access_range (and weaker concepts) iff the underlying range also models the respective concept. It never models std::ranges::contiguous_range, because the third element of the view is not located immediately after the second in memory (but instead before the second).</p>
 <p>Perhaps surprising to some, many views also model std::ranges::output_range if the underlying range does, i.e. <b>views are not read-only</b>:</p>
 <div class="fragment"><div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5, 6};</div>
-<div class="line"><span class="keyword">auto</span> v = vec | std::views::reverse | <a class="code" href="group__core__type__list.html#ga7fe347e44ba8b3d3e82660db9030a873">std::views::drop</a>(2);</div>
+<div class="line"><span class="keyword">auto</span> v = vec | std::views::reverse | <a class="code" href="group__meta__type__list.html#gabcf396c67a79d13bf53fc83257998b25">std::views::drop</a>(2);</div>
 <div class="line"> </div>
 <div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; *v.begin() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">*v.begin() = 42;                  <span class="comment">// now vec == {1, 2, 3, 42, 5, 6 } !!</span></div>
@@ -298,11 +298,11 @@ View concepts</h2>
 <p>We provide overview tables for all our view adaptors that document which concepts are modelled by the views they return.</p>
 <h2><a class="anchor" id="autotoc_md50"></a>
 Views in the standard library and in BioC++</h2>
-<p>The standard library in C++20 provides a number of useful views and BioC++ provides many views, as well. Most views provided by BioC++ are specific to biological operations, like <a class="el" href="group__views.html#gab2e512ec0d0fe1967dfd7aee03c74eae" title="A view that does quality-threshold trimming on a range of bio::quality_alphabet.">bio::views::trim_quality</a> which trims sequences based on the quality or <a class="el" href="group__views.html#ga531cd11552ed966a1d8a63611d0b280b" title="A view that converts a range of nucleotides to their complement.">bio::views::complement</a> which generates the complement of a nucleotide sequence. But BioC++ also provides some general purpose views.</p>
+<p>The standard library in C++20 provides a number of useful views and BioC++ provides many views, as well. Most views provided by BioC++ are specific to biological operations, like bio::views::trim_quality which trims sequences based on the quality or bio::views::complement which generates the complement of a nucleotide sequence. But BioC++ also provides some general purpose views.</p>
 <p>Have a look at the <a class="el" href="group__views.html">views-submodule </a> to get an overview of BioC++'s views and also read through the detailed description on that page now that you had a more gentle introduction.</p>
 <p> <div class="assignemnt"><h4>Assignment 3: Fun with views III</h4><div class="assignment_content"> Create a small program that</p><ol type="1">
 <li>reads a string from the command line (first argument to the program)</li>
-<li>"converts" the string to a range of <a class="el" href="classbio_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.">bio::dna5</a> (Bonus: throw an exception if loss of information occurs)</li>
+<li>"converts" the string to a range of <a class="el" href="classbio_1_1alphabet_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.">bio::alphabet::dna5</a> (Bonus: throw an exception if loss of information occurs)</li>
 <li>prints the string and it's reverse complement</li>
 <li>prints the six-frame translation of the string</li>
 </ol>
@@ -332,32 +332,32 @@ Views in the standard library and in BioC++</h2>
 <div class="line">       <span class="keywordflow">return</span> 0;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> s_as_dna = s | bio::views::char_to&lt;bio::dna5&gt;;</div>
+<div class="line">    <span class="keyword">auto</span> s_as_dna = s | bio::views::char_to&lt;bio::alphabet::dna5&gt;;</div>
 <div class="line">    <span class="comment">// Bonus:</span></div>
 <div class="line">    <span class="comment">//auto s_as_dna = s | std::views::transform([] (char const c)</span></div>
 <div class="line">    <span class="comment">//{</span></div>
-<div class="line">    <span class="comment">//    return bio::assign_char_strictly_to(c, bio::dna5{});</span></div>
+<div class="line">    <span class="comment">//    return bio::alphabet::assign_char_strictly_to(c, bio::alphabet::dna5{});</span></div>
 <div class="line">    <span class="comment">//});</span></div>
 <div class="line"> </div>
 <div class="line">    fmt::print(<span class="stringliteral">&quot;Original: {}\n&quot;</span>, s_as_dna);</div>
-<div class="line">    fmt::print(<span class="stringliteral">&quot;RevComp:  {}\n&quot;</span>, s_as_dna | std::views::reverse | <a class="code" href="group__views.html#ga531cd11552ed966a1d8a63611d0b280b">bio::views::complement</a>);</div>
-<div class="line">    fmt::print(<span class="stringliteral">&quot;Frames:   {}\n&quot;</span>, s_as_dna | <a class="code" href="group__views.html#gafac84d343d9715544a0b42ac2587b356">bio::views::translate</a>);</div>
+<div class="line">    fmt::print(<span class="stringliteral">&quot;RevComp:  {}\n&quot;</span>, s_as_dna | std::views::reverse | <a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::views::complement</a>);</div>
+<div class="line">    fmt::print(<span class="stringliteral">&quot;Frames:   {}\n&quot;</span>, s_as_dna | <a class="code" href="group__views.html#ga86867c9586842596d47325ad431806d7">bio::views::translate</a>);</div>
 <div class="line">}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="afmt_8hpp_html"><div class="ttname"><a href="fmt_8hpp.html">fmt.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="agroup__views_html_ga531cd11552ed966a1d8a63611d0b280b"><div class="ttname"><a href="group__views.html#ga531cd11552ed966a1d8a63611d0b280b">bio::views::complement</a></div><div class="ttdeci">auto const complement</div><div class="ttdoc">A view that converts a range of nucleotides to their complement.</div><div class="ttdef"><b>Definition:</b> complement.hpp:70</div></div>
-<div class="ttc" id="agroup__views_html_gafac84d343d9715544a0b42ac2587b356"><div class="ttname"><a href="group__views.html#gafac84d343d9715544a0b42ac2587b356">bio::views::translate</a></div><div class="ttdeci">constexpr auto translate</div><div class="ttdoc">A view that translates nucleotide into aminoacid alphabet with 1, 2, 3 or 6 frames.</div><div class="ttdef"><b>Definition:</b> translate.hpp:781</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
+<div class="ttc" id="agroup__views_html_ga86867c9586842596d47325ad431806d7"><div class="ttname"><a href="group__views.html#ga86867c9586842596d47325ad431806d7">bio::ranges::views::translate</a></div><div class="ttdeci">constexpr auto translate</div><div class="ttdoc">A view that translates nucleotide into aminoacid alphabet with 1, 2, 3 or 6 frames.</div><div class="ttdef"><b>Definition:</b> translate.hpp:724</div></div>
 <div class="ttc" id="aranges_2views_2all_8hpp_html"><div class="ttname"><a href="ranges_2views_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the views submodule .</div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
 <h1><a class="anchor" id="autotoc_md51"></a>
 Containers</h1>
 <p>containers are ranges that own their data. BioC++ uses the standard library containers, like <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> and <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a> to store elements. For certain use-cases we have introduced our own containers, though.</p>
-<p>All standard library containers model std::ranges::forward_range (see above), but we have introduced container concepts that encompass more of a containers interface. Have a look at the API documentation of <a class="el" href="interfacebio_1_1container.html" title="The (most general) container concept as defined by the standard library.">bio::container</a> and unfold the inheritance diagram. What can you learn about the different refinements and their relation to the range concepts?</p>
+<p>All standard library containers model std::ranges::forward_range (see above), but we have introduced container concepts that encompass more of a containers interface. Have a look at the API documentation of bio::ranges::detail::container and unfold the inheritance diagram. What can you learn about the different refinements and their relation to the range concepts?</p>
 <h2><a class="anchor" id="autotoc_md52"></a>
 The bitcompressed vector</h2>
-<p>If you followed the alphabet tutorial closely, you will know that <a class="el" href="classbio_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::dna4</a> needs only two bits to represent its state. However, single objects are always at least a byte (eight bits) big in C++. To store sequences of small alphabets more space-efficiently, we have developed <a class="el" href="classbio_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::bitcompressed_vector</a>.</p>
-<p>Open the API documentation of <a class="el" href="classbio_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::bitcompressed_vector</a>, display the inheritance diagram and read through the interface overview and the detailed description.</p>
-<p> <div class="assignemnt"><h4>Assignment 4: The bitcompressed vector</h4><div class="assignment_content"> Create a small program that asks the user for a size and then creates a vector of <a class="el" href="classbio_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::dna4</a> of that size. Add an argument parser flag that allows the user to decide whether <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> or <a class="el" href="classbio_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::bitcompressed_vector</a> is used. After creating the vector, print its size.</p>
+<p>If you followed the alphabet tutorial closely, you will know that <a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::alphabet::dna4</a> needs only two bits to represent its state. However, single objects are always at least a byte (eight bits) big in C++. To store sequences of small alphabets more space-efficiently, we have developed <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a>.</p>
+<p>Open the API documentation of <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a>, display the inheritance diagram and read through the interface overview and the detailed description.</p>
+<p> <div class="assignemnt"><h4>Assignment 4: The bitcompressed vector</h4><div class="assignment_content"> Create a small program that asks the user for a size and then creates a vector of <a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::alphabet::dna4</a> of that size. Add an argument parser flag that allows the user to decide whether <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> or <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a> is used. After creating the vector, print its size.</p>
 <p>Measure and compare the amount of main memory that your program uses depending on the vector implementation. On Linux based systems use <code>/usr/bin/time -v &lt;program&gt; &lt;args&gt;</code> and look for "Maximum resident set size". (Not to be confused with the built-in Bash time command! So use the full path <code>/usr/bin/time</code>)</p>
 <p>On macOS and BSD use <code>/usr/bin/time -l &lt;program&gt; &lt;args&gt;</code> and look for "maximum resident set size".</p>
 <dl class="section note"><dt>Note</dt><dd>This command diplays the peak memory usage and only gives you a first impression. You can use <a href="https://valgrind.org/docs/manual/ms-manual.html">valgrind</a> if you want to have a more detailed analysis of your memory consumption.  </div></div>  <div class="solution"> <details><summary><b>Solution</b></summary>  <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a>&gt;</span></div>
@@ -368,14 +368,14 @@ The bitcompressed vector</h2>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna4_8hpp.html">bio/alphabet/nucleotide/dna4.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="bitcompressed__vector_8hpp.html">bio/ranges/container/bitcompressed_vector.hpp</a>&gt;</span>      <span class="comment">// include bitcompressed vector</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna4;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> ** argv)</div>
 <div class="line">{</div>
 <div class="line">    sharg::argument_parser myparser(<span class="stringliteral">&quot;Vector-implementations-comparison&quot;</span>, argc, argv);</div>
-<div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">size</a>{};</div>
+<div class="line">    <span class="keywordtype">size_t</span> <a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">size</a>{};</div>
 <div class="line">    <span class="keywordtype">bool</span> use_bitvector{};</div>
-<div class="line">    myparser.add_positional_option(<a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">size</a>, <span class="stringliteral">&quot;Size of vector&quot;</span>);</div>
+<div class="line">    myparser.add_positional_option(<a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">size</a>, <span class="stringliteral">&quot;Size of vector&quot;</span>);</div>
 <div class="line">    myparser.add_flag(use_bitvector, <span class="charliteral">&#39;b&#39;</span>, <span class="stringliteral">&quot;bitvector&quot;</span>, <span class="stringliteral">&quot;Use bitvector instead of vector&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">try</span></div>
@@ -390,22 +390,23 @@ The bitcompressed vector</h2>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> (use_bitvector)</div>
 <div class="line">    {</div>
-<div class="line">        <a class="code" href="classbio_1_1bitcompressed__vector.html">bio::bitcompressed_vector&lt;bio::dna4&gt;</a> vector;</div>
-<div class="line">        vector.<a class="code" href="classbio_1_1bitcompressed__vector.html#abab72f3bf702d164dacfac0b529895cf">resize</a>(<a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">size</a>, <span class="charliteral">&#39;A&#39;</span>_dna4);</div>
-<div class="line">        fmt::print(<span class="stringliteral">&quot;Allocated bio::bitcompressed_vector&lt;bio::dna4&gt; of size {}\n&quot;</span>, vector.<a class="code" href="classbio_1_1bitcompressed__vector.html#a295bd19be040cbdfbd7d02c02608da20">size</a>());</div>
+<div class="line">        <a class="code" href="classbio_1_1ranges_1_1bitcompressed__vector.html">bio::ranges::bitcompressed_vector&lt;bio::alphabet::dna4&gt;</a> vector;</div>
+<div class="line">        vector.<a class="code" href="classbio_1_1ranges_1_1bitcompressed__vector.html#ae3db14b9b3603a07c472ffafca66e7d8">resize</a>(<a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">size</a>, <span class="charliteral">&#39;A&#39;</span>_dna4);</div>
+<div class="line">        fmt::print(<span class="stringliteral">&quot;Allocated bio::ranges::bitcompressed_vector&lt;bio::alphabet::dna4&gt; of size {}\n&quot;</span>, vector.<a class="code" href="classbio_1_1ranges_1_1bitcompressed__vector.html#adbe78383a80dbea78c8ebff90b0418bd">size</a>());</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::dna4&gt;</a> vector{<a class="code" href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">size</a>};</div>
-<div class="line">        fmt::print(<span class="stringliteral">&quot;Allocated std::vector&lt;bio::dna4&gt; of size {}\n&quot;</span>, vector.<a class="code" href="classbio_1_1bitcompressed__vector.html#a295bd19be040cbdfbd7d02c02608da20">size</a>());</div>
+<div class="line">        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna4&gt;</a> vector{<a class="code" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">size</a>};</div>
+<div class="line">        fmt::print(<span class="stringliteral">&quot;Allocated std::vector&lt;bio::alphabet::dna4&gt; of size {}\n&quot;</span>, vector.<a class="code" href="classbio_1_1ranges_1_1bitcompressed__vector.html#adbe78383a80dbea78c8ebff90b0418bd">size</a>());</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="abitcompressed__vector_8hpp_html"><div class="ttname"><a href="bitcompressed__vector_8hpp.html">bitcompressed_vector.hpp</a></div><div class="ttdoc">Provides bio::bitcompressed_vector.</div></div>
-<div class="ttc" id="aclassbio_1_1bitcompressed__vector_html"><div class="ttname"><a href="classbio_1_1bitcompressed__vector.html">bio::bitcompressed_vector</a></div><div class="ttdoc">A space-optimised version of std::vector that compresses multiple letters into a single byte.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:67</div></div>
-<div class="ttc" id="aclassbio_1_1bitcompressed__vector_html_a295bd19be040cbdfbd7d02c02608da20"><div class="ttname"><a href="classbio_1_1bitcompressed__vector.html#a295bd19be040cbdfbd7d02c02608da20">bio::bitcompressed_vector::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdoc">Returns the number of elements in the container, i.e. std::distance(begin(), end()).</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:573</div></div>
-<div class="ttc" id="aclassbio_1_1bitcompressed__vector_html_abab72f3bf702d164dacfac0b529895cf"><div class="ttname"><a href="classbio_1_1bitcompressed__vector.html#abab72f3bf702d164dacfac0b529895cf">bio::bitcompressed_vector::resize</a></div><div class="ttdeci">void resize(size_type const count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:920</div></div>
-<div class="ttc" id="adna4_8hpp_html"><div class="ttname"><a href="dna4_8hpp.html">dna4.hpp</a></div><div class="ttdoc">Provides bio::dna4, container aliases and string literals.</div></div>
-<div class="ttc" id="agroup__core__type__pack_html_ga35ffe876c3764d626e1d6fe3497a50f9"><div class="ttname"><a href="group__core__type__pack.html#ga35ffe876c3764d626e1d6fe3497a50f9">bio::pack_traits::size</a></div><div class="ttdeci">constexpr size_t size</div><div class="ttdoc">The size of a type pack.</div><div class="ttdef"><b>Definition:</b> traits.hpp:152</div></div>
+<div class="ttc" id="abitcompressed__vector_8hpp_html"><div class="ttname"><a href="bitcompressed__vector_8hpp.html">bitcompressed_vector.hpp</a></div><div class="ttdoc">Provides bio::ranges::bitcompressed_vector.</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html">bio::ranges::bitcompressed_vector</a></div><div class="ttdoc">A space-optimised version of std::vector that compresses multiple letters into a single byte.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:65</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html_adbe78383a80dbea78c8ebff90b0418bd"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html#adbe78383a80dbea78c8ebff90b0418bd">bio::ranges::bitcompressed_vector::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdoc">Returns the number of elements in the container, i.e. std::distance(begin(), end()).</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:598</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html_ae3db14b9b3603a07c472ffafca66e7d8"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html#ae3db14b9b3603a07c472ffafca66e7d8">bio::ranges::bitcompressed_vector::resize</a></div><div class="ttdeci">void resize(size_type const count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:931</div></div>
+<div class="ttc" id="adna4_8hpp_html"><div class="ttname"><a href="dna4_8hpp.html">dna4.hpp</a></div><div class="ttdoc">Provides bio::alphabet::dna4, container aliases and string literals.</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:628</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
 </div><!-- fragment -->  </details> </div>  </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -416,7 +417,7 @@ The bitcompressed vector</h2>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

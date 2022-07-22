@@ -1,7 +1,7 @@
 var classbio_1_1aa10li =
 [
     [ "char_type", "classbio_1_1aa10li.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1aa10li.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1aa10li.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "aa10li", "classbio_1_1aa10li.html#a8d0cc9460e8f1aaf07e7c096a429e451", null ],
     [ "aa10li", "classbio_1_1aa10li.html#a1cf1093833aa63afad8551a9773d70b9", null ],
     [ "aa10li", "classbio_1_1aa10li.html#a585102c796476114cb747a3971f1967a", null ],

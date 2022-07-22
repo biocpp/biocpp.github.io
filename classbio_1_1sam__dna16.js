@@ -1,7 +1,7 @@
 var classbio_1_1sam__dna16 =
 [
     [ "char_type", "classbio_1_1sam__dna16.html#a9934c83725128fc1cde969618f2b4f66", null ],
-    [ "rank_type", "classbio_1_1sam__dna16.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1sam__dna16.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "sam_dna16", "classbio_1_1sam__dna16.html#ad90a57de2388bd1dad8c3a43b21cf08f", null ],
     [ "sam_dna16", "classbio_1_1sam__dna16.html#a76d30ed01c6e416317b756d1d024d5b7", null ],
     [ "sam_dna16", "classbio_1_1sam__dna16.html#a9dd7accb146c3cbd665a4331efb272d2", null ],

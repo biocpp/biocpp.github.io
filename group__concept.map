@@ -1,4 +1,4 @@
 <map id="Concept" name="Concept">
-<area shape="rect" id="node1" title="Additional concepts that are not specific to a BioC++ module." alt="" coords="108,5,183,31"/>
-<area shape="rect" id="node2" href="$group__core.html" title="Provides core functionality used by multiple modules." alt="" coords="5,5,60,31"/>
+<area shape="rect" id="node1" href="$group__meta.html" title="Provides metaprogramming utilities, concepts and some helper classes." alt="" coords="5,5,60,31"/>
+<area shape="rect" id="node2" title="Additional concepts that are not specific to a BioC++ module." alt="" coords="108,5,183,31"/>
 </map>

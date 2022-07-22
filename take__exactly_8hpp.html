@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('take__exactly_8hpp.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Provides <a class="el" href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a" title="A view adaptor that returns the first size elements from the underlying range (or less if the underly...">bio::views::take_exactly</a> and <a class="el" href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8" title="A view adaptor that returns the first size elements from the underlying range and also exposes size i...">bio::views::take_exactly_or_throw</a>.  
+<p>Provides bio::views::take_exactly and bio::views::take_exactly_or_throw.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="take_8hpp_source.html">bio/ranges/views/take.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -110,14 +110,16 @@ $(document).ready(function(){initNavTree('take__exactly_8hpp.html',''); initResi
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="take__exactly_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="take__exactly_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="take__exactly_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="take__exactly_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div>
 <p><a href="take__exactly_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -127,22 +129,25 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacebio_1_1views"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1views.html">bio::views</a></td></tr>
-<tr class="memdesc:namespacebio_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BioC++ namespace for views. <br /></td></tr>
+<tr class="memitem:namespacebio_1_1ranges"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges.html">bio::ranges</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Ranges module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1ranges_1_1views"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BioC++ namespace for views. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">General purpose views</div></td></tr>
-<tr class="memitem:ga5e99d3187123f9d9815a8ecd3cc1349a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a">bio::views::take_exactly</a></td></tr>
-<tr class="memdesc:ga5e99d3187123f9d9815a8ecd3cc1349a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that returns the first <code>size</code> elements from the underlying range (or less if the underlying range is shorter); also provides size information.  <a href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a">More...</a><br /></td></tr>
-<tr class="separator:ga5e99d3187123f9d9815a8ecd3cc1349a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3107ccfc70b898636e1941ca8c33fa8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8">bio::views::take_exactly_or_throw</a></td></tr>
-<tr class="memdesc:gac3107ccfc70b898636e1941ca8c33fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that returns the first <code>size</code> elements from the underlying range and also exposes size information; throws if the underlying range is smaller than <code>size</code>.  <a href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8">More...</a><br /></td></tr>
-<tr class="separator:gac3107ccfc70b898636e1941ca8c33fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8efd1287811681bb9f29d4e81eddba98"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__views.html#ga8efd1287811681bb9f29d4e81eddba98">bio::ranges::views::take_exactly</a></td></tr>
+<tr class="memdesc:ga8efd1287811681bb9f29d4e81eddba98"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that returns the first <code>size</code> elements from the underlying range (or less if the underlying range is shorter); also provides size information.  <a href="group__views.html#ga8efd1287811681bb9f29d4e81eddba98">More...</a><br /></td></tr>
+<tr class="separator:ga8efd1287811681bb9f29d4e81eddba98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8deef4f62cd72719276067efcdb0ade6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__views.html#ga8deef4f62cd72719276067efcdb0ade6">bio::ranges::views::take_exactly_or_throw</a></td></tr>
+<tr class="memdesc:ga8deef4f62cd72719276067efcdb0ade6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that returns the first <code>size</code> elements from the underlying range and also exposes size information; throws if the underlying range is smaller than <code>size</code>.  <a href="group__views.html#ga8deef4f62cd72719276067efcdb0ade6">More...</a><br /></td></tr>
+<tr class="separator:ga8deef4f62cd72719276067efcdb0ade6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides <a class="el" href="group__views.html#ga5e99d3187123f9d9815a8ecd3cc1349a" title="A view adaptor that returns the first size elements from the underlying range (or less if the underly...">bio::views::take_exactly</a> and <a class="el" href="group__views.html#gac3107ccfc70b898636e1941ca8c33fa8" title="A view adaptor that returns the first size elements from the underlying range and also exposes size i...">bio::views::take_exactly_or_throw</a>. </p>
+<div class="textblock"><p>Provides bio::views::take_exactly and bio::views::take_exactly_or_throw. </p>
 <dl class="section author"><dt>Author</dt><dd>Hannes Hauswedell &lt;hannes.hauswedell AT decode.is&gt; </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -153,7 +158,7 @@ Variables</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="take__exactly_8hpp.html">take_exactly.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

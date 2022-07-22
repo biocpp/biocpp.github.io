@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -99,7 +99,8 @@ $(document).ready(function(){initNavTree('basic_8hpp.html',''); initResizable();
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">basic.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -115,34 +116,42 @@ $(document).ready(function(){initNavTree('basic_8hpp.html',''); initResizable();
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="basic_8hpp__incl.svg" width="422" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="basic_8hpp__incl.svg" width="422" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="basic_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="basic_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div>
 <p><a href="basic_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1is__constexpr__default__constructible.html">bio::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context.  <a href="structbio_1_1is__constexpr__default__constructible.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1deferred__type.html">bio::meta::deferred_type&lt; t, dependent_ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type identity; further arguments are ignored, but can make this type dependent if they are.  <a href="structbio_1_1meta_1_1deferred__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1is__constexpr__default__constructible_3_01t_01_4.html">bio::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> specialisation).  <a href="structbio_1_1is__constexpr__default__constructible_3_01t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">bio::meta::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context.  <a href="structbio_1_1meta_1_1is__constexpr__default__constructible.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1remove__rvalue__reference.html">bio::remove_rvalue_reference&lt; t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved.  <a href="structbio_1_1remove__rvalue__reference.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1is__constexpr__default__constructible_3_01t_01_4.html">bio::meta::is_constexpr_default_constructible&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a type <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_default_constructible</a> in <code>constexpr</code>-context (<a class="el" href="interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type.">unary_type_trait</a> specialisation).  <a href="structbio_1_1meta_1_1is__constexpr__default__constructible_3_01t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1meta_1_1remove__rvalue__reference.html">bio::meta::remove_rvalue_reference&lt; t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved.  <a href="structbio_1_1meta_1_1remove__rvalue__reference.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1meta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1meta.html">bio::meta</a></td></tr>
+<tr class="memdesc:namespacebio_1_1meta"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Meta module's namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -157,14 +166,25 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#gab8e5eb46ed6e09e2ea4719789f8c5467">bio::remove_cvref_t</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cv.html">std::remove_cv_t</a>&lt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference_t</a>&lt; t &gt; &gt;</td></tr>
-<tr class="memdesc:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>const</code>, <code>volatile</code> and references removed (type trait).  <a href="group__type__traits.html#gab8e5eb46ed6e09e2ea4719789f8c5467">More...</a><br /></td></tr>
-<tr class="separator:gab8e5eb46ed6e09e2ea4719789f8c5467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga383091370276ddc1b050b69bee6a7b03"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:ga383091370276ddc1b050b69bee6a7b03"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">bio::remove_rvalue_reference_t</a> = typename remove_rvalue_reference&lt; t &gt;::type</td></tr>
-<tr class="memdesc:ga383091370276ddc1b050b69bee6a7b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved (<a class="el" href="interfacebio_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga383091370276ddc1b050b69bee6a7b03">More...</a><br /></td></tr>
-<tr class="separator:ga383091370276ddc1b050b69bee6a7b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90bec324285fadb8b41143652e2893f4"><td class="memTemplParams" colspan="2">template&lt;typename t , typename... dependent_ts&gt; </td></tr>
+<tr class="memitem:ga90bec324285fadb8b41143652e2893f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">bio::meta::deferred_type_t</a> = typename deferred_type&lt; t, dependent_ts... &gt;::type</td></tr>
+<tr class="memdesc:ga90bec324285fadb8b41143652e2893f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type identity; further arguments are ignored, but can make this type dependent if they are (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">More...</a><br /></td></tr>
+<tr class="separator:ga90bec324285fadb8b41143652e2893f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f9e56cdae87e43f5e69ab747256fa31"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga7f9e56cdae87e43f5e69ab747256fa31">bio::meta::ignore_t</a> = <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt; decltype(std::ignore)&gt;</td></tr>
+<tr class="memdesc:ga7f9e56cdae87e43f5e69ab747256fa31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of std::ignore with <code>const</code>, <code>volatile</code> and references removed (type trait). <br /></td></tr>
+<tr class="separator:ga7f9e56cdae87e43f5e69ab747256fa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0faf63d047d9a79898eb572fb8affc36"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga0faf63d047d9a79898eb572fb8affc36"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">bio::meta::remove_rvalue_reference_t</a> = typename remove_rvalue_reference&lt; t &gt;::type</td></tr>
+<tr class="memdesc:ga0faf63d047d9a79898eb572fb8affc36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input type with <code>&amp;&amp;</code> removed, but lvalue references preserved (<a class="el" href="interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait.">transformation_trait</a> shortcut).  <a href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">More...</a><br /></td></tr>
+<tr class="separator:ga0faf63d047d9a79898eb572fb8affc36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga49bc6efb0b62be81546f939b2efd7272"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga49bc6efb0b62be81546f939b2efd7272"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">bio::meta::decays_to_ignore_v</a> = std::is_same_v&lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;t&gt;, ignore_t&gt;</td></tr>
+<tr class="memdesc:ga49bc6efb0b62be81546f939b2efd7272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the input type with <code>const</code>, <code>volatile</code> and references removed is std::ignore's type. (type trait).  <a href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">More...</a><br /></td></tr>
+<tr class="separator:ga49bc6efb0b62be81546f939b2efd7272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides various type traits on generic types. </p>
@@ -178,7 +198,7 @@ Typedefs</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_33e551785948eac87ac89df08586a1e6.html">type_traits</a></li><li class="navelem"><a class="el" href="basic_8hpp.html">basic.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

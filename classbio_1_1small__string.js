@@ -1,11 +1,11 @@
 var classbio_1_1small__string =
 [
     [ "const_iterator", "classbio_1_1small__string.html#a60e61d9e072cf2297348d1236059051b", null ],
-    [ "const_reference", "classbio_1_1small__string.html#afa9ccd5d12c59b7ba690c4b0e171c35c", null ],
+    [ "const_reference", "classbio_1_1small__string.html#a1dc07e19f49da2cb60ee8132a3a62a01", null ],
     [ "difference_type", "classbio_1_1small__string.html#ab9b0deec96ffd6a5220fa0f0d94b4d70", null ],
     [ "iterator", "classbio_1_1small__string.html#a3bf34403e95c10cadfdb3f8c533bc01a", null ],
     [ "reference", "classbio_1_1small__string.html#a5d7d97428cefb29b5446b08d5cffca23", null ],
-    [ "size_type", "classbio_1_1small__string.html#ae46a920425232dd97a408707ef6a8676", null ],
+    [ "size_type", "classbio_1_1small__string.html#a17617f2388057fcde737e0e1253ab161", null ],
     [ "value_type", "classbio_1_1small__string.html#a9da6b33bf009e04a1a11eaa81adeb8f2", null ],
     [ "small_string", "classbio_1_1small__string.html#a437dc9ba5d2a9977c94280190f6205ac", null ],
     [ "small_string", "classbio_1_1small__string.html#af305236f4d86deb734c503c62ab5f0bd", null ],

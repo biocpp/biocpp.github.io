@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -106,28 +106,30 @@ $(document).ready(function(){initNavTree('aliases_8hpp.html',''); initResizable(
 <p>Provides aliases for qualified.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="alphabet_2concept_8hpp_source.html">bio/alphabet/concept.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dna15_8hpp_source.html">bio/alphabet/nucleotide/dna15.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dna4_8hpp_source.html">bio/alphabet/nucleotide/dna4.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dna5_8hpp_source.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rna15_8hpp_source.html">bio/alphabet/nucleotide/rna15.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rna4_8hpp_source.html">bio/alphabet/nucleotide/rna4.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="rna5_8hpp_source.html">bio/alphabet/nucleotide/rna5.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="alphabet_2quality_2concept_8hpp_source.html">bio/alphabet/quality/concept.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="phred42_8hpp_source.html">bio/alphabet/quality/phred42.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="qualified_8hpp_source.html">bio/alphabet/quality/qualified.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dna4_8hpp_source.html">bio/alphabet/nucleotide/dna4.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dna5_8hpp_source.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="dna15_8hpp_source.html">bio/alphabet/nucleotide/dna15.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rna4_8hpp_source.html">bio/alphabet/nucleotide/rna4.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rna5_8hpp_source.html">bio/alphabet/nucleotide/rna5.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="rna15_8hpp_source.html">bio/alphabet/nucleotide/rna15.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for aliases.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="aliases_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="aliases_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="aliases_8hpp__dep__incl.svg" width="163" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="aliases_8hpp__dep__incl.svg" width="163" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="aliases_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -137,33 +139,36 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1alphabet"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html">bio::alphabet</a></td></tr>
+<tr class="memdesc:namespacebio_1_1alphabet"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alphabet module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a73d74c4ac85d4eb157d4249df159aeb7"><td class="memItemLeft" align="right" valign="top"><a id="a73d74c4ac85d4eb157d4249df159aeb7"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html#a73d74c4ac85d4eb157d4249df159aeb7">bio::dna15q</a> = <a class="el" href="classbio_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; dna15, phred42 &gt;</td></tr>
-<tr class="memdesc:a73d74c4ac85d4eb157d4249df159aeb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1dna15.html" title="The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap.">bio::dna15</a> letter and an <a class="el" href="classbio_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet.">bio::qualified</a> letter at each position. <br /></td></tr>
-<tr class="separator:a73d74c4ac85d4eb157d4249df159aeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d149548e4ae46ac5c32e3775254bc9"><td class="memItemLeft" align="right" valign="top"><a id="af4d149548e4ae46ac5c32e3775254bc9"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html#af4d149548e4ae46ac5c32e3775254bc9">bio::dna4q</a> = <a class="el" href="classbio_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; dna4, phred42 &gt;</td></tr>
-<tr class="memdesc:af4d149548e4ae46ac5c32e3775254bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::dna4</a> letter and an <a class="el" href="classbio_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::phred42</a> letter at each position. <br /></td></tr>
-<tr class="separator:af4d149548e4ae46ac5c32e3775254bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3344c99536ece6ad01678fd1a1f55e9b"><td class="memItemLeft" align="right" valign="top"><a id="a3344c99536ece6ad01678fd1a1f55e9b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html#a3344c99536ece6ad01678fd1a1f55e9b">bio::dna5q</a> = <a class="el" href="classbio_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; dna5, phred42 &gt;</td></tr>
-<tr class="memdesc:a3344c99536ece6ad01678fd1a1f55e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.">bio::dna5</a> letter and an <a class="el" href="classbio_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::phred42</a> letter at each position. <br /></td></tr>
-<tr class="separator:a3344c99536ece6ad01678fd1a1f55e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49cd09b22216b7cca8b73c8cce389b48"><td class="memItemLeft" align="right" valign="top"><a id="a49cd09b22216b7cca8b73c8cce389b48"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html#a49cd09b22216b7cca8b73c8cce389b48">bio::rna15q</a> = <a class="el" href="classbio_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; rna15, phred42 &gt;</td></tr>
-<tr class="memdesc:a49cd09b22216b7cca8b73c8cce389b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1rna15.html" title="The 15 letter RNA alphabet, containing all IUPAC smybols minus the gap.">bio::rna15</a> letter and an <a class="el" href="classbio_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet.">bio::qualified</a> letter at each position. <br /></td></tr>
-<tr class="separator:a49cd09b22216b7cca8b73c8cce389b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc5569f53d1ec54061c2d68e9514736"><td class="memItemLeft" align="right" valign="top"><a id="a1cc5569f53d1ec54061c2d68e9514736"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html#a1cc5569f53d1ec54061c2d68e9514736">bio::rna4q</a> = <a class="el" href="classbio_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; rna4, phred42 &gt;</td></tr>
-<tr class="memdesc:a1cc5569f53d1ec54061c2d68e9514736"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1rna4.html" title="The four letter RNA alphabet of A,C,G,U.">bio::rna4</a> letter and an <a class="el" href="classbio_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::phred42</a> letter at each position. <br /></td></tr>
-<tr class="separator:a1cc5569f53d1ec54061c2d68e9514736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb30eea26ab0450e011444d162255d56"><td class="memItemLeft" align="right" valign="top"><a id="abb30eea26ab0450e011444d162255d56"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html#abb30eea26ab0450e011444d162255d56">bio::rna5q</a> = <a class="el" href="classbio_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; rna5, phred42 &gt;</td></tr>
-<tr class="memdesc:abb30eea26ab0450e011444d162255d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1rna5.html" title="The five letter RNA alphabet of A,C,G,U and the unknown character N.">bio::rna5</a> letter and an <a class="el" href="classbio_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::phred42</a> letter at each position. <br /></td></tr>
-<tr class="separator:abb30eea26ab0450e011444d162255d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5e656ee1491695573c945efa713a95d"><td class="memItemLeft" align="right" valign="top"><a id="ad5e656ee1491695573c945efa713a95d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html#ad5e656ee1491695573c945efa713a95d">bio::alphabet::dna15q</a> = <a class="el" href="classbio_1_1alphabet_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; dna15, phred42 &gt;</td></tr>
+<tr class="memdesc:ad5e656ee1491695573c945efa713a95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1alphabet_1_1dna15.html" title="The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap.">bio::alphabet::dna15</a> letter and an <a class="el" href="classbio_1_1alphabet_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet.">bio::alphabet::qualified</a> letter at each position. <br /></td></tr>
+<tr class="separator:ad5e656ee1491695573c945efa713a95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee3aa5dc0944a8c475a5be966eb4b389"><td class="memItemLeft" align="right" valign="top"><a id="aee3aa5dc0944a8c475a5be966eb4b389"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html#aee3aa5dc0944a8c475a5be966eb4b389">bio::alphabet::dna4q</a> = <a class="el" href="classbio_1_1alphabet_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; dna4, phred42 &gt;</td></tr>
+<tr class="memdesc:aee3aa5dc0944a8c475a5be966eb4b389"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::alphabet::dna4</a> letter and an <a class="el" href="classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::alphabet::phred42</a> letter at each position. <br /></td></tr>
+<tr class="separator:aee3aa5dc0944a8c475a5be966eb4b389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fb9b7d161113029421a7e0d559b6f6"><td class="memItemLeft" align="right" valign="top"><a id="a75fb9b7d161113029421a7e0d559b6f6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html#a75fb9b7d161113029421a7e0d559b6f6">bio::alphabet::dna5q</a> = <a class="el" href="classbio_1_1alphabet_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; dna5, phred42 &gt;</td></tr>
+<tr class="memdesc:a75fb9b7d161113029421a7e0d559b6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1alphabet_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.">bio::alphabet::dna5</a> letter and an <a class="el" href="classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::alphabet::phred42</a> letter at each position. <br /></td></tr>
+<tr class="separator:a75fb9b7d161113029421a7e0d559b6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3025f9f9c14e04ca2532df256e0a2d3a"><td class="memItemLeft" align="right" valign="top"><a id="a3025f9f9c14e04ca2532df256e0a2d3a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html#a3025f9f9c14e04ca2532df256e0a2d3a">bio::alphabet::rna15q</a> = <a class="el" href="classbio_1_1alphabet_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; rna15, phred42 &gt;</td></tr>
+<tr class="memdesc:a3025f9f9c14e04ca2532df256e0a2d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1alphabet_1_1rna15.html" title="The 15 letter RNA alphabet, containing all IUPAC smybols minus the gap.">bio::alphabet::rna15</a> letter and an <a class="el" href="classbio_1_1alphabet_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet.">bio::alphabet::qualified</a> letter at each position. <br /></td></tr>
+<tr class="separator:a3025f9f9c14e04ca2532df256e0a2d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae752183f71604cbe30e27c9fdaf7a2a5"><td class="memItemLeft" align="right" valign="top"><a id="ae752183f71604cbe30e27c9fdaf7a2a5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html#ae752183f71604cbe30e27c9fdaf7a2a5">bio::alphabet::rna4q</a> = <a class="el" href="classbio_1_1alphabet_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; rna4, phred42 &gt;</td></tr>
+<tr class="memdesc:ae752183f71604cbe30e27c9fdaf7a2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1alphabet_1_1rna4.html" title="The four letter RNA alphabet of A,C,G,U.">bio::alphabet::rna4</a> letter and an <a class="el" href="classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::alphabet::phred42</a> letter at each position. <br /></td></tr>
+<tr class="separator:ae752183f71604cbe30e27c9fdaf7a2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310d5422eb8f67cb0b1ef07b7786e9d6"><td class="memItemLeft" align="right" valign="top"><a id="a310d5422eb8f67cb0b1ef07b7786e9d6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html#a310d5422eb8f67cb0b1ef07b7786e9d6">bio::alphabet::rna5q</a> = <a class="el" href="classbio_1_1alphabet_1_1qualified.html#a766054fe09be32310d2929f2460f857c">qualified</a>&lt; rna5, phred42 &gt;</td></tr>
+<tr class="memdesc:a310d5422eb8f67cb0b1ef07b7786e9d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alphabet that stores a <a class="el" href="classbio_1_1alphabet_1_1rna5.html" title="The five letter RNA alphabet of A,C,G,U and the unknown character N.">bio::alphabet::rna5</a> letter and an <a class="el" href="classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">bio::alphabet::phred42</a> letter at each position. <br /></td></tr>
+<tr class="separator:a310d5422eb8f67cb0b1ef07b7786e9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides aliases for qualified. </p>
@@ -177,7 +182,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_07786875644ed6de5ede0ed8dee13bbe.html">quality</a></li><li class="navelem"><a class="el" href="aliases_8hpp.html">aliases.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

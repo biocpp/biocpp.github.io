@@ -1,7 +1,7 @@
 <map id="bio/alphabet/nucleotide/dna5.hpp" name="bio/alphabet/nucleotide/dna5.hpp">
-<area shape="rect" id="node1" title="Provides bio::dna5, container aliases and string literals." alt="" coords="184,5,359,47"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::dna5, container aliases and string literals." alt="" coords="184,5,359,47"/>
 <area shape="rect" id="node2" href="$alphabet_2nucleotide_2all_8hpp.html" title="Meta&#45;header for the nucleotide submodule; includes all headers from alphabet/nucleotide/." alt="" coords="5,184,180,225"/>
-<area shape="rect" id="node4" href="$rna5_8hpp.html" title="Provides bio::rna5, container aliases and string literals." alt="" coords="121,95,296,136"/>
+<area shape="rect" id="node4" href="$rna5_8hpp.html" title="Provides bio::alphabet::rna5, container aliases and string literals." alt="" coords="121,95,296,136"/>
 <area shape="rect" id="node5" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="205,184,357,225"/>
 <area shape="rect" id="node7" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="371,102,593,129"/>
 <area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="111,363,261,389"/>

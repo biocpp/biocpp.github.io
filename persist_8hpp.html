@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -102,30 +102,31 @@ $(document).ready(function(){initNavTree('persist_8hpp.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Provides <a class="el" href="group__views.html#ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f" title="A view adaptor that wraps rvalue references of non-views.">bio::views::persist</a>.  
+<p>Provides bio::views::persist.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/algorithm.html">algorithm</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="iterator_8hpp_source.html">bio/meta/type_traits/iterator.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="range_8hpp_source.html">bio/meta/type_traits/range.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="transformation__trait__or_8hpp_source.html">bio/meta/type_traits/transformation_trait_or.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ranges_2concept_8hpp_source.html">bio/ranges/concept.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ranges_2container_2concept_8hpp_source.html">bio/ranges/container/concept.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="type__traits_8hpp_source.html">bio/ranges/type_traits.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ranges_2views_2detail_8hpp_source.html">bio/ranges/views/detail.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for persist.hpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="persist_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="persist_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="persist_8hpp__dep__incl.svg" width="371" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="persist_8hpp__dep__incl.svg" width="371" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="persist_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -135,19 +136,22 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacebio_1_1views"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1views.html">bio::views</a></td></tr>
-<tr class="memdesc:namespacebio_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BioC++ namespace for views. <br /></td></tr>
+<tr class="memitem:namespacebio_1_1ranges"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges.html">bio::ranges</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Ranges module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1ranges_1_1views"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BioC++ namespace for views. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">General purpose views</div></td></tr>
-<tr class="memitem:ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__views.html#ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f">bio::views::persist</a></td></tr>
-<tr class="memdesc:ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that wraps rvalue references of non-views.  <a href="group__views.html#ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f">More...</a><br /></td></tr>
-<tr class="separator:ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63d50200e061a9ff75edd2664ad1c905"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__views.html#ga63d50200e061a9ff75edd2664ad1c905">bio::ranges::views::persist</a></td></tr>
+<tr class="memdesc:ga63d50200e061a9ff75edd2664ad1c905"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that wraps rvalue references of non-views.  <a href="group__views.html#ga63d50200e061a9ff75edd2664ad1c905">More...</a><br /></td></tr>
+<tr class="separator:ga63d50200e061a9ff75edd2664ad1c905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides <a class="el" href="group__views.html#ga076d1bc99cbd0ea8fcc5e6b2fbd27d2f" title="A view adaptor that wraps rvalue references of non-views.">bio::views::persist</a>. </p>
+<div class="textblock"><p>Provides bio::views::persist. </p>
 <dl class="section author"><dt>Author</dt><dd>Hannes Hauswedell &lt;hannes.hauswedell AT decode.is&gt; </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -158,7 +162,7 @@ Variables</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="persist_8hpp.html">persist.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

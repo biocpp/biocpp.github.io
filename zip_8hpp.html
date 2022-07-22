@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -103,9 +103,10 @@ $(document).ready(function(){initNavTree('zip_8hpp.html',''); initResizable(); }
 </div><!--header-->
 <div class="contents">
 
-<p>Provides <a class="el" href="namespacebio_1_1views.html#aa5a3781a3ea887adca74eabf8a49a332" title="A view adaptor that produces a tuple-like value of all passed views.">bio::views::zip</a>.  
+<p>Provides bio::views::zip.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/algorithm.html">algorithm</a>&gt;</code><br />
+<code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/functional.html">functional</a>&gt;</code><br />
 <code>#include &lt;<a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="ranges_2views_2detail_8hpp_source.html">bio/ranges/views/detail.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -113,7 +114,8 @@ $(document).ready(function(){initNavTree('zip_8hpp.html',''); initResizable(); }
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="zip_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="zip_8hpp__incl.svg" width="612" height="426"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="zip_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -123,18 +125,21 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacebio_1_1views"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1views.html">bio::views</a></td></tr>
-<tr class="memdesc:namespacebio_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BioC++ namespace for views. <br /></td></tr>
+<tr class="memitem:namespacebio_1_1ranges"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges.html">bio::ranges</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Ranges module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1ranges_1_1views"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges_1_1views.html">bio::ranges::views</a></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">The BioC++ namespace for views. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa5a3781a3ea887adca74eabf8a49a332"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1views.html#aa5a3781a3ea887adca74eabf8a49a332">bio::views::zip</a> = bio::detail::zip_fn{}</td></tr>
-<tr class="memdesc:aa5a3781a3ea887adca74eabf8a49a332"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that produces a tuple-like value of all passed views.  <a href="namespacebio_1_1views.html#aa5a3781a3ea887adca74eabf8a49a332">More...</a><br /></td></tr>
-<tr class="separator:aa5a3781a3ea887adca74eabf8a49a332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270adbe5daef90484e7b66a4c2cd4c30"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges_1_1views.html#a270adbe5daef90484e7b66a4c2cd4c30">bio::ranges::views::zip</a> = detail::zip_fn{}</td></tr>
+<tr class="memdesc:a270adbe5daef90484e7b66a4c2cd4c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view adaptor that produces a tuple-like value of all passed views.  <a href="namespacebio_1_1ranges_1_1views.html#a270adbe5daef90484e7b66a4c2cd4c30">More...</a><br /></td></tr>
+<tr class="separator:a270adbe5daef90484e7b66a4c2cd4c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides <a class="el" href="namespacebio_1_1views.html#aa5a3781a3ea887adca74eabf8a49a332" title="A view adaptor that produces a tuple-like value of all passed views.">bio::views::zip</a>. </p>
+<div class="textblock"><p>Provides bio::views::zip. </p>
 <dl class="section author"><dt>Author</dt><dd>Enrico Seiler &lt;enrico.seiler AT fu-berlin.de&gt; </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -145,7 +150,7 @@ Variables</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="zip_8hpp.html">zip.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -113,19 +113,22 @@ $(document).ready(function(){initNavTree('meta_2type__traits_2concept_8hpp_sourc
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="platform_8hpp.html">bio/meta/platform.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1meta.html">bio::meta</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;concept <a class="code" href="interfacebio_1_1transformation__trait.html">transformation_trait</a> = requires { <span class="keyword">typename</span> t::type; };</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;concept <a class="code" href="interfacebio_1_1unary__type__trait.html">unary_type_trait</a> = std::is_base_of_v&lt;std::integral_constant&lt;typename t::value_type, t::value&gt;, t&gt;;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace bio</span></div>
-<div class="ttc" id="ainterfacebio_1_1transformation__trait_html"><div class="ttname"><a href="interfacebio_1_1transformation__trait.html">transformation_trait</a></div><div class="ttdoc">Concept for a transformation trait.</div></div>
-<div class="ttc" id="ainterfacebio_1_1unary__type__trait_html"><div class="ttname"><a href="interfacebio_1_1unary__type__trait.html">unary_type_trait</a></div><div class="ttdoc">Concept for a unary traits type.</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;concept <a class="code" href="interfacebio_1_1meta_1_1transformation__trait.html">transformation_trait</a> = requires</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">typename</span> t::type;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;concept <a class="code" href="interfacebio_1_1meta_1_1unary__type__trait.html">unary_type_trait</a> = std::is_base_of_v&lt;std::integral_constant&lt;typename t::value_type, t::value&gt;, t&gt;;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace bio::meta</span></div>
+<div class="ttc" id="ainterfacebio_1_1meta_1_1transformation__trait_html"><div class="ttname"><a href="interfacebio_1_1meta_1_1transformation__trait.html">transformation_trait</a></div><div class="ttdoc">Concept for a transformation trait.</div></div>
+<div class="ttc" id="ainterfacebio_1_1meta_1_1unary__type__trait_html"><div class="ttname"><a href="interfacebio_1_1meta_1_1unary__type__trait.html">unary_type_trait</a></div><div class="ttdoc">Concept for a unary traits type.</div></div>
+<div class="ttc" id="anamespacebio_1_1meta_html"><div class="ttname"><a href="namespacebio_1_1meta.html">bio::meta</a></div><div class="ttdoc">The Meta module's namespace.</div></div>
 <div class="ttc" id="aplatform_8hpp_html"><div class="ttname"><a href="platform_8hpp.html">platform.hpp</a></div><div class="ttdoc">Provides platform and dependency checks.</div></div>
 <div class="ttc" id="atype_traits_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -137,7 +140,7 @@ $(document).ready(function(){initNavTree('meta_2type__traits_2concept_8hpp_sourc
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_33e551785948eac87ac89df08586a1e6.html">type_traits</a></li><li class="navelem"><a class="el" href="meta_2type__traits_2concept_8hpp.html">concept.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

@@ -128,6 +128,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
 <tr class="memdesc:namespacebio"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main BioC++ namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacebio_1_1meta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1meta.html">bio::meta</a></td></tr>
+<tr class="memdesc:namespacebio_1_1meta"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Meta module's namespace. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -166,16 +169,15 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                                                                          \</div>
 <div class="line">template &lt;<span class="keyword">typename</span> t, <span class="keyword">typename</span> ...arg_ts&gt;                                                                            \</div>
-<div class="line">static constexpr decltype(<span class="keyword">auto</span>) impl(<a class="code" href="namespacebio.html">bio</a>::detail::priority_tag&lt;PRIO&gt;,                                             \</div>
+<div class="line">static constexpr decltype(<span class="keyword">auto</span>) impl(meta::detail::priority_tag&lt;PRIO&gt;,                                               \</div>
 <div class="line">                                     [[maybe_unused]] t &amp;&amp; v,                                                        \</div>
 <div class="line">                                     [[maybe_unused]] arg_ts &amp;&amp; ... args)                                            \</div>
 <div class="line">    noexcept(noexcept(TERM))                                                                                         \</div>
-<div class="line">    requires requires (<a class="code" href="namespacebio.html">bio</a>::detail::priority_tag&lt;PRIO&gt; const &amp;<span class="comment">/*&lt;- need for doxygen*/</span>, t &amp;&amp; v, arg_ts &amp;&amp; ... args)\</div>
-<div class="line">    { { TERM }; }                                                                                                    \</div>
+<div class="line">    requires (requires (meta::detail::priority_tag&lt;PRIO&gt; const &amp;<span class="comment">/*&lt;- need for doxygen*/</span>, t &amp;&amp; v, arg_ts &amp;&amp; ... args) \</div>
+<div class="line">    { { TERM }; })                                                                                                   \</div>
 <div class="line">{                                                                                                                    \</div>
 <div class="line">    return TERM;                                                                                                     \</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
 </div><!-- fragment -->
 <p>A macro that helps defining the overload set of a customisation point. </p>
 
@@ -190,7 +192,7 @@ Macros</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_9195b182a8db98b0a6ba2a764d2c92e3.html">detail</a></li><li class="navelem"><a class="el" href="customisation__point_8hpp.html">customisation_point.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Tue Jul 5 2022 17:09:15 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

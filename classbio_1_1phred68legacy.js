@@ -2,7 +2,7 @@ var classbio_1_1phred68legacy =
 [
     [ "char_type", "classbio_1_1phred68legacy.html#a9934c83725128fc1cde969618f2b4f66", null ],
     [ "phred_type", "classbio_1_1phred68legacy.html#a8c2ef2e961edf50ab4ca7fdd28e8a15c", null ],
-    [ "rank_type", "classbio_1_1phred68legacy.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1phred68legacy.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "phred68legacy", "classbio_1_1phred68legacy.html#a6e49707ab0ab03671bd16f191229253d", null ],
     [ "phred68legacy", "classbio_1_1phred68legacy.html#aef5d9c6c6e97bb6ec9c5bd068f8212de", null ],
     [ "phred68legacy", "classbio_1_1phred68legacy.html#a428ba08dca6b194f9bb6f5c2f803d16b", null ],

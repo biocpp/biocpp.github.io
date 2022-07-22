@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -164,16 +164,17 @@ Compiling and Running</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2aminoacid_2all_8hpp.html">bio/alphabet/aminoacid/all.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fmt_8hpp.html">bio/alphabet/fmt.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_aa27;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::aa27&gt;</a> protein = <span class="stringliteral">&quot;HELLOWORLD&quot;</span>_aa27;</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::aa27&gt;</a> protein = <span class="stringliteral">&quot;HELLOWORLD&quot;</span>_aa27;</div>
 <div class="line">    fmt::print(<span class="stringliteral">&quot;{}\n&quot;</span>, protein);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aalphabet_2aminoacid_2all_8hpp_html"><div class="ttname"><a href="alphabet_2aminoacid_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the aminoacid submodule; includes all headers from alphabet/aminoacid/.</div></div>
 <div class="ttc" id="afmt_8hpp_html"><div class="ttname"><a href="fmt_8hpp.html">fmt.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p>To compile it we first create a <code>CMakeLists.txt</code> file in the <code>source</code> directory:</p>
 <div class="fragment"><div class="line">cmake_minimum_required (VERSION 3.4)</div>
@@ -224,7 +225,7 @@ Adding a new source file to your project</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

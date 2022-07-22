@@ -3,7 +3,7 @@ var classbio_1_1qualified =
     [ "char_type", "classbio_1_1qualified.html#a8a72615f8efe9eefd94b8fdbbf89a1f4", null ],
     [ "phred_type", "classbio_1_1qualified.html#abad06ebdbf064d8a687c04a5904ff7ae", null ],
     [ "quality_alphabet_type", "classbio_1_1qualified.html#afc3cbd30ec272acf49346c22ff29d0fe", null ],
-    [ "rank_type", "classbio_1_1qualified.html#a040aa76e8e3fc0e5735c4b135f302c13", null ],
+    [ "rank_type", "classbio_1_1qualified.html#a77c05b494c8fecc9b1fce43f5298a329", null ],
     [ "sequence_alphabet_type", "classbio_1_1qualified.html#aee5b2f1b2a140900eec8da2f080b01f0", null ],
     [ "qualified", "classbio_1_1qualified.html#afa2f08cdcee04786c9d0ce2c9bd7ac53", null ],
     [ "qualified", "classbio_1_1qualified.html#a63823a76f653799668572341f6ffe584", null ],

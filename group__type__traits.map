@@ -1,4 +1,4 @@
 <map id="Type Traits" name="Type Traits">
-<area shape="rect" id="node1" title="Provides various type traits and their shortcuts." alt="" coords="108,5,199,31"/>
-<area shape="rect" id="node2" href="$group__core.html" title="Provides core functionality used by multiple modules." alt="" coords="5,5,60,31"/>
+<area shape="rect" id="node1" href="$group__meta.html" title="Provides metaprogramming utilities, concepts and some helper classes." alt="" coords="5,5,60,31"/>
+<area shape="rect" id="node2" title="Provides various type traits and their shortcuts." alt="" coords="108,5,199,31"/>
 </map>

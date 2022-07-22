@@ -9,12 +9,12 @@ var dir_9b716f18bdad80f0bcc9544c5d50fede =
     [ "mask", "dir_8691929ad031f40e47dd20fa9ee00775.html", "dir_8691929ad031f40e47dd20fa9ee00775" ],
     [ "nucleotide", "dir_8142f063462841d169d3caf3917af0e7.html", "dir_8142f063462841d169d3caf3917af0e7" ],
     [ "quality", "dir_07786875644ed6de5ede0ed8dee13bbe.html", "dir_07786875644ed6de5ede0ed8dee13bbe" ],
-    [ "structure", "dir_9cdca4c819950be4f7d4fd5394481f1e.html", "dir_9cdca4c819950be4f7d4fd5394481f1e" ],
     [ "all.hpp", "alphabet_2all_8hpp.html", null ],
     [ "alphabet_base.hpp", "alphabet__base_8hpp.html", null ],
+    [ "biocpp.hpp", "alphabet_2biocpp_8hpp.html", null ],
     [ "concept.hpp", "alphabet_2concept_8hpp.html", "alphabet_2concept_8hpp" ],
     [ "exception.hpp", "exception_8hpp.html", [
-      [ "invalid_char_assignment", "structbio_1_1invalid__char__assignment.html", "structbio_1_1invalid__char__assignment" ]
+      [ "invalid_char_assignment", "structbio_1_1alphabet_1_1invalid__char__assignment.html", "structbio_1_1alphabet_1_1invalid__char__assignment" ]
     ] ],
     [ "fmt.hpp", "fmt_8hpp.html", null ],
     [ "hash.hpp", "alphabet_2hash_8hpp.html", null ]

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -164,7 +164,7 @@ Syntax variants</h2>
 <p>Depending on the complexity of your constraint statements, three different syntaxes are available to enforce constraints; all of the following are equivalent.</p>
 <p>(1) The "verbose syntax", especially useful when enforcing multiple constraints:</p>
 <div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t1, <span class="keyword">typename</span> t2&gt;</div>
-<div class="line">    requires std::integral&lt;t1&gt; &amp;&amp; std::integral&lt;t2&gt; <span class="comment">// &amp;&amp; MyOtherConcept&lt;t1&gt;</span></div>
+<div class="line">    requires (std::integral&lt;t1&gt; &amp;&amp; std::integral&lt;t2&gt;) <span class="comment">// &amp;&amp; MyOtherConcept&lt;t1&gt;</span></div>
 <div class="line"><span class="keyword">auto</span> add(t1 <span class="keyword">const</span> v1, t2 <span class="keyword">const</span> v2)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> v1 + v2;</div>
@@ -247,8 +247,7 @@ Function (template) overloading</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p> <div class="assignemnt"><h4>Assignment 1: Static polymorphism with alphabets I</h4><div class="assignment_content"> Write a small program, similar to the one above with the following "skeleton": </p><div class="fragment"><div class="line"><span class="comment">// which includes?</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_aa27;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Add one or more `void print` function template(s) here //</span></div>
 <div class="line"> </div>
@@ -256,68 +255,67 @@ Function (template) overloading</h2>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">auto</span> d = <span class="charliteral">&#39;A&#39;</span>_dna5;</div>
 <div class="line">    <span class="keyword">auto</span> a = <span class="charliteral">&#39;L&#39;</span>_aa27;</div>
-<div class="line">    <span class="keyword">auto</span> g = <a class="code" href="classbio_1_1gap.html">bio::gap</a>{};</div>
+<div class="line">    <span class="keyword">auto</span> g = <a class="code" href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a>{};</div>
 <div class="line"> </div>
 <div class="line">    print(d);</div>
 <div class="line">    print(a);</div>
 <div class="line">    print(g);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassbio_1_1gap_html"><div class="ttname"><a href="classbio_1_1gap.html">bio::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
-</div><!-- fragment --><p>The <code>print</code> function (template) should print for every object <code>v</code> passed to it the result of <code>to_char(v)</code> and it should be constrained to only accepts types that model <a class="el" href="interfacebio_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet</a>. Try calling <code>print</code> with a different type, e.g. <code>int</code> to make sure that it does.  </div></div>  <div class="solution"> <details><summary><b>Solution</b></summary>  </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span>                     <span class="comment">// for std::cout</span></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1gap_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+</div><!-- fragment --><p>The <code>print</code> function (template) should print for every object <code>v</code> passed to it the result of <code>to_char(v)</code> and it should be constrained to only accepts types that model <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>. Try calling <code>print</code> with a different type, e.g. <code>int</code> to make sure that it does.  </div></div>  <div class="solution"> <details><summary><b>Solution</b></summary>  </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span>                     <span class="comment">// for std::cout</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2all_8hpp.html">bio/alphabet/all.hpp</a>&gt;</span>      <span class="comment">// include all alphabet headers</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">template</span> &lt;bio::alphabet t&gt;</div>
+<div class="line"><span class="keyword">template</span> &lt;bio::alphabet::alphabet t&gt;</div>
 <div class="line"><span class="keywordtype">void</span> print(t <span class="keyword">const</span> v)</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;I am an alphabet and my value as char is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(v) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;I am an alphabet and my value as char is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(v) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_aa27;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">auto</span> d = <span class="charliteral">&#39;A&#39;</span>_dna5;</div>
 <div class="line">    <span class="keyword">auto</span> a = <span class="charliteral">&#39;L&#39;</span>_aa27;</div>
-<div class="line">    <span class="keyword">auto</span> g = <a class="code" href="classbio_1_1gap.html">bio::gap</a>{};</div>
+<div class="line">    <span class="keyword">auto</span> g = <a class="code" href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a>{};</div>
 <div class="line"> </div>
 <div class="line">    print(d);</div>
 <div class="line">    print(a);</div>
 <div class="line">    print(g);</div>
 <div class="line">}</div>
 <div class="ttc" id="aalphabet_2all_8hpp_html"><div class="ttname"><a href="alphabet_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the alphabet module.</div></div>
-<div class="ttc" id="agroup__alphabet_html_gab295f04aea840000aafc640b5e6528c8"><div class="ttname"><a href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:322</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
 <p> <div class="assignemnt"><h4>Assignment 2: Static polymorphism with alphabets II</h4><div class="assignment_content"> Adapt your previous solution to handle nucleotides differently from the rest. For nucleotides, it should print both the value and its complement.  </div></div>  <div class="solution"> <details><summary><b>Solution</b></summary>  </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span>                     <span class="comment">// for std::cout</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2all_8hpp.html">bio/alphabet/all.hpp</a>&gt;</span>      <span class="comment">// include all alphabet headers</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">template</span> &lt;bio::alphabet t&gt;</div>
+<div class="line"><span class="keyword">template</span> &lt;bio::alphabet::alphabet t&gt;</div>
 <div class="line"><span class="keywordtype">void</span> print(t <span class="keyword">const</span> v)</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;I am an alphabet and my value as char is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(v) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;I am an alphabet and my value as char is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(v) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">template</span> &lt;bio::nucleot<span class="keywordtype">id</span>e_alphabet t&gt;</div>
+<div class="line"><span class="keyword">template</span> &lt;bio::alphabet::nucleot<span class="keywordtype">id</span>e_alphabet t&gt;</div>
 <div class="line"><span class="keywordtype">void</span> print(t <span class="keyword">const</span> v)</div>
 <div class="line">{</div>
-<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;I am a nucleotide, my value as char is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(v)</div>
-<div class="line">              &lt;&lt; <span class="stringliteral">&quot; and my complement is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#gab295f04aea840000aafc640b5e6528c8">bio::to_char</a>(<a class="code" href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a>(v)) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">    <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;I am a nucleotide, my value as char is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(v)</div>
+<div class="line">              &lt;&lt; <span class="stringliteral">&quot; and my complement is: &quot;</span> &lt;&lt; <a class="code" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(<a class="code" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(v)) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_dna5;</div>
-<div class="line"><span class="keyword">using</span> bio::operator<span class="stringliteral">&quot;&quot;</span>_aa27;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">auto</span> d = <span class="charliteral">&#39;A&#39;</span>_dna5;</div>
 <div class="line">    <span class="keyword">auto</span> a = <span class="charliteral">&#39;L&#39;</span>_aa27;</div>
-<div class="line">    <span class="keyword">auto</span> g = <a class="code" href="classbio_1_1gap.html">bio::gap</a>{};</div>
+<div class="line">    <span class="keyword">auto</span> g = <a class="code" href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a>{};</div>
 <div class="line"> </div>
 <div class="line">    print(d);</div>
 <div class="line">    print(a);</div>
 <div class="line">    print(g);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__nucleotide_html_ga4b00de5b7d39cf416e62e14edef83f03"><div class="ttname"><a href="group__nucleotide.html#ga4b00de5b7d39cf416e62e14edef83f03">bio::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:96</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
 <h2><a class="anchor" id="autotoc_md40"></a>
 Partial template specialisation</h2>
@@ -352,9 +350,7 @@ Partial template specialisation</h2>
 <dl class="section note"><dt>Note</dt><dd>The std::same_as used above is a concept with two template parameters. It requires that both parameters are the same. The <code>static_assert</code> checks conditions at compile-time; it can be used to verify whether a type or a combination of types model a concept. In the above case we can use the combination to check the "return type" of the transformation trait.</dd></dl>
 <h1><a class="anchor" id="autotoc_md41"></a>
 Concepts in BioC++ and this documentation</h1>
-<p>BioC++ uses concepts extensively, for specialisation/overloading, but also to prevent misuse of templates and to clearly specify all public interfaces. We prefer the intermediate syntax and additionally use the verbose expressions if necessary. Unfortunately, doxygen, the system used to generate this documentation, does not handle C++ concepts very well, yet. In some parts of the documentation concepts are called "interfaces", please don't let this confuse you. And the "verbose syntax" introduced above is not visible at all in the automatically generated documentation. That's why it's important to read the detailed documentation section where all requirements are documented.</p>
-<p>Have a look at the documentation of bio::argument_parser::add_positional_option(). It has two template parameters, one seems unconstrained (<code>typename</code> in the signature) and one is constrained (<code>validator</code> in the signature). But in fact both are constrained as the detailed documentation reveals.</p>
-<p>Now, follow the link to bio::validator. We will check in the next section whether you understand the documentation for the concept. </p>
+<p>BioC++ uses concepts extensively, for specialisation/overloading, but also to prevent misuse of templates and to clearly specify all public interfaces. We prefer the intermediate syntax and additionally use the verbose expressions if necessary. Unfortunately, doxygen, the system used to generate this documentation, does not handle C++ concepts very well, yet. In some parts of the documentation concepts are called "interfaces", please don't let this confuse you. And the "verbose syntax" introduced above is not visible at all in the automatically generated documentation. That's why it's important to read the detailed documentation section where all requirements are documented. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
@@ -364,7 +360,7 @@ Concepts in BioC++ and this documentation</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:38 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

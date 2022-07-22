@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -113,41 +113,36 @@ $(document).ready(function(){initNavTree('gap_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="alphabet__base_8hpp.html">bio/alphabet/alphabet_base.hpp</a>&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbio_1_1gap.html">gap</a> : <span class="keyword">public</span> <a class="code" href="classbio_1_1alphabet__base.html">alphabet_base</a>&lt;gap, 1, char&gt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> : <span class="keyword">public</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">alphabet_base</a>&lt;gap, 1ull, char&gt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">using</span> <a class="code" href="classbio_1_1alphabet__base.html">base_t</a> = <a class="code" href="classbio_1_1alphabet__base.html">alphabet_base&lt;gap, 1, char&gt;</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">using</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t</a> = <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">alphabet_base&lt;gap, 1ull, char&gt;</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classbio_1_1alphabet__base.html">base_t</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">char</span> char_value = <span class="charliteral">&#39;-&#39;</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html#af49877e42b04205803c0ab71656b9c1c">   53</a></span>&#160;    constexpr <a class="code" href="classbio_1_1gap.html#af49877e42b04205803c0ab71656b9c1c">gap</a>() noexcept : <a class="code" href="classbio_1_1alphabet__base.html">base_t</a>{} {}            </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html#af6f0811f27aa970a43958312d0348c8b">   54</a></span>&#160;    constexpr <a class="code" href="classbio_1_1gap.html#af6f0811f27aa970a43958312d0348c8b">gap</a>(<a class="code" href="classbio_1_1gap.html">gap</a> <span class="keyword">const</span> &amp;) = <span class="keywordflow">default</span>;             </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html#a98aece3e63b203c5245a4fe3d9e83d91">   55</a></span>&#160;    constexpr <a class="code" href="classbio_1_1gap.html#a98aece3e63b203c5245a4fe3d9e83d91">gap</a>(<a class="code" href="classbio_1_1gap.html">gap</a> &amp;&amp;) = <span class="keywordflow">default</span>;                  </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html#aacac894fa9715b8d1a3205c8b44fecf6">   56</a></span>&#160;    constexpr <a class="code" href="classbio_1_1gap.html">gap</a> &amp; <a class="code" href="classbio_1_1gap.html#aacac894fa9715b8d1a3205c8b44fecf6">operator=</a>(<a class="code" href="classbio_1_1gap.html">gap</a> <span class="keyword">const</span> &amp;) = <span class="keywordflow">default</span>; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html#afee581901f16106330076b40d61a13f0">   57</a></span>&#160;    constexpr <a class="code" href="classbio_1_1gap.html">gap</a> &amp; <a class="code" href="classbio_1_1gap.html#afee581901f16106330076b40d61a13f0">operator=</a>(<a class="code" href="classbio_1_1gap.html">gap</a> &amp;&amp;) = <span class="keywordflow">default</span>;      </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classbio_1_1gap.html#a2d569d9bae97f66643fa57342449ed53">   58</a></span>&#160;    <a class="code" href="classbio_1_1gap.html#a2d569d9bae97f66643fa57342449ed53">~gap</a>() = <span class="keywordflow">default</span>;                                 </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html#a5107250aef1068b9316c29b11532ed99">   53</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1gap.html#a5107250aef1068b9316c29b11532ed99">gap</a>() noexcept               = default; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html#a31f5efb65e37fbf52711d0ad16809756">   54</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a>(<a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> const &amp;)             = default; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html#a97091cafb7ec65ff5b36f9b367c65640">   55</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a>(<a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> &amp;&amp;)                  = default; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html#a3a4b2fc2e3484a6e138096bdac737c60">   56</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> &amp; operator=(<a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> const &amp;) = default; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html#ade9a1fcaab362cabc03d1281f9d7abf8">   57</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> &amp; operator=(<a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a> &amp;&amp;)      = default; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1gap.html#a2146ae0f4acaff4ffad954c0e24a6652">   58</a></span>&#160;    ~<a class="code" href="classbio_1_1alphabet_1_1gap.html">gap</a>()                                 = default; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> base_t::base_t;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    using <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t</a>::<a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="ttc" id="aalphabet__base_8hpp_html"><div class="ttname"><a href="alphabet__base_8hpp.html">alphabet_base.hpp</a></div><div class="ttdoc">Provides bio::alphabet_base.</div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace bio::alphabet</span></div>
+<div class="ttc" id="aalphabet__base_8hpp_html"><div class="ttname"><a href="alphabet__base_8hpp.html">alphabet_base.hpp</a></div><div class="ttdoc">Provides bio::alphabet::alphabet_base.</div></div>
 <div class="ttc" id="acassert_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/cassert.html">cassert</a></div></div>
-<div class="ttc" id="aclassbio_1_1alphabet__base_html"><div class="ttname"><a href="classbio_1_1alphabet__base.html">bio::alphabet_base</a></div><div class="ttdoc">A CRTP-base that makes defining a custom alphabet easier.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:55</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html"><div class="ttname"><a href="classbio_1_1gap.html">bio::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html_a2d569d9bae97f66643fa57342449ed53"><div class="ttname"><a href="classbio_1_1gap.html#a2d569d9bae97f66643fa57342449ed53">bio::gap::~gap</a></div><div class="ttdeci">~gap()=default</div><div class="ttdoc">Defaulted.</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html_a98aece3e63b203c5245a4fe3d9e83d91"><div class="ttname"><a href="classbio_1_1gap.html#a98aece3e63b203c5245a4fe3d9e83d91">bio::gap::gap</a></div><div class="ttdeci">constexpr gap(gap &amp;&amp;)=default</div><div class="ttdoc">Defaulted.</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html_aacac894fa9715b8d1a3205c8b44fecf6"><div class="ttname"><a href="classbio_1_1gap.html#aacac894fa9715b8d1a3205c8b44fecf6">bio::gap::operator=</a></div><div class="ttdeci">constexpr gap &amp; operator=(gap const &amp;)=default</div><div class="ttdoc">Defaulted.</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html_af49877e42b04205803c0ab71656b9c1c"><div class="ttname"><a href="classbio_1_1gap.html#af49877e42b04205803c0ab71656b9c1c">bio::gap::gap</a></div><div class="ttdeci">constexpr gap() noexcept</div><div class="ttdoc">Defaulted.</div><div class="ttdef"><b>Definition:</b> gap.hpp:53</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html_af6f0811f27aa970a43958312d0348c8b"><div class="ttname"><a href="classbio_1_1gap.html#af6f0811f27aa970a43958312d0348c8b">bio::gap::gap</a></div><div class="ttdeci">constexpr gap(gap const &amp;)=default</div><div class="ttdoc">Defaulted.</div></div>
-<div class="ttc" id="aclassbio_1_1gap_html_afee581901f16106330076b40d61a13f0"><div class="ttname"><a href="classbio_1_1gap.html#afee581901f16106330076b40d61a13f0">bio::gap::operator=</a></div><div class="ttdeci">constexpr gap &amp; operator=(gap &amp;&amp;)=default</div><div class="ttdoc">Defaulted.</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html">bio::alphabet::alphabet_base</a></div><div class="ttdoc">A CRTP-base that makes defining a custom alphabet easier.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:55</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1gap_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1gap_html_a5107250aef1068b9316c29b11532ed99"><div class="ttname"><a href="classbio_1_1alphabet_1_1gap.html#a5107250aef1068b9316c29b11532ed99">bio::alphabet::gap::gap</a></div><div class="ttdeci">constexpr gap() noexcept=default</div><div class="ttdoc">Defaulted.</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -157,7 +152,7 @@ $(document).ready(function(){initNavTree('gap_8hpp_source.html',''); initResizab
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_000e51b6accb2681cd1e3f4fd511be2f.html">gap</a></li><li class="navelem"><a class="el" href="gap_8hpp.html">gap.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

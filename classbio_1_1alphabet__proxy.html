@@ -214,7 +214,7 @@ class bio::alphabet_proxy&lt; derived_type, alphabet_type &gt;</h3>
 <p>This class ensures that the proxy itself also models <a class="el" href="interfacebio_1_1semialphabet.html" title="The basis for bio::alphabet, but requires only rank interface (not char).">bio::semialphabet</a>, <a class="el" href="interfacebio_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet</a>, <a class="el" href="interfacebio_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores.">bio::quality_alphabet</a>, <a class="el" href="interfacebio_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides.">bio::nucleotide_alphabet</a> and/or <a class="el" href="interfacebio_1_1aminoacid__alphabet.html" title="A concept that indicates whether an alphabet represents amino acids.">bio::aminoacid_alphabet</a> if the emulated type models these. This makes sure that function templates which accept the original, also accept the proxy.</p>
 <h3>Implementation notes</h3>
 <p>The derived type needs to provide an <code>.on_update()</code> member function that performs the changes in the underlying data structure.</p>
-<p>See <a class="el" href="classbio_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::bitcompressed_vector</a> or <a class="el" href="classbio_1_1alphabet__tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam...">bio::alphabet_tuple_base</a> for examples of how this class is used. </p>
+<p>See <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a> or <a class="el" href="classbio_1_1alphabet__tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam...">bio::alphabet_tuple_base</a> for examples of how this class is used. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>bio/alphabet/detail/<a class="el" href="alphabet__proxy_8hpp_source.html">alphabet_proxy.hpp</a></li>
 </ul>
@@ -227,7 +227,7 @@ class bio::alphabet_proxy&lt; derived_type, alphabet_type &gt;</h3>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="classbio_1_1alphabet__proxy.html">alphabet_proxy</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Mon Jul 4 2022 17:20:01 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

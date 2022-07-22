@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">BioC++
-   &#160;<span id="projectnumber">0.1.0</span>
+   &#160;<span id="projectnumber">0.5.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -115,74 +115,71 @@ $(document).ready(function(){initNavTree('cigar__op_8hpp_source.html',''); initR
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// cigar_op</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// ------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio.html">bio</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> : <span class="keyword">public</span> <a class="code" href="classbio_1_1alphabet__base.html">alphabet_base</a>&lt;cigar_op, 9, char&gt;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> : <span class="keyword">public</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">alphabet_base</a>&lt;cigar_op, 9, char&gt;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">using</span> <a class="code" href="classbio_1_1alphabet__base.html">base_t</a> = <a class="code" href="classbio_1_1alphabet__base.html">alphabet_base&lt;cigar_op, 9, char&gt;</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">using</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t</a> = <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">alphabet_base&lt;cigar_op, 9, char&gt;</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classbio_1_1alphabet__base.html">base_t</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#afcbeed792dcdbde22fd550fd7e54518e">   67</a></span>&#160;    constexpr <a class="code" href="classbio_1_1cigar__op.html#afcbeed792dcdbde22fd550fd7e54518e">cigar_op</a>()                             noexcept = default; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#a42debf60f5e147ccf6576579bfe4f95a">   68</a></span>&#160;    constexpr <a class="code" href="classbio_1_1cigar__op.html">cigar_op</a>(<a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> const &amp;)             noexcept = default; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#a45df6e0c8878744f9e1645854d866275">   69</a></span>&#160;    constexpr <a class="code" href="classbio_1_1cigar__op.html">cigar_op</a>(<a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> &amp;&amp;)                  noexcept = default; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#a4aa3dafe7517df2c03749d5bcbe5a7f2">   70</a></span>&#160;    constexpr <a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> &amp; operator=(<a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> const &amp;) noexcept = default; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#af7c5392260a44b80550165477d3bc9ae">   71</a></span>&#160;    constexpr <a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> &amp; operator=(<a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> &amp;&amp;)      noexcept = default; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#ac2ed552f6d2e96f99a06cd4aaef7e3ce">   72</a></span>&#160;    ~<a class="code" href="classbio_1_1cigar__op.html">cigar_op</a>()                                      noexcept = default; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#aec1ac395592eb2e71d7d83b4daaea6a2">   67</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html#aec1ac395592eb2e71d7d83b4daaea6a2">cigar_op</a>() noexcept                             = default; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#aac819cb0f5327925742bd78855b7943e">   68</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a>(<a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> const &amp;) noexcept             = default; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#acac443fc82f3cd95043852d7a236c801">   69</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a>(<a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> &amp;&amp;) noexcept                  = default; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#a007f816683a73925b29c96d3324d1edc">   70</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> &amp; operator=(<a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> const &amp;) noexcept = default; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#ab4535469499aa21383e3eb590c1bb2c9">   71</a></span>&#160;    constexpr <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> &amp; operator=(<a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> &amp;&amp;) noexcept      = default; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#a5a852ba5da8eb8b2791013790eb95f97">   72</a></span>&#160;    ~<a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a>() noexcept                                      = default; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;protected:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    static constexpr <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">char_type</a> rank_to_char[<a class="code" href="classbio_1_1alphabet__base.html#a989cf18d33d15b0d858c2dd540480468">alphabet_size</a>]</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="charliteral">&#39;M&#39;</span>,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="charliteral">&#39;D&#39;</span>,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="charliteral">&#39;I&#39;</span>,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="charliteral">&#39;S&#39;</span>,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="charliteral">&#39;H&#39;</span>,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="charliteral">&#39;N&#39;</span>,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="charliteral">&#39;P&#39;</span>,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="charliteral">&#39;X&#39;</span>,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="charliteral">&#39;=&#39;</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    static constexpr <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">char_type</a> rank_to_char[<a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">alphabet_size</a>]{<span class="charliteral">&#39;M&#39;</span>, <span class="charliteral">&#39;D&#39;</span>, <span class="charliteral">&#39;I&#39;</span>, <span class="charliteral">&#39;S&#39;</span>, <span class="charliteral">&#39;H&#39;</span>, <span class="charliteral">&#39;N&#39;</span>, <span class="charliteral">&#39;P&#39;</span>, <span class="charliteral">&#39;X&#39;</span>, <span class="charliteral">&#39;=&#39;</span>};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">static</span> constexpr <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;rank_type, 256&gt;</a> char_to_rank = []() constexpr</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;rank_type, 256&gt;</a> ret{};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// reverse mapping for characters</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rnk = 0u; rnk &lt; <a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">alphabet_size</a>; ++rnk)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            ret[rank_to_char[rnk]] = rnk;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">static</span> constexpr <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;rank_type, 256&gt;</a> char_to_rank</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        [] () constexpr</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt;rank_type, 256&gt;</a> ret{};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace bio::alphabet</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="comment">// reverse mapping for characters</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> rnk = 0u; rnk &lt; <a class="code" href="classbio_1_1alphabet__base.html#a989cf18d33d15b0d858c2dd540480468">alphabet_size</a>; ++rnk)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                ret[rank_to_char[rnk] ] = rnk;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    };</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// ------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// literals</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// ------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classbio_1_1cigar__op.html#aa50c2a3a836c029a010ea7e0f3ac051b">  122</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classbio_1_1cigar__op.html">cigar_op</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_cigar_op(<span class="keywordtype">char</span> <span class="keyword">const</span> c) noexcept</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbio_1_1cigar__op.html">cigar_op</a>{}.<a class="code" href="classbio_1_1alphabet__base.html#a822d399ab808842870a4a4feb5490849">assign_char</a>(c);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;} <span class="comment">// namespace bio</span></div>
-<div class="ttc" id="aalphabet__base_8hpp_html"><div class="ttname"><a href="alphabet__base_8hpp.html">alphabet_base.hpp</a></div><div class="ttdoc">Provides bio::alphabet_base.</div></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// ------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// literals</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// ------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">inline</span> <span class="keyword">namespace </span>literals</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1cigar__op.html#aa50c2a3a836c029a010ea7e0f3ac051b">  117</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_cigar_op(<span class="keywordtype">char</span> <span class="keyword">const</span> c) noexcept</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classbio_1_1alphabet_1_1cigar__op.html">cigar_op</a>{}.<a class="code" href="classbio_1_1alphabet_1_1alphabet__base.html#a55f722f487de757c6ec017292697c44d">assign_char</a>(c);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;} <span class="comment">// namespace literals</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// namespace bio::alphabet</span></div>
+<div class="ttc" id="aalphabet__base_8hpp_html"><div class="ttname"><a href="alphabet__base_8hpp.html">alphabet_base.hpp</a></div><div class="ttdoc">Provides bio::alphabet::alphabet_base.</div></div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/array.html">std::array&lt; rank_type, 256 &gt;</a></div></div>
-<div class="ttc" id="aclassbio_1_1alphabet__base_html"><div class="ttname"><a href="classbio_1_1alphabet__base.html">bio::alphabet_base</a></div><div class="ttdoc">A CRTP-base that makes defining a custom alphabet easier.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:55</div></div>
-<div class="ttc" id="aclassbio_1_1alphabet__base_html_a822d399ab808842870a4a4feb5490849"><div class="ttname"><a href="classbio_1_1alphabet__base.html#a822d399ab808842870a4a4feb5490849">bio::alphabet_base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:143</div></div>
-<div class="ttc" id="aclassbio_1_1alphabet__base_html_a989cf18d33d15b0d858c2dd540480468"><div class="ttname"><a href="classbio_1_1alphabet__base.html#a989cf18d33d15b0d858c2dd540480468">bio::alphabet_base&lt; cigar_op, 9, char &gt;::alphabet_size</a></div><div class="ttdeci">static constexpr detail::min_viable_uint_t&lt; size &gt; alphabet_size</div><div class="ttdoc">The size of the alphabet, i.e. the number of different values it can take.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:177</div></div>
-<div class="ttc" id="aclassbio_1_1cigar__op_html"><div class="ttname"><a href="classbio_1_1cigar__op.html">bio::cigar_op</a></div><div class="ttdoc">The (extended) cigar operation alphabet of M,D,I,H,N,P,S,X,=.</div><div class="ttdef"><b>Definition:</b> cigar_op.hpp:54</div></div>
-<div class="ttc" id="aclassbio_1_1cigar__op_html_afcbeed792dcdbde22fd550fd7e54518e"><div class="ttname"><a href="classbio_1_1cigar__op.html#afcbeed792dcdbde22fd550fd7e54518e">bio::cigar_op::cigar_op</a></div><div class="ttdeci">constexpr cigar_op() noexcept=default</div><div class="ttdoc">Defaulted.</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html">bio::alphabet::alphabet_base</a></div><div class="ttdoc">A CRTP-base that makes defining a custom alphabet easier.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:55</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html_a240f651659e7e2b13a8e43ceb4cd4308"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">bio::alphabet::alphabet_base&lt; cigar_op, 9, char &gt;::alphabet_size</a></div><div class="ttdeci">static constexpr size_t alphabet_size</div><div class="ttdoc">The size of the alphabet, i.e. the number of different values it can take.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:174</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html_a55f722f487de757c6ec017292697c44d"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html#a55f722f487de757c6ec017292697c44d">bio::alphabet::alphabet_base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:140</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1cigar__op_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1cigar__op.html">bio::alphabet::cigar_op</a></div><div class="ttdoc">The (extended) cigar operation alphabet of M,D,I,H,N,P,S,X,=.</div><div class="ttdef"><b>Definition:</b> cigar_op.hpp:54</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1cigar__op_html_aec1ac395592eb2e71d7d83b4daaea6a2"><div class="ttname"><a href="classbio_1_1alphabet_1_1cigar__op.html#aec1ac395592eb2e71d7d83b4daaea6a2">bio::alphabet::cigar_op::cigar_op</a></div><div class="ttdeci">constexpr cigar_op() noexcept=default</div><div class="ttdoc">Defaulted.</div></div>
 <div class="ttc" id="aconditional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a></div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -192,7 +189,7 @@ $(document).ready(function(){initNavTree('cigar__op_8hpp_source.html',''); initR
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_38406977c69206a4a7a9ef30acbdcff1.html">cigar</a></li><li class="navelem"><a class="el" href="cigar__op_8hpp.html">cigar_op.hpp</a></li>
-    <li class="footer">Generated on Sun Jun 12 2022 17:23:28 for BioC++ by
+    <li class="footer">Generated on Fri Jul 22 2022 15:04:37 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
