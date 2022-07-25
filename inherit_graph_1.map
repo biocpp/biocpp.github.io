@@ -1,3 +1,90 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html" title="Specialisation of bio::alphabet::alphabet_base for alphabets of size 1." alt="" coords="5,5,197,61"/>
+<area shape="rect" id="node1" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="554,788,734,829"/>
+<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="820,757,983,799"/>
+<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1aa10li.html" title="The reduced Li amino acid alphabet.." alt="" coords="1085,970,1223,997"/>
+<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="557,707,731,763"/>
+<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="815,692,987,733"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1aa10murphy.html" title="The reduced Murphy amino acid alphabet.." alt="" coords="1067,919,1241,946"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="557,971,731,1012"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="820,875,983,916"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1aa20.html" title="The canonical amino acid alphabet.." alt="" coords="1088,1021,1220,1047"/>
+<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="557,1036,731,1077"/>
+<area shape="rect" id="node11" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="820,940,983,981"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1aa27.html" title="The twenty&#45;seven letter amino acid alphabet.." alt="" coords="1088,1071,1220,1098"/>
+<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="792,1437,1011,1522"/>
+<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1alphabet__variant.html" title="A combined alphabet that can hold values of either of its alternatives.." alt="" coords="1077,1290,1231,1346"/>
+<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="545,481,743,537"/>
+<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1alphabet__tuple__base.html" title=" " alt="" coords="814,481,989,537"/>
+<area shape="rect" id="node17" href="$classbio_1_1alphabet_1_1cigar.html" title="The cigar semialphabet pairs a counter with a bio::alphabet::cigar_op letter." alt="" coords="1088,869,1220,895"/>
+<area shape="rect" id="node18" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="812,1255,991,1296"/>
+<area shape="rect" id="node19" href="$classbio_1_1alphabet_1_1cigar__op.html" title="The (extended) cigar operation alphabet of M,D,I,H,N,P,S,X,=.." alt="" coords="1077,1189,1231,1215"/>
+<area shape="rect" id="node20" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="555,2301,733,2357"/>
+<area shape="rect" id="node21" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the amino acids." alt="" coords="808,1612,995,1653"/>
+<area shape="rect" id="node22" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the nucleotides." alt="" coords="808,2373,995,2415"/>
+<area shape="rect" id="node23" href="$classbio_1_1alphabet_1_1quality__base.html" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the quality alphabets." alt="" coords="808,2308,995,2349"/>
+<area shape="rect" id="node24" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="565,612,723,683"/>
+<area shape="rect" id="node25" href="$classbio_1_1alphabet_1_1alphabet__tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam..." alt="" coords="810,611,993,667"/>
+<area shape="rect" id="node26" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="553,1547,735,1588"/>
+<area shape="rect" id="node27" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,1547,983,1588"/>
+<area shape="rect" id="node28" href="$classbio_1_1alphabet_1_1dna15.html" title="The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap.." alt="" coords="1085,1370,1223,1397"/>
+<area shape="rect" id="node29" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="561,2046,727,2102"/>
+<area shape="rect" id="node30" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,2056,983,2097"/>
+<area shape="rect" id="node31" href="$classbio_1_1alphabet_1_1dna16sam.html" title="A 16 letter DNA alphabet, containing all IUPAC symbols minus the gap and plus an equality sign (&#39;=&#39;)...." alt="" coords="1072,1674,1236,1701"/>
+<area shape="rect" id="node32" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="557,1797,731,1839"/>
+<area shape="rect" id="node33" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,1808,983,1849"/>
+<area shape="rect" id="node34" href="$classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.." alt="" coords="1088,1522,1220,1549"/>
+<area shape="rect" id="node35" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="557,1915,731,1956"/>
+<area shape="rect" id="node36" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,1925,983,1967"/>
+<area shape="rect" id="node37" href="$classbio_1_1alphabet_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.." alt="" coords="1088,1573,1220,1599"/>
+<area shape="rect" id="node38" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="820,1320,983,1361"/>
+<area shape="rect" id="node39" href="$classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;&#45;&#39;." alt="" coords="1091,1239,1217,1266"/>
+<area shape="rect" id="node40" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="821,5,981,47"/>
+<area shape="rect" id="node41" href="$classbio_1_1alphabet_1_1mask.html" title="Implementation of a masked alphabet to be used for tuple composites.." alt="" coords="1086,586,1222,613"/>
+<area shape="rect" id="node42" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="545,1101,743,1172"/>
+<area shape="rect" id="node43" href="$classbio_1_1alphabet_1_1alphabet__tuple__base.html" title=" " alt="" coords="791,1057,1012,1128"/>
+<area shape="rect" id="node44" href="$classbio_1_1alphabet_1_1masked.html" title="Implementation of a masked composite, which extends a given alphabet with a mask.." alt="" coords="1069,1123,1239,1164"/>
+<area shape="rect" id="node45" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="567,30,721,86"/>
+<area shape="rect" id="node46" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="827,71,976,112"/>
+<area shape="rect" id="node47" href="$classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)...." alt="" coords="1079,637,1229,663"/>
+<area shape="rect" id="node48" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="567,110,721,166"/>
+<area shape="rect" id="node49" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="827,188,976,229"/>
+<area shape="rect" id="node50" href="$classbio_1_1alphabet_1_1phred63.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)...." alt="" coords="1079,687,1229,714"/>
+<area shape="rect" id="node51" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="567,291,721,347"/>
+<area shape="rect" id="node52" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="809,305,994,347"/>
+<area shape="rect" id="node53" href="$classbio_1_1alphabet_1_1phred68legacy.html" title="Quality type for Solexa and deprecated Illumina formats.." alt="" coords="1060,738,1248,765"/>
+<area shape="rect" id="node54" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="549,371,739,457"/>
+<area shape="rect" id="node55" href="$classbio_1_1alphabet_1_1alphabet__tuple__base.html" title=" " alt="" coords="794,371,1009,457"/>
+<area shape="rect" id="node56" href="$classbio_1_1alphabet_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet." alt="" coords="1073,789,1235,845"/>
+<area shape="rect" id="node57" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="555,1980,733,2021"/>
+<area shape="rect" id="node58" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,1991,983,2032"/>
+<area shape="rect" id="node59" href="$classbio_1_1alphabet_1_1rna15.html" title="The 15 letter RNA alphabet, containing all IUPAC smybols minus the gap.." alt="" coords="1086,1623,1222,1650"/>
+<area shape="rect" id="node60" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="559,1732,729,1773"/>
+<area shape="rect" id="node61" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,1743,983,1784"/>
+<area shape="rect" id="node62" href="$classbio_1_1alphabet_1_1rna4.html" title="The four letter RNA alphabet of A,C,G,U.." alt="" coords="1089,1471,1219,1498"/>
+<area shape="rect" id="node63" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="559,1667,729,1708"/>
+<area shape="rect" id="node64" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="820,1677,983,1719"/>
+<area shape="rect" id="node65" href="$classbio_1_1alphabet_1_1rna5.html" title="The five letter RNA alphabet of A,C,G,U and the unknown character N.." alt="" coords="1089,1421,1219,1447"/>
+<area shape="rect" id="node66" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="814,2227,989,2283"/>
+<area shape="rect" id="node67" href="$classbio_1_1alphabet_1_1semialphabet__any.html" title="A semi&#45;alphabet that type erases all other semi&#45;alphabets of the same size." alt="" coords="1063,1980,1245,2021"/>
+<area shape="rect" id="node68" href="$structbio_1_1alphabet_1_1aminoacid__empty__base.html" title="This is an empty base class that can be inherited by types that shall model bio::alphabet::aminoacid_..." alt="" coords="563,905,725,947"/>
+<area shape="rect" id="node69" title=" " alt="" coords="5,1653,163,1679"/>
+<area shape="rect" id="node70" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="211,1653,309,1679"/>
+<area shape="rect" id="node71" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="392,1127,463,1154"/>
+<area shape="rect" id="node77" href="$interfacebio_1_1alphabet_1_1writable__semialphabet.html" title="A refinement of bio::alphabet::semialphabet that adds assignability." alt="" coords="569,561,719,587"/>
+<area shape="rect" id="node72" href="$interfacebio_1_1alphabet_1_1aminoacid__alphabet.html" title="A concept that indicates whether an alphabet represents amino acids." alt="" coords="833,823,970,850"/>
+<area shape="rect" id="node73" href="$interfacebio_1_1alphabet_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides." alt="" coords="833,1874,970,1901"/>
+<area shape="rect" id="node74" href="$interfacebio_1_1alphabet_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="586,241,702,267"/>
+<area shape="rect" id="node75" href="$interfacebio_1_1alphabet_1_1writable__quality__alphabet.html" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="817,254,985,281"/>
+<area shape="rect" id="node76" href="$interfacebio_1_1alphabet_1_1writable__alphabet.html" title="Refines bio::alphabet::alphabet and adds assignability." alt="" coords="840,1386,963,1413"/>
+<area shape="rect" id="node78" title=" " alt="" coords="594,1203,694,1230"/>
+<area shape="rect" id="node79" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="840,1203,963,1230"/>
+<area shape="rect" id="node80" href="$interfacebio_1_1meta_1_1trivial.html" title="A type that satisfies bio::meta::trivially_copyable and bio::meta::trivially_destructible." alt="" coords="1127,1834,1181,1861"/>
+<area shape="rect" id="node81" title=" " alt="" coords="587,2126,701,2153"/>
+<area shape="rect" id="node82" href="$interfacebio_1_1meta_1_1trivially__destructible.html" title="A type that satisfies std::is_trivially_destructible_v&lt;t&gt;." alt="" coords="833,2123,970,2150"/>
+<area shape="rect" id="node83" title=" " alt="" coords="858,1006,945,1033"/>
+<area shape="rect" id="node84" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="844,1153,959,1179"/>
+<area shape="rect" id="node85" title=" " alt="" coords="17,1707,151,1734"/>
+<area shape="rect" id="node86" href="$interfacebio_1_1meta_1_1tuple__like.html" title="Whether a type behaves like a tuple." alt="" coords="221,2235,299,2262"/>
+<area shape="rect" id="node87" href="$interfacebio_1_1meta_1_1pair__like.html" title="Whether a type behaves like a tuple with exactly two elements." alt="" coords="392,2294,463,2321"/>
+<area shape="rect" id="node88" href="$structbio_1_1meta_1_1pod__tuple_3_01type0_00_01types_8_8_8_01_4.html" title="Behaves like std::tuple but is an aggregate PODType." alt="" coords="357,2228,497,2269"/>
 </map>

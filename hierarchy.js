@@ -4,48 +4,25 @@ var hierarchy =
       [ "bio::ranges::views::deep< underlying_adaptor_t >", "classbio_1_1ranges_1_1views_1_1deep.html", null ]
     ] ],
     [ "bio::ranges::aligned_allocator< value_t, alignment_v >", "classbio_1_1ranges_1_1aligned__allocator.html", null ],
-    [ "bio::alphabet::alphabet_base< derived_type, size, char_t >", "classbio_1_1alphabet_1_1alphabet__base.html", [
-      [ "bio::alphabet::aminoacid_base< aa27, 27 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
-        [ "bio::alphabet::aa27", "classbio_1_1alphabet_1_1aa27.html", null ]
-      ] ],
-      [ "bio::alphabet::aminoacid_base< aa20, 20 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
-        [ "bio::alphabet::aa20", "classbio_1_1alphabet_1_1aa20.html", null ]
-      ] ],
-      [ "bio::alphabet::aminoacid_base< aa10murphy, 10 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
-        [ "bio::alphabet::aa10murphy", "classbio_1_1alphabet_1_1aa10murphy.html", null ]
-      ] ],
+    [ "bio::alphabet::alphabet_base< derived_type, size, char_t >", "classbio_1_1alphabet_1_1alphabet__base.html", null ],
+    [ "bio::alphabet::alphabet_base< aa10li, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
       [ "bio::alphabet::aminoacid_base< aa10li, 10 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
         [ "bio::alphabet::aa10li", "classbio_1_1alphabet_1_1aa10li.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< rna5, 5 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::rna5", "classbio_1_1alphabet_1_1rna5.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< rna4, 4 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::rna4", "classbio_1_1alphabet_1_1rna4.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< dna16sam, 16 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::dna16sam", "classbio_1_1alphabet_1_1dna16sam.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< dna15, 15 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::dna15", "classbio_1_1alphabet_1_1dna15.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< rna15, 15 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::rna15", "classbio_1_1alphabet_1_1rna15.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< dna5, 5 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::dna5", "classbio_1_1alphabet_1_1dna5.html", null ]
-      ] ],
-      [ "bio::alphabet::nucleotide_base< dna4, 4 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
-        [ "bio::alphabet::dna4", "classbio_1_1alphabet_1_1dna4.html", null ]
-      ] ],
-      [ "bio::alphabet::quality_base< phred42, 42 >", "classbio_1_1alphabet_1_1quality__base.html", [
-        [ "bio::alphabet::phred42", "classbio_1_1alphabet_1_1phred42.html", null ]
-      ] ],
-      [ "bio::alphabet::quality_base< phred63, 63 >", "classbio_1_1alphabet_1_1quality__base.html", [
-        [ "bio::alphabet::phred63", "classbio_1_1alphabet_1_1phred63.html", null ]
-      ] ],
-      [ "bio::alphabet::quality_base< phred68legacy, 68 >", "classbio_1_1alphabet_1_1quality__base.html", [
-        [ "bio::alphabet::phred68legacy", "classbio_1_1alphabet_1_1phred68legacy.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< aa10murphy, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::aminoacid_base< aa10murphy, 10 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
+        [ "bio::alphabet::aa10murphy", "classbio_1_1alphabet_1_1aa10murphy.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< aa20, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::aminoacid_base< aa20, 20 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
+        [ "bio::alphabet::aa20", "classbio_1_1alphabet_1_1aa20.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< aa27, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::aminoacid_base< aa27, 27 >", "classbio_1_1alphabet_1_1aminoacid__base.html", [
+        [ "bio::alphabet::aa27", "classbio_1_1alphabet_1_1aa27.html", null ]
       ] ]
     ] ],
     [ "bio::alphabet::alphabet_base< alphabet_variant< alternative_types... >,(static_cast< size_t >(size< alternative_types >)+...), char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
@@ -68,6 +45,26 @@ var hierarchy =
     [ "bio::alphabet::alphabet_base< derived_type,(1 *... *size< component_types >), void >", "classbio_1_1alphabet_1_1alphabet__base.html", [
       [ "bio::alphabet::alphabet_tuple_base< derived_type, component_types >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", null ]
     ] ],
+    [ "bio::alphabet::alphabet_base< dna15, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< dna15, 15 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::dna15", "classbio_1_1alphabet_1_1dna15.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< dna16sam, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< dna16sam, 16 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::dna16sam", "classbio_1_1alphabet_1_1dna16sam.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< dna4, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< dna4, 4 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::dna4", "classbio_1_1alphabet_1_1dna4.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< dna5, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< dna5, 5 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::dna5", "classbio_1_1alphabet_1_1dna5.html", null ]
+      ] ]
+    ] ],
     [ "bio::alphabet::alphabet_base< gap, 1ull, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
       [ "bio::alphabet::gap", "classbio_1_1alphabet_1_1gap.html", null ]
     ] ],
@@ -79,9 +76,39 @@ var hierarchy =
         [ "bio::alphabet::masked< sequence_alphabet_t >", "classbio_1_1alphabet_1_1masked.html", null ]
       ] ]
     ] ],
+    [ "bio::alphabet::alphabet_base< phred42, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::quality_base< phred42, 42 >", "classbio_1_1alphabet_1_1quality__base.html", [
+        [ "bio::alphabet::phred42", "classbio_1_1alphabet_1_1phred42.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< phred63, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::quality_base< phred63, 63 >", "classbio_1_1alphabet_1_1quality__base.html", [
+        [ "bio::alphabet::phred63", "classbio_1_1alphabet_1_1phred63.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< phred68legacy, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::quality_base< phred68legacy, 68 >", "classbio_1_1alphabet_1_1quality__base.html", [
+        [ "bio::alphabet::phred68legacy", "classbio_1_1alphabet_1_1phred68legacy.html", null ]
+      ] ]
+    ] ],
     [ "bio::alphabet::alphabet_base< qualified< sequence_alphabet_t, quality_alphabet_t >,(1 *... *size< component_types >), void >", "classbio_1_1alphabet_1_1alphabet__base.html", [
       [ "bio::alphabet::alphabet_tuple_base< qualified< sequence_alphabet_t, quality_alphabet_t >, sequence_alphabet_t, quality_alphabet_t >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", [
         [ "bio::alphabet::qualified< sequence_alphabet_t, quality_alphabet_t >", "classbio_1_1alphabet_1_1qualified.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< rna15, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< rna15, 15 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::rna15", "classbio_1_1alphabet_1_1rna15.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< rna4, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< rna4, 4 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::rna4", "classbio_1_1alphabet_1_1rna4.html", null ]
+      ] ]
+    ] ],
+    [ "bio::alphabet::alphabet_base< rna5, size, char >", "classbio_1_1alphabet_1_1alphabet__base.html", [
+      [ "bio::alphabet::nucleotide_base< rna5, 5 >", "classbio_1_1alphabet_1_1nucleotide__base.html", [
+        [ "bio::alphabet::rna5", "classbio_1_1alphabet_1_1rna5.html", null ]
       ] ]
     ] ],
     [ "bio::alphabet::alphabet_base< semialphabet_any< size_ >, size_, void >", "classbio_1_1alphabet_1_1alphabet__base.html", [
@@ -91,10 +118,10 @@ var hierarchy =
     [ "bio::alphabet::alphabet_proxy< component_proxy< alphabet_type, index >, alphabet_type >", "classbio_1_1alphabet_1_1alphabet__proxy.html", null ],
     [ "bio::alphabet::alphabet_proxy< reference_proxy_type, alphabet_type >", "classbio_1_1alphabet_1_1alphabet__proxy.html", null ],
     [ "bio::alphabet::aminoacid_empty_base", "structbio_1_1alphabet_1_1aminoacid__empty__base.html", [
-      [ "bio::alphabet::aminoacid_base< aa27, 27 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
-      [ "bio::alphabet::aminoacid_base< aa20, 20 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
-      [ "bio::alphabet::aminoacid_base< aa10murphy, 10 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
       [ "bio::alphabet::aminoacid_base< aa10li, 10 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
+      [ "bio::alphabet::aminoacid_base< aa10murphy, 10 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
+      [ "bio::alphabet::aminoacid_base< aa20, 20 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
+      [ "bio::alphabet::aminoacid_base< aa27, 27 >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ],
       [ "bio::alphabet::aminoacid_base< derived_type, size >", "classbio_1_1alphabet_1_1aminoacid__base.html", null ]
     ] ],
     [ "arithmetic", "interfacebio_1_1meta_1_1arithmetic.html", [
@@ -176,9 +203,9 @@ var hierarchy =
         ] ],
         [ "bio::alphabet::semialphabet_any< size_ >", "classbio_1_1alphabet_1_1semialphabet__any.html", null ],
         [ "writable_semialphabet", "interfacebio_1_1alphabet_1_1writable__semialphabet.html", [
+          [ "bio::alphabet::alphabet_tuple_base< cigar, uint32_t, cigar_op >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", null ],
           [ "bio::alphabet::alphabet_tuple_base< masked< sequence_alphabet_t >, sequence_alphabet_t, mask >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", null ],
           [ "bio::alphabet::alphabet_tuple_base< qualified< sequence_alphabet_t, quality_alphabet_t >, sequence_alphabet_t, quality_alphabet_t >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", null ],
-          [ "bio::alphabet::alphabet_tuple_base< cigar, uint32_t, cigar_op >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", null ],
           [ "bio::alphabet::alphabet_tuple_base< derived_type, component_types >", "classbio_1_1alphabet_1_1alphabet__tuple__base.html", null ],
           [ "bio::alphabet::cigar", "classbio_1_1alphabet_1_1cigar.html", null ],
           [ "bio::alphabet::mask", "classbio_1_1alphabet_1_1mask.html", null ],

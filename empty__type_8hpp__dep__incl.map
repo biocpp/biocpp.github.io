@@ -1,19 +1,18 @@
 <map id="bio/meta/detail/empty_type.hpp" name="bio/meta/detail/empty_type.hpp">
-<area shape="rect" id="node1" title="Provides bio::meta::detail::empty_type." alt="" coords="111,5,277,47"/>
-<area shape="rect" id="node2" href="$inherited__iterator__base_8hpp.html" title="Provides the bio::ranges::detail::inherited_iterator_base template." alt="" coords="97,95,291,136"/>
-<area shape="rect" id="node3" href="$make__convertible_8hpp.html" title="Provides bio::views::take." alt="" coords="5,184,177,225"/>
-<area shape="rect" id="node4" href="$take_8hpp.html" title="Provides bio::views::take." alt="" coords="202,191,394,218"/>
-<area shape="rect" id="node5" href="$take__exactly_8hpp.html" title="Provides bio::views::take_exactly and bio::views::take_exactly_or_throw." alt="" coords="216,273,380,315"/>
-<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="339,727,519,754"/>
-<area shape="rect" id="node7" href="$repeat__n_8hpp.html" title="Provides bio::views::repeat_n." alt="" coords="393,363,571,404"/>
-<area shape="rect" id="node8" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="151,452,349,493"/>
-<area shape="rect" id="node11" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="373,452,591,493"/>
-<area shape="rect" id="node12" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="615,452,770,493"/>
-<area shape="rect" id="node13" href="$small__vector_8hpp.html" title="A constexpr vector implementation with dynamic size at compile time." alt="" coords="794,452,949,493"/>
-<area shape="rect" id="node9" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="205,541,359,583"/>
-<area shape="rect" id="node10" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="213,638,351,665"/>
-<area shape="rect" id="node14" href="$small__string_8hpp.html" title="A constexpr string implementation to manipulate string literals at compile time." alt="" coords="762,541,917,583"/>
-<area shape="rect" id="node15" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="502,631,641,672"/>
-<area shape="rect" id="node16" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="665,638,888,665"/>
-<area shape="rect" id="node17" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="753,720,947,761"/>
+<area shape="rect" id="node1" title="Provides bio::meta::detail::empty_type." alt="" coords="101,5,248,47"/>
+<area shape="rect" id="node2" href="$inherited__iterator__base_8hpp.html" title="Provides the bio::ranges::detail::inherited_iterator_base template." alt="" coords="89,95,260,136"/>
+<area shape="rect" id="node3" href="$take_8hpp.html" title="Provides bio::views::take." alt="" coords="87,184,262,211"/>
+<area shape="rect" id="node4" href="$take__exactly_8hpp.html" title="Provides bio::views::take_exactly and bio::views::take_exactly_or_throw." alt="" coords="100,259,249,300"/>
+<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="213,713,376,739"/>
+<area shape="rect" id="node6" href="$repeat__n_8hpp.html" title="Provides bio::views::repeat_n." alt="" coords="265,348,425,389"/>
+<area shape="rect" id="node7" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="43,437,221,479"/>
+<area shape="rect" id="node10" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="246,437,445,479"/>
+<area shape="rect" id="node11" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="469,437,608,479"/>
+<area shape="rect" id="node12" href="$small__vector_8hpp.html" title="A constexpr vector implementation with dynamic size at compile time." alt="" coords="632,437,771,479"/>
+<area shape="rect" id="node8" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="92,527,231,568"/>
+<area shape="rect" id="node9" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="99,623,223,650"/>
+<area shape="rect" id="node13" href="$small__string_8hpp.html" title="A constexpr string implementation to manipulate string literals at compile time." alt="" coords="601,527,740,568"/>
+<area shape="rect" id="node14" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="365,616,489,657"/>
+<area shape="rect" id="node15" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="513,623,711,650"/>
+<area shape="rect" id="node16" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="593,705,767,747"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="bio::meta::is_value_specialisation_of&lt; source_t, target_template &gt;" name="bio::meta::is_value_specialisation_of&lt; source_t, target_template &gt;">
+<area shape="rect" id="node1" title="Determines whether a source_type is a specialisation of another template." alt="" coords="551,28,737,84"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type." alt="" coords="367,5,481,32"/>
+<area shape="rect" id="node3" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/is_same.html" title=" " alt="" coords="347,57,501,127"/>
+<area shape="rect" id="node4" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/is_same.html" title=" " alt="" coords="5,79,103,105"/>
+</map>

@@ -1,7 +1,7 @@
 <map id="bio/ranges/container/small_string.hpp" name="bio/ranges/container/small_string.hpp">
-<area shape="rect" id="node1" title="A constexpr string implementation to manipulate string literals at compile time." alt="" coords="203,5,357,47"/>
-<area shape="rect" id="node2" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="5,95,144,136"/>
-<area shape="rect" id="node3" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="169,102,391,129"/>
-<area shape="rect" id="node5" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="331,184,525,225"/>
-<area shape="rect" id="node4" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="126,191,306,218"/>
+<area shape="rect" id="node1" title="A constexpr string implementation to manipulate string literals at compile time." alt="" coords="183,5,322,47"/>
+<area shape="rect" id="node2" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="5,95,129,136"/>
+<area shape="rect" id="node3" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="153,102,352,129"/>
+<area shape="rect" id="node5" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="301,184,476,225"/>
+<area shape="rect" id="node4" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="114,191,277,218"/>
 </map>

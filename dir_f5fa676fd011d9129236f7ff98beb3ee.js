@@ -9,7 +9,6 @@ var dir_f5fa676fd011d9129236f7ff98beb3ee =
     [ "detail.hpp", "ranges_2views_2detail_8hpp.html", null ],
     [ "get.hpp", "get_8hpp.html", "get_8hpp" ],
     [ "interleave.hpp", "interleave_8hpp.html", "interleave_8hpp" ],
-    [ "make_convertible.hpp", "make__convertible_8hpp.html", null ],
     [ "move.hpp", "move_8hpp.html", "move_8hpp" ],
     [ "pairwise_combine.hpp", "pairwise__combine_8hpp.html", "pairwise__combine_8hpp" ],
     [ "persist.hpp", "persist_8hpp.html", "persist_8hpp" ],

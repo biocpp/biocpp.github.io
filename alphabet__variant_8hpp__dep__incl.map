@@ -1,7 +1,7 @@
 <map id="bio/alphabet/composite/alphabet_variant.hpp" name="bio/alphabet/composite/alphabet_variant.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::alphabet_variant." alt="" coords="105,5,280,47"/>
-<area shape="rect" id="node2" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="5,169,180,211"/>
-<area shape="rect" id="node4" href="$gapped_8hpp.html" title="Provides bio::alphabet::gapped." alt="" coords="174,95,385,121"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="117,259,268,285"/>
-<area shape="rect" id="node5" href="$alphabet_2gap_2all_8hpp.html" title="Meta&#45;header for the gap submodule; includes all headers from alphabet/gap/." alt="" coords="205,177,383,203"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::alphabet_variant." alt="" coords="95,5,251,47"/>
+<area shape="rect" id="node2" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="5,169,161,211"/>
+<area shape="rect" id="node4" href="$gapped_8hpp.html" title="Provides bio::alphabet::gapped." alt="" coords="157,95,345,121"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="107,259,241,285"/>
+<area shape="rect" id="node5" href="$alphabet_2gap_2all_8hpp.html" title="Meta&#45;header for the gap submodule; includes all headers from alphabet/gap/." alt="" coords="185,177,344,203"/>
 </map>

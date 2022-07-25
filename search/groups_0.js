@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['adaptation_5104',['Adaptation',['../group__adaptation.html',1,'']]],
-  ['alphabet_5105',['Alphabet',['../group__alphabet.html',1,'']]],
-  ['aminoacid_5106',['Aminoacid',['../group__aminoacid.html',1,'']]]
+  ['adaptation_0',['Adaptation',['../group__adaptation.html',1,'']]],
+  ['alphabet_1',['Alphabet',['../group__alphabet.html',1,'']]],
+  ['aminoacid_2',['Aminoacid',['../group__aminoacid.html',1,'']]]
 ];

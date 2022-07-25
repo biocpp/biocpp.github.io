@@ -1,0 +1,11 @@
+<map id="bio::alphabet::semialphabet_any&lt; size_ &gt;" name="bio::alphabet::semialphabet_any&lt; size_ &gt;">
+<area shape="rect" id="node1" title="A semi&#45;alphabet that type erases all other semi&#45;alphabets of the same size." alt="" coords="595,134,776,175"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="409,56,507,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="28,5,161,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="16,56,173,83"/>
+<area shape="rect" id="node5" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="397,107,519,133"/>
+<area shape="rect" id="node6" title=" " alt="" coords="45,107,145,133"/>
+<area shape="rect" id="node7" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="401,157,515,184"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="371,208,545,264"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,208,184,264"/>
+</map>

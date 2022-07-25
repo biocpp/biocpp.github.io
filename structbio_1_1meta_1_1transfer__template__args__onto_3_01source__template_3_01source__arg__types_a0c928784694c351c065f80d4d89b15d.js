@@ -1,0 +1,4 @@
+var structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d =
+[
+    [ "type", "structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html#a737c56834b444f89fb5e3ca14cb6b1ff", null ]
+];

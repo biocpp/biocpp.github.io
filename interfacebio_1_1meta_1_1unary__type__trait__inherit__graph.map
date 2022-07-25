@@ -1,0 +1,10 @@
+<map id="unary_type_trait" name="unary_type_trait">
+<area shape="rect" id="node1" title="Concept for a unary traits type." alt="" coords="5,247,120,273"/>
+<area shape="rect" id="node2" title=" " alt="" coords="168,5,361,61"/>
+<area shape="rect" id="node3" title=" " alt="" coords="193,85,337,141"/>
+<area shape="rect" id="node4" href="$structbio_1_1meta_1_1is__constexpr__default__constructible.html" title="Whether a type std::is_default_constructible in constexpr&#45;context." alt="" coords="176,166,353,207"/>
+<area shape="rect" id="node5" href="$structbio_1_1meta_1_1is__type__specialisation__of.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="171,232,358,288"/>
+<area shape="rect" id="node6" href="$structbio_1_1meta_1_1is__value__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="171,312,358,368"/>
+<area shape="rect" id="node7" href="$structstd_1_1tuple__size_3_01t_3_01types_8_8_8_01_4_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="203,393,326,434"/>
+<area shape="rect" id="node8" href="$structstd_1_1tuple__size_3_01tuple__t_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="179,459,350,485"/>
+</map>

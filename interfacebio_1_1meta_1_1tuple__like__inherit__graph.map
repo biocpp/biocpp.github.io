@@ -1,0 +1,6 @@
+<map id="tuple_like" name="tuple_like">
+<area shape="rect" id="node1" title="Whether a type behaves like a tuple." alt="" coords="66,80,143,107"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1meta_1_1pair__like.html" title="Whether a type behaves like a tuple with exactly two elements." alt="" coords="5,162,76,189"/>
+<area shape="rect" id="node4" href="$structbio_1_1meta_1_1pod__tuple_3_01type0_00_01types_8_8_8_01_4.html" title="Behaves like std::tuple but is an aggregate PODType." alt="" coords="100,155,240,196"/>
+<area shape="rect" id="node2" title=" " alt="" coords="38,5,171,32"/>
+</map>

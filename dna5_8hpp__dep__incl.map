@@ -1,11 +1,11 @@
 <map id="bio/alphabet/nucleotide/dna5.hpp" name="bio/alphabet/nucleotide/dna5.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::dna5, container aliases and string literals." alt="" coords="184,5,359,47"/>
-<area shape="rect" id="node2" href="$alphabet_2nucleotide_2all_8hpp.html" title="Meta&#45;header for the nucleotide submodule; includes all headers from alphabet/nucleotide/." alt="" coords="5,184,180,225"/>
-<area shape="rect" id="node4" href="$rna5_8hpp.html" title="Provides bio::alphabet::rna5, container aliases and string literals." alt="" coords="121,95,296,136"/>
-<area shape="rect" id="node5" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="205,184,357,225"/>
-<area shape="rect" id="node7" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="371,102,593,129"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="111,363,261,389"/>
-<area shape="rect" id="node6" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="186,273,338,315"/>
-<area shape="rect" id="node8" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="387,191,567,218"/>
-<area shape="rect" id="node9" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="591,184,786,225"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::dna5, container aliases and string literals." alt="" coords="167,5,321,47"/>
+<area shape="rect" id="node2" href="$alphabet_2nucleotide_2all_8hpp.html" title="Meta&#45;header for the nucleotide submodule; includes all headers from alphabet/nucleotide/." alt="" coords="5,184,160,225"/>
+<area shape="rect" id="node4" href="$rna5_8hpp.html" title="Provides bio::alphabet::rna5, container aliases and string literals." alt="" coords="109,95,264,136"/>
+<area shape="rect" id="node5" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="185,184,319,225"/>
+<area shape="rect" id="node7" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="338,102,537,129"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="99,363,234,389"/>
+<area shape="rect" id="node6" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="169,273,303,315"/>
+<area shape="rect" id="node8" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="349,191,512,218"/>
+<area shape="rect" id="node9" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="537,184,711,225"/>
 </map>

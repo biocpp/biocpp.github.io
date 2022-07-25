@@ -1,8 +1,6 @@
 var dir_863a7aeecaebce89c36d5cb86386d0df =
 [
-    [ "aligned_allocator.hpp", "aligned__allocator_8hpp.html", [
-      [ "rebind", "structbio_1_1ranges_1_1aligned__allocator_1_1rebind.html", "structbio_1_1ranges_1_1aligned__allocator_1_1rebind" ]
-    ] ],
+    [ "aligned_allocator.hpp", "aligned__allocator_8hpp.html", "aligned__allocator_8hpp" ],
     [ "all.hpp", "ranges_2container_2all_8hpp.html", null ],
     [ "bitcompressed_vector.hpp", "bitcompressed__vector_8hpp.html", null ],
     [ "concatenated_sequences.hpp", "concatenated__sequences_8hpp.html", null ],

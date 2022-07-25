@@ -1,5 +1,5 @@
 <map id="Ranges" name="Ranges">
-<area shape="rect" id="node1" href="$group__container.html" title="The container submodule contains special BioC++ containers and generic container concepts." alt="" coords="124,5,209,31"/>
-<area shape="rect" id="node2" href="$group__views.html" title="Views are &quot;lazy range combinators&quot; that offer modified views onto other ranges." alt="" coords="136,55,197,80"/>
-<area shape="rect" id="node3" title="The ranges module provides general purpose containers, decorators and views." alt="" coords="5,31,76,56"/>
+<area shape="rect" id="node1" href="$group__container.html" title="The container submodule contains special BioC++ containers and generic container concepts." alt="" coords="120,5,199,31"/>
+<area shape="rect" id="node2" title="The ranges module provides general purpose containers, decorators and views." alt="" coords="5,31,72,56"/>
+<area shape="rect" id="node3" href="$group__views.html" title="Views are &quot;lazy range combinators&quot; that offer modified views onto other ranges." alt="" coords="130,55,189,80"/>
 </map>

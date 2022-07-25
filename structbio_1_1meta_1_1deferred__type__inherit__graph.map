@@ -1,0 +1,4 @@
+<map id="bio::meta::deferred_type&lt; t, dependent_ts &gt;" name="bio::meta::deferred_type&lt; t, dependent_ts &gt;">
+<area shape="rect" id="node1" title="Return the type identity; further arguments are ignored, but can make this type dependent if they are..." alt="" coords="5,80,173,121"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="22,5,157,32"/>
+</map>

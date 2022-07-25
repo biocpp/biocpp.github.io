@@ -1,6 +1,6 @@
 <map id="bio/ranges/views/slice.hpp" name="bio/ranges/views/slice.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::slice." alt="" coords="17,5,212,32"/>
-<area shape="rect" id="node2" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="5,80,224,121"/>
-<area shape="rect" id="node3" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="37,169,192,211"/>
-<area shape="rect" id="node4" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="45,259,184,285"/>
+<area shape="rect" id="node1" title="Provides bio::views::slice." alt="" coords="17,5,193,32"/>
+<area shape="rect" id="node2" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="5,80,204,121"/>
+<area shape="rect" id="node3" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="35,169,174,211"/>
+<area shape="rect" id="node4" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="43,259,167,285"/>
 </map>

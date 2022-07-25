@@ -1,0 +1,4 @@
+var structbio_1_1meta_1_1valid__template__spec__or_3_01fallback__t_00_01templ__t_00_01spec__t_8_8_8_01_4 =
+[
+    [ "type", "structbio_1_1meta_1_1valid__template__spec__or_3_01fallback__t_00_01templ__t_00_01spec__t_8_8_8_01_4.html#ade696ac5f6e864e440e44fe8b24e3fb9", null ]
+];

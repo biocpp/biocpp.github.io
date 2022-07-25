@@ -1,0 +1,14 @@
+<map id="bio::alphabet::aminoacid_base&lt; derived_type, size &gt;" name="bio::alphabet::aminoacid_base&lt; derived_type, size &gt;">
+<area shape="rect" id="node1" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the amino acids." alt="" coords="587,108,773,149"/>
+<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="946,5,1109,47"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="941,71,1113,112"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="946,136,1109,177"/>
+<area shape="rect" id="node11" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="946,201,1109,243"/>
+<area shape="rect" id="node2" href="$structbio_1_1alphabet_1_1aminoacid__empty__base.html" title="This is an empty base class that can be inherited by types that shall model bio::alphabet::aminoacid_..." alt="" coords="367,71,529,112"/>
+<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="359,137,537,193"/>
+<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,137,184,193"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1aa10li.html" title="The reduced Li amino acid alphabet.." alt="" coords="1181,13,1319,39"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1aa10murphy.html" title="The reduced Murphy amino acid alphabet.." alt="" coords="1163,78,1337,105"/>
+<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1aa20.html" title="The canonical amino acid alphabet.." alt="" coords="1184,143,1316,170"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1aa27.html" title="The twenty&#45;seven letter amino acid alphabet.." alt="" coords="1184,209,1316,235"/>
+</map>

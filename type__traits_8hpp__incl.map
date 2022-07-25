@@ -1,0 +1,13 @@
+<map id="bio/ranges/type_traits.hpp" name="bio/ranges/type_traits.hpp">
+<area shape="rect" id="node1" title="Provides various transformation traits used by the range module." alt="" coords="105,5,277,32"/>
+<area shape="rect" id="node2" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/iterator.html" title=" " alt="" coords="5,87,68,114"/>
+<area shape="rect" id="node3" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ranges.html" title=" " alt="" coords="93,87,154,114"/>
+<area shape="rect" id="node4" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="158,169,241,196"/>
+<area shape="rect" id="node5" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="229,80,367,121"/>
+<area shape="rect" id="node11" href="$ranges_2biocpp_8hpp.html" title="Module header with module&#45;wide definitions." alt="" coords="391,87,541,114"/>
+<area shape="rect" id="node6" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="273,169,323,196"/>
+<area shape="rect" id="node7" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="369,169,517,196"/>
+<area shape="rect" id="node8" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="311,244,386,271"/>
+<area shape="rect" id="node9" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="410,244,477,271"/>
+<area shape="rect" id="node10" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="501,244,567,271"/>
+</map>

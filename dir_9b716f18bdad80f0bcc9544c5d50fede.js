@@ -13,9 +13,7 @@ var dir_9b716f18bdad80f0bcc9544c5d50fede =
     [ "alphabet_base.hpp", "alphabet__base_8hpp.html", null ],
     [ "biocpp.hpp", "alphabet_2biocpp_8hpp.html", null ],
     [ "concept.hpp", "alphabet_2concept_8hpp.html", "alphabet_2concept_8hpp" ],
-    [ "exception.hpp", "exception_8hpp.html", [
-      [ "invalid_char_assignment", "structbio_1_1alphabet_1_1invalid__char__assignment.html", "structbio_1_1alphabet_1_1invalid__char__assignment" ]
-    ] ],
+    [ "exception.hpp", "exception_8hpp.html", "exception_8hpp" ],
     [ "fmt.hpp", "fmt_8hpp.html", null ],
     [ "hash.hpp", "alphabet_2hash_8hpp.html", null ]
 ];

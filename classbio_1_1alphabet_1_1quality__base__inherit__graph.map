@@ -1,0 +1,11 @@
+<map id="bio::alphabet::quality_base&lt; derived_type, size &gt;" name="bio::alphabet::quality_base&lt; derived_type, size &gt;">
+<area shape="rect" id="node1" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the quality alphabets." alt="" coords="587,71,773,112"/>
+<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="973,5,1122,47"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="973,71,1122,112"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="955,136,1140,177"/>
+<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="359,63,537,119"/>
+<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,63,184,119"/>
+<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)...." alt="" coords="1208,13,1359,39"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1phred63.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)...." alt="" coords="1208,78,1359,105"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1phred68legacy.html" title="Quality type for Solexa and deprecated Illumina formats.." alt="" coords="1189,143,1377,170"/>
+</map>

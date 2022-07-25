@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,105,57"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1builtin__character.html" title="This concept encompasses exactly the types char, signed char, unsigned char, wchar_t,..." alt="" coords="153,5,284,32"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1meta_1_1nonint__character.html" title="This concept encompasses exactly the types char, wchar_t, char16_t and char32_t." alt="" coords="153,56,284,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,191,76"/>
+<area shape="rect" id="node2" href="$classbio_1_1ranges_1_1views_1_1deep.html" title="A wrapper type around an existing view adaptor that enables &quot;deep view&quot; behaviour for that view." alt="" coords="239,20,441,61"/>
 </map>
