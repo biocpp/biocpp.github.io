@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('biocpp_api.html',''); initResizable();
 <li class="level1"><a href="#autotoc_md11">Dependencies</a></li>
 </ul>
 </div>
-<div class="textblock"><p ><a class="anchor" id="md__usr_home_hannes_devel_biocpp_core_doc_biocpp_api"></a></p>
+<div class="textblock"><p ><a class="anchor" id="md__home_hannes_devel_biocpp_core_doc_biocpp_api"></a></p>
 <p >Summary: BioC++ libraries are required to adhere to <a href="https://semvar.org" target="_blank">semantic versioning</a> and provide a stable API within one major release (e.g. all of <code>biocpp-core-1.*.*</code>) unless otherwise noted. BioC++ libraries are released individually and the versioning is not required to match. There is no ABI stability.</p>
 <p >Many of the rules on this page are derived from the <a href="https://abseil.io/about/compatibility" target="_blank">abseil library</a>.</p>
 <h1><a class="anchor" id="autotoc_md8"></a>
 API stability</h1>
-<p >In general, you can expect all entities within the <code>bio</code> namespace to be usable throughout the entire release cycle of BioC++, i.e. if you write an application that includes <code>biocpp-core-3.1.1</code>, you should be able to re-compile it against <code>biocpp-core-3.4.5</code> without errors.</p>
+<p >In general, you can expect all entities within the <code>bio</code> namespace to be usable throughout the entire release cycle of BioC++, i.e. if you write an application that includes <code>biocpp-core-1.1.0</code>, you should be able to re-compile it against <code>biocpp-core-1.4.5</code> without errors.</p>
 <p >Exceptions to the previous rule:</p><ol type="1">
 <li><b>Do not depend upon internal details.</b> If something is in a namespace or filename/path that includes the word <code>detail</code> or if it is private to a class type, you are not allowed to depend upon it any way. More generally, if it is not part of the <em>user documentation</em>, it is not part of the API.</li>
 <li><b>Do not depend on entities marked as "experimental" or "NOAPI"</b>. Major changes to the library like new modules are often marked as experimental within the first minor release they appear in. This means we do not guarantee stability until the next minor release happens and the experimental flag is removed. Very few entities in namespace <code>bio</code> are permanently marked as "NOAPI" which designates them as subject to unannounced change. This is usually the case for auxiliary data structures that would be part of <code>bio::alphabet::detail</code> were they not needed to generate correct API documentation for entities in <code>bio</code>.</li>
@@ -174,7 +174,7 @@ Dependencies</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

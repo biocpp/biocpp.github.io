@@ -1,4 +1,5 @@
 <map id="bio/ranges/views/char_to.hpp" name="bio/ranges/views/char_to.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::char_to." alt="" coords="12,5,161,47"/>
-<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="5,95,168,121"/>
+<area shape="rect" id="node1" title="Provides bio::views::char_to." alt="" coords="111,5,275,47"/>
+<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="5,102,185,129"/>
+<area shape="rect" id="node3" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="209,95,373,136"/>
 </map>

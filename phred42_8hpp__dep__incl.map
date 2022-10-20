@@ -1,6 +1,6 @@
 <map id="bio/alphabet/quality/phred42.hpp" name="bio/alphabet/quality/phred42.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="57,5,192,47"/>
-<area shape="rect" id="node2" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="5,95,140,136"/>
-<area shape="rect" id="node3" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="57,184,192,225"/>
-<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="57,273,192,300"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="61,5,213,47"/>
+<area shape="rect" id="node2" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="5,95,157,136"/>
+<area shape="rect" id="node3" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="61,184,213,225"/>
+<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="62,273,213,300"/>
 </map>

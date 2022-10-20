@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('howto_use_cereal.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md68">Motivation</a></li>
-<li class="level1"><a href="#autotoc_md69">Storing</a></li>
-<li class="level1"><a href="#autotoc_md70">Loading</a></li>
-<li class="level1"><a href="#autotoc_md71">Storing &amp; Loading in the same function</a></li>
+<ul><li class="level1"><a href="#autotoc_md70">Motivation</a></li>
+<li class="level1"><a href="#autotoc_md71">Storing</a></li>
+<li class="level1"><a href="#autotoc_md72">Loading</a></li>
+<li class="level1"><a href="#autotoc_md73">Storing &amp; Loading in the same function</a></li>
 </ul>
 </div>
-<div class="textblock"><p ><a class="anchor" id="md__usr_home_hannes_devel_biocpp_core_doc_howto_use_cereal_index"></a></p>
+<div class="textblock"><p ><a class="anchor" id="md__home_hannes_devel_biocpp_core_doc_howto_use_cereal_index"></a></p>
 <p >This HowTo shows how to serialise data structures with <a href="https://uscilab.github.io/cereal/" target="_blank">cereal</a>. Every SeqAn data structure which is is marked as cerealisable can be used.</p>
 <table class="doxtable">
 <tr>
@@ -116,10 +116,10 @@ $(document).ready(function(){initNavTree('howto_use_cereal.html',''); initResiza
 <tr>
 <th>Recommended reading</th><td></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md68"></a>
+<h1><a class="anchor" id="autotoc_md70"></a>
 Motivation</h1>
 <p >Storing and loading data, for example a <a href="https://en.wikipedia.org/wiki/FM-index" target="_blank">FM-Index</a>, is a common use case. Thanks to the cereal library doing so is incredible easy. This page will show you how to use cereal in SeqAn. As an example data structure we will use a <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code>, but as already mentioned, any SeqAn data structure that is documented as cerealisable can be used.</p>
-<h1><a class="anchor" id="autotoc_md69"></a>
+<h1><a class="anchor" id="autotoc_md71"></a>
 Storing</h1>
 <p >Storing a data structure is as easy as using the <code>cereal::BinaryOutputArchive</code>. In order to use it, you need to include</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cereal/archives/binary.hpp&gt;</span> <span class="comment">// includes the cereal::BinaryOutputArchive</span></div>
@@ -155,7 +155,7 @@ Storing</h1>
 <div class="ttc" id="abasic_ofstream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ofstream.html">std::ofstream</a></div></div>
 <div class="ttc" id="afstream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/fstream.html">fstream</a></div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md70"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md72"></a>
 Loading</h1>
 <p >Loading a data structure is as easy as using the <code>cereal::BinaryInputArchive</code>. In order to use it, you need to include</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cereal/archives/binary.hpp&gt;</span> <span class="comment">// includes the cereal::BinaryInputArchive and cereal::BinaryOutputArchive</span></div>
@@ -201,7 +201,7 @@ Loading</h1>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="abasic_ifstream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/basic_ifstream.html">std::ifstream</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md71"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md73"></a>
 Storing &amp; Loading in the same function</h1>
 <p >In the example above loading and storing was encapsulated in separated functions. It is possible to use <code>cereal::BinaryInputArchive</code> and <code>cereal::BinaryOutputArchive</code> in one function, but then it is necessary to encapsulate each in an individual scope (using extra braces<code>{}</code>). The reason for this is that the output/input stream handle of an archive is closed on deconstruction and only then is the file properly written an accessible by another filehandle. </p>
 </div></div><!-- contents -->
@@ -213,7 +213,7 @@ Storing &amp; Loading in the same function</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

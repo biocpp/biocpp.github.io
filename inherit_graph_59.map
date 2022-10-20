@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="5,272,159,297"/>
+<area shape="rect" id="node2" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="207,5,411,89"/>
+<area shape="rect" id="node3" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="207,113,411,197"/>
+<area shape="rect" id="node4" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="207,221,411,276"/>
+<area shape="rect" id="node5" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="222,301,395,341"/>
+<area shape="rect" id="node6" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="235,365,382,405"/>
+<area shape="rect" id="node7" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="237,429,381,469"/>
+</map>

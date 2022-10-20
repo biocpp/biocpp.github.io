@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -220,7 +220,7 @@ class bio::ranges::views::deep&lt; underlying_adaptor_t &gt;</div><p >A wrapper 
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5_vector&gt;</a> foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
+<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;bio::alphabet::dna5&gt;</a>&gt; foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> r = foo | std::views::reverse;                     <span class="comment">// == [ [C,C,C,G,G,G], [A,A,A,T,T,T] ]</span></div>
 <div class="line"> </div>
@@ -230,7 +230,7 @@ class bio::ranges::views::deep&lt; underlying_adaptor_t &gt;</div><p >A wrapper 
 <div class="line">}</div>
 <div class="ttc" id="adeep_8hpp_html"><div class="ttname"><a href="deep_8hpp.html">deep.hpp</a></div><div class="ttdoc">Provides bio::views::deep.</div></div>
 <div class="ttc" id="adna5_8hpp_html"><div class="ttname"><a href="dna5_8hpp.html">dna5.hpp</a></div><div class="ttdoc">Provides bio::alphabet::dna5, container aliases and string literals.</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a></div></div>
 </div><!-- fragment --><p >Wrapping an adaptor that takes parameters:</p>
@@ -249,7 +249,7 @@ class bio::ranges::views::deep&lt; underlying_adaptor_t &gt;</div><p >A wrapper 
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5_vector&gt;</a> foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
+<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;bio::alphabet::dna5&gt;</a>&gt; foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> t = foo | <a class="code hl_typedef" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>(1);                   <span class="comment">// == [ [A,A,A,T,T,T] ]</span></div>
 <div class="line"> </div>
@@ -278,7 +278,7 @@ class bio::ranges::views::deep&lt; underlying_adaptor_t &gt;</div><p >A wrapper 
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5_vector&gt;</a> foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
+<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;bio::alphabet::dna5&gt;</a>&gt; foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">int</span> i = 3;</div>
 <div class="line">    <span class="keyword">auto</span> f = foo | my::deep_take(i); <span class="comment">// takes `i` as a reference!</span></div>
@@ -299,7 +299,7 @@ class bio::ranges::views::deep&lt; underlying_adaptor_t &gt;</div><p >A wrapper 
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5_vector&gt;</a> foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
+<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;std::vector&lt;bio::alphabet::dna5&gt;</a>&gt; foo{<span class="stringliteral">&quot;AAATTT&quot;</span>_dna5, <span class="stringliteral">&quot;CCCGGG&quot;</span>_dna5};</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> t = foo | <a class="code hl_typedef" href="group__meta__type__list.html#gab9a2a91a8c6bc94f6f472ad1be75a785">std::views::take</a>(1);                      <span class="comment">// == [ [A,A,A,T,T,T] ]</span></div>
 <div class="line"> </div>
@@ -322,7 +322,7 @@ class bio::ranges::views::deep&lt; underlying_adaptor_t &gt;</div><p >A wrapper 
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="namespacebio_1_1ranges.html">ranges</a></li><li class="navelem"><a class="el" href="namespacebio_1_1ranges_1_1views.html">views</a></li><li class="navelem"><a class="el" href="classbio_1_1ranges_1_1views_1_1deep.html">deep</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('persist_8hpp_source.html',''); initRes
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">static</span> <span class="keyword">auto</span> impl(urng_t &amp;&amp; urange)</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    {</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keyword">static_assert</span>(!std::is_lvalue_reference_v&lt;urng_t&gt;, <span class="stringliteral">&quot;BUG: lvalue-reference in persist_fn::impl().&quot;</span>);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> view_persist{<a class="code hl_variable" href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">std::move</a>(urange)};</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> view_persist{std::forward&lt;urng_t&gt;(urange)};</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>};</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('persist_8hpp_source.html',''); initRes
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="persist_8hpp.html">persist.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

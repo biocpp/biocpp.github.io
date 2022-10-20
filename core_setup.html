@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('core_setup.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md17">Software</a></li>
-<li class="level1"><a href="#autotoc_md18">Directory Structure</a></li>
-<li class="level1"><a href="#autotoc_md19">Compiling and Running</a></li>
-<li class="level1"><a href="#autotoc_md20">Adding a new source file to your project</a></li>
+<ul><li class="level1"><a href="#autotoc_md19">Software</a></li>
+<li class="level1"><a href="#autotoc_md20">Directory Structure</a></li>
+<li class="level1"><a href="#autotoc_md21">Compiling and Running</a></li>
+<li class="level1"><a href="#autotoc_md22">Adding a new source file to your project</a></li>
 </ul>
 </div>
-<div class="textblock"><p ><a class="anchor" id="md__usr_home_hannes_devel_biocpp_core_doc_core_setup_index"></a> <b>Learning Objective:</b><br  />
+<div class="textblock"><p ><a class="anchor" id="md__home_hannes_devel_biocpp_core_doc_core_setup_index"></a> <b>Learning Objective:</b><br  />
  In this short guide you will learn how to set up BioC++ and how to compile a small example to test whether everything works.</p>
 <table class="doxtable">
 <tr>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('core_setup.html',''); initResizable();
 </table>
 <p ><br  />
 </p>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Software</h1>
 <p >Requirements:</p><ul>
 <li>gcc &gt;= 10</li>
@@ -126,7 +126,7 @@ Software</h1>
 <li>git</li>
 </ul>
 <p >BioC++ requires a GCC &gt;= 10. Current versions of LLVM/Clang and VisualStudio/MSVC are <b>not supported</b>. You can check your GCC version by calling <code>g++ --version</code>. Depending on your operating system, multiple versions might be available as <code>g++-10</code> or <code>g++10</code>. We recommend using the latest version of GCC you have access to. For more information refer to your operating system's documentation.</p>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Directory Structure</h1>
 <p >For this project, we recommend following directory layout:</p>
 <div class="fragment"><div class="line">tutorial</div>
@@ -155,7 +155,7 @@ Directory Structure</h1>
 <div class="line">└── source</div>
 <div class="line"> </div>
 <div class="line">8 directories, 6 files</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md19"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md21"></a>
 Compiling and Running</h1>
 <p >To test whether everything works, we will now compile and run a small example.</p>
 <p >First we create the file <code>hello_world.cpp</code> in the <code>source</code> directory with the following contents:</p>
@@ -172,13 +172,15 @@ Compiling and Running</h1>
 <div class="line">}</div>
 <div class="ttc" id="aalphabet_2aminoacid_2all_8hpp_html"><div class="ttname"><a href="alphabet_2aminoacid_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the aminoacid submodule; includes all headers from alphabet/aminoacid/.</div></div>
 <div class="ttc" id="afmt_8hpp_html"><div class="ttname"><a href="fmt_8hpp.html">fmt.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p >To compile it we first create a <code>CMakeLists.txt</code> file in the <code>source</code> directory:</p>
 <div class="fragment"><div class="line">cmake_minimum_required (VERSION 3.4)</div>
 <div class="line">project (biocpp_core_tutorial CXX)</div>
 <div class="line"> </div>
-<div class="line">find_package (BioCpp REQUIRED HINTS &quot;${CMAKE_SOURCE_DIR}/../biocpp-core/build_system&quot;)</div>
+<div class="line">find_package (biocpp COMPONENTS core REQUIRED HINTS &quot;${CMAKE_SOURCE_DIR}/../biocpp-core/build_system&quot;)</div>
+<div class="line"># OR:</div>
+<div class="line">#find_package (biocpp_core REQUIRED HINTS &quot;${CMAKE_SOURCE_DIR}/../biocpp-core/build_system&quot;)</div>
 <div class="line"> </div>
 <div class="line">add_executable (hello_world hello_world.cpp)</div>
 <div class="line"> </div>
@@ -202,12 +204,12 @@ Compiling and Running</h1>
 </div><!-- fragment --></dd></dl>
 <dl class="section note"><dt>Note</dt><dd>In some situations it can happen that the correct assembler is not found. You will see an error during the cmake configuration that says something like: <code>... could not understand flag m ...</code>. In this case you can try to export the Path: <div class="fragment"><div class="line">export PATH=/util/bin:$PATH</div>
 </div><!-- fragment --> and try running cmake again.</dd></dl>
-<h1><a class="anchor" id="autotoc_md20"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Adding a new source file to your project</h1>
 <p >If you create a new <code>cpp</code> file and want to compile it, you need to add another <code>add_executable</code> and <code>target_link_libraries</code> directive to you <code>CMakeLists.txt</code>. For example, after adding <code>another_program.cpp</code> your <code>CMakeLists.txt</code> may look like this: </p><div class="fragment"><div class="line">cmake_minimum_required (VERSION 3.4)</div>
 <div class="line">project (biocpp-core_tutorial CXX)</div>
 <div class="line"> </div>
-<div class="line">find_package (BioCpp REQUIRED HINTS &quot;${CMAKE_SOURCE_DIR}/../biocpp-core/build_system&quot;)</div>
+<div class="line">find_package (biocpp COMPONENTS core REQUIRED HINTS &quot;${CMAKE_SOURCE_DIR}/../biocpp-core/build_system&quot;)</div>
 <div class="line"> </div>
 <div class="line">add_executable (hello_world hello_world.cpp)</div>
 <div class="line">add_executable (another_program another_program.cpp)</div>
@@ -223,7 +225,7 @@ Adding a new source file to your project</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

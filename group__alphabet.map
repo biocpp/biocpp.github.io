@@ -1,11 +1,11 @@
 <map id="Alphabet" name="Alphabet">
-<area shape="rect" id="node1" href="$group__adaptation.html" title="Provides alphabet adaptions of some standard char and uint types." alt="" coords="127,5,211,31"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,179,79,204"/>
-<area shape="rect" id="node3" href="$group__alphabet__composite.html" title="Provides templates for combining existing alphabets into new alphabet types." alt="" coords="127,55,212,80"/>
-<area shape="rect" id="node4" href="$group__aminoacid.html" title="Provides the amino acid alphabets and functionality for translation from nucleotide." alt="" coords="128,104,211,129"/>
-<area shape="rect" id="node5" href="$group__cigar.html" title="Provides (semi&#45;)alphabets for representing elements in CIGAR strings." alt="" coords="137,153,202,179"/>
-<area shape="rect" id="node6" href="$group__gap.html" title="Provides the gap alphabet and functionality to make an alphabet a gapped alphabet." alt="" coords="146,203,193,228"/>
-<area shape="rect" id="node7" href="$group__mask.html" title="Provides the mask alphabet and functionality for creating masked composites." alt="" coords="142,252,197,277"/>
-<area shape="rect" id="node8" href="$group__nucleotide.html" title="Provides the different DNA and RNA alphabet types." alt="" coords="127,301,211,327"/>
-<area shape="rect" id="node9" href="$group__quality.html" title="Provides the various quality score types." alt="" coords="138,351,201,376"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,179,85,204"/>
+<area shape="rect" id="node2" href="$group__alphabet__composite.html" title="Provides templates for combining existing alphabets into new alphabet types." alt="" coords="133,5,225,31"/>
+<area shape="rect" id="node3" href="$group__alphabet__custom.html" title="Provides customisation tags and alphabet adaptations of standard char and uint types." alt="" coords="143,55,215,80"/>
+<area shape="rect" id="node4" href="$group__aminoacid.html" title="Provides the amino acid alphabets and functionality for translation from nucleotide." alt="" coords="134,104,225,129"/>
+<area shape="rect" id="node5" href="$group__cigar.html" title="Provides (semi&#45;)alphabets for representing elements in CIGAR strings." alt="" coords="148,153,211,179"/>
+<area shape="rect" id="node6" href="$group__gap.html" title="Provides the gap alphabet and functionality to make an alphabet a gapped alphabet." alt="" coords="155,203,203,228"/>
+<area shape="rect" id="node7" href="$group__mask.html" title="Provides the mask alphabet and functionality for creating masked composites." alt="" coords="151,252,208,277"/>
+<area shape="rect" id="node8" href="$group__nucleotide.html" title="Provides the different DNA and RNA alphabet types." alt="" coords="133,301,225,327"/>
+<area shape="rect" id="node9" href="$group__quality.html" title="Provides the various quality score types." alt="" coords="145,351,214,376"/>
 </map>

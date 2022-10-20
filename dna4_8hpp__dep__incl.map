@@ -1,8 +1,8 @@
 <map id="bio/alphabet/nucleotide/dna4.hpp" name="bio/alphabet/nucleotide/dna4.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::dna4, container aliases and string literals." alt="" coords="91,5,245,47"/>
-<area shape="rect" id="node2" href="$alphabet_2nucleotide_2all_8hpp.html" title="Meta&#45;header for the nucleotide submodule; includes all headers from alphabet/nucleotide/." alt="" coords="5,184,160,225"/>
-<area shape="rect" id="node4" href="$rna4_8hpp.html" title="Provides bio::alphabet::rna4, container aliases and string literals." alt="" coords="91,95,245,136"/>
-<area shape="rect" id="node5" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="185,184,319,225"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="99,363,234,389"/>
-<area shape="rect" id="node6" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="169,273,303,315"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::dna4, container aliases and string literals." alt="" coords="100,5,275,47"/>
+<area shape="rect" id="node2" href="$alphabet_2nucleotide_2all_8hpp.html" title="Meta&#45;header for the nucleotide submodule; includes all headers from alphabet/nucleotide/." alt="" coords="5,184,180,225"/>
+<area shape="rect" id="node4" href="$rna4_8hpp.html" title="Provides bio::alphabet::rna4, container aliases and string literals." alt="" coords="100,95,275,136"/>
+<area shape="rect" id="node5" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="205,184,357,225"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="111,363,261,389"/>
+<area shape="rect" id="node6" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="186,273,338,315"/>
 </map>

@@ -1,8 +1,6 @@
 <map id="bio/meta/concept/tuple.hpp" name="bio/meta/concept/tuple.hpp">
-<area shape="rect" id="node1" title="Provides bio::meta::tuple_like." alt="" coords="187,5,366,32"/>
-<area shape="rect" id="node2" href="$meta_2concept_2all_8hpp.html" title="Meta&#45;include for custom concepts." alt="" coords="5,80,169,107"/>
-<area shape="rect" id="node4" href="$tuple__utility_8hpp.html" title="Provides utility functions for tuple like interfaces." alt="" coords="194,80,359,107"/>
-<area shape="rect" id="node5" href="$get_8hpp.html" title="Provides bio::views::get." alt="" coords="384,80,551,107"/>
-<area shape="rect" id="node3" href="$meta_2all_8hpp.html" title="Meta&#45;header for the meta module ." alt="" coords="125,155,239,181"/>
-<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="386,155,549,181"/>
+<area shape="rect" id="node1" title="Provides bio::meta::tuple_like." alt="" coords="101,5,301,32"/>
+<area shape="rect" id="node2" href="$meta_2concept_2all_8hpp.html" title="Meta&#45;include for custom concepts." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node4" href="$tuple__utility_8hpp.html" title="Provides utility functions for tuple like interfaces." alt="" coords="212,80,400,107"/>
+<area shape="rect" id="node3" href="$meta_2all_8hpp.html" title="Meta&#45;header for the meta module ." alt="" coords="137,155,265,181"/>
 </map>

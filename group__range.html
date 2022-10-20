@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('group__range.html',''); initResizable(
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Ranges</div></div>
 </div><!--header-->
@@ -111,7 +112,7 @@ $(document).ready(function(){initNavTree('group__range.html',''); initResizable(
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__range.svg" width="204" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__range.svg" width="215" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -127,28 +128,28 @@ Modules</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio_1_1ranges"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1ranges.html">bio::ranges</a></td></tr>
-<tr class="memdesc:namespacebio_1_1ranges"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Ranges module's namespace. <br /></td></tr>
+<tr class="memdesc:namespacebio_1_1ranges"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ranges module's namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1back__insertable.html">back_insertable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes range types that can grow in amortised constant time by appending an element.  <a href="interfacebio_1_1ranges_1_1back__insertable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1back__insertable__with.html">back_insertable_with</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes range types that can grow in amortised constant time by appending an element of type val_t.  <a href="interfacebio_1_1ranges_1_1back__insertable__with.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1const__iterable__range.html">const_iterable_range</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies requirements of an input range type for which the <code>const</code> version of that type satisfies the same strength input range concept as the non-const version.  <a href="interfacebio_1_1ranges_1_1const__iterable__range.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1pseudo__random__access__iterator.html">pseudo_random_access_iterator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept checks if an iterator type models pseudo random access.  <a href="interfacebio_1_1ranges_1_1pseudo__random__access__iterator.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1pseudo__random__access__range.html">pseudo_random_access_range</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept checks if a type models a pseudo random access range.  <a href="interfacebio_1_1ranges_1_1pseudo__random__access__range.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01urng__t_01_4.html">std::hash&lt; urng_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a range of characters.  <a href="structstd_1_1hash_3_01urng__t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1range__compatible.html">range_compatible</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two types are "compatible" if their <a class="el" href="group__range.html#ga6328137c2baad5fa78067433d4a21546" title="Returns the number of times you can call std::ranges::value_type_t recursively on t (type trait).">bio::ranges::range_dimension_v</a> and their <a class="el" href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d" title="Shortcut for bio::ranges::range_innermost_value (transformation_trait shortcut).">bio::ranges::range_innermost_value_t</a> are the same.  <a href="interfacebio_1_1ranges_1_1range__compatible.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html">bio::ranges::range_innermost_value&lt; t &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively determines the <code>value_type</code> on containers and/or iterators.  <a href="structbio_1_1ranges_1_1range__innermost__value.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1ranges_1_1sequence.html">sequence</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generic concept for a sequence.  <a href="interfacebio_1_1ranges_1_1sequence.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -157,6 +158,13 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d">bio::ranges::range_innermost_value_t</a> = typename <a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html">range_innermost_value</a>&lt; t &gt;::type</td></tr>
 <tr class="memdesc:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut for <a class="el" href="structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators.">bio::ranges::range_innermost_value</a> (transformation_trait shortcut).  <a href="group__range.html#ga7f6b48fe07fecaad1c6c747d2cc7383d">More...</a><br /></td></tr>
 <tr class="separator:ga7f6b48fe07fecaad1c6c747d2cc7383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga8067abb088744943ab2a020e6d9616f5"><td class="memTemplParams" colspan="2">template&lt;typename container_t , typename... args_t&gt; </td></tr>
+<tr class="memitem:ga8067abb088744943ab2a020e6d9616f5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__range.html#ga8067abb088744943ab2a020e6d9616f5">bio::ranges::to</a> (args_t &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ga8067abb088744943ab2a020e6d9616f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a range to a container.  <a href="group__range.html#ga8067abb088744943ab2a020e6d9616f5">More...</a><br /></td></tr>
+<tr class="separator:ga8067abb088744943ab2a020e6d9616f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -206,6 +214,83 @@ template&lt;typename t &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga8067abb088744943ab2a020e6d9616f5" name="ga8067abb088744943ab2a020e6d9616f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8067abb088744943ab2a020e6d9616f5">&#9670;&nbsp;</a></span>to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename container_t , typename... args_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto bio::ranges::to </td>
+          <td>(</td>
+          <td class="paramtype">args_t &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a range to a container. </p>
+<p >This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
+<p >To convert a range to a container different call syntax can be used. Either the "pipe syntax" or the "function call" syntax. Both syntaxes support the explicit specification of the target container or a specification with an deduced value type.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/deque.html">deque</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/forward_list.html">forward_list</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/list.html">list</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="to_8hpp.html">bio/ranges/to.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">auto</span> lst = std::views::iota(1, 10); <span class="comment">// some range over the numbers 1-10</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// convert range to vector using pipe syntax</span></div>
+<div class="line">    <span class="keyword">auto</span> vec0 = lst | bio::ranges::to&lt;std::vector&lt;int&gt;&gt;();</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec0), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>&gt;);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// convert range to vector but auto deducing the element type</span></div>
+<div class="line">    <span class="keyword">auto</span> vec1 = lst | bio::ranges::to&lt;std::vector&gt;();</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec1), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>&gt;);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// convert range to vector using function call syntax</span></div>
+<div class="line">    <span class="keyword">auto</span> vec2 = bio::ranges::to&lt;std::vector&lt;int&gt;&gt;(lst);</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec2), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>&gt;);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// using function call syntax and auto deducing element type</span></div>
+<div class="line">    <span class="keyword">auto</span> vec3 = bio::ranges::to&lt;std::vector&gt;(lst);</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec3), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>&gt;);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// convert nested ranges into nested containers</span></div>
+<div class="line">    <span class="keyword">auto</span> nested_lst = <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list&lt;std::forward_list&lt;int&gt;</a>&gt;{{1, 2, 3}, {4, 5, 6, 7}};</div>
+<div class="line">    <span class="keyword">auto</span> vec4 = nested_lst | bio::ranges::to&lt;std::vector&lt;std::vector&lt;int&gt;&gt;&gt;();</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec4), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;<a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;int&gt;</a>&gt;&gt;);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// different supported container types</span></div>
+<div class="line">    <span class="keyword">auto</span> vec5 = lst | bio::ranges::to&lt;std::list&gt;();</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec5), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list&lt;int&gt;</a>&gt;);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">auto</span> vec6 = lst | bio::ranges::to&lt;std::deque&gt;();</div>
+<div class="line">    <span class="keyword">static_assert</span>(std::same_as&lt;<span class="keyword">decltype</span>(vec6), <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/deque.html">std::deque&lt;int&gt;</a>&gt;);</div>
+<div class="line">}</div>
+<div class="ttc" id="adeque_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/deque.html">deque</a></div></div>
+<div class="ttc" id="aforward_list_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/forward_list.html">forward_list</a></div></div>
+<div class="ttc" id="alist_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/list.html">list</a></div></div>
+<div class="ttc" id="ato_8hpp_html"><div class="ttname"><a href="to_8hpp.html">to.hpp</a></div><div class="ttdoc">An implementation of C++23's std::ranges::to.</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/vector.html">vector</a></div></div>
+</div><!-- fragment --> 
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga6328137c2baad5fa78067433d4a21546" name="ga6328137c2baad5fa78067433d4a21546"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6328137c2baad5fa78067433d4a21546">&#9670;&nbsp;</a></span>range_dimension_v</h2>
@@ -248,7 +333,7 @@ template&lt;typename t &gt; </div>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

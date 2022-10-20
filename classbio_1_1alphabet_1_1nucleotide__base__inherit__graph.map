@@ -1,19 +1,19 @@
 <map id="bio::alphabet::nucleotide_base&lt; derived_type, size &gt;" name="bio::alphabet::nucleotide_base&lt; derived_type, size &gt;">
-<area shape="rect" id="node1" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the nucleotides." alt="" coords="587,201,773,243"/>
-<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,5,1095,47"/>
-<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,71,1095,112"/>
-<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,136,1095,177"/>
-<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,201,1095,243"/>
-<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,267,1095,308"/>
-<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,332,1095,373"/>
-<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="932,397,1095,439"/>
-<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="359,194,537,250"/>
-<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,194,184,250"/>
-<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1dna15.html" title="The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap.." alt="" coords="1157,13,1295,39"/>
-<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1dna16sam.html" title="A 16 letter DNA alphabet, containing all IUPAC symbols minus the gap and plus an equality sign (&#39;=&#39;)...." alt="" coords="1144,78,1308,105"/>
-<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.." alt="" coords="1160,143,1292,170"/>
-<area shape="rect" id="node11" href="$classbio_1_1alphabet_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.." alt="" coords="1160,209,1292,235"/>
-<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1rna15.html" title="The 15 letter RNA alphabet, containing all IUPAC smybols minus the gap.." alt="" coords="1158,274,1294,301"/>
-<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1rna4.html" title="The four letter RNA alphabet of A,C,G,U.." alt="" coords="1161,339,1291,366"/>
-<area shape="rect" id="node17" href="$classbio_1_1alphabet_1_1rna5.html" title="The five letter RNA alphabet of A,C,G,U and the unknown character N.." alt="" coords="1161,405,1291,431"/>
+<area shape="rect" id="node1" title="A CRTP&#45;base that refines bio::alphabet::base and is used by the nucleotides." alt="" coords="565,201,775,243"/>
+<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,5,1132,47"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,71,1132,112"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,136,1132,177"/>
+<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,201,1132,243"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,267,1132,308"/>
+<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,332,1132,373"/>
+<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1nucleotide__base.html" title=" " alt="" coords="949,397,1132,439"/>
+<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="356,194,516,250"/>
+<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,194,165,250"/>
+<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1dna15.html" title="The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap.." alt="" coords="1195,13,1350,39"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1dna16sam.html" title="A 16 letter DNA alphabet, containing all IUPAC symbols minus the gap and plus an equality sign (&#39;=&#39;)...." alt="" coords="1181,78,1364,105"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.." alt="" coords="1199,143,1346,170"/>
+<area shape="rect" id="node11" href="$classbio_1_1alphabet_1_1dna5.html" title="The five letter DNA alphabet of A,C,G,T and the unknown character N.." alt="" coords="1199,209,1346,235"/>
+<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1rna15.html" title="The 15 letter RNA alphabet, containing all IUPAC smybols minus the gap.." alt="" coords="1197,274,1349,301"/>
+<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1rna4.html" title="The four letter RNA alphabet of A,C,G,U.." alt="" coords="1201,339,1345,366"/>
+<area shape="rect" id="node17" href="$classbio_1_1alphabet_1_1rna5.html" title="The five letter RNA alphabet of A,C,G,U and the unknown character N.." alt="" coords="1201,405,1345,431"/>
 </map>

@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,17 +107,17 @@ $(document).ready(function(){initNavTree('group__mask.html',''); initResizable()
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__mask.svg" width="187" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__mask.svg" width="196" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1mask.html">bio::alphabet::mask</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of a masked alphabet to be used for tuple composites..  <a href="classbio_1_1alphabet_1_1mask.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of a masked semialphabet to be used for tuple composites..  <a href="classbio_1_1alphabet_1_1mask.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1masked.html">bio::alphabet::masked&lt; sequence_alphabet_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of a masked composite, which extends a given alphabet with a mask..  <a href="classbio_1_1alphabet_1_1masked.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template for composite alphabets that differentiate between upper and lower case characters..  <a href="classbio_1_1alphabet_1_1masked.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -125,7 +125,7 @@ Classes</h2></td></tr>
 <h3>Introduction</h3>
 <p >Masks are useful as tuple composites when one wants to create a masked alphabet with don't care positions, but does not want to use the <a class="el" href="classbio_1_1alphabet_1_1dna15.html" title="The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap..">bio::alphabet::dna15</a> <b>N</b> or <a class="el" href="classbio_1_1alphabet_1_1aa27.html" title="The twenty-seven letter amino acid alphabet..">bio::alphabet::aa27</a> <b>X</b> because of loss of information. It will instead mark the specified characters as masked, and display them as lowercase representations when printed.<br  />
 There are two types of masking: "hard-masking" which converts to the UNKNOWN character and "soft-masking", which is visualised by using lower-case instead of upper-case. However because regular nucleotide and aminoacid alphabets discard case on assignment, one needs to create additional alphabets to preserve this information (if desired).<br  />
-This alphabet in itself is not useful to users directly, but instead the composite <a class="el" href="classbio_1_1alphabet_1_1masked.html" title="Implementation of a masked composite, which extends a given alphabet with a mask..">bio::alphabet::masked</a> may be used to transform another alphabet into a new alphabet that can represent the original alphabet plus masking information. </p>
+This alphabet in itself is not useful to users directly, but instead the composite <a class="el" href="classbio_1_1alphabet_1_1masked.html" title="A template for composite alphabets that differentiate between upper and lower case characters....">bio::alphabet::masked</a> may be used to transform another alphabet into a new alphabet that can represent the original alphabet plus masking information. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -134,7 +134,7 @@ This alphabet in itself is not useful to users directly, but instead the composi
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

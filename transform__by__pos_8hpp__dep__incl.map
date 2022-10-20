@@ -1,0 +1,8 @@
+<map id="bio/ranges/views/transform_by_pos.hpp" name="bio/ranges/views/transform_by_pos.hpp">
+<area shape="rect" id="node1" title="Provides bio::views::transform_by_pos." alt="" coords="112,5,312,47"/>
+<area shape="rect" id="node2" href="$add__reverse__complement_8hpp.html" title="Provides bio::views::add_reverse_complement." alt="" coords="5,95,200,136"/>
+<area shape="rect" id="node3" href="$translate__single_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="224,95,419,136"/>
+<area shape="rect" id="node4" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="94,191,317,218"/>
+<area shape="rect" id="node6" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="341,184,536,225"/>
+<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="115,273,295,300"/>
+</map>

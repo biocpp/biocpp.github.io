@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -108,13 +108,13 @@ $(document).ready(function(){initNavTree('dir_9b716f18bdad80f0bcc9544c5d50fede.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="subdirs" name="subdirs"></a>
 Directories</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_afc8cbaf4e497a6ce725e04990a5cbfb.html">adaptation</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_c5c94c5e6394b8bbdcce9ce299c309d0.html">aminoacid</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_38406977c69206a4a7a9ef30acbdcff1.html">cigar</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_018cbefd8b552085113eaba503c83b7f.html">composite</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_f8d7d86a16ee58eabfc283b74d13b1f4.html">custom</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_f377ddb9e571c137aa69ccd22c1bf99e.html">detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,11 +132,8 @@ Files</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alphabet_2all_8hpp.html">all.hpp</a> <a href="alphabet_2all_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:alphabet_2all_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-header for the alphabet module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alphabet__base_8hpp.html">alphabet_base.hpp</a> <a href="alphabet__base_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:alphabet__base_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::alphabet_base</a>. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alphabet_2biocpp_8hpp.html">biocpp.hpp</a> <a href="alphabet_2biocpp_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:alphabet_2biocpp_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module header with module-wide definitions. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8hpp.html">base.hpp</a> <a href="base_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:base_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="classbio_1_1alphabet_1_1base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::base</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alphabet_2concept_8hpp.html">concept.hpp</a> <a href="alphabet_2concept_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:alphabet_2concept_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core alphabet concept and free function/type trait wrappers. <br /></td></tr>
@@ -150,6 +147,9 @@ Files</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alphabet_2hash_8hpp.html">hash.hpp</a> <a href="alphabet_2hash_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:alphabet_2hash_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides overloads for <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/hash.html">std::hash</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="proxy__base_8hpp.html">proxy_base.hpp</a> <a href="proxy__base_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:proxy__base_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides <a class="el" href="classbio_1_1alphabet_1_1proxy__base.html" title="A CRTP-base that eases the definition of proxy types returned in place of regular alphabets.">bio::alphabet::proxy_base</a>. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -160,7 +160,7 @@ Files</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

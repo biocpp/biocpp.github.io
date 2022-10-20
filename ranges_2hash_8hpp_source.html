@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,41 +107,42 @@ $(document).ready(function(){initNavTree('ranges_2hash_8hpp_source.html',''); in
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2hash_8hpp.html">bio/alphabet/hash.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="ranges_2concept_8hpp.html">bio/ranges/concept.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="type__traits_8hpp.html">bio/ranges/type_traits.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>std</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;ranges::input_range urng_t&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">requires</span> <a class="code hl_interface" href="interfacebio_1_1alphabet_1_1semialphabet.html">bio::alphabet::semialphabet&lt;std::ranges::range_reference_t&lt;urng_t&gt;</a>&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01urng__t_01_4.html">   32</a></span><span class="keyword">struct </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/hash.html">hash</a>&lt;urng_t&gt;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">template</span> &lt;ranges::input_range urng2_t&gt;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">requires</span> <a class="code hl_interface" href="interfacebio_1_1alphabet_1_1semialphabet.html">bio::alphabet::semialphabet&lt;std::ranges::range_reference_t&lt;urng2_t&gt;</a>&gt;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01urng__t_01_4.html#a9a503a8bbca197e09702b2cf6d46b362">   44</a></span>      <span class="keywordtype">size_t</span> <a class="code hl_function" href="structstd_1_1hash_3_01urng__t_01_4.html#a9a503a8bbca197e09702b2cf6d46b362">operator()</a>(urng2_t &amp;&amp; range) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">using </span>alphabet_t = std::ranges::range_reference_t&lt;urng_t&gt;;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">size_t</span>           result{0};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_struct" href="structstd_1_1hash_3_01alphabet__t_01_4.html">hash&lt;alphabet_t&gt;</a> h{};</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">for</span> (alphabet_t character : range)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            result *= bio::alphabet::size&lt;alphabet_t&gt;;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            result += h(character);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace std</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2hash_8hpp.html">bio/alphabet/hash.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="ranges_2concept_8hpp.html">bio/ranges/concept.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="type__traits_8hpp.html">bio/ranges/type_traits.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>std</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;ranges::input_range urng_t&gt;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">requires</span> <a class="code hl_interface" href="interfacebio_1_1alphabet_1_1semialphabet.html">bio::alphabet::semialphabet&lt;std::ranges::range_reference_t&lt;urng_t&gt;</a>&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01urng__t_01_4.html">   33</a></span><span class="keyword">struct </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/hash.html">hash</a>&lt;urng_t&gt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">template</span> &lt;ranges::input_range urng2_t&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">requires</span> <a class="code hl_interface" href="interfacebio_1_1alphabet_1_1semialphabet.html">bio::alphabet::semialphabet&lt;std::ranges::range_reference_t&lt;urng2_t&gt;</a>&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structstd_1_1hash_3_01urng__t_01_4.html#a9a503a8bbca197e09702b2cf6d46b362">   45</a></span>      <span class="keywordtype">size_t</span> <a class="code hl_function" href="structstd_1_1hash_3_01urng__t_01_4.html#a9a503a8bbca197e09702b2cf6d46b362">operator()</a>(urng2_t &amp;&amp; range) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">using </span>alphabet_t = std::ranges::range_reference_t&lt;urng_t&gt;;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">size_t</span>           result{0};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_struct" href="structstd_1_1hash_3_01alphabet__t_01_4.html">hash&lt;alphabet_t&gt;</a> h{};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">for</span> (alphabet_t character : range)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            result *= bio::alphabet::size&lt;alphabet_t&gt;;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            result += h(character);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace std</span></div>
 <div class="ttc" id="aalphabet_2hash_8hpp_html"><div class="ttname"><a href="alphabet_2hash_8hpp.html">hash.hpp</a></div><div class="ttdoc">Provides overloads for std::hash.</div></div>
 <div class="ttc" id="ahash_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/utility/hash.html">std::hash</a></div></div>
 <div class="ttc" id="ainterfacebio_1_1alphabet_1_1semialphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1semialphabet.html">semialphabet</a></div><div class="ttdoc">The basis for bio::alphabet::alphabet, but requires only rank interface (not char).</div></div>
 <div class="ttc" id="aranges_2concept_8hpp_html"><div class="ttname"><a href="ranges_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Additional non-standard concepts for ranges.</div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 <div class="ttc" id="astructstd_1_1hash_3_01alphabet__t_01_4_html"><div class="ttname"><a href="structstd_1_1hash_3_01alphabet__t_01_4.html">std::hash&lt; alphabet_t &gt;</a></div><div class="ttdoc">Struct for hashing a character.</div><div class="ttdef"><b>Definition:</b> hash.hpp:29</div></div>
-<div class="ttc" id="astructstd_1_1hash_3_01urng__t_01_4_html_a9a503a8bbca197e09702b2cf6d46b362"><div class="ttname"><a href="structstd_1_1hash_3_01urng__t_01_4.html#a9a503a8bbca197e09702b2cf6d46b362">std::hash&lt; urng_t &gt;::operator()</a></div><div class="ttdeci">size_t operator()(urng2_t &amp;&amp;range) const noexcept</div><div class="ttdoc">Compute the hash for a range of characters.</div><div class="ttdef"><b>Definition:</b> hash.hpp:44</div></div>
+<div class="ttc" id="astructstd_1_1hash_3_01urng__t_01_4_html_a9a503a8bbca197e09702b2cf6d46b362"><div class="ttname"><a href="structstd_1_1hash_3_01urng__t_01_4.html#a9a503a8bbca197e09702b2cf6d46b362">std::hash&lt; urng_t &gt;::operator()</a></div><div class="ttdeci">size_t operator()(urng2_t &amp;&amp;range) const noexcept</div><div class="ttdoc">Compute the hash for a range of characters.</div><div class="ttdef"><b>Definition:</b> hash.hpp:45</div></div>
 <div class="ttc" id="atype__traits_8hpp_html"><div class="ttname"><a href="type__traits_8hpp.html">type_traits.hpp</a></div><div class="ttdoc">Provides various transformation traits used by the range module.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -152,7 +153,7 @@ $(document).ready(function(){initNavTree('ranges_2hash_8hpp_source.html',''); in
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="ranges_2hash_8hpp.html">hash.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

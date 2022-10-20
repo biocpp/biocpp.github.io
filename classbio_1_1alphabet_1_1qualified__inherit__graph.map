@@ -1,19 +1,19 @@
 <map id="bio::alphabet::qualified&lt; sequence_alphabet_t, quality_alphabet_t &gt;" name="bio::alphabet::qualified&lt; sequence_alphabet_t, quality_alphabet_t &gt;">
-<area shape="rect" id="node1" title="Joins an arbitrary alphabet with a quality alphabet." alt="" coords="1673,107,1835,163"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__quality__alphabet.html" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="1433,20,1601,47"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="632,30,703,56"/>
-<area shape="rect" id="node7" href="$interfacebio_1_1alphabet_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="1019,30,1135,56"/>
-<area shape="rect" id="node4" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="252,84,351,111"/>
-<area shape="rect" id="node13" href="$interfacebio_1_1alphabet_1_1writable__semialphabet.html" title="A refinement of bio::alphabet::semialphabet that adds assignability." alt="" coords="592,140,743,167"/>
-<area shape="rect" id="node5" title=" " alt="" coords="17,59,151,86"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,110,163,136"/>
-<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="1455,71,1578,98"/>
-<area shape="rect" id="node9" title=" " alt="" coords="1027,80,1127,107"/>
-<area shape="rect" id="node10" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="1459,122,1574,148"/>
-<area shape="rect" id="node11" title=" " alt="" coords="1473,172,1560,199"/>
-<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1alphabet__tuple__base.html" title=" " alt="" coords="1409,223,1624,308"/>
-<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1alphabet__tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam..." alt="" coords="985,296,1168,352"/>
-<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="771,207,961,292"/>
-<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="212,259,391,315"/>
-<area shape="rect" id="node17" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="588,289,747,360"/>
+<area shape="rect" id="node1" title="Joins an arbitrary alphabet with a quality alphabet." alt="" coords="1788,106,1967,162"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__quality__alphabet.html" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="1519,19,1710,46"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="660,28,739,55"/>
+<area shape="rect" id="node7" href="$interfacebio_1_1alphabet_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="1074,28,1205,55"/>
+<area shape="rect" id="node4" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="251,83,362,110"/>
+<area shape="rect" id="node13" href="$interfacebio_1_1alphabet_1_1writable__semialphabet.html" title="A refinement of bio::alphabet::semialphabet that adds assignability." alt="" coords="614,139,785,166"/>
+<area shape="rect" id="node5" title=" " alt="" coords="17,58,166,84"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,108,177,135"/>
+<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="1545,70,1684,96"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1085,79,1194,106"/>
+<area shape="rect" id="node10" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="1551,120,1678,147"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1567,171,1663,198"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1tuple__base.html" title=" " alt="" coords="1491,222,1739,307"/>
+<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam..." alt="" coords="1057,295,1221,351"/>
+<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="819,206,1033,291"/>
+<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="227,258,387,314"/>
+<area shape="rect" id="node17" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="604,288,795,358"/>
 </map>

@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,20 +107,17 @@ $(document).ready(function(){initNavTree('group__alphabet__composite.html',''); 
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__alphabet__composite.svg" width="218" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__alphabet__composite.svg" width="231" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html">bio::alphabet::alphabet_tuple_base&lt; derived_type, component_types &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CRTP base for a combined alphabet that contains multiple values of different alphabets at the same time..  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::alphabet_variant&lt; alternative_types &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A combined alphabet that can hold values of either of its alternatives..  <a href="classbio_1_1alphabet_1_1alphabet__variant.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1semialphabet__any.html">bio::alphabet::semialphabet_any&lt; size_ &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A semi-alphabet that type erases all other semi-alphabets of the same size.  <a href="classbio_1_1alphabet_1_1semialphabet__any.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1tuple__base.html">bio::alphabet::tuple_base&lt; derived_type, component_types &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CRTP base for a combined alphabet that contains multiple values of different alphabets at the same time..  <a href="classbio_1_1alphabet_1_1tuple__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html">std::tuple_element&lt; i, tuple_t &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the type of the specified element.  <a href="structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html#details">More...</a><br /></td></tr>
@@ -128,14 +125,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1tuple__size_3_01tuple__t_01_4.html">std::tuple_size&lt; tuple_t &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to the number of elements in a tuple as a compile-time constant expression.  <a href="structstd_1_1tuple__size_3_01tuple__t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::variant&lt; alternative_types &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A combined alphabet that can hold values of either of its alternatives..  <a href="classbio_1_1alphabet_1_1variant.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Provides templates for combining existing alphabets into new alphabet types. </p>
 <h3>Introduction</h3>
-<p >This module provides various class templates that allow you to combine existing alphabets into new ones. For example, you can add new characters to existing alphabets by using <a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html" title="A combined alphabet that can hold values of either of its alternatives..">bio::alphabet::alphabet_variant</a> or combine alphabets with quality information by using <a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam...">bio::alphabet::alphabet_tuple_base</a>.</p>
+<p >This module provides various class templates that allow you to combine existing alphabets into new ones. For example, you can add new characters to existing alphabets by using <a class="el" href="classbio_1_1alphabet_1_1variant.html" title="A combined alphabet that can hold values of either of its alternatives..">bio::alphabet::variant</a> or combine alphabets with quality information by using <a class="el" href="classbio_1_1alphabet_1_1tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam...">bio::alphabet::tuple_base</a>.</p>
 <p >We have currently three major composite alphabets:</p><ul>
-<li><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam...">bio::alphabet::alphabet_tuple_base</a> which can be used to create a <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple</a> like object that still models <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>.</li>
-<li><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html" title="A combined alphabet that can hold values of either of its alternatives..">bio::alphabet::alphabet_variant</a> which roughly corresponds to the Union of the given types. It behaves similar to <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/variant.html">std::variant</a>, but also models <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>.</li>
+<li><a class="el" href="classbio_1_1alphabet_1_1tuple__base.html" title="The CRTP base for a combined alphabet that contains multiple values of different alphabets at the sam...">bio::alphabet::tuple_base</a> which can be used to create a <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/tuple.html">std::tuple</a> like object that still models <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>.</li>
+<li><a class="el" href="classbio_1_1alphabet_1_1variant.html" title="A combined alphabet that can hold values of either of its alternatives..">bio::alphabet::variant</a> which roughly corresponds to the Union of the given types. It behaves similar to <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/variant.html">std::variant</a>, but also models <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>.</li>
 <li><a class="el" href="classbio_1_1alphabet_1_1semialphabet__any.html" title="A semi-alphabet that type erases all other semi-alphabets of the same size.">bio::alphabet::semialphabet_any</a> which type erases other alphabets of the same size and allows again transformation to alphabets of the same size by copying the rank. </li>
 </ul>
 </div><!-- contents -->
@@ -146,7 +146,7 @@ Classes</h2></td></tr>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('group__concept.html',''); initResizabl
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__concept.svg" width="180" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__concept.svg" width="188" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -119,17 +119,23 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1builtin__character.html">builtin_character</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept encompasses exactly the types <code>char</code>, <code>signed char</code>, <code>unsigned char</code>, <code>wchar_t</code>, <code>char16_t</code> and <code>char32_t</code>.  <a href="interfacebio_1_1meta_1_1builtin__character.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1explicitly__convertible__to.html">explicitly_convertible_to</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves to <code>std::ranges::explicitly_convertible_to&lt;type1, type2&gt;()</code>.  <a href="interfacebio_1_1meta_1_1explicitly__convertible__to.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1constexpr__default__initializable.html">constexpr_default_initializable</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type that is std::default_initializable&lt;t&gt; at compile-time.  <a href="interfacebio_1_1meta_1_1constexpr__default__initializable.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1decays__to.html">decays_to</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves to std::same_as&lt;std::decay_t&lt;t&gt;, std::decay_t&lt;u&gt;&gt;.  <a href="interfacebio_1_1meta_1_1decays__to.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1different__from.html">different_from</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The negation of <a class="el" href="interfacebio_1_1meta_1_1decays__to.html" title="Resolves to std::same_as&lt;std::decay_t&lt;t&gt;, std::decay_t&lt;u&gt;&gt;.">bio::meta::decays_to</a>.  <a href="interfacebio_1_1meta_1_1different__from.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1floating__point.html">floating_point</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An arithmetic type that also satisfies std::is_floating_point_v&lt;t&gt;.  <a href="interfacebio_1_1meta_1_1floating__point.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1implicitly__convertible__to.html">implicitly_convertible_to</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves to <code>std::ranges::implicitly_convertible_to&lt;type1, type2&gt;()</code>.  <a href="interfacebio_1_1meta_1_1implicitly__convertible__to.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">nonint_character</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This concept encompasses exactly the types <code>char</code>, <code>wchar_t</code>, <code>char16_t</code> and <code>char32_t</code>.  <a href="interfacebio_1_1meta_1_1nonint__character.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1one__of.html">one_of</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves to (std::same_as&lt;query_t, other_types&gt; || ...).  <a href="interfacebio_1_1meta_1_1one__of.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1meta_1_1standard__layout.html">standard_layout</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves to std::is_standard_layout_v&lt;t&gt;.  <a href="interfacebio_1_1meta_1_1standard__layout.html#details">More...</a><br /></td></tr>
@@ -164,7 +170,7 @@ Classes</h2></td></tr>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

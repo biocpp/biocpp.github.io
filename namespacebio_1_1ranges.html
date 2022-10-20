@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,12 +98,13 @@ $(document).ready(function(){initNavTree('namespacebio_1_1ranges.html',''); init
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">bio::ranges Namespace Reference<div class="ingroups"><a class="el" href="group__range.html">Ranges</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The Ranges module's namespace.  
+<p>The ranges module's namespace.  
 <a href="namespacebio_1_1ranges.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -150,6 +151,15 @@ template&lt;typename t &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga8067abb088744943ab2a020e6d9616f5"><td class="memTemplParams" colspan="2">template&lt;typename container_t , typename... args_t&gt; </td></tr>
+<tr class="memitem:ga8067abb088744943ab2a020e6d9616f5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__range.html#ga8067abb088744943ab2a020e6d9616f5">to</a> (args_t &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ga8067abb088744943ab2a020e6d9616f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a range to a container.  <a href="group__range.html#ga8067abb088744943ab2a020e6d9616f5">More...</a><br /></td></tr>
+<tr class="separator:ga8067abb088744943ab2a020e6d9616f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746464675f05433286f989f5edc591ec"><td class="memTemplParams" colspan="2"><a id="a746464675f05433286f989f5edc591ec" name="a746464675f05433286f989f5edc591ec"></a>
+template&lt;typename container_t , std::ranges::range rng_t, typename... args_t&gt; </td></tr>
+<tr class="memitem:a746464675f05433286f989f5edc591ec"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to</b> (rng_t &amp;&amp;rng, args_t &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a746464675f05433286f989f5edc591ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. <br /></td></tr>
+<tr class="separator:a746464675f05433286f989f5edc591ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Type deduction guides</div></td></tr>
 <tr class="memitem:a9cf4049daf96439d4beda4ae8321bea5"><td class="memTemplParams" colspan="2"><a id="a9cf4049daf96439d4beda4ae8321bea5" name="a9cf4049daf96439d4beda4ae8321bea5"></a>
 template&lt;size_t capacity2, typename value_type &gt; </td></tr>
@@ -165,8 +175,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga6328137c2baad5fa78067433d4a21546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The Ranges module's namespace. </p>
-<p >The ranges module's namespace. </p>
+<div class="textblock"><p >The ranges module's namespace. </p>
+<p >The Ranges module's namespace. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -176,7 +186,7 @@ Variables</h2></td></tr>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="namespacebio_1_1ranges.html">ranges</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

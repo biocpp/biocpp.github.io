@@ -1,14 +1,14 @@
 <map id="bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;" name="bio::ranges::bitcompressed_vector&lt; alphabet_type &gt;">
-<area shape="rect" id="node1" title="A space&#45;optimised version of std::vector that compresses multiple letters into a single byte." alt="" coords="1080,159,1259,200"/>
-<area shape="rect" id="node2" title=" " alt="" coords="893,141,1032,167"/>
-<area shape="rect" id="node3" title=" " alt="" coords="671,141,845,167"/>
-<area shape="rect" id="node4" title=" " alt="" coords="484,111,623,138"/>
-<area shape="rect" id="node5" title=" " alt="" coords="361,111,436,138"/>
-<area shape="rect" id="node6" title=" " alt="" coords="171,5,310,47"/>
-<area shape="rect" id="node7" title=" " alt="" coords="177,71,304,112"/>
-<area shape="rect" id="node8" title=" " alt="" coords="168,136,313,177"/>
-<area shape="rect" id="node9" href="$interfacebio_1_1ranges_1_1const__iterable__range.html" title="Specifies requirements of an input range type for which the const version of that type satisfies the ..." alt="" coords="169,202,312,229"/>
-<area shape="rect" id="node10" title=" " alt="" coords="5,202,120,229"/>
-<area shape="rect" id="node11" title=" " alt="" coords="484,163,623,204"/>
-<area shape="rect" id="node12" title=" " alt="" coords="905,191,1021,218"/>
+<area shape="rect" id="node1" title="A space&#45;optimised version of std::vector that compresses multiple letters into a single byte." alt="" coords="1159,159,1357,200"/>
+<area shape="rect" id="node2" title=" " alt="" coords="956,141,1111,167"/>
+<area shape="rect" id="node3" title=" " alt="" coords="717,141,908,167"/>
+<area shape="rect" id="node4" title=" " alt="" coords="517,111,669,138"/>
+<area shape="rect" id="node5" title=" " alt="" coords="387,111,469,138"/>
+<area shape="rect" id="node6" title=" " alt="" coords="183,5,335,47"/>
+<area shape="rect" id="node7" title=" " alt="" coords="191,71,327,112"/>
+<area shape="rect" id="node8" title=" " alt="" coords="180,136,339,177"/>
+<area shape="rect" id="node9" href="$interfacebio_1_1ranges_1_1const__iterable__range.html" title="Specifies requirements of an input range type for which the const version of that type satisfies the ..." alt="" coords="180,202,339,229"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,202,132,229"/>
+<area shape="rect" id="node11" title=" " alt="" coords="517,163,669,204"/>
+<area shape="rect" id="node12" title=" " alt="" coords="969,191,1098,218"/>
 </map>

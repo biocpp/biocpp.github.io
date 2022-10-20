@@ -29,8 +29,7 @@ var searchData=
   ['front_5finsert_5fiterator_26',['front_insert_iterator',['https://en.cppreference.com/w/cpp/iterator/front_insert_iterator.html',0,'std']]],
   ['fstream_27',['fstream',['https://en.cppreference.com/w/cpp/io/basic_fstream.html',0,'std']]],
   ['function_28',['function',['https://en.cppreference.com/w/cpp/experimental/function.html',0,'std::experimental::function'],['https://en.cppreference.com/w/cpp/utility/functional/function.html',0,'std::function']]],
-  ['function_5ftraits_3c_20std_3a_3afunction_3c_20return_5ft_28args_5ft_2e_2e_2e_29_3e_20_3e_29',['function_traits&lt; std::function&lt; return_t(args_t...)&gt; &gt;',['../structbio_1_1meta_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html',1,'bio::meta']]],
-  ['future_30',['future',['https://en.cppreference.com/w/cpp/experimental/future.html',0,'std::experimental::future'],['https://en.cppreference.com/w/cpp/thread/future.html',0,'std::future']]],
-  ['future_5ferrc_31',['future_errc',['https://en.cppreference.com/w/cpp/thread/future_errc.html',0,'std']]],
-  ['future_5ferror_32',['future_error',['https://en.cppreference.com/w/cpp/thread/future_error.html',0,'std']]]
+  ['future_29',['future',['https://en.cppreference.com/w/cpp/experimental/future.html',0,'std::experimental::future'],['https://en.cppreference.com/w/cpp/thread/future.html',0,'std::future']]],
+  ['future_5ferrc_30',['future_errc',['https://en.cppreference.com/w/cpp/thread/future_errc.html',0,'std']]],
+  ['future_5ferror_31',['future_error',['https://en.cppreference.com/w/cpp/thread/future_error.html',0,'std']]]
 ];

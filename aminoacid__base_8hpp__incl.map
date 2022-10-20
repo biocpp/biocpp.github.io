@@ -1,33 +1,53 @@
 <map id="bio/alphabet/aminoacid/aminoacid_base.hpp" name="bio/alphabet/aminoacid/aminoacid_base.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::aminoacid_base." alt="" coords="543,5,697,47"/>
-<area shape="rect" id="node2" href="$alphabet__base_8hpp.html" title="Provides bio::alphabet::alphabet_base." alt="" coords="150,95,295,136"/>
-<area shape="rect" id="node25" href="$alphabet_2aminoacid_2concept_8hpp.html" title="Provides bio::alphabet::aminoacid_alphabet." alt="" coords="433,95,588,136"/>
-<area shape="rect" id="node29" href="$alphabet_2detail_2convert_8hpp_source.html" title=" " alt="" coords="669,95,795,136"/>
-<area shape="rect" id="node31" href="$alphabet_2detail_2to__lower_8hpp_source.html" title=" " alt="" coords="1039,95,1166,136"/>
-<area shape="rect" id="node3" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cassert.html" title=" " alt="" coords="43,191,109,218"/>
-<area shape="rect" id="node4" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="285,385,360,411"/>
-<area shape="rect" id="node5" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="409,467,492,493"/>
-<area shape="rect" id="node6" href="$alphabet_2concept_8hpp.html" title="Core alphabet concept and free function/type trait wrappers." alt="" coords="649,191,815,218"/>
-<area shape="rect" id="node23" href="$int__types_8hpp.html" title="Provides metaprogramming utilities for integer types." alt="" coords="35,281,160,322"/>
-<area shape="rect" id="node7" href="$alphabet_2biocpp_8hpp.html" title="Module header with module&#45;wide definitions." alt="" coords="1066,385,1225,411"/>
-<area shape="rect" id="node12" href="$exception_8hpp.html" title="Exceptions thrown by entities in the alphabet module." alt="" coords="1002,288,1179,315"/>
-<area shape="rect" id="node15" href="$core__language_8hpp.html" title="Provides concepts for core language types and relations that don&#39;t have concepts in C++20 (yet)." alt="" coords="601,281,751,322"/>
-<area shape="rect" id="node16" href="$priority__tag_8hpp.html" title="provides bio::meta::detail::priority_tag." alt="" coords="827,281,978,322"/>
-<area shape="rect" id="node17" href="$type__inspection_8hpp.html" title="Provides traits to inspect some information of a type, for example its name." alt="" coords="1328,281,1464,322"/>
-<area shape="rect" id="node21" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="699,377,837,419"/>
-<area shape="rect" id="node8" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="809,467,957,493"/>
-<area shape="rect" id="node9" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="751,541,825,568"/>
-<area shape="rect" id="node10" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="849,541,916,568"/>
-<area shape="rect" id="node11" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="941,541,1006,568"/>
-<area shape="rect" id="node13" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/stdexcept.html" title=" " alt="" coords="963,385,1042,411"/>
-<area shape="rect" id="node14" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/string.html" title=" " alt="" coords="1249,385,1303,411"/>
-<area shape="rect" id="node18" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/functional.html" title=" " alt="" coords="1379,385,1458,411"/>
-<area shape="rect" id="node19" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/memory.html" title=" " alt="" coords="1483,385,1552,411"/>
-<area shape="rect" id="node20" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/typeinfo.html" title=" " alt="" coords="1577,385,1645,411"/>
-<area shape="rect" id="node22" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="733,467,784,493"/>
-<area shape="rect" id="node24" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/limits.html" title=" " alt="" coords="5,385,59,411"/>
-<area shape="rect" id="node26" href="$template__inspection_8hpp.html" title="Provides various traits to inspect templates." alt="" coords="373,184,539,225"/>
-<area shape="rect" id="node27" href="$transformation__trait__or_8hpp.html" title="Provides bio::meta::transformation_trait_or." alt="" coords="387,273,525,329"/>
-<area shape="rect" id="node28" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait." alt="" coords="435,377,573,419"/>
-<area shape="rect" id="node30" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/array.html" title=" " alt="" coords="840,191,891,218"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::aminoacid_base." alt="" coords="716,5,891,47"/>
+<area shape="rect" id="node2" href="$alphabet_2aminoacid_2concept_8hpp.html" title="Provides bio::alphabet::aminoacid_alphabet." alt="" coords="932,705,1107,747"/>
+<area shape="rect" id="node25" href="$base_8hpp.html" title="Provides bio::alphabet::base." alt="" coords="689,713,856,739"/>
+<area shape="rect" id="node29" href="$alphabet_2detail_2convert_8hpp_source.html" title=" " alt="" coords="974,95,1118,136"/>
+<area shape="rect" id="node51" href="$alphabet_2detail_2to__lower_8hpp_source.html" title=" " alt="" coords="515,184,659,225"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="2051,1077,2143,1104"/>
+<area shape="rect" id="node4" href="$alphabet_2concept_8hpp.html" title="Core alphabet concept and free function/type trait wrappers." alt="" coords="809,802,995,829"/>
+<area shape="rect" id="node22" href="$template__inspection_8hpp.html" title="Provides various traits to inspect templates." alt="" coords="1401,795,1587,836"/>
+<area shape="rect" id="node5" href="$tag_8hpp.html" title="Provides the customisation tags for the alphabet concepts." alt="" coords="739,891,894,933"/>
+<area shape="rect" id="node6" href="$exception_8hpp.html" title="Exceptions thrown by entities in the alphabet module." alt="" coords="5,995,204,1022"/>
+<area shape="rect" id="node10" href="$core_8hpp.html" title="Provides platform and dependency checks." alt="" coords="1069,1077,1172,1104"/>
+<area shape="rect" id="node14" href="$core__language_8hpp.html" title="Provides concepts for core language types and relations that don&#39;t have concepts in C++20 (yet)." alt="" coords="1268,988,1435,1029"/>
+<area shape="rect" id="node15" href="$type__inspection_8hpp.html" title="Provides traits to inspect some information of a type, for example its name." alt="" coords="227,988,382,1029"/>
+<area shape="rect" id="node19" href="$priority__tag_8hpp.html" title="provides bio::meta::priority_tag." alt="" coords="985,988,1141,1029"/>
+<area shape="rect" id="node20" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="2286,891,2441,933"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="537,1077,617,1104"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/stdexcept.html" title=" " alt="" coords="61,1077,148,1104"/>
+<area shape="rect" id="node9" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/string.html" title=" " alt="" coords="714,1152,773,1179"/>
+<area shape="rect" id="node11" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="1079,1152,1162,1179"/>
+<area shape="rect" id="node12" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="1186,1152,1258,1179"/>
+<area shape="rect" id="node13" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="984,1152,1055,1179"/>
+<area shape="rect" id="node16" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/functional.html" title=" " alt="" coords="172,1077,259,1104"/>
+<area shape="rect" id="node17" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/memory.html" title=" " alt="" coords="283,1077,361,1104"/>
+<area shape="rect" id="node18" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/typeinfo.html" title=" " alt="" coords="385,1077,461,1104"/>
+<area shape="rect" id="node21" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="2741,995,2796,1022"/>
+<area shape="rect" id="node23" href="$transformation__trait__or_8hpp.html" title="Provides bio::meta::transformation_trait_or." alt="" coords="1857,884,2014,940"/>
+<area shape="rect" id="node24" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait." alt="" coords="1713,988,1867,1029"/>
+<area shape="rect" id="node26" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cassert.html" title=" " alt="" coords="1713,899,1782,925"/>
+<area shape="rect" id="node27" href="$int__types_8hpp.html" title="Provides metaprogramming utilities for integer types." alt="" coords="716,988,859,1029"/>
+<area shape="rect" id="node28" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/limits.html" title=" " alt="" coords="758,1077,817,1104"/>
+<area shape="rect" id="node30" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/array.html" title=" " alt="" coords="1102,459,1158,486"/>
+<area shape="rect" id="node31" href="$vtag_8hpp.html" title="Provides bio::meta::vtag." alt="" coords="1380,191,1547,218"/>
+<area shape="rect" id="node32" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/numeric.html" title=" " alt="" coords="1426,281,1501,307"/>
+<area shape="rect" id="node33" href="$small__string_8hpp.html" title="A constexpr string implementation to manipulate string literals at compile time." alt="" coords="1225,273,1379,315"/>
+<area shape="rect" id="node34" href="$small__vector_8hpp.html" title="A constexpr vector implementation with dynamic size at compile time." alt="" coords="1179,363,1334,404"/>
+<area shape="rect" id="node35" href="$repeat__n_8hpp.html" title="Provides bio::views::repeat_n." alt="" coords="1283,452,1462,493"/>
+<area shape="rect" id="node36" href="$repeat_8hpp.html" title="Provides the views::repeat_view." alt="" coords="1601,713,1808,739"/>
+<area shape="rect" id="node42" href="$take__exactly_8hpp.html" title="Provides bio::views::take_exactly and bio::views::take_exactly_or_throw." alt="" coords="1804,541,1968,583"/>
+<area shape="rect" id="node37" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/algorithm.html" title=" " alt="" coords="1662,802,1747,829"/>
+<area shape="rect" id="node38" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ranges.html" title=" " alt="" coords="2533,899,2599,925"/>
+<area shape="rect" id="node39" href="$random__access__iterator_8hpp.html" title="Provides the bio::ranges::detail::random_access_iterator class." alt="" coords="1823,795,2008,836"/>
+<area shape="rect" id="node41" href="$type__traits_8hpp.html" title="Provides various transformation traits used by the range module." alt="" coords="2235,802,2427,829"/>
+<area shape="rect" id="node40" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/iterator.html" title=" " alt="" coords="2089,899,2160,925"/>
+<area shape="rect" id="node43" href="$take_8hpp.html" title="Provides bio::views::take." alt="" coords="1962,631,2154,657"/>
+<area shape="rect" id="node44" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/span.html" title=" " alt="" coords="1833,713,1886,739"/>
+<area shape="rect" id="node45" href="$ranges_2concept_8hpp.html" title="Additional non&#45;standard concepts for ranges." alt="" coords="1910,713,2083,739"/>
+<area shape="rect" id="node46" href="$ranges_2container_2concept_8hpp.html" title="Adaptations of concepts from the standard library." alt="" coords="1070,795,1225,836"/>
+<area shape="rect" id="node48" href="$inherited__iterator__base_8hpp.html" title="Provides the bio::ranges::detail::inherited_iterator_base template." alt="" coords="2209,705,2403,747"/>
+<area shape="rect" id="node50" href="$ranges_2views_2detail_8hpp_source.html" title=" " alt="" coords="2479,713,2680,739"/>
+<area shape="rect" id="node47" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/initializer_list.html" title=" " alt="" coords="1324,899,1435,925"/>
+<area shape="rect" id="node49" href="$empty__type_8hpp.html" title="Provides bio::meta::detail::empty_type." alt="" coords="1892,988,2059,1029"/>
 </map>

@@ -1,23 +1,14 @@
 <map id="transformation_trait" name="transformation_trait">
-<area shape="rect" id="node1" title="Concept for a transformation trait." alt="" coords="5,660,140,687"/>
-<area shape="rect" id="node2" title=" " alt="" coords="544,51,727,122"/>
-<area shape="rect" id="node3" title=" " alt="" coords="776,451,955,507"/>
-<area shape="rect" id="node4" title=" " alt="" coords="213,124,349,180"/>
-<area shape="rect" id="node5" title=" " alt="" coords="213,204,349,260"/>
-<area shape="rect" id="node6" title=" " alt="" coords="210,285,353,326"/>
-<area shape="rect" id="node7" title=" " alt="" coords="210,350,353,391"/>
-<area shape="rect" id="node8" href="$structbio_1_1meta_1_1deferred__type.html" title="Return the type identity; further arguments are ignored, but can make this type dependent if they are..." alt="" coords="197,415,365,457"/>
-<area shape="rect" id="node9" title=" " alt="" coords="220,7,343,49"/>
-<area shape="rect" id="node10" title=" " alt="" coords="191,532,371,588"/>
-<area shape="rect" id="node11" title=" " alt="" coords="189,613,373,654"/>
-<area shape="rect" id="node12" title=" " alt="" coords="204,678,359,749"/>
-<area shape="rect" id="node13" title=" " alt="" coords="204,773,359,814"/>
-<area shape="rect" id="node14" href="$structbio_1_1meta_1_1remove__rvalue__reference.html" title="Return the input type with &amp;&amp; removed, but lvalue references preserved." alt="" coords="197,838,366,879"/>
-<area shape="rect" id="node15" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="191,904,372,989"/>
-<area shape="rect" id="node16" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="191,1013,372,1099"/>
-<area shape="rect" id="node17" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="190,1123,373,1179"/>
-<area shape="rect" id="node18" title=" " alt="" coords="213,1203,349,1245"/>
-<area shape="rect" id="node19" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="205,1269,357,1310"/>
-<area shape="rect" id="node20" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="217,1334,346,1375"/>
-<area shape="rect" id="node21" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="217,1399,346,1441"/>
+<area shape="rect" id="node1" title="Concept for a transformation trait." alt="" coords="5,436,159,463"/>
+<area shape="rect" id="node2" title=" " alt="" coords="233,5,385,61"/>
+<area shape="rect" id="node3" title=" " alt="" coords="233,85,385,141"/>
+<area shape="rect" id="node4" title=" " alt="" coords="227,166,390,207"/>
+<area shape="rect" id="node5" title=" " alt="" coords="227,231,390,273"/>
+<area shape="rect" id="node6" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="207,297,411,383"/>
+<area shape="rect" id="node7" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="207,407,411,492"/>
+<area shape="rect" id="node8" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="207,516,411,572"/>
+<area shape="rect" id="node9" title=" " alt="" coords="231,597,387,638"/>
+<area shape="rect" id="node10" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="222,662,395,703"/>
+<area shape="rect" id="node11" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="235,727,382,769"/>
+<area shape="rect" id="node12" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="237,793,381,834"/>
 </map>

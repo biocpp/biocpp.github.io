@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unmasked_0',['UNMASKED',['../classbio_1_1alphabet_1_1mask.html#a9be4419af9554a70d4674ef5e22efb05',1,'bio::alphabet::mask']]],
-  ['uses_5fallocator_5fv_1',['uses_allocator_v',['https://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',0,'std::experimental']]]
+  ['validate_5fchar_5ffor_0',['validate_char_for',['../group__views.html#gacb9b64c6c1237693a332494687467b46',1,'bio::ranges::views']]],
+  ['vtag_1',['vtag',['../group__meta__tag.html#ga65ebf78f87649b81900a84fc50c3adc9',1,'bio::meta']]]
 ];

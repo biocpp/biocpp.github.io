@@ -1,19 +1,5 @@
 <map id="bio/meta/type_traits/lazy.hpp" name="bio/meta/type_traits/lazy.hpp">
-<area shape="rect" id="node1" title="Provides lazy template instantiation traits." alt="" coords="25,5,162,47"/>
-<area shape="rect" id="node2" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="5,102,56,129"/>
-<area shape="rect" id="node3" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="172,735,255,761"/>
-<area shape="rect" id="node4" href="$type__traits_2function_8hpp.html" title="Provides various type traits for use on functions." alt="" coords="131,95,269,136"/>
-<area shape="rect" id="node5" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/functional.html" title=" " alt="" coords="131,191,210,218"/>
-<area shape="rect" id="node6" href="$traits_8hpp.html" title="Provides traits for meta::type_list." alt="" coords="235,184,360,225"/>
-<area shape="rect" id="node7" href="$traits__detail_8hpp.html" title="Provides various traits for template packs." alt="" coords="217,273,343,315"/>
-<area shape="rect" id="node9" href="$type__list_8hpp.html" title="Provides bio::meta::type_list." alt="" coords="328,363,453,404"/>
-<area shape="rect" id="node8" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/utility.html" title=" " alt="" coords="251,370,304,397"/>
-<area shape="rect" id="node10" href="$template__inspection_8hpp.html" title="Provides various traits to inspect templates." alt="" coords="307,452,474,493"/>
-<area shape="rect" id="node11" href="$transformation__trait__or_8hpp.html" title="Provides bio::meta::transformation_trait_or." alt="" coords="276,541,415,597"/>
-<area shape="rect" id="node17" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="439,556,513,583"/>
-<area shape="rect" id="node12" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait." alt="" coords="302,645,439,687"/>
-<area shape="rect" id="node13" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="297,735,445,761"/>
-<area shape="rect" id="node14" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="239,809,313,836"/>
-<area shape="rect" id="node15" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="337,809,404,836"/>
-<area shape="rect" id="node16" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="429,809,494,836"/>
+<area shape="rect" id="node1" title="Provides lazy template instantiation traits." alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="7,95,62,121"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="86,95,178,121"/>
 </map>

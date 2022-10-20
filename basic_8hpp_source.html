@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -110,110 +110,39 @@ $(document).ready(function(){initNavTree('basic_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/tuple.html">tuple</a>&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a>&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="platform_8hpp.html">bio/meta/platform.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="core__language_8hpp.html">bio/meta/concept/core_language.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// is_constexpr</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#ifdef __clang__</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#    define BIOCPP_IS_CONSTEXPR(...) true</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga63b580a61083cc3b77ace84aa8e28728">   32</a></span><span class="preprocessor">#    define BIOCPP_IS_CONSTEXPR(...) std::integral_constant&lt;bool, __builtin_constant_p((__VA_ARGS__, 0))&gt;::value</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1meta.html">bio::meta</a></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// remove_rvalue_reference</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1remove__rvalue__reference.html">   52</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structbio_1_1meta_1_1remove__rvalue__reference.html">remove_rvalue_reference</a></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1remove__rvalue__reference.html#a6a32610f2d812373351a45c855a8ca6b">   55</a></span>    <span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">type</a> = <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t&lt;std::is_rvalue_reference_v&lt;t&gt;</a>, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference_t&lt;t&gt;</a>, t&gt;;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">   63</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">remove_rvalue_reference_t</a> = <span class="keyword">typename</span> <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">remove_rvalue_reference&lt;t&gt;::type</a>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// is_constexpr_default_constructible</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">   74</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible</a> : <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/integral_constant.html">std::false_type</a></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">requires</span> std::is_default_constructible_v&lt;t&gt;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1is__constexpr__default__constructible_3_01t_01_4.html">   85</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible</a>&lt;t&gt; : <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/integral_constant.html">std::integral_constant</a>&lt;bool, BIOCPP_IS_CONSTEXPR(t{})&gt;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{};</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga50e7f1238007a00a628e2b7b72b8aaa2">   93</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_constexpr_default_constructible_v = <a class="code hl_struct" href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">is_constexpr_default_constructible&lt;t&gt;::value</a>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// default_initialisable_wrap_t</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="group__type__traits.html#gab403bf8d0e05052d7e46bf8b617b8c47">  104</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">default_initialisable_wrap_t</a> =</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t&lt;std::is_nothrow_default_constructible_v&lt;std::remove_cvref_t&lt;t&gt;</a>&gt; &amp;&amp;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                       is_constexpr_default_constructible_v&lt;std::remove_cvref_t&lt;t&gt;&gt;,</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                     <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t&lt;t&gt;</a>,</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                     <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;std::remove_cvref_t&lt;t&gt;</a>&gt;&gt;;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// deferred_type</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t, <span class="keyword">typename</span>... dependent_ts&gt;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1deferred__type.html">  121</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structbio_1_1meta_1_1deferred__type.html">deferred_type</a></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="structbio_1_1meta_1_1deferred__type.html#a573f633521ad14913da95ba70f99f1ce">  124</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structbio_1_1meta_1_1deferred__type.html#a573f633521ad14913da95ba70f99f1ce">type</a> = t;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t, <span class="keyword">typename</span>... dependent_ts&gt;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">  134</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">deferred_type_t</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="structbio_1_1meta_1_1deferred__type.html">deferred_type</a>&lt;t, dependent_ts...&gt;::type;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">// ignore_t</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga7f9e56cdae87e43f5e69ab747256fa31">  141</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">ignore_t</a> = <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;<span class="keyword">decltype</span>(std::ignore)&gt;;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">  148</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">decays_to_ignore_v</a> = std::is_same_v&lt;std::remove_cvref_t&lt;t&gt;, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">ignore_t</a>&gt;;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>} <span class="comment">// namespace bio::meta</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">// BIOCPP_IS_SAME</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="preprocessor">#if defined(__clang__)</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#    define BIOCPP_IS_SAME(...) __is_same(__VA_ARGS__)</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#elif defined(__GNUC__)</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">#    define BIOCPP_IS_SAME(...) __is_same_as(__VA_ARGS__)</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga9dba4e7bfe55bcef849a53d68b63b8b9">  167</a></span><span class="preprocessor">#    define BIOCPP_IS_SAME(...) std::is_same_v&lt;__VA_ARGS__&gt;</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1meta.html">bio::meta</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// default_initialisable_wrap_t</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga0518540dd95c3b6e39a9f2a6e2ec1d4d">   37</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">default_initialisable_wrap_t</a> =</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t&lt;std::is_nothrow_default_constructible_v&lt;std::remove_cvref_t&lt;t&gt;</a>&gt; &amp;&amp;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                       <a class="code hl_interface" href="interfacebio_1_1meta_1_1constexpr__default__initializable.html">constexpr_default_initializable&lt;std::remove_cvref_t&lt;t&gt;</a>&gt;,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                     <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t&lt;t&gt;</a>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                     <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;std::remove_cvref_t&lt;t&gt;</a>&gt;&gt;;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// ignore_t</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga7f9e56cdae87e43f5e69ab747256fa31">   48</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">ignore_t</a> = <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a>&lt;<span class="keyword">decltype</span>(std::ignore)&gt;;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">   55</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">decays_to_ignore_v</a> = std::is_same_v&lt;std::remove_cvref_t&lt;t&gt;, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">ignore_t</a>&gt;;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace bio::meta</span></div>
 <div class="ttc" id="aconditional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a></div></div>
-<div class="ttc" id="agroup__type__traits_html_ga0faf63d047d9a79898eb572fb8affc36"><div class="ttname"><a href="group__type__traits.html#ga0faf63d047d9a79898eb572fb8affc36">bio::meta::remove_rvalue_reference_t</a></div><div class="ttdeci">typename remove_rvalue_reference&lt; t &gt;::type remove_rvalue_reference_t</div><div class="ttdoc">Return the input type with &amp;&amp; removed, but lvalue references preserved (transformation_trait shortcut...</div><div class="ttdef"><b>Definition:</b> basic.hpp:63</div></div>
-<div class="ttc" id="agroup__type__traits_html_ga49bc6efb0b62be81546f939b2efd7272"><div class="ttname"><a href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">bio::meta::decays_to_ignore_v</a></div><div class="ttdeci">constexpr bool decays_to_ignore_v</div><div class="ttdoc">Return whether the input type with const, volatile and references removed is std::ignore's type....</div><div class="ttdef"><b>Definition:</b> basic.hpp:148</div></div>
-<div class="ttc" id="agroup__type__traits_html_ga90bec324285fadb8b41143652e2893f4"><div class="ttname"><a href="group__type__traits.html#ga90bec324285fadb8b41143652e2893f4">bio::meta::deferred_type_t</a></div><div class="ttdeci">typename deferred_type&lt; t, dependent_ts... &gt;::type deferred_type_t</div><div class="ttdoc">Return the type identity; further arguments are ignored, but can make this type dependent if they are...</div><div class="ttdef"><b>Definition:</b> basic.hpp:134</div></div>
-<div class="ttc" id="aintegral_constant_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/integral_constant.html">std::false_type</a></div></div>
+<div class="ttc" id="acore__language_8hpp_html"><div class="ttname"><a href="core__language_8hpp.html">core_language.hpp</a></div><div class="ttdoc">Provides concepts for core language types and relations that don't have concepts in C++20 (yet).</div></div>
+<div class="ttc" id="agroup__type__traits_html_ga49bc6efb0b62be81546f939b2efd7272"><div class="ttname"><a href="group__type__traits.html#ga49bc6efb0b62be81546f939b2efd7272">bio::meta::decays_to_ignore_v</a></div><div class="ttdeci">constexpr bool decays_to_ignore_v</div><div class="ttdoc">Return whether the input type with const, volatile and references removed is std::ignore's type....</div><div class="ttdef"><b>Definition:</b> basic.hpp:55</div></div>
+<div class="ttc" id="ainterfacebio_1_1meta_1_1constexpr__default__initializable_html"><div class="ttname"><a href="interfacebio_1_1meta_1_1constexpr__default__initializable.html">constexpr_default_initializable</a></div><div class="ttdoc">A type that is std::default_initializable&lt;t&gt; at compile-time.</div></div>
 <div class="ttc" id="anamespacebio_1_1meta_html"><div class="ttname"><a href="namespacebio_1_1meta.html">bio::meta</a></div><div class="ttdoc">The Meta module's namespace.</div></div>
-<div class="ttc" id="aplatform_8hpp_html"><div class="ttname"><a href="platform_8hpp.html">platform.hpp</a></div><div class="ttdoc">Provides platform and dependency checks.</div></div>
 <div class="ttc" id="aremove_cvref_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/remove_cvref.html">std::remove_cvref_t</a></div></div>
-<div class="ttc" id="aremove_reference_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/remove_reference.html">std::remove_reference_t</a></div></div>
-<div class="ttc" id="astructbio_1_1meta_1_1deferred__type_html"><div class="ttname"><a href="structbio_1_1meta_1_1deferred__type.html">bio::meta::deferred_type</a></div><div class="ttdoc">Return the type identity; further arguments are ignored, but can make this type dependent if they are...</div><div class="ttdef"><b>Definition:</b> basic.hpp:122</div></div>
-<div class="ttc" id="astructbio_1_1meta_1_1deferred__type_html_a573f633521ad14913da95ba70f99f1ce"><div class="ttname"><a href="structbio_1_1meta_1_1deferred__type.html#a573f633521ad14913da95ba70f99f1ce">bio::meta::deferred_type::type</a></div><div class="ttdeci">t type</div><div class="ttdoc">The type identity.</div><div class="ttdef"><b>Definition:</b> basic.hpp:124</div></div>
-<div class="ttc" id="astructbio_1_1meta_1_1is__constexpr__default__constructible_html"><div class="ttname"><a href="structbio_1_1meta_1_1is__constexpr__default__constructible.html">bio::meta::is_constexpr_default_constructible</a></div><div class="ttdoc">Whether a type std::is_default_constructible in constexpr-context.</div><div class="ttdef"><b>Definition:</b> basic.hpp:75</div></div>
-<div class="ttc" id="astructbio_1_1meta_1_1remove__rvalue__reference_html"><div class="ttname"><a href="structbio_1_1meta_1_1remove__rvalue__reference.html">bio::meta::remove_rvalue_reference</a></div><div class="ttdoc">Return the input type with &amp;&amp; removed, but lvalue references preserved.</div><div class="ttdef"><b>Definition:</b> basic.hpp:53</div></div>
 <div class="ttc" id="atuple_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/tuple.html">tuple</a></div></div>
 <div class="ttc" id="atype_identity_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a></div></div>
 <div class="ttc" id="atype_traits_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a></div></div>
@@ -226,7 +155,7 @@ $(document).ready(function(){initNavTree('basic_8hpp_source.html',''); initResiz
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_33e551785948eac87ac89df08586a1e6.html">type_traits</a></li><li class="navelem"><a class="el" href="basic_8hpp.html">basic.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

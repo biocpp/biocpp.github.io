@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,15 +107,12 @@ $(document).ready(function(){initNavTree('group__nucleotide.html',''); initResiz
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__nucleotide.svg" width="216" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__nucleotide.svg" width="231" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">bio::alphabet::cpo::complement</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48" title="Return the complement of a nucleotide object.">bio::alphabet::complement</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1complement.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1dna15.html">bio::alphabet::dna15</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 15 letter DNA alphabet, containing all IUPAC smybols minus the gap..  <a href="classbio_1_1alphabet_1_1dna15.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,7 +129,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concept that indicates whether an alphabet represents nucleotides.  <a href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1nucleotide__base.html">bio::alphabet::nucleotide_base&lt; derived_type, size &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that refines <a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::alphabet_base</a> and is used by the nucleotides.  <a href="classbio_1_1alphabet_1_1nucleotide__base.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that refines <a class="el" href="classbio_1_1alphabet_1_1base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::base</a> and is used by the nucleotides.  <a href="classbio_1_1alphabet_1_1nucleotide__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1rna15.html">bio::alphabet::rna15</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 15 letter RNA alphabet, containing all IUPAC smybols minus the gap..  <a href="classbio_1_1alphabet_1_1rna15.html#details">More...</a><br /></td></tr>
@@ -304,17 +301,17 @@ Classes</h2></td></tr>
 <div class="line">    <span class="keyword">auto</span> r2 = <a class="code hl_variable" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a>(<span class="charliteral">&#39;A&#39;</span>_rna5); <span class="comment">// calls global complement() function on the rna5 object; r2 == &#39;U&#39;_rna5</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aalphabet_2nucleotide_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2nucleotide_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Provides bio::alphabet::nucleotide_alphabet.</div></div>
-<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:68</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
 <div class="ttc" id="arna5_8hpp_html"><div class="ttname"><a href="rna5_8hpp.html">rna5.hpp</a></div><div class="ttdoc">Provides bio::alphabet::rna5, container aliases and string literals.</div></div>
 </div><!-- fragment --><h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
 <div class="fragment"><div class="line"> {c++}</div>
-<div class="line"><span class="keyword">constexpr</span> alph_type <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1complement.html">bio::alphabet::cpo::complement</a>, alph_type <span class="keyword">const</span> alph) <span class="keyword">noexcept</span></div>
+<div class="line"><span class="keyword">constexpr</span> alph_type <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1complement.html">bio::alphabet::custom::complement</a>, alph_type <span class="keyword">const</span> alph) <span class="keyword">noexcept</span></div>
 <div class="line">{}</div>
-<div class="ttc" id="agroup__adaptation_html_ga90e36e0f53be2c688535b847e3d626e1"><div class="ttname"><a href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">bio::alphabet::cpo::tag_invoke</a></div><div class="ttdeci">consteval auto tag_invoke(size, char_type const) noexcept</div><div class="ttdoc">The number of values the char type can take (e.g. 256 for char).</div><div class="ttdef"><b>Definition:</b> char.hpp:38</div></div>
-<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1complement_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1complement.html">bio::alphabet::cpo::complement</a></div><div class="ttdoc">Customisation tag for bio::alphabet::complement.</div><div class="ttdef"><b>Definition:</b> concept.hpp:34</div></div>
+<div class="ttc" id="agroup__alphabet__custom_html_ga5639259492c1cbb8a53414c871ac30d5"><div class="ttname"><a href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">bio::alphabet::custom::tag_invoke</a></div><div class="ttdeci">consteval auto tag_invoke(size, char_type const) noexcept</div><div class="ttdoc">The number of values the char type can take (e.g. 256 for char).</div><div class="ttdef"><b>Definition:</b> char.hpp:43</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1complement_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1complement.html">bio::alphabet::custom::complement</a></div><div class="ttdoc">Customisation tag for bio::alphabet::complement.</div><div class="ttdef"><b>Definition:</b> tag.hpp:49</div></div>
 </div><!-- fragment --><p >Functions are found via ADL and considered only if they are marked <code>noexcept</code> (<code>constexpr</code> is not required, but recommended). The returned type must be (implicitly) convertible to <code>alph_type</code> (usually it should be the same type).</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function. </p>
 
@@ -328,7 +325,7 @@ Classes</h2></td></tr>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

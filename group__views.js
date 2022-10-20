@@ -10,12 +10,13 @@ var group__views =
       [ "operator=", "classbio_1_1ranges_1_1views_1_1deep.html#aecdf71f691ad7111f8f881313a7f7a68", null ],
       [ "deep", "classbio_1_1ranges_1_1views_1_1deep.html#a0a998aece495364bcaf8b36d50e6ee2d", null ]
     ] ],
-    [ "bio::ranges::views::to", "group__views.html#ga9d0da346d75a9fd249bd2aa9356385bc", null ],
+    [ "bio::ranges::views::char_conversion_view_t", "group__views.html#gaa94ff52bed48b575c36f2b57b5f3761a", null ],
+    [ "bio::ranges::views::add_reverse_complement", "group__views.html#ga548b9dbbec877f0ac29531de8bf865cd", null ],
     [ "bio::ranges::views::as_const", "group__views.html#ga88410870ce4218c4f77353098c51f8d2", null ],
+    [ "bio::ranges::views::char_strictly_to", "group__views.html#ga9c2f354f977056eb8e7f79476b01f2b4", null ],
     [ "bio::ranges::views::char_to", "group__views.html#ga007b5c403136a4a5a0fb40d94fe4c6ca", null ],
     [ "bio::ranges::views::complement", "group__views.html#ga8781a0aa1b8d0d573cc914628b367ab1", null ],
     [ "bio::ranges::views::convert", "group__views.html#gaeb4f69a870beb4fcf4c1021088c17447", null ],
-    [ "bio::ranges::views::get", "group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6", null ],
     [ "bio::ranges::views::interleave", "group__views.html#gaf518bca48fb0b40f5a36e4c4075e017e", null ],
     [ "bio::ranges::views::move", "group__views.html#gacc149746c0b9a2f5021709858f37de1b", null ],
     [ "bio::ranges::views::pairwise_combine", "group__views.html#gaafa2922ad4ba5880f675b44ea6007912", null ],
@@ -31,9 +32,11 @@ var group__views =
     [ "bio::ranges::views::to_lower", "group__views.html#gaecd2d4614b2456dbe58068d427b25b4b", null ],
     [ "bio::ranges::views::to_rank", "group__views.html#ga2545dce661bc25066e7b2620f88c091e", null ],
     [ "bio::ranges::views::to_upper", "group__views.html#gae82a14018fccf1a7f4b40dc4f12390a0", null ],
+    [ "bio::ranges::views::transform_by_pos", "group__views.html#ga3d7b3f6112f85e8ad2147ebf5972142f", null ],
     [ "bio::ranges::views::translate", "group__views.html#ga86867c9586842596d47325ad431806d7", null ],
     [ "bio::ranges::views::translate_join", "group__views.html#gacffb4d076ff4326b010303d935118357", null ],
     [ "bio::ranges::views::translate_single", "group__views.html#ga167e392d92aea4a514a1ad656688a905", null ],
     [ "bio::ranges::views::trim_quality", "group__views.html#ga9a36f187d6a6383964e17162e60f54ca", null ],
-    [ "bio::ranges::views::type_reduce", "group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4", null ]
+    [ "bio::ranges::views::type_reduce", "group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4", null ],
+    [ "bio::ranges::views::validate_char_for", "group__views.html#gacb9b64c6c1237693a332494687467b46", null ]
 ];

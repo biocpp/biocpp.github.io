@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BioC++: bio/alphabet/adaptation/char.hpp File Reference</title>
+<title>BioC++: bio/alphabet/custom/char.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -95,8 +95,7 @@ $(document).ready(function(){initNavTree('char_8hpp.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle"><div class="title">char.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -118,7 +117,7 @@ $(document).ready(function(){initNavTree('char_8hpp.html',''); initResizable(); 
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="char_8hpp__dep__incl.svg" width="167" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="char_8hpp__dep__incl.svg" width="166" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div>
@@ -132,33 +131,36 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio_1_1alphabet"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html">bio::alphabet</a></td></tr>
 <tr class="memdesc:namespacebio_1_1alphabet"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alphabet module's namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacebio_1_1alphabet_1_1cpo"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></td></tr>
-<tr class="memdesc:namespacebio_1_1alphabet_1_1cpo"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for third party and standard library specialisations of BioC++ customisation points. <br /></td></tr>
+<tr class="memitem:namespacebio_1_1alphabet_1_1custom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet_1_1custom.html">bio::alphabet::custom</a></td></tr>
+<tr class="memdesc:namespacebio_1_1alphabet_1_1custom"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for third party and standard library specialisations of BioC++ customisation points. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga44fea95d2c8deaf5b47018187c65d544"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
-<tr class="memitem:ga44fea95d2c8deaf5b47018187c65d544"><td class="memTemplItemLeft" align="right" valign="top">constexpr char_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__adaptation.html#ga44fea95d2c8deaf5b47018187c65d544">bio::alphabet::cpo::tag_invoke</a> (assign_char_to tag, char_type const chr2, char_type &amp;chr) noexcept</td></tr>
-<tr class="memdesc:ga44fea95d2c8deaf5b47018187c65d544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a char to the char type (same as calling <code>=</code>).  <a href="group__adaptation.html#ga44fea95d2c8deaf5b47018187c65d544">More...</a><br /></td></tr>
-<tr class="separator:ga44fea95d2c8deaf5b47018187c65d544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7857e90431c89c95481cb5d9b69e6de4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
-<tr class="memitem:ga7857e90431c89c95481cb5d9b69e6de4"><td class="memTemplItemLeft" align="right" valign="top">constexpr char_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__adaptation.html#ga7857e90431c89c95481cb5d9b69e6de4">bio::alphabet::cpo::tag_invoke</a> (assign_rank_to tag, decltype(tag_invoke(to_rank{}, char_type{})) const rank, char_type &amp;chr) noexcept</td></tr>
-<tr class="memdesc:ga7857e90431c89c95481cb5d9b69e6de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a rank to a char is the same as assigning it a numeric value.  <a href="group__adaptation.html#ga7857e90431c89c95481cb5d9b69e6de4">More...</a><br /></td></tr>
-<tr class="separator:ga7857e90431c89c95481cb5d9b69e6de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90e36e0f53be2c688535b847e3d626e1"><td class="memTemplParams" colspan="2">
+<tr><td colspan="2"><div class="groupHeader">Adapt builtin character types as alphabets.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p >These overloads make <code>char</code>, <code>wchar_t</code>, <code>char16_t</code> and <code>char32_t</code> (but not <code>signed char</code> and <code>unsigned char</code>!) satisfy <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>. </p>
+</div></td></tr>
+<tr class="memitem:ga3cd5d7066b3978246f89c322dbb868b5"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
+<tr class="memitem:ga3cd5d7066b3978246f89c322dbb868b5"><td class="memTemplItemLeft" align="right" valign="top">constexpr char_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__alphabet__custom.html#ga3cd5d7066b3978246f89c322dbb868b5">bio::alphabet::custom::tag_invoke</a> (assign_char_to tag, char_type const chr2, char_type &amp;chr) noexcept</td></tr>
+<tr class="memdesc:ga3cd5d7066b3978246f89c322dbb868b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a char to the char type (same as calling <code>=</code>).  <a href="group__alphabet__custom.html#ga3cd5d7066b3978246f89c322dbb868b5">More...</a><br /></td></tr>
+<tr class="separator:ga3cd5d7066b3978246f89c322dbb868b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga49cf77f8c917a487f2bb0a00a5250dd7"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
+<tr class="memitem:ga49cf77f8c917a487f2bb0a00a5250dd7"><td class="memTemplItemLeft" align="right" valign="top">constexpr char_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__alphabet__custom.html#ga49cf77f8c917a487f2bb0a00a5250dd7">bio::alphabet::custom::tag_invoke</a> (assign_rank_to tag, decltype(tag_invoke(to_rank{}, char_type{})) const rank, char_type &amp;chr) noexcept</td></tr>
+<tr class="memdesc:ga49cf77f8c917a487f2bb0a00a5250dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigning a rank to a char is the same as assigning it a numeric value.  <a href="group__alphabet__custom.html#ga49cf77f8c917a487f2bb0a00a5250dd7">More...</a><br /></td></tr>
+<tr class="separator:ga49cf77f8c917a487f2bb0a00a5250dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5639259492c1cbb8a53414c871ac30d5"><td class="memTemplParams" colspan="2">
 template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
-<tr class="memitem:ga90e36e0f53be2c688535b847e3d626e1"><td class="memTemplItemLeft" align="right" valign="top">consteval auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>bio::alphabet::cpo::tag_invoke</b> (size, char_type const) noexcept</td></tr>
-<tr class="memdesc:ga90e36e0f53be2c688535b847e3d626e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of values the char type can take (e.g. 256 for <code>char</code>). <br /></td></tr>
-<tr class="separator:ga90e36e0f53be2c688535b847e3d626e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff10c2f00effe0eefb0b5c22a3d6deb4"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
-<tr class="memitem:gaff10c2f00effe0eefb0b5c22a3d6deb4"><td class="memTemplItemLeft" align="right" valign="top">constexpr char_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__adaptation.html#gaff10c2f00effe0eefb0b5c22a3d6deb4">bio::alphabet::cpo::tag_invoke</a> (to_char tag, char_type const chr) noexcept</td></tr>
-<tr class="memdesc:gaff10c2f00effe0eefb0b5c22a3d6deb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting char to char is no-op (it will just return the value you pass in).  <a href="group__adaptation.html#gaff10c2f00effe0eefb0b5c22a3d6deb4">More...</a><br /></td></tr>
-<tr class="separator:gaff10c2f00effe0eefb0b5c22a3d6deb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga758ada11412f0ab8a959ad9f3aa8de73"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
-<tr class="memitem:ga758ada11412f0ab8a959ad9f3aa8de73"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__adaptation.html#ga758ada11412f0ab8a959ad9f3aa8de73">bio::alphabet::cpo::tag_invoke</a> (to_rank tag, char_type const chr) noexcept</td></tr>
-<tr class="memdesc:ga758ada11412f0ab8a959ad9f3aa8de73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert char to rank by casting to an unsigned integral type of same size.  <a href="group__adaptation.html#ga758ada11412f0ab8a959ad9f3aa8de73">More...</a><br /></td></tr>
-<tr class="separator:ga758ada11412f0ab8a959ad9f3aa8de73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5639259492c1cbb8a53414c871ac30d5"><td class="memTemplItemLeft" align="right" valign="top">consteval auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>bio::alphabet::custom::tag_invoke</b> (size, char_type const) noexcept</td></tr>
+<tr class="memdesc:ga5639259492c1cbb8a53414c871ac30d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of values the char type can take (e.g. 256 for <code>char</code>). <br /></td></tr>
+<tr class="separator:ga5639259492c1cbb8a53414c871ac30d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab140b8d6e0511cbadd2a26893180d346"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
+<tr class="memitem:gab140b8d6e0511cbadd2a26893180d346"><td class="memTemplItemLeft" align="right" valign="top">constexpr char_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__alphabet__custom.html#gab140b8d6e0511cbadd2a26893180d346">bio::alphabet::custom::tag_invoke</a> (to_char tag, char_type const chr) noexcept</td></tr>
+<tr class="memdesc:gab140b8d6e0511cbadd2a26893180d346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converting char to char is no-op (it will just return the value you pass in).  <a href="group__alphabet__custom.html#gab140b8d6e0511cbadd2a26893180d346">More...</a><br /></td></tr>
+<tr class="separator:gab140b8d6e0511cbadd2a26893180d346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfa9f6be0d682f07a67c0f31becffb88"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">bio::meta::nonint_character</a> char_type&gt; </td></tr>
+<tr class="memitem:gacfa9f6be0d682f07a67c0f31becffb88"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__alphabet__custom.html#gacfa9f6be0d682f07a67c0f31becffb88">bio::alphabet::custom::tag_invoke</a> (to_rank tag, char_type const chr) noexcept</td></tr>
+<tr class="memdesc:gacfa9f6be0d682f07a67c0f31becffb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert char to rank by casting to an unsigned integral type of same size.  <a href="group__alphabet__custom.html#gacfa9f6be0d682f07a67c0f31becffb88">More...</a><br /></td></tr>
+<tr class="separator:gacfa9f6be0d682f07a67c0f31becffb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides alphabet adaptations for standard char types. </p>
@@ -181,8 +183,8 @@ template&lt;<a class="el" href="interfacebio_1_1meta_1_1nonint__character.html">
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_afc8cbaf4e497a6ce725e04990a5cbfb.html">adaptation</a></li><li class="navelem"><a class="el" href="char_8hpp.html">char.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_f8d7d86a16ee58eabfc283b74d13b1f4.html">custom</a></li><li class="navelem"><a class="el" href="char_8hpp.html">char.hpp</a></li>
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

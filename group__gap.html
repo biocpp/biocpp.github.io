@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('group__gap.html',''); initResizable();
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__gap.svg" width="179" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__gap.svg" width="187" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -120,19 +120,19 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga06f46cdec2162495aaffd82d581dc99e"><td class="memTemplParams" colspan="2">template&lt;typename alphabet_t &gt; </td></tr>
-<tr class="memitem:ga06f46cdec2162495aaffd82d581dc99e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gap.html#ga06f46cdec2162495aaffd82d581dc99e">bio::alphabet::gapped</a> = <a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html">alphabet_variant</a>&lt; alphabet_t, <a class="el" href="classbio_1_1alphabet_1_1gap.html">gap</a> &gt;</td></tr>
-<tr class="memdesc:ga06f46cdec2162495aaffd82d581dc99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends a given alphabet with a gap character.  <a href="group__gap.html#ga06f46cdec2162495aaffd82d581dc99e">More...</a><br /></td></tr>
-<tr class="separator:ga06f46cdec2162495aaffd82d581dc99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf64db166268e1c52fc6fc5d00603003"><td class="memTemplParams" colspan="2">template&lt;typename alphabet_t &gt; </td></tr>
+<tr class="memitem:gabf64db166268e1c52fc6fc5d00603003"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__gap.html#gabf64db166268e1c52fc6fc5d00603003">bio::alphabet::gapped</a> = <a class="el" href="classbio_1_1alphabet_1_1variant.html">variant</a>&lt; alphabet_t, <a class="el" href="classbio_1_1alphabet_1_1gap.html">gap</a> &gt;</td></tr>
+<tr class="memdesc:gabf64db166268e1c52fc6fc5d00603003"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends a given alphabet with a gap character.  <a href="group__gap.html#gabf64db166268e1c52fc6fc5d00603003">More...</a><br /></td></tr>
+<tr class="separator:gabf64db166268e1c52fc6fc5d00603003"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Provides the gap alphabet and functionality to make an alphabet a gapped alphabet. </p>
 <h3>Introduction</h3>
 <p >The gap symbol (<code>-</code>) is used in alignments to represent an interruption in an alignment, usually the result of an insertion or deletion. The <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a> alphabet represents this (single) gap symbol and satisfies the <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>.</p>
-<p >The main purpose of <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a> is to be combined with other alphabets. This can easily be achieved by using the <a class="el" href="group__gap.html#ga06f46cdec2162495aaffd82d581dc99e" title="Extends a given alphabet with a gap character.">bio::alphabet::gapped&lt;&gt;</a> template which transforms any other alphabet to be a composite of that alphabet + the gap character. </p>
+<p >The main purpose of <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a> is to be combined with other alphabets. This can easily be achieved by using the <a class="el" href="group__gap.html#gabf64db166268e1c52fc6fc5d00603003" title="Extends a given alphabet with a gap character.">bio::alphabet::gapped&lt;&gt;</a> template which transforms any other alphabet to be a composite of that alphabet + the gap character. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga06f46cdec2162495aaffd82d581dc99e" name="ga06f46cdec2162495aaffd82d581dc99e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06f46cdec2162495aaffd82d581dc99e">&#9670;&nbsp;</a></span>gapped</h2>
+<a id="gabf64db166268e1c52fc6fc5d00603003" name="gabf64db166268e1c52fc6fc5d00603003"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf64db166268e1c52fc6fc5d00603003">&#9670;&nbsp;</a></span>gapped</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +140,7 @@ Typedefs</h2></td></tr>
 template&lt;typename alphabet_t &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="group__gap.html#ga06f46cdec2162495aaffd82d581dc99e">bio::alphabet::gapped</a> = typedef <a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html">alphabet_variant</a>&lt;alphabet_t, <a class="el" href="classbio_1_1alphabet_1_1gap.html">gap</a>&gt;</td>
+          <td class="memname">using <a class="el" href="group__gap.html#gabf64db166268e1c52fc6fc5d00603003">bio::alphabet::gapped</a> = typedef <a class="el" href="classbio_1_1alphabet_1_1variant.html">variant</a>&lt;alphabet_t, <a class="el" href="classbio_1_1alphabet_1_1gap.html">gap</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -153,7 +153,7 @@ template&lt;typename alphabet_t &gt; </div>
   </dd>
 </dl>
 <p>The gapped alphabet represents the variant of a given alphabet and the <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a> alphabet (e.g. the four letter DNA alphabet + a gap character).</p>
-<p >The gapped alphabet may be brace initialized from the static letter members of the underlying alphabet and the <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a> alphabet. Note that you cannot assign the alphabet by using letters of type <code>char</code>, but you instead have to use the function assign_char() of the underlying alphabet or <a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca" title="Assign from a character, implicitly converts invalid characters.">bio::alphabet::gap::assign_char()</a>.</p>
+<p >The gapped alphabet may be brace initialized from the static letter members of the underlying alphabet and the <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a> alphabet. Note that you cannot assign the alphabet by using letters of type <code>char</code>, but you instead have to use the function assign_char() of the underlying alphabet or <a class="el" href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4" title="Assign from a character, implicitly converts invalid characters.">bio::alphabet::gap::assign_char()</a>.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="gapped_8hpp.html">bio/alphabet/gap/gapped.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna4_8hpp.html">bio/alphabet/nucleotide/dna4.hpp</a>&gt;</span></div>
 <div class="line"> </div>
@@ -161,22 +161,22 @@ template&lt;typename alphabet_t &gt; </div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a> gapped_letter{};</div>
-<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a> converted_letter{<span class="charliteral">&#39;C&#39;</span>_dna4};</div>
-<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a> gap_letter{<a class="code hl_class" href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a>{}};</div>
+<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a> gapped_letter{};</div>
+<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a> converted_letter{<span class="charliteral">&#39;C&#39;</span>_dna4};</div>
+<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a> gap_letter{<a class="code hl_class" href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a>{}};</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca">assign_char</a>(<span class="charliteral">&#39;C&#39;</span>);</div>
-<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca">assign_char</a>(<span class="charliteral">&#39;-&#39;</span>); <span class="comment">// gap character</span></div>
-<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca">assign_char</a>(<span class="charliteral">&#39;K&#39;</span>); <span class="comment">// unknown characters map to the default/unknown</span></div>
+<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4">assign_char</a>(<span class="charliteral">&#39;C&#39;</span>);</div>
+<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4">assign_char</a>(<span class="charliteral">&#39;-&#39;</span>); <span class="comment">// gap character</span></div>
+<div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::gapped&lt;bio::alphabet::dna4&gt;</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4">assign_char</a>(<span class="charliteral">&#39;K&#39;</span>); <span class="comment">// unknown characters map to the default/unknown</span></div>
 <div class="line">                                                     <span class="comment">// character of the given alphabet type (i.e. A of dna4)</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html_a67b659fc94105e1d9b9e2c34c69d72ca"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca">bio::alphabet::alphabet_base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:140</div></div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__variant_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::alphabet_variant</a></div><div class="ttdoc">A combined alphabet that can hold values of either of its alternatives..</div><div class="ttdef"><b>Definition:</b> alphabet_variant.hpp:122</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1base_html_aa30ece2fbfdeac808d3bc3973fdcadb4"><div class="ttname"><a href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4">bio::alphabet::base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> base.hpp:140</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1gap_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1variant_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1variant.html">bio::alphabet::variant</a></div><div class="ttdoc">A combined alphabet that can hold values of either of its alternatives..</div><div class="ttdef"><b>Definition:</b> variant.hpp:106</div></div>
 <div class="ttc" id="adna4_8hpp_html"><div class="ttname"><a href="dna4_8hpp.html">dna4.hpp</a></div><div class="ttdoc">Provides bio::alphabet::dna4, container aliases and string literals.</div></div>
 <div class="ttc" id="agapped_8hpp_html"><div class="ttname"><a href="gapped_8hpp.html">gapped.hpp</a></div><div class="ttdoc">Provides bio::alphabet::gapped.</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>For more details see <a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html" title="A combined alphabet that can hold values of either of its alternatives..">alphabet_variant</a>, which is the base class and more general than the <a class="el" href="group__gap.html#ga06f46cdec2162495aaffd82d581dc99e" title="Extends a given alphabet with a gap character.">gapped</a> <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">alphabet</a>. </dd></dl>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>For more details see <a class="el" href="classbio_1_1alphabet_1_1variant.html" title="A combined alphabet that can hold values of either of its alternatives..">variant</a>, which is the <a class="el" href="classbio_1_1alphabet_1_1base.html" title="A CRTP-base that makes defining a custom alphabet easier.">base</a> class and more general than the <a class="el" href="group__gap.html#gabf64db166268e1c52fc6fc5d00603003" title="Extends a given alphabet with a gap character.">gapped</a> <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">alphabet</a>. </dd></dl>
 
 </div>
 </div>
@@ -188,7 +188,7 @@ template&lt;typename alphabet_t &gt; </div>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

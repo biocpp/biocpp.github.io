@@ -1,8 +1,0 @@
-<map id="bio/meta/bit_manipulation.hpp" name="bio/meta/bit_manipulation.hpp">
-<area shape="rect" id="node1" title="Provides utility functions for bit twiddling." alt="" coords="79,5,302,32"/>
-<area shape="rect" id="node2" href="$math_8hpp.html" title="Provides math related functionality." alt="" coords="31,87,177,114"/>
-<area shape="rect" id="node6" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="201,80,356,121"/>
-<area shape="rect" id="node3" href="$bitcompressed__vector_8hpp.html" title="Provides bio::bitcompressed_vector." alt="" coords="5,169,203,211"/>
-<area shape="rect" id="node4" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="27,259,181,300"/>
-<area shape="rect" id="node5" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the range module ." alt="" coords="35,348,173,375"/>
-</map>

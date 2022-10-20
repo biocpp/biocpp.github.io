@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -110,22 +110,21 @@ $(document).ready(function(){initNavTree('transformation__trait__or_8hpp_source.
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a>&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="meta_2type__traits_2concept_8hpp.html">bio/meta/type_traits/concept.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a>&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1meta.html">bio::meta</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> type_t, <span class="keyword">typename</span> default_t&gt;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">   45</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">transformation_trait_or</a> = <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t&lt;transformation_trait&lt;type_t&gt;</a>,   <span class="comment">// check if type_t::type exists</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                                   type_t,                         <span class="comment">// if yes, return type_t</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                                                   <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;default_t&gt;</a>&gt;; <span class="comment">// else return default_t as trait</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> type_t, <span class="keyword">typename</span> default_t&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">   54</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">transformation_trait_or_t</a> = <span class="keyword">typename</span> <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">transformation_trait_or&lt;type_t, default_t&gt;::type</a>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace bio::meta</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1meta.html">bio::meta</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> type_t, <span class="keyword">typename</span> default_t&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group__type__traits.html#ga4d82a6ea4bb0a8ade89da77cde12294d">   44</a></span><span class="keyword">using </span><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">transformation_trait_or</a> = <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t&lt;transformation_trait&lt;type_t&gt;</a>,   <span class="comment">// check if type_t::type exists</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                                   type_t,                         <span class="comment">// if yes, return type_t</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                                   <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;default_t&gt;</a>&gt;; <span class="comment">// else return default_t as trait</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> type_t, <span class="keyword">typename</span> default_t&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">   53</a></span><span class="keyword">using </span><a class="code hl_typedef" href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">transformation_trait_or_t</a> = <span class="keyword">typename</span> <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/conditional.html">transformation_trait_or&lt;type_t, default_t&gt;::type</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace bio::meta</span></div>
 <div class="ttc" id="aconditional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a></div></div>
-<div class="ttc" id="agroup__type__traits_html_gac1c432c9dd8abdd425beb4468e316d0f"><div class="ttname"><a href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a></div><div class="ttdeci">typename transformation_trait_or&lt; type_t, default_t &gt;::type transformation_trait_or_t</div><div class="ttdoc">Helper type of bio::meta::transformation_trait_or (transformation_trait shortcut).</div><div class="ttdef"><b>Definition:</b> transformation_trait_or.hpp:54</div></div>
+<div class="ttc" id="agroup__type__traits_html_gac1c432c9dd8abdd425beb4468e316d0f"><div class="ttname"><a href="group__type__traits.html#gac1c432c9dd8abdd425beb4468e316d0f">bio::meta::transformation_trait_or_t</a></div><div class="ttdeci">typename transformation_trait_or&lt; type_t, default_t &gt;::type transformation_trait_or_t</div><div class="ttdoc">Helper type of bio::meta::transformation_trait_or (transformation_trait shortcut).</div><div class="ttdef"><b>Definition:</b> transformation_trait_or.hpp:53</div></div>
 <div class="ttc" id="ameta_2type__traits_2concept_8hpp_html"><div class="ttname"><a href="meta_2type__traits_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait.</div></div>
 <div class="ttc" id="anamespacebio_1_1meta_html"><div class="ttname"><a href="namespacebio_1_1meta.html">bio::meta</a></div><div class="ttdoc">The Meta module's namespace.</div></div>
 <div class="ttc" id="atype_identity_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a></div></div>
@@ -139,7 +138,7 @@ $(document).ready(function(){initNavTree('transformation__trait__or_8hpp_source.
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_ae91ba6220f34d5fbc73d95dc714bae8.html">meta</a></li><li class="navelem"><a class="el" href="dir_33e551785948eac87ac89df08586a1e6.html">type_traits</a></li><li class="navelem"><a class="el" href="transformation__trait__or_8hpp.html">transformation_trait_or.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

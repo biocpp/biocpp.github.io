@@ -1,9 +1,9 @@
 <map id="bio/alphabet/quality/quality_base.hpp" name="bio/alphabet/quality/quality_base.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="216,5,351,47"/>
-<area shape="rect" id="node2" href="$phred42_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="111,95,245,136"/>
-<area shape="rect" id="node6" href="$phred63_8hpp.html" title="Provides bio::alphabet::phred63 quality scores." alt="" coords="216,184,351,225"/>
-<area shape="rect" id="node7" href="$phred68legacy_8hpp.html" title="Provides bio::alphabet::phred68legacy quality scores." alt="" coords="321,95,456,136"/>
-<area shape="rect" id="node3" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="5,184,140,225"/>
-<area shape="rect" id="node4" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="163,273,297,315"/>
-<area shape="rect" id="node5" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="163,363,297,389"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="232,5,384,47"/>
+<area shape="rect" id="node2" href="$phred42_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="119,95,271,136"/>
+<area shape="rect" id="node6" href="$phred63_8hpp.html" title="Provides bio::alphabet::phred63 quality scores." alt="" coords="232,184,384,225"/>
+<area shape="rect" id="node7" href="$phred68legacy_8hpp.html" title="Provides bio::alphabet::phred68legacy quality scores." alt="" coords="345,95,497,136"/>
+<area shape="rect" id="node3" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="5,184,157,225"/>
+<area shape="rect" id="node4" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="175,273,327,315"/>
+<area shape="rect" id="node5" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="175,363,326,389"/>
 </map>

@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -108,14 +108,14 @@ $(document).ready(function(){initNavTree('interleave_8hpp_source.html',''); init
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/cmath.html">cmath</a>&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="transformation__trait__or_8hpp.html">bio/meta/type_traits/transformation_trait_or.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="random__access__iterator_8hpp.html">bio/ranges/detail/random_access_iterator.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="ranges_2views_2detail_8hpp.html">bio/ranges/views/detail.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="persist_8hpp.html">bio/ranges/views/persist.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="type__reduce_8hpp.html">bio/ranges/views/type_reduce.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a>&gt;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a>&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="transformation__trait__or_8hpp.html">bio/meta/type_traits/transformation_trait_or.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="random__access__iterator_8hpp.html">bio/ranges/detail/random_access_iterator.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="ranges_2views_2detail_8hpp.html">bio/ranges/views/detail.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="persist_8hpp.html">bio/ranges/views/persist.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="type__reduce_8hpp.html">bio/ranges/views/type_reduce.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span>bio::ranges::detail</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('interleave_8hpp_source.html',''); init
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">using </span>iterator        = detail::random_access_iterator&lt;view_interleave&gt;;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">using </span>const_iterator  = detail::random_access_iterator&lt;view_interleave const&gt;;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> parent_type, <span class="keyword">typename</span> crtp_base&gt;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>, <span class="keyword">template</span> &lt;<span class="keyword">typename</span>...&gt; <span class="keyword">typename</span>&gt;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">friend</span> <span class="keyword">class </span>detail::random_access_iterator_base;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">public</span>:</div>
@@ -238,9 +238,9 @@ $(document).ready(function(){initNavTree('interleave_8hpp_source.html',''); init
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keyword">template</span> &lt;std::ranges::range urng_t, std::ranges::range inserted_rng_t, std::<span class="keywordtype">int</span>egral <span class="keywordtype">size_t</span>ype&gt;</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator()(urng_t &amp;&amp; urange, size_type <span class="keyword">const</span> <a class="code hl_variable" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">size</a>, inserted_rng_t &amp;&amp; i) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>          std::ranges::random_access_range&lt;urng_t&gt;,</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>          <span class="stringliteral">&quot;The underlying range parameter in views::interleave must model std::ranges::random_access_range.&quot;</span>);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keyword">static_assert</span>(std::ranges::random_access_range&lt;urng_t&gt;,</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                      <span class="stringliteral">&quot;The underlying range parameter in views::interleave must model &quot;</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                      <span class="stringliteral">&quot;std::ranges::random_access_range.&quot;</span>);</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keyword">static_assert</span>(std::ranges::viewable_range&lt;urng_t&gt;,</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                      <span class="stringliteral">&quot;The underlying range parameter in views::interleave must model std::ranges::viewable_range.&quot;</span>);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keyword">static_assert</span>(std::ranges::sized_range&lt;urng_t&gt;,</div>
@@ -276,8 +276,8 @@ $(document).ready(function(){initNavTree('interleave_8hpp_source.html',''); init
 <div class="ttc" id="aconcepts_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a></div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/iterator/end.html">std::end</a></div><div class="ttdeci">T end(T... args)</div></div>
 <div class="ttc" id="afloor_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/numeric/math/floor.html">std::floor</a></div><div class="ttdeci">T floor(T... args)</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:628</div></div>
-<div class="ttc" id="agroup__views_html_ga25dd3ea6737659b21a05c98c3ed72ef4"><div class="ttname"><a href="group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4">bio::ranges::views::type_reduce</a></div><div class="ttdeci">constexpr auto type_reduce</div><div class="ttdoc">A view adaptor that behaves like std::views::all, but type erases certain ranges.</div><div class="ttdef"><b>Definition:</b> type_reduce.hpp:157</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:519</div></div>
+<div class="ttc" id="agroup__views_html_ga25dd3ea6737659b21a05c98c3ed72ef4"><div class="ttname"><a href="group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4">bio::ranges::views::type_reduce</a></div><div class="ttdeci">constexpr auto type_reduce</div><div class="ttdoc">A view adaptor that behaves like std::views::all, but type erases certain ranges.</div><div class="ttdef"><b>Definition:</b> type_reduce.hpp:152</div></div>
 <div class="ttc" id="agroup__views_html_ga63d50200e061a9ff75edd2664ad1c905"><div class="ttname"><a href="group__views.html#ga63d50200e061a9ff75edd2664ad1c905">bio::ranges::views::persist</a></div><div class="ttdeci">constexpr auto persist</div><div class="ttdoc">A view adaptor that wraps rvalue references of non-views.</div><div class="ttdef"><b>Definition:</b> persist.hpp:224</div></div>
 <div class="ttc" id="agroup__views_html_gacc149746c0b9a2f5021709858f37de1b"><div class="ttname"><a href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::ranges::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:70</div></div>
 <div class="ttc" id="agroup__views_html_gaf518bca48fb0b40f5a36e4c4075e017e"><div class="ttname"><a href="group__views.html#gaf518bca48fb0b40f5a36e4c4075e017e">bio::ranges::views::interleave</a></div><div class="ttdeci">constexpr auto interleave</div><div class="ttdoc">A view that interleaves a given range into another range at regular intervals.</div><div class="ttdef"><b>Definition:</b> interleave.hpp:366</div></div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('interleave_8hpp_source.html',''); init
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="interleave_8hpp.html">interleave.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

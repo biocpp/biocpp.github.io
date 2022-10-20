@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('phred42_8hpp_source.html',''); initRes
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">using </span><a class="code hl_class" href="classbio_1_1alphabet_1_1quality__base.html">base_t</a> = <a class="code hl_class" href="classbio_1_1alphabet_1_1quality__base.html">quality_base&lt;phred42, 42&gt;</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">friend</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1quality__base.html">base_t</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">friend</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1alphabet__base.html">base_t::base_t</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">friend</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1base.html">base_t::base_t</a>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1phred42.html#a0d5f7a515da57e841e15fcd1c11168a0">   60</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classbio_1_1alphabet_1_1phred42.html#a0d5f7a515da57e841e15fcd1c11168a0">phred42</a>() noexcept                            = default; </div>
@@ -154,38 +154,35 @@ $(document).ready(function(){initNavTree('phred42_8hpp_source.html',''); initRes
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">inline</span> <span class="keyword">namespace </span>literals</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1phred42.html#a93b3dbbd0c50bf84327f3e1fe1437c2d">  104</a></span><span class="keyword">consteval</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1phred42.html">phred42</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_phred42(<span class="keywordtype">char</span> <span class="keyword">const</span> c) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1phred42.html">phred42</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca">assign_char</a>(c);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1phred42.html#a4b18ef1072a38672f015ed44e639ac8e">  119</a></span><span class="keyword">inline</span> <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;phred42&gt;</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_phred42(<span class="keywordtype">char</span> <span class="keyword">const</span> * s, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a> n)</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>{</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;phred42&gt;</a> r;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    r.<a class="code hl_functionRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(n);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        r[i].assign_char(s[i]);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> r;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1phred42.html#ae01d1daff5f17dacdb276fb416222aa3">  105</a></span><span class="keyword">consteval</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1phred42.html">phred42</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_phred42(<span class="keywordtype">char</span> <span class="keyword">const</span> c)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> (!char_is_valid_for&lt;phred42&gt;(c))</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">throw</span> <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a>{<span class="stringliteral">&quot;Illegal character in character literal.&quot;</span>};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classbio_1_1alphabet_1_1phred42.html">phred42</a>{}.<a class="code hl_function" href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4">assign_char</a>(c);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keyword">template</span> &lt;meta::detail::literal_buffer_<span class="keywordtype">string</span> str&gt;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classbio_1_1alphabet_1_1phred42.html#a3feadef151857d99aca797ba4c9da2f5">  123</a></span><span class="keyword">constexpr</span> <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;phred42&gt;</a> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_phred42()</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">return</span> detail::string_literal&lt;str, phred42&gt;();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>} <span class="comment">// namespace literals</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>} <span class="comment">// namespace literals</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>} <span class="comment">// namespace bio::alphabet</span></div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html">bio::alphabet::alphabet_base&lt; phred42, size, char &gt;</a></div></div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html_a67b659fc94105e1d9b9e2c34c69d72ca"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html#a67b659fc94105e1d9b9e2c34c69d72ca">bio::alphabet::alphabet_base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:140</div></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>} <span class="comment">// namespace bio::alphabet</span></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1base_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1base.html">bio::alphabet::base&lt; phred42, size, char &gt;</a></div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1base_html_aa30ece2fbfdeac808d3bc3973fdcadb4"><div class="ttname"><a href="classbio_1_1alphabet_1_1base.html#aa30ece2fbfdeac808d3bc3973fdcadb4">bio::alphabet::base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> base.hpp:140</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1phred42_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1phred42.html">bio::alphabet::phred42</a></div><div class="ttdoc">Quality type for traditional Sanger and modern Illumina Phred scores (typical range)....</div><div class="ttdef"><b>Definition:</b> phred42.hpp:45</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1phred42_html_a04a2bcd8c6ca585e39f018bc8ff52872"><div class="ttname"><a href="classbio_1_1alphabet_1_1phred42.html#a04a2bcd8c6ca585e39f018bc8ff52872">bio::alphabet::phred42::offset_char</a></div><div class="ttdeci">static constexpr char_type offset_char</div><div class="ttdoc">The projection offset between char and rank score representation.</div><div class="ttdef"><b>Definition:</b> phred42.hpp:81</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1phred42_html_a0d5f7a515da57e841e15fcd1c11168a0"><div class="ttname"><a href="classbio_1_1alphabet_1_1phred42.html#a0d5f7a515da57e841e15fcd1c11168a0">bio::alphabet::phred42::phred42</a></div><div class="ttdeci">constexpr phred42() noexcept=default</div><div class="ttdoc">Defaulted.</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1phred42_html_a8647e83aa04c2d92452c819bbdbe69ad"><div class="ttname"><a href="classbio_1_1alphabet_1_1phred42.html#a8647e83aa04c2d92452c819bbdbe69ad">bio::alphabet::phred42::offset_phred</a></div><div class="ttdeci">static constexpr phred_type offset_phred</div><div class="ttdoc">The projection offset between phred and rank score representation.</div><div class="ttdef"><b>Definition:</b> phred42.hpp:78</div></div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1quality__base_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1quality__base.html">bio::alphabet::quality_base</a></div><div class="ttdoc">A CRTP-base that refines bio::alphabet::alphabet_base and is used by the quality alphabets.</div><div class="ttdef"><b>Definition:</b> quality_base.hpp:30</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1quality__base_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1quality__base.html">bio::alphabet::quality_base</a></div><div class="ttdoc">A CRTP-base that refines bio::alphabet::base and is used by the quality alphabets.</div><div class="ttdef"><b>Definition:</b> quality_base.hpp:30</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1quality__base_html_a13ba614d8323c1de1801f50787975332"><div class="ttname"><a href="classbio_1_1alphabet_1_1quality__base.html#a13ba614d8323c1de1801f50787975332">bio::alphabet::quality_base&lt; phred42, 42 &gt;::phred_type</a></div><div class="ttdeci">int8_t phred_type</div><div class="ttdoc">The integer representation of a quality score assignable with =operator.</div><div class="ttdef"><b>Definition:</b> quality_base.hpp:36</div></div>
 <div class="ttc" id="aconditional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/conditional.html">std::conditional_t</a></div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="ainvalid_argument_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/error/invalid_argument.html">std::invalid_argument</a></div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:23</div></div>
 <div class="ttc" id="aquality__base_8hpp_html"><div class="ttname"><a href="quality__base_8hpp.html">quality_base.hpp</a></div><div class="ttdoc">Provides bio::alphabet::phred42 quality scores.</div></div>
-<div class="ttc" id="aresize_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector/resize.html">std::vector::resize</a></div><div class="ttdeci">T resize(T... args)</div></div>
-<div class="ttc" id="asize_t_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/size_t.html">std::size_t</a></div></div>
 <div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -196,7 +193,7 @@ $(document).ready(function(){initNavTree('phred42_8hpp_source.html',''); initRes
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_07786875644ed6de5ede0ed8dee13bbe.html">quality</a></li><li class="navelem"><a class="el" href="phred42_8hpp.html">phred42.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:13 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

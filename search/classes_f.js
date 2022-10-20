@@ -36,11 +36,14 @@ var searchData=
   ['pool_5foptions_33',['pool_options',['https://en.cppreference.com/w/cpp/experimental/pool_options.html',0,'std::experimental::pmr::pool_options'],['https://en.cppreference.com/w/cpp/memory/pool_options.html',0,'std::pmr::pool_options']]],
   ['precision_34',['precision',['https://en.cppreference.com/w/cpp/chrono/hh_mm_ss.html',0,'std::chrono::hh_mm_ss']]],
   ['priority_5fqueue_35',['priority_queue',['https://en.cppreference.com/w/cpp/container/priority_queue.html',0,'std']]],
-  ['promise_36',['promise',['https://en.cppreference.com/w/cpp/thread/promise.html',0,'std']]],
-  ['promise_28concurrency_20ts_29_37',['promise(Concurrency TS)',['https://en.cppreference.com/w/cpp/experimental/concurrency/promise.html',0,'std::experimental']]],
-  ['promise_28library_20fundamentals_20ts_29_38',['promise(Library Fundamentals TS)',['https://en.cppreference.com/w/cpp/experimental/lib_extensions/promise.html',0,'std::experimental']]],
-  ['propagate_5fconst_39',['propagate_const',['https://en.cppreference.com/w/cpp/experimental/propagate_const.html',0,'std::experimental']]],
-  ['pseudo_5frandom_5faccess_5fiterator_40',['pseudo_random_access_iterator',['../interfacebio_1_1ranges_1_1pseudo__random__access__iterator.html',1,'']]],
-  ['pseudo_5frandom_5faccess_5frange_41',['pseudo_random_access_range',['../interfacebio_1_1ranges_1_1pseudo__random__access__range.html',1,'']]],
-  ['ptrdiff_5ft_42',['ptrdiff_t',['https://en.cppreference.com/w/cpp/types/ptrdiff_t.html',0,'std']]]
+  ['priority_5ftag_36',['priority_tag',['../structbio_1_1meta_1_1priority__tag.html',1,'bio::meta']]],
+  ['priority_5ftag_3c_200_20_3e_37',['priority_tag&lt; 0 &gt;',['../structbio_1_1meta_1_1priority__tag_3_010_01_4.html',1,'bio::meta']]],
+  ['promise_38',['promise',['https://en.cppreference.com/w/cpp/thread/promise.html',0,'std']]],
+  ['promise_28concurrency_20ts_29_39',['promise(Concurrency TS)',['https://en.cppreference.com/w/cpp/experimental/concurrency/promise.html',0,'std::experimental']]],
+  ['promise_28library_20fundamentals_20ts_29_40',['promise(Library Fundamentals TS)',['https://en.cppreference.com/w/cpp/experimental/lib_extensions/promise.html',0,'std::experimental']]],
+  ['propagate_5fconst_41',['propagate_const',['https://en.cppreference.com/w/cpp/experimental/propagate_const.html',0,'std::experimental']]],
+  ['proxy_5fbase_42',['proxy_base',['../classbio_1_1alphabet_1_1proxy__base.html',1,'bio::alphabet']]],
+  ['proxy_5fbase_3c_20component_5fproxy_3c_20alphabet_5ftype_2c_20index_20_3e_2c_20alphabet_5ftype_20_3e_43',['proxy_base&lt; component_proxy&lt; alphabet_type, index &gt;, alphabet_type &gt;',['../classbio_1_1alphabet_1_1proxy__base.html',1,'bio::alphabet']]],
+  ['proxy_5fbase_3c_20reference_5fproxy_5ftype_2c_20alphabet_5ftype_20_3e_44',['proxy_base&lt; reference_proxy_type, alphabet_type &gt;',['../classbio_1_1alphabet_1_1proxy__base.html',1,'bio::alphabet']]],
+  ['ptrdiff_5ft_45',['ptrdiff_t',['https://en.cppreference.com/w/cpp/types/ptrdiff_t.html',0,'std']]]
 ];

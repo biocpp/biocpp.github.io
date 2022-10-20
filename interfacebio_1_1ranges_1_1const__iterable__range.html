@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('interfacebio_1_1ranges_1_1const__itera
 <p >For a type <code>t</code> it usually holds that if <code>t</code> is a range, <code>t const</code> is also a range with similar properties, but there are cases where this does not hold:</p>
 <ul>
 <li>a <code>const</code> range is usually not writable so std::ranges::output_range is lost; pure output ranges (those that are not also input ranges) are therefore not <code>const</code>-iterable;</li>
-<li>single-pass input ranges, like BioC++ files, are not <code>const</code>-iterable, because "single-pass-ness" implies that there is something in the range that changes on every iterator increment (and <code>const</code> ranges can't change);</li>
+<li>single-pass input ranges, like BioC++ readers, are not <code>const</code>-iterable, because "single-pass-ness" implies that there is something in the range that changes on every iterator increment (and <code>const</code> ranges can't change);</li>
 <li>certain views store a state with their algorithm that also changes when <code>begin()</code> is called or an iterator is incremented; these may be not be <code>const</code>-iterable, because the standard library (and also BioC++) guarantees that it is safe to call <code>const</code>-qualified functions concurrently. </li>
 </ul>
 </div><hr/>The documentation for this interface was generated from the following file:<ul>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('interfacebio_1_1ranges_1_1const__itera
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="interfacebio_1_1ranges_1_1const__iterable__range.html">const_iterable_range</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

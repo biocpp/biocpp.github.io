@@ -1,4 +1,4 @@
 <map id="bio::ranges::range_innermost_value&lt; t &gt;" name="bio::ranges::range_innermost_value&lt; t &gt;">
-<area shape="rect" id="node1" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="5,80,157,121"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="14,5,149,32"/>
+<area shape="rect" id="node1" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="5,80,179,121"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="15,5,169,32"/>
 </map>

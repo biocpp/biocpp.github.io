@@ -1,7 +1,0 @@
-<map id="quality_alphabet" name="quality_alphabet">
-<area shape="rect" id="node1" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="107,229,237,256"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="133,155,211,181"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1semialphabet.html" title="The basis for bio::alphabet, but requires only rank interface (not char)." alt="" coords="117,80,227,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,5,155,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="179,5,351,32"/>
-</map>

@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,11 +107,11 @@ $(document).ready(function(){initNavTree('ranges_2views_2all_8hpp_source.html','
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="char__to_8hpp.html">bio/ranges/views/char_to.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="complement_8hpp.html">bio/ranges/views/complement.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="ranges_2views_2convert_8hpp.html">bio/ranges/views/convert.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="deep_8hpp.html">bio/ranges/views/deep.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="get_8hpp.html">bio/ranges/views/get.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="to_8hpp.html">bio/ranges/to.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="char__to_8hpp.html">bio/ranges/views/char_to.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="complement_8hpp.html">bio/ranges/views/complement.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;<a class="code" href="ranges_2views_2convert_8hpp.html">bio/ranges/views/convert.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="deep_8hpp.html">bio/ranges/views/deep.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &lt;<a class="code" href="interleave_8hpp.html">bio/ranges/views/interleave.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="move_8hpp.html">bio/ranges/views/move.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &lt;<a class="code" href="pairwise__combine_8hpp.html">bio/ranges/views/pairwise_combine.hpp</a>&gt;</span></div>
@@ -119,16 +119,14 @@ $(document).ready(function(){initNavTree('ranges_2views_2all_8hpp_source.html','
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="rank__to_8hpp.html">bio/ranges/views/rank_to.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="single__pass__input_8hpp.html">bio/ranges/views/single_pass_input.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="take__exactly_8hpp.html">bio/ranges/views/take_exactly.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;bio/ranges/views/to.hpp&gt;</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="to__char_8hpp.html">bio/ranges/views/to_char.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="to__rank_8hpp.html">bio/ranges/views/to_rank.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="translate_8hpp.html">bio/ranges/views/translate.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;<a class="code" href="trim__quality_8hpp.html">bio/ranges/views/trim_quality.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="to__char_8hpp.html">bio/ranges/views/to_char.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="to__rank_8hpp.html">bio/ranges/views/to_rank.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;<a class="code" href="translate_8hpp.html">bio/ranges/views/translate.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;<a class="code" href="trim__quality_8hpp.html">bio/ranges/views/trim_quality.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="ttc" id="achar__to_8hpp_html"><div class="ttname"><a href="char__to_8hpp.html">char_to.hpp</a></div><div class="ttdoc">Provides bio::views::char_to.</div></div>
 <div class="ttc" id="acomplement_8hpp_html"><div class="ttname"><a href="complement_8hpp.html">complement.hpp</a></div><div class="ttdoc">Provides bio::views::complement.</div></div>
 <div class="ttc" id="adeep_8hpp_html"><div class="ttname"><a href="deep_8hpp.html">deep.hpp</a></div><div class="ttdoc">Provides bio::views::deep.</div></div>
-<div class="ttc" id="aget_8hpp_html"><div class="ttname"><a href="get_8hpp.html">get.hpp</a></div><div class="ttdoc">Provides bio::views::get.</div></div>
 <div class="ttc" id="ainterleave_8hpp_html"><div class="ttname"><a href="interleave_8hpp.html">interleave.hpp</a></div><div class="ttdoc">Provides bio::views::interleave.</div></div>
 <div class="ttc" id="amove_8hpp_html"><div class="ttname"><a href="move_8hpp.html">move.hpp</a></div><div class="ttdoc">Provides bio::views::move.</div></div>
 <div class="ttc" id="apairwise__combine_8hpp_html"><div class="ttname"><a href="pairwise__combine_8hpp.html">pairwise_combine.hpp</a></div><div class="ttdoc">Provides bio::views::pairwise_combine.</div></div>
@@ -137,6 +135,7 @@ $(document).ready(function(){initNavTree('ranges_2views_2all_8hpp_source.html','
 <div class="ttc" id="arank__to_8hpp_html"><div class="ttname"><a href="rank__to_8hpp.html">rank_to.hpp</a></div><div class="ttdoc">Provides bio::views::rank_to.</div></div>
 <div class="ttc" id="asingle__pass__input_8hpp_html"><div class="ttname"><a href="single__pass__input_8hpp.html">single_pass_input.hpp</a></div><div class="ttdoc">Provides bio::alphabet::single_pass_input_view.</div></div>
 <div class="ttc" id="atake__exactly_8hpp_html"><div class="ttname"><a href="take__exactly_8hpp.html">take_exactly.hpp</a></div><div class="ttdoc">Provides bio::views::take_exactly and bio::views::take_exactly_or_throw.</div></div>
+<div class="ttc" id="ato_8hpp_html"><div class="ttname"><a href="to_8hpp.html">to.hpp</a></div><div class="ttdoc">An implementation of C++23's std::ranges::to.</div></div>
 <div class="ttc" id="ato__char_8hpp_html"><div class="ttname"><a href="to__char_8hpp.html">to_char.hpp</a></div><div class="ttdoc">Provides bio::views::to_char.</div></div>
 <div class="ttc" id="ato__rank_8hpp_html"><div class="ttname"><a href="to__rank_8hpp.html">to_rank.hpp</a></div><div class="ttdoc">Provides bio::views::to_rank.</div></div>
 <div class="ttc" id="atranslate_8hpp_html"><div class="ttname"><a href="translate_8hpp.html">translate.hpp</a></div><div class="ttdoc">Provides bio::views::translate and bio::views::translate_single.</div></div>
@@ -150,7 +149,7 @@ $(document).ready(function(){initNavTree('ranges_2views_2all_8hpp_source.html','
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_a05deca243559b9ee49c1fff2a7d2ca3.html">ranges</a></li><li class="navelem"><a class="el" href="dir_f5fa676fd011d9129236f7ff98beb3ee.html">views</a></li><li class="navelem"><a class="el" href="ranges_2views_2all_8hpp.html">all.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

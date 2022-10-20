@@ -1,11 +1,11 @@
 var version_8hpp =
 [
-    [ "BIOCPP_VERSION", "version_8hpp.html#a5f8295917b64837809d97d65fea7aeee", null ],
-    [ "BIOCPP_VERSION_MAJOR", "version_8hpp.html#af8f1a71606116add1cbbedca8c177b5f", null ],
-    [ "BIOCPP_VERSION_MINOR", "version_8hpp.html#aabab584895375afd6c9fcb341ed68d51", null ],
-    [ "BIOCPP_VERSION_PATCH", "version_8hpp.html#a54cb17f1a1403a040bac9575667a808d", null ],
+    [ "BIOCPP_CORE_VERSION", "version_8hpp.html#af374fb64327390c895777895cdb77218", null ],
+    [ "BIOCPP_CORE_VERSION_MAJOR", "version_8hpp.html#a298593f068783b09a45d856275daa961", null ],
+    [ "BIOCPP_CORE_VERSION_MINOR", "version_8hpp.html#af43482411fa06f5975c0f2ab0959ffb7", null ],
+    [ "BIOCPP_CORE_VERSION_PATCH", "version_8hpp.html#ab724aebce3a8222322796e5937697d49", null ],
     [ "biocpp_core_version", "version_8hpp.html#a41bb2a916d1e44c8c430d701642d88d6", null ],
-    [ "biocpp_core_version_major", "version_8hpp.html#ad13543a6ffa5e38ad1b296a31518c636", null ],
-    [ "biocpp_core_version_minor", "version_8hpp.html#a9e4e04f7201a11ae42af96eba845ab35", null ],
-    [ "biocpp_core_version_patch", "version_8hpp.html#a65d4ef36801486aa2f9fd4f60990185c", null ]
+    [ "biocpp_core_version_major", "version_8hpp.html#ab4cac2ed27b37d36b0c2be31c5f8ff48", null ],
+    [ "biocpp_core_version_minor", "version_8hpp.html#a3a941696dda386480ee6f6183a454c20", null ],
+    [ "biocpp_core_version_patch", "version_8hpp.html#aac69c409917cd59e56c88400d3b35d68", null ]
 ];

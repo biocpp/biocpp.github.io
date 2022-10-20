@@ -1,7 +1,0 @@
-<map id="bio/meta/add_enum_bitwise_operators.hpp" name="bio/meta/add_enum_bitwise_operators.hpp">
-<area shape="rect" id="node1" title="Provides bio::add_enum_bitwise_operators." alt="" coords="66,5,273,47"/>
-<area shape="rect" id="node2" href="$meta_2all_8hpp.html" title="Meta&#45;header for the meta module ." alt="" coords="5,95,133,121"/>
-<area shape="rect" id="node3" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="158,95,381,121"/>
-<area shape="rect" id="node4" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="73,177,253,203"/>
-<area shape="rect" id="node5" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="277,169,472,211"/>
-</map>

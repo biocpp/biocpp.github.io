@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfacebio_1_1meta_1_1template__specialisation__of.html" title="Provides concept bio::meta::template_specialisation_of&lt;mytype, [...]&gt; for checking the type specialis..." alt="" coords="5,5,181,32"/>
+<area shape="rect" id="node1" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/is_same.html" title=" " alt="" coords="5,5,184,76"/>
+<area shape="rect" id="node2" href="$structbio_1_1meta_1_1is__type__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="This is an overloaded member function, provided for convenience. It differs from the above function o..." alt="" coords="232,13,441,69"/>
 </map>

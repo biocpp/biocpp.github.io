@@ -1,4 +1,4 @@
 <map id="std::tuple_element&lt; i, t&lt; types... &gt; &gt;" name="std::tuple_element&lt; i, t&lt; types... &gt; &gt;">
-<area shape="rect" id="node1" title="Obtains the type of the specified element." alt="" coords="8,80,137,121"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node1" title="Obtains the type of the specified element." alt="" coords="9,80,155,121"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="5,5,159,32"/>
 </map>

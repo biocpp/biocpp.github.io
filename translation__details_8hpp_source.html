@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('translation__details_8hpp_source.html'
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <span class="keywordtype">void</span>_type&gt;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">struct </span>translation_table&lt;dna15, <a class="code hl_namespace" href="namespacebio.html">bio</a>::alphabet::genetic_code::CANONICAL, void_type&gt;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> aa27 VALUE[<a class="code hl_variable" href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">dna15::alphabet_size</a>][<a class="code hl_variable" href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">dna15::alphabet_size</a>][<a class="code hl_variable" href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">dna15::alphabet_size</a>]</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> aa27 VALUE[<a class="code hl_variable" href="classbio_1_1alphabet_1_1base.html#a834f007f409b2761dc774fc45e457b11">dna15::alphabet_size</a>][<a class="code hl_variable" href="classbio_1_1alphabet_1_1base.html#a834f007f409b2761dc774fc45e457b11">dna15::alphabet_size</a>][<a class="code hl_variable" href="classbio_1_1alphabet_1_1base.html#a834f007f409b2761dc774fc45e457b11">dna15::alphabet_size</a>]</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="comment">// clang-format off</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        { <span class="comment">// a??</span></div>
@@ -413,12 +413,12 @@ $(document).ready(function(){initNavTree('translation__details_8hpp_source.html'
 <div class="ttc" id="aaa27_8hpp_html"><div class="ttname"><a href="aa27_8hpp.html">aa27.hpp</a></div><div class="ttdoc">Provides bio::alphabet::aa27, container aliases and string literals.</div></div>
 <div class="ttc" id="aalphabet_2nucleotide_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2nucleotide_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Provides bio::alphabet::nucleotide_alphabet.</div></div>
 <div class="ttc" id="aarray_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/array.html">std::array</a></div></div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html_a240f651659e7e2b13a8e43ceb4cd4308"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html#a240f651659e7e2b13a8e43ceb4cd4308">bio::alphabet::alphabet_base&lt; dna15, size, char &gt;::alphabet_size</a></div><div class="ttdeci">static constexpr size_t alphabet_size</div><div class="ttdoc">The size of the alphabet, i.e. the number of different values it can take.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:174</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1base_html_a834f007f409b2761dc774fc45e457b11"><div class="ttname"><a href="classbio_1_1alphabet_1_1base.html#a834f007f409b2761dc774fc45e457b11">bio::alphabet::base&lt; dna15, size, char &gt;::alphabet_size</a></div><div class="ttdeci">static constexpr size_t alphabet_size</div><div class="ttdoc">The size of the alphabet, i.e. the number of different values it can take.</div><div class="ttdef"><b>Definition:</b> base.hpp:174</div></div>
 <div class="ttc" id="adna15_8hpp_html"><div class="ttname"><a href="dna15_8hpp.html">dna15.hpp</a></div><div class="ttdoc">Provides bio::alphabet::dna15, container aliases and string literals.</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga2a48a5c1883184e362f09e32ac33241e"><div class="ttname"><a href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
-<div class="ttc" id="agroup__alphabet_html_gab718eab4e0f0e1b44f78b7600dee5e4d"><div class="ttname"><a href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a></div><div class="ttdeci">constexpr auto assign_rank_to</div><div class="ttdoc">Assign a rank to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:172</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga2a48a5c1883184e362f09e32ac33241e"><div class="ttname"><a href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:70</div></div>
+<div class="ttc" id="agroup__alphabet_html_gab718eab4e0f0e1b44f78b7600dee5e4d"><div class="ttname"><a href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a></div><div class="ttdeci">constexpr auto assign_rank_to</div><div class="ttdoc">Assign a rank to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:138</div></div>
 <div class="ttc" id="anamespacebio_1_1alphabet_html_aa0d4217bd42a17a19c079ede29a22172"><div class="ttname"><a href="namespacebio_1_1alphabet.html#aa0d4217bd42a17a19c079ede29a22172">bio::alphabet::genetic_code</a></div><div class="ttdeci">genetic_code</div><div class="ttdoc">Genetic codes used for translation of nucleotides into amino acids.</div><div class="ttdef"><b>Definition:</b> translation_genetic_code.hpp:27</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:23</div></div>
 <div class="ttc" id="aremove_cv_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/remove_cv.html">std::remove_const_t</a></div></div>
 <div class="ttc" id="atranslation__genetic__code_8hpp_html"><div class="ttname"><a href="translation__genetic__code_8hpp.html">translation_genetic_code.hpp</a></div><div class="ttdoc">Genetic codes used for translating a triplet of nucleotides into an amino acid.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('translation__details_8hpp_source.html'
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_c5c94c5e6394b8bbdcce9ce299c309d0.html">aminoacid</a></li><li class="navelem"><a class="el" href="translation__details_8hpp.html">translation_details.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:13 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

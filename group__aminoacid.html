@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('group__aminoacid.html',''); initResiza
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__aminoacid.svg" width="215" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__aminoacid.svg" width="230" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -132,7 +132,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concept that indicates whether an alphabet represents amino acids.  <a href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1aminoacid__base.html">bio::alphabet::aminoacid_base&lt; derived_type, size &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that refines <a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::alphabet_base</a> and is used by the amino acids.  <a href="classbio_1_1alphabet_1_1aminoacid__base.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that refines <a class="el" href="classbio_1_1alphabet_1_1base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::base</a> and is used by the amino acids.  <a href="classbio_1_1alphabet_1_1aminoacid__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">bio::alphabet::aminoacid_empty_base</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an empty base class that can be inherited by types that shall model <a class="el" href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html" title="A concept that indicates whether an alphabet represents amino acids.">bio::alphabet::aminoacid_alphabet</a>.  <a href="structbio_1_1alphabet_1_1aminoacid__empty__base.html#details">More...</a><br /></td></tr>
@@ -169,10 +169,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gadb51028b9c97cb68bb1ea08f91ad077f"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
-<tr class="memitem:gadb51028b9c97cb68bb1ea08f91ad077f"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__aminoacid.html#gadb51028b9c97cb68bb1ea08f91ad077f">bio::alphabet::cpo::enable_aminoacid</a> = std::derived_from&lt;t, <a class="el" href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">aminoacid_empty_base</a>&gt;</td></tr>
-<tr class="memdesc:gadb51028b9c97cb68bb1ea08f91ad077f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A trait that indicates whether a type shall model <a class="el" href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html" title="A concept that indicates whether an alphabet represents amino acids.">bio::alphabet::aminoacid_alphabet</a>.  <a href="group__aminoacid.html#gadb51028b9c97cb68bb1ea08f91ad077f">More...</a><br /></td></tr>
-<tr class="separator:gadb51028b9c97cb68bb1ea08f91ad077f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga629c2d51777e90a6b21d07e370b8b9a1"><td class="memTemplParams" colspan="2">template&lt;typename t &gt; </td></tr>
+<tr class="memitem:ga629c2d51777e90a6b21d07e370b8b9a1"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__aminoacid.html#ga629c2d51777e90a6b21d07e370b8b9a1">bio::alphabet::custom::enable_aminoacid</a> = std::derived_from&lt;t, <a class="el" href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">aminoacid_empty_base</a>&gt;</td></tr>
+<tr class="memdesc:ga629c2d51777e90a6b21d07e370b8b9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A trait that indicates whether a type shall model <a class="el" href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html" title="A concept that indicates whether an alphabet represents amino acids.">bio::alphabet::aminoacid_alphabet</a>.  <a href="group__aminoacid.html#ga629c2d51777e90a6b21d07e370b8b9a1">More...</a><br /></td></tr>
+<tr class="separator:ga629c2d51777e90a6b21d07e370b8b9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Provides the amino acid alphabets and functionality for translation from nucleotide. </p>
@@ -360,8 +360,8 @@ template&lt;<a class="el" href="namespacebio_1_1alphabet.html#aa0d4217bd42a17a19
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="gadb51028b9c97cb68bb1ea08f91ad077f" name="gadb51028b9c97cb68bb1ea08f91ad077f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadb51028b9c97cb68bb1ea08f91ad077f">&#9670;&nbsp;</a></span>enable_aminoacid</h2>
+<a id="ga629c2d51777e90a6b21d07e370b8b9a1" name="ga629c2d51777e90a6b21d07e370b8b9a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga629c2d51777e90a6b21d07e370b8b9a1">&#9670;&nbsp;</a></span>enable_aminoacid</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +372,7 @@ template&lt;typename t &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool bio::alphabet::cpo::enable_aminoacid = std::derived_from&lt;t, <a class="el" href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">aminoacid_empty_base</a>&gt;</td>
+          <td class="memname">constexpr bool bio::alphabet::custom::enable_aminoacid = std::derived_from&lt;t, <a class="el" href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">aminoacid_empty_base</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -425,7 +425,7 @@ template&lt;typename t &gt; </div>
 <div class="line">} <span class="comment">// namespace your_namespace2</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> bio::alphabet::cpo::enable_aminoacid&lt;your_namespace2::your_aa&gt; = <span class="keyword">true</span>;</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> bio::alphabet::custom::enable_aminoacid&lt;your_namespace2::your_aa&gt; = <span class="keyword">true</span>;</div>
 <div class="line"> </div>
 <div class="ttc" id="aalphabet_2aminoacid_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2aminoacid_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Provides bio::alphabet::aminoacid_alphabet.</div></div>
 <div class="ttc" id="astructbio_1_1alphabet_1_1aminoacid__empty__base_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">bio::alphabet::aminoacid_empty_base</a></div><div class="ttdoc">This is an empty base class that can be inherited by types that shall model bio::alphabet::aminoacid_...</div><div class="ttdef"><b>Definition:</b> concept.hpp:34</div></div>
@@ -440,7 +440,7 @@ template&lt;typename t &gt; </div>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

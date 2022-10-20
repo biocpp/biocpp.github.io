@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('alphabet_2detail_2to__lower_8hpp_sourc
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2biocpp_8hpp.html">bio/alphabet/biocpp.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="core_8hpp.html">bio/core.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>bio::alphabet::detail</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
@@ -124,18 +124,18 @@ $(document).ready(function(){initNavTree('alphabet_2detail_2to__lower_8hpp_sourc
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">constexpr</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="group__views.html#gaecd2d4614b2456dbe58068d427b25b4b">to_lower</a>(<span class="keywordtype">char</span> <span class="keyword">const</span> c)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> c | 0b0010&#39;0000;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(c) | 0b0010&#39;0000);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">constexpr</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="group__views.html#gae82a14018fccf1a7f4b40dc4f12390a0">to_upper</a>(<span class="keywordtype">char</span> <span class="keyword">const</span> c)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> c &amp; 0b0101&#39;1111;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span><span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(c) &amp; 0b0101&#39;1111);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace bio::alphabet::detail</span></div>
-<div class="ttc" id="aalphabet_2biocpp_8hpp_html"><div class="ttname"><a href="alphabet_2biocpp_8hpp.html">biocpp.hpp</a></div><div class="ttdoc">Module header with module-wide definitions.</div></div>
-<div class="ttc" id="agroup__views_html_gae82a14018fccf1a7f4b40dc4f12390a0"><div class="ttname"><a href="group__views.html#gae82a14018fccf1a7f4b40dc4f12390a0">bio::ranges::views::to_upper</a></div><div class="ttdeci">auto const to_upper</div><div class="ttdoc">A view that converts each element to upper case.</div><div class="ttdef"><b>Definition:</b> to_upper.hpp:67</div></div>
-<div class="ttc" id="agroup__views_html_gaecd2d4614b2456dbe58068d427b25b4b"><div class="ttname"><a href="group__views.html#gaecd2d4614b2456dbe58068d427b25b4b">bio::ranges::views::to_lower</a></div><div class="ttdeci">auto const to_lower</div><div class="ttdoc">A view that converts each element to lower case.</div><div class="ttdef"><b>Definition:</b> to_lower.hpp:67</div></div>
+<div class="ttc" id="acore_8hpp_html"><div class="ttname"><a href="core_8hpp.html">core.hpp</a></div><div class="ttdoc">Provides platform and dependency checks.</div></div>
+<div class="ttc" id="agroup__views_html_gae82a14018fccf1a7f4b40dc4f12390a0"><div class="ttname"><a href="group__views.html#gae82a14018fccf1a7f4b40dc4f12390a0">bio::ranges::views::to_upper</a></div><div class="ttdeci">auto const to_upper</div><div class="ttdoc">A view that converts each element to upper case.</div><div class="ttdef"><b>Definition:</b> to_upper.hpp:68</div></div>
+<div class="ttc" id="agroup__views_html_gaecd2d4614b2456dbe58068d427b25b4b"><div class="ttname"><a href="group__views.html#gaecd2d4614b2456dbe58068d427b25b4b">bio::ranges::views::to_lower</a></div><div class="ttdeci">auto const to_lower</div><div class="ttdoc">A view that converts each element to lower case.</div><div class="ttdef"><b>Definition:</b> to_lower.hpp:68</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.16-->
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('alphabet_2detail_2to__lower_8hpp_sourc
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_f377ddb9e571c137aa69ccd22c1bf99e.html">detail</a></li><li class="navelem"><b>to_lower.hpp</b></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

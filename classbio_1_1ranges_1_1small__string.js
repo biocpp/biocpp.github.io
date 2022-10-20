@@ -8,7 +8,6 @@ var classbio_1_1ranges_1_1small__string =
     [ "size_type", "classbio_1_1ranges_1_1small__string.html#a770eee70b6d6792d20d1dd8700694946", null ],
     [ "value_type", "classbio_1_1ranges_1_1small__string.html#a1e9f4dbc0711a7b7561c30d8b5eec98f", null ],
     [ "small_string", "classbio_1_1ranges_1_1small__string.html#a94253549a3b2f03ae599ae99f076cc0e", null ],
-    [ "small_string", "classbio_1_1ranges_1_1small__string.html#a48ad353b7de359b6c38a273b0506f932", null ],
     [ "assign", "classbio_1_1ranges_1_1small__string.html#a44869356df2a5e590aaca9bd40b18567", null ],
     [ "assign", "classbio_1_1ranges_1_1small__string.html#ad7d8fc8cc7b8bad2bbe7b9c1cf137b6c", null ],
     [ "assign", "classbio_1_1ranges_1_1small__string.html#a5508e7d5a1804b2cec398f4cfa98cb38", null ],
@@ -58,6 +57,6 @@ var classbio_1_1ranges_1_1small__string =
     [ "operator+", "classbio_1_1ranges_1_1small__string.html#a3590160fcf67eabab706594524be1417", null ],
     [ "operator<<", "classbio_1_1ranges_1_1small__string.html#aefda96b48bc65c574c095bdbe02e8acd", null ],
     [ "small_string", "classbio_1_1ranges_1_1small__string.html#a8baca923fc7d81786464c3c249cb804c", null ],
-    [ "small_string", "classbio_1_1ranges_1_1small__string.html#a405b59e4847a875bf12bed9d66772b83", null ],
-    [ "small_string", "classbio_1_1ranges_1_1small__string.html#ab9d482fe111654c7209ce8b46ef5ce92", null ]
+    [ "small_string", "classbio_1_1ranges_1_1small__string.html#ab9d482fe111654c7209ce8b46ef5ce92", null ],
+    [ "small_string", "classbio_1_1ranges_1_1small__string.html#a803caa332787ecad8088b0fc7438c0d3", null ]
 ];

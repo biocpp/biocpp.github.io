@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('alphabet_2quality_2concept_8hpp.html',
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">concept.hpp File Reference</div></div>
@@ -124,15 +123,6 @@ $(document).ready(function(){initNavTree('alphabet_2quality_2concept_8hpp.html',
 </div>
 <p><a href="alphabet_2quality_2concept_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1assign__phred__to.html">bio::alphabet::cpo::assign_phred_to</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b" title="Assign a char to an alphabet object.">bio::alphabet::assign_char_to</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1assign__phred__to.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1to__phred.html">bio::alphabet::cpo::to_phred</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b" title="Assign a char to an alphabet object.">bio::alphabet::assign_char_to</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1to__phred.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio.html">bio</a></td></tr>
@@ -141,17 +131,14 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio_1_1alphabet"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html">bio::alphabet</a></td></tr>
 <tr class="memdesc:namespacebio_1_1alphabet"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alphabet module's namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacebio_1_1alphabet_1_1cpo"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></td></tr>
-<tr class="memdesc:namespacebio_1_1alphabet_1_1cpo"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for third party and standard library specialisations of BioC++ customisation points. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga76cffac7b2bdd4ae12fa0075e6563118"><td class="memTemplParams" colspan="2">
+<tr class="memitem:gabd0d2f8bc6672c42a829132de848745d"><td class="memTemplParams" colspan="2">
 template&lt;typename alphabet_type &gt; </td></tr>
-<tr class="memitem:ga76cffac7b2bdd4ae12fa0075e6563118"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>bio::alphabet::alphabet_phred_t</b> = decltype(<a class="el" href="group__quality.html#gac7faff4dee7175ef96d5f94479453df2">bio::alphabet::to_phred</a>(std::declval&lt; alphabet_type &gt;()))</td></tr>
-<tr class="memdesc:ga76cffac7b2bdd4ae12fa0075e6563118"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>phred_type</code> of the alphabet; defined as the return type of <a class="el" href="group__quality.html#gac7faff4dee7175ef96d5f94479453df2" title="The public getter function for the phred representation of a quality score.">bio::alphabet::to_phred</a>. <br /></td></tr>
-<tr class="separator:ga76cffac7b2bdd4ae12fa0075e6563118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd0d2f8bc6672c42a829132de848745d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>bio::alphabet::phred_t</b> = decltype(<a class="el" href="group__quality.html#gac7faff4dee7175ef96d5f94479453df2">bio::alphabet::to_phred</a>(std::declval&lt; alphabet_type &gt;()))</td></tr>
+<tr class="memdesc:gabd0d2f8bc6672c42a829132de848745d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>phred_type</code> of the alphabet; defined as the return type of <a class="el" href="group__quality.html#gac7faff4dee7175ef96d5f94479453df2" title="The public getter function for the phred representation of a quality score.">bio::alphabet::to_phred</a>. <br /></td></tr>
+<tr class="separator:gabd0d2f8bc6672c42a829132de848745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -179,7 +166,7 @@ Jörg Winkler &lt;j.winkler AT fu-berlin.de&gt; </dd></dl>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_07786875644ed6de5ede0ed8dee13bbe.html">quality</a></li><li class="navelem"><a class="el" href="alphabet_2quality_2concept_8hpp.html">concept.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

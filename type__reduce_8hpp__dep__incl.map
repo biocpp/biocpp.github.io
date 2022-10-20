@@ -1,10 +1,10 @@
 <map id="bio/ranges/views/type_reduce.hpp" name="bio/ranges/views/type_reduce.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::type_reduce." alt="" coords="276,5,425,47"/>
-<area shape="rect" id="node2" href="$interleave_8hpp.html" title="Provides bio::views::interleave." alt="" coords="141,95,347,121"/>
-<area shape="rect" id="node5" href="$slice_8hpp.html" title="Provides bio::views::slice." alt="" coords="371,95,547,121"/>
-<area shape="rect" id="node3" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="5,169,144,211"/>
-<area shape="rect" id="node4" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="168,177,331,203"/>
-<area shape="rect" id="node6" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="359,169,558,211"/>
-<area shape="rect" id="node7" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="389,259,528,300"/>
-<area shape="rect" id="node8" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="397,348,521,375"/>
+<area shape="rect" id="node1" title="Provides bio::views::type_reduce." alt="" coords="304,5,469,47"/>
+<area shape="rect" id="node2" href="$interleave_8hpp.html" title="Provides bio::views::interleave." alt="" coords="153,95,383,121"/>
+<area shape="rect" id="node5" href="$slice_8hpp.html" title="Provides bio::views::slice." alt="" coords="408,95,603,121"/>
+<area shape="rect" id="node3" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="5,169,160,211"/>
+<area shape="rect" id="node4" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="185,177,365,203"/>
+<area shape="rect" id="node6" href="$concatenated__sequences_8hpp.html" title="Provides bio::ranges::concatenated_sequences." alt="" coords="396,169,615,211"/>
+<area shape="rect" id="node7" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="428,259,583,300"/>
+<area shape="rect" id="node8" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="436,348,575,375"/>
 </map>

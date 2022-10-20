@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -108,15 +108,12 @@ $(document).ready(function(){initNavTree('group__alphabet.html',''); initResizab
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__alphabet.svg" width="218" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__alphabet.svg" width="231" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__adaptation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__adaptation.html">Adaptation</a></td></tr>
-<tr class="memdesc:group__adaptation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides alphabet adaptions of some standard char and uint types. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__aminoacid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__aminoacid.html">Aminoacid</a></td></tr>
 <tr class="memdesc:group__aminoacid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the amino acid alphabets and functionality for translation from nucleotide. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +122,9 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__alphabet__composite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alphabet__composite.html">Composite</a></td></tr>
 <tr class="memdesc:group__alphabet__composite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides templates for combining existing alphabets into new alphabet types. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__alphabet__custom"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__alphabet__custom.html">Custom</a></td></tr>
+<tr class="memdesc:group__alphabet__custom"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides customisation tags and alphabet adaptations of standard char and uint types. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__gap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gap.html">Gap</a></td></tr>
 <tr class="memdesc:group__gap"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the gap alphabet and functionality to make an alphabet a gapped alphabet. <br /></td></tr>
@@ -144,8 +144,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacebio_1_1alphabet"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet.html">bio::alphabet</a></td></tr>
 <tr class="memdesc:namespacebio_1_1alphabet"><td class="mdescLeft">&#160;</td><td class="mdescRight">The alphabet module's namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacebio_1_1alphabet_1_1cpo"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></td></tr>
-<tr class="memdesc:namespacebio_1_1alphabet_1_1cpo"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for third party and standard library specialisations of BioC++ customisation points. <br /></td></tr>
+<tr class="memitem:namespacebio_1_1alphabet_1_1custom"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet_1_1custom.html">bio::alphabet::custom</a></td></tr>
+<tr class="memdesc:namespacebio_1_1alphabet_1_1custom"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for third party and standard library specialisations of BioC++ customisation points. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacebio_1_1alphabet_1_1literals"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></td></tr>
 <tr class="memdesc:namespacebio_1_1alphabet_1_1literals"><td class="mdescLeft">&#160;</td><td class="mdescRight">An inline namespace for alphabet literals. It exists to safely allow <code>using namespace</code>. <br /></td></tr>
@@ -156,41 +156,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generic alphabet concept that covers most data types used in ranges.  <a href="interfacebio_1_1alphabet_1_1alphabet.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html">bio::alphabet::alphabet_base&lt; derived_type, size, char_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that makes defining a custom alphabet easier.  <a href="classbio_1_1alphabet_1_1alphabet__base.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1base.html">bio::alphabet::base&lt; derived_type, size, char_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that makes defining a custom alphabet easier.  <a href="classbio_1_1alphabet_1_1base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html">bio::alphabet::alphabet_base&lt; derived_type, 1ul, char_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation of <a class="el" href="classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::alphabet_base</a> for alphabets of size 1.  <a href="classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__proxy.html">bio::alphabet::alphabet_proxy&lt; derived_type, alphabet_type &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that eases the definition of proxy types returned in place of regular alphabets.  <a href="classbio_1_1alphabet_1_1alphabet__proxy.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1assign__char__to.html">bio::alphabet::cpo::assign_char_to</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b" title="Assign a char to an alphabet object.">bio::alphabet::assign_char_to</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1assign__char__to.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1assign__rank__to.html">bio::alphabet::cpo::assign_rank_to</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d" title="Assign a rank to an alphabet object.">bio::alphabet::assign_rank_to</a>.#.  <a href="structbio_1_1alphabet_1_1cpo_1_1assign__rank__to.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1char__is__valid__for.html">bio::alphabet::cpo::char_is_valid_for</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b" title="Assign a char to an alphabet object.">bio::alphabet::assign_char_to</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1char__is__valid__for.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1base_3_01derived__type_00_011ul_00_01char__t_01_4.html">bio::alphabet::base&lt; derived_type, 1ul, char_t &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialisation of <a class="el" href="classbio_1_1alphabet_1_1base.html" title="A CRTP-base that makes defining a custom alphabet easier.">bio::alphabet::base</a> for alphabets of size 1.  <a href="classbio_1_1alphabet_1_1base_3_01derived__type_00_011ul_00_01char__t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01alphabet__t_01_4.html">std::hash&lt; alphabet_t &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a character.  <a href="structstd_1_1hash_3_01alphabet__t_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01urng__t_01_4.html">std::hash&lt; urng_t &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct for hashing a range of characters.  <a href="structstd_1_1hash_3_01urng__t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1proxy__base.html">bio::alphabet::proxy_base&lt; derived_type, alphabet_type &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CRTP-base that eases the definition of proxy types returned in place of regular alphabets.  <a href="classbio_1_1alphabet_1_1proxy__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1alphabet_1_1semialphabet.html">semialphabet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The basis for <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>, but requires only rank interface (not char).  <a href="interfacebio_1_1alphabet_1_1semialphabet.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1size.html">bio::alphabet::cpo::size</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPO tag definition for <a class="el" href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d" title="A type trait that holds the size of a (semi-)alphabet.">bio::alphabet::size</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1size.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1to__char.html">bio::alphabet::cpo::to_char</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0" title="Return the char representation of an alphabet object.">bio::alphabet::to_char</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1to__char.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html">bio::alphabet::cpo::to_rank</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Customisation tag for <a class="el" href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e" title="Return the rank representation of a (semi-)alphabet object.">bio::alphabet::to_rank</a>.  <a href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacebio_1_1alphabet_1_1writable__alphabet.html">writable_alphabet</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refines <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a> and adds assignability.  <a href="interfacebio_1_1alphabet_1_1writable__alphabet.html#details">More...</a><br /></td></tr>
@@ -313,10 +292,10 @@ The alphabet concepts</h1>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1dna4_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1dna4.html">bio::alphabet::dna4</a></div><div class="ttdoc">The four letter DNA alphabet of A,C,G,T..</div><div class="ttdef"><b>Definition:</b> dna4.hpp:49</div></div>
 <div class="ttc" id="acout_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a></div></div>
 <div class="ttc" id="afmt_8hpp_html"><div class="ttname"><a href="fmt_8hpp.html">fmt.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga0c2eb25dabf59ccf9992b2661083ea5b"><div class="ttname"><a href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">bio::alphabet::assign_char_to</a></div><div class="ttdeci">constexpr auto assign_char_to</div><div class="ttdoc">Assign a char to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:334</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga2a48a5c1883184e362f09e32ac33241e"><div class="ttname"><a href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
-<div class="ttc" id="agroup__alphabet_html_gab718eab4e0f0e1b44f78b7600dee5e4d"><div class="ttname"><a href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a></div><div class="ttdeci">constexpr auto assign_rank_to</div><div class="ttdoc">Assign a rank to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:172</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:194</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga0c2eb25dabf59ccf9992b2661083ea5b"><div class="ttname"><a href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">bio::alphabet::assign_char_to</a></div><div class="ttdeci">constexpr auto assign_char_to</div><div class="ttdoc">Assign a char to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:262</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga2a48a5c1883184e362f09e32ac33241e"><div class="ttname"><a href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a></div><div class="ttdeci">constexpr auto to_rank</div><div class="ttdoc">Return the rank representation of a (semi-)alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:70</div></div>
+<div class="ttc" id="agroup__alphabet_html_gab718eab4e0f0e1b44f78b7600dee5e4d"><div class="ttname"><a href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a></div><div class="ttdeci">constexpr auto assign_rank_to</div><div class="ttdoc">Assign a rank to an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:138</div></div>
 <div class="ttc" id="aiostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a></div></div>
 </div><!-- fragment --><p >To reduce the burden of calling <code>assign_char</code> often, most alphabets in BioC++ provide custom literals for the alphabet and sequences over the alphabet:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna4_8hpp.html">bio/alphabet/nucleotide/dna4.hpp</a>&gt;</span></div>
@@ -325,9 +304,10 @@ The alphabet concepts</h1>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1dna4.html">bio::alphabet::dna4</a>        my_letter = <span class="charliteral">&#39;A&#39;</span>_dna4;           <span class="comment">// identical to assign_char_to(&#39;A&#39;, my_letter);</span></div>
-<div class="line">    bio::alphabet::dna4_vector my_seq    = <span class="stringliteral">&quot;ACGT&quot;</span>_dna4;        <span class="comment">// identical to calling assign_char for each element</span></div>
+<div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna4&gt;</a> my_seq    = <span class="stringliteral">&quot;ACGT&quot;</span>_dna4;        <span class="comment">// identical to calling assign_char for each element</span></div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
+<div class="ttc" id="avector_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></div></div>
 </div><!-- fragment --><p >Note, however, that literals <b>are not</b> required by the concept.</p>
 <h3>Different concepts</h3>
 <p >All types that have valid implementations of the functions/functors described above model the concept <a class="el" href="interfacebio_1_1alphabet_1_1writable__alphabet.html" title="Refines bio::alphabet::alphabet and adds assignability.">bio::alphabet::writable_alphabet</a>. This is the strongest (i.e. most refined) <em>general case</em> concept. There are more refined concepts for specific biological applications (like <a class="el" href="interfacebio_1_1alphabet_1_1nucleotide__alphabet.html" title="A concept that indicates whether an alphabet represents nucleotides.">bio::alphabet::nucleotide_alphabet</a>), and there are less refined concepts that only model part of an alphabet:</p>
@@ -414,13 +394,13 @@ Containers over alphabets</h1>
 <p >Note that this is not a customisation point and it cannot be "overloaded". It simply invokes <a class="el" href="group__alphabet.html#ga64c00e15570d3e7394f425c810e617ce" title="Returns whether a character is in the valid set of a bio::alphabet::alphabet (usually implies a bijec...">bio::alphabet::char_is_valid_for</a> and <a class="el" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b" title="Assign a char to an alphabet object.">bio::alphabet::assign_char_to</a>.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> c = <span class="charliteral">&#39;!&#39;</span>;</div>
-<div class="line">    <a class="code hl_variable" href="group__alphabet.html#gadec8dc2856700f9763590213b6cae625">bio::alphabet::assign_char_strictly_to</a>(<span class="charliteral">&#39;?&#39;</span>, c);     <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::assign_char_strictly_to, &#39;A&#39;, c)</span></div>
+<div class="line">    <a class="code hl_variable" href="group__alphabet.html#gadec8dc2856700f9763590213b6cae625">bio::alphabet::assign_char_strictly_to</a>(<span class="charliteral">&#39;?&#39;</span>, c);     <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::assign_char_strictly_to, &#39;A&#39;, c)</span></div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1dna5.html">bio::alphabet::dna5</a> d{};</div>
 <div class="line">    <a class="code hl_variable" href="group__alphabet.html#gadec8dc2856700f9763590213b6cae625">bio::alphabet::assign_char_strictly_to</a>(<span class="charliteral">&#39;A&#39;</span>, d);     <span class="comment">// calls .assign_char(&#39;A&#39;) member</span></div>
@@ -432,7 +412,7 @@ Containers over alphabets</h1>
 <div class="ttc" id="achar_8hpp_html"><div class="ttname"><a href="char_8hpp.html">char.hpp</a></div><div class="ttdoc">Provides alphabet adaptations for standard char types.</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1dna5_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1dna5.html">bio::alphabet::dna5</a></div><div class="ttdoc">The five letter DNA alphabet of A,C,G,T and the unknown character N..</div><div class="ttdef"><b>Definition:</b> dna5.hpp:50</div></div>
 <div class="ttc" id="adna5_8hpp_html"><div class="ttname"><a href="dna5_8hpp.html">dna5.hpp</a></div><div class="ttdoc">Provides bio::alphabet::dna5, container aliases and string literals.</div></div>
-<div class="ttc" id="agroup__alphabet_html_gadec8dc2856700f9763590213b6cae625"><div class="ttname"><a href="group__alphabet.html#gadec8dc2856700f9763590213b6cae625">bio::alphabet::assign_char_strictly_to</a></div><div class="ttdeci">constexpr auto assign_char_strictly_to</div><div class="ttdoc">Assign a character to an alphabet object, throw if the character is not valid.</div><div class="ttdef"><b>Definition:</b> concept.hpp:556</div></div>
+<div class="ttc" id="agroup__alphabet_html_gadec8dc2856700f9763590213b6cae625"><div class="ttname"><a href="group__alphabet.html#gadec8dc2856700f9763590213b6cae625">bio::alphabet::assign_char_strictly_to</a></div><div class="ttdeci">constexpr auto assign_char_strictly_to</div><div class="ttdoc">Assign a character to an alphabet object, throw if the character is not valid.</div><div class="ttdef"><b>Definition:</b> concept.hpp:461</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -475,13 +455,13 @@ Containers over alphabets</h1>
 <p >It is defined for all (semi-)alphabets in BioC++.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> c = <span class="charliteral">&#39;!&#39;</span>;</div>
-<div class="line">    <a class="code hl_variable" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">bio::alphabet::assign_char_to</a>(<span class="charliteral">&#39;?&#39;</span>, c);     <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::assign_char_to, &#39;A&#39;, c)</span></div>
+<div class="line">    <a class="code hl_variable" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">bio::alphabet::assign_char_to</a>(<span class="charliteral">&#39;?&#39;</span>, c);     <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::assign_char_to, &#39;A&#39;, c)</span></div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1dna5.html">bio::alphabet::dna5</a> d{};</div>
 <div class="line">    <a class="code hl_variable" href="group__alphabet.html#ga0c2eb25dabf59ccf9992b2661083ea5b">bio::alphabet::assign_char_to</a>(<span class="charliteral">&#39;A&#39;</span>, d);     <span class="comment">// calls .assign_char(&#39;A&#39;) member</span></div>
@@ -495,8 +475,9 @@ Containers over alphabets</h1>
 </div><!-- fragment --><h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keyword">constexpr</span> alph_type &amp; <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(bio::alphabet::assign_char_to_cpo, char_type <span class="keyword">const</span> <span class="keywordtype">char</span>, alph_type &amp; alph) <span class="keyword">noexcept</span></div>
-<div class="ttc" id="agroup__adaptation_html_ga90e36e0f53be2c688535b847e3d626e1"><div class="ttname"><a href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">bio::alphabet::cpo::tag_invoke</a></div><div class="ttdeci">consteval auto tag_invoke(size, char_type const) noexcept</div><div class="ttdoc">The number of values the char type can take (e.g. 256 for char).</div><div class="ttdef"><b>Definition:</b> char.hpp:38</div></div>
+<div class="fragment"><div class="line"><span class="keyword">constexpr</span> alph_type &amp; <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1assign__char__to.html">bio::alphabet::custom::assign_char_to</a>, char_type <span class="keyword">const</span> <span class="keywordtype">char</span>, alph_type &amp; alph) <span class="keyword">noexcept</span></div>
+<div class="ttc" id="agroup__alphabet__custom_html_ga5639259492c1cbb8a53414c871ac30d5"><div class="ttname"><a href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">bio::alphabet::custom::tag_invoke</a></div><div class="ttdeci">consteval auto tag_invoke(size, char_type const) noexcept</div><div class="ttdoc">The number of values the char type can take (e.g. 256 for char).</div><div class="ttdef"><b>Definition:</b> char.hpp:43</div></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1assign__char__to_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1assign__char__to.html">bio::alphabet::custom::assign_char_to</a></div><div class="ttdoc">Customisation tag for bio::alphabet::assign_char_to.</div><div class="ttdef"><b>Definition:</b> tag.hpp:37</div></div>
 </div><!-- fragment --><p >Functions are found via ADL and considered only if they are marked <code>noexcept</code> (<code>constexpr</code> is not required, but recommended) and if the returned type is exactly <code>alph_type &amp;</code>.</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function.</p>
 <p ><em>Note</em> that temporaries of <code>alph_type</code> are handled by this function object and <b>do not</b> require an additional overload. </p>
@@ -542,13 +523,13 @@ Containers over alphabets</h1>
 <p >It is defined for all (semi-)alphabets in BioC++.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">char</span> c = <span class="charliteral">&#39;!&#39;</span>;</div>
-<div class="line">    <a class="code hl_variable" href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a>(66, c);     <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::assign_rank_to, 66, c); == &#39;B&#39;</span></div>
+<div class="line">    <a class="code hl_variable" href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a>(66, c);     <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::assign_rank_to, 66, c); == &#39;B&#39;</span></div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_class" href="classbio_1_1alphabet_1_1dna5.html">bio::alphabet::dna5</a> d{};</div>
 <div class="line">    <a class="code hl_variable" href="group__alphabet.html#gab718eab4e0f0e1b44f78b7600dee5e4d">bio::alphabet::assign_rank_to</a>(2, d);     <span class="comment">// calls .assign_rank(2) member; == &#39;G&#39;_dna5</span></div>
@@ -562,7 +543,8 @@ Containers over alphabets</h1>
 </div><!-- fragment --><h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
-<div class="fragment"><div class="line">cosntexpr alph_type &amp; <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(bio::alphabet::assign_rank_to_cpo, rank_type <span class="keyword">const</span> rank, alph_type &amp; alph) <span class="keyword">noexcept</span></div>
+<div class="fragment"><div class="line">cosntexpr alph_type &amp; <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1assign__rank__to.html">bio::alphabet::custom::assign_rank_to</a>, rank_type <span class="keyword">const</span> rank, alph_type &amp; alph) <span class="keyword">noexcept</span></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1assign__rank__to_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1assign__rank__to.html">bio::alphabet::custom::assign_rank_to</a></div><div class="ttdoc">Customisation tag for bio::alphabet::assign_rank_to.#.</div><div class="ttdef"><b>Definition:</b> tag.hpp:29</div></div>
 </div><!-- fragment --><p >Implementations are found via ADL and considered only if they are marked <code>noexcept</code> (<code>constexpr</code> is not required, but recommended) and if the returned type is exactly <code>alph_type &amp;</code>.</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function.</p>
 <p ><em>Note</em> that temporaries of <code>alph_type</code> are handled by this function object and <b>do not</b> require an additional overload. </p>
@@ -610,13 +592,13 @@ template&lt;typename alph_t &gt; </div>
 <p >It is defined for all (semi-)alphabets in BioC++.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="keywordtype">bool</span> b = bio::alphabet::char_is_valid_for&lt;char&gt;(<span class="charliteral">&#39;A&#39;</span>);</div>
-<div class="line">    <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::char_is_valid_for, &#39;A&#39;, char{}); always true</span></div>
+<div class="line">    <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::char_is_valid_for, &#39;A&#39;, char{}); always true</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">bool</span> c = bio::alphabet::char_is_valid_for&lt;bio::alphabet::dna5&gt;(<span class="charliteral">&#39;A&#39;</span>);</div>
 <div class="line">    <span class="comment">// calls dna5::char_is_valid(&#39;A&#39;) member; == true</span></div>
@@ -633,14 +615,14 @@ template&lt;typename alph_t &gt; </div>
 <h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1char__is__valid__for.html">bio::alphabet::cpo::char_is_valid_for</a>, char_type <span class="keyword">const</span> <span class="keywordtype">char</span>, alph_type) <span class="keyword">noexcept</span></div>
-<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1char__is__valid__for_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1char__is__valid__for.html">bio::alphabet::cpo::char_is_valid_for</a></div><div class="ttdoc">Customisation tag for bio::alphabet::assign_char_to.</div><div class="ttdef"><b>Definition:</b> concept.hpp:364</div></div>
+<div class="fragment"><div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1char__is__valid__for.html">bio::alphabet::custom::char_is_valid_for</a>, char_type <span class="keyword">const</span> <span class="keywordtype">char</span>, alph_type) <span class="keyword">noexcept</span></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1char__is__valid__for_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1char__is__valid__for.html">bio::alphabet::custom::char_is_valid_for</a></div><div class="ttdoc">Customisation tag for bio::alphabet::assign_char_to.</div><div class="ttdef"><b>Definition:</b> tag.hpp:41</div></div>
 </div><!-- fragment --><p >If no implementation is found, it behaves as specified above.</p>
 <p >Implementations are found via ADL and considered only if they are marked <code>noexcept</code> (<code>constexpr</code> is not required, but recommended) and if the returned type is exactly <code>bool</code>.</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function.</p>
 <p ><em>Note</em> that the value of the alph_type argument is irrelevant, only the type is needed.</p>
 <p ><em>Note</em> that if the alphabet type with cvref removed is not <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_nothrow_default_constructible</a>, this function object will instead look for:</p>
-<div class="fragment"><div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1char__is__valid__for.html">bio::alphabet::cpo::char_is_valid_for</a>, char_type <span class="keyword">const</span> <span class="keywordtype">char</span>, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;alph_type&gt;</a>) <span class="keyword">noexcept</span></div>
+<div class="fragment"><div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1char__is__valid__for.html">bio::alphabet::custom::char_is_valid_for</a>, char_type <span class="keyword">const</span> <span class="keywordtype">char</span>, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;alph_type&gt;</a>) <span class="keyword">noexcept</span></div>
 <div class="ttc" id="atype_identity_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a></div></div>
 </div><!-- fragment --><p >i.e. the type will be wrapped in <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a> so it can still be passed as a tag. In that case the <em>default behaviour</em> defined above <b>does not work</b>, and you are required to provide such an implementation. </p>
 
@@ -679,26 +661,26 @@ template&lt;typename alph_t , typename wrap_t  = meta::default_initialisable_wra
 <p >It is defined for all (semi-)alphabets in BioC++.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::size, char{}); r2 == 256</span></div>
+<div class="line">    <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::size, char{}); r2 == 256</span></div>
 <div class="line">    <span class="keyword">auto</span> r2 = bio::alphabet::size&lt;char&gt;;</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// calls bio::alphabet::alphabet_base&#39;s friend tag_invoke() which returns dna5::alphabet_size == 5</span></div>
+<div class="line">    <span class="comment">// calls bio::alphabet::base&#39;s friend tag_invoke() which returns dna5::alphabet_size == 5</span></div>
 <div class="line">    <span class="keyword">auto</span> r3 = bio::alphabet::size&lt;bio::alphabet::dna5&gt;;</div>
 <div class="line">}</div>
 </div><!-- fragment --><h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keyword">consteval</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1size.html">bio::alphabet::cpo::size</a>, alph_type) <span class="keyword">noexcept</span></div>
-<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1size_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1size.html">bio::alphabet::cpo::size</a></div><div class="ttdoc">CPO tag definition for bio::alphabet::size.</div><div class="ttdef"><b>Definition:</b> concept.hpp:570</div></div>
+<div class="fragment"><div class="line"><span class="keyword">consteval</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1size.html">bio::alphabet::custom::size</a>, alph_type) <span class="keyword">noexcept</span></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1size_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1size.html">bio::alphabet::custom::size</a></div><div class="ttdoc">CPO tag definition for bio::alphabet::size.</div><div class="ttdef"><b>Definition:</b> tag.hpp:45</div></div>
 </div><!-- fragment --><p >Implementations are found via ADL and considered only if they are marked <code>noexcept</code>, if they return a std::integral type and if they can be evaluated at compile-time (<code>consteval</code> is recommended, but<code>constexpr</code> is possible, too).</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function.</p>
 <p ><em>Note</em> that if the alphabet type with cvref removed is not <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/is_default_constructible.html">std::is_nothrow_default_constructible</a> <b>at compile-time</b>, this function object will instead look for:</p>
-<div class="fragment"><div class="line"><span class="keyword">consteval</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1size.html">bio::alphabet::cpo::size</a>, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;alph_type&gt;</a>) <span class="keyword">noexcept</span></div>
+<div class="fragment"><div class="line"><span class="keyword">consteval</span> <span class="keywordtype">size_t</span> <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1size.html">bio::alphabet::custom::size</a>, <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity&lt;alph_type&gt;</a>) <span class="keyword">noexcept</span></div>
 </div><!-- fragment --><p >i.e. the type will be wrapped in <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/type_identity.html">std::type_identity</a> so it can still be passed as a tag. </p>
 
 </div>
@@ -741,21 +723,21 @@ template&lt;typename alph_t , typename wrap_t  = meta::default_initialisable_wra
 <p >It is defined for all alphabets in BioC++.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">auto</span> r2 = <a class="code hl_variable" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(<span class="charliteral">&#39;A&#39;</span>);         <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::to_char, &#39;A&#39;); r2 == &#39;A&#39;</span></div>
+<div class="line">    <span class="keyword">auto</span> r2 = <a class="code hl_variable" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(<span class="charliteral">&#39;A&#39;</span>);         <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::to_char, &#39;A&#39;); r2 == &#39;A&#39;</span></div>
 <div class="line">    <span class="keyword">auto</span> r3 = <a class="code hl_variable" href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a>(<span class="charliteral">&#39;A&#39;</span>_dna5);    <span class="comment">// calls .to_char() member; r3 == &#39;A&#39;</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keyword">constexpr</span> char_type <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1to__char.html">bio::alphabet::cpo::to_char</a>, alph_type <span class="keyword">const</span> alph) <span class="keyword">noexcept</span></div>
-<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1to__char_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1to__char.html">bio::alphabet::cpo::to_char</a></div><div class="ttdoc">Customisation tag for bio::alphabet::to_char.</div><div class="ttdef"><b>Definition:</b> concept.hpp:201</div></div>
+<div class="fragment"><div class="line"><span class="keyword">constexpr</span> char_type <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1to__char.html">bio::alphabet::custom::to_char</a>, alph_type <span class="keyword">const</span> alph) <span class="keyword">noexcept</span></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1to__char_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1to__char.html">bio::alphabet::custom::to_char</a></div><div class="ttdoc">Customisation tag for bio::alphabet::to_char.</div><div class="ttdef"><b>Definition:</b> tag.hpp:33</div></div>
 </div><!-- fragment --><p >Implementations are found via ADL and considered only if they are marked <code>noexcept</code> (<code>constexpr</code> is not required, but recommended) and if the returned type models <a class="el" href="interfacebio_1_1meta_1_1builtin__character.html" title="This concept encompasses exactly the types char, signed char, unsigned char, wchar_t,...">bio::meta::builtin_character</a>.</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function. </p>
 
@@ -799,21 +781,21 @@ template&lt;typename alph_t , typename wrap_t  = meta::default_initialisable_wra
 <p >It is defined for all (semi-)alphabets in BioC++.</p>
 <h3>Example</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2concept_8hpp.html">bio/alphabet/concept.hpp</a>&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/adaptation/char.hpp</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="char_8hpp.html">bio/alphabet/custom/char.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="dna5_8hpp.html">bio/alphabet/nucleotide/dna5.hpp</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">auto</span> r2 = <a class="code hl_variable" href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a>(<span class="charliteral">&#39;A&#39;</span>);         <span class="comment">// calls bio::alphabet::cpo::tag_invoke(bio::alphabet::cpo::to_rank, &#39;A&#39;); r2 == 65</span></div>
+<div class="line">    <span class="keyword">auto</span> r2 = <a class="code hl_variable" href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a>(<span class="charliteral">&#39;A&#39;</span>);         <span class="comment">// calls bio::alphabet::custom::tag_invoke(bio::alphabet::custom::to_rank, &#39;A&#39;); r2 == 65</span></div>
 <div class="line">    <span class="keyword">auto</span> r3 = <a class="code hl_variable" href="group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e">bio::alphabet::to_rank</a>(<span class="charliteral">&#39;A&#39;</span>_dna5);    <span class="comment">// calls .to_char() member; r3 == 0</span></div>
 <div class="line">}</div>
 </div><!-- fragment --><h3>Customisation point</h3>
 <p >This is a customisation point (see <a class="el" href="biocpp_customisation.html">Customisation</a>). <b>If you don't want to create your own alphabet, everything below is irrelevant to you!</b></p>
 <p >This object acts as a wrapper and looks for an implementation with the following signature:</p>
-<div class="fragment"><div class="line"><span class="keyword">constexpr</span> rank_type <a class="code hl_function" href="group__adaptation.html#ga90e36e0f53be2c688535b847e3d626e1">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html">bio::alphabet::cpo::to_rank</a>, alph_type <span class="keyword">const</span> alph) <span class="keyword">noexcept</span></div>
-<div class="ttc" id="astructbio_1_1alphabet_1_1cpo_1_1to__rank_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1cpo_1_1to__rank.html">bio::alphabet::cpo::to_rank</a></div><div class="ttdoc">Customisation tag for bio::alphabet::to_rank.</div><div class="ttdef"><b>Definition:</b> concept.hpp:39</div></div>
+<div class="fragment"><div class="line"><span class="keyword">constexpr</span> rank_type <a class="code hl_function" href="group__alphabet__custom.html#ga5639259492c1cbb8a53414c871ac30d5">tag_invoke</a>(<a class="code hl_struct" href="structbio_1_1alphabet_1_1custom_1_1to__rank.html">bio::alphabet::custom::to_rank</a>, alph_type <span class="keyword">const</span> alph) <span class="keyword">noexcept</span></div>
+<div class="ttc" id="astructbio_1_1alphabet_1_1custom_1_1to__rank_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1custom_1_1to__rank.html">bio::alphabet::custom::to_rank</a></div><div class="ttdoc">Customisation tag for bio::alphabet::to_rank.</div><div class="ttdef"><b>Definition:</b> tag.hpp:25</div></div>
 </div><!-- fragment --><p >Implementations are found via ADL and considered only if they are marked <code>noexcept</code> (<code>constexpr</code> is not required, but recommended) and if the returned type models std::integral.</p>
 <p >To specify the behaviour for your own alphabet type, simply provide the above function as a <code>friend</code> or free function. </p>
 
@@ -827,7 +809,7 @@ template&lt;typename alph_t , typename wrap_t  = meta::default_initialisable_wra
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

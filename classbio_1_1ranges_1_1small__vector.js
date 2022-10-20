@@ -59,7 +59,6 @@ var classbio_1_1ranges_1_1small__vector =
     [ "size", "classbio_1_1ranges_1_1small__vector.html#ac06b69401e7280621ecfdea8e0cd2949", null ],
     [ "swap", "classbio_1_1ranges_1_1small__vector.html#a0938c8df92928d66256f3df520380810", null ],
     [ "swap", "classbio_1_1ranges_1_1small__vector.html#ace620c2e84fdad805f3eaa2ecb422ef5", null ],
-    [ "operator!=", "classbio_1_1ranges_1_1small__vector.html#acf83f33c8a62311878d7af3684d6c0df", null ],
     [ "operator<", "classbio_1_1ranges_1_1small__vector.html#ad5bc0872a2b9d7680aa2221bc45a34ee", null ],
     [ "operator<=", "classbio_1_1ranges_1_1small__vector.html#adbf131354ab31a5635c4eb8b40e83d37", null ],
     [ "operator==", "classbio_1_1ranges_1_1small__vector.html#a9a27c24f0308029471e4bce76d6a6c6c", null ],

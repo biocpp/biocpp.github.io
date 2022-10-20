@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,23 +98,23 @@ $(document).ready(function(){initNavTree('core_ranges.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md42">Motivation</a></li>
-<li class="level1"><a href="#autotoc_md43">Ranges</a><ul><li class="level2"><a href="#autotoc_md44">Range concepts</a></li>
-<li class="level2"><a href="#autotoc_md45">Storage behaviour</a></li>
+<ul><li class="level1"><a href="#autotoc_md44">Motivation</a></li>
+<li class="level1"><a href="#autotoc_md45">Ranges</a><ul><li class="level2"><a href="#autotoc_md46">Range concepts</a></li>
+<li class="level2"><a href="#autotoc_md47">Storage behaviour</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md46">Views</a><ul><li class="level2"><a href="#autotoc_md47">Lazy-evaluation</a></li>
-<li class="level2"><a href="#autotoc_md48">Combinability</a></li>
-<li class="level2"><a href="#autotoc_md49">View concepts</a></li>
-<li class="level2"><a href="#autotoc_md50">Views in the standard library and in BioC++</a></li>
+<li class="level1"><a href="#autotoc_md48">Views</a><ul><li class="level2"><a href="#autotoc_md49">Lazy-evaluation</a></li>
+<li class="level2"><a href="#autotoc_md50">Combinability</a></li>
+<li class="level2"><a href="#autotoc_md51">View concepts</a></li>
+<li class="level2"><a href="#autotoc_md52">Views in the standard library and in BioC++</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md51">Containers</a><ul><li class="level2"><a href="#autotoc_md52">The bitcompressed vector</a></li>
+<li class="level1"><a href="#autotoc_md53">Containers</a><ul><li class="level2"><a href="#autotoc_md54">The bitcompressed vector</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><p ><a class="anchor" id="md__usr_home_hannes_devel_biocpp_core_doc_core_tutorial_ranges_index"></a></p>
+<div class="textblock"><p ><a class="anchor" id="md__home_hannes_devel_biocpp_core_doc_core_tutorial_ranges_index"></a></p>
 <p >This tutorial introduces the notion of <em>ranges</em>, a C++20 feature that BioC++ makes strong use of.</p>
 <table class="doxtable">
 <tr>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('core_ranges.html',''); initResizable()
 <tr>
 <th>Recommended reading</th><td></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md42"></a>
+<h1><a class="anchor" id="autotoc_md44"></a>
 Motivation</h1>
 <p >Traditionally most generic algorithms in the C++ standard library, like std::sort, take a pair of iterators (e.g. the object returned by <code>begin()</code>). If you want to sort a <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> <code>v</code>, you have to call <code>std::sort(v.begin(), v.end())</code> and not <code>std::sort(v)</code>. Why was this design with iterators chosen? It is more flexible, because it allows e.g.:</p><ul>
 <li>sorting only all elements after the fifth one: <code>std::sort(v.begin() + 5, v.end())</code></li>
@@ -138,11 +138,11 @@ Motivation</h1>
 <li>sorting in reverse order: <code>std::ranges::sort(std::views::reverse(v))</code></li>
 </ul>
 <p >We will discuss later what <code>std::views::reverse(v)</code> does, for now it is enough to understand that it returns something that appears like a container and that <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/algorithm/ranges/sort.html">std::ranges::sort</a> can sort it. Later we will see that this approach offers even more flexibility than working with iterators.</p>
-<h1><a class="anchor" id="autotoc_md43"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 Ranges</h1>
 <p ><em>Ranges</em> are an abstraction of "a collection of items", or "something iterable". The most basic definition requires only the existence of <code>begin()</code> and <code>end()</code> on the range.</p>
 <p >There are different ways to classify ranges, one way is through the capabilities of its iterator.</p>
-<h2><a class="anchor" id="autotoc_md44"></a>
+<h2><a class="anchor" id="autotoc_md46"></a>
 Range concepts</h2>
 <p >Ranges are typically either <a class="el" href="">input ranges </a> (they can be read from) or <a class="el" href="">output ranges </a> (they can be written to) or both. E.g. a <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt;</code> is both, but a <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt;int&gt; const</code> would only be an input range.</p>
 <p ><a class="el" href="">Input ranges </a> have different <em>strengths</em> that are realised through more refined concepts (i.e. types that model a stronger concept, always also model the weaker one):</p>
@@ -176,17 +176,15 @@ Range concepts</h2>
 <td class="markdownTableBodyNone">std::ranges::contiguous_range   </td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter"></td><td class="markdownTableBodyCenter">✅   </td><td class="markdownTableBodyCenter">✅   </td></tr>
 </table>
 <p >There are also range concepts that are independent of input or output or one of the above concept, e.g. std::ranges::sized_range which requires that the size of a range can be computed and in constant time.</p>
-<h2><a class="anchor" id="autotoc_md45"></a>
+<h2><a class="anchor" id="autotoc_md47"></a>
 Storage behaviour</h2>
 <p ><b>Containers</b> are the ranges most well known, they own their elements. BioC++ makes use of standard STL containers like <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code>, but also implements some custom containers.</p>
-<p ><b>Decorators</b> are ranges that are always defined on another range and decorate/annotate the underlying range with additional information. They do not own the underlying range, but can contain member data of their own.</p>
-<p ><b>Views</b> are ranges that are usually defined on another range and transform the underlying range via some algorithm or operation. Views do not own any data beyond their algorithm and the time it takes to construct, destruct or copy them should not depend on the number of elements they represent. The algorithm is required to be lazy-evaluated so it is feasible to combine multiple views. More on this below.</p>
-<p >If you are confused about <em>decorators</em> vs <em>views</em>, think of decorators as "underlying range + data" and views as "underlying range + algorithm".</p>
-<p >The storage behaviour is orthogonal to the range concepts defined by the iterators mentioned above, i.e. you can have a container that satisfies std::ranges::random_access_range (e.g. <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> does, but <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a></code> does not) and you can have views or decorators that do so or don't. For some combinations of iterator capabilities and storage behaviour there are extra concept definitions, e.g. bio::ranges::detail::random_access_container.</p>
-<h1><a class="anchor" id="autotoc_md46"></a>
+<p ><b>Views</b> are ranges that are usually defined on another range and transform the underlying range via some algorithm or operation. The exact definition of what a view is, has changed over time and is not covered here, but many of the key features are described below.</p>
+<p >The storage behaviour is orthogonal to the range concepts defined by the iterators mentioned above, i.e. you can have a container that satisfies std::ranges::random_access_range (e.g. <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a></code> does, but <code><a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a></code> does not) and you can have views that do so or don't.</p>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Views</h1>
 <p >As mentioned above, views are a specific kind of range. They are incredibly useful and you will find them throughout the library.</p>
-<h2><a class="anchor" id="autotoc_md47"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 Lazy-evaluation</h2>
 <p >A key feature of views is that whatever transformation they apply, they do so at the moment you request an element, not when the view is created.</p>
 <div class="fragment"><div class="line"><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> vec{1, 2, 3, 4, 5, 6};</div>
@@ -200,7 +198,7 @@ Lazy-evaluation</h2>
 <div class="line"><a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; *v.begin() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="ttc" id="acout_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a></div></div>
 </div><!-- fragment --><p >This will print "6", but the important thing is that resolving the first element of <code>v</code> to the last element of <code>vec</code> happens <b>on-demand</b>. This guarantees that views can be used as flexibly as iterators, but it also means that if the view performs an expensive transformation, it will have to do so repeatedly if the same element is requested multiple times.</p>
-<h2><a class="anchor" id="autotoc_md48"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 Combinability</h2>
 <p >You may have wondered why we wrote</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> v = std::views::reverse(vec);</div>
@@ -236,7 +234,7 @@ Combinability</h2>
 <div class="ttc" id="aiostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a></div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md51"></a>
 View concepts</h2>
 <p >Views are a specific kind of range that is formalised in the std::ranges::view concept. Every view returned by a view adaptor models this concept, but which other range concepts are modeled by a view?</p>
 <p >It depends on the underlying range and also the view itself. With few exceptions, views don't model more/stronger range concepts than their underlying range (other than std::ranges::view) and they try to preserve as much of the underlying range's concepts as possible. For instance the view returned by <code>std::views::reverse</code> models std::ranges::random_access_range (and weaker concepts) iff the underlying range also models the respective concept. It never models std::ranges::contiguous_range, because the third element of the view is not located immediately after the second in memory (but instead before the second).</p>
@@ -296,7 +294,7 @@ View concepts</h2>
 <p >Surprised? Let's have a closer look at the std::views::filter view. The filter view only returns the value of the underlying range for which the given predicate evaluates to <code>true</code>. To know which value is an element of the filter view, the view has to look at each of them. Thus, it must scan the underlying range value-by-value and cannot jump to an arbitrary location in constant time since it cannot know how many elements it had to skip without looking at them. Accordingly, the std::views::filter preserves only std::ranges::bidirectional_range, because it can scan the text in reverse order as well. Since the view cannot guarantee that the values lie in contiguous memory, it can also not preserve std::ranges::contiguous_range. Similarly, the view cannot model std::ranges::sized_range as it cannot determine the number of values not filtered out in constant time.</p>
 <p >The transform on the other hand produces a new element on every access (the result of the multiplication), therefore <code>v</code> is not a std::ranges::output_range, you cannot assign values to its elements. Note that this prevents modelling the std::ranges::contiguous_range as well because values are created on-demand and are not stored in memory at all.  </details> </div> </p>
 <p >We provide overview tables for all our view adaptors that document which concepts are modelled by the views they return.</p>
-<h2><a class="anchor" id="autotoc_md50"></a>
+<h2><a class="anchor" id="autotoc_md52"></a>
 Views in the standard library and in BioC++</h2>
 <p >The standard library in C++20 provides a number of useful views and BioC++ provides many views, as well. Most views provided by BioC++ are specific to biological operations, like bio::views::trim_quality which trims sequences based on the quality or bio::views::complement which generates the complement of a nucleotide sequence. But BioC++ also provides some general purpose views.</p>
 <p >Have a look at the <a class="el" href="group__views.html">views-submodule </a> to get an overview of BioC++'s views and also read through the detailed description on that page now that you had a more gentle introduction.</p>
@@ -345,17 +343,17 @@ Views in the standard library and in BioC++</h2>
 <div class="line">}</div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="afmt_8hpp_html"><div class="ttname"><a href="fmt_8hpp.html">fmt.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
-<div class="ttc" id="agroup__views_html_ga86867c9586842596d47325ad431806d7"><div class="ttname"><a href="group__views.html#ga86867c9586842596d47325ad431806d7">bio::ranges::views::translate</a></div><div class="ttdeci">constexpr auto translate</div><div class="ttdoc">A view that translates nucleotide into aminoacid alphabet with 1, 2, 3 or 6 frames.</div><div class="ttdef"><b>Definition:</b> translate.hpp:724</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:68</div></div>
+<div class="ttc" id="agroup__views_html_ga86867c9586842596d47325ad431806d7"><div class="ttname"><a href="group__views.html#ga86867c9586842596d47325ad431806d7">bio::ranges::views::translate</a></div><div class="ttdeci">constexpr auto translate</div><div class="ttdoc">A view that translates nucleotide into aminoacid alphabet with 1, 2, 3 or 6 frames.</div><div class="ttdef"><b>Definition:</b> translate.hpp:177</div></div>
 <div class="ttc" id="aranges_2views_2all_8hpp_html"><div class="ttname"><a href="ranges_2views_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the views submodule .</div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
-<h1><a class="anchor" id="autotoc_md51"></a>
+<h1><a class="anchor" id="autotoc_md53"></a>
 Containers</h1>
-<p >containers are ranges that own their data. BioC++ uses the standard library containers, like <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> and <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/list.html">std::list</a> to store elements. For certain use-cases we have introduced our own containers, though.</p>
-<p >All standard library containers model std::ranges::forward_range (see above), but we have introduced container concepts that encompass more of a containers interface. Have a look at the API documentation of bio::ranges::detail::container and unfold the inheritance diagram. What can you learn about the different refinements and their relation to the range concepts?</p>
-<h2><a class="anchor" id="autotoc_md52"></a>
+<p >Containers are ranges that own their data. BioC++ uses the standard library containers, like <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> and <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> to store elements. For certain use-cases we have introduced our own containers, though.</p>
+<p >All standard library containers model std::ranges::forward_range (see above), but these concepts do not cover adding/removing elements. Surprisingly little generic code requires functionality like random inserts, but for back insertion ("appending an element") we have introduced the concepts <a class="el" href="interfacebio_1_1ranges_1_1back__insertable.html" title="Describes range types that can grow in amortised constant time by appending an element.">bio::ranges::back_insertable</a> and <a class="el" href="interfacebio_1_1ranges_1_1back__insertable__with.html" title="Describes range types that can grow in amortised constant time by appending an element of type val_t.">bio::ranges::back_insertable_with</a>.</p>
+<h2><a class="anchor" id="autotoc_md54"></a>
 The bitcompressed vector</h2>
-<p >If you followed the alphabet tutorial closely, you will know that <a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T..">bio::alphabet::dna4</a> needs only two bits to represent its state. However, single objects are always at least a byte (eight bits) big in C++. To store sequences of small alphabets more space-efficiently, we have developed <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a>.</p>
+<p >If you followed the alphabet tutorial closely, you will know that <a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T..">bio::alphabet::dna4</a> needs only two bits to represent its state. However, single objects are always at least a byte (eight bits) big in C++. To store sequences of small alphabets more space-efficiently, we developed <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a>.</p>
 <p >Open the API documentation of <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a>, display the inheritance diagram and read through the interface overview and the detailed description.</p>
 <p > <div class="assignemnt"><h4>Assignment 4: The bitcompressed vector</h4><div class="assignment_content"> Create a small program that asks the user for a size and then creates a vector of <a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T..">bio::alphabet::dna4</a> of that size. Add an argument parser flag that allows the user to decide whether <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> or <a class="el" href="classbio_1_1ranges_1_1bitcompressed__vector.html" title="A space-optimised version of std::vector that compresses multiple letters into a single byte.">bio::ranges::bitcompressed_vector</a> is used. After creating the vector, print its size.</p>
 <p >Measure and compare the amount of main memory that your program uses depending on the vector implementation. On Linux based systems use <code>/usr/bin/time -v &lt;program&gt; &lt;args&gt;</code> and look for "Maximum resident set size". (Not to be confused with the built-in Bash time command! So use the full path <code>/usr/bin/time</code>)</p>
@@ -402,11 +400,11 @@ The bitcompressed vector</h2>
 <div class="line">}</div>
 <div class="ttc" id="abitcompressed__vector_8hpp_html"><div class="ttname"><a href="bitcompressed__vector_8hpp.html">bitcompressed_vector.hpp</a></div><div class="ttdoc">Provides bio::ranges::bitcompressed_vector.</div></div>
 <div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html">bio::ranges::bitcompressed_vector</a></div><div class="ttdoc">A space-optimised version of std::vector that compresses multiple letters into a single byte.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:65</div></div>
-<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html_adbe78383a80dbea78c8ebff90b0418bd"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html#adbe78383a80dbea78c8ebff90b0418bd">bio::ranges::bitcompressed_vector::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdoc">Returns the number of elements in the container, i.e. std::distance(begin(), end()).</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:598</div></div>
-<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html_ae3db14b9b3603a07c472ffafca66e7d8"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html#ae3db14b9b3603a07c472ffafca66e7d8">bio::ranges::bitcompressed_vector::resize</a></div><div class="ttdeci">void resize(size_type const count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:931</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html_adbe78383a80dbea78c8ebff90b0418bd"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html#adbe78383a80dbea78c8ebff90b0418bd">bio::ranges::bitcompressed_vector::size</a></div><div class="ttdeci">size_type size() const noexcept</div><div class="ttdoc">Returns the number of elements in the container, i.e. std::distance(begin(), end()).</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:600</div></div>
+<div class="ttc" id="aclassbio_1_1ranges_1_1bitcompressed__vector_html_ae3db14b9b3603a07c472ffafca66e7d8"><div class="ttname"><a href="classbio_1_1ranges_1_1bitcompressed__vector.html#ae3db14b9b3603a07c472ffafca66e7d8">bio::ranges::bitcompressed_vector::resize</a></div><div class="ttdeci">void resize(size_type const count)</div><div class="ttdoc">Resizes the container to contain count elements.</div><div class="ttdef"><b>Definition:</b> bitcompressed_vector.hpp:933</div></div>
 <div class="ttc" id="adna4_8hpp_html"><div class="ttname"><a href="dna4_8hpp.html">dna4.hpp</a></div><div class="ttdoc">Provides bio::alphabet::dna4, container aliases and string literals.</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:628</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga299ddd5bf7e8221cb9d283f8a8d24f8d"><div class="ttname"><a href="group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d">bio::alphabet::size</a></div><div class="ttdeci">constexpr auto size</div><div class="ttdoc">A type trait that holds the size of a (semi-)alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:519</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
 </div><!-- fragment -->  </details> </div>  </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -417,7 +415,7 @@ The bitcompressed vector</h2>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

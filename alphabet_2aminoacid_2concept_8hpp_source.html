@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -128,13 +128,13 @@ $(document).ready(function(){initNavTree('alphabet_2aminoacid_2concept_8hpp_sour
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// enable_aminoacid</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">// ============================================================================</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespacebio_1_1alphabet_1_1custom.html">   42</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet_1_1custom.html">bio::alphabet::custom</a></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> t&gt;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group__aminoacid.html#gadb51028b9c97cb68bb1ea08f91ad077f">   70</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="group__aminoacid.html#gadb51028b9c97cb68bb1ea08f91ad077f">enable_aminoacid</a> = std::derived_from&lt;t, aminoacid_empty_base&gt;;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group__aminoacid.html#ga629c2d51777e90a6b21d07e370b8b9a1">   70</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="group__aminoacid.html#ga629c2d51777e90a6b21d07e370b8b9a1">enable_aminoacid</a> = std::derived_from&lt;t, aminoacid_empty_base&gt;;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace bio::alphabet::cpo</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace bio::alphabet::custom</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacebio_1_1alphabet.html">bio::alphabet</a></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
@@ -144,15 +144,15 @@ $(document).ready(function(){initNavTree('alphabet_2aminoacid_2concept_8hpp_sour
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// ============================================================================</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> type&gt;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">concept </span><a class="code hl_interface" href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html">aminoacid_alphabet</a> = <a class="code hl_interface" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet&lt;type&gt;</a> &amp;&amp; cpo::enable_aminoacid&lt;std::remove_cvref_t&lt;type&gt;&gt;;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">concept </span><a class="code hl_interface" href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html">aminoacid_alphabet</a> = <a class="code hl_interface" href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet&lt;type&gt;</a> &amp;&amp; custom::enable_aminoacid&lt;std::remove_cvref_t&lt;type&gt;&gt;;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>} <span class="comment">// namespace bio::alphabet</span></div>
 <div class="ttc" id="aalphabet_2concept_8hpp_html"><div class="ttname"><a href="alphabet_2concept_8hpp.html">concept.hpp</a></div><div class="ttdoc">Core alphabet concept and free function/type trait wrappers.</div></div>
-<div class="ttc" id="agroup__aminoacid_html_gadb51028b9c97cb68bb1ea08f91ad077f"><div class="ttname"><a href="group__aminoacid.html#gadb51028b9c97cb68bb1ea08f91ad077f">bio::alphabet::cpo::enable_aminoacid</a></div><div class="ttdeci">constexpr bool enable_aminoacid</div><div class="ttdoc">A trait that indicates whether a type shall model bio::alphabet::aminoacid_alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:70</div></div>
+<div class="ttc" id="agroup__aminoacid_html_ga629c2d51777e90a6b21d07e370b8b9a1"><div class="ttname"><a href="group__aminoacid.html#ga629c2d51777e90a6b21d07e370b8b9a1">bio::alphabet::custom::enable_aminoacid</a></div><div class="ttdeci">constexpr bool enable_aminoacid</div><div class="ttdoc">A trait that indicates whether a type shall model bio::alphabet::aminoacid_alphabet.</div><div class="ttdef"><b>Definition:</b> concept.hpp:70</div></div>
 <div class="ttc" id="ainterfacebio_1_1alphabet_1_1alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a></div><div class="ttdoc">The generic alphabet concept that covers most data types used in ranges.</div></div>
 <div class="ttc" id="ainterfacebio_1_1alphabet_1_1aminoacid__alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1aminoacid__alphabet.html">aminoacid_alphabet</a></div><div class="ttdoc">A concept that indicates whether an alphabet represents amino acids.</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1cpo_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1cpo.html">bio::alphabet::cpo</a></div><div class="ttdoc">A namespace for third party and standard library specialisations of BioC++ customisation points.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1custom_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1custom.html">bio::alphabet::custom</a></div><div class="ttdoc">A namespace for third party and standard library specialisations of BioC++ customisation points.</div><div class="ttdef"><b>Definition:</b> concept.hpp:43</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_html"><div class="ttname"><a href="namespacebio_1_1alphabet.html">bio::alphabet</a></div><div class="ttdoc">The alphabet module's namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:23</div></div>
 <div class="ttc" id="astructbio_1_1alphabet_1_1aminoacid__empty__base_html"><div class="ttname"><a href="structbio_1_1alphabet_1_1aminoacid__empty__base.html">bio::alphabet::aminoacid_empty_base</a></div><div class="ttdoc">This is an empty base class that can be inherited by types that shall model bio::alphabet::aminoacid_...</div><div class="ttdef"><b>Definition:</b> concept.hpp:34</div></div>
 <div class="ttc" id="atemplate__inspection_8hpp_html"><div class="ttname"><a href="template__inspection_8hpp.html">template_inspection.hpp</a></div><div class="ttdoc">Provides various traits to inspect templates.</div></div>
 <div class="ttc" id="atype_traits_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/type_traits.html">type_traits</a></div></div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('alphabet_2aminoacid_2concept_8hpp_sour
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="dir_740f9cb2a3f5b47e1148c9e4d90d8bf4.html">bio</a></li><li class="navelem"><a class="el" href="dir_9b716f18bdad80f0bcc9544c5d50fede.html">alphabet</a></li><li class="navelem"><a class="el" href="dir_c5c94c5e6394b8bbdcce9ce299c309d0.html">aminoacid</a></li><li class="navelem"><a class="el" href="alphabet_2aminoacid_2concept_8hpp.html">concept.hpp</a></li>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

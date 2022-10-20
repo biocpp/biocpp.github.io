@@ -1,18 +1,18 @@
 <map id="bio::alphabet::phred68legacy" name="bio::alphabet::phred68legacy">
-<area shape="rect" id="node1" title="Quality type for Solexa and deprecated Illumina formats.." alt="" coords="1557,165,1745,192"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__quality__alphabet.html" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="1331,64,1499,91"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="627,31,698,57"/>
-<area shape="rect" id="node7" href="$interfacebio_1_1alphabet_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="990,64,1106,91"/>
-<area shape="rect" id="node4" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="252,31,351,57"/>
-<area shape="rect" id="node5" title=" " alt="" coords="17,5,151,32"/>
-<area shape="rect" id="node6" title=" " alt="" coords="5,56,163,83"/>
-<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="1354,115,1477,141"/>
-<area shape="rect" id="node9" title=" " alt="" coords="998,115,1098,141"/>
-<area shape="rect" id="node10" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="1358,165,1473,192"/>
-<area shape="rect" id="node11" title=" " alt="" coords="1372,216,1459,243"/>
-<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="1323,267,1508,309"/>
-<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="776,237,931,293"/>
-<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="212,267,391,323"/>
-<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="573,301,752,357"/>
-<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1quality__base.html" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the quality alphabets." alt="" coords="955,305,1141,346"/>
+<area shape="rect" id="node1" title="Quality type for Solexa and deprecated Illumina formats.." alt="" coords="1639,165,1849,192"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__quality__alphabet.html" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="1389,64,1579,91"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="629,31,707,57"/>
+<area shape="rect" id="node7" href="$interfacebio_1_1alphabet_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="1006,64,1137,91"/>
+<area shape="rect" id="node4" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="251,31,362,57"/>
+<area shape="rect" id="node5" title=" " alt="" coords="17,5,166,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,56,177,83"/>
+<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="1415,115,1553,141"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1017,115,1126,141"/>
+<area shape="rect" id="node10" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="1421,165,1547,192"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1436,216,1532,243"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1quality__base.html" title=" " alt="" coords="1379,267,1589,309"/>
+<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="772,237,943,293"/>
+<area shape="rect" id="node14" href="$classbio_1_1alphabet_1_1base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="227,267,387,323"/>
+<area shape="rect" id="node16" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="588,301,748,357"/>
+<area shape="rect" id="node15" href="$classbio_1_1alphabet_1_1quality__base.html" title="A CRTP&#45;base that refines bio::alphabet::base and is used by the quality alphabets." alt="" coords="967,305,1176,346"/>
 </map>

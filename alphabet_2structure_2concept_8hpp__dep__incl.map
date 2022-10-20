@@ -1,8 +1,0 @@
-<map id="bio/alphabet/structure/concept.hpp" name="bio/alphabet/structure/concept.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::rna_structure_alphabet." alt="" coords="121,5,286,47"/>
-<area shape="rect" id="node2" href="$alphabet_2structure_2all_8hpp.html" title="Meta&#45;header for the structure module. It includes all headers from alphabet/structure/." alt="" coords="121,184,286,225"/>
-<area shape="rect" id="node4" href="$dot__bracket3_8hpp.html" title="Provides the dot bracket format for RNA structure." alt="" coords="26,95,191,136"/>
-<area shape="rect" id="node5" href="$structured__rna_8hpp.html" title="Provides the composite of nucleotide with structure alphabets." alt="" coords="215,95,381,136"/>
-<area shape="rect" id="node6" href="$wuss_8hpp.html" title="Provides the WUSS format for RNA structure." alt="" coords="405,95,570,136"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="128,273,279,300"/>
-</map>

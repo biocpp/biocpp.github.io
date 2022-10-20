@@ -1,5 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,96,57"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1builtin__character.html" title="This concept encompasses exactly the types char, signed char, unsigned char, wchar_t,..." alt="" coords="145,5,262,32"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1meta_1_1nonint__character.html" title="This concept encompasses exactly the types char, wchar_t, char16_t and char32_t." alt="" coords="144,56,263,83"/>
+<area shape="rect" id="node1" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="50,5,169,32"/>
+<area shape="rect" id="node2" href="$structbio_1_1meta_1_1is__type__specialisation__of.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="261,12,471,68"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="5,57,213,127"/>
+<area shape="rect" id="node4" href="$structstd_1_1tuple__size_3_01tuple__t_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="271,132,461,159"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="28,203,191,259"/>
+<area shape="rect" id="node6" href="$structstd_1_1tuple__size_3_01t_3_01types_8_8_8_01_4_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="298,197,434,238"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/is_same.html" title=" " alt="" coords="21,283,198,354"/>
+<area shape="rect" id="node8" href="$structbio_1_1meta_1_1is__value__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="261,269,471,325"/>
+<area shape="rect" id="node9" href="$interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type." alt="" coords="45,152,174,179"/>
 </map>

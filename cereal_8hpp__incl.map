@@ -1,8 +1,0 @@
-<map id="bio/meta/concept/cereal.hpp" name="bio/meta/concept/cereal.hpp">
-<area shape="rect" id="node1" title="Adaptions of concepts from the Cereal library." alt="" coords="25,5,232,32"/>
-<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="5,80,97,107"/>
-<area shape="rect" id="node3" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="122,80,290,107"/>
-<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="63,155,146,181"/>
-<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="170,155,242,181"/>
-<area shape="rect" id="node6" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="267,155,337,181"/>
-</map>

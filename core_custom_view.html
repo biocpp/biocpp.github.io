@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,16 +98,16 @@ $(document).ready(function(){initNavTree('core_custom_view.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md53">Motivation</a></li>
-<li class="level1"><a href="#autotoc_md54">What makes a view?</a></li>
-<li class="level1"><a href="#autotoc_md55">Custom range adaptor objects</a></li>
-<li class="level1"><a href="#autotoc_md56">A full custom view implementation</a><ul><li class="level2"><a href="#autotoc_md57">1. The view class template</a></li>
-<li class="level2"><a href="#autotoc_md58">2. The adaptor object</a></li>
+<ul><li class="level1"><a href="#autotoc_md55">Motivation</a></li>
+<li class="level1"><a href="#autotoc_md56">What makes a view?</a></li>
+<li class="level1"><a href="#autotoc_md57">Custom range adaptor objects</a></li>
+<li class="level1"><a href="#autotoc_md58">A full custom view implementation</a><ul><li class="level2"><a href="#autotoc_md59">1. The view class template</a></li>
+<li class="level2"><a href="#autotoc_md60">2. The adaptor object</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><p ><a class="anchor" id="md__usr_home_hannes_devel_biocpp_core_doc_core_write_a_view_index"></a></p>
+<div class="textblock"><p ><a class="anchor" id="md__home_hannes_devel_biocpp_core_doc_core_write_a_view_index"></a></p>
 <p >This HowTo documents how to write a view using the standard library and some helpers from BioC++.</p>
 <table class="doxtable">
 <tr>
@@ -121,10 +121,10 @@ $(document).ready(function(){initNavTree('core_custom_view.html',''); initResiza
 </table>
 <dl class="section note"><dt>Note</dt><dd>Some of the links from this HowTo only resolve in the developer documentation because they refer to entities from the bio::alphabet::detail namespace. We recommend you open this tutorial from <a href="https://docs.seqan.de/seqan/3-master-dev/" target="_blank">the developer documentation</a>.</dd></dl>
 <p>//TODO update this regarding use of {fmt}</p>
-<h1><a class="anchor" id="autotoc_md53"></a>
+<h1><a class="anchor" id="autotoc_md55"></a>
 Motivation</h1>
 <p >We have introduced "views" in <a class="el" href="core_ranges.html">Ranges</a>. You can do many things with the views provided by the standard library and those shipped with BioC++, but in certain situations you will want to define your own view. This page will teach you the basics of defining your own view.</p>
-<h1><a class="anchor" id="autotoc_md54"></a>
+<h1><a class="anchor" id="autotoc_md56"></a>
 What makes a view?</h1>
 <p >A view is a type of <code>std::ranges::range</code> that also models <code>std::ranges::view</code>. The additional requirements of <code>std::ranges::view</code> can be vaguely summarised as "not holding any own data" or at least not holding data that is relative in size to the number of elements in the view (e.g. a vector cannot be a view, because its size in memory depends on the number of elements it represents).</p>
 <p >A simple example of a view is <code>std::ranges::subrange</code>. It can be constructed from a pair of iterators or more precisely an <em>iterator</em> and a <em>sentinel</em>. <code>begin()</code> always returns an iterator, but the type returned by <code>end()</code> (the "sentinel") does not need to be of the same type as the iterator – as long as they are comparable. This view then holds exactly the iterator-sentinel-pair as its state and nothing else.</p>
@@ -143,7 +143,7 @@ What makes a view?</h1>
 <div class="line"><span class="keyword">auto</span> v = vec | <a class="code hl_typedef" href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">std::views::transform</a>(l);</div>
 <div class="ttc" id="agroup__meta__type__list_html_gaa8a3a9526cdff1ea81ae45c8209eb592"><div class="ttname"><a href="group__meta__type__list.html#gaa8a3a9526cdff1ea81ae45c8209eb592">bio::meta::list_traits::transform</a></div><div class="ttdeci">decltype(detail::transform&lt; trait_t &gt;(list_t{})) transform</div><div class="ttdoc">Apply a transformation trait to every type in the list and return a meta::type_list of the results.</div><div class="ttdef"><b>Definition:</b> traits.hpp:524</div></div>
 </div><!-- fragment --><p >This adaptor object (<code>std::views::transform</code>) provides the pipe operator and returns an object of the actual view type (<code>std::ranges::transform_view</code>). The pipe operator allows us to chain multiple adaptors similar to the unix command line. We will discuss the details of these adaptor objects in the following sections.</p>
-<h1><a class="anchor" id="autotoc_md55"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 Custom range adaptor objects</h1>
 <p >Read <a href="https://eel.is/c++draft/range.adaptors" target="_blank">section 24.7 and 24.7.1 of the C++ standard</a>.</p>
 <p >The wording of the standard needs some getting used to, but some important notes for us are:</p><ol type="1">
@@ -192,7 +192,7 @@ Custom range adaptor objects</h1>
 <div class="line"> </div>
 <div class="ttc" id="aalphabet_2nucleotide_2all_8hpp_html"><div class="ttname"><a href="alphabet_2nucleotide_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the nucleotide submodule; includes all headers from alphabet/nucleotide/.</div></div>
 <div class="ttc" id="aiostream_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a></div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
 <div class="ttc" id="aranges_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/ranges.html">ranges</a></div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="comment">// your implementation goes here</span></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div>
@@ -230,7 +230,7 @@ Custom range adaptor objects</h1>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/io/cout.html">std::cout</a> &lt;&lt; v[0] &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;                      <span class="comment">// prints &quot;A&quot;</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:194</div></div>
 </div><!-- fragment --><p >You simply define your adaptor type as <code>auto</code> and make it behave like <code>std::views::transform</code>, except that you<br  />
 "hard-code" the lambda function that is applied to each element. Since your adaptor object now takes a range as the only parameter, it is an adaptor closure object.</p>
 <p >The object is marked as <code>constexpr</code> because the adaptor object itself never changes, it only provides <code>operator()</code> and <code>operator|</code> that each return a specialisation of <code>std::ranges::transformation_view</code>.  </details> </div> </p>
@@ -272,9 +272,9 @@ Custom range adaptor objects</h1>
 <div class="line">    <span class="keyword">auto</span> v = vec | my_reverse_complement;</div>
 <div class="line">    fmt::print(<span class="stringliteral">&quot;{}\n&quot;</span>, v);                       <span class="comment">// prints &quot;TAATCTGGT&quot;</span></div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:68</div></div>
 </div><!-- fragment --><p >The adaptor consists of <code>std::views::reverse</code> combined with <code>std::views::transform</code>. This time the lambda just performs the call to <code><a class="el" href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48" title="Return the complement of a nucleotide object.">bio::alphabet::complement</a></code>.  </details> </div> </p>
-<h1><a class="anchor" id="autotoc_md56"></a>
+<h1><a class="anchor" id="autotoc_md58"></a>
 A full custom view implementation</h1>
 <p >Using existing adaptors only works to a certain degree, sometimes you will need to implement a full view. As we have seen above, it is easy to implement a view that presents the complement of a nucleotide range just using existing adaptors. For simplicity, we will still use this as an example and implement a non-generic transform view in the next steps.</p>
 <p >A full view implementation typically consists of the following components:</p>
@@ -286,7 +286,7 @@ A full custom view implementation</h1>
 </li>
 <li>The <em>adaptor object</em> which allows for the piping behaviour.</li>
 </ol>
-<h2><a class="anchor" id="autotoc_md57"></a>
+<h2><a class="anchor" id="autotoc_md59"></a>
 1. The view class template</h2>
 <p >A good thing to start with is to think about the iterator and the sentinel of your view. The iterator and/or its relation to the sentinel is the way we implement the behaviour that is specific to our view. We will start with implementing the iterator separately and later integrate it into the view.</p>
 <h3>Iterator</h3>
@@ -589,7 +589,7 @@ A full custom view implementation</h1>
 <div class="ttc" id="agroup__views_html_gacc149746c0b9a2f5021709858f37de1b"><div class="ttname"><a href="group__views.html#gacc149746c0b9a2f5021709858f37de1b">bio::ranges::views::move</a></div><div class="ttdeci">auto const move</div><div class="ttdoc">A view that turns lvalue-references into rvalue-references.</div><div class="ttdef"><b>Definition:</b> move.hpp:70</div></div>
 <div class="ttc" id="ainherited__iterator__base_8hpp_html"><div class="ttname"><a href="inherited__iterator__base_8hpp.html">inherited_iterator_base.hpp</a></div><div class="ttdoc">Provides the bio::ranges::detail::inherited_iterator_base template.</div></div>
 <div class="ttc" id="ainterfacebio_1_1alphabet_1_1alphabet_html"><div class="ttname"><a href="interfacebio_1_1alphabet_1_1alphabet.html">alphabet</a></div><div class="ttdoc">The generic alphabet concept that covers most data types used in ranges.</div></div>
-<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> char.hpp:33</div></div>
+<div class="ttc" id="anamespacebio_html"><div class="ttname"><a href="namespacebio.html">bio</a></div><div class="ttdoc">The main BioC++ namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:23</div></div>
 </div><!-- fragment --> <div class="fragment"><div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_classRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector&lt;bio::alphabet::dna5&gt;</a> vec{<span class="stringliteral">&quot;GATTACA&quot;</span>_dna5};</div>
@@ -815,7 +815,7 @@ A full custom view implementation</h1>
 </div><!-- fragment --><p >The program prints </p><div class="fragment"><div class="line">C T A A T G T</div>
 <div class="line">CTAATGT</div>
 </div><!-- fragment --><p>  </details> </div> </p>
-<h2><a class="anchor" id="autotoc_md58"></a>
+<h2><a class="anchor" id="autotoc_md60"></a>
 2. The adaptor object</h2>
 <p >The <em>adaptor object</em> is a <em>function object</em> also called functor. This means we define a type with the respective operators and then create a global instance of that type which can be used to invoke the actual functionality.</p>
 <h3>Adaptor type definition</h3>
@@ -1049,7 +1049,7 @@ A full custom view implementation</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

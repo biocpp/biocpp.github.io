@@ -32,7 +32,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="biocpp_logo.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">BioC++<span id="projectnumber">&#160;0.5.0</span>
+   <div id="projectname">BioC++<span id="projectnumber">&#160;0.6.0</span>
    </div>
    <div id="projectbrief">The Modern C++ libraries for Bioinformatics.</div>
   </td>
@@ -98,19 +98,19 @@ $(document).ready(function(){initNavTree('core_concepts.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#autotoc_md34">Constraints</a><ul><li class="level2"><a href="#autotoc_md35">Motivation</a></li>
-<li class="level2"><a href="#autotoc_md36">Syntax variants</a></li>
+<ul><li class="level1"><a href="#autotoc_md36">Constraints</a><ul><li class="level2"><a href="#autotoc_md37">Motivation</a></li>
+<li class="level2"><a href="#autotoc_md38">Syntax variants</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md37">Terminology</a></li>
-<li class="level1"><a href="#autotoc_md38">Overloading and specialisation</a><ul><li class="level2"><a href="#autotoc_md39">Function (template) overloading</a></li>
-<li class="level2"><a href="#autotoc_md40">Partial template specialisation</a></li>
+<li class="level1"><a href="#autotoc_md39">Terminology</a></li>
+<li class="level1"><a href="#autotoc_md40">Overloading and specialisation</a><ul><li class="level2"><a href="#autotoc_md41">Function (template) overloading</a></li>
+<li class="level2"><a href="#autotoc_md42">Partial template specialisation</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#autotoc_md41">Concepts in BioC++ and this documentation</a></li>
+<li class="level1"><a href="#autotoc_md43">Concepts in BioC++ and this documentation</a></li>
 </ul>
 </div>
-<div class="textblock"><p ><a class="anchor" id="md__usr_home_hannes_devel_biocpp_core_doc_core_tutorial_concepts_index"></a></p>
+<div class="textblock"><p ><a class="anchor" id="md__home_hannes_devel_biocpp_core_doc_core_tutorial_concepts_index"></a></p>
 <p >This tutorial introduces "C++ Concepts", a feature of C++20 (and available to some extent in older GCC versions). You will learn the terminology used in the context of concepts and how to use BioC++'s concepts in your application.</p>
 <table class="doxtable">
 <tr>
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('core_concepts.html',''); initResizable
 <li>A well-readable <a href="https://www.stroustrup.com/good_concepts.pdf" target="_blank">paper</a> with motivation and historical background.</li>
 <li>The (rather dense) <a href="https://en.cppreference.com/w/cpp/language/constraints" target="_blank">documentation on cppreference</a>.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md34"></a>
+<h1><a class="anchor" id="autotoc_md36"></a>
 Constraints</h1>
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md37"></a>
 Motivation</h2>
 <p >One central design goal of BioC++ is to provide generic algorithms and data structures which can be used for different types without reimplementing the same algorithms over and over again for particular types. This has multiple benefits: improved maintainability due to an additional level of abstraction and more importantly the ability to reuse the code with user provided types. A familiar example for generic code is <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/container/vector.html">std::vector</a> and the algorithms in the standard library. They are <em>templates</em> which means that they can be <em>instantiated</em> with other types. Most often the type cannot be arbitrary, because the template expects a particular interface from the type.</p>
 <p >A BioC++ example is the local alignment algorithm. It computes the best local match between two sequences over a finite alphabet. The algorithm is generic in so far that it allows any alphabet that offers the minimal interface which is used inside the algorithm (e.g. objects of the alphabet type must be equality comparable). Before C++20, this could not be checked easily and using the interface with non-conforming types would result in very hard to read compiler errors and consequently frustration of the user. In the following part of the tutorial you will learn how to <em>constrain</em> such template arguments of generic functions and data structures and how this can have a huge impact on your code.</p>
@@ -157,7 +157,7 @@ Motivation</h2>
 <div class="line">}</div>
 </div><!-- fragment --><p >The only difference is that we have replaced <code>typename</code> with <code>Addable</code>. If you plug in a type that does not model <code>Addable</code>, you will get a message stating exactly that and not a cryptic template backtrace.</p>
 <p >The standard library provides a set of <a href="https://en.cppreference.com/w/cpp/concepts" target="_blank">predefined concepts</a>. For our example above, the std::integral concept could have been used.</p>
-<h2><a class="anchor" id="autotoc_md36"></a>
+<h2><a class="anchor" id="autotoc_md38"></a>
 Syntax variants</h2>
 <p >Depending on the complexity of your constraint statements, three different syntaxes are available to enforce constraints; all of the following are equivalent.</p>
 <p >(1) The "verbose syntax", especially useful when enforcing multiple constraints:</p>
@@ -183,7 +183,7 @@ Syntax variants</h2>
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">return</span> v1 + v2;</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md37"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md39"></a>
 Terminology</h1>
 <ul>
 <li>Template arguments can be <em><b>constrained</b></em>.</li>
@@ -193,10 +193,10 @@ Terminology</h1>
 </ul>
 <p >Some people confuse concepts with <em>interfaces</em>. Both can be used as an abstraction of concrete types, but interfaces have to be inherited from. → the abstraction is explicit in the definition of the type. Concepts on the other hand "describe properties from the outside". → types don't need to be related and don't need to "know about the concept" to model it.</p>
 <p >Furthermore, the polymorphism possible with concepts (see below) is faster, because it is resolved at compile-time while interface inheritance is resolved at run-time.</p>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 Overloading and specialisation</h1>
 <p >In generic programming, "function overloading" and "template specialisation" play an important role. They allow providing generic interfaces and (gradually) more specialised implementations for specific types or groups of types.</p>
-<h2><a class="anchor" id="autotoc_md39"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 Function (template) overloading</h2>
 <p >When a function is overloaded and multiple overloads are valid for a given/deduced template argument, the <em>most-refined</em> overload is chosen:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a>&gt;</span></div>
@@ -260,7 +260,7 @@ Function (template) overloading</h2>
 <div class="line">    print(g);</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1gap_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
-<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:196</div></div>
+<div class="ttc" id="anamespacebio_1_1alphabet_1_1literals_html"><div class="ttname"><a href="namespacebio_1_1alphabet_1_1literals.html">bio::alphabet::literals</a></div><div class="ttdoc">An inline namespace for alphabet literals. It exists to safely allow using namespace.</div><div class="ttdef"><b>Definition:</b> aa10li.hpp:184</div></div>
 </div><!-- fragment --><p >The <code>print</code> function (template) should print for every object <code>v</code> passed to it the result of <code>to_char(v)</code> and it should be constrained to only accepts types that model <a class="el" href="interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges.">bio::alphabet::alphabet</a>. Try calling <code>print</code> with a different type, e.g. <code>int</code> to make sure that it does.  </div></div>  <div class="solution"> <details><summary><b>Solution</b></summary>  </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span>                     <span class="comment">// for std::cout</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2all_8hpp.html">bio/alphabet/all.hpp</a>&gt;</span>      <span class="comment">// include all alphabet headers</span></div>
 <div class="line"> </div>
@@ -283,7 +283,7 @@ Function (template) overloading</h2>
 <div class="line">    print(g);</div>
 <div class="line">}</div>
 <div class="ttc" id="aalphabet_2all_8hpp_html"><div class="ttname"><a href="alphabet_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the alphabet module.</div></div>
-<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:245</div></div>
+<div class="ttc" id="agroup__alphabet_html_ga064e386f9360cca0fd3702b4957a27a0"><div class="ttname"><a href="group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0">bio::alphabet::to_char</a></div><div class="ttdeci">constexpr auto to_char</div><div class="ttdoc">Return the char representation of an alphabet object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:194</div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
 <p > <div class="assignemnt"><h4>Assignment 2: Static polymorphism with alphabets II</h4><div class="assignment_content"> Adapt your previous solution to handle nucleotides differently from the rest. For nucleotides, it should print both the value and its complement.  </div></div>  <div class="solution"> <details><summary><b>Solution</b></summary>  </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/iostream.html">iostream</a>&gt;</span>                     <span class="comment">// for std::cout</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="alphabet_2all_8hpp.html">bio/alphabet/all.hpp</a>&gt;</span>      <span class="comment">// include all alphabet headers</span></div>
@@ -313,9 +313,9 @@ Function (template) overloading</h2>
 <div class="line">    print(a);</div>
 <div class="line">    print(g);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:83</div></div>
+<div class="ttc" id="agroup__nucleotide_html_ga174261f8f888bbce628ffe01097a9b48"><div class="ttname"><a href="group__nucleotide.html#ga174261f8f888bbce628ffe01097a9b48">bio::alphabet::complement</a></div><div class="ttdeci">constexpr auto complement</div><div class="ttdoc">Return the complement of a nucleotide object.</div><div class="ttdef"><b>Definition:</b> concept.hpp:68</div></div>
 </div><!-- fragment --><p>  </details> </div> </p>
-<h2><a class="anchor" id="autotoc_md40"></a>
+<h2><a class="anchor" id="autotoc_md42"></a>
 Partial template specialisation</h2>
 <p >Similar to function template overloading it is possible to use concepts for partially specialising class and variable templates.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a>&gt;</span></div>
@@ -346,7 +346,7 @@ Partial template specialisation</h2>
 </div><!-- fragment --><p >This is a typical example of a "type transformation trait". It maps one type to another type; in this case it returns a type that is able to represent the square root of the<br  />
 "input type". This can be used in generic algorithms to hold data in different types depending on the type of the input – in this case we could avoid half of the space consumption for unsigned integral types VS signed integral types.</p>
 <dl class="section note"><dt>Note</dt><dd>The std::same_as used above is a concept with two template parameters. It requires that both parameters are the same. The <code>static_assert</code> checks conditions at compile-time; it can be used to verify whether a type or a combination of types model a concept. In the above case we can use the combination to check the "return type" of the transformation trait.</dd></dl>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md43"></a>
 Concepts in BioC++ and this documentation</h1>
 <p >BioC++ uses concepts extensively, for specialisation/overloading, but also to prevent misuse of templates and to clearly specify all public interfaces. We prefer the intermediate syntax and additionally use the verbose expressions if necessary. Unfortunately, doxygen, the system used to generate this documentation, does not handle C++ concepts very well, yet. In some parts of the documentation concepts are called "interfaces", please don't let this confuse you. And the "verbose syntax" introduced above is not visible at all in the automatically generated documentation. That's why it's important to read the detailed documentation section where all requirements are documented. </p>
 </div></div><!-- contents -->
@@ -358,7 +358,7 @@ Concepts in BioC++ and this documentation</h1>
   <ul>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
-    <li class="footer">Generated on Mon Jul 25 2022 14:00:35 for BioC++ by
+    <li class="footer">Generated on Thu Oct 20 2022 17:51:14 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.4 </li>
   </ul>

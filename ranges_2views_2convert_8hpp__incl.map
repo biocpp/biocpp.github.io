@@ -1,10 +1,10 @@
 <map id="bio/ranges/views/convert.hpp" name="bio/ranges/views/convert.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::convert." alt="" coords="39,5,231,32"/>
-<area shape="rect" id="node2" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="5,80,80,107"/>
-<area shape="rect" id="node3" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ranges.html" title=" " alt="" coords="104,80,165,107"/>
-<area shape="rect" id="node4" href="$ranges_2biocpp_8hpp.html" title="Module header with module&#45;wide definitions." alt="" coords="189,80,339,107"/>
-<area shape="rect" id="node5" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="190,155,338,181"/>
-<area shape="rect" id="node6" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="132,229,207,256"/>
-<area shape="rect" id="node7" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="231,229,297,256"/>
-<area shape="rect" id="node8" href="/usr/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="322,229,387,256"/>
+<area shape="rect" id="node1" title="Provides bio::views::convert." alt="" coords="36,5,249,32"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="5,80,85,107"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ranges.html" title=" " alt="" coords="109,80,176,107"/>
+<area shape="rect" id="node4" href="$core_8hpp.html" title="Provides platform and dependency checks." alt="" coords="201,80,303,107"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="61,155,144,181"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="168,155,240,181"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="265,155,335,181"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/string.html" title=" " alt="" coords="360,155,419,181"/>
 </map>
