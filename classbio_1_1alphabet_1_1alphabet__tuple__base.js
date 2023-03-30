@@ -16,6 +16,8 @@ var classbio_1_1alphabet_1_1alphabet__tuple__base =
     [ "get", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#aee51f74d0342e21dc0f8cfe3ec3deab5", null ],
     [ "get", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#ac06e51a255fb720e561358f60cfa6491", null ],
     [ "get", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#a5fd6917d2c36d4fe407334d64bd68485", null ],
-    [ "operator<=>", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#ac067a8630b288f7f1612deb17a4fda80", null ],
-    [ "operator==", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#a28197fc5344b70ed3ba0393b79794fad", null ]
+    [ "operator<=>", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#a0288456348134c620e638bc61e1e3c4b", null ],
+    [ "operator<=>", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#a7fdbed2222f3990132e12137fb400ede", null ],
+    [ "operator==", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#a16d2dc7d925b1f4c1ab0dfeca1df3782", null ],
+    [ "operator==", "classbio_1_1alphabet_1_1alphabet__tuple__base.html#a15975c3c1d42a3656595f50265bf08bf", null ]
 ];

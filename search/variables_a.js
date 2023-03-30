@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['offset_5fchar_0',['offset_char',['../classbio_1_1alphabet_1_1phred42.html#a04a2bcd8c6ca585e39f018bc8ff52872',1,'bio::alphabet::phred42::offset_char()'],['../classbio_1_1alphabet_1_1phred63.html#a5bb1a43c1295539973643239934d1a8c',1,'bio::alphabet::phred63::offset_char()'],['../classbio_1_1alphabet_1_1phred68legacy.html#aa804cc36d8c86b7dd700a1e71c396268',1,'bio::alphabet::phred68legacy::offset_char()']]],
-  ['offset_5fphred_1',['offset_phred',['../classbio_1_1alphabet_1_1phred42.html#a8647e83aa04c2d92452c819bbdbe69ad',1,'bio::alphabet::phred42::offset_phred()'],['../classbio_1_1alphabet_1_1phred63.html#ac288fa94b7d423abafe8211bf6944df3',1,'bio::alphabet::phred63::offset_phred()'],['../classbio_1_1alphabet_1_1phred68legacy.html#a31c43e77de8f7bbb47083fa20b81d841',1,'bio::alphabet::phred68legacy::offset_phred()']]],
-  ['other_5falignment_2',['other_alignment',['../structbio_1_1ranges_1_1aligned__allocator_1_1rebind.html#a180444a7cc51b4de3049c22b4157d524',1,'bio::ranges::aligned_allocator::rebind']]]
+  ['masked_4956',['MASKED',['../classbio_1_1alphabet_1_1mask.html#a4b794b3fbc3af0a3ffc21d5d1ec27061',1,'bio::alphabet::mask']]],
+  ['matched_4957',['matched',['https://en.cppreference.com/w/cpp/regex/sub_match/matched.html',0,'std::csub_match::matched()'],['https://en.cppreference.com/w/cpp/regex/sub_match/matched.html',0,'std::ssub_match::matched()'],['https://en.cppreference.com/w/cpp/regex/sub_match/matched.html',0,'std::sub_match::matched()'],['https://en.cppreference.com/w/cpp/regex/sub_match/matched.html',0,'std::wcsub_match::matched()'],['https://en.cppreference.com/w/cpp/regex/sub_match/matched.html',0,'std::wssub_match::matched()']]],
+  ['max_5fblocks_5fper_5fchunk_4958',['max_blocks_per_chunk',['https://en.cppreference.com/w/cpp/memory/pool_options.html',0,'std::pmr::pool_options']]],
+  ['move_4959',['move',['../group__views.html#gacc149746c0b9a2f5021709858f37de1b',1,'bio::ranges::views']]]
 ];

@@ -12,7 +12,7 @@
 <g id="clust1" class="cluster">
 <title>clusterdir_9b716f18bdad80f0bcc9544c5d50fede</title>
 <g id="a_clust1"><a xlink:href="dir_9b716f18bdad80f0bcc9544c5d50fede.html" target="_top" xlink:title="alphabet">
-<polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-151 178,-151 178,-8 8,-8"/>
+<polygon fill="#ddddee" stroke="black" points="8,-8 8,-151 178,-151 178,-8 8,-8"/>
 <text text-anchor="middle" x="93" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">alphabet</text>
 </a>
 </g>
@@ -21,7 +21,7 @@
 <g id="node1" class="node">
 <title>dir_018cbefd8b552085113eaba503c83b7f</title>
 <g id="a_node1"><a xlink:href="dir_018cbefd8b552085113eaba503c83b7f.html" target="_top" xlink:title="composite">
-<polygon fill="#a2b4d6" stroke="#404040" points="84,-52 16,-52 16,-16 84,-16 84,-52"/>
+<polygon fill="none" stroke="black" points="84,-52 16,-52 16,-16 84,-16 84,-52"/>
 <text text-anchor="middle" x="50" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">composite</text>
 </a>
 </g>
@@ -30,7 +30,7 @@
 <g id="node2" class="node">
 <title>dir_8142f063462841d169d3caf3917af0e7</title>
 <g id="a_node2"><a xlink:href="dir_8142f063462841d169d3caf3917af0e7.html" target="_top" xlink:title="nucleotide">
-<polygon fill="#a2b4d6" stroke="#404040" points="170,-52 102,-52 102,-16 170,-16 170,-52"/>
+<polygon fill="none" stroke="black" points="170,-52 102,-52 102,-16 170,-16 170,-52"/>
 <text text-anchor="middle" x="136" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">nucleotide</text>
 </a>
 </g>
@@ -39,7 +39,7 @@
 <g id="node3" class="node">
 <title>dir_07786875644ed6de5ede0ed8dee13bbe</title>
 <g id="a_node3"><a xlink:href="dir_07786875644ed6de5ede0ed8dee13bbe.html" target="_top" xlink:title="quality">
-<polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="120,-124 66,-124 66,-88 120,-88 120,-124"/>
+<polygon fill="#eeeeff" stroke="black" points="120,-124 66,-124 66,-88 120,-88 120,-124"/>
 <text text-anchor="middle" x="93" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">quality</text>
 </a>
 </g>
@@ -49,7 +49,7 @@
 <title>dir_07786875644ed6de5ede0ed8dee13bbe&#45;&gt;dir_018cbefd8b552085113eaba503c83b7f</title>
 <path fill="none" stroke="black" d="M82.37,-87.7C77.37,-79.56 71.31,-69.69 65.79,-60.7"/>
 <polygon fill="black" stroke="black" points="68.72,-58.79 60.51,-52.1 62.76,-62.46 68.72,-58.79"/>
-<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000020_000005.html" target="_top" xlink:title="1">
+<g id="a_edge1&#45;headlabel"><a xlink:href="dir_000021_000017.html" target="_top" xlink:title="1">
 <text text-anchor="middle" x="73.02" y="-57.87" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
 </a>
 </g>
@@ -59,7 +59,7 @@
 <title>dir_07786875644ed6de5ede0ed8dee13bbe&#45;&gt;dir_8142f063462841d169d3caf3917af0e7</title>
 <path fill="none" stroke="black" d="M103.63,-87.7C108.63,-79.56 114.69,-69.69 120.21,-60.7"/>
 <polygon fill="black" stroke="black" points="123.24,-62.46 125.49,-52.1 117.28,-58.79 123.24,-62.46"/>
-<g id="a_edge2&#45;headlabel"><a xlink:href="dir_000020_000019.html" target="_top" xlink:title="7">
+<g id="a_edge2&#45;headlabel"><a xlink:href="dir_000021_000020.html" target="_top" xlink:title="7">
 <text text-anchor="middle" x="123.78" y="-64.51" font-family="Helvetica,sans-Serif" font-size="10.00">7</text>
 </a>
 </g>

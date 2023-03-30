@@ -21,7 +21,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classbio_1_1alphabet_1_1phred42.html" target="_top" xlink:title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)....">
+<g id="a_node7"><a xlink:href="classbio_1_1alphabet_1_1phred42.html" target="_top" xlink:title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range).">
 <polygon fill="white" stroke="black" points="708,-136.5 708,-155.5 834,-155.5 834,-136.5 708,-136.5"/>
 <text text-anchor="middle" x="771" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::phred42</text>
 </a>
@@ -36,7 +36,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="classbio_1_1alphabet_1_1phred63.html" target="_top" xlink:title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)....">
+<g id="a_node8"><a xlink:href="classbio_1_1alphabet_1_1phred63.html" target="_top" xlink:title="Quality type for traditional Sanger and modern Illumina Phred scores (full range).">
 <polygon fill="white" stroke="black" points="708,-98.5 708,-117.5 834,-117.5 834,-98.5 708,-98.5"/>
 <text text-anchor="middle" x="771" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::phred63</text>
 </a>
@@ -51,7 +51,7 @@
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="classbio_1_1alphabet_1_1phred68legacy.html" target="_top" xlink:title="Quality type for Solexa and deprecated Illumina formats..">
+<g id="a_node9"><a xlink:href="classbio_1_1alphabet_1_1phred68legacy.html" target="_top" xlink:title="Quality type for Solexa and deprecated Illumina formats.">
 <polygon fill="white" stroke="black" points="692,-60.5 692,-79.5 850,-79.5 850,-60.5 692,-60.5"/>
 <text text-anchor="middle" x="771" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::phred68legacy</text>
 </a>

@@ -1,9 +1,9 @@
 <map id="aminoacid_alphabet" name="aminoacid_alphabet">
 <area shape="rect" id="node1" title="A concept that indicates whether an alphabet represents amino acids." alt="" coords="511,81,665,108"/>
-<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1aa10li.html" title="The reduced Li amino acid alphabet.." alt="" coords="735,5,889,32"/>
-<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1aa10murphy.html" title="The reduced Murphy amino acid alphabet.." alt="" coords="713,56,911,83"/>
-<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1aa20.html" title="The canonical amino acid alphabet.." alt="" coords="739,107,885,133"/>
-<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1aa27.html" title="The twenty&#45;seven letter amino acid alphabet.." alt="" coords="739,157,885,184"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1aa10li.html" title="The reduced Li amino acid alphabet." alt="" coords="735,5,889,32"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1aa10murphy.html" title="The reduced Murphy amino acid alphabet." alt="" coords="713,56,911,83"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1aa20.html" title="The canonical amino acid alphabet." alt="" coords="739,107,885,133"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1aa27.html" title="The twenty&#45;seven letter amino acid alphabet." alt="" coords="739,157,885,184"/>
 <area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="384,81,463,108"/>
 <area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="225,81,336,108"/>
 <area shape="rect" id="node4" title=" " alt="" coords="17,56,166,83"/>

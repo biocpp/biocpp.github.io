@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1530;
+var viewWidth = 1337;
 var viewHeight = 285;
 var sectionId = 'dynsection-1';
 </script>
@@ -54,359 +54,283 @@ var sectionId = 'dynsection-1';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>bio/ranges/views/deep.hpp</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-281 1526,-281 1526,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-281 1333,-281 1333,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Provides bio::views::deep.">
-<polygon fill="#bfbfbf" stroke="black" points="579.5,-257.5 579.5,-276.5 726.5,-276.5 726.5,-257.5 579.5,-257.5"/>
-<text text-anchor="middle" x="653" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/deep.hpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="556.5,-257.5 556.5,-276.5 703.5,-276.5 703.5,-257.5 556.5,-257.5"/>
+<text text-anchor="middle" x="630" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/deep.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="add__reverse__complement_8hpp.html" target="_top" xlink:title="Provides bio::views::add_reverse_complement.">
-<polygon fill="white" stroke="black" points="0,-190.5 0,-220.5 146,-220.5 146,-190.5 0,-190.5"/>
-<text text-anchor="start" x="8" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/add</text>
-<text text-anchor="middle" x="73" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_reverse_complement.hpp</text>
+<g id="a_node2"><a xlink:href="ranges_2views_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the views submodule .">
+<polygon fill="white" stroke="black" points="453.5,-129 453.5,-148 588.5,-148 588.5,-129 453.5,-129"/>
+<text text-anchor="middle" x="521" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M569.14,-260.25C470.88,-253.07 303.25,-239.45 160,-221 155.44,-220.41 150.76,-219.76 146.04,-219.08"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="569.08,-263.75 579.31,-260.99 569.59,-256.77 569.08,-263.75"/>
+<path fill="none" stroke="midnightblue" d="M545.88,-266.14C384.24,-265.53 42.93,-259.63 7,-221 -2.39,-210.91 -2.26,-200.21 7,-190 36.43,-157.53 320.67,-145.2 453.38,-141.19"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="546.25,-269.64 556.26,-266.17 546.28,-262.64 546.25,-269.64"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="ranges_2views_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the views submodule .">
-<polygon fill="white" stroke="black" points="499.5,-62 499.5,-81 634.5,-81 634.5,-62 499.5,-62"/>
-<text text-anchor="middle" x="567" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/all.hpp</text>
+<g id="a_node3"><a xlink:href="char__to_8hpp.html" target="_top" xlink:title="Provides bio::views::char_to.">
+<polygon fill="white" stroke="black" points="16.5,-190.5 16.5,-220.5 139.5,-220.5 139.5,-190.5 16.5,-190.5"/>
+<text text-anchor="start" x="24.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/char</text>
+<text text-anchor="middle" x="78" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_to.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M569.02,-262.96C452.4,-257.86 253.14,-245.63 231,-221 220.27,-209.06 210.34,-147.8 232,-123 266.05,-84.02 411.62,-74.77 499.28,-72.79"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="569.21,-266.47 579.35,-263.4 569.51,-259.48 569.21,-266.47"/>
+<path fill="none" stroke="midnightblue" d="M546.21,-261.01C449.8,-254.62 286.88,-241.8 148,-221 145.3,-220.6 142.54,-220.15 139.77,-219.68"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="545.99,-264.51 556.2,-261.67 546.45,-257.52 545.99,-264.51"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="char__to_8hpp.html" target="_top" xlink:title="Provides bio::views::char_to.">
-<polygon fill="white" stroke="black" points="400.5,-190.5 400.5,-220.5 523.5,-220.5 523.5,-190.5 400.5,-190.5"/>
-<text text-anchor="start" x="408.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/char</text>
-<text text-anchor="middle" x="462" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_to.hpp</text>
+<g id="a_node4"><a xlink:href="complement_8hpp.html" target="_top" xlink:title="Provides bio::views::complement.">
+<polygon fill="white" stroke="black" points="157.5,-196 157.5,-215 342.5,-215 342.5,-196 157.5,-196"/>
+<text text-anchor="middle" x="250" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/complement.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
-<title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M616.03,-254.48C584.89,-244.78 540.23,-230.87 507.01,-220.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="615.05,-257.84 625.63,-257.48 617.13,-251.16 615.05,-257.84"/>
-</g>
-<!-- Node6 -->
-<g id="node6" class="node">
-<title>Node6</title>
-<g id="a_node6"><a xlink:href="complement_8hpp.html" target="_top" xlink:title="Provides bio::views::complement.">
-<polygon fill="white" stroke="black" points="560.5,-129 560.5,-148 745.5,-148 745.5,-129 560.5,-129"/>
-<text text-anchor="middle" x="653" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/complement.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge6" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M653,-246.94C653,-219.12 653,-168.54 653,-148.26"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="649.5,-247.31 653,-257.31 656.5,-247.31 649.5,-247.31"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="rank__to_8hpp.html" target="_top" xlink:title="Provides bio::views::rank_to.">
-<polygon fill="white" stroke="black" points="60,-123.5 60,-153.5 184,-153.5 184,-123.5 60,-123.5"/>
-<text text-anchor="start" x="68" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/rank</text>
-<text text-anchor="middle" x="122" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_to.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge8" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M569.43,-264.73C456.3,-261.83 261.28,-252.31 198,-221 167.31,-205.81 142.73,-172.67 130.48,-153.66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="569.36,-268.23 579.44,-264.98 569.53,-261.23 569.36,-268.23"/>
-</g>
-<!-- Node8 -->
-<g id="node8" class="node">
-<title>Node8</title>
-<g id="a_node8"><a xlink:href="to__char_8hpp.html" target="_top" xlink:title="Provides bio::views::to_char.">
-<polygon fill="white" stroke="black" points="1020,-190.5 1020,-220.5 1132,-220.5 1132,-190.5 1020,-190.5"/>
-<text text-anchor="start" x="1028" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
-<text text-anchor="middle" x="1076" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_char.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node8 -->
-<g id="edge10" class="edge">
-<title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M730.97,-256.19C798.93,-247.49 900.09,-234.14 988,-221 998.26,-219.47 1009.18,-217.74 1019.71,-216.03"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="730.25,-252.76 720.78,-257.5 731.14,-259.7 730.25,-252.76"/>
-</g>
-<!-- Node12 -->
-<g id="node12" class="node">
-<title>Node12</title>
-<g id="a_node12"><a xlink:href="ranges_2views_2to__lower_8hpp.html" target="_top" xlink:title="Provides bio::views::to_lower.">
-<polygon fill="white" stroke="black" points="1280,-190.5 1280,-220.5 1392,-220.5 1392,-190.5 1280,-190.5"/>
-<text text-anchor="start" x="1288" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
-<text text-anchor="middle" x="1336" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_lower.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node12 -->
-<g id="edge15" class="edge">
-<title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M736.78,-263.8C856.01,-259.78 1081.23,-248.92 1271,-221 1273.86,-220.58 1276.78,-220.1 1279.72,-219.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="736.51,-260.3 726.63,-264.13 736.74,-267.3 736.51,-260.3"/>
-</g>
-<!-- Node13 -->
-<g id="node13" class="node">
-<title>Node13</title>
-<g id="a_node13"><a xlink:href="to__rank_8hpp.html" target="_top" xlink:title="Provides bio::views::to_rank.">
-<polygon fill="white" stroke="black" points="1150,-190.5 1150,-220.5 1262,-220.5 1262,-190.5 1150,-190.5"/>
-<text text-anchor="start" x="1158" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
-<text text-anchor="middle" x="1206" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rank.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node13 -->
-<g id="edge16" class="edge">
-<title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M736.62,-261.54C834.13,-255.59 999.95,-243.14 1141,-221 1143.86,-220.55 1146.77,-220.05 1149.71,-219.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="736.3,-258.05 726.53,-262.15 736.72,-265.04 736.3,-258.05"/>
-</g>
-<!-- Node14 -->
-<g id="node14" class="node">
-<title>Node14</title>
-<g id="a_node14"><a xlink:href="to__upper_8hpp.html" target="_top" xlink:title="Provides bio::views::to_upper.">
-<polygon fill="white" stroke="black" points="1410,-190.5 1410,-220.5 1522,-220.5 1522,-190.5 1410,-190.5"/>
-<text text-anchor="start" x="1418" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
-<text text-anchor="middle" x="1466" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_upper.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node14 -->
-<g id="edge19" class="edge">
-<title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M736.79,-265.3C875.56,-263.18 1161.58,-254.69 1401,-221 1403.86,-220.6 1406.79,-220.13 1409.73,-219.63"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="736.59,-261.81 726.65,-265.45 736.7,-268.81 736.59,-261.81"/>
-</g>
-<!-- Node15 -->
-<g id="node15" class="node">
-<title>Node15</title>
-<g id="a_node15"><a xlink:href="translate_8hpp.html" target="_top" xlink:title="Provides bio::views::translate and bio::views::translate_single.">
-<polygon fill="white" stroke="black" points="928.5,-129 928.5,-148 1095.5,-148 1095.5,-129 928.5,-129"/>
-<text text-anchor="middle" x="1012" y="-136" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/translate.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node15 -->
-<g id="edge20" class="edge">
-<title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M736.77,-263.54C790.99,-259.17 861.87,-248.15 919,-221 956.81,-203.03 990.98,-165.15 1005.12,-148.12"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="736.21,-260.07 726.5,-264.3 736.73,-267.05 736.21,-260.07"/>
-</g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:href="translate__single_8hpp.html" target="_top" xlink:title="Provides bio::views::translate and bio::views::translate_single.">
-<polygon fill="white" stroke="black" points="764,-190.5 764,-220.5 910,-220.5 910,-190.5 764,-190.5"/>
-<text text-anchor="start" x="772" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/translate</text>
-<text text-anchor="middle" x="837" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_single.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node16 -->
-<g id="edge22" class="edge">
-<title>Node1&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M689.01,-254.36C718.99,-244.66 761.77,-230.83 793.63,-220.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="687.8,-251.07 679.36,-257.48 689.95,-257.73 687.8,-251.07"/>
-</g>
-<!-- Node18 -->
-<g id="node18" class="node">
-<title>Node18</title>
-<g id="a_node18"><a xlink:href="trim__quality_8hpp.html" target="_top" xlink:title="Provides bio::views::trim_quality.">
-<polygon fill="white" stroke="black" points="420,-123.5 420,-153.5 542,-153.5 542,-123.5 420,-123.5"/>
-<text text-anchor="start" x="428" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/trim</text>
-<text text-anchor="middle" x="481" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_quality.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node18 -->
-<g id="edge25" class="edge">
-<title>Node1&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M633.09,-251.36C599.78,-226.86 533.17,-177.87 500.28,-153.68"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="631.05,-254.2 641.18,-257.31 635.2,-248.56 631.05,-254.2"/>
-</g>
-<!-- Node19 -->
-<g id="node19" class="node">
-<title>Node19</title>
-<g id="a_node19"><a xlink:href="validate__char__for_8hpp.html" target="_top" xlink:title="Provides bio::ranges::views::validate_char_for.">
-<polygon fill="white" stroke="black" points="240,-190.5 240,-220.5 382,-220.5 382,-190.5 240,-190.5"/>
-<text text-anchor="start" x="248" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/validate</text>
-<text text-anchor="middle" x="311" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_char_for.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node19 -->
-<g id="edge27" class="edge">
-<title>Node1&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M593.05,-255.78C540.14,-246.73 460.92,-233.11 392,-221 388.76,-220.43 385.46,-219.85 382.11,-219.26"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="592.5,-259.23 602.95,-257.47 593.68,-252.33 592.5,-259.23"/>
-</g>
-<!-- Node4&#45;&gt;Node3 -->
 <g id="edge4" class="edge">
-<title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M434.54,-183.77C415.7,-166.98 396.5,-142.93 411,-123 431.18,-95.26 466.92,-82.45 499.11,-76.65"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="432.32,-186.48 442.22,-190.27 436.84,-181.14 432.32,-186.48"/>
+<title>Node1&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M565.5,-255.9C492.03,-244.4 373.29,-225.8 304.34,-215.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="565.13,-259.39 575.55,-257.48 566.21,-252.47 565.13,-259.39"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="char__strictly__to_8hpp.html" target="_top" xlink:title="Provides bio::ranges::views::char_strictly_to.">
-<polygon fill="white" stroke="black" points="240.5,-123.5 240.5,-153.5 363.5,-153.5 363.5,-123.5 240.5,-123.5"/>
-<text text-anchor="start" x="248.5" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/char</text>
-<text text-anchor="middle" x="302" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_strictly_to.hpp</text>
+<g id="a_node5"><a xlink:href="rank__to_8hpp.html" target="_top" xlink:title="Provides bio::views::rank_to.">
+<polygon fill="white" stroke="black" points="360,-190.5 360,-220.5 484,-220.5 484,-190.5 360,-190.5"/>
+<text text-anchor="start" x="368" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/rank</text>
+<text text-anchor="middle" x="422" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_to.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node4&#45;&gt;Node5 -->
-<g id="edge5" class="edge">
-<title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M417.8,-186.54C392.2,-176.14 360.43,-163.24 336.65,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="416.7,-189.87 427.28,-190.4 419.34,-183.39 416.7,-189.87"/>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge6" class="edge">
+<title>Node1&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M590.18,-254.61C556.25,-244.9 507.35,-230.92 471.02,-220.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="589.62,-258.09 600.2,-257.48 591.54,-251.36 589.62,-258.09"/>
 </g>
-<!-- Node6&#45;&gt;Node3 -->
-<g id="edge7" class="edge">
-<title>Node6&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M633.24,-122.57C616.27,-109.74 592.38,-91.69 578.41,-81.13"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="631.31,-125.5 641.4,-128.73 635.53,-119.91 631.31,-125.5"/>
+<!-- Node6 -->
+<g id="node6" class="node">
+<title>Node6</title>
+<g id="a_node6"><a xlink:href="to__char_8hpp.html" target="_top" xlink:title="Provides bio::views::to_char.">
+<polygon fill="white" stroke="black" points="642,-190.5 642,-220.5 754,-220.5 754,-190.5 642,-190.5"/>
+<text text-anchor="start" x="650" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
+<text text-anchor="middle" x="698" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_char.hpp</text>
+</a>
 </g>
-<!-- Node7&#45;&gt;Node3 -->
-<g id="edge9" class="edge">
-<title>Node7&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M194.17,-123.64C195.45,-123.42 196.73,-123.21 198,-123 302.81,-105.84 425.03,-89.91 499.17,-80.7"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="193.42,-120.21 184.17,-125.36 194.62,-127.11 193.42,-120.21"/>
 </g>
-<!-- Node8&#45;&gt;Node3 -->
+<!-- Node1&#45;&gt;Node6 -->
+<g id="edge8" class="edge">
+<title>Node1&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M647.55,-250.65C658.17,-241.35 671.63,-229.57 681.97,-220.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="644.96,-248.26 639.74,-257.48 649.57,-253.52 644.96,-248.26"/>
+</g>
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="ranges_2views_2to__lower_8hpp.html" target="_top" xlink:title="Provides bio::views::to_lower.">
+<polygon fill="white" stroke="black" points="1087,-190.5 1087,-220.5 1199,-220.5 1199,-190.5 1087,-190.5"/>
+<text text-anchor="start" x="1095" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
+<text text-anchor="middle" x="1143" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_lower.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge13" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M714.06,-260.67C804.58,-254.22 952.61,-241.57 1079,-221 1081.58,-220.58 1084.22,-220.12 1086.88,-219.62"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="713.59,-257.2 703.86,-261.39 714.08,-264.18 713.59,-257.2"/>
+</g>
+<!-- Node11 -->
+<g id="node11" class="node">
+<title>Node11</title>
+<g id="a_node11"><a xlink:href="to__rank_8hpp.html" target="_top" xlink:title="Provides bio::views::to_rank.">
+<polygon fill="white" stroke="black" points="772,-190.5 772,-220.5 884,-220.5 884,-190.5 772,-190.5"/>
+<text text-anchor="start" x="780" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
+<text text-anchor="middle" x="828" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_rank.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node11 -->
 <g id="edge14" class="edge">
-<title>Node8&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M1094.94,-182.24C1107.82,-164.33 1120.03,-139.51 1105,-123 1073.89,-88.84 772.07,-77.35 634.6,-73.87"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1091.99,-180.35 1088.68,-190.41 1097.54,-184.6 1091.99,-180.35"/>
+<title>Node1&#45;&gt;Node11</title>
+<path fill="none" stroke="midnightblue" d="M668.32,-254.48C700.6,-244.78 746.9,-230.87 781.33,-220.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="666.94,-251.25 658.37,-257.48 668.95,-257.95 666.94,-251.25"/>
+</g>
+<!-- Node12 -->
+<g id="node12" class="node">
+<title>Node12</title>
+<g id="a_node12"><a xlink:href="to__upper_8hpp.html" target="_top" xlink:title="Provides bio::views::to_upper.">
+<polygon fill="white" stroke="black" points="1217,-190.5 1217,-220.5 1329,-220.5 1329,-190.5 1217,-190.5"/>
+<text text-anchor="start" x="1225" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/to</text>
+<text text-anchor="middle" x="1273" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_upper.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node12 -->
+<g id="edge17" class="edge">
+<title>Node1&#45;&gt;Node12</title>
+<path fill="none" stroke="midnightblue" d="M714.12,-263.19C827.01,-258.57 1033.52,-247.12 1208,-221 1210.86,-220.57 1213.78,-220.09 1216.72,-219.57"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="713.68,-259.7 703.82,-263.6 713.96,-266.7 713.68,-259.7"/>
+</g>
+<!-- Node13 -->
+<g id="node13" class="node">
+<title>Node13</title>
+<g id="a_node13"><a xlink:href="translate_8hpp.html" target="_top" xlink:title="Provides bio::views::translate and bio::views::translate_single.">
+<polygon fill="white" stroke="black" points="902.5,-196 902.5,-215 1069.5,-215 1069.5,-196 902.5,-196"/>
+<text text-anchor="middle" x="986" y="-203" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/translate.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node13 -->
+<g id="edge18" class="edge">
+<title>Node1&#45;&gt;Node13</title>
+<path fill="none" stroke="midnightblue" d="M691.27,-255.76C760.16,-244.25 870.76,-225.76 935.09,-215.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="690.29,-252.37 681,-257.48 691.44,-259.28 690.29,-252.37"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="trim__quality_8hpp.html" target="_top" xlink:title="Provides bio::views::trim_quality.">
+<polygon fill="white" stroke="black" points="502,-190.5 502,-220.5 624,-220.5 624,-190.5 502,-190.5"/>
+<text text-anchor="start" x="510" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/trim</text>
+<text text-anchor="middle" x="563" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">_quality.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node15 -->
+<g id="edge21" class="edge">
+<title>Node1&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M612.71,-250.65C602.24,-241.35 588.98,-229.57 578.79,-220.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="610.6,-253.45 620.4,-257.48 615.25,-248.22 610.6,-253.45"/>
+</g>
+<!-- Node3&#45;&gt;Node2 -->
+<g id="edge3" class="edge">
+<title>Node3&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M149.88,-189.74C261.51,-170.91 380.7,-155.84 453.4,-147.22"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="149.06,-186.33 139.79,-191.46 150.24,-193.23 149.06,-186.33"/>
+</g>
+<!-- Node4&#45;&gt;Node2 -->
+<g id="edge5" class="edge">
+<title>Node4&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M295.59,-193.56C349.02,-180.75 436.43,-159.78 485.21,-148.08"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="294.61,-190.2 285.7,-195.94 296.25,-197.01 294.61,-190.2"/>
+</g>
+<!-- Node5&#45;&gt;Node2 -->
+<g id="edge7" class="edge">
+<title>Node5&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M451.99,-184.81C470.72,-172.51 493.88,-157.3 508.04,-148.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="449.92,-181.98 443.48,-190.4 453.76,-187.83 449.92,-181.98"/>
+</g>
+<!-- Node6&#45;&gt;Node2 -->
+<g id="edge12" class="edge">
+<title>Node6&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M650.2,-186.95C615.82,-174.32 570.97,-157.85 544.16,-148.01"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="649,-190.23 659.59,-190.4 651.41,-183.66 649,-190.23"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node">
+<title>Node7</title>
+<g id="a_node7"><a xlink:href="bitcompressed__vector_8hpp.html" target="_top" xlink:title="Provides bio::ranges::bitcompressed_vector.">
+<polygon fill="white" stroke="black" points="665,-123.5 665,-153.5 813,-153.5 813,-123.5 665,-123.5"/>
+<text text-anchor="start" x="673" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
+<text text-anchor="middle" x="739" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/bitcompressed_vector.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node7 -->
+<g id="edge9" class="edge">
+<title>Node6&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M712.27,-181.87C718.21,-172.46 724.91,-161.83 730.12,-153.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="709.27,-180.07 706.89,-190.4 715.19,-183.81 709.27,-180.07"/>
+</g>
+<!-- Node8 -->
+<g id="node8" class="node">
+<title>Node8</title>
+<g id="a_node8"><a xlink:href="ranges_2container_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the container submodule .">
+<polygon fill="white" stroke="black" points="681,-56.5 681,-86.5 797,-86.5 797,-56.5 681,-56.5"/>
+<text text-anchor="start" x="689" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
+<text text-anchor="middle" x="739" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node8 -->
+<g id="edge10" class="edge">
+<title>Node7&#45;&gt;Node8</title>
+<path fill="none" stroke="midnightblue" d="M739,-113.11C739,-104.15 739,-94.32 739,-86.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="735.5,-113.4 739,-123.4 742.5,-113.4 735.5,-113.4"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="bitcompressed__vector_8hpp.html" target="_top" xlink:title="Provides bio::ranges::bitcompressed_vector.">
-<polygon fill="white" stroke="black" points="1151,-123.5 1151,-153.5 1299,-153.5 1299,-123.5 1151,-123.5"/>
-<text text-anchor="start" x="1159" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
-<text text-anchor="middle" x="1225" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">/bitcompressed_vector.hpp</text>
+<g id="a_node9"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the ranges module .">
+<polygon fill="white" stroke="black" points="687,-0.5 687,-19.5 791,-19.5 791,-0.5 687,-0.5"/>
+<text text-anchor="middle" x="739" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
 <g id="edge11" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M1117.79,-186.27C1141.52,-175.92 1170.78,-163.15 1192.73,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1116.1,-183.19 1108.33,-190.4 1118.9,-189.61 1116.1,-183.19"/>
+<path fill="none" stroke="midnightblue" d="M739,-46.29C739,-36.86 739,-26.65 739,-19.66"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="735.5,-46.4 739,-56.4 742.5,-46.4 735.5,-46.4"/>
 </g>
-<!-- Node10 -->
-<g id="node10" class="node">
-<title>Node10</title>
-<g id="a_node10"><a xlink:href="ranges_2container_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the container submodule .">
-<polygon fill="white" stroke="black" points="1167,-56.5 1167,-86.5 1283,-86.5 1283,-56.5 1167,-56.5"/>
-<text text-anchor="start" x="1175" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/container</text>
-<text text-anchor="middle" x="1225" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/all.hpp</text>
+<!-- Node11&#45;&gt;Node2 -->
+<g id="edge16" class="edge">
+<title>Node11&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M761.79,-189.75C685.98,-173.44 609.22,-157.57 563,-148.08"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="761.48,-193.27 771.99,-191.95 762.95,-186.43 761.48,-193.27"/>
+</g>
+<!-- Node11&#45;&gt;Node7 -->
+<g id="edge15" class="edge">
+<title>Node11&#45;&gt;Node7</title>
+<path fill="none" stroke="midnightblue" d="M800.55,-184.45C786.85,-174.45 770.63,-162.6 758.27,-153.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="798.55,-187.32 808.69,-190.4 802.67,-181.67 798.55,-187.32"/>
+</g>
+<!-- Node13&#45;&gt;Node2 -->
+<g id="edge19" class="edge">
+<title>Node13&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M922.3,-194.4C912.5,-192.89 902.48,-191.38 893,-190 785.78,-174.37 660.93,-157.74 586.57,-148"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="922,-197.89 932.42,-195.96 923.07,-190.98 922,-197.89"/>
+</g>
+<!-- Node14 -->
+<g id="node14" class="node">
+<title>Node14</title>
+<g id="a_node14"><a xlink:href="translate__join_8hpp.html" target="_top" xlink:title="Provides bio::views::translate_join.">
+<polygon fill="white" stroke="black" points="913,-123.5 913,-153.5 1059,-153.5 1059,-123.5 913,-123.5"/>
+<text text-anchor="start" x="921" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/translate</text>
+<text text-anchor="middle" x="986" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_join.hpp</text>
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node10 -->
-<g id="edge12" class="edge">
-<title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M1225,-113.11C1225,-104.15 1225,-94.32 1225,-86.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1221.5,-113.4 1225,-123.4 1228.5,-113.4 1221.5,-113.4"/>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge20" class="edge">
+<title>Node13&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M986,-185.41C986,-175.22 986,-162.9 986,-153.59"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="982.5,-185.73 986,-195.73 989.5,-185.73 982.5,-185.73"/>
 </g>
-<!-- Node11 -->
-<g id="node11" class="node">
-<title>Node11</title>
-<g id="a_node11"><a xlink:href="ranges_2all_8hpp.html" target="_top" xlink:title="Meta&#45;header for the ranges module .">
-<polygon fill="white" stroke="black" points="1173,-0.5 1173,-19.5 1277,-19.5 1277,-0.5 1173,-0.5"/>
-<text text-anchor="middle" x="1225" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/all.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node10&#45;&gt;Node11 -->
-<g id="edge13" class="edge">
-<title>Node10&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M1225,-46.29C1225,-36.86 1225,-26.65 1225,-19.66"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1221.5,-46.4 1225,-56.4 1228.5,-46.4 1221.5,-46.4"/>
-</g>
-<!-- Node13&#45;&gt;Node3 -->
-<g id="edge18" class="edge">
-<title>Node13&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M1256.85,-186.53C1292.87,-171.15 1331.01,-147.63 1308,-123 1262.59,-74.39 808.83,-71.33 634.62,-71.98"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1255.22,-183.42 1247.3,-190.46 1257.88,-189.9 1255.22,-183.42"/>
-</g>
-<!-- Node13&#45;&gt;Node9 -->
-<g id="edge17" class="edge">
-<title>Node13&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M1212.96,-180.7C1215.62,-171.59 1218.57,-161.49 1220.89,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1209.57,-179.82 1210.12,-190.4 1216.29,-181.78 1209.57,-179.82"/>
-</g>
-<!-- Node15&#45;&gt;Node3 -->
-<g id="edge21" class="edge">
-<title>Node15&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M947.92,-127.41C938.24,-125.91 928.36,-124.4 919,-123 817.04,-107.74 698.31,-90.9 628.08,-81.03"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="947.5,-130.88 957.92,-128.95 948.58,-123.96 947.5,-130.88"/>
-</g>
-<!-- Node16&#45;&gt;Node15 -->
-<g id="edge23" class="edge">
-<title>Node16&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M884.7,-186.78C918.63,-174.18 962.71,-157.81 989.1,-148.01"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="883.13,-183.63 874.97,-190.4 885.57,-190.2 883.13,-183.63"/>
-</g>
-<!-- Node17 -->
-<g id="node17" class="node">
-<title>Node17</title>
-<g id="a_node17"><a xlink:href="translate__join_8hpp.html" target="_top" xlink:title="Provides bio::views::translate_join.">
-<polygon fill="white" stroke="black" points="764,-123.5 764,-153.5 910,-153.5 910,-123.5 764,-123.5"/>
-<text text-anchor="start" x="772" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/ranges/views/translate</text>
-<text text-anchor="middle" x="837" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_join.hpp</text>
-</a>
-</g>
-</g>
-<!-- Node16&#45;&gt;Node17 -->
-<g id="edge24" class="edge">
-<title>Node16&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M837,-180.11C837,-171.15 837,-161.32 837,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="833.5,-180.4 837,-190.4 840.5,-180.4 833.5,-180.4"/>
-</g>
-<!-- Node18&#45;&gt;Node3 -->
-<g id="edge26" class="edge">
-<title>Node18&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M507.67,-117.34C523.72,-105.21 543.33,-90.39 555.5,-81.19"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="505.53,-114.57 499.66,-123.4 509.75,-120.16 505.53,-114.57"/>
-</g>
-<!-- Node19&#45;&gt;Node5 -->
-<g id="edge28" class="edge">
-<title>Node19&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M307.66,-180.4C306.41,-171.37 305.03,-161.41 303.95,-153.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="304.21,-180.97 309.05,-190.4 311.14,-180.01 304.21,-180.97"/>
+<!-- Node15&#45;&gt;Node2 -->
+<g id="edge22" class="edge">
+<title>Node15&#45;&gt;Node2</title>
+<path fill="none" stroke="midnightblue" d="M548.44,-181.97C540.92,-170.33 532.18,-156.8 526.62,-148.19"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="545.52,-183.9 553.88,-190.4 551.4,-180.1 545.52,-183.9"/>
 </g>
 </g>
 </svg>

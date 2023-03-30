@@ -68,10 +68,10 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="tuple__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::tuple_base.">
-<polygon fill="white" stroke="black" points="122.5,-257.5 122.5,-287.5 253.5,-287.5 253.5,-257.5 122.5,-257.5"/>
-<text text-anchor="start" x="130.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
-<text text-anchor="middle" x="188" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/tuple_base.hpp</text>
+<g id="a_node2"><a xlink:href="alphabet__tuple__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::alphabet_tuple_base.">
+<polygon fill="white" stroke="black" points="117,-257.5 117,-287.5 259,-287.5 259,-257.5 117,-257.5"/>
+<text text-anchor="start" x="125" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
+<text text-anchor="middle" x="188" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_tuple_base.hpp</text>
 </a>
 </g>
 </g>

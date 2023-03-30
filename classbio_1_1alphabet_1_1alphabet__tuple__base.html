@@ -157,14 +157,22 @@ Friends</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Comparison operators (against indirect component_list)</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>These overloads enable comparison for all types that a component type is comparable with. </p>
 </div></td></tr>
-<tr class="memitem:a28197fc5344b70ed3ba0393b79794fad"><td class="memTemplParams" colspan="2">template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect_component_type &gt; </td></tr>
-<tr class="memitem:a28197fc5344b70ed3ba0393b79794fad"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a28197fc5344b70ed3ba0393b79794fad">operator==</a> (derived_type_t const lhs, indirect_component_type const rhs) noexcept</td></tr>
-<tr class="memdesc:a28197fc5344b70ed3ba0393b79794fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison against types comparable with components.  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a28197fc5344b70ed3ba0393b79794fad">More...</a><br /></td></tr>
-<tr class="separator:a28197fc5344b70ed3ba0393b79794fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac067a8630b288f7f1612deb17a4fda80"><td class="memTemplParams" colspan="2">template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect_component_type &gt; </td></tr>
-<tr class="memitem:ac067a8630b288f7f1612deb17a4fda80"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#ac067a8630b288f7f1612deb17a4fda80">operator&lt;=&gt;</a> (derived_type_t const lhs, indirect_component_type const rhs) noexcept</td></tr>
-<tr class="memdesc:ac067a8630b288f7f1612deb17a4fda80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison against types comparable with components.  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#ac067a8630b288f7f1612deb17a4fda80">More...</a><br /></td></tr>
-<tr class="separator:ac067a8630b288f7f1612deb17a4fda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d2dc7d925b1f4c1ab0dfeca1df3782"><td class="memTemplParams" colspan="2">template&lt;typename derived_type_t , typename indirect_component_type &gt; </td></tr>
+<tr class="memitem:a16d2dc7d925b1f4c1ab0dfeca1df3782"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a16d2dc7d925b1f4c1ab0dfeca1df3782">operator==</a> (derived_type_t const lhs, indirect_component_type const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::tuple_eq_guard&lt; derived_type_t, derived_type, indirect_component_type, component_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a16d2dc7d925b1f4c1ab0dfeca1df3782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison against types comparable with components.  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a16d2dc7d925b1f4c1ab0dfeca1df3782">More...</a><br /></td></tr>
+<tr class="separator:a16d2dc7d925b1f4c1ab0dfeca1df3782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15975c3c1d42a3656595f50265bf08bf"><td class="memTemplParams" colspan="2">template&lt;typename derived_type_t , typename indirect_component_type &gt; </td></tr>
+<tr class="memitem:a15975c3c1d42a3656595f50265bf08bf"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a15975c3c1d42a3656595f50265bf08bf">operator==</a> (indirect_component_type const lhs, derived_type_t const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::tuple_eq_guard&lt; derived_type_t, derived_type, indirect_component_type, component_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a15975c3c1d42a3656595f50265bf08bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison against types comparable with components.  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a15975c3c1d42a3656595f50265bf08bf">More...</a><br /></td></tr>
+<tr class="separator:a15975c3c1d42a3656595f50265bf08bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0288456348134c620e638bc61e1e3c4b"><td class="memTemplParams" colspan="2">template&lt;typename derived_type_t , typename indirect_component_type &gt; </td></tr>
+<tr class="memitem:a0288456348134c620e638bc61e1e3c4b"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a0288456348134c620e638bc61e1e3c4b">operator&lt;=&gt;</a> (derived_type_t const lhs, indirect_component_type const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::tuple_order_guard&lt; derived_type_t, derived_type, indirect_component_type, component_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a0288456348134c620e638bc61e1e3c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison against types comparable with components.  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a0288456348134c620e638bc61e1e3c4b">More...</a><br /></td></tr>
+<tr class="separator:a0288456348134c620e638bc61e1e3c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fdbed2222f3990132e12137fb400ede"><td class="memTemplParams" colspan="2">template&lt;typename derived_type_t , typename indirect_component_type &gt; </td></tr>
+<tr class="memitem:a7fdbed2222f3990132e12137fb400ede"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a7fdbed2222f3990132e12137fb400ede">operator&lt;=&gt;</a> (indirect_component_type const lhs, derived_type_t const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::tuple_order_guard&lt; derived_type_t, derived_type, indirect_component_type, component_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a7fdbed2222f3990132e12137fb400ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparison against types comparable with components.  <a href="classbio_1_1alphabet_1_1alphabet__tuple__base.html#a7fdbed2222f3990132e12137fb400ede">More...</a><br /></td></tr>
+<tr class="separator:a7fdbed2222f3990132e12137fb400ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Constructors, destructor and assignment</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp9fbb1a6c378b2d9ab6a846c075fa240b"></a></p><dl class="section attention"><dt>Attention</dt><dd>Please do not directly use the CRTP base class. The functions are only public for the usage in their derived classes (e.g. <a class="el" href="classbio_1_1alphabet_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet.">bio::alphabet::qualified</a>, <a class="el" href="classbio_1_1alphabet_1_1masked.html" title="Implementation of a masked composite, which extends a given alphabet with a mask.">bio::alphabet::masked</a>, bio::alphabet::structure_rna and bio::alphabet::structure_aa). </dd></dl>
@@ -786,15 +794,15 @@ template&lt;typename type &gt; </div>
 
 </div>
 </div>
-<a id="ac067a8630b288f7f1612deb17a4fda80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac067a8630b288f7f1612deb17a4fda80">&#9670;&nbsp;</a></span>operator&lt;=&gt;</h2>
+<a id="a0288456348134c620e638bc61e1e3c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0288456348134c620e638bc61e1e3c4b">&#9670;&nbsp;</a></span>operator&lt;=&gt; <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename derived_type , typename... component_types&gt; </div>
 <div class="memtemplate">
-template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect_component_type &gt; </div>
+template&lt;typename derived_type_t , typename indirect_component_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -814,7 +822,10 @@ template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::tuple_order_guard&lt;derived_type_t, derived_type, indirect_component_type, component_types...&gt;,
+        bool&gt;
+    </td>
         </tr>
       </table>
   </td>
@@ -843,21 +854,81 @@ template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect
 
 </div>
 </div>
-<a id="a28197fc5344b70ed3ba0393b79794fad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28197fc5344b70ed3ba0393b79794fad">&#9670;&nbsp;</a></span>operator==</h2>
+<a id="a7fdbed2222f3990132e12137fb400ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fdbed2222f3990132e12137fb400ede">&#9670;&nbsp;</a></span>operator&lt;=&gt; <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename derived_type , typename... component_types&gt; </div>
 <div class="memtemplate">
-template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect_component_type &gt; </div>
+template&lt;typename derived_type_t , typename indirect_component_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr friend bool operator== </td>
+          <td class="memname">constexpr friend auto operator&lt;=&gt; </td>
+          <td>(</td>
+          <td class="paramtype">indirect_component_type const&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">derived_type_t const&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::tuple_order_guard&lt;derived_type_t, derived_type, indirect_component_type, component_types...&gt;,
+        bool&gt;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comparison against types comparable with components. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">indirect_component_type</td><td>Must be comparable with a component's type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>Left-hand-side of comparison. </td></tr>
+    <tr><td class="paramname">rhs</td><td>Right-hand-side of comparison. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> or <code>false</code>.</dd></dl>
+<p>To determine (in-)equality/order, it is first deduced which component the argument is comparable with. The tuple is then cast to that type and the resulting value compared with the argument. </p>
+
+</div>
+</div>
+<a id="a16d2dc7d925b1f4c1ab0dfeca1df3782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d2dc7d925b1f4c1ab0dfeca1df3782">&#9670;&nbsp;</a></span>operator== <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename derived_type , typename... component_types&gt; </div>
+<div class="memtemplate">
+template&lt;typename derived_type_t , typename indirect_component_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend auto operator== </td>
           <td>(</td>
           <td class="paramtype">derived_type_t const&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -871,7 +942,70 @@ template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::tuple_eq_guard&lt;derived_type_t, derived_type, indirect_component_type, component_types...&gt;,
+        bool&gt;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Comparison against types comparable with components. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">indirect_component_type</td><td>Must be comparable with a component's type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>Left-hand-side of comparison. </td></tr>
+    <tr><td class="paramname">rhs</td><td>Right-hand-side of comparison. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> or <code>false</code>.</dd></dl>
+<p>To determine (in-)equality/order, it is first deduced which component the argument is comparable with. The tuple is then cast to that type and the resulting value compared with the argument. </p>
+
+</div>
+</div>
+<a id="a15975c3c1d42a3656595f50265bf08bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15975c3c1d42a3656595f50265bf08bf">&#9670;&nbsp;</a></span>operator== <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename derived_type , typename... component_types&gt; </div>
+<div class="memtemplate">
+template&lt;typename derived_type_t , typename indirect_component_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend auto operator== </td>
+          <td>(</td>
+          <td class="paramtype">indirect_component_type const&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">derived_type_t const&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::tuple_eq_guard&lt;derived_type_t, derived_type, indirect_component_type, component_types...&gt;,
+        bool&gt;
+    </td>
         </tr>
       </table>
   </td>
@@ -912,7 +1046,7 @@ template&lt;std::same_as&lt; derived_type &gt; derived_type_t, typename indirect
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="namespacebio_1_1alphabet.html">alphabet</a></li><li class="navelem"><a class="el" href="classbio_1_1alphabet_1_1alphabet__tuple__base.html">alphabet_tuple_base</a></li>
-    <li class="footer">Generated on Fri Sep 16 2022 11:55:01 for BioC++ by
+    <li class="footer">Generated on Tue Aug 2 2022 17:33:49 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

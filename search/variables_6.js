@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['has_5fvirtual_5fdestructor_5fv_0',['has_virtual_destructor_v',['https://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',0,'std::experimental']]]
+  ['get_4876',['get',['../group__views.html#ga5f51bb0ed14f0c7c39976456d1c651e6',1,'bio::ranges::views']]]
 ];

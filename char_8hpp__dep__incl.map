@@ -1,5 +1,5 @@
-<map id="bio/alphabet/custom/char.hpp" name="bio/alphabet/custom/char.hpp">
-<area shape="rect" id="node1" title="Provides alphabet adaptations for standard char types." alt="" coords="5,5,160,47"/>
-<area shape="rect" id="node2" href="$alphabet_2custom_2all_8hpp.html" title="Meta&#45;header for the custom submodule; includes all headers from alphabet/custom/." alt="" coords="5,95,160,136"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="7,184,158,211"/>
+<map id="bio/alphabet/adaptation/char.hpp" name="bio/alphabet/adaptation/char.hpp">
+<area shape="rect" id="node1" title="Provides alphabet adaptations for standard char types." alt="" coords="5,5,183,47"/>
+<area shape="rect" id="node2" href="$alphabet_2adaptation_2all_8hpp.html" title="Meta&#45;header for the adaptation submodule; includes all headers from alphabet/adaptation/." alt="" coords="5,95,183,136"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="19,184,169,211"/>
 </map>

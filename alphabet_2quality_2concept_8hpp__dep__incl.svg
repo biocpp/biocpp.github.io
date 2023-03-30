@@ -68,10 +68,10 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="proxy__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::proxy_base.">
-<polygon fill="white" stroke="black" points="448,-324.5 448,-354.5 556,-354.5 556,-324.5 448,-324.5"/>
-<text text-anchor="start" x="456" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/proxy</text>
-<text text-anchor="middle" x="502" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base.hpp</text>
+<g id="a_node2"><a xlink:href="alphabet__proxy_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::alphabet_proxy.">
+<polygon fill="white" stroke="black" points="444.5,-324.5 444.5,-354.5 559.5,-354.5 559.5,-324.5 444.5,-324.5"/>
+<text text-anchor="start" x="452.5" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/detail</text>
+<text text-anchor="middle" x="502" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_proxy.hpp</text>
 </a>
 </g>
 </g>
@@ -148,18 +148,18 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="tuple__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::tuple_base.">
-<polygon fill="white" stroke="black" points="179.5,-257.5 179.5,-287.5 310.5,-287.5 310.5,-257.5 179.5,-257.5"/>
-<text text-anchor="start" x="187.5" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
-<text text-anchor="middle" x="245" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/tuple_base.hpp</text>
+<g id="a_node3"><a xlink:href="alphabet__tuple__base_8hpp.html" target="_top" xlink:title="Provides bio::alphabet::alphabet_tuple_base.">
+<polygon fill="white" stroke="black" points="174,-257.5 174,-287.5 316,-287.5 316,-257.5 174,-257.5"/>
+<text text-anchor="start" x="182" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio/alphabet/composite</text>
+<text text-anchor="middle" x="245" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">/alphabet_tuple_base.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M437.9,-322.29C395.63,-311.6 340.83,-297.74 300.45,-287.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="437.26,-325.74 447.81,-324.79 438.97,-318.95 437.26,-325.74"/>
+<path fill="none" stroke="midnightblue" d="M436.7,-321.98C394.72,-311.37 340.76,-297.72 300.79,-287.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="436,-325.42 446.55,-324.48 437.71,-318.63 436,-325.42"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">

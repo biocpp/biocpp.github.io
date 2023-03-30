@@ -1,14 +1,21 @@
 <map id="transformation_trait" name="transformation_trait">
-<area shape="rect" id="node1" title="Concept for a transformation trait." alt="" coords="5,436,159,463"/>
-<area shape="rect" id="node2" title=" " alt="" coords="233,5,385,61"/>
-<area shape="rect" id="node3" title=" " alt="" coords="233,85,385,141"/>
-<area shape="rect" id="node4" title=" " alt="" coords="227,166,390,207"/>
-<area shape="rect" id="node5" title=" " alt="" coords="227,231,390,273"/>
-<area shape="rect" id="node6" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="207,297,411,383"/>
-<area shape="rect" id="node7" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="207,407,411,492"/>
-<area shape="rect" id="node8" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="207,516,411,572"/>
-<area shape="rect" id="node9" title=" " alt="" coords="231,597,387,638"/>
-<area shape="rect" id="node10" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="222,662,395,703"/>
-<area shape="rect" id="node11" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="235,727,382,769"/>
-<area shape="rect" id="node12" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="237,793,381,834"/>
+<area shape="rect" id="node1" title="Concept for a transformation trait." alt="" coords="5,515,159,541"/>
+<area shape="rect" id="node2" title=" " alt="" coords="605,51,812,122"/>
+<area shape="rect" id="node3" title=" " alt="" coords="861,305,1063,361"/>
+<area shape="rect" id="node4" title=" " alt="" coords="237,124,389,180"/>
+<area shape="rect" id="node5" title=" " alt="" coords="232,205,395,246"/>
+<area shape="rect" id="node6" href="$structbio_1_1meta_1_1deferred__type.html" title="Return the type identity; further arguments are ignored, but can make this type dependent if they are..." alt="" coords="219,270,408,311"/>
+<area shape="rect" id="node7" title=" " alt="" coords="245,7,382,49"/>
+<area shape="rect" id="node8" title=" " alt="" coords="209,387,417,443"/>
+<area shape="rect" id="node9" title=" " alt="" coords="208,467,419,509"/>
+<area shape="rect" id="node10" title=" " alt="" coords="228,533,399,603"/>
+<area shape="rect" id="node11" title=" " alt="" coords="225,627,402,669"/>
+<area shape="rect" id="node12" href="$structbio_1_1meta_1_1remove__rvalue__reference.html" title="Return the input type with &amp;&amp; removed, but lvalue references preserved." alt="" coords="218,693,409,734"/>
+<area shape="rect" id="node13" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="211,759,415,844"/>
+<area shape="rect" id="node14" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="211,868,415,953"/>
+<area shape="rect" id="node15" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="211,977,415,1033"/>
+<area shape="rect" id="node16" title=" " alt="" coords="235,1058,391,1099"/>
+<area shape="rect" id="node17" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="227,1123,400,1165"/>
+<area shape="rect" id="node18" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="240,1189,387,1230"/>
+<area shape="rect" id="node19" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="241,1254,385,1295"/>
 </map>

@@ -9,21 +9,21 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23)">
 <title>Aminoacid</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-23 168,-23 168,4 -4,4"/>
-<!-- Node2 -->
+<!-- Node1 -->
 <g id="node1" class="node">
-<title>Node2</title>
-<g id="a_node1"><a xlink:href="group__alphabet.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="60,-19 0,-19 0,0 60,0 60,-19"/>
-<text text-anchor="middle" x="30" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Alphabet</text>
+<title>Node1</title>
+<g id="a_node1"><a xlink:title="Provides the amino acid alphabets and functionality for translation from nucleotide.">
+<polygon fill="#bfbfbf" stroke="black" points="164,-19 96,-19 96,0 164,0 164,-19"/>
+<text text-anchor="middle" x="130" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Aminoacid</text>
 </a>
 </g>
 </g>
-<!-- Node1 -->
+<!-- Node2 -->
 <g id="node2" class="node">
-<title>Node1</title>
-<g id="a_node2"><a xlink:title="Provides the amino acid alphabets and functionality for translation from nucleotide.">
-<polygon fill="#bfbfbf" stroke="black" points="164,-19 96,-19 96,0 164,0 164,-19"/>
-<text text-anchor="middle" x="130" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Aminoacid</text>
+<title>Node2</title>
+<g id="a_node2"><a xlink:href="group__alphabet.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="60,-19 0,-19 0,0 60,0 60,-19"/>
+<text text-anchor="middle" x="30" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Alphabet</text>
 </a>
 </g>
 </g>

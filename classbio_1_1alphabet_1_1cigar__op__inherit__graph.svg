@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 848;
+var viewWidth = 898;
 var viewHeight = 235;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,13 +54,13 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>bio::alphabet::cigar_op</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-231 844,-231 844,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-231 894,-231 894,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="The (extended) cigar operation alphabet of M,D,I,H,N,P,S,X,=..">
-<polygon fill="#bfbfbf" stroke="black" points="712,-93.5 712,-112.5 840,-112.5 840,-93.5 712,-93.5"/>
-<text text-anchor="middle" x="776" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::cigar_op</text>
+<g id="a_node1"><a xlink:title="The (extended) cigar operation alphabet of M,D,I,H,N,P,S,X,=.">
+<polygon fill="#bfbfbf" stroke="black" points="762,-93.5 762,-112.5 890,-112.5 890,-93.5 762,-93.5"/>
+<text text-anchor="middle" x="826" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::cigar_op</text>
 </a>
 </g>
 </g>
@@ -68,31 +68,31 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="interfacebio_1_1alphabet_1_1writable__alphabet.html" target="_top" xlink:title="Refines bio::alphabet::alphabet and adds assignability.">
-<polygon fill="white" stroke="black" points="563.5,-169.5 563.5,-188.5 667.5,-188.5 667.5,-169.5 563.5,-169.5"/>
-<text text-anchor="middle" x="615.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">writable_alphabet</text>
+<polygon fill="white" stroke="black" points="599,-169.5 599,-188.5 703,-188.5 703,-169.5 599,-169.5"/>
+<text text-anchor="middle" x="651" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">writable_alphabet</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M659.89,-166.01C665.04,-164.15 670.18,-162.13 675,-160 706.62,-146.03 741.17,-124.91 760.25,-112.68"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="658.36,-162.84 650.04,-169.4 660.64,-169.45 658.36,-162.84"/>
+<path fill="none" stroke="midnightblue" d="M706.26,-166.59C712.66,-164.63 719.03,-162.43 725,-160 757.39,-146.82 792.23,-125.03 811.03,-112.55"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="704.87,-163.35 696.23,-169.49 706.81,-170.07 704.87,-163.35"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="interfacebio_1_1alphabet_1_1alphabet.html" target="_top" xlink:title="The generic alphabet concept that covers most data types used in ranges.">
-<polygon fill="white" stroke="black" points="320.5,-207.5 320.5,-226.5 379.5,-226.5 379.5,-207.5 320.5,-207.5"/>
-<text text-anchor="middle" x="350" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">alphabet</text>
+<polygon fill="white" stroke="black" points="331,-207.5 331,-226.5 390,-226.5 390,-207.5 331,-207.5"/>
+<text text-anchor="middle" x="360.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">alphabet</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M389.67,-212.65C427.54,-208.24 486.86,-200.96 538,-193 546.54,-191.67 555.59,-190.13 564.36,-188.57"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="389.11,-209.19 379.58,-213.81 389.92,-216.14 389.11,-209.19"/>
+<path fill="none" stroke="midnightblue" d="M400.41,-212.64C440.28,-208.09 504.03,-200.57 559,-193 571.83,-191.23 585.65,-189.18 598.55,-187.21"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="399.86,-209.18 390.32,-213.79 400.65,-216.14 399.86,-209.18"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -106,23 +106,23 @@ var sectionId = 'dynsection-0';
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M259.05,-204.2C279.71,-207.14 302.85,-210.43 320.49,-212.94"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="259.53,-200.73 249.14,-202.78 258.55,-207.66 259.53,-200.73"/>
+<path fill="none" stroke="midnightblue" d="M259.28,-203.73C283.02,-206.87 310.42,-210.5 330.57,-213.17"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="259.74,-200.26 249.36,-202.41 258.82,-207.2 259.74,-200.26"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="interfacebio_1_1alphabet_1_1writable__semialphabet.html" target="_top" xlink:title="A refinement of bio::alphabet::semialphabet that adds assignability.">
-<polygon fill="white" stroke="black" points="286,-169.5 286,-188.5 414,-188.5 414,-169.5 286,-169.5"/>
-<text text-anchor="middle" x="350" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">writable_semialphabet</text>
+<polygon fill="white" stroke="black" points="296.5,-169.5 296.5,-188.5 424.5,-188.5 424.5,-169.5 296.5,-169.5"/>
+<text text-anchor="middle" x="360.5" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">writable_semialphabet</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node4&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M259.12,-190.51C267.83,-189.4 276.97,-188.23 285.95,-187.08"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="258.61,-187.05 249.14,-191.79 259.5,-193.99 258.61,-187.05"/>
+<path fill="none" stroke="midnightblue" d="M259.52,-190.92C271.38,-189.5 284.14,-187.98 296.45,-186.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="258.88,-187.47 249.36,-192.13 259.71,-194.42 258.88,-187.47"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -157,102 +157,102 @@ var sectionId = 'dynsection-0';
 <!-- Node7&#45;&gt;Node2 -->
 <g id="edge6" class="edge">
 <title>Node7&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M424.24,-179C468.5,-179 523.82,-179 563.38,-179"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="424.11,-175.5 414.11,-179 424.11,-182.5 424.11,-175.5"/>
+<path fill="none" stroke="midnightblue" d="M434.84,-179C486.11,-179 553.29,-179 598.85,-179"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="434.81,-175.5 424.81,-179 434.81,-182.5 434.81,-175.5"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="interfacebio_1_1meta_1_1trivially__copyable.html" target="_top" xlink:title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;.">
-<polygon fill="white" stroke="black" points="563.5,-131.5 563.5,-150.5 667.5,-150.5 667.5,-131.5 563.5,-131.5"/>
-<text text-anchor="middle" x="615.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">trivially_copyable</text>
+<polygon fill="white" stroke="black" points="599,-131.5 599,-150.5 703,-150.5 703,-131.5 599,-131.5"/>
+<text text-anchor="middle" x="651" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">trivially_copyable</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node1 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M666.42,-129.03C688.63,-123.71 714.42,-117.52 735.29,-112.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="665.4,-125.68 656.5,-131.41 667.04,-132.48 665.4,-125.68"/>
+<path fill="none" stroke="midnightblue" d="M705.51,-129.25C729.97,-123.87 758.57,-117.59 781.66,-112.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="704.67,-125.85 695.66,-131.41 706.17,-132.68 704.67,-125.85"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="309,-131.5 309,-150.5 391,-150.5 391,-131.5 309,-131.5"/>
-<text text-anchor="middle" x="350" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::copyable</text>
+<polygon fill="white" stroke="#bfbfbf" points="319.5,-131.5 319.5,-150.5 401.5,-150.5 401.5,-131.5 319.5,-131.5"/>
+<text text-anchor="middle" x="360.5" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::copyable</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node8 -->
 <g id="edge9" class="edge">
 <title>Node9&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M401.16,-141C447.62,-141 516.41,-141 563.23,-141"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="401.02,-137.5 391.02,-141 401.02,-144.5 401.02,-137.5"/>
+<path fill="none" stroke="midnightblue" d="M411.69,-141C464.14,-141 545.99,-141 598.8,-141"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="411.61,-137.5 401.61,-141 411.61,-144.5 411.61,-137.5"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
 <g id="a_node10"><a xlink:href="interfacebio_1_1meta_1_1standard__layout.html" target="_top" xlink:title="Resolves to std::is_standard_layout_v&lt;t&gt;.">
-<polygon fill="white" stroke="black" points="568,-93.5 568,-112.5 663,-112.5 663,-93.5 568,-93.5"/>
-<text text-anchor="middle" x="615.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">standard_layout</text>
+<polygon fill="white" stroke="black" points="603.5,-93.5 603.5,-112.5 698.5,-112.5 698.5,-93.5 603.5,-93.5"/>
+<text text-anchor="middle" x="651" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">standard_layout</text>
 </a>
 </g>
 </g>
 <!-- Node10&#45;&gt;Node1 -->
 <g id="edge10" class="edge">
 <title>Node10&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M673.45,-103C685.93,-103 699.2,-103 711.89,-103"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="673.2,-99.5 663.2,-103 673.2,-106.5 673.2,-99.5"/>
+<path fill="none" stroke="midnightblue" d="M709.1,-103C726.02,-103 744.63,-103 761.9,-103"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="708.82,-99.5 698.82,-103 708.82,-106.5 708.82,-99.5"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="579.5,-55.5 579.5,-74.5 651.5,-74.5 651.5,-55.5 579.5,-55.5"/>
-<text text-anchor="middle" x="615.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::regular</text>
+<polygon fill="white" stroke="#bfbfbf" points="615,-55.5 615,-74.5 687,-74.5 687,-55.5 615,-55.5"/>
+<text text-anchor="middle" x="651" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::regular</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node1 -->
 <g id="edge11" class="edge">
 <title>Node11&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M661.62,-75.82C684.8,-81.38 712.8,-88.09 735.18,-93.45"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="662.22,-72.36 651.68,-73.43 660.58,-79.17 662.22,-72.36"/>
+<path fill="none" stroke="midnightblue" d="M697,-74.88C723.04,-80.6 755.65,-87.77 781.44,-93.43"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="697.53,-71.42 687.01,-72.69 696.03,-78.25 697.53,-71.42"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="classbio_1_1alphabet_1_1base.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="556,-6 556,-36 675,-36 675,-6 556,-6"/>
-<text text-anchor="start" x="564" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::base</text>
-<text text-anchor="middle" x="615.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; cigar_op, 9, char &gt;</text>
+<g id="a_node12"><a xlink:href="classbio_1_1alphabet_1_1alphabet__base.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="577,-6 577,-36 725,-36 725,-6 577,-6"/>
+<text text-anchor="start" x="585" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::alphabet</text>
+<text text-anchor="middle" x="651" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; cigar_op, 9, char &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node12&#45;&gt;Node1 -->
 <g id="edge12" class="edge">
 <title>Node12&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M663.08,-40.33C667.14,-42.19 671.16,-44.09 675,-46 705.6,-61.2 739.94,-81.53 759.37,-93.35"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="664.17,-36.99 653.62,-36.1 661.32,-43.38 664.17,-36.99"/>
+<path fill="none" stroke="midnightblue" d="M709.54,-39.56C714.82,-41.6 720.04,-43.76 725,-46 756.51,-60.22 791.1,-81.25 810.22,-93.4"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="710.61,-36.22 700.02,-36 708.16,-42.78 710.61,-36.22"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="classbio_1_1alphabet_1_1base.html" target="_top" xlink:title="A CRTP&#45;base that makes defining a custom alphabet easier.">
-<polygon fill="white" stroke="black" points="290,-0.5 290,-41.5 410,-41.5 410,-0.5 290,-0.5"/>
-<text text-anchor="start" x="298" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::base</text>
-<text text-anchor="start" x="298" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; derived_type, size,</text>
-<text text-anchor="middle" x="350" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> char_t &gt;</text>
+<g id="a_node13"><a xlink:href="classbio_1_1alphabet_1_1alphabet__base.html" target="_top" xlink:title="A CRTP&#45;base that makes defining a custom alphabet easier.">
+<polygon fill="white" stroke="black" points="286,-0.5 286,-41.5 435,-41.5 435,-0.5 286,-0.5"/>
+<text text-anchor="start" x="294" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::alphabet</text>
+<text text-anchor="start" x="294" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; derived_type, size,</text>
+<text text-anchor="middle" x="360.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> char_t &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node13&#45;&gt;Node12 -->
 <g id="edge13" class="edge">
 <title>Node13&#45;&gt;Node12</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M420.3,-21C462.38,-21 515.51,-21 555.56,-21"/>
-<polygon fill="orange" stroke="orange" points="420.13,-17.5 410.13,-21 420.13,-24.5 420.13,-17.5"/>
-<text text-anchor="middle" x="485" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; cigar_op, 9, char &gt;</text>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M445.15,-21C486.73,-21 536.51,-21 576.59,-21"/>
+<polygon fill="orange" stroke="orange" points="445.05,-17.5 435.05,-21 445.05,-24.5 445.05,-17.5"/>
+<text text-anchor="middle" x="506" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; cigar_op, 9, char &gt;</text>
 </g>
 </g>
 </svg>

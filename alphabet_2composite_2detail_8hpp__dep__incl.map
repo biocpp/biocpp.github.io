@@ -1,7 +1,7 @@
 <map id="bio/alphabet/composite/detail.hpp" name="bio/alphabet/composite/detail.hpp">
 <area shape="rect" id="node1" title=" " alt="" coords="503,5,678,47"/>
-<area shape="rect" id="node2" href="$tuple__base_8hpp.html" title="Provides bio::alphabet::tuple_base." alt="" coords="405,95,579,136"/>
-<area shape="rect" id="node13" href="$variant_8hpp.html" title="Provides bio::alphabet::variant." alt="" coords="603,95,778,136"/>
+<area shape="rect" id="node2" href="$alphabet__tuple__base_8hpp.html" title="Provides bio::alphabet::alphabet_tuple_base." alt="" coords="393,95,583,136"/>
+<area shape="rect" id="node13" href="$alphabet__variant_8hpp.html" title="Provides bio::alphabet::alphabet_variant." alt="" coords="607,95,782,136"/>
 <area shape="rect" id="node3" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="432,184,571,225"/>
 <area shape="rect" id="node4" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="595,184,770,225"/>
 <area shape="rect" id="node6" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="5,191,232,218"/>

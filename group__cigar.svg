@@ -9,21 +9,21 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 23)">
 <title>CIGAR</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-23 147,-23 147,4 -4,4"/>
-<!-- Node2 -->
+<!-- Node1 -->
 <g id="node1" class="node">
-<title>Node2</title>
-<g id="a_node1"><a xlink:href="group__alphabet.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="60,-19 0,-19 0,0 60,0 60,-19"/>
-<text text-anchor="middle" x="30" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Alphabet</text>
+<title>Node1</title>
+<g id="a_node1"><a xlink:title="Provides (semi&#45;)alphabets for representing elements in CIGAR strings.">
+<polygon fill="#bfbfbf" stroke="black" points="143,-19 96,-19 96,0 143,0 143,-19"/>
+<text text-anchor="middle" x="119.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">CIGAR</text>
 </a>
 </g>
 </g>
-<!-- Node1 -->
+<!-- Node2 -->
 <g id="node2" class="node">
-<title>Node1</title>
-<g id="a_node2"><a xlink:title="Provides (semi&#45;)alphabets for representing elements in CIGAR strings.">
-<polygon fill="#bfbfbf" stroke="black" points="143,-19 96,-19 96,0 143,0 143,-19"/>
-<text text-anchor="middle" x="119.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">CIGAR</text>
+<title>Node2</title>
+<g id="a_node2"><a xlink:href="group__alphabet.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="black" points="60,-19 0,-19 0,0 60,0 60,-19"/>
+<text text-anchor="middle" x="30" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Alphabet</text>
 </a>
 </g>
 </g>

@@ -1,7 +1,10 @@
 <map id="unary_type_trait" name="unary_type_trait">
-<area shape="rect" id="node1" title="Concept for a unary traits type." alt="" coords="5,137,135,164"/>
-<area shape="rect" id="node2" href="$structbio_1_1meta_1_1is__type__specialisation__of.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="183,5,392,61"/>
-<area shape="rect" id="node3" href="$structbio_1_1meta_1_1is__value__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="183,85,392,141"/>
-<area shape="rect" id="node4" href="$structstd_1_1tuple__size_3_01t_3_01types_8_8_8_01_4_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="219,166,355,207"/>
-<area shape="rect" id="node5" href="$structstd_1_1tuple__size_3_01tuple__t_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="192,232,383,259"/>
+<area shape="rect" id="node1" title="Concept for a unary traits type." alt="" coords="5,247,135,273"/>
+<area shape="rect" id="node2" title=" " alt="" coords="183,5,397,61"/>
+<area shape="rect" id="node3" title=" " alt="" coords="209,85,371,141"/>
+<area shape="rect" id="node4" href="$structbio_1_1meta_1_1is__constexpr__default__constructible.html" title="Whether a type std::is_default_constructible in constexpr&#45;context." alt="" coords="189,166,391,207"/>
+<area shape="rect" id="node5" href="$structbio_1_1meta_1_1is__type__specialisation__of.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="185,232,395,288"/>
+<area shape="rect" id="node6" href="$structbio_1_1meta_1_1is__value__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="Determines whether a source_type is a specialisation of another template." alt="" coords="185,312,395,368"/>
+<area shape="rect" id="node7" href="$structstd_1_1tuple__size_3_01t_3_01types_8_8_8_01_4_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="222,393,358,434"/>
+<area shape="rect" id="node8" href="$structstd_1_1tuple__size_3_01tuple__t_01_4.html" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="195,459,385,485"/>
 </map>

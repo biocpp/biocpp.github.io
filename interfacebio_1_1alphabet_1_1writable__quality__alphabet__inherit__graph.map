@@ -1,8 +1,8 @@
 <map id="writable_quality_alphabet" name="writable_quality_alphabet">
 <area shape="rect" id="node1" title="A concept that indicates whether a writable alphabet represents quality scores." alt="" coords="689,81,880,108"/>
-<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)...." alt="" coords="949,5,1117,32"/>
-<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1phred63.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)...." alt="" coords="949,56,1117,83"/>
-<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1phred68legacy.html" title="Quality type for Solexa and deprecated Illumina formats.." alt="" coords="928,107,1139,133"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)." alt="" coords="949,5,1117,32"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1phred63.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)." alt="" coords="949,56,1117,83"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1phred68legacy.html" title="Quality type for Solexa and deprecated Illumina formats." alt="" coords="928,107,1139,133"/>
 <area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet." alt="" coords="944,157,1123,213"/>
 <area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="384,81,463,108"/>
 <area shape="rect" id="node6" href="$interfacebio_1_1alphabet_1_1quality__alphabet.html" title="A concept that indicates whether an alphabet represents quality scores." alt="" coords="511,107,641,133"/>

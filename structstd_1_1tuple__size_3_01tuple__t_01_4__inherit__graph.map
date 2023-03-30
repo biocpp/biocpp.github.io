@@ -1,6 +1,6 @@
 <map id="std::tuple_size&lt; tuple_t &gt;" name="std::tuple_size&lt; tuple_t &gt;">
 <area shape="rect" id="node1" title="Provides access to the number of elements in a tuple as a compile&#45;time constant expression." alt="" coords="647,43,837,69"/>
 <area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1unary__type__trait.html" title="Concept for a unary traits type." alt="" coords="429,5,558,32"/>
-<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="389,57,597,127"/>
-<area shape="rect" id="node4" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="5,79,168,105"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="389,57,597,127"/>
+<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="5,79,168,105"/>
 </map>

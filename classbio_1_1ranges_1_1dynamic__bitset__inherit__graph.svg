@@ -69,7 +69,7 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="white" stroke="black" points="713,-46.5 713,-65.5 829,-65.5 829,-46.5 713,-46.5"/>
+<polygon fill="white" stroke="#bfbfbf" points="713,-46.5 713,-65.5 829,-65.5 829,-46.5 713,-46.5"/>
 <text text-anchor="middle" x="771" y="-53.5" font-family="Helvetica,sans-Serif" font-size="10.00">reservible_container</text>
 </a>
 </g>
@@ -84,7 +84,7 @@ var sectionId = 'dynsection-0';
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="black" points="534,-46.5 534,-65.5 677,-65.5 677,-46.5 534,-46.5"/>
+<polygon fill="white" stroke="#bfbfbf" points="534,-46.5 534,-65.5 677,-65.5 677,-46.5 534,-46.5"/>
 <text text-anchor="middle" x="605.5" y="-53.5" font-family="Helvetica,sans-Serif" font-size="10.00">random_access_container</text>
 </a>
 </g>
@@ -99,7 +99,7 @@ var sectionId = 'dynsection-0';
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="white" stroke="black" points="384,-68.5 384,-87.5 498,-87.5 498,-68.5 384,-68.5"/>
+<polygon fill="white" stroke="#bfbfbf" points="384,-68.5 384,-87.5 498,-87.5 498,-68.5 384,-68.5"/>
 <text text-anchor="middle" x="441" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">sequence_container</text>
 </a>
 </g>
@@ -114,7 +114,7 @@ var sectionId = 'dynsection-0';
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:title=" ">
-<polygon fill="white" stroke="black" points="286,-68.5 286,-87.5 348,-87.5 348,-68.5 286,-68.5"/>
+<polygon fill="white" stroke="#bfbfbf" points="286,-68.5 286,-87.5 348,-87.5 348,-68.5 286,-68.5"/>
 <text text-anchor="middle" x="317" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00">container</text>
 </a>
 </g>

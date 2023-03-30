@@ -1,15 +1,15 @@
 <map id="bio::alphabet::gap" name="bio::alphabet::gap">
-<area shape="rect" id="node1" title="The alphabet of a gap character &#39;&#45;&#39;." alt="" coords="928,157,1067,184"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__alphabet.html" title="Refines bio::alphabet::alphabet and adds assignability." alt="" coords="736,56,875,83"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="433,5,511,32"/>
+<area shape="rect" id="node1" title="The alphabet of a gap character &#39;&#45;&#39;." alt="" coords="992,157,1131,184"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__alphabet.html" title="Refines bio::alphabet::alphabet and adds assignability." alt="" coords="782,56,921,83"/>
+<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1alphabet.html" title="The generic alphabet concept that covers most data types used in ranges." alt="" coords="447,5,525,32"/>
 <area shape="rect" id="node4" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="227,32,337,59"/>
-<area shape="rect" id="node7" href="$interfacebio_1_1alphabet_1_1writable__semialphabet.html" title="A refinement of bio::alphabet::semialphabet that adds assignability." alt="" coords="387,56,557,83"/>
+<area shape="rect" id="node7" href="$interfacebio_1_1alphabet_1_1writable__semialphabet.html" title="A refinement of bio::alphabet::semialphabet that adds assignability." alt="" coords="401,56,571,83"/>
 <area shape="rect" id="node5" title=" " alt="" coords="17,7,166,33"/>
 <area shape="rect" id="node6" title=" " alt="" coords="5,57,177,84"/>
-<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="736,107,875,133"/>
-<area shape="rect" id="node9" title=" " alt="" coords="417,107,527,133"/>
-<area shape="rect" id="node10" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="742,157,869,184"/>
-<area shape="rect" id="node11" title=" " alt="" coords="757,208,853,235"/>
-<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="732,259,879,301"/>
-<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="392,252,552,308"/>
+<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="782,107,921,133"/>
+<area shape="rect" id="node9" title=" " alt="" coords="431,107,541,133"/>
+<area shape="rect" id="node10" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="788,157,915,184"/>
+<area shape="rect" id="node11" title=" " alt="" coords="803,208,899,235"/>
+<area shape="rect" id="node12" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="760,259,943,301"/>
+<area shape="rect" id="node13" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="387,252,585,308"/>
 </map>

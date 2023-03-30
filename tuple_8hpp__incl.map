@@ -1,22 +1,20 @@
 <map id="bio/meta/concept/tuple.hpp" name="bio/meta/concept/tuple.hpp">
-<area shape="rect" id="node1" title="Provides bio::meta::tuple_like." alt="" coords="307,5,507,32"/>
-<area shape="rect" id="node2" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="632,541,712,568"/>
-<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="323,177,378,203"/>
-<area shape="rect" id="node4" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="366,720,458,747"/>
-<area shape="rect" id="node5" href="$pod__tuple_8hpp.html" title="Provides bio::meta::pod_tuple." alt="" coords="79,87,255,114"/>
-<area shape="rect" id="node10" href="$type__list_8hpp.html" title="Provides bio::meta::type_list." alt="" coords="263,348,403,389"/>
-<area shape="rect" id="node11" href="$template__inspection_8hpp.html" title="Provides various traits to inspect templates." alt="" coords="449,437,636,479"/>
-<area shape="rect" id="node19" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="329,80,484,121"/>
-<area shape="rect" id="node6" title=" " alt="" coords="43,177,135,203"/>
-<area shape="rect" id="node7" href="$traits_8hpp.html" title="Provides traits for meta::type_list." alt="" coords="159,169,299,211"/>
-<area shape="rect" id="node8" href="$traits__detail_8hpp.html" title="Provides various traits for template packs." alt="" coords="47,259,187,300"/>
-<area shape="rect" id="node9" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/utility.html" title=" " alt="" coords="127,355,187,382"/>
-<area shape="rect" id="node12" href="$transformation__trait__or_8hpp.html" title="Provides bio::meta::transformation_trait_or." alt="" coords="451,527,608,583"/>
-<area shape="rect" id="node13" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait." alt="" coords="500,631,655,672"/>
-<area shape="rect" id="node14" href="$core_8hpp.html" title="Provides platform and dependency checks." alt="" coords="637,720,739,747"/>
-<area shape="rect" id="node15" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="497,795,580,821"/>
-<area shape="rect" id="node16" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="604,795,676,821"/>
-<area shape="rect" id="node17" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="701,795,771,821"/>
-<area shape="rect" id="node18" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/string.html" title=" " alt="" coords="796,795,855,821"/>
-<area shape="rect" id="node20" href="$core__language_8hpp.html" title="Provides concepts for core language types and relations that don&#39;t have concepts in C++20 (yet)." alt="" coords="711,437,878,479"/>
+<area shape="rect" id="node1" title="Provides bio::meta::tuple_like." alt="" coords="199,5,399,32"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/concepts.html" title=" " alt="" coords="97,541,177,568"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/tuple.html" title=" " alt="" coords="475,177,530,203"/>
+<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="477,720,569,747"/>
+<area shape="rect" id="node5" href="$pod__tuple_8hpp.html" title="Provides bio::meta::pod_tuple." alt="" coords="211,87,387,114"/>
+<area shape="rect" id="node14" href="$type__list_8hpp.html" title="Provides bio::meta::type_list." alt="" coords="178,348,318,389"/>
+<area shape="rect" id="node15" href="$template__inspection_8hpp.html" title="Provides various traits to inspect templates." alt="" coords="149,437,336,479"/>
+<area shape="rect" id="node18" href="$basic_8hpp.html" title="Provides various type traits on generic types." alt="" coords="473,80,628,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="195,177,287,203"/>
+<area shape="rect" id="node7" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="133,720,301,747"/>
+<area shape="rect" id="node11" href="$traits_8hpp.html" title="Provides traits for meta::type_list." alt="" coords="311,169,451,211"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="75,795,157,821"/>
+<area shape="rect" id="node9" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="181,795,253,821"/>
+<area shape="rect" id="node10" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="278,795,349,821"/>
+<area shape="rect" id="node12" href="$traits__detail_8hpp.html" title="Provides various traits for template packs." alt="" coords="310,259,450,300"/>
+<area shape="rect" id="node13" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/utility.html" title=" " alt="" coords="349,355,409,382"/>
+<area shape="rect" id="node16" href="$transformation__trait__or_8hpp.html" title="Provides bio::meta::transformation_trait_or." alt="" coords="255,527,412,583"/>
+<area shape="rect" id="node17" href="$meta_2type__traits_2concept_8hpp.html" title="Provides the concepts bio::meta::transformation_trait and bio::meta::unary_type_trait." alt="" coords="255,631,409,672"/>
 </map>

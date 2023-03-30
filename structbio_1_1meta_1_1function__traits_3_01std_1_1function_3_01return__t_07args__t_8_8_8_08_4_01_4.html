@@ -148,10 +148,10 @@ struct bio::meta::function_traits&lt; std::function&lt; return_t(args_t...)&gt; 
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="type__traits_2function_8hpp.html">bio/meta/type_traits/function.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a> my_caller = [] (<span class="keywordtype">size_t</span> position, <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp; sequence)</div>
+<div class="line"><a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a> my_caller = [] (<span class="keywordtype">size_t</span> position, <a class="codeRef" target="_blank" href="https://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> &amp; <a class="code" href="interfacebio_1_1ranges_1_1sequence.html">sequence</a>)</div>
 <div class="line">{</div>
-<div class="line">    assert(position &lt; sequence.size());</div>
-<div class="line">    <span class="keywordflow">return</span> sequence[position];</div>
+<div class="line">    assert(position &lt; <a class="code" href="interfacebio_1_1ranges_1_1sequence.html">sequence</a>.size());</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="interfacebio_1_1ranges_1_1sequence.html">sequence</a>[position];</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using</span> my_function_t = decltype(my_caller);</div>
@@ -165,6 +165,7 @@ struct bio::meta::function_traits&lt; std::function&lt; return_t(args_t...)&gt; 
 <div class="ttc" id="aconcepts_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/concepts.html">concepts</a></div></div>
 <div class="ttc" id="afunction_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/utility/functional/function.html">std::function</a></div></div>
 <div class="ttc" id="afunctional_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/functional.html">functional</a></div></div>
+<div class="ttc" id="ainterfacebio_1_1ranges_1_1sequence_html"><div class="ttname"><a href="interfacebio_1_1ranges_1_1sequence.html">sequence</a></div><div class="ttdoc">The generic concept for a sequence.</div></div>
 <div class="ttc" id="astring_html"><div class="ttname"><a href="https://en.cppreference.com/w/cpp/header/string.html">string</a></div></div>
 <div class="ttc" id="atype__traits_2function_8hpp_html"><div class="ttname"><a href="type__traits_2function_8hpp.html">function.hpp</a></div><div class="ttdoc">Provides various type traits for use on functions.</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -206,7 +207,7 @@ template&lt;size_t index&gt; </div>
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="namespacebio_1_1meta.html">meta</a></li><li class="navelem"><a class="el" href="structbio_1_1meta_1_1function__traits_3_01std_1_1function_3_01return__t_07args__t_8_8_8_08_4_01_4.html">function_traits&lt; std::function&lt; return_t(args_t...)&gt; &gt;</a></li>
-    <li class="footer">Generated on Wed Sep 28 2022 16:52:36 for BioC++ by
+    <li class="footer">Generated on Tue Aug 2 2022 17:33:49 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

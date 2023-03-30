@@ -71,7 +71,7 @@ var sectionId = 'dynsection-0';
 <g id="a_node2"><a xlink:href="classbio_1_1alphabet_1_1aminoacid__base.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="478,-128.5 478,-158.5 615,-158.5 615,-128.5 478,-128.5"/>
 <text text-anchor="start" x="486" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
-<text text-anchor="middle" x="546.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa10li, 10 &gt;</text>
+<text text-anchor="middle" x="546.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa27, 27 &gt;</text>
 </a>
 </g>
 </g>
@@ -85,32 +85,32 @@ var sectionId = 'dynsection-0';
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classbio_1_1alphabet_1_1aminoacid__base.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="473,-201.5 473,-231.5 620,-231.5 620,-201.5 473,-201.5"/>
-<text text-anchor="start" x="481" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
-<text text-anchor="middle" x="546.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa10murphy, 10 &gt;</text>
+<polygon fill="white" stroke="black" points="478,-201.5 478,-231.5 615,-231.5 615,-201.5 478,-201.5"/>
+<text text-anchor="start" x="486" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
+<text text-anchor="middle" x="546.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa20, 20 &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M95.86,-135.68C116.01,-150.63 145.15,-169.69 174,-179.5 273.72,-213.42 396.53,-219.18 472.93,-218.87"/>
+<path fill="none" stroke="midnightblue" d="M95.86,-135.68C116.01,-150.63 145.15,-169.69 174,-179.5 275.86,-214.15 401.83,-219.42 477.81,-218.84"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="97.88,-132.82 87.8,-129.56 93.65,-138.4 97.88,-132.82"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="classbio_1_1alphabet_1_1aminoacid__base.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="478,-0.5 478,-30.5 615,-30.5 615,-0.5 478,-0.5"/>
-<text text-anchor="start" x="486" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
-<text text-anchor="middle" x="546.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa20, 20 &gt;</text>
+<polygon fill="white" stroke="black" points="473,-0.5 473,-30.5 620,-30.5 620,-0.5 473,-0.5"/>
+<text text-anchor="start" x="481" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
+<text text-anchor="middle" x="546.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa10murphy, 10 &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M90.87,-92.13C110.49,-73.24 141.38,-47.43 174,-35.5 274.85,1.38 401.39,-1.21 477.72,-7.55"/>
+<path fill="none" stroke="midnightblue" d="M90.87,-92.13C110.49,-73.24 141.38,-47.43 174,-35.5 272.73,0.6 396.07,-1.12 472.83,-7.16"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="88.33,-89.72 83.68,-99.23 93.25,-94.69 88.33,-89.72"/>
 </g>
 <!-- Node8 -->
@@ -119,7 +119,7 @@ var sectionId = 'dynsection-0';
 <g id="a_node8"><a xlink:href="classbio_1_1alphabet_1_1aminoacid__base.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="black" points="478,-69.5 478,-99.5 615,-99.5 615,-69.5 478,-69.5"/>
 <text text-anchor="start" x="486" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
-<text text-anchor="middle" x="546.5" y="-76.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa27, 27 &gt;</text>
+<text text-anchor="middle" x="546.5" y="-76.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; aa10li, 10 &gt;</text>
 </a>
 </g>
 </g>
@@ -132,7 +132,7 @@ var sectionId = 'dynsection-0';
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="classbio_1_1alphabet_1_1aminoacid__base.html" target="_top" xlink:title="A CRTP&#45;base that refines bio::alphabet::base and is used by the amino acids.">
+<g id="a_node10"><a xlink:href="classbio_1_1alphabet_1_1aminoacid__base.html" target="_top" xlink:title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the amino acids.">
 <polygon fill="white" stroke="black" points="174,-99.5 174,-129.5 331,-129.5 331,-99.5 174,-99.5"/>
 <text text-anchor="start" x="182" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aminoacid</text>
 <text text-anchor="middle" x="252.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">_base&lt; derived_type, size &gt;</text>
@@ -148,61 +148,61 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classbio_1_1alphabet_1_1aa10li.html" target="_top" xlink:title="The reduced Li amino acid alphabet..">
-<polygon fill="white" stroke="black" points="673,-134 673,-153 789,-153 789,-134 673,-134"/>
-<text text-anchor="middle" x="731" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa10li</text>
+<g id="a_node3"><a xlink:href="classbio_1_1alphabet_1_1aa27.html" target="_top" xlink:title="The twenty&#45;seven letter amino acid alphabet.">
+<polygon fill="white" stroke="black" points="676,-134 676,-153 786,-153 786,-134 676,-134"/>
+<text text-anchor="middle" x="731" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa27</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M625.54,-143.5C641.44,-143.5 657.88,-143.5 672.88,-143.5"/>
+<path fill="none" stroke="midnightblue" d="M625.62,-143.5C642.53,-143.5 660.05,-143.5 675.8,-143.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="625.2,-140 615.2,-143.5 625.2,-147 625.2,-140"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classbio_1_1alphabet_1_1aa10murphy.html" target="_top" xlink:title="The reduced Murphy amino acid alphabet..">
-<polygon fill="white" stroke="black" points="657,-207 657,-226 805,-226 805,-207 657,-207"/>
-<text text-anchor="middle" x="731" y="-214" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa10murphy</text>
+<g id="a_node5"><a xlink:href="classbio_1_1alphabet_1_1aa20.html" target="_top" xlink:title="The canonical amino acid alphabet.">
+<polygon fill="white" stroke="black" points="676,-207 676,-226 786,-226 786,-207 676,-207"/>
+<text text-anchor="middle" x="731" y="-214" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa20</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node4&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M630.39,-216.5C639.17,-216.5 648.05,-216.5 656.7,-216.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="630.15,-213 620.15,-216.5 630.15,-220 630.15,-213"/>
+<path fill="none" stroke="midnightblue" d="M625.62,-216.5C642.53,-216.5 660.05,-216.5 675.8,-216.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="625.2,-213 615.2,-216.5 625.2,-220 625.2,-213"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classbio_1_1alphabet_1_1aa20.html" target="_top" xlink:title="The canonical amino acid alphabet..">
-<polygon fill="white" stroke="black" points="676,-6 676,-25 786,-25 786,-6 676,-6"/>
-<text text-anchor="middle" x="731" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa20</text>
+<g id="a_node7"><a xlink:href="classbio_1_1alphabet_1_1aa10murphy.html" target="_top" xlink:title="The reduced Murphy amino acid alphabet.">
+<polygon fill="white" stroke="black" points="657,-6 657,-25 805,-25 805,-6 657,-6"/>
+<text text-anchor="middle" x="731" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa10murphy</text>
 </a>
 </g>
 </g>
 <!-- Node6&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node6&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M625.62,-15.5C642.53,-15.5 660.05,-15.5 675.8,-15.5"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="625.2,-12 615.2,-15.5 625.2,-19 625.2,-12"/>
+<path fill="none" stroke="midnightblue" d="M630.39,-15.5C639.17,-15.5 648.05,-15.5 656.7,-15.5"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="630.15,-12 620.15,-15.5 630.15,-19 630.15,-12"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="classbio_1_1alphabet_1_1aa27.html" target="_top" xlink:title="The twenty&#45;seven letter amino acid alphabet..">
-<polygon fill="white" stroke="black" points="676,-75 676,-94 786,-94 786,-75 676,-75"/>
-<text text-anchor="middle" x="731" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa27</text>
+<g id="a_node9"><a xlink:href="classbio_1_1alphabet_1_1aa10li.html" target="_top" xlink:title="The reduced Li amino acid alphabet.">
+<polygon fill="white" stroke="black" points="673,-75 673,-94 789,-94 789,-75 673,-75"/>
+<text text-anchor="middle" x="731" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">bio::alphabet::aa10li</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M625.62,-84.5C642.53,-84.5 660.05,-84.5 675.8,-84.5"/>
+<path fill="none" stroke="midnightblue" d="M625.54,-84.5C641.44,-84.5 657.88,-84.5 672.88,-84.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="625.2,-81 615.2,-84.5 625.2,-88 625.2,-81"/>
 </g>
 <!-- Node10&#45;&gt;Node2 -->
@@ -210,28 +210,28 @@ var sectionId = 'dynsection-0';
 <title>Node10&#45;&gt;Node2</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M341.35,-121.74C376.69,-124.81 417.81,-128.58 455,-132.5 462.4,-133.28 470.13,-134.14 477.82,-135.04"/>
 <polygon fill="orange" stroke="orange" points="341.33,-118.22 331.06,-120.85 340.72,-125.19 341.33,-118.22"/>
-<text text-anchor="middle" x="402" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa10li, 10 &gt;</text>
+<text text-anchor="middle" x="402" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa27, 27 &gt;</text>
 </g>
 <!-- Node10&#45;&gt;Node4 -->
 <g id="edge11" class="edge">
 <title>Node10&#45;&gt;Node4</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M306.34,-132.96C362.44,-152.56 450.08,-183.17 502.24,-201.39"/>
 <polygon fill="orange" stroke="orange" points="307.18,-129.54 296.59,-129.55 304.87,-136.15 307.18,-129.54"/>
-<text text-anchor="middle" x="402" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa10murphy, 10 &gt;</text>
+<text text-anchor="middle" x="402" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa20, 20 &gt;</text>
 </g>
 <!-- Node10&#45;&gt;Node6 -->
 <g id="edge12" class="edge">
 <title>Node10&#45;&gt;Node6</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M301.97,-95.69C316.99,-90.01 333.63,-83.86 349,-78.5 398.73,-61.17 456.14,-42.97 496.01,-30.61"/>
 <polygon fill="orange" stroke="orange" points="300.47,-92.52 292.37,-99.34 302.96,-99.06 300.47,-92.52"/>
-<text text-anchor="middle" x="402" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa20, 20 &gt;</text>
+<text text-anchor="middle" x="402" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa10murphy, 10 &gt;</text>
 </g>
 <!-- Node10&#45;&gt;Node8 -->
 <g id="edge13" class="edge">
 <title>Node10&#45;&gt;Node8</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M341.43,-105.47C385.16,-100.97 437.2,-95.63 477.78,-91.46"/>
 <polygon fill="orange" stroke="orange" points="340.96,-102 331.37,-106.5 341.67,-108.96 340.96,-102"/>
-<text text-anchor="middle" x="402" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa27, 27 &gt;</text>
+<text text-anchor="middle" x="402" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; aa10li, 10 &gt;</text>
 </g>
 </g>
 </svg>

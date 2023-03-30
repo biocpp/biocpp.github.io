@@ -5,8 +5,8 @@
 <area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="225,81,336,108"/>
 <area shape="rect" id="node4" title=" " alt="" coords="17,56,166,83"/>
 <area shape="rect" id="node5" title=" " alt="" coords="5,107,177,133"/>
-<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)...." alt="" coords="949,5,1117,32"/>
-<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1phred63.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)...." alt="" coords="949,56,1117,83"/>
-<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1phred68legacy.html" title="Quality type for Solexa and deprecated Illumina formats.." alt="" coords="928,107,1139,133"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1phred42.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (typical range)." alt="" coords="949,5,1117,32"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1phred63.html" title="Quality type for traditional Sanger and modern Illumina Phred scores (full range)." alt="" coords="949,56,1117,83"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1phred68legacy.html" title="Quality type for Solexa and deprecated Illumina formats." alt="" coords="928,107,1139,133"/>
 <area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1qualified.html" title="Joins an arbitrary alphabet with a quality alphabet." alt="" coords="944,157,1123,213"/>
 </map>

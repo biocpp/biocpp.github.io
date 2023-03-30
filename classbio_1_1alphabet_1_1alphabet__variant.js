@@ -22,5 +22,8 @@ var classbio_1_1alphabet_1_1alphabet__variant =
     [ "operator=", "classbio_1_1alphabet_1_1alphabet__variant.html#ad2ad76b19464d2f3790e07f088d794fa", null ],
     [ "to_char", "classbio_1_1alphabet_1_1alphabet__variant.html#acd1778eb5d1d64c7d9d749c7f0debadf", null ],
     [ "to_rank", "classbio_1_1alphabet_1_1alphabet__variant.html#af29512eb6045520758ef39fa4234e099", null ],
-    [ "operator==", "classbio_1_1alphabet_1_1alphabet__variant.html#a7a62ab1fc7945db1bf7524fb315e6256", null ]
+    [ "operator!=", "classbio_1_1alphabet_1_1alphabet__variant.html#ab1b860568be30c3a624756af0c01c064", null ],
+    [ "operator!=", "classbio_1_1alphabet_1_1alphabet__variant.html#a655754355fb29f64412e49916bf9051d", null ],
+    [ "operator==", "classbio_1_1alphabet_1_1alphabet__variant.html#a3c994d4325f7e62496fb3c8ff6943cfb", null ],
+    [ "operator==", "classbio_1_1alphabet_1_1alphabet__variant.html#a7b88130f97923f4d2ad63ab737202f3a", null ]
 ];

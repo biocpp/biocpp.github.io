@@ -1,7 +1,7 @@
 <map id="bio/alphabet/detail/alphabet_proxy.hpp" name="bio/alphabet/detail/alphabet_proxy.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::alphabet_proxy." alt="" coords="361,5,514,47"/>
-<area shape="rect" id="node2" href="$tuple__base_8hpp.html" title="Provides bio::alphabet::tuple_base." alt="" coords="245,95,419,136"/>
-<area shape="rect" id="node13" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="595,95,792,136"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::alphabet_proxy." alt="" coords="363,5,517,47"/>
+<area shape="rect" id="node2" href="$alphabet__tuple__base_8hpp.html" title="Provides bio::alphabet::alphabet_tuple_base." alt="" coords="237,95,427,136"/>
+<area shape="rect" id="node13" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="599,95,796,136"/>
 <area shape="rect" id="node3" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="5,184,144,225"/>
 <area shape="rect" id="node4" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="34,363,209,404"/>
 <area shape="rect" id="node6" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="219,191,445,218"/>

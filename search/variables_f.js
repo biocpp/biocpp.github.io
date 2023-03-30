@@ -1,19 +1,8 @@
 var searchData=
 [
-  ['take_5fexactly_0',['take_exactly',['../group__views.html#ga8efd1287811681bb9f29d4e81eddba98',1,'bio::ranges::views']]],
-  ['take_5fexactly_5for_5fthrow_1',['take_exactly_or_throw',['../group__views.html#ga8deef4f62cd72719276067efcdb0ade6',1,'bio::ranges::views']]],
-  ['to_5fchar_2',['to_char',['../group__alphabet.html#ga064e386f9360cca0fd3702b4957a27a0',1,'bio::alphabet::to_char()'],['../group__views.html#gac9a639c64c7c53a11fea2f7fa19e0e31',1,'bio::ranges::views::to_char()']]],
-  ['to_5flower_3',['to_lower',['../group__views.html#gaecd2d4614b2456dbe58068d427b25b4b',1,'bio::ranges::views']]],
-  ['to_5fphred_4',['to_phred',['../group__quality.html#gac7faff4dee7175ef96d5f94479453df2',1,'bio::alphabet']]],
-  ['to_5frank_5',['to_rank',['../group__alphabet.html#ga2a48a5c1883184e362f09e32ac33241e',1,'bio::alphabet::to_rank()'],['../group__views.html#ga2545dce661bc25066e7b2620f88c091e',1,'bio::ranges::views::to_rank()']]],
-  ['to_5fupper_6',['to_upper',['../group__views.html#gae82a14018fccf1a7f4b40dc4f12390a0',1,'bio::ranges::views']]],
-  ['transform_5fby_5fpos_7',['transform_by_pos',['../group__views.html#ga3d7b3f6112f85e8ad2147ebf5972142f',1,'bio::ranges::views']]],
-  ['translate_8',['translate',['../group__views.html#ga86867c9586842596d47325ad431806d7',1,'bio::ranges::views']]],
-  ['translate_5fjoin_9',['translate_join',['../group__views.html#gacffb4d076ff4326b010303d935118357',1,'bio::ranges::views']]],
-  ['translate_5fsingle_10',['translate_single',['../group__views.html#ga167e392d92aea4a514a1ad656688a905',1,'bio::ranges::views']]],
-  ['treat_5fas_5ffloating_5fpoint_5fv_11',['treat_as_floating_point_v',['https://en.cppreference.com/w/cpp/chrono/treat_as_floating_point.html',0,'std::chrono::treat_as_floating_point_v()'],['https://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',0,'std::experimental::treat_as_floating_point_v()']]],
-  ['trim_5fquality_12',['trim_quality',['../group__views.html#ga9a36f187d6a6383964e17162e60f54ca',1,'bio::ranges::views']]],
-  ['ttag_13',['ttag',['../group__meta__tag.html#ga25dc5c3a92480444628d3425eb3ee99b',1,'bio::meta']]],
-  ['tuple_5fsize_5fv_14',['tuple_size_v',['https://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',0,'std::experimental']]],
-  ['type_5freduce_15',['type_reduce',['../group__views.html#ga25dd3ea6737659b21a05c98c3ed72ef4',1,'bio::ranges::views']]]
+  ['second_4982',['second',['https://en.cppreference.com/w/cpp/utility/pair.html',0,'std::csub_match::second()'],['https://en.cppreference.com/w/cpp/utility/pair.html',0,'std::pair::second()'],['https://en.cppreference.com/w/cpp/utility/pair.html',0,'std::ssub_match::second()'],['https://en.cppreference.com/w/cpp/utility/pair.html',0,'std::sub_match::second()'],['https://en.cppreference.com/w/cpp/utility/pair.html',0,'std::wcsub_match::second()'],['https://en.cppreference.com/w/cpp/utility/pair.html',0,'std::wssub_match::second()']]],
+  ['single_5fpass_5finput_4983',['single_pass_input',['../group__views.html#ga86626ce03a318c4bbe8809e84c827ed3',1,'bio::ranges::views']]],
+  ['size_4984',['size',['../group__alphabet.html#ga299ddd5bf7e8221cb9d283f8a8d24f8d',1,'bio::alphabet']]],
+  ['size_3c_20type_5flist_3c_20pack_5ft_2e_2e_2e_20_3e_20_3e_4985',['size&lt; type_list&lt; pack_t... &gt; &gt;',['../group__meta__type__list.html#ga39d5e9a49d6ccf5b87c819520b0a461c',1,'bio::meta::list_traits']]],
+  ['slice_4986',['slice',['../group__views.html#ga5c52d6b4c32c024f6974ebae155aa4ab',1,'bio::ranges::views']]]
 ];

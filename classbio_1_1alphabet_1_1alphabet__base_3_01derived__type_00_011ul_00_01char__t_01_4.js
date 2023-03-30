@@ -12,6 +12,7 @@ var classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char_
     [ "operator=", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#acc68c6760bbd33fb0f7d41e8bd7e9bcf", null ],
     [ "to_char", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a150e15b6ad067b511fdd8e7c45584692", null ],
     [ "to_rank", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#ace968289fd5ff7fc8fc14de106e81ded", null ],
+    [ "operator!=", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a1f6dbc33d58a3e6884eef5d044c22b6c", null ],
     [ "operator<", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a0c586d6c9b5a0967a627cee2486d7a92", null ],
     [ "operator<=", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#a869f0d4ae2553de1e81f57940fca1ce4", null ],
     [ "operator==", "classbio_1_1alphabet_1_1alphabet__base_3_01derived__type_00_011ul_00_01char__t_01_4.html#aebf56ac97e6fcf72877d034ec4c51fe8", null ],

@@ -15,11 +15,11 @@ var translation_8hpp =
       [ "SIX_FRAME", "translation_8hpp.html#gga6f577a16bf27585908616e19371b2e8aabd54c9328aea3fb30efc906118a5d25f", null ]
     ] ],
     [ "operator&", "translation_8hpp.html#a2745a775999e24744174741d7e0ebd76", null ],
-    [ "operator&=", "translation_8hpp.html#a7c523bbc4c7a79ce5aa5b1d09b0830fe", null ],
+    [ "operator&=", "translation_8hpp.html#aed1c254627d1a01c0dc8d4467047d618", null ],
     [ "operator^", "translation_8hpp.html#a7734ea719a38023eb7a90b5a77406c7a", null ],
-    [ "operator^=", "translation_8hpp.html#a2802f8c473f0b830482296375b56842c", null ],
+    [ "operator^=", "translation_8hpp.html#a0a12d04fa244a707caa7a9153860ee50", null ],
     [ "operator|", "translation_8hpp.html#aeb4e6ec76811b98d61d0eeddb113b004", null ],
-    [ "operator|=", "translation_8hpp.html#ac4cf344565c6118330edd6e4cf86ca0c", null ],
+    [ "operator|=", "translation_8hpp.html#abe77818d105979440f3bf9675696806b", null ],
     [ "operator~", "translation_8hpp.html#aae98abba3166e07ba30241d4643fc714", null ],
     [ "translate_triplet", "translation_8hpp.html#ga32a00ef9570995f13d47d3cac9e0f5a5", null ]
 ];

@@ -1,4 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/types/is_same.html" title=" " alt="" coords="5,5,184,76"/>
-<area shape="rect" id="node2" href="$structbio_1_1meta_1_1is__type__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="This is an overloaded member function, provided for convenience. It differs from the above function o..." alt="" coords="232,13,441,69"/>
+<area shape="rect" id="node1" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="5,323,159,350"/>
+<area shape="rect" id="node2" href="$structbio_1_1meta_1_1deferred__type.html" title="Return the type identity; further arguments are ignored, but can make this type dependent if they are..." alt="" coords="214,5,403,47"/>
+<area shape="rect" id="node3" href="$structbio_1_1meta_1_1remove__rvalue__reference.html" title="Return the input type with &amp;&amp; removed, but lvalue references preserved." alt="" coords="213,71,404,112"/>
+<area shape="rect" id="node4" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="207,137,411,222"/>
+<area shape="rect" id="node5" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="207,246,411,331"/>
+<area shape="rect" id="node6" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="207,355,411,411"/>
+<area shape="rect" id="node7" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="222,436,395,477"/>
+<area shape="rect" id="node8" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="235,501,382,543"/>
+<area shape="rect" id="node9" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="237,567,381,608"/>
 </map>

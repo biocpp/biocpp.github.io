@@ -1,6 +1,6 @@
-<map id="bio/alphabet/custom/uint.hpp" name="bio/alphabet/custom/uint.hpp">
-<area shape="rect" id="node1" title="Provides alphabet adaptations for standard uint types." alt="" coords="83,5,237,47"/>
-<area shape="rect" id="node2" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="5,95,144,136"/>
-<area shape="rect" id="node3" href="$alphabet_2custom_2all_8hpp.html" title="Meta&#45;header for the custom submodule; includes all headers from alphabet/custom/." alt="" coords="168,95,323,136"/>
-<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="170,184,321,211"/>
+<map id="bio/alphabet/adaptation/uint.hpp" name="bio/alphabet/adaptation/uint.hpp">
+<area shape="rect" id="node1" title="Provides alphabet adaptations for standard uint types." alt="" coords="96,5,273,47"/>
+<area shape="rect" id="node2" href="$alphabet_2adaptation_2all_8hpp.html" title="Meta&#45;header for the adaptation submodule; includes all headers from alphabet/adaptation/." alt="" coords="5,95,183,136"/>
+<area shape="rect" id="node4" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="207,95,346,136"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="19,184,169,211"/>
 </map>

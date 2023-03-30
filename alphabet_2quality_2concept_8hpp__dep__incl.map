@@ -1,11 +1,11 @@
 <map id="bio/alphabet/quality/concept.hpp" name="bio/alphabet/quality/concept.hpp">
 <area shape="rect" id="node1" title="Quality alphabet concept." alt="" coords="785,5,937,47"/>
-<area shape="rect" id="node2" href="$proxy__base_8hpp.html" title="Provides bio::alphabet::proxy_base." alt="" coords="603,95,747,136"/>
+<area shape="rect" id="node2" href="$alphabet__proxy_8hpp.html" title="Provides bio::alphabet::alphabet_proxy." alt="" coords="598,95,751,136"/>
 <area shape="rect" id="node9" href="$qualified_8hpp.html" title="Provides quality alphabet composites." alt="" coords="469,273,621,315"/>
 <area shape="rect" id="node10" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="769,363,921,404"/>
 <area shape="rect" id="node11" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="883,452,1035,493"/>
 <area shape="rect" id="node17" href="$quality__base_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="1021,184,1173,225"/>
-<area shape="rect" id="node3" href="$tuple__base_8hpp.html" title="Provides bio::alphabet::tuple_base." alt="" coords="245,184,419,225"/>
+<area shape="rect" id="node3" href="$alphabet__tuple__base_8hpp.html" title="Provides bio::alphabet::alphabet_tuple_base." alt="" coords="237,184,427,225"/>
 <area shape="rect" id="node14" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="576,184,773,225"/>
 <area shape="rect" id="node4" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="5,273,144,315"/>
 <area shape="rect" id="node5" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="66,452,241,493"/>

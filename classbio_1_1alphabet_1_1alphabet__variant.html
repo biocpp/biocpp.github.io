@@ -235,10 +235,22 @@ Friends</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Comparison operators (against indirect alternatives)</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>Defines comparison against types that are not subject to implicit construction/conversion but are comparable against alternatives, e.g. <code><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html" title="A combined alphabet that can hold values of either of its alternatives.">alphabet_variant</a>&lt;<a class="el" href="classbio_1_1alphabet_1_1rna4.html" title="The four letter RNA alphabet of A,C,G,U.">bio::alphabet::rna4</a>, <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a>&gt;</code> vs <code><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html" title="A combined alphabet that can hold values of either of its alternatives.">alphabet_variant</a>&lt;<a class="el" href="classbio_1_1alphabet_1_1dna4.html" title="The four letter DNA alphabet of A,C,G,T.">bio::alphabet::dna4</a>, <a class="el" href="classbio_1_1alphabet_1_1gap.html" title="The alphabet of a gap character &#39;-&#39;.">bio::alphabet::gap</a>&gt;</code>. Only (in-)equality comparison is defined as reasoning about order of variants is inherently difficult. </p>
 </div></td></tr>
-<tr class="memitem:a7a62ab1fc7945db1bf7524fb315e6256"><td class="memTemplParams" colspan="2">template&lt;std::same_as&lt; alphabet_variant &gt; alphabet_variant_t, typename indirect_alternative_type &gt; </td></tr>
-<tr class="memitem:a7a62ab1fc7945db1bf7524fb315e6256"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html#a7a62ab1fc7945db1bf7524fb315e6256">operator==</a> (alphabet_variant_t const lhs, indirect_alternative_type const rhs) noexcept</td></tr>
-<tr class="memdesc:a7a62ab1fc7945db1bf7524fb315e6256"><td class="mdescLeft">&#160;</td><td class="mdescRight">(In-)Equality comparison against types comparable with alternatives but not convertible to the variant.  <a href="classbio_1_1alphabet_1_1alphabet__variant.html#a7a62ab1fc7945db1bf7524fb315e6256">More...</a><br /></td></tr>
-<tr class="separator:a7a62ab1fc7945db1bf7524fb315e6256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c994d4325f7e62496fb3c8ff6943cfb"><td class="memTemplParams" colspan="2">template&lt;typename alphabet_variant_t , typename indirect_alternative_type &gt; </td></tr>
+<tr class="memitem:a3c994d4325f7e62496fb3c8ff6943cfb"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html#a3c994d4325f7e62496fb3c8ff6943cfb">operator==</a> (alphabet_variant_t const lhs, indirect_alternative_type const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::variant_comparison_guard&lt; alphabet_variant_t, indirect_alternative_type, false, alternative_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a3c994d4325f7e62496fb3c8ff6943cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">(In-)Equality comparison against types comparable with alternatives but not convertible to the variant.  <a href="classbio_1_1alphabet_1_1alphabet__variant.html#a3c994d4325f7e62496fb3c8ff6943cfb">More...</a><br /></td></tr>
+<tr class="separator:a3c994d4325f7e62496fb3c8ff6943cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b860568be30c3a624756af0c01c064"><td class="memTemplParams" colspan="2">template&lt;typename alphabet_variant_t , typename indirect_alternative_type &gt; </td></tr>
+<tr class="memitem:ab1b860568be30c3a624756af0c01c064"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html#ab1b860568be30c3a624756af0c01c064">operator!=</a> (alphabet_variant_t const lhs, indirect_alternative_type const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::variant_comparison_guard&lt; alphabet_variant_t, indirect_alternative_type, false, alternative_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:ab1b860568be30c3a624756af0c01c064"><td class="mdescLeft">&#160;</td><td class="mdescRight">(In-)Equality comparison against types comparable with alternatives but not convertible to the variant.  <a href="classbio_1_1alphabet_1_1alphabet__variant.html#ab1b860568be30c3a624756af0c01c064">More...</a><br /></td></tr>
+<tr class="separator:ab1b860568be30c3a624756af0c01c064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b88130f97923f4d2ad63ab737202f3a"><td class="memTemplParams" colspan="2">template&lt;typename alphabet_variant_t , typename indirect_alternative_type , typename  = void&gt; </td></tr>
+<tr class="memitem:a7b88130f97923f4d2ad63ab737202f3a"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html#a7b88130f97923f4d2ad63ab737202f3a">operator==</a> (indirect_alternative_type const lhs, alphabet_variant_t const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::variant_comparison_guard&lt; alphabet_variant_t, indirect_alternative_type, true, alternative_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a7b88130f97923f4d2ad63ab737202f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">(In-)Equality comparison against types comparable with alternatives but not convertible to the variant.  <a href="classbio_1_1alphabet_1_1alphabet__variant.html#a7b88130f97923f4d2ad63ab737202f3a">More...</a><br /></td></tr>
+<tr class="separator:a7b88130f97923f4d2ad63ab737202f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655754355fb29f64412e49916bf9051d"><td class="memTemplParams" colspan="2">template&lt;typename alphabet_variant_t , typename indirect_alternative_type , typename  = void&gt; </td></tr>
+<tr class="memitem:a655754355fb29f64412e49916bf9051d"><td class="memTemplItemLeft" align="right" valign="top">constexpr friend auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html#a655754355fb29f64412e49916bf9051d">operator!=</a> (indirect_alternative_type const lhs, alphabet_variant_t const rhs) noexcept -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt; detail::variant_comparison_guard&lt; alphabet_variant_t, indirect_alternative_type, true, alternative_types... &gt;, bool &gt;</td></tr>
+<tr class="memdesc:a655754355fb29f64412e49916bf9051d"><td class="mdescLeft">&#160;</td><td class="mdescRight">(In-)Equality comparison against types comparable with alternatives but not convertible to the variant.  <a href="classbio_1_1alphabet_1_1alphabet__variant.html#a655754355fb29f64412e49916bf9051d">More...</a><br /></td></tr>
+<tr class="separator:a655754355fb29f64412e49916bf9051d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename... alternative_types&gt;<br />
@@ -287,7 +299,7 @@ class bio::alphabet::alphabet_variant&lt; alternative_types &gt;</h3>
 <div class="ttc" id="aalphabet_2nucleotide_2all_8hpp_html"><div class="ttname"><a href="alphabet_2nucleotide_2all_8hpp.html">all.hpp</a></div><div class="ttdoc">Meta-header for the nucleotide submodule; includes all headers from alphabet/nucleotide/.</div></div>
 <div class="ttc" id="aalphabet__variant_8hpp_html"><div class="ttname"><a href="alphabet__variant_8hpp.html">alphabet_variant.hpp</a></div><div class="ttdoc">Provides bio::alphabet::alphabet_variant.</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__base_html_a55f722f487de757c6ec017292697c44d"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__base.html#a55f722f487de757c6ec017292697c44d">bio::alphabet::alphabet_base::assign_char</a></div><div class="ttdeci">constexpr derived_type &amp; assign_char(char_type const c) noexcept</div><div class="ttdoc">Assign from a character, implicitly converts invalid characters.</div><div class="ttdef"><b>Definition:</b> alphabet_base.hpp:140</div></div>
-<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__variant_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::alphabet_variant</a></div><div class="ttdoc">A combined alphabet that can hold values of either of its alternatives.</div><div class="ttdef"><b>Definition:</b> alphabet_variant.hpp:111</div></div>
+<div class="ttc" id="aclassbio_1_1alphabet_1_1alphabet__variant_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1alphabet__variant.html">bio::alphabet::alphabet_variant</a></div><div class="ttdoc">A combined alphabet that can hold values of either of its alternatives.</div><div class="ttdef"><b>Definition:</b> alphabet_variant.hpp:122</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1dna5_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1dna5.html">bio::alphabet::dna5</a></div><div class="ttdoc">The five letter DNA alphabet of A,C,G,T and the unknown character N.</div><div class="ttdef"><b>Definition:</b> dna5.hpp:50</div></div>
 <div class="ttc" id="aclassbio_1_1alphabet_1_1gap_html"><div class="ttname"><a href="classbio_1_1alphabet_1_1gap.html">bio::alphabet::gap</a></div><div class="ttdoc">The alphabet of a gap character '-'.</div><div class="ttdef"><b>Definition:</b> gap.hpp:38</div></div>
 <div class="ttc" id="agap_8hpp_html"><div class="ttname"><a href="gap_8hpp.html">gap.hpp</a></div><div class="ttdoc">Provides bio::alphabet::gap.</div></div>
@@ -963,21 +975,21 @@ template&lt;typename indirect_alternative_t &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a7a62ab1fc7945db1bf7524fb315e6256"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a62ab1fc7945db1bf7524fb315e6256">&#9670;&nbsp;</a></span>operator==</h2>
+<a id="ab1b860568be30c3a624756af0c01c064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b860568be30c3a624756af0c01c064">&#9670;&nbsp;</a></span>operator!= <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename... alternative_types&gt; </div>
 <div class="memtemplate">
-template&lt;std::same_as&lt; alphabet_variant &gt; alphabet_variant_t, typename indirect_alternative_type &gt; </div>
+template&lt;typename alphabet_variant_t , typename indirect_alternative_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr friend bool operator== </td>
+          <td class="memname">constexpr friend auto operator!= </td>
           <td>(</td>
           <td class="paramtype">alphabet_variant_t const&#160;</td>
           <td class="paramname"><em>lhs</em>, </td>
@@ -991,7 +1003,193 @@ template&lt;std::same_as&lt; alphabet_variant &gt; alphabet_variant_t, typename 
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::variant_comparison_guard&lt;alphabet_variant_t, indirect_alternative_type, false, alternative_types...&gt;,
+        bool&gt;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(In-)Equality comparison against types comparable with alternatives but not convertible to the variant. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">alphabet_variant_t</td><td>The type of the variant; given as template parameter to prevent conversion. </td></tr>
+    <tr><td class="paramname">indirect_alternative_type</td><td>Must be comparable with an alternative's type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>Left-hand-side of comparison. </td></tr>
+    <tr><td class="paramname">rhs</td><td>Right-hand-side of comparison. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> or <code>false</code>.</dd></dl>
+<p>To determine (in-)equality, it is first deduced which alternative the argument is comparable with. It is then checked if the variant currently is in that alternative's state and if yes whether the values compare to <code>true</code>; else <code>false</code> is returned. </p>
+
+</div>
+</div>
+<a id="a655754355fb29f64412e49916bf9051d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a655754355fb29f64412e49916bf9051d">&#9670;&nbsp;</a></span>operator!= <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... alternative_types&gt; </div>
+<div class="memtemplate">
+template&lt;typename alphabet_variant_t , typename indirect_alternative_type , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend auto operator!= </td>
+          <td>(</td>
+          <td class="paramtype">indirect_alternative_type const&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">alphabet_variant_t const&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::variant_comparison_guard&lt;alphabet_variant_t, indirect_alternative_type, true, alternative_types...&gt;,
+        bool&gt;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(In-)Equality comparison against types comparable with alternatives but not convertible to the variant. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">alphabet_variant_t</td><td>The type of the variant; given as template parameter to prevent conversion. </td></tr>
+    <tr><td class="paramname">indirect_alternative_type</td><td>Must be comparable with an alternative's type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>Left-hand-side of comparison. </td></tr>
+    <tr><td class="paramname">rhs</td><td>Right-hand-side of comparison. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> or <code>false</code>.</dd></dl>
+<p>To determine (in-)equality, it is first deduced which alternative the argument is comparable with. It is then checked if the variant currently is in that alternative's state and if yes whether the values compare to <code>true</code>; else <code>false</code> is returned. </p>
+
+</div>
+</div>
+<a id="a3c994d4325f7e62496fb3c8ff6943cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c994d4325f7e62496fb3c8ff6943cfb">&#9670;&nbsp;</a></span>operator== <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... alternative_types&gt; </div>
+<div class="memtemplate">
+template&lt;typename alphabet_variant_t , typename indirect_alternative_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend auto operator== </td>
+          <td>(</td>
+          <td class="paramtype">alphabet_variant_t const&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">indirect_alternative_type const&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::variant_comparison_guard&lt;alphabet_variant_t, indirect_alternative_type, false, alternative_types...&gt;,
+        bool&gt;
+    </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>(In-)Equality comparison against types comparable with alternatives but not convertible to the variant. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">alphabet_variant_t</td><td>The type of the variant; given as template parameter to prevent conversion. </td></tr>
+    <tr><td class="paramname">indirect_alternative_type</td><td>Must be comparable with an alternative's type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lhs</td><td>Left-hand-side of comparison. </td></tr>
+    <tr><td class="paramname">rhs</td><td>Right-hand-side of comparison. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> or <code>false</code>.</dd></dl>
+<p>To determine (in-)equality, it is first deduced which alternative the argument is comparable with. It is then checked if the variant currently is in that alternative's state and if yes whether the values compare to <code>true</code>; else <code>false</code> is returned. </p>
+
+</div>
+</div>
+<a id="a7b88130f97923f4d2ad63ab737202f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b88130f97923f4d2ad63ab737202f3a">&#9670;&nbsp;</a></span>operator== <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... alternative_types&gt; </div>
+<div class="memtemplate">
+template&lt;typename alphabet_variant_t , typename indirect_alternative_type , typename  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr friend auto operator== </td>
+          <td>(</td>
+          <td class="paramtype">indirect_alternative_type const&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">alphabet_variant_t const&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="elRef" target="_blank" href="https://en.cppreference.com/w/cpp/types/enable_if.html">std::enable_if_t</a>&lt;
+        detail::variant_comparison_guard&lt;alphabet_variant_t, indirect_alternative_type, true, alternative_types...&gt;,
+        bool&gt;
+    </td>
         </tr>
       </table>
   </td>
@@ -1033,7 +1231,7 @@ template&lt;std::same_as&lt; alphabet_variant &gt; alphabet_variant_t, typename 
     <div id="list_bottom_right" style="text-align:right; float:left; color:black; padding: 0px 0px 0px 10px"></div>
     <script type="text/javascript" charset="utf-8" src="version.js"></script>
     <li class="navelem"><a class="el" href="namespacebio.html">bio</a></li><li class="navelem"><a class="el" href="namespacebio_1_1alphabet.html">alphabet</a></li><li class="navelem"><a class="el" href="classbio_1_1alphabet_1_1alphabet__variant.html">alphabet_variant</a></li>
-    <li class="footer">Generated on Fri Sep 16 2022 11:43:46 for BioC++ by
+    <li class="footer">Generated on Tue Aug 2 2022 17:33:49 for BioC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.1 </li>
   </ul>

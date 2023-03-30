@@ -23,7 +23,7 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:title=" ">
-<polygon fill="white" stroke="black" points="294,-0.5 294,-52.5 452,-52.5 452,-0.5 294,-0.5"/>
+<polygon fill="white" stroke="#bfbfbf" points="294,-0.5 294,-52.5 452,-52.5 452,-0.5 294,-0.5"/>
 <text text-anchor="start" x="302" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">bio::ranges::detail</text>
 <text text-anchor="start" x="302" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::adaptor_base&lt; deep</text>
 <text text-anchor="start" x="302" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; underlying_adaptor</text>
@@ -41,7 +41,7 @@
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-6 0,-47 137,-47 137,-6 0,-6"/>
+<polygon fill="white" stroke="#bfbfbf" points="0,-6 0,-47 137,-47 137,-6 0,-6"/>
 <text text-anchor="start" x="8" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">bio::ranges::detail</text>
 <text text-anchor="start" x="8" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">::adaptor_base&lt; derived</text>
 <text text-anchor="middle" x="68.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">_type, stored_args_ts &gt;</text>

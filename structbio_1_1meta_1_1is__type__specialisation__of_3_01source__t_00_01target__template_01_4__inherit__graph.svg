@@ -70,7 +70,7 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/types/is_same.html" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="274,-0.5 274,-52.5 408,-52.5 408,-0.5 274,-0.5"/>
+<polygon fill="white" stroke="black" points="274,-0.5 274,-52.5 408,-52.5 408,-0.5 274,-0.5"/>
 <text text-anchor="start" x="282" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">std::is_same&lt; source</text>
 <text text-anchor="start" x="282" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">_t, transfer_template</text>
 <text text-anchor="start" x="282" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_args_onto_t&lt; source_t,</text>
@@ -88,7 +88,7 @@ var sectionId = 'dynsection-0';
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a target="_blank" xlink:href="https://en.cppreference.com/w/cpp/types/is_same.html" xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="0,-17 0,-36 78,-36 78,-17 0,-17"/>
+<polygon fill="white" stroke="black" points="0,-17 0,-36 78,-36 78,-17 0,-17"/>
 <text text-anchor="middle" x="39" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">std::is_same</text>
 </a>
 </g>

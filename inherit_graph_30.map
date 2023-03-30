@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$interfacebio_1_1meta_1_1decays__to.html" title="Resolves to std::same_as&lt;std::decay_t&lt;t&gt;, std::decay_t&lt;u&gt;&gt;." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node2" href="$interfacebio_1_1ranges_1_1sequence.html" title="The generic concept for a sequence." alt="" coords="188,13,272,39"/>
 </map>
