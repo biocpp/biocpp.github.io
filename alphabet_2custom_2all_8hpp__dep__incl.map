@@ -1,4 +1,11 @@
 <map id="bio/alphabet/custom/all.hpp" name="bio/alphabet/custom/all.hpp">
-<area shape="rect" id="node1" title="Meta&#45;header for the custom submodule; includes all headers from alphabet/custom/." alt="" coords="5,5,160,47"/>
-<area shape="rect" id="node2" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="7,95,158,121"/>
+<area shape="rect" id="node1" title="Meta&#45;header for the custom submodule; includes all headers from alphabet/custom/." alt="" coords="165,5,303,45"/>
+<area shape="rect" id="node2" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="5,101,140,126"/>
+<area shape="rect" id="node3" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="103,181,253,221"/>
+<area shape="rect" id="node4" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="215,93,365,133"/>
+<area shape="rect" id="node6" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="389,93,524,133"/>
+<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="277,189,439,214"/>
+<area shape="rect" id="node7" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="463,181,642,221"/>
+<area shape="rect" id="node8" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="483,269,622,309"/>
+<area shape="rect" id="node9" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="491,357,615,383"/>
 </map>

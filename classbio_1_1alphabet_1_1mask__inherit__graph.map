@@ -1,13 +1,9 @@
 <map id="bio::alphabet::mask" name="bio::alphabet::mask">
-<area shape="rect" id="node1" title="Implementation of a masked alphabet to be used for tuple composites." alt="" coords="824,132,975,159"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1writable__semialphabet.html" title="A refinement of bio::alphabet::semialphabet that adds assignability." alt="" coords="600,31,771,57"/>
-<area shape="rect" id="node3" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="271,31,381,57"/>
-<area shape="rect" id="node4" title=" " alt="" coords="17,5,166,32"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,56,177,83"/>
-<area shape="rect" id="node6" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="616,81,755,108"/>
-<area shape="rect" id="node7" title=" " alt="" coords="271,81,381,108"/>
-<area shape="rect" id="node8" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="622,132,749,159"/>
-<area shape="rect" id="node9" title=" " alt="" coords="637,183,733,209"/>
-<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="596,234,775,275"/>
-<area shape="rect" id="node11" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="227,227,425,283"/>
+<area shape="rect" id="node1" title="Implementation of a masked semialphabet to be used for tuple composites.." alt="" coords="504,141,640,166"/>
+<area shape="rect" id="node2" title=" " alt="" coords="305,5,455,45"/>
+<area shape="rect" id="node3" title=" " alt="" coords="317,69,443,109"/>
+<area shape="rect" id="node4" title=" " alt="" coords="313,133,447,173"/>
+<area shape="rect" id="node5" title=" " alt="" coords="337,198,423,223"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="314,248,446,288"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,241,149,295"/>
 </map>

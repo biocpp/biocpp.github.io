@@ -1,6 +1,13 @@
-<map id="bio/alphabet/adaptation/uint.hpp" name="bio/alphabet/adaptation/uint.hpp">
-<area shape="rect" id="node1" title="Provides alphabet adaptations for standard uint types." alt="" coords="96,5,273,47"/>
-<area shape="rect" id="node2" href="$alphabet_2adaptation_2all_8hpp.html" title="Meta&#45;header for the adaptation submodule; includes all headers from alphabet/adaptation/." alt="" coords="5,95,183,136"/>
-<area shape="rect" id="node4" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="207,95,346,136"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="19,184,169,211"/>
+<map id="bio/alphabet/custom/uint.hpp" name="bio/alphabet/custom/uint.hpp">
+<area shape="rect" id="node1" title="Provides alphabet adaptations for standard uint types." alt="" coords="144,5,283,45"/>
+<area shape="rect" id="node2" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="74,93,198,133"/>
+<area shape="rect" id="node10" href="$alphabet_2custom_2all_8hpp.html" title="Meta&#45;header for the custom submodule; includes all headers from alphabet/custom/." alt="" coords="223,93,361,133"/>
+<area shape="rect" id="node3" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="5,269,155,309"/>
+<area shape="rect" id="node4" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="61,181,211,221"/>
+<area shape="rect" id="node6" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="286,181,421,221"/>
+<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="179,277,341,302"/>
+<area shape="rect" id="node7" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="365,269,544,309"/>
+<area shape="rect" id="node8" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="385,357,524,397"/>
+<area shape="rect" id="node9" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="393,445,517,471"/>
+<area shape="rect" id="node11" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="445,189,579,214"/>
 </map>

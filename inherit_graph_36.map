@@ -1,4 +1,10 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/types/is_same.html" title=" " alt="" coords="5,5,184,76"/>
-<area shape="rect" id="node2" href="$structbio_1_1meta_1_1is__type__specialisation__of_3_01source__t_00_01target__template_01_4.html" title="This is an overloaded member function, provided for convenience. It differs from the above function o..." alt="" coords="232,13,441,69"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,301,172,341"/>
+<area shape="rect" id="node2" href="$structbio_1_1meta_1_1transfer__template__args__onto_3_01source__template_3_01source__arg__types_a0c928784694c351c065f80d4d89b15d.html" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="221,5,402,89"/>
+<area shape="rect" id="node3" href="$structbio_1_1meta_1_1transfer__template__vargs__onto_3_01source__template_3_01source__varg__type4e348813352083c94c53b6206e44e292.html" title="Extracts a type template&#39;s non&#45;type arguments and specialises another template with them." alt="" coords="221,113,402,197"/>
+<area shape="rect" id="node4" href="$structbio_1_1meta_1_1valid__template__spec__or.html" title="Exposes templ_t&lt;spec_t...&gt; if that is valid, otherwise fallback_t." alt="" coords="220,221,403,276"/>
+<area shape="rect" id="node5" href="$structbio_1_1ranges_1_1range__innermost__value.html" title="Recursively determines the value_type on containers and/or iterators." alt="" coords="235,301,387,341"/>
+<area shape="rect" id="node6" href="$structstd_1_1tuple__element_3_01i_00_01bio_1_1alphabet_1_1cigar_01_4.html" title="Obtains the type of the specified component." alt="" coords="247,365,376,420"/>
+<area shape="rect" id="node7" href="$structstd_1_1tuple__element_3_01i_00_01t_3_01types_8_8_8_01_4_01_4.html" title="Obtains the type of the specified element." alt="" coords="247,445,376,485"/>
+<area shape="rect" id="node8" href="$structstd_1_1tuple__element_3_01i_00_01tuple__t_01_4.html" title="Obtains the type of the specified element." alt="" coords="247,509,376,549"/>
 </map>

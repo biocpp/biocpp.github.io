@@ -1,12 +1,12 @@
 <map id="bio::alphabet::aminoacid_empty_base" name="bio::alphabet::aminoacid_empty_base">
-<area shape="rect" id="node1" title="This is an empty base class that can be inherited by types that shall model bio::alphabet::aminoacid_..." alt="" coords="5,141,188,183"/>
-<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="643,103,825,144"/>
-<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="643,5,825,47"/>
-<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="636,273,832,315"/>
-<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="643,181,825,223"/>
-<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title="A CRTP&#45;base that refines bio::alphabet::alphabet_base and is used by the amino acids." alt="" coords="237,141,447,183"/>
-<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1aa27.html" title="The twenty&#45;seven letter amino acid alphabet." alt="" coords="907,110,1053,137"/>
-<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1aa20.html" title="The canonical amino acid alphabet." alt="" coords="907,13,1053,39"/>
-<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1aa10murphy.html" title="The reduced Murphy amino acid alphabet." alt="" coords="881,281,1079,307"/>
-<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1aa10li.html" title="The reduced Li amino acid alphabet." alt="" coords="903,189,1057,215"/>
+<area shape="rect" id="node1" title="This is an empty base class that can be inherited by types that shall model bio::alphabet::aminoacid." alt="" coords="5,133,168,173"/>
+<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="577,95,739,135"/>
+<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="572,5,744,45"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="577,265,739,305"/>
+<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title=" " alt="" coords="577,173,739,213"/>
+<area shape="rect" id="node10" href="$classbio_1_1alphabet_1_1aminoacid__base.html" title="A CRTP&#45;base that refines bio::alphabet::base and is used by the amino acids." alt="" coords="217,133,404,173"/>
+<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1aa10li.html" title="The reduced Li amino acid alphabet.." alt="" coords="811,102,950,127"/>
+<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1aa10murphy.html" title="The reduced Murphy amino acid alphabet.." alt="" coords="793,13,968,38"/>
+<area shape="rect" id="node7" href="$classbio_1_1alphabet_1_1aa20.html" title="The canonical amino acid alphabet.." alt="" coords="815,273,947,298"/>
+<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1aa27.html" title="The twenty&#45;seven letter amino acid alphabet.." alt="" coords="815,181,947,206"/>
 </map>

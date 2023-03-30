@@ -1,4 +1,4 @@
 <map id="bio::alphabet::invalid_char_assignment" name="bio::alphabet::invalid_char_assignment">
-<area shape="rect" id="node1" title="An exception typically thrown by bio::alphabet::assign_char_strict." alt="" coords="5,80,164,121"/>
-<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/error/runtime_error.html" title=" " alt="" coords="15,5,154,32"/>
+<area shape="rect" id="node1" title="An exception typically thrown by bio::alphabet::assign_char_strict." alt="" coords="5,79,147,119"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/error/runtime_error.html" title=" " alt="" coords="14,5,138,31"/>
 </map>

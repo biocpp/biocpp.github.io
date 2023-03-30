@@ -1,5 +1,12 @@
 <map id="bio/alphabet/cigar/cigar_op.hpp" name="bio/alphabet/cigar/cigar_op.hpp">
-<area shape="rect" id="node1" title="Introduces the cigar_op alphabet." alt="" coords="87,5,225,47"/>
-<area shape="rect" id="node2" href="$alphabet_2cigar_2all_8hpp.html" title="Meta&#45;header for the cigar submodule; includes all headers from alphabet/cigar/." alt="" coords="5,95,144,136"/>
-<area shape="rect" id="node3" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="168,95,307,136"/>
+<area shape="rect" id="node1" title="Introduces the cigar_op alphabet." alt="" coords="79,5,203,45"/>
+<area shape="rect" id="node2" href="$alphabet_2cigar_2all_8hpp.html" title="Meta&#45;header for the cigar submodule; includes all headers from alphabet/cigar/." alt="" coords="5,93,129,133"/>
+<area shape="rect" id="node3" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="153,93,277,133"/>
+<area shape="rect" id="node4" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="29,269,178,309"/>
+<area shape="rect" id="node5" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="141,181,290,221"/>
+<area shape="rect" id="node7" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="315,181,449,221"/>
+<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="202,277,365,302"/>
+<area shape="rect" id="node8" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="389,269,567,309"/>
+<area shape="rect" id="node9" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="409,357,547,397"/>
+<area shape="rect" id="node10" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="416,445,540,471"/>
 </map>

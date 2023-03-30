@@ -67,11 +67,13 @@ var NAVTREE =
           [ "Related Functions", "functions_rela.html", null ]
         ] ]
       ] ],
+      [ "Concept List", "concepts.html", "concepts" ],
       [ "File List", "files.html", [
         [ "File List", "files.html", "files_dup" ],
         [ "File Members", "globals.html", [
           [ "All", "globals.html", null ],
           [ "Variables", "globals_vars.html", null ],
+          [ "Typedefs", "globals_type.html", null ],
           [ "Macros", "globals_defs.html", null ]
         ] ]
       ] ]
@@ -82,17 +84,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "aa10li_8hpp.html",
-"classbio_1_1alphabet_1_1alphabet__tuple__base.html",
-"classbio_1_1alphabet_1_1phred63.html#af7d2c83e4074745f391d3600fc6d503b",
-"classbio_1_1ranges_1_1concatenated__sequences.html#a9570fa4466c9cd3fa8b083f30c745c34",
-"classbio_1_1ranges_1_1views_1_1deep.html#af183a8825fb7e2180f47ba5f1ee70d44",
-"cpp/chrono/c/difftime.html",
-"cpp/io/c/fflush.html",
-"cpp/numeric/math/div.html",
-"cpp/string/wide/wcsrchr.html",
-"functions_func_m.html",
-"group__views.html#gaeb4f69a870beb4fcf4c1021088c17447",
-"structbio_1_1meta_1_1type__list.html"
+"classbio_1_1alphabet_1_1dna16sam.html#a42e4ec1907956d855b96c3ea22383ce3",
+"classbio_1_1alphabet_1_1rna4.html#a89ed469e334a469b1da901ba3b0785a4",
+"classbio_1_1ranges_1_1dictionary.html#a5aef999e43ac2d3bf1e4db614d5ef41d",
+"classbio_1_1ranges_1_1small__vector.html#acf3a7b312f4166dbef0744bc774acfd1",
+"cpp/algorithm/replace.html",
+"cpp/experimental/type_trait_variable_templates.html",
+"cpp/memory/ranges/uninitialized_fill_n.html",
+"cpp/string/byte/strcoll.html",
+"cpp/utility/rel_ops/operator_cmp.html",
+"meta_2all_8hpp.html",
+"transform__by__pos_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

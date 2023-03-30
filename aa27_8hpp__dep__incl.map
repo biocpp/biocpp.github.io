@@ -1,10 +1,11 @@
 <map id="bio/alphabet/aminoacid/aa27.hpp" name="bio/alphabet/aminoacid/aa27.hpp">
-<area shape="rect" id="node1" title="Provides bio::alphabet::aa27, container aliases and string literals." alt="" coords="143,5,317,47"/>
-<area shape="rect" id="node2" href="$alphabet_2aminoacid_2all_8hpp.html" title="Meta&#45;header for the aminoacid submodule; includes all headers from alphabet/aminoacid/." alt="" coords="5,273,180,315"/>
-<area shape="rect" id="node4" href="$translation_8hpp.html" title="Provides functions for translating a triplet of nucleotides into an amino acid." alt="" coords="131,184,305,225"/>
-<area shape="rect" id="node5" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="217,281,440,307"/>
-<area shape="rect" id="node8" href="$translation__details_8hpp.html" title="Provides translation details for nucleotide to aminoacid translation." alt="" coords="80,95,255,136"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="17,370,168,397"/>
-<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="424,370,604,397"/>
-<area shape="rect" id="node7" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="205,363,399,404"/>
+<area shape="rect" id="node1" title="Provides bio::alphabet::aa27, container aliases and string literals." alt="" coords="184,5,339,45"/>
+<area shape="rect" id="node2" href="$alphabet_2aminoacid_2all_8hpp.html" title="Meta&#45;header for the aminoacid submodule; includes all headers from alphabet/aminoacid/." alt="" coords="5,269,160,309"/>
+<area shape="rect" id="node4" href="$translation_8hpp.html" title="Provides functions for translating a triplet of nucleotides into an amino acid." alt="" coords="120,181,275,221"/>
+<area shape="rect" id="node5" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="194,365,393,390"/>
+<area shape="rect" id="node7" href="$translate__single_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="350,269,525,309"/>
+<area shape="rect" id="node9" href="$translation__details_8hpp.html" title="Provides translation details for nucleotide to aminoacid translation." alt="" coords="67,93,223,133"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="15,365,150,390"/>
+<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="212,445,375,471"/>
+<area shape="rect" id="node8" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="417,357,591,397"/>
 </map>

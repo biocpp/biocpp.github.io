@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quality_5falphabet_5ftype_5038',['quality_alphabet_type',['../classbio_1_1alphabet_1_1qualified.html#a6f4e2c4f52210bc018664d6bf577aaa1',1,'bio::alphabet::qualified']]]
+  ['other_0',['other',['../structbio_1_1ranges_1_1aligned__allocator_1_1rebind.html#a940eff16aa3716f2b42e901742591e3f',1,'bio::ranges::aligned_allocator::rebind']]]
 ];

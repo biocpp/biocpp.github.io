@@ -1,5 +1,5 @@
 <map id="bio/ranges/views/interleave.hpp" name="bio/ranges/views/interleave.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::interleave." alt="" coords="63,5,294,32"/>
-<area shape="rect" id="node2" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="5,80,160,121"/>
-<area shape="rect" id="node3" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="185,87,365,114"/>
+<area shape="rect" id="node1" title="Provides bio::views::interleave." alt="" coords="59,5,264,31"/>
+<area shape="rect" id="node2" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="5,79,144,119"/>
+<area shape="rect" id="node3" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="168,86,331,111"/>
 </map>

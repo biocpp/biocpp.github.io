@@ -1,6 +1,4 @@
 <map id="bio/ranges/views/persist.hpp" name="bio/ranges/views/persist.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::persist." alt="" coords="67,5,275,32"/>
-<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="5,162,185,189"/>
-<area shape="rect" id="node3" href="$interleave_8hpp.html" title="Provides bio::views::interleave." alt="" coords="133,80,364,107"/>
-<area shape="rect" id="node4" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="210,155,365,196"/>
+<area shape="rect" id="node1" title="Provides bio::views::persist." alt="" coords="5,5,193,31"/>
+<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="18,79,181,104"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/error/runtime_error.html" title=" " alt="" coords="5,13,144,39"/>
-<area shape="rect" id="node2" href="$structbio_1_1alphabet_1_1invalid__char__assignment.html" title="An exception typically thrown by bio::alphabet::assign_char_strict." alt="" coords="192,5,351,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,144,38"/>
+<area shape="rect" id="node2" href="$structbio_1_1meta_1_1pod__tuple_3_01type0_00_01types_8_8_8_01_4.html" title="Behaves like std::tuple but is an aggregate PODType." alt="" coords="192,5,332,45"/>
 </map>

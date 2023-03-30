@@ -1,4 +1,4 @@
 <map id="bio::meta::transfer_template_args_onto&lt; source_template&lt; source_arg_types... &gt;, target_template &gt;" name="bio::meta::transfer_template_args_onto&lt; source_template&lt; source_arg_types... &gt;, target_template &gt;">
-<area shape="rect" id="node1" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="5,80,209,165"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1transformation__trait.html" title="Concept for a transformation trait." alt="" coords="31,5,184,32"/>
+<area shape="rect" id="node1" title="Extracts a type template&#39;s type arguments and specialises another template with them." alt="" coords="5,93,187,177"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,5,179,45"/>
 </map>

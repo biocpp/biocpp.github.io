@@ -1,17 +1,21 @@
 <map id="bio/ranges/views/deep.hpp" name="bio/ranges/views/deep.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::deep." alt="" coords="747,5,943,32"/>
-<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="610,177,790,203"/>
-<area shape="rect" id="node3" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="27,80,191,121"/>
-<area shape="rect" id="node4" href="$complement_8hpp.html" title="Provides bio::views::complement." alt="" coords="215,87,462,114"/>
-<area shape="rect" id="node5" href="$rank__to_8hpp.html" title="Provides bio::views::rank_to." alt="" coords="485,80,651,121"/>
-<area shape="rect" id="node6" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="861,80,1011,121"/>
-<area shape="rect" id="node10" href="$ranges_2views_2to__lower_8hpp.html" title="Provides bio::views::to_lower." alt="" coords="1455,80,1604,121"/>
-<area shape="rect" id="node11" href="$to__rank_8hpp.html" title="Provides bio::views::to_rank." alt="" coords="1035,80,1184,121"/>
-<area shape="rect" id="node12" href="$to__upper_8hpp.html" title="Provides bio::views::to_upper." alt="" coords="1628,80,1777,121"/>
-<area shape="rect" id="node13" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="1209,87,1431,114"/>
-<area shape="rect" id="node15" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="675,80,837,121"/>
-<area shape="rect" id="node7" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="892,169,1089,211"/>
-<area shape="rect" id="node8" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="913,259,1068,300"/>
-<area shape="rect" id="node9" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="921,348,1060,375"/>
-<area shape="rect" id="node14" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="1223,169,1417,211"/>
+<area shape="rect" id="node1" title="Provides bio::views::deep." alt="" coords="797,5,974,31"/>
+<area shape="rect" id="node2" href="$add__reverse__complement_8hpp.html" title="Provides bio::views::add_reverse_complement." alt="" coords="95,79,270,119"/>
+<area shape="rect" id="node3" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="957,262,1120,287"/>
+<area shape="rect" id="node4" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="599,167,748,207"/>
+<area shape="rect" id="node5" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="647,79,796,119"/>
+<area shape="rect" id="node6" href="$complement_8hpp.html" title="Provides bio::views::complement." alt="" coords="823,174,1043,199"/>
+<area shape="rect" id="node7" href="$rank__to_8hpp.html" title="Provides bio::views::rank_to." alt="" coords="1068,167,1217,207"/>
+<area shape="rect" id="node8" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="1293,79,1427,119"/>
+<area shape="rect" id="node12" href="$ranges_2views_2to__lower_8hpp.html" title="Provides bio::views::to_lower." alt="" coords="871,79,1006,119"/>
+<area shape="rect" id="node13" href="$to__rank_8hpp.html" title="Provides bio::views::to_rank." alt="" coords="1451,79,1586,119"/>
+<area shape="rect" id="node14" href="$to__upper_8hpp.html" title="Provides bio::views::to_upper." alt="" coords="1082,79,1217,119"/>
+<area shape="rect" id="node15" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="177,174,375,199"/>
+<area shape="rect" id="node16" href="$translate__single_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="397,79,571,119"/>
+<area shape="rect" id="node18" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="5,167,152,207"/>
+<area shape="rect" id="node19" href="$validate__char__for_8hpp.html" title="Provides bio::ranges::views::validate_char_for." alt="" coords="1610,79,1779,119"/>
+<area shape="rect" id="node9" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="1343,167,1521,207"/>
+<area shape="rect" id="node10" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="1363,255,1501,295"/>
+<area shape="rect" id="node11" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="1370,343,1494,368"/>
+<area shape="rect" id="node17" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="399,167,574,207"/>
 </map>

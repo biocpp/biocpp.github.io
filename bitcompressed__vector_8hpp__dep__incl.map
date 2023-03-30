@@ -1,5 +1,5 @@
 <map id="bio/ranges/container/bitcompressed_vector.hpp" name="bio/ranges/container/bitcompressed_vector.hpp">
-<area shape="rect" id="node1" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="5,5,203,47"/>
-<area shape="rect" id="node2" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="27,95,181,136"/>
-<area shape="rect" id="node3" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="35,184,173,211"/>
+<area shape="rect" id="node1" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="5,5,184,45"/>
+<area shape="rect" id="node2" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="25,93,164,133"/>
+<area shape="rect" id="node3" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="33,181,157,207"/>
 </map>

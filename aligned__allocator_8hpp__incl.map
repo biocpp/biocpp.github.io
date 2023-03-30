@@ -1,11 +1,11 @@
 <map id="bio/ranges/container/aligned_allocator.hpp" name="bio/ranges/container/aligned_allocator.hpp">
-<area shape="rect" id="node1" title="Provides bio::ranges::aligned_allocator." alt="" coords="99,5,264,47"/>
-<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/limits.html" title=" " alt="" coords="5,95,64,121"/>
-<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/memory.html" title=" " alt="" coords="88,95,165,121"/>
-<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="190,95,282,121"/>
-<area shape="rect" id="node5" href="$ranges_2biocpp_8hpp.html" title="Module header with module&#45;wide definitions." alt="" coords="307,95,472,121"/>
-<area shape="rect" id="node6" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="305,169,473,196"/>
-<area shape="rect" id="node7" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="247,244,329,271"/>
-<area shape="rect" id="node8" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="353,244,425,271"/>
-<area shape="rect" id="node9" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="450,244,521,271"/>
+<area shape="rect" id="node1" title="Provides bio::ranges::aligned_allocator." alt="" coords="93,5,240,45"/>
+<area shape="rect" id="node2" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/limits.html" title=" " alt="" coords="5,93,59,119"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/memory.html" title=" " alt="" coords="83,93,152,119"/>
+<area shape="rect" id="node4" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="176,93,259,119"/>
+<area shape="rect" id="node5" href="$core_8hpp.html" title="Provides platform and dependency checks." alt="" coords="283,93,376,119"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="152,167,227,192"/>
+<area shape="rect" id="node7" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="251,167,317,192"/>
+<area shape="rect" id="node8" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="342,167,407,192"/>
+<area shape="rect" id="node9" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/string_view.html" title=" " alt="" coords="432,167,520,192"/>
 </map>

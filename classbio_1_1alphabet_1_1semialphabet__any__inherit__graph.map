@@ -1,11 +1,8 @@
 <map id="bio::alphabet::semialphabet_any&lt; size_ &gt;" name="bio::alphabet::semialphabet_any&lt; size_ &gt;">
-<area shape="rect" id="node1" title="A semi&#45;alphabet that type erases all other semi&#45;alphabets of the same size." alt="" coords="652,134,856,175"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1alphabet_1_1semialphabet.html" title="The basis for bio::alphabet::alphabet, but requires only rank interface (not char)." alt="" coords="450,56,561,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="30,5,179,32"/>
-<area shape="rect" id="node4" title=" " alt="" coords="19,56,191,83"/>
-<area shape="rect" id="node5" href="$interfacebio_1_1meta_1_1trivially__copyable.html" title="A type that satisfies std::is_trivially_copyable_v&lt;t&gt;." alt="" coords="436,107,575,133"/>
-<area shape="rect" id="node6" title=" " alt="" coords="50,107,159,133"/>
-<area shape="rect" id="node7" href="$interfacebio_1_1meta_1_1standard__layout.html" title="Resolves to std::is_standard_layout_v&lt;t&gt;." alt="" coords="442,157,569,184"/>
-<area shape="rect" id="node8" href="$classbio_1_1alphabet_1_1alphabet__base.html" title=" " alt="" coords="408,208,603,264"/>
-<area shape="rect" id="node9" href="$classbio_1_1alphabet_1_1alphabet__base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,208,204,264"/>
+<area shape="rect" id="node1" title="A semi&#45;alphabet that type erases all other semi&#45;alphabets of the same size." alt="" coords="567,87,748,127"/>
+<area shape="rect" id="node2" title=" " alt="" coords="336,5,517,31"/>
+<area shape="rect" id="node3" title=" " alt="" coords="364,55,489,95"/>
+<area shape="rect" id="node4" title=" " alt="" coords="359,119,494,159"/>
+<area shape="rect" id="node5" href="$classbio_1_1alphabet_1_1base.html" title=" " alt="" coords="351,184,503,239"/>
+<area shape="rect" id="node6" href="$classbio_1_1alphabet_1_1base.html" title="A CRTP&#45;base that makes defining a custom alphabet easier." alt="" coords="5,184,149,239"/>
 </map>

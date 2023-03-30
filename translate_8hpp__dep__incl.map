@@ -1,5 +1,4 @@
 <map id="bio/ranges/views/translate.hpp" name="bio/ranges/views/translate.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="89,5,312,32"/>
-<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="5,87,185,114"/>
-<area shape="rect" id="node3" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="210,80,405,121"/>
+<area shape="rect" id="node1" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="5,5,204,31"/>
+<area shape="rect" id="node2" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="23,79,186,104"/>
 </map>

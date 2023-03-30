@@ -1,6 +1,6 @@
 <map id="bio/alphabet/mask/mask.hpp" name="bio/alphabet/mask/mask.hpp">
-<area shape="rect" id="node1" title="Create a mask composite which can be applied with another alphabet." alt="" coords="5,5,216,32"/>
-<area shape="rect" id="node2" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="15,155,206,181"/>
-<area shape="rect" id="node4" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="73,80,300,107"/>
-<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="35,229,186,256"/>
+<area shape="rect" id="node1" title="Create a mask composite which can be applied with another alphabet." alt="" coords="5,5,195,31"/>
+<area shape="rect" id="node2" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="15,152,185,177"/>
+<area shape="rect" id="node4" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="68,79,271,104"/>
+<area shape="rect" id="node3" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="33,225,167,251"/>
 </map>

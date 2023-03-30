@@ -1,8 +1,10 @@
 <map id="bio/ranges/views/transform_by_pos.hpp" name="bio/ranges/views/transform_by_pos.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::transform_by_pos." alt="" coords="112,5,312,47"/>
-<area shape="rect" id="node2" href="$add__reverse__complement_8hpp.html" title="Provides bio::views::add_reverse_complement." alt="" coords="5,95,200,136"/>
-<area shape="rect" id="node3" href="$translate__single_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="224,95,419,136"/>
-<area shape="rect" id="node4" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="94,191,317,218"/>
-<area shape="rect" id="node6" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="341,184,536,225"/>
-<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="115,273,295,300"/>
+<area shape="rect" id="node1" title="Provides bio::views::transform_by_pos." alt="" coords="218,5,397,45"/>
+<area shape="rect" id="node2" href="$add__reverse__complement_8hpp.html" title="Provides bio::views::add_reverse_complement." alt="" coords="5,93,180,133"/>
+<area shape="rect" id="node3" href="$interleave_8hpp.html" title="Provides bio::views::interleave." alt="" coords="205,101,410,126"/>
+<area shape="rect" id="node6" href="$translate__single_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="435,93,609,133"/>
+<area shape="rect" id="node4" href="$dynamic__bitset_8hpp.html" title="A constexpr bitset implementation with dynamic size at compile time." alt="" coords="170,181,309,221"/>
+<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="333,269,495,295"/>
+<area shape="rect" id="node7" href="$translate_8hpp.html" title="Provides bio::views::translate and bio::views::translate_single." alt="" coords="383,189,581,214"/>
+<area shape="rect" id="node8" href="$translate__join_8hpp.html" title="Provides bio::views::translate_join." alt="" coords="605,181,780,221"/>
 </map>

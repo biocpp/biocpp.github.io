@@ -1,8 +1,8 @@
 <map id="bio/alphabet/quality/qualified.hpp" name="bio/alphabet/quality/qualified.hpp">
-<area shape="rect" id="node1" title="Provides quality alphabet composites." alt="" coords="119,5,271,47"/>
-<area shape="rect" id="node2" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="5,95,157,136"/>
-<area shape="rect" id="node3" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="27,184,179,225"/>
-<area shape="rect" id="node5" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="232,95,395,136"/>
-<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="27,273,178,300"/>
-<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="223,191,403,218"/>
+<area shape="rect" id="node1" title="Provides quality alphabet composites." alt="" coords="111,5,245,45"/>
+<area shape="rect" id="node2" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="5,93,140,133"/>
+<area shape="rect" id="node3" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="27,181,161,221"/>
+<area shape="rect" id="node5" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="215,93,362,133"/>
+<area shape="rect" id="node4" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="27,269,161,295"/>
+<area shape="rect" id="node6" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="207,189,370,214"/>
 </map>

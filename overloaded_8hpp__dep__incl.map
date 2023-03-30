@@ -1,5 +1,10 @@
 <map id="bio/meta/overloaded.hpp" name="bio/meta/overloaded.hpp">
-<area shape="rect" id="node1" title="Provides bio::meta::overloaded." alt="" coords="13,5,199,32"/>
-<area shape="rect" id="node2" href="$move_8hpp.html" title="Provides bio::views::move." alt="" coords="5,80,207,107"/>
-<area shape="rect" id="node3" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="16,155,196,181"/>
+<area shape="rect" id="node1" title="Provides bio::meta::overloaded." alt="" coords="110,5,274,31"/>
+<area shape="rect" id="node2" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="5,167,155,207"/>
+<area shape="rect" id="node3" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="117,79,267,119"/>
+<area shape="rect" id="node5" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="291,79,426,119"/>
+<area shape="rect" id="node4" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="179,174,341,199"/>
+<area shape="rect" id="node6" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="365,167,544,207"/>
+<area shape="rect" id="node7" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="385,255,524,295"/>
+<area shape="rect" id="node8" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="393,343,517,368"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="bio::alphabet::proxy_base&lt; derived_type, alphabet_type &gt;" name="bio::alphabet::proxy_base&lt; derived_type, alphabet_type &gt;">
-<area shape="rect" id="node1" title="A CRTP&#45;base that eases the definition of proxy types returned in place of regular alphabets." alt="" coords="5,57,169,113"/>
-<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1proxy__base.html" title=" " alt="" coords="383,5,575,76"/>
-<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1proxy__base.html" title=" " alt="" coords="388,101,569,157"/>
+<area shape="rect" id="node1" title="A CRTP&#45;base that eases the definition of proxy types returned in place of regular alphabets." alt="" coords="5,99,152,154"/>
+<area shape="rect" id="node2" href="$classbio_1_1alphabet_1_1proxy__base.html" title=" " alt="" coords="355,13,583,67"/>
+<area shape="rect" id="node3" href="$classbio_1_1alphabet_1_1proxy__base.html" title=" " alt="" coords="383,92,555,161"/>
+<area shape="rect" id="node4" href="$classbio_1_1alphabet_1_1proxy__base.html" title=" " alt="" coords="387,186,550,241"/>
 </map>

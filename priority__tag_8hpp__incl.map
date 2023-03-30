@@ -1,7 +1,8 @@
-<map id="bio/meta/detail/priority_tag.hpp" name="bio/meta/detail/priority_tag.hpp">
-<area shape="rect" id="node1" title="provides bio::meta::detail::priority_tag." alt="" coords="62,5,234,47"/>
-<area shape="rect" id="node2" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="64,95,232,121"/>
-<area shape="rect" id="node3" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="5,169,88,196"/>
-<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="112,169,184,196"/>
-<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="209,169,279,196"/>
+<map id="bio/meta/tag/priority_tag.hpp" name="bio/meta/tag/priority_tag.hpp">
+<area shape="rect" id="node1" title="provides bio::meta::priority_tag." alt="" coords="114,5,251,45"/>
+<area shape="rect" id="node2" href="$core_8hpp.html" title="Provides platform and dependency checks." alt="" coords="136,93,229,119"/>
+<area shape="rect" id="node3" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="5,167,80,192"/>
+<area shape="rect" id="node4" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="104,167,171,192"/>
+<area shape="rect" id="node5" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="195,167,261,192"/>
+<area shape="rect" id="node6" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/header/string_view.html" title=" " alt="" coords="285,167,373,192"/>
 </map>

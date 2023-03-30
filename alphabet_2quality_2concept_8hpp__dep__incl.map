@@ -1,22 +1,25 @@
 <map id="bio/alphabet/quality/concept.hpp" name="bio/alphabet/quality/concept.hpp">
-<area shape="rect" id="node1" title="Quality alphabet concept." alt="" coords="785,5,937,47"/>
-<area shape="rect" id="node2" href="$alphabet__proxy_8hpp.html" title="Provides bio::alphabet::alphabet_proxy." alt="" coords="598,95,751,136"/>
-<area shape="rect" id="node9" href="$qualified_8hpp.html" title="Provides quality alphabet composites." alt="" coords="469,273,621,315"/>
-<area shape="rect" id="node10" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="769,363,921,404"/>
-<area shape="rect" id="node11" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="883,452,1035,493"/>
-<area shape="rect" id="node17" href="$quality__base_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="1021,184,1173,225"/>
-<area shape="rect" id="node3" href="$alphabet__tuple__base_8hpp.html" title="Provides bio::alphabet::alphabet_tuple_base." alt="" coords="237,184,427,225"/>
-<area shape="rect" id="node14" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="576,184,773,225"/>
-<area shape="rect" id="node4" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="5,273,144,315"/>
-<area shape="rect" id="node5" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="66,452,241,493"/>
-<area shape="rect" id="node7" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="219,281,445,307"/>
-<area shape="rect" id="node6" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="285,541,435,568"/>
-<area shape="rect" id="node8" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="265,459,455,486"/>
-<area shape="rect" id="node12" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="369,363,532,404"/>
-<area shape="rect" id="node13" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="479,459,659,486"/>
-<area shape="rect" id="node15" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="645,273,800,315"/>
-<area shape="rect" id="node16" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="607,370,745,397"/>
-<area shape="rect" id="node18" href="$phred42_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="965,273,1117,315"/>
-<area shape="rect" id="node19" href="$phred63_8hpp.html" title="Provides bio::alphabet::phred63 quality scores." alt="" coords="1047,363,1199,404"/>
-<area shape="rect" id="node20" href="$phred68legacy_8hpp.html" title="Provides bio::alphabet::phred68legacy quality scores." alt="" coords="1223,363,1375,404"/>
+<area shape="rect" id="node1" title="Quality alphabet concept." alt="" coords="452,5,587,45"/>
+<area shape="rect" id="node2" href="$proxy__base_8hpp.html" title="Provides bio::alphabet::proxy_base." alt="" coords="723,93,851,133"/>
+<area shape="rect" id="node16" href="$qualified_8hpp.html" title="Provides quality alphabet composites." alt="" coords="452,269,587,309"/>
+<area shape="rect" id="node17" href="$aliases_8hpp.html" title="Provides aliases for qualified." alt="" coords="347,357,481,397"/>
+<area shape="rect" id="node18" href="$alphabet_2quality_2all_8hpp.html" title="Meta&#45;header that includes all headers from alphabet/quality/." alt="" coords="347,445,481,485"/>
+<area shape="rect" id="node20" href="$quality__base_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="163,181,297,221"/>
+<area shape="rect" id="node3" href="$tuple__base_8hpp.html" title="Provides bio::alphabet::tuple_base." alt="" coords="709,181,865,221"/>
+<area shape="rect" id="node9" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="1275,445,1454,485"/>
+<area shape="rect" id="node4" href="$cigar_8hpp.html" title="Provides the bio::alphabet::cigar alphabet." alt="" coords="772,269,896,309"/>
+<area shape="rect" id="node12" href="$alphabet_2composite_2all_8hpp.html" title="Meta&#45;header for the composite submodule; includes all headers from alphabet/composite/." alt="" coords="540,445,696,485"/>
+<area shape="rect" id="node14" href="$masked_8hpp.html" title="Extends a given alphabet with the mask alphabet." alt="" coords="1035,277,1238,302"/>
+<area shape="rect" id="node5" href="$char__strictly__to_8hpp.html" title="Provides bio::ranges::views::char_strictly_to." alt="" coords="721,445,870,485"/>
+<area shape="rect" id="node6" href="$char__to_8hpp.html" title="Provides bio::views::char_to." alt="" coords="934,357,1083,397"/>
+<area shape="rect" id="node8" href="$to__char_8hpp.html" title="Provides bio::views::to_char." alt="" coords="1108,357,1243,397"/>
+<area shape="rect" id="node7" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="894,453,1057,478"/>
+<area shape="rect" id="node10" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="1295,533,1434,573"/>
+<area shape="rect" id="node11" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="1303,621,1427,647"/>
+<area shape="rect" id="node13" href="$alphabet_2all_8hpp.html" title="Meta&#45;header for the alphabet module." alt="" coords="551,541,685,566"/>
+<area shape="rect" id="node15" href="$alphabet_2mask_2all_8hpp.html" title="Meta&#45;header for the mask submodule; includes all headers from alphabet/mask/." alt="" coords="1081,453,1251,478"/>
+<area shape="rect" id="node19" href="$trim__quality_8hpp.html" title="Provides bio::views::trim_quality." alt="" coords="763,357,910,397"/>
+<area shape="rect" id="node21" href="$phred42_8hpp.html" title="Provides bio::alphabet::phred42 quality scores." alt="" coords="241,269,376,309"/>
+<area shape="rect" id="node22" href="$phred63_8hpp.html" title="Provides bio::alphabet::phred63 quality scores." alt="" coords="5,357,140,397"/>
+<area shape="rect" id="node23" href="$phred68legacy_8hpp.html" title="Provides bio::alphabet::phred68legacy quality scores." alt="" coords="83,269,217,309"/>
 </map>

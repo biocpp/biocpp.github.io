@@ -1,4 +1,4 @@
-<map id="bio::meta::overloaded&lt; invocable_ts &gt;" name="bio::meta::overloaded&lt; invocable_ts &gt;">
-<area shape="rect" id="node1" title="A type that can conveniently inherit multiple invocables and acts as a union over them." alt="" coords="5,80,171,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="36,5,140,32"/>
+<map id="bio::meta::overloaded&lt; functors &gt;" name="bio::meta::overloaded&lt; functors &gt;">
+<area shape="rect" id="node1" title="Wrapper to create an overload set of multiple functors." alt="" coords="5,79,152,119"/>
+<area shape="rect" id="node2" title=" " alt="" coords="44,5,113,31"/>
 </map>

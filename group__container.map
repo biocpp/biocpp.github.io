@@ -1,4 +1,4 @@
 <map id="Container" name="Container">
-<area shape="rect" id="node1" title="The container submodule contains special BioC++ containers and generic container concepts." alt="" coords="124,5,209,31"/>
-<area shape="rect" id="node2" href="$group__range.html" title="The ranges module provides general purpose containers, decorators and views." alt="" coords="5,5,76,31"/>
+<area shape="rect" id="node1" title="The container submodule contains special BioC++ containers and generic container concepts." alt="" coords="120,5,199,31"/>
+<area shape="rect" id="node2" href="$group__range.html" title="The ranges module provides general purpose containers, decorators and views." alt="" coords="5,5,72,31"/>
 </map>

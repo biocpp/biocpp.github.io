@@ -1,7 +1,7 @@
 <map id="bio/ranges/views/convert.hpp" name="bio/ranges/views/convert.hpp">
-<area shape="rect" id="node1" title="Provides bio::views::convert." alt="" coords="104,5,317,32"/>
-<area shape="rect" id="node2" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="5,80,203,121"/>
-<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="227,87,407,114"/>
-<area shape="rect" id="node3" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="27,169,181,211"/>
-<area shape="rect" id="node4" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="35,259,173,285"/>
+<area shape="rect" id="node1" title="Provides bio::views::convert." alt="" coords="96,5,288,31"/>
+<area shape="rect" id="node2" href="$bitcompressed__vector_8hpp.html" title="Provides bio::ranges::bitcompressed_vector." alt="" coords="5,79,184,119"/>
+<area shape="rect" id="node5" href="$ranges_2views_2all_8hpp.html" title="Meta&#45;header for the views submodule ." alt="" coords="208,86,371,111"/>
+<area shape="rect" id="node3" href="$ranges_2container_2all_8hpp.html" title="Meta&#45;header for the container submodule ." alt="" coords="25,167,164,207"/>
+<area shape="rect" id="node4" href="$ranges_2all_8hpp.html" title="Meta&#45;header for the ranges module ." alt="" coords="33,255,157,280"/>
 </map>
