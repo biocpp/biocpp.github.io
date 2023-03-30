@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="10,5,145,45"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1ranges_1_1back__insertable.html" title="Describes range types that can grow in amortised constant time by appending an element." alt="" coords="215,21,340,46"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,69,149,109"/>
-<area shape="rect" id="node4" href="$interfacebio_1_1ranges_1_1back__insertable__with.html" title="Describes range types that can grow in amortised constant time by appending an element of type val_t." alt="" coords="197,77,357,102"/>
-</map>

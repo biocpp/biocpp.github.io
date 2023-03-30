@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="/home/hannes/devel/biocpp-core-build/documentation/cppreference-doxygen-web.tag.xml$cpp/error/runtime_error.html" title=" " alt="" coords="5,13,144,38"/>
-<area shape="rect" id="node2" href="$structbio_1_1alphabet_1_1invalid__char__assignment.html" title="An exception typically thrown by bio::alphabet::assign_char_strict." alt="" coords="192,5,351,45"/>
-</map>

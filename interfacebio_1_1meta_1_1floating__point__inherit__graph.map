@@ -1,4 +1,0 @@
-<map id="floating_point" name="floating_point">
-<area shape="rect" id="node1" title="An arithmetic type that also satisfies std::is_floating_point_v&lt;t&gt;." alt="" coords="5,80,116,107"/>
-<area shape="rect" id="node2" href="$interfacebio_1_1meta_1_1arithmetic.html" title="A type that satisfies std::is_arithmetic_v&lt;t&gt;." alt="" coords="16,5,105,32"/>
-</map>

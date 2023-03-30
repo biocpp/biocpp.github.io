@@ -1,8 +1,0 @@
-<map id="bio/meta/type_traits/pack.hpp" name="bio/meta/type_traits/pack.hpp">
-<area shape="rect" id="node1" title="Provides unary type traits on a set of types, usually provided as template argument pack." alt="" coords="51,5,206,47"/>
-<area shape="rect" id="node2" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/type_traits.html" title=" " alt="" coords="5,95,97,121"/>
-<area shape="rect" id="node3" href="$platform_8hpp.html" title="Provides platform and dependency checks." alt="" coords="122,95,290,121"/>
-<area shape="rect" id="node4" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cinttypes.html" title=" " alt="" coords="63,169,146,196"/>
-<area shape="rect" id="node5" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/ciso646.html" title=" " alt="" coords="170,169,242,196"/>
-<area shape="rect" id="node6" href="/home/hannes/devel/bio-core-build/doc/cppreference-doxygen-web.tag.xml$cpp/header/cstddef.html" title=" " alt="" coords="267,169,337,196"/>
-</map>
